@@ -1,0 +1,287 @@
+T1	Drug 153 164	пульмикорта
+T2	Drug 169 182	преднизолоном
+T3	Treatment 141 196	ингаляциями пульмикорта или преднизолоном парентерально
+T4	Disease 595 602	желтуха
+A1	Negation T4
+T5	Disease 761 781	атопический дерматит
+T6	Disease 1172 1184	Пиелонефрита
+T7	Symptom 1229 1234	рвота
+T8	Symptom 1236 1266	жидкий стул со слизью и кровью
+T9	Symptom 1323 1336	обезвоживания
+A2	SType T7 disorder
+A3	SType T8 disorder
+A4	SType T9 disorder
+T10	Symptom 1388 1393	рвота
+A5	SType T10 disorder
+T11	Symptom 1546 1559	обезвоживания
+A6	SType T11 disorder
+T12	Symptom 1561 1577	потерей сознания
+A7	SType T12 disorder
+T13	Disease 1630 1636	ацидоз
+T14	Disease 1812 1840	Дистальный тубулярный ацидоз
+T15	Disease 1842 1856	Нефрокальциноз
+T16	Disease 1858 1868	Остеопороз
+T17	Treatment 1891 1927	сода 4%, uralit-u, блемарен, этальфа
+T18	Drug 1910 1918	блемарен
+T19	Drug 1920 1927	этальфа
+A8	Effect T17 positive
+T20	Disease 2204 2232	Дистальный тубулярный ацидоз
+T21	Disease 2234 2259	Хроническая болезнь почек
+T22	Body_location 2254 2259	почек
+R1	Body_location_rel Arg1:T22 Arg2:T21	
+T23	Severity 2259 2267	1 стадии
+A9	Degree T23 light
+R2	Severity_rel Arg1:T23 Arg2:T21	
+T24	Treatment 2290 2317	получает соду 4 %, блемарен
+T25	Drug 2309 2317	блемарен
+T26	Disease 2362 2377	ларинготрахеиты
+T27	Disease 2436 2454	Бронхиальная астма
+T28	Treatment 2468 2574	небулайзерная терапия беродуалом с пульмикортом, а также обострения купировались по СМП в/м инъекциями ГКС
+T29	Drug 2490 2500	беродуалом
+T30	Drug 2503 2515	пульмикортом
+T31	Symptom 2594 2598	храп
+A10	SType T31 disorder
+T32	Disease 2678 2683	крупа
+T33	Treatment 2753 2797	купировали по СМП в/м введением преднизолона
+T34	Drug 2785 2797	преднизолона
+T35	Symptom 2839 2861	высыпания на коже лица
+A11	SType T35 disorder
+T36	Body_location 2849 2861	на коже лица
+R3	Symptom_bdyloc_rel Arg1:T36 Arg2:T35	
+T37	Treatment 2988 3043	Сода 2гр\сут, блемарен по 4 таб\сут, Энап 1,25мгх2р\сут
+T38	Drug 3002 3010	блемарен
+T39	Drug 3025 3029	Энап
+T40	Body_location 3208 3222	Кожные покровы
+T41	Symptom 3224 3231	розовые
+T42	Symptom 3233 3239	чистые
+R4	Symptom_bdyloc_rel Arg1:T40 Arg2:T41	
+R5	Symptom_bdyloc_rel Arg1:T40 Arg2:T42	
+T43	Body_location 3241 3259	Слизистые оболочки
+T44	Symptom 3261 3268	розовые
+A12	SType T44 normal
+A13	SType T41 normal
+A14	SType T42 normal
+T45	Symptom 3270 3276	чистые
+A15	SType T45 normal
+R6	Symptom_bdyloc_rel Arg1:T43 Arg2:T44	
+R7	Symptom_bdyloc_rel Arg1:T43 Arg2:T45	
+T46	Body_location 3295 3298	зев
+T47	Symptom 3299 3306	спокоен
+T48	Body_location 3308 3317	миндалины
+T49	Symptom 3318 3324	чистые
+A16	SType T49 normal
+A17	SType T47 normal
+R8	Symptom_bdyloc_rel Arg1:T46 Arg2:T47	
+R9	Symptom_bdyloc_rel Arg1:T48 Arg2:T49	
+T50	Symptom 3392 3398	отеков
+A18	Negation T50
+A19	SType T50 disorder
+T51	Symptom 3471 3487	Нарушение осанки
+A20	SType T51 disorder
+T52	Symptom 3514 3553	вальгусная деформация коленных суставов
+A21	SType T52 disorder
+T53	Body_location 3536 3553	коленных суставов
+R10	Symptom_bdyloc_rel Arg1:T53 Arg2:T52	
+T54	Symptom 3677 3705	Носовое дыхание затрудненное
+T55	Body_location 3707 3715	В легких
+T56	Symptom 3716 3736	дыхание везикулярное
+A22	SType T56 normal
+T57	Symptom 3738 3744	хрипов
+A23	Negation T57
+A24	SType T57 disorder
+R11	Symptom_bdyloc_rel Arg1:T55 Arg2:T56	
+R12	Symptom_bdyloc_rel Arg1:T55 Arg2:T57	
+T58	Symptom 3815 3845	Тоны сердца звучные, ритмичные
+T59	Body_location 3774 3791	Сердечная область
+T60	Symptom 3805 3813	изменена
+A25	Negation T60
+A26	SType T60 disorder
+R13	Symptom_bdyloc_rel Arg1:T59 Arg2:T60	
+T61	Body_location 3922 3927	Живот
+T62	Symptom 3928 3936	увеличен
+A27	SType T62 disorder
+R14	Symptom_bdyloc_rel Arg1:T61 Arg2:T62	
+T63	Symptom 3948 3954	мягкий
+A28	SType T63 normal
+R15	Symptom_bdyloc_rel Arg1:T61 Arg2:T63	
+T64	Symptom 3956 3970	безболезненный
+A29	SType T64 normal
+R16	Symptom_bdyloc_rel Arg1:T61 Arg2:T64	
+T65	Symptom 4041 4048	Дизурии
+A30	Negation T65
+A31	SType T65 disorder
+T66	Symptom 4138 4158	менингеальных знаков
+A32	Negation T66
+A33	SType T66 disorder
+T67	Disease 10653 10675	стенозирующий ларингит
+T68	Course 10677 10691	вне обострения
+A34	CType T68 improved
+R17	Course_rel Arg1:T68 Arg2:T67	
+T69	Disease 10693 10701	Аденоиды
+T70	Severity 10702 10713	II - III ст
+A35	Degree T70 medium
+R18	Severity_rel Arg1:T70 Arg2:T69	
+T71	Disease 10715 10746	Искривление носовой перегородки
+T72	Body_location 10727 10746	носовой перегородки
+R19	Body_location_rel Arg1:T72 Arg2:T71	
+T73	Disease 10749 10784	Аллергический  персистирующий ринит
+T74	Disease 10786 10802	Пищевая аллергия
+T75	Course 10804 10812	ремиссия
+A36	CType T75 resolved
+R20	Course_rel Arg1:T75 Arg2:T74	
+T76	Treatment 10832 10889	Соблюдение гипоаллергенной диеты и элиминационного режима
+T77	Treatment 11006 11114	пульмикорт через небулайзер 1000 мкг, при неэффективности - в/м - Дексаметазон 8 мг (2 мл). + Супрастин 2 мл
+T78	Drug 11006 11016	пульмикорт
+T79	Drug 11072 11084	Дексаметазон
+T80	Drug 11100 11109	Супрастин
+T81	Symptom 11187 11213	Системная гипоплазия эмали
+A37	SType T81 disorder
+T82	Disease 11281 11304	Плоско-вальгусные стопы
+T83	Severity 11305 11309	3 ст
+A38	Degree T83 hard
+R21	Severity_rel Arg1:T83 Arg2:T82	
+T84	Disease 11311 11350	Вальгусная деформация коленных суставов
+T85	Body_location 11333 11350	коленных суставов
+T86	Treatment 11507 11608	Поливитамины с кальцием (киндер-биовиталь, центрум, кальцинова, мульти-табс) - по 1 мес. 3 раза в год
+T87	Treatment 11610 11674	лечебная физ.культура (ЛФК) длительно, ежедневно, самостоятельно
+T88	Disease 11928 11941	Анизометропия
+T89	Disease 11943 11956	Гиперметропия
+T90	Severity 11960 11975	средней степени
+A39	Degree T90 medium
+R22	Severity_rel Arg1:T90 Arg2:T89	
+T91	Symptom 12082 12103	Избыточная масса тела
+T92	Disease 12139 12178	вальгусная деформация коленных суставов
+T93	Disease 12105 12137	плоско-вальгусная установка стоп
+T94	Body_location 12133 12137	стоп
+R23	Body_location_rel Arg1:T94 Arg2:T93	
+T95	Body_location 12161 12178	коленных суставов
+R24	Body_location_rel Arg1:T95 Arg2:T92	
+T96	Symptom 12180 12196	нарушение осанки
+T97	Treatment 12213 12354	Массаж спины, воротниковой зоны, ЛФК, корригирующая осанку и состав массы тела с большой долей циклических упр-ий умеренной интенсивности №10
+T98	Treatment 12589 12680	Эскулюс композитум по 8 капель 3 раза в день до еды за 15-20 минут до еды в течении 30 дней
+T99	Treatment 12685 12748	Нейромультивит по 1 таб 1 раз утром в течении 30 дней после еды
+T100	Treatment 12753 12830	Глицин по 2 табх 2 раза в сутки день вечер в течении 30 дней до еды, под язык
+T101	Treatment 12835 12895	Капли Зеленина 12-13 капель 3 раза в сутки в течении 30 дней
+T102	Treatment 13008 13151	курс массажа спины, воротниковой зоны, ЛФК, корригирующая осанку и состав массы тела с большой долей циклических упр-ий умеренной интенсивности
+T103	Treatment 13153 13240	В терапии получает соду 2.0гр, блемарен по 1 табх4 раза в сутки, энап по 2,5 мг в сутки
+T104	Drug 13184 13192	блемарен
+T105	Drug 13218 13222	энап
+T106	Drug 12835 12849	Капли Зеленина
+T107	Drug 12685 12699	Нейромультивит
+T108	Drug 12589 12607	Эскулюс композитум
+T109	Body_location 11299 11304	стопы
+R25	Body_location_rel Arg1:T109 Arg2:T82	
+T110	Body_location 4354 4365	ЛЕВАЯ ПОЧКА
+T111	Symptom 4367 4377	измененная
+A40	SType T111 disorder
+R26	Symptom_bdyloc_rel Arg1:T110 Arg2:T111	
+T112	Body_location 4434 4443	Паренхима
+T113	Symptom 4444 4460	дифференцирована
+R27	Symptom_bdyloc_rel Arg1:T112 Arg2:T113	
+T114	Body_location 4551 4561	Мочеточник
+T115	Symptom 4565 4573	расширен
+A41	Negation T115
+A42	SType T115 disorder
+T116	Body_location 4575 4586	ЛЕВАЯ ПОЧКА
+T117	Symptom 4588 4598	измененная
+A43	SType T117 disorder
+R28	Symptom_bdyloc_rel Arg1:T116 Arg2:T117	
+T118	Body_location 4655 4664	Паренхима
+T119	Symptom 4665 4681	дифференцирована
+A44	SType T119 disorder
+T120	Body_location 4772 4782	Мочеточник
+T121	Symptom 4786 4794	расширен
+A45	Negation T121
+A46	SType T121 disorder
+R29	Symptom_bdyloc_rel Arg1:T120 Arg2:T121	
+T122	Disease 4930 4945	нефрокальциноза
+T123	Body_location 6063 6081	Миндалины мозжечка
+T124	Symptom 6083 6109	на уровне линии Чемберлена
+R30	Symptom_bdyloc_rel Arg1:T123 Arg2:T124	
+T125	Body_location 6111 6126	Желудочки мозга
+T126	Symptom 6130 6139	расширены
+A47	Negation T126
+A48	SType T126 disorder
+R31	Symptom_bdyloc_rel Arg1:T125 Arg2:T126	
+T127	Symptom 6144 6157	деформированы
+A49	Negation T127
+A50	SType T127 disorder
+R32	Symptom_bdyloc_rel Arg1:T125 Arg2:T127	
+T128	Body_location 6243 6257	Турецкое седло
+T129	Symptom 6258 6271	обычной формы
+A51	SType T129 normal
+R33	Symptom_bdyloc_rel Arg1:T128 Arg2:T129	
+T130	Body_location 6273 6291	Селлярная цистерна
+T131	Symptom 6292 6301	расширена
+A52	SType T131 disorder
+R34	Symptom_bdyloc_rel Arg1:T130 Arg2:T131	
+T132	Body_location 6401 6417	Воронка гипофиза
+T133	Body_location 6420 6440	зрительный перекрест
+T134	Symptom 6444 6451	смещены
+A53	Negation T134
+A54	SType T134 disorder
+R35	Symptom_bdyloc_rel Arg1:T132 Arg2:T134	
+R36	Symptom_bdyloc_rel Arg1:T133 Arg2:T134	
+T135	Body_location 7083 7097	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T136	Symptom 7099 7109	измененный
+A55	SType T136 disorder
+R37	Symptom_bdyloc_rel Arg1:T135 Arg2:T136	
+T137	Body_location 7186 7206	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T138	Symptom 7208 7218	измененная
+A56	SType T138 disorder
+R38	Symptom_bdyloc_rel Arg1:T137 Arg2:T138	
+T139	Body_location 7330 7336	ПЕЧЕНЬ
+T140	Body_location 7502 7511	СЕЛЕЗЕНКА
+T141	Symptom 7513 7523	нормальная
+R39	Symptom_bdyloc_rel Arg1:T140 Arg2:T141	
+T142	Disease 7755 7795	вторичных изменений поджелудочной железы
+T143	Body_location 7775 7795	поджелудочной железы
+R40	Body_location_rel Arg1:T143 Arg2:T142	
+T144	Disease 7755 7774;7798 7813	вторичных изменений желчного пузыря
+T145	Body_location 7798 7813	желчного пузыря
+R41	Body_location_rel Arg1:T145 Arg2:T144	
+T146	Body_location 8923 8928	АОРТА
+T147	Symptom 8933 8942	расширена
+A57	Negation T147
+A58	SType T147 disorder
+R42	Symptom_bdyloc_rel Arg1:T146 Arg2:T147	
+T148	Body_location 9127 9143	ЛЕГОЧНАЯ АРТЕРИЯ
+T149	Symptom 9148 9157	расширена
+A59	SType T149 disorder
+R43	Symptom_bdyloc_rel Arg1:T148 Arg2:T149	
+T150	Body_location 9514 9530	ЛЕВОЕ ПРЕДСЕРДИЕ
+T151	Symptom 9545 9554	расширено
+A60	Negation T151
+A61	SType T151 disorder
+A62	Negation T149
+R44	Symptom_bdyloc_rel Arg1:T150 Arg2:T151	
+T152	Body_location 9556 9573	ПРАВОЕ ПРЕДСЕРДИЕ
+T153	Symptom 9588 9597	расширено
+A63	Negation T153
+A64	SType T153 disorder
+R45	Symptom_bdyloc_rel Arg1:T152 Arg2:T153	
+T154	Body_location 9637 9653	ПРАВЫЙ ЖЕЛУДОЧЕК
+T155	Symptom 9665 9673	расширен
+A65	Negation T155
+A66	SType T155 disorder
+R46	Symptom_bdyloc_rel Arg1:T154 Arg2:T155	
+T156	Disease 10419 10426	АРИТМИЯ
+T157	Severity 10428 10437	умеренная
+A67	Degree T157 light
+R47	Severity_rel Arg1:T157 Arg2:T156	
+T158	Disease 10470 10510	Неполная блокада правой ножки пучка Гиса
+T159	Disease 10537 10596	Парциальный синдром преждевременного возбуждения желудочков
+T160	Body_location 10586 10596	желудочков
+R48	Body_location_rel Arg1:T160 Arg2:T159	
+T161	Drug 10908 10918	беродуалом
+T162	Drug 11507 11519	Поливитамины
+T163	Drug 11550 11557	центрум
+T164	Drug 11559 11569	кальцинова
+T165	Drug 11571 11582	мульти-табс
+T166	Drug 11424 11437	морской солью
+T167	Drug 12753 12759	Глицин
+A68	SType T91 disorder
+A69	SType T96 disorder
+A70	SType T141 normal
+A71	SType T58 normal
+A72	SType T54 disorder

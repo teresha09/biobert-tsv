@@ -1,0 +1,221 @@
+T1	Disease 21 74	ВПС: множественные дефекты межпредсердной перегородки
+A1	Time T1 now
+T2	Disease 76 107	Состояние после пластики порока
+A2	Time T2 now
+T3	Disease 121 218	Врожденные пороки развития сосудов: коронаро-левожелудочковые фистулы, порто-кавальный анастомоз.
+A3	Time T3 now
+T4	Disease 220 282	Основной ВПС: множественные дефекты межпредсердной перегородки
+A4	Time T4 now
+T5	Disease 284 327	Состояние после пластики порока от 02.2063г
+A5	Time T5 now
+T6	Disease 329 425	Врожденные пороки развития сосудов: коронаро-левожелудочковые фистулы, порто-кавальный анастомоз
+T7	Body_location 192 207	порто-кавальный
+T8	Body_location 157 182	коронаро-левожелудочковые
+T9	Body_location 256 282	межпредсердной перегородки
+T10	Body_location 365 390	коронаро-левожелудочковые
+R1	Body_location_rel Arg1:T10 Arg2:T6	
+R2	Body_location_rel Arg1:T9 Arg2:T4	
+R3	Body_location_rel Arg1:T8 Arg2:T3	
+R4	Body_location_rel Arg1:T7 Arg2:T3	
+T11	Disease 442 473	Дискинезия желчевыводящих путей
+T12	Body_location 453 473	желчевыводящих путей
+R5	Body_location_rel Arg1:T12 Arg2:T11	
+T13	Symptom 533 544	ердцебиений
+A6	SType T13 disorder
+T14	Disease 1241 1265	внутриутробная пневмония
+T15	Disease 1267 1283	обвитие пуповины
+A7	Time T15 before
+A8	Time T14 before
+T16	Disease 1290 1311	синдром угнетения ЦНС
+A9	Time T16 before
+T17	Disease 1317 1326	ДПММ, НТК
+T18	Disease 1733 1770	ВПС дефект межпредсердной перегородки
+A10	Time T18 after
+T19	Disease 1772 1775	НТК
+T20	Severity 1776 1780	+1+2
+R6	Severity_rel Arg1:T20 Arg2:T19	
+T21	Disease 1782 1811	Реконвалесцент в/у пневмонии.
+A11	Time T21 before
+T22	Body_location 2288 2290	ЛЖ
+T23	Body_location 2300 2302	ФВ
+T24	Body_location 2308 2311	МЖП
+T25	Body_location 2336 2338	ПП
+T26	Body_location 2381 2384	МПП
+T27	Body_location 2451 2455	ДМПП
+T28	Disease 2813 2817	ОРВИ
+A12	Time T28 before
+T29	Body_location 3221 3228	миокард
+T30	Body_location 3459 3464	Аорта
+T31	Body_location 3549 3570	правых отделов сердца
+T32	Body_location 3603 3606	МПП
+T33	Symptom 3538 3548	расширение
+T34	Body_location 3702 3713	митрального
+T35	Body_location 3716 3732	трикуспидального
+T36	Symptom 3686 3701	недостаточность
+R7	Symptom_bdyloc_rel Arg1:T34 Arg2:T36	
+R8	Symptom_bdyloc_rel Arg1:T35 Arg2:T36	
+T37	Symptom 3746 3774	Усиление сосудистого рисунка
+T38	Body_location 3775 3781	легких
+R9	Symptom_bdyloc_rel Arg1:T38 Arg2:T37	
+T39	Disease 3783 3809	очаговых и инфильтративных
+T40	Drug 18669 18679	Тромбо АСС
+T41	Drug 18589 18600	Беталок ЗОК
+T42	Drug 18506 18513	Капотен
+T43	Disease 18833 18837	ОРВИ
+A13	Time T43 after
+T44	Body_location 17739 17745	печени
+T45	Drug 17071 17081	Тромбо АСС
+T46	Drug 17043 17053	Верошпирон
+T47	Drug 17005 17016	Беталок ЗОК
+T48	Drug 16966 16973	Капотен
+T49	Body_location 15526 15537	ЛЕВАЯ ПОЧКА
+T50	Body_location 16137 16149	ПРАВАЯ ПОЧКА
+T51	Body_location 16791 16805	МОЧЕВОЙ ПУЗЫРЬ
+T52	Body_location 14960 14980	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T53	Body_location 15147 15156	СЕЛЕЗЕНКА
+T54	Body_location 15298 15305	ЖЕЛУДОК
+T55	Body_location 15342 15358	Д\ПЕРСТНАЯ КИШКА
+T56	Body_location 15395 15404	ЛИМФОУЗЛЫ
+T57	Body_location 15426 15444	СВОБОДНАЯ ЖИДКОСТЬ
+T58	Body_location 14314 14328	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T59	Body_location 14441 14447	ПЕЧЕНЬ
+T60	Body_location 13570 13576	Бронхи
+T61	Symptom 13638 13649	не расширен
+A14	SType T61 disorder
+R10	Symptom_bdyloc_rel Arg1:T60 Arg2:T61	
+T62	Body_location 13715 13721	сердца
+T63	Body_location 13768 13774	Сердце
+T64	Symptom 14232 14245	кардиомегалии
+A15	SType T64 disorder
+T65	Symptom 14247 14267	легочной гипертензии
+T66	Body_location 9922 9928	Сердца
+T67	Body_location 10584 10610	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T68	Body_location 10754 10769	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T69	Symptom 11603 11615	регургитации
+A16	SType T69 disorder
+T70	Body_location 11427 11435	ПЕРИКАРД
+T71	Body_location 11457 11474	НИЖНЯЯ ПОЛАЯ ВЕНА
+T72	Body_location 11302 11324	СИСТОЛИЧЕСКОЕ ДАВЛЕНИЕ
+T73	Body_location 11083 11099	ЛЕВОГО ЖЕЛУДОЧКА
+T74	Symptom 9367 9377	приглушены
+A17	SType T74 disorder
+T75	Body_location 9360 9366	сердца
+R11	Symptom_bdyloc_rel Arg1:T75 Arg2:T74	
+T76	Symptom 9004 9024	везикулярное дыхание
+A18	SType T76 normal
+T77	Symptom 8799 8820	килевидная деформация
+A19	SType T77 disorder
+T78	Body_location 8821 8835	грудной клетки
+R12	Symptom_bdyloc_rel Arg1:T78 Arg2:T77	
+T79	Symptom 8522 8538	гиперемированный
+A20	SType T79 disorder
+T80	Body_location 8511 8520	миндалины
+R13	Symptom_bdyloc_rel Arg1:T80 Arg2:T79	
+T81	Symptom 8465 8476	гипергидроз
+A21	SType T81 disorder
+T82	Body_location 8381 8395	Кожные покровы
+T83	Symptom 8443 8463	повышенная влажность
+A22	SType T83 disorder
+R14	Symptom_bdyloc_rel Arg1:T82 Arg2:T81	
+R15	Symptom_bdyloc_rel Arg1:T82 Arg2:T83	
+T84	Symptom 8357 8370	избыток массы
+A23	SType T84 disorder
+T85	Drug 8073 8080	Капотен
+T86	Drug 8096 8103	Беталок
+T87	Drug 8123 8133	Верошпирон
+T88	Body_location 8149 8158	ТромбоАСС
+T89	Disease 7557 7598	Рецидивирующий аллергический коньюнктивит
+A24	Time T89 now
+T90	Disease 7600 7664	Сенсибилизация к аллергенам пыльцы деревьев, полыни, альтернарии
+A25	Time T90 now
+T91	Disease 7666 7685	Рецидивирующие ОРВИ
+A26	Time T91 before
+T92	Disease 7521 7555	аллергический персистирующий ринит
+T93	Disease 7255 7268	ветряная оспа
+A27	Time T93 before
+T94	Drug 7005 7012	капотен
+T95	Drug 7029 7040	беталок-ЗОК
+T96	Drug 7057 7067	верошпирон
+T97	Drug 7085 7094	тромбоАСС
+T98	Body_location 4353 4355	ЛП
+T99	Body_location 4435 4437	ПЖ
+T100	Body_location 4484 4486	ЛЖ
+T101	Body_location 4585 4587	ЛЖ
+T102	Symptom 4357 4365	увеличен
+T103	Symptom 4438 4446	увеличен
+A28	SType T103 disorder
+T104	Symptom 4497 4505	увеличен
+A29	SType T104 disorder
+T105	Symptom 4588 4596	утолшена
+A30	SType T105 disorder
+T106	Symptom 4463 4478	стенка утолщена
+A31	SType T106 disorder
+R16	Symptom_bdyloc_rel Arg1:T98 Arg2:T102	
+R17	Symptom_bdyloc_rel Arg1:T99 Arg2:T103	
+R18	Symptom_bdyloc_rel Arg1:T99 Arg2:T106	
+R19	Symptom_bdyloc_rel Arg1:T100 Arg2:T104	
+R20	Symptom_bdyloc_rel Arg1:T101 Arg2:T105	
+T107	Symptom 4682 4694	регургитация
+A32	SType T107 disorder
+T108	Body_location 4658 4680	Трикуспидальный клапан
+R21	Symptom_bdyloc_rel Arg1:T108 Arg2:T107	
+T109	Symptom 4786 4796	расширена,
+T110	Symptom 4797 4816	коллабирует на вдох
+T111	Body_location 4767 4784	Нижняя полая вена
+R22	Symptom_bdyloc_rel Arg1:T111 Arg2:T109	
+R23	Symptom_bdyloc_rel Arg1:T111 Arg2:T110	
+T112	Body_location 4959 4961	ЛЖ
+T113	Symptom 4937 4958	Систолическая функция
+R24	Symptom_bdyloc_rel Arg1:T112 Arg2:T113	
+T114	Body_location 5040 5068	атриовентрикулярных клапанов
+T115	Symptom 5024 5039	Недостаточность
+A33	SType T115 disorder
+R25	Symptom_bdyloc_rel Arg1:T114 Arg2:T115	
+T116	Body_location 6316 6349	коронаро-левожелудочковые фистулы
+T117	Symptom 6370 6394	левой коронарных артерий
+T118	Symptom 6361 6367	правой
+R26	Symptom_bdyloc_rel Arg1:T116 Arg2:T118	
+R27	Symptom_bdyloc_rel Arg1:T116 Arg2:T117	
+T119	Symptom 6910 6940	Аномальный портосистемный шунт
+A34	SType T119 disorder
+T120	Symptom 5930 5961	Перфузия миокарда неравномерная
+A35	SType T120 disorder
+T121	Body_location 6134 6152	правого предсердия
+T122	Symptom 6100 6123	миграции водителя ритма
+A36	SType T122 disorder
+R28	Symptom_bdyloc_rel Arg1:T121 Arg2:T122	
+T123	Symptom 5358 5381	миграция водителя ритма
+T124	Symptom 5431 5451	умеренная тахикардия
+A37	SType T124 disorder
+T125	Symptom 5453 5467	легкая аритмия
+A38	SType T125 disorder
+T126	Symptom 5478 5506	гипертрофии левого пресердия
+T127	Symptom 5508 5519	АВ- блокада
+A39	SType T127 disorder
+T128	Symptom 5521 5541	АВ-блокада 1 степени
+A40	SType T128 disorder
+T129	Symptom 5543 5580	гипертрофия миокарда левого желудочка
+A41	SType T129 disorder
+T130	Symptom 5582 5622	неполная блокада правой ножки пучка Гиса
+A42	SType T130 disorder
+T131	Symptom 5624 5666	удлинение электрической систолы желудочков
+T132	Symptom 5706 5741	реполяризации в миокарде желудочков
+A43	SType T132 disorder
+T133	Symptom 5070 5088	Повышение давления
+A44	SType T133 disorder
+T134	Body_location 5099 5116	легочной артерии.
+R29	Symptom_bdyloc_rel Arg1:T134 Arg2:T133	
+T135	Symptom 5128 5146	коронарных артерий
+T136	Body_location 5117 5127	Расширение
+R30	Symptom_bdyloc_rel Arg1:T136 Arg2:T135	
+T137	Body_location 12820 12843	ЖЕЛУДОЧКОВАЯ АКТИВНОСТЬ
+T138	Body_location 12875 12901	НАДЖЕЛУДОЧКОВАЯ АКТИВНОСТЬ
+T139	Body_location 11729 11738	ПРЕДСЕРДИ
+T140	Body_location 11822 11831	ЖЕЛУДОЧКИ
+T141	Treatment 18589 18664	Беталок ЗОК (метопролол) по 25 мг х 2 раза в день в 09.00 и 21.00 длительно
+T142	Treatment 18669 18711	Тромбо АСС 50мг х 1 раз в день после обеда
+T143	Treatment 18505 18583	.Капотен (каптоприл) 12,5 мг х 3 раза в день, в 07.00, 15.00 и 22.00 длительно
+T144	Treatment 17071 17111	Тромбо АСС 50мг 1 раз в день после обеда
+T145	Treatment 17043 17069	Верошпирон 6,25 мг в 18.00
+T146	Treatment 17005 17040	Беталок ЗОК по 25 мг в 09.00 и 21.0
+T147	Treatment 16966 17003	Капотен 12,5мг в 07.00, 15.00 и 22.00

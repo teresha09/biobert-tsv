@@ -1,0 +1,218 @@
+T1	Symptom 23 36	головные боли
+A1	SType T1 disorder
+T2	Symptom 51 83	повышение артериального давления
+A2	SType T2 disorder
+T3	Disease 252 258	коклюш
+T4	Disease 260 265	грипп
+T5	Disease 267 270	ОРЗ
+T6	Disease 442 466	Почечная недостаточность
+T7	Disease 488 513	Хроническая болезнь почек
+T8	Severity 514 523	I степени
+A3	Degree T8 light
+R1	Severity_rel Arg1:T8 Arg2:T7	
+T9	Treatment 535 591	лечение блемарен по 4 таблетки в сутки, сода 5% 40-60 мл
+T10	Symptom 623 655	повышение артериального давления
+T11	Disease 734 752	бронхиальная астма
+T12	Disease 754 773	Аллергический ринит
+T13	Body_location 818 832	кожные покровы
+T14	Symptom 833 847	бледного цвета
+A4	SType T14 disorder
+T15	Symptom 849 855	чистые
+A5	SType T15 normal
+R2	Symptom_bdyloc_rel Arg1:T13 Arg2:T14	
+R3	Symptom_bdyloc_rel Arg1:T13 Arg2:T15	
+T16	Body_location 857 865	В лёгких
+T17	Symptom 866 886	дыхание везикулярное
+T18	Symptom 888 894	хрипов
+A6	Negation T18
+A7	SType T18 disorder
+R4	Symptom_bdyloc_rel Arg1:T16 Arg2:T17	
+R5	Symptom_bdyloc_rel Arg1:T16 Arg2:T18	
+T19	Symptom 927 955	Тоны сердца ясные, ритмичные
+A8	SType T19 normal
+T20	Body_location 957 962	Живот
+T21	Symptom 977 983	мягкий
+T22	Symptom 985 999	безболезненный
+R6	Symptom_bdyloc_rel Arg1:T20 Arg2:T21	
+R7	Symptom_bdyloc_rel Arg1:T20 Arg2:T22	
+T23	Symptom 1023 1029	Отёков
+A9	Negation T23
+A10	SType T23 disorder
+T24	Symptom 1031 1038	дизурии
+A11	SType T24 disorder
+A12	Negation T24
+T25	Body_location 3513 3536	органов брюшной полости
+T26	Body_location 3538 3552	желчный пузырь
+T27	Symptom 3554 3571	размер нормальный
+A13	SType T27 normal
+R8	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+T28	Body_location 3633 3653	Поджелудочная железа
+T29	Body_location 3737 3743	Печень
+T30	Body_location 3914 3923	Селезенка
+T31	Body_location 4026 4033	Желудок
+T32	Body_location 4187 4192	почек
+T33	Body_location 4579 4590	Мочеточники
+T34	Symptom 4594 4603	расширены
+A14	Negation T34
+A15	SType T34 disorder
+T35	Body_location 4605 4617	Надпочечники
+T36	Symptom 4621 4629	изменены
+A16	Negation T36
+T37	Body_location 4632 4646	Мочевой пузырь
+T38	Symptom 4775 4806	повышения эхогенности пирамидок
+A17	SType T38 disorder
+T39	Symptom 4494 4530	эхогенность пирамидок резко повышена
+A18	SType T39 disorder
+T40	Body_location 4844 4861	щитовидной железы
+T41	Body_location 5013 5022	Паренхима
+T42	Symptom 5024 5034	однородная
+R9	Symptom_bdyloc_rel Arg1:T41 Arg2:T42	
+T43	Disease 5374 5381	аритмия
+T44	Severity 5367 5373	лёгкая
+A19	Degree T44 light
+R10	Severity_rel Arg1:T44 Arg2:T43	
+T45	Disease 5392 5420	блокада правой ножки п. Гиса
+T46	Disease 5422 5441	Парциальный синдром
+T47	Disease 5544 5556	регургитация
+A20	Negation T47
+T48	Body_location 5500 5517	Митральный клапан
+R11	Body_location_rel Arg1:T48 Arg2:T47	
+T49	Disease 5631 5643	регургитация
+A21	Negation T49
+T50	Body_location 5599 5616	Аортальный клапан
+R12	Body_location_rel Arg1:T50 Arg2:T49	
+T51	Disease 5713 5725	регургитация
+T52	Body_location 5662 5684	Трикуспидальный клапан
+R13	Body_location_rel Arg1:T52 Arg2:T51	
+T53	Body_location 5742 5758	Легочная артерия
+T54	Symptom 5770 5779	расширена
+A22	Negation T54
+A23	SType T54 disorder
+R14	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	
+T55	Body_location 5871 5887	Левое предсердие
+T56	Symptom 5898 5899	и
+A24	SType T56 disorder
+R15	Symptom_bdyloc_rel Arg1:T55 Arg2:T56	
+T57	Body_location 5904 5921	Правое предсердие
+T58	Symptom 5926 5935	расширено
+R16	Symptom_bdyloc_rel Arg1:T57 Arg2:T58	
+T59	Body_location 5936 5952	Правый желудочек
+T60	Symptom 5957 5965	расширен
+A25	Negation T60
+A26	SType T60 disorder
+A27	Negation T58
+A28	SType T58 disorder
+A29	Negation T56
+T61	Body_location 6109 6139	задней стенки левого желудочка
+T62	Symptom 6152 6160	утолщена
+A30	Negation T62
+A31	SType T62 disorder
+R17	Symptom_bdyloc_rel Arg1:T61 Arg2:T62	
+T63	Body_location 6202 6210	Перикард
+T64	Symptom 6216 6225	изменен  
+A32	Negation T64
+A33	SType T64 disorder
+R18	Symptom_bdyloc_rel Arg1:T63 Arg2:T64	
+T65	Symptom 6226 6244	жидкость в полости
+A34	Negation T65
+A35	SType T65 disorder
+R19	Symptom_bdyloc_rel Arg1:T63 Arg2:T65	
+T66	Disease 6486 6505	аллергический ринит
+T67	Course 6508 6522	вне обострения
+A36	CType T67 improved
+R20	Course_rel Arg1:T67 Arg2:T66	
+T68	Treatment 6540 6551	туалет носа
+T69	Treatment 6553 6605	при обострении- назонекс по 1 ингх1раз до 3-х недель
+T70	Disease 6634 6642	цефалгии
+T71	Disease 6662 6688	Церебрастенический синдром
+T72	Treatment 6705 6729	консультация дефектолога
+T73	Treatment 6731 6781	танакан 0,04 по 1/2тх2раза ( утро, день.)-2 месяца
+T74	Treatment 6783 6822	аминалон ( 0,25) по 1тх2раза - 2 месяца
+T75	Treatment 6824 6859	нейромультивит по 1тх2раза- 1 месяц
+T76	Disease 6986 6997	инфантилизм
+T77	Disease 7287 7300	анизометропия
+T78	Disease 7510 7548	конституционально- экзогенное ожирение
+T79	Severity 7549 7558	I степени
+A37	Degree T79 light
+R21	Severity_rel Arg1:T79 Arg2:T78	
+T80	Treatment 7575 7662	диета гипокалорийная, занятия ЛФК, консультация диетолога, анализ крови на паратгормон.
+T81	Disease 7692 7699	Потница
+T82	Disease 7701 7710	Дисгидроз
+T83	Treatment 7727 7936	ксизал по 1т- 14 дней, лактофильтрум по 1тх3раза в день- 10 дней, на кисти: ванночки с KMnO4  5-7 мин ( вода комнатной температуры, .светло- розовый)№7, крем тридерм на ночь+ крем CuZn утром на тело крем  CuZn
+T84	Treatment 7980 8049	рациональная обувь, ортопедические стельки, ЛФК, корригирующая осанку
+T85	Treatment 8105 8243	лазеротерапия паравертебрально №7, магнитотерапия ( оголовье) №10, жемчужная ванна №10 с хвойным экстрактом, ЭПС №10 ладонных поверхностей
+T86	Disease 8272 8300	Ренальный тубулиарный ацидоз
+T87	Disease 8309 8323	нефрокальциноз
+T88	Disease 8325 8349	Почечная недостаточность
+T89	Disease 8371 8396	Хроническая болезнь почек
+T90	Body_location 8391 8396	почек
+R22	Body_location_rel Arg1:T90 Arg2:T89	
+T91	Severity 8397 8401	1 ст
+A38	Degree T91 light
+R23	Severity_rel Arg1:T91 Arg2:T89	
+T92	Disease 8413 8437	артериальная гипертензия
+T93	Severity 8439 8455	начальная стадия
+A39	Degree T93 light
+R24	Severity_rel Arg1:T93 Arg2:T92	
+T94	Treatment 8473 8533	Продолжить прием блемарена под контролем рН мочи, длительно.
+T95	Treatment 8537 8592	Расширенный питьевой режим не менее 2л жидкости в сутки
+T96	Treatment 8597 8644	ОМЕГА 3 по 2 капсХ2 раза в день сентябрь 2060г.
+T97	Treatment 8648 8701	Натрия гидрокарбонат 5% по 5,0-10,0 мл 3 раза  в день
+T98	Treatment 8706 8758	Контроль биохимии крови, биохимии мочи раз в 3 мес.6
+T99	Treatment 8760 8785	УЗИ почек 1 раз в 6 мес.7
+T100	Treatment 8787 8843	Магне В6 по 1тХ2 раза в день сентябрь - октябрь 2060 год
+T101	Treatment 8884 8939	ЭНАП по 1,25 Х2 раза в день длительно, под контролем АД
+T102	Treatment 9193 9295	Энап 1,25х2раза в день,  блемарен 4 таблетки/ сутки, сода 5% 40 мл в сутки, нейромультивит по 1тх3раза
+T103	Treatment 9310 9358	Продолжить прием блемарена под контролем PH мочи
+T104	Treatment 9371 9423	Натрия гидрокарбонат 5% по 5,0- 10,0мл х3раза в день
+T105	Treatment 9425 9475	Омега 3 по 2 капсх2раза в день, сентябрь 2060 года
+T106	Treatment 9477 9523	Энап по 1,25 х2раза длительно под контролем АД
+T107	Treatment 9525 9581	Магне- В6 по 1тх2раза в день сентябрь- октябрь 2060 года
+T108	Treatment 9583 9657	Танакан 0,04 по 1/2тх2раза в день ( утро, день)-2 месяца сентябрь, октябрь
+T109	Treatment 9659 9716	Аминалон ( 0,25) по 1тх2раза- 2 месяца- сентябрь, октябрь
+T110	Treatment 9718 9753	Нейромультивит по 1тх2раза- 1 месяц
+T111	Treatment 9755 9813	Контроль за общим анализом мочи 1 раз в месяц и после ОРВИ
+T112	Disease 9809 9813	ОРВИ
+T113	Treatment 10043 10099	Расширенный питьевой режим не менее 2 л жидкости в сутки
+T114	Drug 9718 9732	Нейромультивит
+T115	Drug 9659 9667	Аминалон
+T116	Drug 9583 9590	Танакан
+T117	Drug 9525 9534	Магне- В6
+T118	Drug 9477 9481	Энап
+T119	Drug 9425 9432	Омега 3
+T120	Drug 9371 9394	Натрия гидрокарбонат 5%
+T121	Drug 9327 9336	блемарена
+T122	Drug 8884 8888	ЭНАП
+T123	Drug 8490 8499	блемарена
+T124	Drug 8597 8604	ОМЕГА 3
+T125	Drug 8648 8668	Натрия гидрокарбонат
+T126	Drug 8787 8795	Магне В6
+T127	Severity 5383 5391	неполная
+A40	Degree T127 light
+R25	Severity_rel Arg1:T127 Arg2:T45	
+A41	SType T21 normal
+A42	SType T22 normal
+A43	SType T36 disorder
+T128	Disease 426 440	нефрокальциноз
+T129	Disease 1023 1029	Отёков
+T130	Disease 4818 4833	нефрокальциноза
+T131	Disease 7306 7319	гиперметропия
+T132	Severity 7320 7334	слабой степени
+A44	Degree T132 light
+R26	Severity_rel Arg1:T132 Arg2:T131	
+T133	Disease 7340 7353	гиперметропия
+T134	Severity 7354 7369	средней степени
+A45	Degree T134 medium
+R27	Severity_rel Arg1:T134 Arg2:T133	
+T135	Drug 543 551	блемарен
+T136	Drug 6569 6577	назонекс
+T137	Drug 6731 6738	танакан
+T138	Drug 6783 6791	аминалон
+T139	Drug 6824 6838	нейромультивит
+T140	Drug 7727 7733	ксизал
+T141	Drug 7750 7763	лактофильтрум
+T142	Drug 7885 7892	тридерм
+T143	Drug 9155 9163	АНдипала
+T144	Drug 9193 9197	Энап
+T145	Drug 9218 9226	блемарен
+T146	Drug 9269 9283	нейромультивит

@@ -1,0 +1,78 @@
+T1	Disease 19 47	риноконъюнктивальный синдром
+T2	Course 49 57	ремиссия
+A1	CType T2 improved
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 59 78	Аллергический ринит
+T4	Course 102 110	ремиссия
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 112 132	Атопический дерматит
+T6	Course 134 142	ремиссия
+A3	CType T6 improved
+R3	Course_rel Arg1:T6 Arg2:T5	
+T7	Symptom 215 245	риноконъюнктивального синдрома
+A4	SType T7 disorder
+T8	Symptom 396 410	закричал сразу
+A5	SType T8 normal
+T9	Disease 556 564	краснуха
+T10	Disease 566 572	ангины
+T11	Symptom 610 632	атопического дерматита
+A6	SType T11 disorder
+T12	Treatment 649 697	коррекцией рациона, симптоматическими средствами
+A7	Effect T12 positive
+T13	Symptom 749 763	очагов сухости
+A8	SType T13 disorder
+T14	Body_location 766 796	области лучезапястных суставов
+T15	Symptom 840 870	риноконъюнктивального синдрома
+A9	SType T15 disorder
+T16	Treatment 899 934	В терапии антигистаминные препараты
+A10	Effect T16 positive
+T17	Symptom 986 1003	заложенность носа
+A11	SType T17 disorder
+T18	Symptom 1021 1033	покашливание
+A12	SType T18 disorder
+T19	Disease 1052 1073	Лекарственая аллергия
+T20	Drug 1077 1085	синупрет
+T21	Drug 1087 1096	тонзилгон
+T22	Disease 1160 1168	поллиноз
+A13	NotPatient T22
+T23	Symptom 1188 1216	риноконъюнктивальный синдром
+A14	NotPatient T23
+A15	SType T23 disorder
+T24	Body_location 1272 1286	кожные покровы
+T25	Symptom 1287 1301	бледно-розовые
+A16	SType T25 normal
+T26	Symptom 1303 1312	суховатые
+A17	SType T26 disorder
+T27	Body_location 1314 1317	Зев
+T28	Symptom 1322 1341	катаральных явлений
+A18	Negation T28
+T29	Body_location 1343 1351	В легких
+T30	Symptom 1352 1372	дыхание везикулярное
+A19	SType T30 normal
+T31	Symptom 1374 1380	хрипов
+A20	Negation T31
+T32	Symptom 1386 1414	Тоны сердца ясные, ритмичные
+A21	SType T32 normal
+T33	Symptom 1416 1420	Стул
+A22	SType T33 normal
+T34	Symptom 1422 1428	диурез
+A23	SType T34 normal
+T35	Symptom 1442 1462	Менингеальных знаков
+A24	Negation T35
+T36	Disease 215 245	риноконъюнктивального синдрома
+T37	Disease 610 632	атопического дерматита
+R4	Symptom_bdyloc_rel Arg1:T14 Arg2:T13	
+T38	Disease 840 870	риноконъюнктивального синдрома
+T39	Disease 1188 1216	риноконъюнктивальный синдром
+A25	NotPatient T39
+A26	Conditional T39
+R5	Symptom_bdyloc_rel Arg1:T24 Arg2:T25	
+R6	Symptom_bdyloc_rel Arg1:T24 Arg2:T26	
+R7	Symptom_bdyloc_rel Arg1:T27 Arg2:T28	
+R8	Symptom_bdyloc_rel Arg1:T29 Arg2:T30	
+R9	Symptom_bdyloc_rel Arg1:T29 Arg2:T31	
+T40	Severity 80 100	персистирующая форма
+A27	Degree T40 medium
+R10	Severity_rel Arg1:T40 Arg2:T3	
+A28	SType T31 disorder

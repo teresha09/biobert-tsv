@@ -1,0 +1,199 @@
+T1	Treatment 3511 3569	Соблюдение гипоаллергенного стола и элиминационного режима
+T2	Treatment 3574 3623	Туалет носа с физиомером 3 раза в день продолжить
+T3	Treatment 3628 3690	Продолжить СИТ с пыльцевыми аллергенами сублингвально по схеме
+T4	Treatment 3709 3903	Поддерживающая доза аллергена в разведении 1:10  8 капель (0.4 мл) 1 раз в неделю дважды, затем 1 раз в 2 недели дважды, затем 1 раз в три недели до периода цветения (только в периоде ремиссии).
+T5	Treatment 3907 3984	Ксизал (зиртек) по 1 т. 1 раз в день продолжить на время основного курса АСИТ
+T6	Treatment 4065 4140	Креон 10 тыс. по 1к. 3 р/д с едой 2 недели, затем 2 недели перерыв. № курса
+T7	Drug 4065 4070	Креон
+T8	Drug 3907 3913	Ксизал
+T9	Drug 3915 3921	зиртек
+T10	Drug 3639 3667	СИТ с пыльцевыми аллергенами
+T11	Drug 3709 3775	Поддерживающая доза аллергена в разведении 1:10  8 капель (0.4 мл)
+T12	Drug 3588 3598	физиомером
+T13	Body_location 2049 2063	Кожные покровы
+T14	Body_location 2117 2143	Подкожно-жировая клетчатка
+T15	Body_location 2221 2236	Молочные железы
+T16	Body_location 2341 2358	Видимые слизистые
+T17	Body_location 2439 2462	органам брюшной полости
+T18	Treatment 3118 3170	туалет носа с физиомером х 3 р/д, ксизал по 1т 1 р/д
+T19	Treatment 3178 3327	курс АСИТ с пыльцевыми аллергенами (костер, овсяница, ежа, ольха, береза) по классической схеме сублингвальным методом введения до разведения 1:1000.
+T20	Drug 3183 3251	АСИТ с пыльцевыми аллергенами (костер, овсяница, ежа, ольха, береза)
+T21	Drug 3132 3142	физиомером
+T22	Drug 3152 3158	ксизал
+T23	Body_location 2557 2571	Половые органы
+T24	Body_location 2497 2516	Мочеволовая система
+T25	Body_location 2189 2207	абдоминальной зоне
+T26	Body_location 2796 2808	Надпочечники
+T27	Disease 2865 2889	Ювенильная гинекомастия.
+T28	Treatment 2907 2990	Физическая нагрузка не менее 3-х раз в неделю по 1 часу (плавание, велосипед, бег).
+T29	Treatment 2991 3029	Ходить не менее 1-1.5 часов ежедневно.
+T30	Symptom 1957 1980	Телосложение правильное
+A1	SType T30 normal
+T31	Body_location 31 54	органов брюшной полости
+T32	Body_location 56 70	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T33	Body_location 159 179	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T34	Body_location 305 311	ПЕЧЕНЬ
+T35	Body_location 482 491	СЕЛЕЗЁНКА
+T36	Body_location 606 613	ЖЕЛУДОК
+T37	Body_location 647 664	12-ПЕРСТНАЯ КИШКА
+T38	Symptom 721 761	вторичных изменений поджелудочной железы
+A2	SType T38 disorder
+T39	Body_location 741 761	поджелудочной железы
+T40	Symptom 771 797	Вертикальное положение ЭОС
+A3	SType T40 normal
+T41	Symptom 799 822	Миграция водителя ритма
+A4	SType T41 disorder
+T42	Body_location 826 841	синусового узла
+T43	Body_location 844 870	миокард правого предсердия
+T44	Symptom 872 893	умеренная брадикардия
+A5	SType T44 normal
+T45	Symptom 935 976	Неполная блокада правой ножки пучка Гиса.
+A6	SType T45 normal
+T46	Symptom 977 1041	Непостоянное удлинение электрической систолы желудочков на 0.06”
+A7	SType T46 disorder
+T47	Symptom 1043 1081	Признаки нейрогенных влияний на сердце
+A8	SType T47 disorder
+T48	Disease 1626 1660	Аллергический персистирующий ринит
+T49	Treatment 1686 1816	промывать слизистую оболочку полости носа любым солевым раствором (Физиомер, Маример, Аква-марис, Аквалор софт) х 3-4 раза в день.
+T50	Body_location 1696 1727	слизистую оболочку полости носа
+T51	Drug 1753 1761	Физиомер
+T52	Drug 1763 1770	Маример
+T53	Drug 1772 1782	Аква-марис
+T54	Drug 1784 1796	Аквалор софт
+T55	Body_location 1447 1467	Задняя стенка глотки
+T56	Body_location 1543 1559	Слуховые проходы
+T57	Body_location 1580 1582	Mt
+T58	Body_location 1490 1514	AD et AS заушные области
+T59	Body_location 1376 1392	Небные миндалины
+T60	Severity 1393 1402	I степени
+A9	Degree T60 light
+T61	Body_location 1303 1313	Ротоглотка
+T62	Body_location 1315 1358	Слизистая оболочка преддверия и полости рта
+T63	Body_location 1280 1301	в общих носовых ходах
+T64	Body_location 1130 1133	Нос
+T65	Body_location 1141 1155	наружного носа
+T66	Body_location 1183 1186	нос
+T67	Body_location 1202 1233	Слизистая оболочка полости носа
+T68	Symptom 71 81	нормальный
+A10	SType T68 normal
+T69	Symptom 83 157	размер не увеличен, форма правильная, стенки не изменены, просвет свободен
+A11	SType T69 normal
+T70	Symptom 180 283	изменённая: размер выше среднего (16х10х16мм), эхогенность паренхимы повышена, уплотнены стенки сосудов
+A12	SType T70 disorder
+T71	Symptom 285 303	проток не расширен
+A13	SType T71 normal
+T72	Symptom 313 429	размер средний (ЛД = 60мм, 1-й сегмент = 17мм, ПД = 137мм), контур ровный, паренхима однородная, средней эхогенности
+A14	SType T72 normal
+T73	Body_location 431 444	воротная вена
+T74	Body_location 453 468	печёночные вены
+T75	Symptom 472 480	изменены
+A15	Negation T75
+T76	Symptom 492 572	нормальная: размер средний (111х53мм), паренхима однородная, средней эхогенности
+A16	SType T76 normal
+T77	Body_location 574 591	селезёночная вена
+T78	Symptom 595 604	расширена
+A17	Negation T78
+T79	Symptom 615 645	секрет есть, стенки нормальные
+A18	SType T79 normal
+T80	Symptom 666 696	секрета нет, стенки нормальные
+A19	SType T80 normal
+T81	Symptom 1169 1200	Дыхание через нос не затруднено
+T82	Symptom 1259 1279	Слизистое отделяемое
+A21	SType T82 disorder
+T83	Symptom 1359 1374	розовая, чистая
+A22	SType T83 normal
+T84	Symptom 1408 1435	патологического содержимого
+A23	Negation T84
+T85	Body_location 1438 1445	лакунах
+T86	Symptom 1468 1483	розовая, чистая
+A24	SType T86 normal
+T87	Symptom 1518 1526	изменены
+A25	Negation T87
+T88	Symptom 1528 1541	безболезненны
+A26	SType T88 normal
+T89	Symptom 1560 1578	широкие, свободные
+A27	SType T89 normal
+T90	Symptom 1583 1612	бледного цвета, контурируются
+A28	SType T90 normal
+T91	Symptom 1234 1241	розовая
+A29	SType T91 normal
+T92	Symptom 1243 1257	немного отечна
+A30	SType T92 disorder
+T93	Symptom 1159 1167	изменена
+A31	Negation T93
+T94	Symptom 1135 1155	Форма наружного носа
+A32	SType T94 normal
+T95	Body_location 2674 2691	Щитовидная железа
+T96	Symptom 2695 2704	увеличена
+A33	Negation T96
+T97	Symptom 2717 2761	пальпируется мягко-эластической консистенции
+A34	SType T97 normal
+T98	Symptom 2785 2794	эутиреоза
+A35	SType T98 disorder
+T99	Symptom 2531 2555	мочеиспускание свободное
+A36	SType T99 normal
+T100	Symptom 2518 2525	дизурии
+A37	Negation T100
+T101	Symptom 2603 2612	правильно
+A38	SType T101 normal
+T102	Symptom 2152 2207	избыточно, распределена с акцентом в абдоминальной зоне
+A39	SType T102 disorder
+T103	Symptom 2237 2339	увеличены, преимущественно за счёт жировой ткани, слева пальпируется желкзистая ткань объёмом до 10 мл
+A40	SType T103 disorder
+T104	Symptom 2359 2383	розовые, влажные, чистые
+A41	SType T104 normal
+T105	Symptom 2463 2480	без особенностей.
+A42	SType T105 normal
+T106	Symptom 2385 2435	Сердечно-легочная деятельность удовлетворительная.
+A43	SType T106 normal
+T107	Symptom 2481 2495	Стул регулярно
+A44	SType T107 normal
+T108	Disease 906 913	аритмия
+T109	Severity 895 905	выраженная
+A45	Degree T109 hard
+R1	Severity_rel Arg1:T109 Arg2:T108	
+T110	Disease 2209 2215	Отеков
+A46	Negation T110
+T111	Disease 882 893	брадикардия
+T112	Severity 872 881	умеренная
+A47	Degree T112 medium
+R2	Severity_rel Arg1:T112 Arg2:T111	
+T113	Disease 721 761	вторичных изменений поджелудочной железы
+R3	Body_location_rel Arg1:T39 Arg2:T113	
+T114	Disease 944 975	блокада правой ножки пучка Гиса
+T115	Body_location 952 975	правой ножки пучка Гиса
+R4	Body_location_rel Arg1:T115 Arg2:T114	
+R5	Symptom_bdyloc_rel Arg1:T32 Arg2:T68	
+R6	Symptom_bdyloc_rel Arg1:T32 Arg2:T69	
+R7	Symptom_bdyloc_rel Arg1:T33 Arg2:T70	
+R8	Symptom_bdyloc_rel Arg1:T33 Arg2:T71	
+R9	Symptom_bdyloc_rel Arg1:T34 Arg2:T72	
+R10	Symptom_bdyloc_rel Arg1:T74 Arg2:T75	
+R11	Symptom_bdyloc_rel Arg1:T35 Arg2:T76	
+R12	Symptom_bdyloc_rel Arg1:T77 Arg2:T78	
+R13	Symptom_bdyloc_rel Arg1:T36 Arg2:T79	
+R14	Symptom_bdyloc_rel Arg1:T37 Arg2:T80	
+R15	Symptom_bdyloc_rel Arg1:T65 Arg2:T94	
+R16	Symptom_bdyloc_rel Arg1:T65 Arg2:T93	
+A20	SType T81 normal
+R17	Symptom_bdyloc_rel Arg1:T67 Arg2:T91	
+R18	Symptom_bdyloc_rel Arg1:T67 Arg2:T92	
+R19	Symptom_bdyloc_rel Arg1:T63 Arg2:T82	
+R20	Symptom_bdyloc_rel Arg1:T62 Arg2:T83	
+R21	Symptom_bdyloc_rel Arg1:T61 Arg2:T83	
+R22	Symptom_bdyloc_rel Arg1:T59 Arg2:T84	
+R23	Symptom_bdyloc_rel Arg1:T85 Arg2:T84	
+R24	Symptom_bdyloc_rel Arg1:T55 Arg2:T86	
+R25	Symptom_bdyloc_rel Arg1:T58 Arg2:T87	
+R26	Symptom_bdyloc_rel Arg1:T58 Arg2:T88	
+R27	Symptom_bdyloc_rel Arg1:T56 Arg2:T89	
+R28	Symptom_bdyloc_rel Arg1:T57 Arg2:T90	
+R29	Symptom_bdyloc_rel Arg1:T14 Arg2:T102	
+R30	Symptom_bdyloc_rel Arg1:T15 Arg2:T103	
+R31	Symptom_bdyloc_rel Arg1:T16 Arg2:T104	
+R32	Symptom_bdyloc_rel Arg1:T17 Arg2:T105	
+R33	Symptom_bdyloc_rel Arg1:T24 Arg2:T100	
+R34	Symptom_bdyloc_rel Arg1:T24 Arg2:T99	
+R35	Symptom_bdyloc_rel Arg1:T23 Arg2:T101	
+R36	Symptom_bdyloc_rel Arg1:T95 Arg2:T96	
+R37	Symptom_bdyloc_rel Arg1:T95 Arg2:T97	

@@ -1,0 +1,119 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 77	легкое персистирующее течение
+A1	Degree T2 light
+T3	Course 79 87	ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 129 157	риноконъюнктивальный синдром
+T5	Course 159 167	ремиссия
+A3	CType T5 improved
+R3	Course_rel Arg1:T5 Arg2:T4	
+T6	Disease 169 204	Аллергический ринит, персистирующий
+T7	Disease 206 244	Хронический компенсированный тонзиллит
+T8	Disease 444 454	нефропатии
+T9	Symptom 457 474	угрозы прерывания
+T10	Disease 708 724	пищевой аллергии
+T11	Body_location 794 798	кожа
+T12	Disease 828 852	инфекционный мононуклеоз
+T13	Disease 904 907	ОРИ
+T14	Symptom 910 933	малопродуктивным кашлем
+T15	Disease 950 960	аденоидиты
+T16	Disease 978 1000	двустороннюю пневмонию
+T17	Disease 1048 1051	ОРИ
+T18	Symptom 1063 1083	эпизоды сухого кашля
+T19	Treatment 1098 1122	бронхолитином, аскорилом
+A5	Effect T19 positive
+T20	Drug 1098 1111	бронхолитином
+T21	Drug 1113 1122	аскорилом
+T22	Treatment 1124 1161	Получал курсами ингаляционные кромоны
+A6	Effect T22 no-effect
+T23	Symptom 1246 1276	риноконъюнктивального синдрома
+T24	Treatment 1286 1311	антигистаминные препараты
+A7	Effect T24 positive
+T25	Treatment 1313 1328	местные кромоны
+A8	Effect T25 positive
+T26	Symptom 1412 1435	бронхиальной обструкции
+A9	SType T26 disorder
+T27	Disease 1513 1550	Бронхиальная астма, атопическая форма
+T28	Severity 1552 1583	лёгкое интермиттирующее течение
+A10	Degree T28 light
+T29	Course 1585 1593	ремиссия
+A11	CType T29 improved
+R4	Severity_rel Arg1:T28 Arg2:T27	
+R5	Course_rel Arg1:T29 Arg2:T27	
+T30	Disease 1605 1632	сезонная бронхиальная астма
+T31	Disease 1634 1662	риноконъюнктивальный синдром
+T32	Course 1664 1672	ремиссия
+A12	CType T32 improved
+R6	Course_rel Arg1:T32 Arg2:T31	
+R7	Course_rel Arg1:T32 Arg2:T30	
+T33	Disease 1674 1693	Аллергический ринит
+T34	Treatment 1696 1786	Проведено два курса АСИТ с пыльцевыми аллергенами деревьев сублингвальным методом введения
+A13	Effect T34 positive
+T35	Disease 1817 1826	поллиноза
+T36	Symptom 1859 1865	ринита
+A15	SType T36 disorder
+T37	Treatment 1896 1927	получал антигистамнный препарат
+A14	Effect T37 positive
+T38	Drug 1904 1927	антигистамнный препарат
+T39	Disease 2057 2060	ОРИ
+T40	Symptom 2063 2086	малопродуктивным кашлем
+A16	SType T40 disorder
+T41	Treatment 2112 2147	применении симптоматической терапии
+A17	Effect T41 positive
+T42	Symptom 2159 2178	затруднения дыхания
+A18	Negation T42
+T43	Disease 2264 2282	бронхиальная астма
+A19	NotPatient T43
+T44	Disease 2298 2316	бронхиальная астма
+A20	NotPatient T44
+T45	Disease 2332 2351	аллергический ринит
+A21	NotPatient T45
+T46	Body_location 2401 2415	Кожные покровы
+T47	Symptom 2416 2422	чистые
+A22	SType T47 normal
+T48	Body_location 2424 2427	Зев
+T49	Symptom 2428 2435	спокоен
+A23	SType T49 normal
+T50	Symptom 2437 2462	Носовое дыхание свободное
+A24	SType T50 normal
+T51	Symptom 2464 2473	выделений
+A25	Negation T51
+T52	Symptom 2488 2508	дыхание везикулярное
+A26	SType T52 normal
+T53	Body_location 2479 2487	В лёгких
+T54	Symptom 2510 2516	хрипов
+A27	Negation T54
+T55	Body_location 2557 2562	Живот
+T56	Symptom 2587 2591	Стул
+A28	SType T56 normal
+T57	Symptom 2617 2623	Диурез
+A29	Negation T57
+T58	Symptom 2636 2656	Менингеальных знаков
+A30	Negation T58
+T59	Symptom 2563 2569	мягкий
+A31	SType T59 normal
+T60	Symptom 2571 2585	безболезненный
+A32	Negation T60
+T61	Symptom 2522 2555	Сердечные тоны громкие, ритмичные
+A33	SType T61 normal
+T62	Treatment 350 370	третьего курса АСИТ.
+T63	Disease 90 98	Поллиноз
+T64	Disease 100 127	сезонная бронхиальная астма
+R8	Course_rel Arg1:T5 Arg2:T64	
+R9	Course_rel Arg1:T5 Arg2:T63	
+A34	NotPatient T9
+A35	NotPatient T8
+R10	Symptom_bdyloc_rel Arg1:T46 Arg2:T47	
+R11	Symptom_bdyloc_rel Arg1:T53 Arg2:T52	
+R12	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	
+R13	Symptom_bdyloc_rel Arg1:T55 Arg2:T59	
+T65	Disease 1859 1865	ринита
+A4	SType T9 disorder
+A36	SType T14 disorder
+A37	SType T18 disorder
+A38	SType T23 disorder
+A39	SType T42 disorder
+A40	SType T54 normal
+T66	Drug 1723 1754	пыльцевыми аллергенами деревьев

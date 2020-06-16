@@ -1,0 +1,76 @@
+T1	Disease 9 59	Круглогодичный аллергический ринит, персистирующий
+T2	Severity 61 75	легкое течение
+A1	Degree T2 light
+T3	Disease 77 85	Аденоиды
+T4	Severity 86 90	2 ст
+A2	Degree T4 medium
+T5	Disease 92 113	Катаральный аденоидит
+T6	Disease 115 142	Гипертрофия небных миндалин
+T7	Severity 143 147	2 ст
+A3	Degree T7 medium
+T8	Disease 149 180	Дискинезия желчевыводящих путей
+T9	Body_location 160 180	желчевыводящих путей
+T10	Body_location 127 142	небных миндалин
+T12	Symptom 250 273	малопродуктивного кашля
+A4	SType T12 disorder
+T13	Symptom 275 291	заложенность нос
+A5	SType T13 disorder
+T14	Symptom 632 662	сухого малопродуктивного кашля
+A6	SType T14 disorder
+T15	Treatment 664 717	В терапии симптоматические средства – геделикс и т.п.
+A7	Effect T15 no-effect
+T16	Drug 702 710	геделикс
+T17	Treatment 731 751	При приеме кларитина
+A8	Effect T17 positive
+T18	Drug 742 751	кларитина
+T19	Disease 846 849	ОРИ
+T20	Symptom 868 902	длительным малопродуктивным кашлем
+A9	SType T20 normal
+T21	Disease 939 958	контактный дерматит
+A10	NotPatient T21
+T22	Symptom 983 1011	риноконъюнктивальный синдром
+A11	NotPatient T22
+A12	SType T22 disorder
+T23	Body_location 1102 1116	Кожные покровы
+T24	Symptom 1141 1152	Зев спокоен
+A13	SType T24 normal
+T25	Symptom 1154 1190	Носовое дыхание несколько затруднено
+A14	SType T25 disorder
+T26	Symptom 1201 1221	дыхание везикулярное
+A15	SType T26 normal
+T27	Symptom 1223 1229	хрипов
+A16	Negation T27
+T28	Body_location 1192 1200	В лёгких
+T29	Symptom 1235 1268	Сердечные тоны звучные, ритмичные
+A17	SType T29 normal
+T30	Body_location 1270 1275	Живот
+T31	Symptom 1276 1282	мягкий
+A18	SType T31 normal
+T32	Symptom 1298 1312	безболезненный
+A19	SType T32 normal
+T33	Symptom 1365 1372	дизурии
+A20	Negation T33
+T34	Symptom 1117 1131	бледно-розовые
+A21	SType T34 normal
+T35	Symptom 1133 1139	чистые
+A22	SType T35 normal
+T36	Symptom 1378 1406	Стул регулярный, оформленный
+A23	SType T36 normal
+T37	Symptom 1408 1428	Менингеальных знаков
+A24	Negation T37
+R1	Body_location_rel Arg1:T9 Arg2:T8	
+R2	Body_location_rel Arg1:T10 Arg2:T6	
+R3	Severity_rel Arg1:T7 Arg2:T6	
+R5	Severity_rel Arg1:T4 Arg2:T3	
+R6	Severity_rel Arg1:T2 Arg2:T1	
+T11	Disease 983 1011	риноконъюнктивальный синдром
+A25	NotPatient T11
+R4	Symptom_bdyloc_rel Arg1:T23 Arg2:T34	
+R7	Symptom_bdyloc_rel Arg1:T23 Arg2:T35	
+T38	Body_location 1141 1144	Зев
+R8	Symptom_bdyloc_rel Arg1:T38 Arg2:T24	
+R9	Symptom_bdyloc_rel Arg1:T28 Arg2:T26	
+R10	Symptom_bdyloc_rel Arg1:T28 Arg2:T27	
+R11	Symptom_bdyloc_rel Arg1:T30 Arg2:T31	
+R12	Symptom_bdyloc_rel Arg1:T30 Arg2:T32	
+A26	SType T27 disorder

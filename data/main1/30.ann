@@ -1,0 +1,139 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 56 70	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T3	Body_location 151 171	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T4	Body_location 259 268	СЕЛЕЗЕНКА
+T5	Body_location 310 316	ПЕЧЕНЬ
+T6	Body_location 392 399	ЖЕЛУДОК
+T7	Body_location 415 432	12-ПЕРСТНАЯ КИШКА
+T8	Body_location 550 553	ППН
+T9	Symptom 318 390	размер – ЛД – 68 мм,1й сегмент19 мм, ПД –125 мм; паренхима -  однородная
+A1	SType T9 normal
+T10	Symptom 402 413	секрет есть
+T11	Symptom 433 444	секрет есть
+A2	SType T11 disorder
+A3	SType T10 disorder
+T12	Symptom 446 459	стенки тонкие
+A4	SType T12 normal
+T13	Symptom 72 88	размер – средний
+A5	SType T13 normal
+T14	Symptom 110 149	форма – правильная; просвет - свободный
+A6	SType T14 normal
+T15	Symptom 172 203	увеличена: размер – 16х12х17 мм
+A7	SType T15 disorder
+T16	Symptom 205 257	паренхима – эхогенность резко повышена, неоднородная
+A8	SType T16 disorder
+T17	Symptom 567 591	отека слизистой оболочки
+A9	SType T17 disorder
+T18	Symptom 476 499	признаки гастродуодента
+A10	SType T18 disorder
+T19	Symptom 501 541	вторичных изменений поджелудочной железы
+A11	SType T19 disorder
+T20	Body_location 521 541	поджелудочной железы
+T21	Disease 630 649	Аллергический ринит
+T22	Severity 651 665	персистирующий
+A12	Degree T22 medium
+T23	Course 667 684	подострое течение
+A13	CType T23 worsened
+R1	Severity_rel Arg1:T22 Arg2:T21	
+R2	Course_rel Arg1:T23 Arg2:T21	
+T24	Disease 686 762	Искривление носовой перегородки (с частичным нарушением дыхательной функции)
+T25	Body_location 698 717	носовой перегородки
+R3	Body_location_rel Arg1:T25 Arg2:T24	
+T26	Disease 764 785	Хронический тонзиллит
+T27	Symptom 820 844	нормальное положение ЭОС
+A14	SType T27 normal
+T28	Body_location 899 926	миокарду правого предсердия
+T29	Symptom 928 968	синдром ранней реполяризации желудочков.
+A15	SType T29 disorder
+T30	Body_location 957 967	желудочков
+T31	Symptom 969 1032	Некоторые нарушения процесса метаболизма в миокарде желудочков.
+A16	SType T31 disorder
+T32	Body_location 1012 1031	миокарде желудочков
+T33	Disease 1068 1095	Хронический гастродуоденит.
+T34	Disease 1096 1123	Дисфункция желчного пузыря.
+T35	Disease 1124 1164	Вторичные изменения поджелудочной железы
+T36	Body_location 1144 1164	поджелудочной железы
+T37	Body_location 1107 1122	желчного пузыря
+R4	Body_location_rel Arg1:T37 Arg2:T34	
+T38	Symptom 1227 1260	Очагово-инфильтративных изменений
+A17	Negation T38
+A18	SType T38 disorder
+R5	Body_location_rel Arg1:T36 Arg2:T35	
+T39	Body_location 1292 1311	прикорневых отделах
+T40	Body_location 1361 1373	Корни легких
+T41	Body_location 1386 1392	Сердце
+T42	Body_location 1423 1439	Куполы диафрагмы
+T43	Symptom 1440 1446	ровные
+A19	SType T43 normal
+T44	Symptom 1393 1421	обычных размеров, ротировано
+A20	SType T44 normal
+T45	Symptom 1448 1454	четкие
+A21	SType T45 normal
+T46	Body_location 1456 1462	синусы
+T47	Symptom 1463 1479	дифференцируются
+A22	SType T47 normal
+T48	Symptom 1266 1358	Легочный рисунок сгущен в прикорневых отделах, обеднение по периферии сосудистого компонента
+A23	SType T48 disorder
+T49	Drug 1546 1555	симбикорт
+T50	Treatment 1617 1699	симбикорт 80/4,5 мкг; вентолин; маример; фликсоназе; холензим; омепразол; мотилиум
+T51	Drug 1617 1626	симбикорт
+T52	Drug 1639 1647	вентолин
+T53	Drug 1649 1656	маример
+T54	Drug 1658 1668	фликсоназе
+T55	Drug 1670 1678	холензим
+T56	Drug 1680 1689	омепразол
+T57	Drug 1691 1699	мотилиум
+T58	Symptom 90 108	стенки – уплотнены
+A24	SType T58 disorder
+T59	Symptom 270 308	размер 95х45 мм; паренхима не изменена
+A25	SType T59 normal
+T60	Treatment 1823 1879	Соблюдение гипоаллергенной диеты, элиминационного режима
+T61	Treatment 1946 1981	Симбикорт 160/4,5 мкг 2 раза в день
+T62	Symptom 1990 2017	приступе бронхиальной астмы
+A26	SType T62 disorder
+T63	Symptom 2022 2039	кашлевом синдроме
+A27	SType T63 disorder
+T64	Disease 2049 2052	ОРИ
+T65	Treatment 2054 2102	вентолин по 1 инг. через спейсер до 4 раз в день
+T66	Drug 2054 2062	вентолин
+T67	Treatment 2122 2226	через небулайзер: лазолван 0,5 мл + беродуал 10 капель + пульмикорт 500 мкг 2-3 раза в день на 3-5 дней.
+T68	Drug 2140 2148	лазолван
+T69	Drug 2158 2166	беродуал
+T70	Drug 2179 2189	пульмикорт
+T71	Treatment 2230 2276	Туалет носа с маример 3 раза в день продолжить
+T72	Treatment 2281 2330	Назонекс 1 инст. 1 раз в день продолжить 2 недели
+T73	Treatment 2335 2402	Креон по 1к. х 3 раза в день во время еды 2 недели месяца (3 курса)
+T74	Treatment 2407 2477	Холензим по 1т. х 3 раза в день во время еды 2 недели месяца (3 курса)
+T75	Drug 2407 2415	Холензим
+T76	Drug 2335 2340	Креон
+T77	Drug 2281 2289	Назонекс
+T78	Drug 2244 2251	маример
+T79	Disease 567 572	отека
+T80	Body_location 573 591	слизистой оболочки
+R6	Body_location_rel Arg1:T80 Arg2:T79	
+T81	Disease 856 863	аритмия
+T82	Severity 846 855	Умеренная
+A28	Degree T82 medium
+R7	Severity_rel Arg1:T82 Arg2:T81	
+T83	Disease 928 967	синдром ранней реполяризации желудочков
+R8	Body_location_rel Arg1:T30 Arg2:T83	
+T84	Disease 2022 2039	кашлевом синдроме
+T85	Disease 1999 2017	бронхиальной астмы
+T86	Drug 2609 2621	омализумабом
+T87	Treatment 2601 2621	терапии омализумабом
+R9	Symptom_bdyloc_rel Arg1:T2 Arg2:T13	
+R10	Symptom_bdyloc_rel Arg1:T2 Arg2:T58	
+R11	Symptom_bdyloc_rel Arg1:T2 Arg2:T14	
+R12	Symptom_bdyloc_rel Arg1:T3 Arg2:T15	
+R13	Symptom_bdyloc_rel Arg1:T3 Arg2:T16	
+R14	Symptom_bdyloc_rel Arg1:T4 Arg2:T59	
+R15	Symptom_bdyloc_rel Arg1:T5 Arg2:T9	
+R16	Symptom_bdyloc_rel Arg1:T6 Arg2:T10	
+R17	Symptom_bdyloc_rel Arg1:T7 Arg2:T11	
+R18	Symptom_bdyloc_rel Arg1:T7 Arg2:T12	
+T88	Symptom 1374 1384	структурны
+R19	Symptom_bdyloc_rel Arg1:T40 Arg2:T88	
+R20	Symptom_bdyloc_rel Arg1:T41 Arg2:T44	
+R21	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R22	Symptom_bdyloc_rel Arg1:T42 Arg2:T45	
+R23	Symptom_bdyloc_rel Arg1:T46 Arg2:T47	

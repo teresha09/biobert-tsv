@@ -1,0 +1,94 @@
+T1	Disease 9 53	Атопический дерматит, распространенная форма
+T2	Severity 55 76	среднетяжелое течение
+A1	Degree T2 medium
+T3	Course 78 88	обострение
+A2	CType T3 worsened
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Symptom 100 128	риноконъюнктивальный синдром
+A3	SType T4 disorder
+T5	Course 130 138	ремиссия
+A4	CType T5 improved
+T6	Disease 90 98	Поллиноз
+R3	Course_rel Arg1:T5 Arg2:T6	
+T7	Disease 140 159	Аллергический ринит
+T8	Course 177 191	вне обострения
+A5	CType T8 improved
+R4	Course_rel Arg1:T8 Arg2:T7	
+T9	Disease 193 233	Вторичные изменения поджелудочной железы
+T10	Body_location 213 233	поджелудочной железы
+T11	Disease 235 251	Пищевая аллергия
+T12	Symptom 314 323	высыпания
+A6	SType T12 disorder
+T13	Body_location 324 331	на коже
+T14	Symptom 333 361	затруднение носового дыхания
+T15	Symptom 363 369	кашель
+A7	SType T15 disorder
+T16	Symptom 442 460	угрозой прерывания
+A8	SType T16 disorder
+T17	Symptom 636 658	атопического дерматита
+A9	SType T17 disorder
+T18	Treatment 672 706	Постоянно получает местную терапию
+T19	Symptom 772 778	ринита
+A10	SType T19 disorder
+T20	Symptom 781 794	конъюнктивита
+A11	SType T20 disorder
+T21	Treatment 797 834	При приеме антигистаминных препаратов
+A12	Effect T21 positive
+T22	Body_location 905 924	на фалангах пальцев
+T23	Disease 978 986	поллиноз
+T24	Disease 1050 1066	Пищевая аллергия
+T25	Symptom 1104 1113	высыпаний
+A13	SType T25 disorder
+T26	Body_location 1233 1263	На кончиках пальцев кистей рук
+T27	Symptom 1275 1284	шелушение
+A14	SType T27 disorder
+T28	Symptom 1286 1297	лихенизация
+A15	SType T28 disorder
+T29	Symptom 1299 1315	единичные папулы
+A16	SType T29 disorder
+T30	Symptom 1328 1342	ониходистрофия
+A17	SType T30 disorder
+T31	Body_location 1344 1370	Видимые слизистые оболочки
+T32	Symptom 1371 1386	розовые, чистые
+A18	SType T32 disorder
+T33	Symptom 1388 1399	Зев спокоен
+A19	SType T33 normal
+T34	Symptom 1401 1430	Носовое дыхание не затруднено
+A20	SType T34 normal
+T35	Body_location 1432 1440	В лёгких
+T36	Symptom 1441 1461	дыхание везикулярное
+A21	SType T36 normal
+T37	Symptom 1463 1469	хрипов
+A22	Negation T37
+T38	Symptom 1526 1557	Сердечные тоны ясные, ритмичные
+A23	SType T38 normal
+T39	Body_location 1488 1502	Область сердца
+T40	Symptom 1574 1589	Стул регулярный
+A24	SType T40 normal
+T41	Symptom 1591 1598	Дизурии
+A25	Negation T41
+T42	Symptom 1604 1624	Менингеальных знаков
+A26	Negation T42
+R5	Body_location_rel Arg1:T10 Arg2:T9	
+T43	Disease 100 128	риноконъюнктивальный синдром
+R6	Symptom_bdyloc_rel Arg1:T13 Arg2:T12	
+A27	SType T14 disorder
+T44	Disease 636 658	атопического дерматита
+T45	Disease 772 778	ринита
+T46	Disease 781 794	конъюнктивита
+A28	NotPatient T23
+A29	Conditional T24
+R7	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+R8	Symptom_bdyloc_rel Arg1:T26 Arg2:T28	
+R9	Symptom_bdyloc_rel Arg1:T26 Arg2:T29	
+R10	Symptom_bdyloc_rel Arg1:T31 Arg2:T32	
+R11	Symptom_bdyloc_rel Arg1:T35 Arg2:T36	
+R12	Symptom_bdyloc_rel Arg1:T35 Arg2:T37	
+T47	Symptom 1516 1524	изменена
+A30	SType T47 normal
+A31	Negation T47
+R13	Symptom_bdyloc_rel Arg1:T39 Arg2:T47	
+T48	Severity 161 175	персистирующий
+A32	Degree T48 medium
+R14	Severity_rel Arg1:T48 Arg2:T7	

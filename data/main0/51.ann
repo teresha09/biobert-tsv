@@ -1,0 +1,95 @@
+T1	Disease 9 40	Бронхиальная астма, атопическая
+T2	Severity 42 78	среднетяжелое персистирующее течение
+A1	Degree T2 medium
+T3	Course 80 90	обострение
+A2	CType T3 worsened
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T5	Disease 148 186	Хронический компенсированный тонзиллит
+T6	Symptom 249 272	малопродуктивный кашель
+A3	SType T6 disorder
+T7	Symptom 274 301	эпизоды затруднения дыхания
+A4	SType T7 disorder
+T8	Symptom 331 359	заложенность носа постоянно.
+A5	SType T8 disorder
+T9	Disease 660 668	краснуха
+T10	Disease 670 673	ОРИ
+T11	Disease 675 681	ангины
+T12	Symptom 715 742	приступ затруднения дыхания
+A6	SType T12 disorder
+T13	Disease 759 762	ОРИ
+T14	Disease 780 798	бронхиальная астма
+T15	Treatment 800 819	В терапии кетотифен
+A7	Effect T15 no-effect
+T16	Drug 810 819	кетотифен
+T17	Treatment 855 870	в терапии интал
+A8	Effect T17 positive
+T18	Drug 865 870	интал
+T19	Treatment 923 962	получал только симптоматическое лечение
+T20	Disease 1050 1068	Бронхиальная астма
+T21	Severity 1070 1091	среднетяжелое течение
+A9	Degree T21 medium
+R3	Severity_rel Arg1:T21 Arg2:T20	
+T22	Disease 1092 1126	круглогодичный аллергический ринит
+T23	Disease 1128 1132	ДЖВП
+T24	Treatment 1135 1182	В терапии вентолин, пульмикорт через небулайзер
+A10	Effect T24 positive
+T25	Drug 1145 1153	вентолин
+T26	Drug 1155 1165	пульмикорт
+T27	Treatment 1205 1226	получал 2 мес. тайлед
+T28	Drug 1220 1226	тайлед
+T29	Treatment 1241 1269	получал фликсотид, симбикорт
+T30	Drug 1249 1258	фликсотид
+T31	Drug 1260 1269	симбикорт
+T32	Symptom 1308 1325	заложенность носа
+A11	SType T32 disorder
+T33	Symptom 1330 1352	Обострения заболевания
+A12	SType T33 disorder
+T34	Symptom 1437 1467	Приступы затрудненного дыхания
+A13	SType T34 disorder
+T35	Symptom 1575 1605	приступы затрудненного дыхания
+A14	SType T35 disorder
+T36	Treatment 1636 1657	купируются вентолином
+A15	Effect T36 positive
+T37	Drug 1647 1657	вентолином
+T38	Disease 1686 1694	поллиноз
+A16	NotPatient T38
+T39	Disease 1703 1715	отеки Квинке
+A17	NotPatient T39
+T40	Body_location 1765 1779	Кожные покровы
+T41	Symptom 1780 1786	с акне
+A18	SType T41 disorder
+T42	Symptom 1788 1802	бледно-розовые
+A19	SType T42 normal
+T43	Symptom 1804 1814	Зев рыхлый
+A20	SType T43 disorder
+T44	Symptom 1816 1842	Носовое дыхание затруднено
+A21	SType T44 disorder
+T45	Body_location 1844 1852	В лёгких
+T46	Symptom 1853 1873	дыхание везикулярное
+A22	SType T46 normal
+T47	Symptom 1875 1893	с жестким оттенком
+A23	SType T47 disorder
+T48	Symptom 1931 1946	свистящие хрипы
+A24	SType T48 disorder
+T49	Symptom 1948 1981	Сердечные тоны звучные, ритмичные
+A25	SType T49 normal
+T50	Symptom 2034 2041	дизурии
+A26	Negation T50
+T51	Symptom 2047 2075	Стул регулярный, оформленный
+A27	SType T51 normal
+T52	Symptom 2077 2097	Менингеальных знаков
+A28	Negation T52
+T53	Disease 92 111	Аллергический ринит
+T4	Severity 113 146	осложененный бактериальной флорой
+R4	Severity_rel Arg1:T4 Arg2:T53	
+A29	Degree T4 hard
+T54	Body_location 344 348	носа
+T55	Treatment 596 621	Профилактические прививки
+R5	Symptom_bdyloc_rel Arg1:T54 Arg2:T8	
+R6	Symptom_bdyloc_rel Arg1:T40 Arg2:T41	
+R7	Symptom_bdyloc_rel Arg1:T40 Arg2:T42	
+R8	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R9	Symptom_bdyloc_rel Arg1:T45 Arg2:T47	
+R10	Symptom_bdyloc_rel Arg1:T45 Arg2:T48	
+T56	Disease 1782 1786	акне

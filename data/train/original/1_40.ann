@@ -1,0 +1,188 @@
+T1	Drug 270 280	беродуалом
+T2	Symptom 281 294	отрицательная
+A1	SType T2 normal
+T3	Symptom 255 260	норма
+A2	SType T3 normal
+T4	Drug 129 139	беродуалом
+T5	Body_location 863 880	щитовидной железы
+T6	Body_location 882 892	Левая доля
+T7	Body_location 928 940	Правая доля:
+T8	Symptom 1012 1044	Паренхима пониженной эхогенности
+A3	SType T8 disorder
+T9	Symptom 1046 1096	неоднородная, с чередованием участков с однородная
+A4	SType T9 disorder
+T10	Symptom 1098 1117	средней эхогенности
+A5	SType T10 normal
+T11	Symptom 1127 1146	кровоток не изменен
+A6	SType T11 normal
+T13	Body_location 379 393	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T14	Body_location 477 497	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T15	Body_location 574 583	СЕЛЕЗЕНКА
+T16	Body_location 625 631	ПЕЧЕНЬ
+T17	Body_location 706 713	ЖЕЛУДОК
+T18	Body_location 730 747	12-ПЕРСТНАЯ КИШКА
+T19	Symptom 520 572	паренхима – эхогенность резко повышена, неоднородная
+A7	SType T19 disorder
+T20	Symptom 602 611;615 623	паренхима изменена
+A8	SType T20 disorder
+T21	Symptom 633 678	размер – ЛД – 59, 1й сегмент 13мм, ПД –122 мм
+A9	SType T21 normal
+T22	Symptom 717 728	секрет есть
+A10	SType T22 normal
+T23	Symptom 748 760	нет  секрета
+A11	SType T23 normal
+T24	Symptom 1166 1199	признаки отека слизистой оболочки
+A12	SType T24 disorder
+T25	Body_location 1157 1160	ППН
+T26	Symptom 1236 1264	Резкая синусовая брадикардия
+A13	SType T26 disorder
+T27	Symptom 1266 1305	Синдром ранней реполяризации желудочков
+A14	SType T27 disorder
+T28	Body_location 1295 1305	желудочков
+T29	Symptom 1210 1234	нормальное положение ЭОС
+A15	SType T29 normal
+T30	Symptom 1692 1760	Типичной эпилептической, пароксизмальной активности, грубых очаговых
+A16	Negation T30
+A17	SType T30 disorder
+T31	Disease 2006 2030	Идиопатическая эпилепсия
+T32	Disease 2032 2068	Нарушение эмоционально-волевой сферы
+T33	Disease 2070 2109	Парциальный дефицит когнитивных функций
+T34	Body_location 2155 2183	грудного отдела позвоночника
+T35	Disease 2629 2658	остеохондропатия позвоночника
+T36	Disease 2660 2685	левосторонний кифосколиоз
+T37	Symptom 2542 2588	признаки остеохондропатии позвоночника, кифоза
+A18	SType T37 disorder
+T38	Symptom 2185 2246	Ось позвоночника отклонена влево, вершина Th11-Th12 угол α 7◦
+A19	SType T38 disorder
+T39	Symptom 2249 2297	Ротация тел позвонков есть, кифоз усилен, α 40◦.
+A20	SType T39 disorder
+T40	Body_location 2189 2201	позвоночника
+T41	Body_location 2257 2270	тел позвонков
+T42	Symptom 2309 2352	разрыхление замыкательных пластин позвонков
+A21	SType T42 disorder
+T43	Symptom 2354 2397	Высота межпозвонковых промежутков уменьшена
+A22	SType T43 disorder
+T44	Symptom 2399 2438	Стадия окостенения тел позвонков II-III
+A23	SType T44 disorder
+T45	Symptom 2441 2509	стеофиты/синдеомофиты в области передних углов тел позвонков Th2-Th9
+A24	SType T45 disorder
+T46	Body_location 2473 2510	передних углов тел позвонков Th2-Th9.
+T47	Body_location 2418 2439	тел позвонков II-III.
+T48	Disease 2756 2775	ангиопатия сетчатки
+T50	Disease 2843 2846	КЭО
+T51	Severity 2847 2851	2 ст
+A26	Degree T51 medium
+R1	Severity_rel Arg1:T51 Arg2:T50	
+T52	Disease 2941 2961	аллергический ринит.
+T53	Treatment 3012 3153	реон 10000 по 1 к. х 3 раза в день, кавинтон 1т. х 3 раза в день, анавенол по 1 др. х 2 раза в день, топамакс, зиртек по 1т. х 1 раза в день.
+T54	Drug 3011 3016	креон
+T55	Drug 3048 3056	кавинтон
+T56	Drug 3078 3086	анавенол
+T57	Drug 3113 3121	топамакс
+T58	Drug 3123 3129	зиртек
+T59	Treatment 3473 3504	Интал по 2 инг. х 4 раза в день
+T60	Symptom 3513 3540	приступе бронхиальной астмы
+A27	SType T60 disorder
+T61	Symptom 3545 3562	кашлевом синдроме
+A28	SType T61 disorder
+T62	Drug 3563 3571	вентолин
+T63	Treatment 3563 3594	вентолин по 1-2 инг. до 4-6 р/д
+T64	Treatment 3614 3687	через небулайзер: лазолван 1.0 мл + беродуал 15 капель+пульмикорт 250 мкг
+T65	Drug 3632 3640	лазолван
+T66	Drug 3650 3658	беродуал
+T67	Drug 3669 3679	пульмикорт
+T68	Treatment 3692 3728	Зиртек по 1т. х 1 раз в день 1 месяц
+T69	Treatment 3733 3773	Туалет носа с аква-марис 3-4 раза в день
+T70	Treatment 3778 3965	Топамакс 100 мг ½ т. на ночь – 3 дня, ½ т. х 2 раза – 1 неделя, ½ т. утро 1 т. вечер – 2 недели, 1т. х 2 раза – 1 неделя, 1т. утро 1 ½ т. вечер – постоянная терапевтическая доза (3 мг/кг)
+T71	Treatment 3970 4031	Кавинтон  5 мг 1т х 3 раза в день после еды 1 месяц (февраль)
+T72	Treatment 4036 4129	Анавенол 1 др. х 2 раза утро, вечерпосле еды 10 дней, затем 1 др. х 1 раз вечером еще 10 дней
+T73	Treatment 4135 4219	Пантогам 0,25 1т. х 2 раза  (утро, день) после еды, курс 1,5 месяца (до конца марта)
+T74	Treatment 4225 4278	Креон 10000 по 1к. х 3 раза в день продолжить 10 дней
+T75	Treatment 4284 4331	Хофитол по 1 т. х 3 раза в день 3 недели – март
+T76	Treatment 4499 4534	назонекс по 1 инст. х 1 раз в день.
+T77	Disease 4475 4496	аллергического ринита
+T78	Treatment 4393 4427	Электростимуляция мышц спины и ФТЛ
+T79	Treatment 4368 4388	Общий массаж №10-15.
+T80	Treatment 4337 4362	Ортопедический режим, ЛФК
+T81	Drug 3692 3698	Зиртек
+T82	Drug 3747 3757	аква-марис
+T83	Drug 3778 3786	Топамакс
+T84	Drug 3970 3978	Кавинтон
+T85	Drug 4036 4044	Анавенол
+T86	Drug 4135 4143	Пантогам
+T87	Drug 4225 4230	Креон
+T88	Drug 4284 4291	Хофитол
+T89	Symptom 1787 1822	Симметрично ускорен кровоток по СМА
+A29	SType T89 disorder
+T90	Symptom 1824 1871	с усилением вероятно компенсаторного  характера
+A30	SType T90 disorder
+T91	Symptom 1873 1905	венозного оттока – ангиодистония
+A31	SType T91 disorder
+T92	Body_location 1907 1933	Экстракраниально: левая ПА
+T93	Body_location 1819 1822	СМА
+T94	Symptom 1934 1959	малого диаметра (2,56 мм)
+A32	SType T94 disorder
+T95	Symptom 1329 1404	легко дезорганизованный тип ЭЭГ с нерегулярным по амплитуде основным ритмом
+A33	SType T95 disorder
+T96	Symptom 1406 1444	Признаки дисфункции срединных структур
+T97	Symptom 1459 1645	редко регистрировались короткие вспышки острых полиморфных и полифазных потенциалов в лобно-центральных отделах (больше справа), иногда с тенденцией к  генерализации по правому полушарию
+A34	SType T97 disorder
+T98	Body_location 1545 1586	лобно-центральных отделах (больше справа)
+T99	Body_location 1628 1645	правому полушарию
+T100	Symptom 805 833	признаки вторичных изменений
+A35	SType T100 disorder
+T101	Body_location 834 854	поджелудочной железы
+T102	Treatment 2867 2900	наблюдение в динамике, диета, ЛФК
+T103	Treatment 3359 3405	гипоаллергенной диеты и элиминационного режима
+T104	Drug 3473 3478	Интал
+T105	Disease 1266 1294	Синдром ранней реполяризации
+R2	Body_location_rel Arg1:T28 Arg2:T105	
+T106	Disease 1253 1264	брадикардия
+T107	Severity 1236 1252	Резкая синусовая
+A36	Degree T107 hard
+R3	Severity_rel Arg1:T107 Arg2:T106	
+T108	Disease 1175 1180	отека
+T109	Body_location 1181 1199	слизистой оболочки
+R4	Body_location_rel Arg1:T109 Arg2:T108	
+#1	AnnotatorNotes T95	Hello
+T110	Body_location 2767 2775	сетчатки
+R5	Body_location_rel Arg1:T110 Arg2:T48	
+T111	Symptom 2756 2794	ангиопатия сетчатки со спазмом артерий
+T112	Disease 2277 2282	кифоз
+T113	Disease 2582 2588	кифоза
+T114	Disease 2779 2794	спазмом артерий
+T115	Disease 3522 3540	бронхиальной астмы
+T116	Drug 4499 4507	назонекс
+R7	Symptom_bdyloc_rel Arg1:T14 Arg2:T19	
+R8	Symptom_bdyloc_rel Arg1:T15 Arg2:T20	
+R9	Symptom_bdyloc_rel Arg1:T16 Arg2:T21	
+R10	Symptom_bdyloc_rel Arg1:T17 Arg2:T22	
+R11	Symptom_bdyloc_rel Arg1:T18 Arg2:T23	
+R12	Symptom_bdyloc_rel Arg1:T101 Arg2:T100	
+T49	Symptom 395 412	размер – 59х22 мм
+T117	Symptom 414 420;426 434	стенки утолщены
+A25	Negation T117
+A37	SType T117 disorder
+T118	Symptom 436 454	форма – правильная
+A38	SType T118 normal
+R6	Symptom_bdyloc_rel Arg1:T13 Arg2:T49	
+R14	Symptom_bdyloc_rel Arg1:T13 Arg2:T117	
+R13	Symptom_bdyloc_rel Arg1:T13 Arg2:T118	
+T12	Symptom 456 475	просвет - свободный
+A39	SType T12 normal
+R15	Symptom_bdyloc_rel Arg1:T13 Arg2:T12	
+T119	Symptom 499 518	размер – 15х8х15 мм
+T120	Symptom 585 600	размер 91х46 мм
+R16	Symptom_bdyloc_rel Arg1:T15 Arg2:T120	
+A40	Negation T20
+T121	Symptom 680 689;696 704	паренхима изменена
+A41	Negation T121
+A42	SType T121 disorder
+R17	Symptom_bdyloc_rel Arg1:T16 Arg2:T121	
+T122	Symptom 762 775	стенки тонкие
+T123	Symptom 780 788	изменены
+A43	Negation T123
+A44	SType T123 disorder
+R18	Symptom_bdyloc_rel Arg1:T18 Arg2:T123	
+R19	Symptom_bdyloc_rel Arg1:T18 Arg2:T122	
+R20	Symptom_bdyloc_rel Arg1:T14 Arg2:T119	

@@ -1,0 +1,94 @@
+T1	Disease 9 40	Бронхиальная астма, атопическая
+T2	Severity 42 71	легкое персистирующее течение
+A1	Degree T2 light
+R1	Severity_rel Arg1:T2 Arg2:T1	
+T3	Disease 89 124	Аллергический ринит, персистирующий
+T4	Course 126 140	вне обострения
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 142 162	Атопический дерматит
+T6	Course 164 172	ремиссия
+A3	CType T6 improved
+R3	Course_rel Arg1:T6 Arg2:T5	
+T7	Disease 174 214	Вторичные изменения поджелудочной железы
+T8	Body_location 194 214	поджелудочной железы
+T9	Disease 216 247	Дискинезия желчевыводящих путей
+T10	Body_location 227 247	желчевыводящих путей
+T11	Body_location 267 282	желчного пузыря
+R4	Body_location_rel Arg1:T10 Arg2:T9	
+R5	Body_location_rel Arg1:T11 Arg2:T9	
+T12	Body_location 354 361	на коже
+T13	Symptom 344 353	высыпания
+A4	SType T13 disorder
+T14	Disease 475 478	ОРИ
+T15	Symptom 387 418	эпизоды малопродуктивного кашля
+A5	SType T15 disorder
+T16	Symptom 421 440	затруднение дыхания
+A6	SType T16 disorder
+T17	Symptom 807 829	атопического дерматита
+A7	SType T17 disorder
+T18	Symptom 939 949	обструкции
+A8	SType T18 disorder
+T19	Disease 958 980	респираторных инфекций
+T20	Disease 1006 1037	бронхиальная астма, атопическая
+T21	Severity 1039 1054	легкого течения
+A9	Degree T21 light
+R6	Severity_rel Arg1:T21 Arg2:T20	
+T22	Treatment 1056 1118	Получала курсами интал, затем серетид 50/25 мкг 2 раза в день.
+A10	Effect T22 positive
+T23	Drug 1073 1078	интал
+T24	Drug 1086 1093	серетид
+T25	Drug 1134 1142	серетида
+T26	Treatment 1179 1268	Обострения купируются ингаляцией саломола или беродуалом и пульмикортом через небулайзер.
+A11	Effect T26 positive
+T27	Drug 1212 1220	саломола
+T28	Drug 1225 1235	беродуалом
+T29	Drug 1238 1250	пульмикортом
+T30	Symptom 1288 1307	затруднения дыхания
+A12	SType T30 disorder
+T31	Treatment 1344 1373	Купирован ингаляцией саламола
+A13	Effect T31 positive
+T32	Disease 1402 1405	ОРИ
+T33	Symptom 1432 1455	бронхиальной обструкции
+A14	SType T33 disorder
+T34	Disease 1540 1562	обструктивные бронхиты
+A15	NotPatient T34
+T35	Disease 1590 1608	бронхиальная астма
+A16	NotPatient T35
+T36	Disease 1610 1638	риноконъюнктивальный синдром
+A17	NotPatient T36
+T37	Body_location 1730 1744	кожные покровы
+T38	Symptom 1745 1760	бледно-розовые,
+A18	SType T38 normal
+T39	Symptom 1761 1766	сухие
+T40	Body_location 1768 1790	в подколенных областях
+T41	Symptom 1791 1830	единичные эритематозно-сквамозные очаги
+A19	SType T41 disorder
+T42	Symptom 1841 1861	дыхание везикулярное
+A20	SType T42 normal
+T43	Symptom 1883 1889	хрипов
+A21	Negation T43
+T44	Body_location 1832 1840	В легких
+T45	Symptom 1895 1923	Тоны сердца ясные, ритмичные
+A22	SType T45 normal
+T46	Symptom 1925 1953	Стул ежедневный, оформленный
+A23	SType T46 normal
+T47	Symptom 1955 1961	диурез
+A24	Negation T47
+T48	Symptom 1974 1994	Менингеальных знаков
+A25	Negation T48
+T49	Symptom 1863 1881	с жестким оттенком
+R7	Body_location_rel Arg1:T8 Arg2:T7	
+T50	Drug 1365 1373	саламола
+R8	Symptom_bdyloc_rel Arg1:T12 Arg2:T13	
+T51	Disease 807 829	атопического дерматита
+T52	Treatment 1129 1177	курс серетида в той же дозировке до января 2042г
+R9	Symptom_bdyloc_rel Arg1:T37 Arg2:T38	
+R10	Symptom_bdyloc_rel Arg1:T37 Arg2:T39	
+R11	Symptom_bdyloc_rel Arg1:T40 Arg2:T41	
+R12	Symptom_bdyloc_rel Arg1:T44 Arg2:T42	
+R13	Symptom_bdyloc_rel Arg1:T44 Arg2:T49	
+R14	Symptom_bdyloc_rel Arg1:T44 Arg2:T43	
+A26	SType T39 disorder
+A27	SType T49 disorder
+A28	SType T43 disorder

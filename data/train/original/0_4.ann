@@ -1,0 +1,72 @@
+T1	Disease 9 29	Атопический дерматит
+T2	Course 31 39	ремиссия
+A1	CType T2 improved
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 41 57	Пищевая аллергия
+T4	Disease 59 99	Вторичные изменения поджелудочной железы
+T5	Body_location 79 99	поджелудочной железы
+T6	Symptom 170 189	затруднения дыхания
+T7	Disease 198 220	респираторной инфекции
+T8	Symptom 235 244	высыпания
+T9	Body_location 245 252	на коже
+T10	Symptom 328 335	анемией
+T11	Symptom 657 666	высыпания
+T12	Disease 805 827	респираторной инфекции
+T13	Symptom 838 861	малопродуктивный кашель
+T14	Disease 969 990	обструктивный бронхит
+T15	Treatment 992 1050	Получал эуфиллин, дексаметазон в/м, ингаляции с беродуалом
+A2	Effect T15 positive
+T16	Drug 1000 1008	эуфиллин
+T17	Drug 1010 1022	дексаметазон
+T18	Drug 1040 1050	беродуалом
+T19	Disease 1235 1256	обструктивный бронхит
+T20	Treatment 1264 1341	получал терапию в стационаре (эуфиллин, дексаметазон, ингаляции с беродуалом)
+A3	Effect T20 positive
+T21	Drug 1294 1302	эуфиллин
+T22	Drug 1304 1316	дексаметазон
+T23	Drug 1330 1340	беродуалом
+T24	Disease 1369 1385	пищевая аллергия
+A4	NotPatient T24
+T25	Disease 1436 1454	инсектная аллергия
+A5	NotPatient T25
+T26	Body_location 1633 1639	легких
+T27	Symptom 1640 1660	везикулярное дыхание
+A6	SType T27 normal
+T28	Symptom 1662 1668	хрипов
+A7	Negation T28
+T29	Body_location 1589 1603	кожные покровы
+T30	Symptom 1604 1629	бледно-розовые, суховатые
+T31	Symptom 1686 1702	ясные, ритмичные
+A8	SType T31 normal
+T32	Body_location 1679 1685	сердца
+T33	Body_location 1704 1709	Живот
+T34	Symptom 1710 1716	мягкий
+A9	SType T34 normal
+T35	Symptom 1718 1732	безболезненный
+A10	Negation T35
+T36	Symptom 1734 1738	Стул
+A11	SType T36 normal
+T37	Symptom 1740 1746	диурез
+A12	SType T37 normal
+T38	Symptom 1760 1780	Менингеальных знаков
+T39	Symptom 1173 1198	нарушения функции дыхания
+A14	Negation T39
+T40	Symptom 536 542	атопии
+R2	Body_location_rel Arg1:T5 Arg2:T4	
+R3	Symptom_bdyloc_rel Arg1:T9 Arg2:T8	
+T41	Symptom 1417 1433	кожных высыпаний
+A15	NotPatient T41
+R4	Symptom_bdyloc_rel Arg1:T29 Arg2:T30	
+R5	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+R6	Symptom_bdyloc_rel Arg1:T26 Arg2:T28	
+R7	Symptom_bdyloc_rel Arg1:T32 Arg2:T31	
+R8	Symptom_bdyloc_rel Arg1:T33 Arg2:T34	
+R9	Symptom_bdyloc_rel Arg1:T33 Arg2:T35	
+T42	Disease 328 335	анемией
+A16	SType T13 disorder
+A17	SType T11 disorder
+A18	SType T40 disorder
+A19	SType T10 disorder
+A20	SType T6 disorder
+A21	SType T8 disorder
+A22	Negation T38

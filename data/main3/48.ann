@@ -1,0 +1,73 @@
+T3	Treatment 25008 25107	в). варфарин 1,875 мг\сут до 12.10.57 варфарин 2,1 мг (доза повышена) с 13.10.57 1 раз в сут 18 ч..
+T4	Treatment 25108 25170	г). диувер 5 мг\сут до 14.10.57, диувер 2,5 мг\сут с 15.10.57.
+T5	Treatment 25171 25203	д). трентал 25 мг\3 раза в день.
+T6	Treatment 25204 25234	е). панангин 1 таб 2 р в день.
+T7	Treatment 25235 25262	ж). цитофлавин 1 таб утром.
+T8	Treatment 25263 25296	з). предуктал 8,75 2 раза в день.
+T9	Treatment 25297 25342	и). моноприл 3 мг. 2 раза в день до 13.10.57.
+T2	Treatment 24973 25007	б). конкор 1,25 мг. 2 раза в день.
+T1	Treatment 24929 24972	а). козаар 10 мг. 2 раза в день с 14.10.57.
+T10	Drug 24933 24939	козаар
+T11	Drug 24977 24983	конкор
+T12	Drug 25012 25020	варфарин
+T13	Drug 25046 25054	варфарин
+T14	Drug 25112 25118	диувер
+T15	Drug 25141 25147	диувер
+T16	Drug 25175 25182	трентал
+T17	Drug 25208 25216	панангин
+T18	Drug 25239 25249	цитофлавин
+T19	Drug 25267 25276	предуктал
+T20	Drug 25301 25309	моноприл
+T21	Disease 21 42	Хронический миокардит
+A1	Time T21 now
+T23	Body_location 59 78	левой ножки п. Гиса
+T22	Disease 44 78	Полная блокада левой ножки п. Гиса
+A2	Time T22 now
+R1	Body_location_rel Arg1:T23 Arg2:T22	
+T24	Disease 80 107	Атриовентрикулярная блокада
+A3	Time T24 now
+T25	Severity 108 112	1 ст
+R2	Severity_rel Arg1:T25 Arg2:T24	
+T26	Disease 114 140	Межжелудочковая асинхрония
+A4	Time T26 now
+T27	Body_location 114 129	Межжелудочковая
+R3	Body_location_rel Arg1:T27 Arg2:T26	
+T28	Disease 142 236	Состояние после операции имплантации бивентрикулярного ЭКС Biotronic Lumax 340HF-T от 10.11.54
+A5	Time T28 after
+T29	Disease 240 242	НК
+A6	Time T29 now
+T30	Severity 243 266	II- А ст. ФК II по NYHA
+R4	Severity_rel Arg1:T30 Arg2:T29	
+T31	Disease 311 333	Хронический миокардит.
+A7	Time T31 now
+T32	Disease 334 368	Полная блокада левой ножки п. Гиса
+A8	Time T32 now
+T33	Body_location 349 368	левой ножки п. Гиса
+R5	Body_location_rel Arg1:T33 Arg2:T32	
+T34	Disease 370 397	Атриовентрикулярная блокада
+T35	Severity 398 402	1 ст
+R6	Severity_rel Arg1:T35 Arg2:T34	
+T36	Disease 404 430	Межжелудочковая асинхрония
+T37	Disease 432 526	Состояние после операции имплантации бивентрикулярного ЭКС Biotronic Lumax 340HF-T от 10.11.54
+A9	Time T37 before
+T38	Disease 530 532	НК
+A10	Time T38 now
+T39	Severity 533 556	II- А ст. ФК II по NYHA
+R7	Severity_rel Arg1:T39 Arg2:T38	
+T40	Disease 558 589	Дискинезия желчевыводящих путей
+A11	Time T40 now
+T41	Symptom 619 665	сниженную толерантность к физическим нагрузкам
+A12	SType T41 disorder
+T42	Disease 683 702	хориоретинодистофия
+A13	NotPatient T42
+A14	Time T42 before
+T43	Disease 704 727	миопия высокой степени.
+A15	NotPatient T43
+A16	Time T43 before
+T44	Disease 817 833	угрозой выкидыша
+A17	NotPatient T44
+A18	Time T44 before
+T45	Disease 1101 1105	ДМЖП
+A19	Time T45 before
+T46	Disease 1222 1226	ОРВИ
+A20	Time T46 before

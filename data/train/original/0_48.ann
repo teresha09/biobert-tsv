@@ -1,0 +1,72 @@
+T1	Disease 9 38	Рецидивирующий ларинготрахеит
+T2	Disease 40 74	Круглогодичный аллергический ринит
+T3	Disease 92 133	Реактивные изменения поджелудочной железы
+T4	Body_location 113 133	поджелудочной железы
+T5	Symptom 196 210	эпизоды кашля.
+A1	SType T5 disorder
+T6	Disease 536 550	острый бронхит
+T7	Symptom 588 611	малопродуктивный кашель
+A2	SType T7 disorder
+T8	Symptom 655 667	сухой кашель
+T9	Treatment 669 707	В терапии бромгексин, эреспал, синекод
+A3	Effect T9 positive
+T10	Drug 679 689	бромгексин
+T11	Drug 691 698	эреспал
+T12	Drug 700 707	синекод
+T13	Disease 743 764	обструктивный бронхит
+T14	Treatment 847 964	Получала лечение: цефазолин в/м, линекс, цетирезин, мукалтин, эуфиллин, лазолван, ингаляции с беродуалом, сальбутамол
+A4	Effect T14 positive
+T15	Drug 865 874	цефазолин
+T16	Drug 880 886	линекс
+T17	Drug 888 897	цетирезин
+T18	Drug 899 907	мукалтин
+T19	Drug 909 917	эуфиллин
+T20	Drug 919 927	лазолван
+T21	Drug 941 951	беродуалом
+T22	Drug 953 964	сальбутамол
+T23	Body_location 1130 1144	Кожные покровы
+T24	Symptom 1145 1159	бледно-розовые
+A5	SType T24 normal
+T25	Symptom 1161 1167	чистые
+A6	SType T25 normal
+T26	Symptom 1169 1180	Зев спокоен
+A7	SType T26 normal
+T27	Symptom 1182 1218	Носовое дыхание несколько затруднено
+A8	SType T27 disorder
+T28	Body_location 1220 1228	В лёгких
+T29	Symptom 1229 1249	дыхание везикулярное
+A9	SType T29 normal
+T30	Symptom 1251 1257	хрипов
+A10	Negation T30
+T31	Symptom 1263 1296	Сердечные тоны звучные, ритмичные
+A11	SType T31 normal
+T32	Body_location 1298 1303	Живот
+T33	Symptom 1304 1310	мягкий
+A12	SType T33 normal
+T34	Symptom 1326 1340	безболезненный
+A13	SType T34 normal
+T35	Symptom 1393 1400	дизурии
+A14	Negation T35
+T36	Symptom 1406 1434	Стул регулярный, оформленный
+A15	SType T36 normal
+T37	Symptom 1436 1456	Менингеальных знаков
+A16	Negation T37
+T38	Symptom 1027 1055	риноконъюнктивальный синдром
+A17	NotPatient T38
+A18	SType T38 disorder
+R1	Body_location_rel Arg1:T4 Arg2:T3	
+T39	Treatment 766 795	получала лечение в стационаре
+A19	Effect T39 unknown
+T40	Disease 1027 1055	риноконъюнктивальный синдром
+A20	Conditional T40
+A21	NotPatient T40
+R2	Symptom_bdyloc_rel Arg1:T23 Arg2:T24	
+R3	Symptom_bdyloc_rel Arg1:T23 Arg2:T25	
+R4	Symptom_bdyloc_rel Arg1:T28 Arg2:T29	
+R5	Symptom_bdyloc_rel Arg1:T28 Arg2:T30	
+R6	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+R7	Symptom_bdyloc_rel Arg1:T32 Arg2:T34	
+T41	Severity 76 90	персистирующий
+A22	Degree T41 medium
+R8	Severity_rel Arg1:T41 Arg2:T2	
+A23	SType T8 disorder

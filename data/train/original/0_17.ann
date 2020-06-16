@@ -1,0 +1,112 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 70	средне-тяжелое течение
+A1	Degree T2 medium
+T3	Course 72 80	ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 82 102	Атопический дерматит
+T5	Course 104 121	подострое течение
+A3	CType T5 worsened
+R3	Course_rel Arg1:T5 Arg2:T4	
+T6	Disease 123 142	Аллергический ринит
+T7	Course 144 152	ремиссия
+A4	CType T7 improved
+R4	Course_rel Arg1:T7 Arg2:T6	
+T8	Disease 154 178	Дискинезия желчных путей
+T9	Body_location 165 178	желчных путей
+T10	Body_location 198 213	желчного пузыря
+R5	Body_location_rel Arg1:T9 Arg2:T8	
+T11	Disease 215 255	Вторичные изменения поджелудочной железы
+T12	Body_location 235 255	поджелудочной железы
+T13	Disease 257 286	Дискинезия толстого кишечника
+T14	Body_location 268 286	толстого кишечника
+T15	Disease 288 332	Синдром дефицита внимания с гиперактивностью
+T16	Disease 334 363	Энурез, неврозоподобная форма
+T17	Symptom 425 432	сухость
+T18	Symptom 439 448	шелушение
+T19	Symptom 450 467	длительный кашель
+T20	Symptom 469 476	энурез.
+T21	Body_location 433 437	кожи
+T22	Disease 651 656	грипп
+T23	Disease 658 661	ОРИ
+T24	Disease 719 730	полиомиелит
+T25	Disease 732 740	дифтерия
+T26	Disease 742 751	столбняк.
+T27	Disease 802 824	атопического дерматита
+T28	Disease 883 945	врожденное иммунодефицитное состояние с гипогаммаглобулинемией
+T29	Disease 947 967	атопический дерматит
+T30	Severity 968 984	тяжелого течения
+A5	Degree T30 hard
+R7	Severity_rel Arg1:T30 Arg2:T29	
+T31	Treatment 986 1096	В терапии неоднократные курсы пентаглобина, полиоксидония, ликопида, местно – глюкокортикостероидные препараты
+T32	Drug 1016 1028	пентаглобина
+T33	Drug 1030 1043	полиоксидония
+T34	Drug 1045 1053	ликопида
+T35	Drug 1064 1096	глюкокортикостероидные препараты
+T36	Disease 1143 1163	атопический дерматит
+T37	Severity 1165 1187	средне-тяжелое течение
+A6	Degree T37 medium
+R8	Severity_rel Arg1:T37 Arg2:T36	
+T38	Treatment 1189 1236	Лечился местными кортикостероидными препаратами
+T39	Symptom 1273 1279	кашель
+A7	SType T39 disorder
+T40	Disease 1297 1300	ОРИ
+T41	Treatment 1302 1336	в терапии муколитические препараты
+A8	Effect T41 no-effect
+T42	Drug 1312 1336	муколитические препараты
+T43	Treatment 1425 1458	получал антибактериальную терапию
+T44	Treatment 1495 1527	пульмикорт 500 мкг/сут, атровент
+A9	Effect T44 positive
+T45	Drug 1495 1505	пульмикорт
+T46	Drug 1519 1527	атровент
+T47	Disease 1469 1484	бронхопневмонии
+T48	Treatment 1574 1595	на серетид и беродуал
+A10	Effect T48 negative
+T49	Drug 1577 1584	серетид
+T50	Drug 1587 1595	беродуал
+T51	Treatment 1645 1664	назначен пульмикорт
+T52	Drug 1654 1664	пульмикорт
+T53	Treatment 1705 1735	получает фликсотид 100 мкг/сут
+T54	Drug 1714 1723	фликсотид
+T55	Treatment 1787 1842	при приеме зиртека в каплях и кромогексала в ингаляциях
+A11	Effect T55 negative
+T56	Drug 1798 1805	зиртека
+T57	Drug 1817 1829	кромогексала
+T58	Treatment 1850 1892	Получил 2 курса  антибактериальной терапии
+T59	Disease 1903 1912	лямблиоза
+T60	Drug 1867 1892	антибактериальной терапии
+T61	Symptom 1938 1972	ночное и дневное неудержание мочи.
+A12	SType T61 disorder
+T62	Body_location 2062 2076	Кожные покровы
+T63	Symptom 2077 2099	чистые, бледно-розовые
+A13	SType T63 normal
+T64	Symptom 2101 2111	Зев рыхлый
+T65	Symptom 2113 2149	Носовое дыхание несколько затруднено
+T66	Body_location 2151 2159	В лёгких
+T67	Symptom 2160 2180	дыхание везикулярное
+A14	SType T67 normal
+T68	Symptom 2182 2188	хрипов
+A15	Negation T68
+T69	Symptom 2194 2227	Сердечные тоны звучные, ритмичные
+A16	SType T69 normal
+T70	Symptom 2280 2287	дизурии
+A17	Negation T70
+T72	Symptom 2323 2343	Менингеальных знаков
+A19	Negation T72
+T71	Symptom 2293 2321	Стул регулярный, оформленный
+A18	SType T71 normal
+R9	Body_location_rel Arg1:T14 Arg2:T13	
+R10	Body_location_rel Arg1:T12 Arg2:T11	
+T73	Symptom 187 213	деформации желчного пузыря
+A20	SType T73 disorder
+R6	Symptom_bdyloc_rel Arg1:T10 Arg2:T73	
+R11	Symptom_bdyloc_rel Arg1:T21 Arg2:T17	
+R12	Symptom_bdyloc_rel Arg1:T62 Arg2:T63	
+R13	Symptom_bdyloc_rel Arg1:T66 Arg2:T67	
+R14	Symptom_bdyloc_rel Arg1:T66 Arg2:T68	
+A21	SType T17 disorder
+A22	SType T18 disorder
+A23	SType T19 disorder
+A24	SType T65 disorder
+A25	SType T68 disorder

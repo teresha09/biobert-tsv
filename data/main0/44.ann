@@ -1,0 +1,100 @@
+T1	Symptom 2208 2228	Менингеальных знаков
+A1	Negation T1
+T2	Symptom 2182 2194	Стул, диурез
+A2	SType T2 normal
+T3	Symptom 2152 2180	Тоны сердца ясные, ритмичные
+A3	SType T3 normal
+T4	Body_location 2109 2117	В легких
+T5	Symptom 2118 2138	дыхание везикулярное
+A4	SType T5 normal
+T6	Symptom 2140 2146	хрипов
+A5	Negation T6
+T7	Body_location 2011 2025	кожные покровы
+T8	Symptom 2026 2035	суховатые
+A6	SType T8 disorder
+T9	Symptom 2037 2051	бледно-розовые
+A7	SType T9 normal
+T10	Symptom 2053 2097	единичные проявления фолликулярного кератоза
+A8	SType T10 disorder
+T11	Body_location 2098 2107	на плечах
+T12	Disease 1975 1991	пищевая аллергия
+A9	NotPatient T12
+T13	Disease 1894 1916	Лекарственная аллергия
+T14	Drug 1920 1930	пенициллин
+T15	Symptom 1836 1866	риноконъюнктивального синдрома
+A10	SType T15 disorder
+T16	Disease 1765 1786	гиперплазия аденоидов
+T17	Severity 1787 1791	2 ст
+A11	Degree T17 medium
+T18	Disease 1795 1814	аллергический ринит
+T19	Disease 9 40	Бронхиальная астма, атопическая
+T20	Severity 42 71	легкое персистирующее течение
+A12	Degree T20 light
+R1	Severity_rel Arg1:T20 Arg2:T19	
+T21	Disease 91 110	Аллергический ринит
+T22	Course 134 142	ремиссия
+A13	CType T22 improved
+T23	Disease 144 151	Пищевая
+T24	Disease 153 175	лекарственная аллергия
+T25	Course 177 185	ремиссия
+A14	CType T25 improved
+R2	Course_rel Arg1:T22 Arg2:T21	
+R3	Course_rel Arg1:T25 Arg2:T24	
+R4	Course_rel Arg1:T25 Arg2:T23	
+T26	Disease 187 205	Катаральная ангина
+T27	Symptom 289 317	затруднение носового дыхания
+A15	SType T27 disorder
+T28	Symptom 332 338	одышка
+A16	SType T28 disorder
+T29	Symptom 431 449	угрозой прерывания
+A17	SType T29 disorder
+T30	Disease 674 706	ЧМТ (сотрясение головного мозга)
+T31	Symptom 708 716	судороги
+A18	SType T31 disorder
+T32	Symptom 750 761	фебрилитета
+A19	SType T32 disorder
+T33	Symptom 785 803	фебрильных судорог
+A20	SType T33 disorder
+T34	Symptom 863 875	гипергидроза
+A21	SType T34 disorder
+T35	Disease 899 914	химический ожог
+T36	Disease 1017 1039	атопического дерматита
+T37	Treatment 1041 1095	В терапии местные средства и антигистаминные препараты
+T38	Disease 1239 1242	ОРИ
+T39	Disease 1252 1273	обструктивный бронхит
+T40	Treatment 1275 1349	В терапии ингаляции с беродуалом и лазолваном, антибактериальные препараты
+A22	Effect T40 unknown
+T41	Drug 1297 1307	беродуалом
+T42	Drug 1310 1320	лазолваном
+T43	Symptom 1428 1452	бронхиальной обструкцией
+A23	SType T43 disorder
+T44	Treatment 1471 1503	Купировали ингаляциями беродуала
+A24	Effect T44 positive
+T45	Drug 1494 1503	беродуала
+T46	Symptom 1643 1671	затруднение носового дыхания
+A25	SType T46 disorder
+T47	Symptom 1707 1711	храп
+A26	SType T47 disorder
+R5	Severity_rel Arg1:T17 Arg2:T16	
+T48	Disease 763 766	ОРИ
+T49	Treatment 958 986	Получал терапию в стационаре
+A27	Effect T49 unknown
+A28	Effect T37 unknown
+T50	Disease 1836 1866	риноконъюнктивального синдрома
+A29	Conditional T50
+R6	Symptom_bdyloc_rel Arg1:T7 Arg2:T8	
+R7	Symptom_bdyloc_rel Arg1:T7 Arg2:T9	
+R8	Symptom_bdyloc_rel Arg1:T11 Arg2:T10	
+R9	Symptom_bdyloc_rel Arg1:T4 Arg2:T5	
+R10	Symptom_bdyloc_rel Arg1:T4 Arg2:T6	
+A30	Negation T2
+T51	Disease 1391 1413	респираторной инфекции
+T52	Disease 2074 2097	фолликулярного кератоза
+R11	Body_location_rel Arg1:T11 Arg2:T52	
+T53	Severity 2053 2073	единичные проявления
+A31	Degree T53 light
+R12	Severity_rel Arg1:T53 Arg2:T52	
+T54	Disease 785 803	фебрильных судорог
+T55	Severity 112 132	персистирующая форма
+A32	Degree T55 medium
+R13	Severity_rel Arg1:T55 Arg2:T21	

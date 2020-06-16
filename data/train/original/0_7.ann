@@ -1,0 +1,79 @@
+T1	Disease 9 50	Аллергический ринит, персистирующая форма
+T2	Course 52 66	вне обострения
+A1	CType T2 improved
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 68 88	Атопический дерматит
+T4	Course 90 98	ремиссия
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 100 121	Невротические реакции
+T6	Disease 123 161	Особенности эмоционально-волевой сферы
+T7	Disease 163 189	Цефалгии смешанного генеза
+T8	Disease 191 207	Нарушение осанки
+T9	Disease 209 232	Плоско-вальгусная стопа
+T10	Disease 234 262	Сосудистый невус конъюнктивы
+T11	Disease 264 281	Смешанная себорея
+T12	Disease 283 298	вульгарные угри
+T13	Severity 300 314	легкая степень
+A3	Degree T13 light
+R3	Severity_rel Arg1:T13 Arg2:T12	
+R4	Severity_rel Arg1:T13 Arg2:T11	
+T14	Disease 382 404	респираторные инфекции
+T15	Symptom 424 431	сухость
+T16	Body_location 432 436	кожи
+T17	Symptom 455 460	зудом
+T18	Symptom 462 475	головные боли
+T19	Symptom 477 481	боли
+T20	Body_location 484 489	ногах
+T21	Symptom 491 519	затруднение носового дыхания
+T22	Body_location 920 924	кожи
+T23	Symptom 912 919	сухость
+T24	Symptom 954 959	зудом
+T25	Disease 1018 1038	атопический дерматит
+T26	Treatment 961 968	Лечения
+T27	Body_location 1176 1179	Зев
+T28	Symptom 1184 1203	катаральных явлений
+A4	Negation T28
+T29	Body_location 1205 1219	Кожные покровы
+T30	Body_location 1267 1274	коленях
+T31	Body_location 1276 1282	бедрах
+T32	Symptom 1220 1234	бледно-розовые
+T33	Symptom 1236 1242	чистые
+T34	Symptom 1244 1253	суховатые
+T35	Body_location 1286 1292	легких
+T36	Symptom 1308 1328	везикулярное дыхание
+A5	SType T36 normal
+T37	Symptom 1330 1335	хрипы
+A6	Negation T37
+T38	Symptom 1410 1430	Менингеальных знаков
+A7	Negation T38
+T39	Symptom 1384 1388	Стул
+A8	SType T39 normal
+T40	Symptom 1390 1396	диурез
+A9	SType T40 normal
+T41	Body_location 1359 1365	сердца
+T42	Symptom 1366 1382	ясные, ритмичные
+A10	SType T42 normal
+R5	Symptom_bdyloc_rel Arg1:T16 Arg2:T15	
+R6	Symptom_bdyloc_rel Arg1:T20 Arg2:T19	
+R7	Symptom_bdyloc_rel Arg1:T22 Arg2:T23	
+A11	NotPatient T25
+R8	Symptom_bdyloc_rel Arg1:T27 Arg2:T28	
+R9	Symptom_bdyloc_rel Arg1:T29 Arg2:T32	
+R10	Symptom_bdyloc_rel Arg1:T29 Arg2:T33	
+R11	Symptom_bdyloc_rel Arg1:T29 Arg2:T34	
+R12	Symptom_bdyloc_rel Arg1:T35 Arg2:T36	
+R13	Symptom_bdyloc_rel Arg1:T35 Arg2:T37	
+R14	Symptom_bdyloc_rel Arg1:T41 Arg2:T42	
+A12	SType T15 disorder
+A13	SType T17 disorder
+A14	SType T18 disorder
+A15	SType T19 normal
+A16	SType T21 disorder
+A17	SType T23 disorder
+A18	SType T24 disorder
+A19	SType T34 disorder
+A20	SType T33 normal
+A21	SType T32 normal
+R15	Symptom_bdyloc_rel Arg1:T30 Arg2:T34	
+R16	Symptom_bdyloc_rel Arg1:T31 Arg2:T34	

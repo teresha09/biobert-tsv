@@ -1,0 +1,190 @@
+T1	Disease 21 54	Неклассифицируемая кардиомиопатия
+A1	Time T1 now
+T2	Disease 56 94	некомпактный миокард левого желудочка.
+A2	Time T2 now
+T3	Body_location 77 94	левого желудочка.
+R1	Body_location_rel Arg1:T3 Arg2:T2	
+T4	Disease 95 131	Гипоплазия верхушки левого желудочка
+A3	Time T4 now
+T5	Body_location 115 132	левого желудочка.
+R2	Body_location_rel Arg1:T5 Arg2:T4	
+T6	Disease 133 180	Недостаточность трикуспидального клапана, 1 ст.
+A4	Time T6 now
+T7	Disease 181 216	Недостаточность митрального клапана
+A5	Time T7 now
+T8	Severity 218 222	3 ст
+A6	Degree T8 medium
+T9	Disease 232 252	легочная гипертензия
+A7	Time T9 now
+T10	Severity 224 231	Высокая
+T11	Disease 254 310	Неспецифическое нарушение внутрижелудочкового проведения
+A8	Time T11 now
+T12	Disease 312 315	ХСН
+A9	Time T12 now
+T13	Severity 316 335	2А ст, ФК 2 по Ross
+A10	Degree T13 medium
+T14	Disease 347 420	Неклассифицируемая кардиомиопатия: некомпактный миокард левого желудочка.
+A11	Time T14 now
+T15	Disease 421 457	Гипоплазия верхушки левого желудочка
+T16	Disease 459 500	Недостаточность трикуспидального клапана,
+A12	Time T16 now
+T17	Severity 501 505	1 ст
+A13	Degree T17 light
+T18	Disease 507 542	Недостаточность митрального клапана
+A14	Time T18 now
+T19	Severity 544 548	3 ст
+A15	Degree T19 medium
+T20	Disease 550 578	Высокая легочная гипертензия
+A16	Time T20 now
+T21	Disease 580 636	Неспецифическое нарушение внутрижелудочкового проведения
+A17	Time T21 now
+T22	Disease 638 641	ХСН
+A18	Time T22 now
+T23	Severity 642 661	2А ст, ФК 2 по Ross
+A19	Degree T23 medium
+T24	Disease 678 702	Железодефицитная анемия,
+A20	Time T24 now
+T25	Severity 703 707	1 ст
+A21	Degree T25 light
+T26	Disease 709 721	Тимомегалия,
+A22	Time T26 now
+T27	Severity 722 726	1 ст
+A23	Degree T27 light
+T28	Disease 728 747	Гепатоспленомегалия
+A24	Time T28 now
+T29	Disease 749 780	Дискинезия желчевыводящих путей
+A25	Time T29 now
+T30	Symptom 807 831	Приступы потери сознания
+A26	SType T30 disorder
+T31	Symptom 875 906	цианоз носогубного треугольника
+A27	SType T31 disorder
+T32	Symptom 908 938	одышка при физической нагрузке
+A28	SType T32 disorder
+T33	Disease 1111 1119	гестозом
+A29	NotPatient T33
+T34	Disease 1075 1107	фетоплацентарной недостаточности
+A30	NotPatient T34
+T35	Disease 1218 1226	гестозом
+A31	NotPatient T35
+T36	Disease 1339 1366	дыхательная недостаточность
+A32	Time T36 before
+T37	Disease 1368 1370	НК
+A33	Time T37 before
+T38	Severity 1371 1372	I
+A34	Degree T38 light
+T39	Disease 1445 1458	синдром Дауна
+T40	Body_location 1677 1679	ЛЖ
+T41	Disease 1726 1736	рабдомиома
+T42	Disease 1776 1796	туберозным склерозом
+A35	Time T42 now
+T43	Body_location 2139 2142	ЦНС
+T44	Symptom 2149 2165	поза полуфлексии
+T45	Symptom 2167 2185	мышечная гипотония
+T46	Symptom 2202 2223	бледновато-иктеричные
+A36	SType T46 disorder
+T47	Symptom 2225 2235	акроцианоз
+A37	SType T47 disorder
+T48	Symptom 2237 2268	цианоз носогубного треугольника
+A38	SType T48 disorder
+T49	Symptom 2270 2310	приступы цианоза при физической нагрузке
+A39	SType T49 disorder
+T50	Symptom 2330 2350	гипертрофии миокарда
+A40	SType T50 disorder
+T51	Body_location 2366 2372	сердца
+T52	Drug 2706 2716	ампициллин
+T53	Drug 2718 2728	гентамицин
+T54	Treatment 2730 2741	фототерапия
+T55	Drug 2743 2749	элькар
+T56	Drug 2751 2762	верошпирон,
+T57	Drug 2763 2779	бифидум-бактерин
+T58	Body_location 2867 2869	ЛЖ
+T59	Body_location 2927 2929	ЛП
+T60	Body_location 2954 2979	3 группы папиллярных мышц
+T61	Body_location 3051 3063	Клапан аорты
+T62	Body_location 3138 3140	ПЖ
+T63	Body_location 3143 3145	ПП
+T64	Body_location 3167 3169	ПЖ
+T65	Body_location 3184 3186	ЛА
+T66	Body_location 3276 3279	ЛКА
+T67	Disease 3312 3347	изолированная гипоплазия полости ЛЖ
+A41	Time T67 now
+T68	Body_location 3582 3584	ЛЖ
+T69	Body_location 3612 3629	папиллярных мышц,
+T70	Body_location 3772 3777	аорты
+T71	Body_location 3821 3823	ПП
+T72	Body_location 3826 3828	ПЖ
+T73	Body_location 3843 3845	ЛЖ
+T74	Body_location 4182 4210	левого верхнедолевого бронха
+T75	Disease 4232 4283	умеренная изолированная гипоплазия левого желудочка
+A42	Time T75 now
+T76	Disease 4343 4370	Перинатальная энцефалопатия
+A43	Time T76 now
+T77	Disease 4372 4397	Синдром мышечной дистонии
+A44	Time T77 now
+T78	Disease 4399 4420	Анемия легкой степени
+A45	Time T78 now
+T79	Drug 4459 4469	верошпирон
+T80	Body_location 4551 4553	ЛЖ
+T81	Disease 4556 4567	гипертрофия
+T82	Disease 4569 4589	некомпактный миокард
+T83	Disease 4591 4617	повышенная трабекулярность
+T84	Body_location 4640 4642	ЛП
+T85	Body_location 4663 4665	ПП
+T86	Body_location 4668 4670	ПЖ
+T87	Body_location 4748 4753	Аорта
+T88	Disease 4964 5002	кардиомиопатия – некомпактный миокард.
+T89	Disease 5003 5029	Фиброэластоз эндокарда МЖП
+T90	Body_location 5055 5057	ЛЖ
+T91	Symptom 5083 5115	Нарушение диастолической функции
+A46	SType T91 disorder
+T92	Body_location 5116 5118	ЛЖ
+T93	Body_location 5245 5251	сердца
+T94	Symptom 5370 5379	ритмичные
+A47	SType T94 normal
+T95	Symptom 5381 5401	несколько приглушены
+A48	SType T95 disorder
+T96	Symptom 5403 5435	систолический шум во всех точках
+A49	SType T96 disorder
+T97	Symptom 5460 5475	хордальный писк
+A50	SType T97 disorder
+T98	Symptom 5599 5626	Легкая синусовая тахикардия
+T99	Symptom 5644 5665	отклонение ЭОС вправо
+T100	Symptom 5667 5723	Неспецифические нарушения внутрижелудочкового проведения
+T101	Body_location 5760 5766	сердца
+T102	Body_location 5833 5843	желудочков
+T103	Body_location 5867 5887	и левого предсердия.
+T104	Symptom 5888 5952	Умеренные нарушения процесса реполяризации в миокарде желудочков
+T105	Symptom 6007 6021	Ритм синусовый
+A51	SType T105 normal
+T106	Symptom 6048 6147	Нарушение процесса реполяризации в миокарде желудочков с депрессией сегмента ST в V5 при тахикардии
+A52	SType T106 disorder
+T107	Body_location 6195 6197	ЛЖ
+T108	Body_location 6369 6371	ЛЖ
+T109	Body_location 6682 6688	сердца
+T110	Disease 6758 6794	нарушения диастолической функции МЖП
+T111	Disease 6845 6868	умеренная кардиомегалия
+T112	Body_location 6906 6923	правого желудочка
+T113	Body_location 6926 6945	правого предсердия.
+T114	Drug 6968 6975	капотен
+T115	Drug 7011 7018	трентал
+T116	Drug 7032 7041	предуктал
+T117	Drug 7055 7064	тромбоАСС
+T118	Drug 7078 7088	верошпирон
+T119	Drug 7102 7111	мальтофер
+T120	Drug 7160 7167	капотен
+T121	Drug 7213 7223	тромбо АСС
+T122	Drug 7235 7245	верошпирон
+T123	Drug 7259 7266	трентал
+T124	Drug 7280 7289	предуктал
+T125	Drug 7303 7312	мальтофер
+T126	Body_location 7432 7434	ЛЖ
+T127	Body_location 7484 7490	сердца
+T128	Body_location 7616 7622	сердца
+T129	Disease 7633 7669	гипоплазии верхушки левого желудочка
+T130	Drug 7695 7703	капотена
+T131	Symptom 7889 7898	бледность
+A53	SType T131 disorder
+T132	Symptom 7900 7915	потеря сознания
+A54	SType T132 disorder
+T133	Symptom 7917 7941	подергивания конечностей
+A55	SType T133 disorder

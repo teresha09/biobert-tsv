@@ -1,0 +1,211 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 56 70	желчный пузырь
+T3	Body_location 187 193	Печень
+T4	Body_location 308 321	Воротная вена
+T5	Body_location 360 380	Поджелудочная железа
+T6	Body_location 490 499	Селезенка
+T7	Body_location 610 617	Желудок
+T8	Symptom 731 757	деформации желчного пузыря
+A1	SType T8 disorder
+T9	Body_location 742 757	желчного пузыря
+T10	Symptom 759 778	Вторичные изменения
+A2	SType T10 disorder
+T11	Body_location 779 799	поджелудочной железы
+T12	Drug 977 987	вентолином
+T13	Drug 1110 1120	вентолином
+T14	Symptom 1175 1200	Нормальное положение ЭОС.
+A3	SType T14 normal
+T15	Body_location 1228 1243	синусового узла
+T16	Body_location 1246 1272	миокард правого предсердия
+T17	Symptom 1201 1224	Миграция водителя ритма
+A4	SType T17 disorder
+T18	Symptom 1312 1354	Неспецифическая внутрижелудочковая блокада
+A5	SType T18 disorder
+T19	Symptom 1274 1294	Умеренная тахикардия
+A6	SType T19 normal
+T20	Symptom 1296 1310	резкая аритмия
+A7	SType T20 disorder
+T21	Symptom 1465 1525	Удлинение электрической систолы желудочков (QT) на 0.05-0.06
+A8	SType T21 disorder
+T22	Body_location 1497 1507	желудочков
+T23	Symptom 1404 1463	Парциальный синдром преждевременного возбуждения желудочков
+A9	SType T23 disorder
+T24	Body_location 1453 1463	желудочков
+T25	Body_location 1328 1346	внутрижелудочковая
+T26	Body_location 1594 1617	органов грудной  клетки
+T27	Symptom 1637 1680	острых очаговых и инфильтративных изменений
+A10	Negation T27
+A11	SType T27 disorder
+T28	Symptom 1774 1803	Легочный рисунок деформирован
+A12	SType T28 disorder
+T29	Body_location 1851 1857	Бронхи
+T30	Body_location 1879 1901	субсегментарных ветвей
+T31	Body_location 1903 1918	просвет бронхов
+T32	Body_location 1937 1949	Корни легких
+T33	Body_location 1977 1988	Средостение
+T34	Body_location 1708 1732	долей и сегментов легких
+T35	Body_location 1759 1772	верхних зонах
+T36	Body_location 1842 1849	бронхов
+T37	Body_location 2003 2009	Сердце
+T38	Body_location 2028 2040	талия сердца
+T39	Body_location 2069 2090	дуги легочного конуса
+T40	Body_location 2126 2142	Куполы диафрагмы
+T41	Body_location 2159 2165	Синусы
+T42	Body_location 2184 2199	Костная система
+T43	Body_location 2202 2214	мягкие ткани
+T44	Disease 2270 2304	Аллергический персистирующий ринит
+T45	Disease 2306 2337	Искривление носовой перегородки
+T46	Body_location 2318 2337	носовой перегородки
+R1	Body_location_rel Arg1:T46 Arg2:T45	
+T47	Body_location 2399 2430	слизистую оболочку полости носа
+T48	Treatment 2452 2637	Физиомер (с 2-х недель и старше), Маримар, Аква-марис, Аквалор софт и т.д.) х 3-4 раза в день ---  принеобходимости Назонекс (авамис) по 2 впр.  в каждую половину носа х 1-2 раза в день
+T49	Drug 2452 2460	Физиомер
+T50	Drug 2486 2493	Маримар
+T51	Drug 2495 2505	Аква-марис
+T52	Drug 2507 2519	Аквалор софт
+T53	Drug 2568 2576	Назонекс
+T54	Drug 2578 2584	авамис
+T55	Body_location 2597 2619	в каждую половину носа
+T57	Treatment 3070 3193	Назонекс по 1 инст. х 1 раз в день; Физиомер (1+1)  х 3 раза в день, протопик мазь 0,03% 2 раза в день, ксизал по 1т 1 р/д.
+T58	Treatment 3224 3261	Галотерапия в условиях галокамеры №10
+T60	Drug 3070 3078	Назонекс
+T61	Drug 3106 3114	Физиомер
+T62	Drug 3139 3152	протопик мазь
+T63	Drug 3174 3180	ксизал
+T59	Body_location 3331 3340	кисти рук
+T64	Treatment 3266 3345	Магнитотерапия (вихревое магнитное поле) + магнитофорез грязи на кисти рук №10.
+T56	Body_location 2830 2839	кисти рук
+T65	Treatment 2723 2760	Галотерапия в условиях галокамеры №10
+T66	Treatment 2765 2844	Магнитотерапия (вихревое магнитное поле) + магнитофорез грязи на кисти рук №10.
+T67	Treatment 2994 3037	Гипоаллергенная диета, элиминационный режим
+T68	Treatment 3620 3953	Строгое соблюдение гипоаллергенной диеты на основе стола №5 с исключением жареных, жирных, острых блюд, пряностей, маринадов, копченостей, крепких рыбных и мясных бульонов, кетчупа, майонеза, сладких газированных напитков, шоколада, цитрусовых, орехов, косточковых, моркови, яблок, сельдерея, злаковых каш, подсолнечного масла, халвы
+T69	Treatment 3958 3978	Элиминационный режим
+T70	Treatment 3983 4034	Ксизал (зиртек) 1 раз в день продолжить 2,5 месяца.
+T71	Treatment 4039 4143	Протопик мазь 0,03% 2 раза в день 2 недели, затем 1 раз в день 2 недели, затем 2 раза в неделю 2 месяца.
+T72	Treatment 4147 4185	Атодерм РО Цинк 1 раз в день 2 месяца.
+T73	Treatment 4317 4366	Туалет носа с физиомером продолжить 3 раза в день
+T74	Treatment 4371 4443	Авамис (назонекс) 1 раз в день (утром) продолжить 3 месяца (ситуационно)
+T75	Treatment 4503 4613	аллергодил (кромоглин) 3 раза в день, при недостаточном эффекте – опатанол по 1-2 к. 3 раза в день на 2 недели
+T76	Treatment 4619 4697	Креон 10 000 по 1 капс. 3 раза в день во время еды по 10 дней месяца – 3 курса
+T77	Treatment 4704 4792	Хофитол по 1т (или 20 к.) 3 раза в день за 15 мин. до еды – по 2 недели месяца – 3 курса
+T78	Treatment 4794 4942	Курсы щелочных минеральных вод (Ессентуки 4, Славяновская, Смирновская) без газа по ½ стакана 3 р/д за 15 минут до еды по 2 недели месяца – 3 курса.
+T79	Drug 4704 4711	Хофитол
+T80	Drug 4619 4624	Креон
+T81	Symptom 4463 4501	симптомов аллергического конъюнктивита
+A13	SType T81 disorder
+T82	Disease 4473 4501	аллергического конъюнктивита
+T83	Drug 4503 4513	аллергодил
+T84	Drug 4515 4524	кромоглин
+T85	Drug 4569 4577	опатанол
+T86	Drug 4371 4377	Авамис
+T87	Drug 4379 4387	назонекс
+T88	Drug 4331 4341	физиомером
+T89	Drug 4147 4162	Атодерм РО Цинк
+T90	Drug 4039 4052	Протопик мазь
+T91	Symptom 944 966	Показатели ФВД в норме
+A14	SType T91 normal
+T92	Symptom 1123 1136	отрицательная
+A15	SType T92 normal
+T93	Symptom 1748 1756	повышена
+A16	SType T93 disorder
+T94	Symptom 1805 1825	обеднен на периферии
+A17	SType T94 disorder
+T95	Symptom 1919 1935	немного расширен
+T96	Symptom 1950 1961	структурные
+A18	SType T96 normal
+T97	Symptom 1966 1975	расширены
+A19	Negation T97
+A20	SType T97 disorder
+T98	Symptom 2143 2149	ровные
+A21	SType T98 normal
+T99	Symptom 2151 2157	четкие
+A22	SType T99 normal
+T100	Symptom 2166 2182	дифференцируются
+A23	SType T100 normal
+T101	Symptom 2215 2231	без особенностей
+A24	SType T101 normal
+T102	Symptom 1694 1747	Пневматизация долей и сегментов легких неравномерная,
+A25	SType T102 disorder
+T103	Symptom 1356 1402	Суправентрикулярная экстрасистола с аберрацией
+A26	SType T103 disorder
+T104	Symptom 2058 2068	расширения
+A27	SType T104 disorder
+T105	Symptom 83 101	размер не увеличен
+A28	SType T105 normal
+T106	Symptom 111 145	лабильный перегиб в теле и в шейке
+A29	SType T106 disorder
+T107	Body_location 129 145	в теле и в шейке
+T108	Symptom 147 167	стенки – не изменены
+A30	SType T108 normal
+T109	Body_location 147 153	стенки
+T110	Symptom 169 185	просвет свободен
+A31	SType T110 normal
+T111	Body_location 331 346	печеночные вены
+T112	Symptom 350 358	изменены
+A32	Negation T112
+A33	SType T112 disorder
+T113	Symptom 324 329	9.4мм
+A34	SType T113 normal
+T114	Symptom 422 468	паренхима – эхогенность повышена, неоднородная
+A35	SType T114 disorder
+T115	Symptom 470 488	проток не расширен
+A36	SType T115 normal
+T116	Body_location 470 476	проток
+T117	Body_location 578 595	селезеночная вена
+T118	Symptom 599 608	расширена
+A37	Negation T118
+A38	SType T118 disorder
+T119	Symptom 536 576	паренхима однородная средней эхогенности
+A39	SType T119 normal
+T120	Symptom 512 534	размер средний 97х52мм
+A40	SType T120 normal
+T121	Body_location 652 672	12-ти перстная кишка
+T122	Symptom 675 705	секрет есть, стенки нормальные
+A41	SType T122 normal
+T123	Symptom 195 306	размер средний – ЛД 51мм, ПД 118мм, 1-й сегмент 14мм, контур ровный, паренхима  однородная, средней эхогенности
+A42	SType T123 normal
+T124	Symptom 382 392	измененная
+A43	SType T124 disorder
+T125	Symptom 394 420	размер средний (13х7х14мм)
+A44	SType T125 normal
+T126	Symptom 620 650	секрет есть, стенки нормальные
+A45	SType T126 normal
+T127	Disease 759 799	Вторичные изменения поджелудочной железы
+T128	Disease 1303 1310	аритмия
+T129	Severity 1296 1302	резкая
+A46	Degree T129 hard
+R2	Severity_rel Arg1:T129 Arg2:T128	
+T130	Severity 1274 1283	Умеренная
+A47	Degree T130 medium
+T131	Disease 1284 1294	тахикардия
+R3	Severity_rel Arg1:T130 Arg2:T131	
+T132	Disease 1404 1463	Парциальный синдром преждевременного возбуждения желудочков
+T133	Symptom 2343 2362	затруднения дыхания
+A48	Negation T133
+A49	SType T133 disorder
+T134	Drug 3991 3997	зиртек
+T135	Drug 3983 3989	Ксизал
+R4	Symptom_bdyloc_rel Arg1:T2 Arg2:T105	
+R5	Symptom_bdyloc_rel Arg1:T107 Arg2:T106	
+R6	Symptom_bdyloc_rel Arg1:T2 Arg2:T106	
+R7	Symptom_bdyloc_rel Arg1:T109 Arg2:T108	
+R8	Symptom_bdyloc_rel Arg1:T2 Arg2:T110	
+R9	Symptom_bdyloc_rel Arg1:T3 Arg2:T123	
+R10	Symptom_bdyloc_rel Arg1:T4 Arg2:T113	
+R11	Symptom_bdyloc_rel Arg1:T111 Arg2:T112	
+R12	Symptom_bdyloc_rel Arg1:T5 Arg2:T124	
+R13	Symptom_bdyloc_rel Arg1:T5 Arg2:T125	
+R14	Symptom_bdyloc_rel Arg1:T5 Arg2:T114	
+R15	Symptom_bdyloc_rel Arg1:T6 Arg2:T120	
+R16	Symptom_bdyloc_rel Arg1:T117 Arg2:T118	
+R17	Symptom_bdyloc_rel Arg1:T6 Arg2:T119	
+R18	Symptom_bdyloc_rel Arg1:T7 Arg2:T126	
+R19	Symptom_bdyloc_rel Arg1:T121 Arg2:T122	
+R20	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+R21	Symptom_bdyloc_rel Arg1:T31 Arg2:T95	
+R22	Symptom_bdyloc_rel Arg1:T32 Arg2:T96	
+R23	Symptom_bdyloc_rel Arg1:T32 Arg2:T97	
+R24	Symptom_bdyloc_rel Arg1:T40 Arg2:T98	
+R25	Symptom_bdyloc_rel Arg1:T40 Arg2:T99	
+R26	Symptom_bdyloc_rel Arg1:T42 Arg2:T101	
+R27	Symptom_bdyloc_rel Arg1:T43 Arg2:T101	

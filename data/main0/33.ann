@@ -1,0 +1,86 @@
+T1	Disease 9 40	Бронхиальная астма, атопическая
+T2	Severity 42 73	легкое интермиттирующее течение
+A1	Degree T2 light
+R1	Severity_rel Arg1:T2 Arg2:T1	
+T3	Disease 93 112	Аллергический ринит
+T4	Course 136 146	обострение
+A2	CType T4 worsened
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 148 188	Вторичные изменения поджелудочной железы
+T6	Body_location 168 188	поджелудочной железы
+T7	Symptom 249 280	эпизоды малопродуктивного кашля
+A3	SType T7 disorder
+T8	Symptom 291 301	обструкции
+A4	SType T8 disorder
+T9	Disease 310 332	респираторных инфекций
+T10	Disease 652 665	ветряная оспа
+T11	Disease 683 689	ангина
+T12	Treatment 429 445	кесарева течения
+A5	NotPatient T12
+A6	Effect T12 positive
+T13	Disease 710 722	дакриоцистит
+T14	Body_location 723 736	правого глаза
+T15	Symptom 776 798	атопического дерматита
+A7	SType T15 disorder
+T16	Treatment 835 888	В терапии местные средства, антигистаминные препараты
+A8	Effect T16 positive
+T17	Disease 1155 1177	респираторные инфекции
+T18	Disease 1204 1207	ОРИ
+T19	Symptom 1228 1238	обструкции
+A9	SType T19 disorder
+T20	Symptom 1254 1265	сухие хрипы
+A10	SType T20 disorder
+T21	Treatment 1318 1373	в терапии назначались сальбутамол, эуфиллин, муколитики
+A11	Effect T21 positive
+T22	Drug 1340 1351	сальбутамол
+T23	Drug 1353 1361	эуфиллин
+T24	Disease 1426 1429	ОРИ
+T25	Symptom 1456 1479	малопродуктивным кашлем
+A12	SType T25 disorder
+T26	Symptom 1481 1488	одышкой
+A13	SType T26 disorder
+T27	Symptom 1547 1553	одышка
+A14	SType T27 disorder
+T28	Disease 1631 1649	бронхиальная астма
+A15	NotPatient T28
+T29	Disease 1660 1667	псориаз
+A16	NotPatient T29
+T30	Body_location 1758 1761	Зев
+T31	Symptom 1766 1785	катаральных явлений
+A17	Negation T31
+T32	Body_location 1787 1801	Кожные покровы
+T33	Symptom 1802 1816	бледно-розовые
+A18	SType T33 normal
+T34	Symptom 1818 1824	чистые
+A19	SType T34 normal
+T35	Body_location 1826 1834	В легких
+T36	Symptom 1850 1870	везикулярное дыхание
+A20	SType T36 normal
+T37	Symptom 1873 1889	жестким оттенком
+T38	Symptom 1891 1896	хрипы
+A21	Negation T38
+T39	Body_location 1920 1926	сердца
+T40	Symptom 1927 1943	ясные, ритмичные
+A22	SType T40 normal
+T41	Symptom 1945 1967	Стул склонен к запорам
+A23	SType T41 disorder
+T42	Symptom 1969 1975	диурез
+A24	Negation T42
+T43	Symptom 1988 2008	Менингеальных знаков
+A25	Negation T43
+R3	Body_location_rel Arg1:T14 Arg2:T13	
+R4	Body_location_rel Arg1:T6 Arg2:T5	
+T44	Disease 776 798	атопического дерматита
+R5	Symptom_bdyloc_rel Arg1:T30 Arg2:T31	
+R6	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+R7	Symptom_bdyloc_rel Arg1:T32 Arg2:T34	
+R8	Symptom_bdyloc_rel Arg1:T35 Arg2:T36	
+R9	Symptom_bdyloc_rel Arg1:T35 Arg2:T37	
+R10	Symptom_bdyloc_rel Arg1:T35 Arg2:T38	
+R11	Symptom_bdyloc_rel Arg1:T39 Arg2:T40	
+T45	Severity 114 134	персистирующая форма
+A26	Degree T45 medium
+R12	Severity_rel Arg1:T45 Arg2:T3	
+A27	SType T37 disorder
+T46	Disease 1012 1025	токсоплазмозу
+A28	Negation T46

@@ -1,0 +1,171 @@
+T1	Body_location 3625 3639	Кожные покровы
+T2	Symptom 3640 3646	чистые
+A1	SType T2 normal
+T3	Symptom 3648 3655	бледные
+A2	SType T3 disorder
+T4	Symptom 3657 3677	периорбитальные тени
+A3	SType T4 disorder
+T5	Symptom 3679 3690	Зев спокоен
+A4	SType T5 normal
+T6	Symptom 3692 3719	Носовое дыхание  затруднено
+A5	SType T6 disorder
+T7	Body_location 3721 3729	В лёгких
+T8	Symptom 3730 3750	дыхание везикулярное
+A6	SType T8 normal
+T9	Symptom 3752 3771	с жестким оттенком,
+A7	SType T9 disorder
+T10	Symptom 3772 3793	сухие свистящие хрипы
+A8	SType T10 disorder
+T11	Symptom 3809 3842	Сердечные тоны звучные, ритмичные
+A9	SType T11 disorder
+T12	Symptom 3910 3943	неудержание мочи в дневной период
+A10	SType T12 disorder
+T13	Symptom 3945 3962	Стул  оформленный
+A11	SType T13 normal
+T14	Symptom 3964 3981	склонен к запорам
+A12	SType T14 disorder
+T15	Symptom 3983 4003	Менингеальных знаков
+A13	Negation T15
+T16	Disease 3330 3346	пищевая аллергия
+A14	NotPatient T16
+T17	Symptom 3365 3386	обструктивный синдром
+A15	NotPatient T17
+A16	SType T17 disorder
+T18	Disease 3429 3447	бронхиальная астма
+A17	NotPatient T18
+T19	Disease 3256 3262	коклюш
+T20	Disease 3284 3292	менингит
+T21	Disease 2997 3053	синдром вегетативной дисфункции по гипертоническому типу
+T22	Disease 2861 2884	хронический пиелонефрит
+T23	Disease 2886 2889	ПМР
+T24	Disease 2891 2917	нейрогенный мочевой пузырь
+T25	Symptom 2679 2732	выраженное затруднение носового дыхания круглогодично
+A18	SType T25 disorder
+T26	Symptom 2614 2620	ринита
+A19	SType T26 disorder
+T27	Symptom 2623 2636	конъюнктивита
+A20	SType T27 normal
+T28	Symptom 2393 2421	Приступы затруднения дыхания
+A21	SType T28 disorder
+T29	Treatment 2337 2392	получает симбикорт 160/4,5 мкг по 2 инг. 2 раза в день.
+T30	Drug 2346 2355	симбикорт
+T31	Treatment 2211 2327	получать ингаляции пульмикорта и беродуала через небулайзер (до 2000 мкг по пульмикорту в сутки, 20 кап.  беродуала)
+T32	Drug 2230 2241	пульмикорта
+T33	Drug 2244 2253	беродуала
+T34	Drug 2316 2326	 беродуала
+T35	Drug 2287 2298	пульмикорту
+T36	Treatment 1947 2043	В терапии был назначен фликсотид, затем серетид (сначала мультидиск, затем ДАИ 250/25 мкг 2 р/д)
+T37	Drug 1970 1979	фликсотид
+T38	Drug 1987 1994	серетид
+T39	Drug 2004 2014	мультидиск
+T40	Treatment 2045 2084	Дозировки ИГКС постепенно увеличивались
+T41	Disease 9 40	Бронхиальная астма, атопическая
+T42	Severity 42 74	тяжелого персистирующего течения
+A22	Degree T42 hard
+R1	Severity_rel Arg1:T42 Arg2:T41	
+T43	Disease 104 132	риноконъюнктивальный синдром
+T44	Course 134 142	ремиссия
+A23	CType T44 improved
+R2	Course_rel Arg1:T44 Arg2:T43	
+T45	Disease 144 163	Аллергический ринит
+T46	Course 187 201	вне обострения
+A24	CType T46 improved
+R3	Course_rel Arg1:T46 Arg2:T45	
+T47	Disease 203 223	Атопический дерматит
+T48	Course 225 233	ремиссия
+A25	CType T48 improved
+R4	Course_rel Arg1:T48 Arg2:T47	
+T49	Disease 235 251	Пищевая аллергия
+T50	Course 253 261	ремиссия
+A26	CType T50 improved
+R5	Course_rel Arg1:T50 Arg2:T49	
+T51	Disease 263 288	Хроническая болезнь почек
+T52	Severity 289 297	1 стадия
+A27	Degree T52 light
+R6	Severity_rel Arg1:T52 Arg2:T51	
+T53	Disease 299 320	Вторичный пиелонефрит
+T54	Course 322 337	активная стадия
+A28	CType T54 worsened
+R7	Course_rel Arg1:T54 Arg2:T53	
+T55	Disease 339 357	Катаральный цистит
+T56	Disease 359 390	Неадаптированный мочевой пузырь
+T57	Body_location 376 390	мочевой пузырь
+T58	Disease 392 402	Дисменорея
+T59	Disease 404 430	Хронический гастродуоденит
+T60	Course 432 442	обострение
+A29	CType T60 worsened
+T61	Disease 444 468	Дискинезия желчных путей
+T62	Body_location 455 468	желчных путей
+T63	Body_location 488 503	желчного пузыря
+R8	Body_location_rel Arg1:T63 Arg2:T61	
+R9	Body_location_rel Arg1:T62 Arg2:T61	
+R10	Course_rel Arg1:T60 Arg2:T59	
+R11	Body_location_rel Arg1:T57 Arg2:T56	
+T64	Disease 505 546	Вторичные изменения поджелудочной железы.
+T65	Body_location 525 545	поджелудочной железы
+R12	Body_location_rel Arg1:T65 Arg2:T64	
+T66	Symptom 608 636	приступы затруднения дыхания
+A30	SType T66 disorder
+T67	Symptom 638 647	высыпания
+A31	SType T67 disorder
+T68	Body_location 648 655	на коже
+T69	Symptom 681 709	затруднение носового дыхания
+A32	SType T69 disorder
+T70	Disease 1063 1069	коклюш
+T71	Disease 1071 1084	ветряная оспа
+T72	Disease 1086 1094	краснуха
+T73	Disease 1096 1104	менингит
+T74	Disease 1137 1151	пупочная грыжа
+T75	Disease 1225 1247	атопического дерматита
+T76	Disease 1278 1294	пищевой аллергии
+T77	Disease 1401 1404	ОРИ
+T78	Disease 1414 1435	обструктивный бронхит
+T79	Disease 1492 1515	бронхиальной обструкции
+T80	Disease 1555 1573	бронхиальная астма
+T81	Severity 1574 1596	среднетяжелого течения
+A34	Degree T81 medium
+R13	Severity_rel Arg1:T81 Arg2:T80	
+T82	Treatment 1598 1633	В терапии кетотифен (6 мес), тайлед
+A35	Effect T82 no-effect
+T83	Drug 1608 1617	кетотифен
+T84	Drug 1627 1633	тайлед
+T85	Treatment 1669 1687	получила курсы СИТ
+A36	Effect T85 negative
+T86	Disease 1809 1827	бронхиальная астма
+T87	Severity 1828 1844	тяжелого течения
+A37	Degree T87 hard
+R14	Severity_rel Arg1:T87 Arg2:T86	
+T88	Disease 2942 2956	гастродуоденит
+T89	Course 1516 1530	рецидивировали
+A33	CType T89 worsened
+R15	Course_rel Arg1:T89 Arg2:T79	
+T90	Treatment 2958 2987	получала терапию в стационаре
+R16	Symptom_bdyloc_rel Arg1:T68 Arg2:T67	
+T91	Disease 2614 2620	ринита
+A38	Conditional T91
+T92	Disease 2623 2636	конъюнктивита
+A39	Conditional T92
+T93	Treatment 1437 1466	Получала терапию в стационаре
+A40	Effect T93 no-effect
+A41	Effect T40 no-effect
+A42	Effect T31 unknown
+A43	Effect T29 unknown
+A44	Effect T90 unknown
+R17	Symptom_bdyloc_rel Arg1:T1 Arg2:T2	
+R18	Symptom_bdyloc_rel Arg1:T1 Arg2:T3	
+R19	Symptom_bdyloc_rel Arg1:T1 Arg2:T4	
+R20	Symptom_bdyloc_rel Arg1:T7 Arg2:T8	
+R21	Symptom_bdyloc_rel Arg1:T7 Arg2:T9	
+R22	Symptom_bdyloc_rel Arg1:T7 Arg2:T10	
+T94	Symptom 1214 1247	проявления атопического дерматита
+A45	SType T94 disorder
+T95	Body_location 2903 2917	мочевой пузырь
+R23	Body_location_rel Arg1:T95 Arg2:T24	
+T96	Disease 3365 3386	обструктивный синдром
+T97	Disease 1053 1061	инфекции
+T98	Disease 963 984	развитие без задержек
+A46	Negation T98
+T99	Drug 1691 1711	бытовыми аллергенами
+T100	Severity 165 185	персистирующая форма
+A47	Degree T100 medium
+R24	Severity_rel Arg1:T100 Arg2:T45	

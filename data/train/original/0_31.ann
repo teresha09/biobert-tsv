@@ -1,0 +1,72 @@
+T1	Disease 9 40	Острый двусторонний риносинусит
+T2	Disease 42 50	Аденоиды
+T3	Severity 51 55	2 ст
+A1	Degree T3 medium
+R1	Severity_rel Arg1:T3 Arg2:T2	
+T4	Disease 57 88	Искривление носовой перегородки
+T5	Body_location 69 88	носовой перегородки
+T6	Disease 169 172	ОРИ
+T7	Symptom 191 214	малопродуктивным кашлем
+A2	SType T7 disorder
+T8	Symptom 216 233	заложенность носа
+A3	SType T8 disorder
+T9	Symptom 264 292	риноконъюнктивальный синдром
+A4	SType T9 disorder
+T10	Disease 302 318	пищевая аллергия
+A5	NotPatient T10
+A6	NotPatient T9
+T11	Symptom 606 628	атопического дерматита
+A7	SType T11 disorder
+T12	Treatment 630 683	В терапии антигистаминные препараты, местные средства
+A8	Effect T12 positive
+T13	Disease 746 749	ОРИ
+T14	Symptom 769 799	обструктивного ларинготрахеита
+A9	SType T14 disorder
+T15	Symptom 859 883	малопродуктивным кашлем.
+A10	SType T15 disorder
+T16	Body_location 1057 1071	Кожные покровы
+T17	Body_location 1103 1129	Видимые слизистые оболочки
+T18	Body_location 1147 1165	Зев: задняя стенка
+T19	Body_location 1250 1258	В лёгких
+T20	Body_location 1345 1359	Область сердца
+T21	Symptom 1383 1414	Сердечные тоны ясные, ритмичные
+A11	SType T21 normal
+T22	Symptom 1259 1279	дыхание везикулярное
+A12	SType T22 normal
+T23	Symptom 1318 1324	хрипов
+A13	Negation T23
+T24	Symptom 1433 1461	Стул регулярный, оформленный
+A14	SType T24 normal
+T25	Symptom 1463 1470	Дизурии
+A15	Negation T25
+T26	Symptom 1476 1496	Менингеальных знаков
+A16	Negation T26
+T27	Symptom 1178 1214	Носовое дыхание несколько затруднено
+T28	Symptom 1216 1248	небольшое количество отделяемого
+A17	SType T28 disorder
+T29	Symptom 1166 1176	разрыхлена
+A18	SType T29 disorder
+T30	Symptom 1130 1145	розовые, чистые
+A19	SType T30 normal
+T31	Symptom 1072 1101	бледно-розового цвета, чистые
+A20	SType T31 normal
+T32	Body_location 978 1004	подкожно-жировая клетчатка
+T33	Symptom 1013 1030	удовлетворительно
+A21	SType T33 normal
+R2	Body_location_rel Arg1:T5 Arg2:T4	
+T34	Disease 264 292	риноконъюнктивальный синдром
+A22	NotPatient T34
+T35	Disease 606 628	атопического дерматита
+T36	Disease 769 799	обструктивного ларинготрахеита
+R3	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+R4	Symptom_bdyloc_rel Arg1:T16 Arg2:T31	
+R5	Symptom_bdyloc_rel Arg1:T17 Arg2:T30	
+R6	Symptom_bdyloc_rel Arg1:T18 Arg2:T29	
+R7	Symptom_bdyloc_rel Arg1:T19 Arg2:T22	
+R8	Symptom_bdyloc_rel Arg1:T19 Arg2:T23	
+T37	Symptom 1373 1381	изменена
+A23	Negation T37
+R9	Symptom_bdyloc_rel Arg1:T20 Arg2:T37	
+A24	SType T27 disorder
+A25	SType T23 disorder
+A26	SType T37 disorder

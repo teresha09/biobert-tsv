@@ -1,0 +1,223 @@
+T1	Disease 21 54	Неклассифицируемая кардиомиопатия
+A1	Time T1 now
+T2	Body_location 56 103	рассыпной тип папиллярных мышц левого желудочка
+T3	Disease 106 109	ХСН
+A2	Time T3 now
+T4	Severity 110 118	2А-1 ст.
+T5	Disease 119 121	ФК
+A3	Time T5 now
+T6	Severity 122 124	2.
+T7	Disease 134 167	Неклассифицируемая кардиомиопатия
+A4	Time T7 now
+R3	Body_location_rel Arg1:T2 Arg2:T1	
+T8	Body_location 168 218	(рассыпной тип папиллярных мышц левого желудочка).
+R4	Body_location_rel Arg1:T8 Arg2:T7	
+T9	Disease 219 222	ХСН
+A5	Time T9 now
+T10	Disease 232 234	ФК
+A6	Time T10 now
+T11	Severity 223 230	2А-1 ст
+T12	Severity 235 237	2.
+T13	Disease 252 283	Дискинезия желчевыводящих путей
+A7	Time T13 now
+T14	Symptom 310 318	Слабость
+A8	SType T14 disorder
+T15	Symptom 320 333	головные боли
+A9	SType T15 disorder
+T16	Symptom 335 353	повышения давления
+A10	SType T16 disorder
+T17	Symptom 385 397	утомляемость
+A11	SType T17 disorder
+T18	Symptom 399 409	потливость
+A12	SType T18 disorder
+T19	Symptom 411 417	одышка
+T20	Symptom 433 437	боли
+A13	SType T20 disorder
+T21	Body_location 438 446	в сердце
+R7	Symptom_bdyloc_rel Arg1:T21 Arg2:T20	
+T22	Symptom 499 526	головокружения и потемнения
+A14	SType T22 disorder
+T23	Body_location 527 535	в глазах
+R8	Symptom_bdyloc_rel Arg1:T23 Arg2:T22	
+T24	Disease 644 668	Артериальная гипертензия
+A15	NotPatient T24
+T25	Drug 734 742	корвалол
+T26	Drug 744 752	рибоксин
+T27	Symptom 701 705	боли
+A16	NotPatient T27
+A17	SType T27 disorder
+T28	Body_location 706 722	в области сердца
+R9	Symptom_bdyloc_rel Arg1:T28 Arg2:T27	
+T29	Symptom 781 791	увеличение
+A18	NotPatient T29
+A19	SType T29 disorder
+T30	Body_location 792 809	щитовидной железы
+R10	Symptom_bdyloc_rel Arg1:T30 Arg2:T29	
+T31	Disease 824 831	аритмия
+A20	NotPatient T31
+T32	Disease 917 938	стенокардия, аритмия.
+A21	NotPatient T32
+T33	Disease 964 975	рак легких)
+A22	NotPatient T33
+T34	Body_location 968 974	легких
+R11	Body_location_rel Arg1:T34 Arg2:T33	
+T35	Disease 1078 1087	пролапсом
+A23	NotPatient T35
+A24	Time T35 before
+T36	Body_location 1088 1107	митрального клапана
+R12	Body_location_rel Arg1:T36 Arg2:T35	
+T37	Symptom 1129 1133	боли
+A25	NotPatient T37
+A26	SType T37 disorder
+T38	Body_location 1134 1150	в области сердца
+R13	Symptom_bdyloc_rel Arg1:T38 Arg2:T37	
+T39	Drug 1162 1175	нитроглицерин
+T40	Disease 1268 1275	гестоза
+A27	NotPatient T40
+A28	Time T40 before
+T41	Symptom 1277 1283	отеков
+A29	NotPatient T41
+A30	SType T41 disorder
+T42	Symptom 1514 1531	систолический шум
+A31	SType T42 disorder
+T43	Symptom 1533 1538	синел
+A32	SType T43 disorder
+T44	Disease 1599 1623	ВПС: мышечный дефект МЖП
+A33	Time T44 before
+T45	Disease 1631 1676	Перинатальная постгипоксическая энцефалопатия
+A34	Time T45 before
+T46	Disease 1678 1719	Синдром гипервозбудимости, переношенность
+A35	Time T46 before
+T47	Drug 1732 1740	панангин
+T48	Drug 1742 1750	рибоксин
+T49	Treatment 1721 1751	В терапии: панангин, рибоксин.
+T50	Symptom 1888 1901	головные боли
+A36	SType T50 disorder
+T51	Symptom 1903 1919	боли за грудиной
+A37	SType T51 disorder
+T52	Treatment 2014 2040	курсы рибоксина и глицина.
+T53	Drug 2020 2029	рибоксина
+T54	Drug 2032 2039	глицина
+T55	Drug 2132 2139	фенибут
+T56	Treatment 2132 2165	фенибут с положительной динамикой
+A38	Effect T56 positive
+T57	Symptom 2073 2088	частое моргание
+A39	SType T57 disorder
+T58	Symptom 2207 2211	боли
+T59	Body_location 2212 2227	в области сердц
+R14	Symptom_bdyloc_rel Arg1:T59 Arg2:T58	
+T60	Symptom 2230 2243	головные боли
+A40	SType T60 disorder
+T61	Symptom 2245 2265	носовые кровотечение
+A41	SType T61 disorder
+T62	Symptom 2501 2540	небольшое количество свободной жидкости
+A42	SType T62 disorder
+T63	Body_location 2541 2559	в полости перикард
+R15	Symptom_bdyloc_rel Arg1:T63 Arg2:T62	
+T64	Symptom 2604 2639	рост β-гемолитического стрептококка
+T65	Symptom 2720 2747	ГКМП, необструктивная форма
+A43	SType T65 disorder
+T66	Drug 2767 2774	ортофен
+T67	Drug 2776 2784	аспаркам
+T68	Drug 2786 2796	пирацетам.
+T69	Treatment 2821 2905	Амбулаторно назначено: пирацетам 0.4 х 2р/д, элькар 20% 20кап х 3р/д, затем кудесан.
+T70	Drug 2844 2853	пирацетам
+T71	Drug 2866 2872	элькар
+T72	Drug 2897 2904	кудесан
+T73	Treatment 2960 3026	назначались курсы метаболической терапии с положительной динамикой
+A44	Effect T73 positive
+T74	Symptom 3216 3249	повышение эл. Активности миокарда
+A45	SType T74 disorder
+T75	Body_location 3250 3267	правого желудочка
+R16	Symptom_bdyloc_rel Arg1:T75 Arg2:T74	
+T76	Symptom 3269 3292	нарушение реполяризации
+A46	SType T76 disorder
+T77	Symptom 3374 3385	гипертрофия
+A47	SType T77 disorder
+T78	Body_location 3386 3395	стенок ЛЖ
+R17	Symptom_bdyloc_rel Arg1:T78 Arg2:T77	
+T79	Symptom 3421 3445	повышена трабекулярность
+A48	SType T79 disorder
+T80	Body_location 3446 3450	ЗСЛЖ
+R18	Symptom_bdyloc_rel Arg1:T80 Arg2:T79	
+T81	Symptom 3565 3609	артериальная гипертензия систолического типа
+A49	SType T81 disorder
+T82	Disease 4410 4444	Неклассифицируемая кардиомиопатия.
+A50	Time T82 now
+T83	Disease 4445 4465	Некомпактный миокард
+A51	Time T83 now
+T84	Body_location 4466 4482	левого желудочка
+R19	Body_location_rel Arg1:T84 Arg2:T83	
+T85	Treatment 4484 4562	Назначены: тромбоАСС 100 мг/сут, капотен 25 мг х 3 р/д, трентал 100 мг х 3 р/д
+T86	Drug 4495 4504	тромбоАСС
+T87	Drug 4517 4524	капотен
+T88	Drug 4540 4547	трентал
+T89	Symptom 4636 4669	уменьшение частоты головных болей
+T90	Symptom 4671 4711	улучшилась переносимость физ. нагрузок..
+T91	Treatment 18768 18827	Козаар 37,5 мг х 2 раза в день, в 08.00 и 20.00, длительно.
+T92	Drug 18768 18774	Козаар
+T101	Treatment 18831 18923	Фенибут 250 мг х 3 раза в день, внутрь, после еды, запивая водой, не разжевывая, июнь, июль.
+T102	Drug 18831 18838	Фенибут
+T103	Treatment 18928 18971	Тромбо АСС 100 мг х1 раз в день - длительно
+T104	Drug 18928 18938	Тромбо АСС
+T105	Treatment 18976 19016	МgB6 – по 2 таб 3 р/д – август, декабрь.
+T106	Drug 18976 18980	МgB6
+T107	Treatment 19021 19105	Цитофлавин 2т х 2р/день после еды (утро, обед) – июль, сентябрь, ноябрь, январь, май
+T108	Drug 19021 19031	Цитофлавин
+T110	Drug 19112 19119	Элтацин
+T112	Drug 19157 19166	Аскорутин
+T116	Treatment 19441 19546	16. При ОРВИ обязательное назначение антибактериальной терапии возрастной дозировке (аугментин, цедекс)..
+T111	Treatment 19153 19200	12. Аскорутин по 1т. х 3 р/д – август, декабрь.
+T109	Treatment 19108 19151	11. Элтацин по 1 т. х 3 р/д – июнь, февраль
+R6	Severity_rel Arg1:T12 Arg2:T10	
+R5	Severity_rel Arg1:T11 Arg2:T9	
+R2	Severity_rel Arg1:T6 Arg2:T5	
+R1	Severity_rel Arg1:T4 Arg2:T3	
+T113	Symptom 5509 5522	головные боли
+A52	SType T113 disorder
+T119	Symptom 5525 5555	повышение АД до 130/80мм.рт.ст
+T120	Symptom 8453 8460	Дизурии
+A53	Negation T120
+T121	Symptom 8466 8486	Менингеальных знаков
+A54	Negation T121
+T122	Symptom 8492 8522	Зрение снижено (близорукость),
+T123	Symptom 8799 8819	гипертрофии миокарда
+T124	Body_location 8820 8836	левого желудочка
+R20	Symptom_bdyloc_rel Arg1:T124 Arg2:T123	
+T125	Symptom 8839 8871	Нарушения процесса реполяризации
+T126	Body_location 8872 8893	в миокарде желудочков
+R21	Symptom_bdyloc_rel Arg1:T126 Arg2:T125	
+T127	Severity 8895 8914	Умеренные нарушения
+T128	Symptom 9294 9305	Брадикардия
+T129	Symptom 10523 10554	повышение АД до 140/75 мм рт.ст
+T130	Symptom 11398 11452	Среднее пульсовое АД за сутки 58 мм.рт.ст.; повышенное
+T131	Symptom 11507 11563	Суточный ритм АД для ДАД: чрезмерное ночное снижение ДАД
+T132	Symptom 11589 11610	Скорость ДАД повышена
+T133	Symptom 11566 11587	Скорость САД повышена
+A55	SType T133 disorder
+A56	SType T130 disorder
+A57	SType T129 disorder
+A58	SType T131 disorder
+A59	SType T132 disorder
+T134	Symptom 11637 11658	Величина ДАД повышена
+A60	SType T134 disorder
+T135	Symptom 11677 11721	повышение Сад максимально до 157/92 мм рт.ст
+A61	SType T135 disorder
+T136	Symptom 12017 12059	отмечается чрезмерное ночное снижение ДАД.
+A62	SType T136 disorder
+T137	Symptom 11888 11909	эпизоды повышения САД
+A63	SType T137 disorder
+T138	Symptom 11950 11970	эпизоды снижения ДАД
+A64	SType T138 disorder
+T139	Treatment 17433 17566	Капотен 25 мг х 3 раза в день, в 07.00, 15.00, 22.00 , с 11.06.2057 увеличена доза до 31,25 мг х 3 раза в день, отменен с 12.06.2057.
+T140	Treatment 17567 17674	Козаар 37,5 мг в 08.00, 25 мг в 20.00 с 12.06.2057, с 13.06.2057 доза увеличена до 37,5 мг х 2 раза в день.
+T141	Treatment 17675 17720	Фенибут 250 мг х 3 раза в день, с 11.06.2057.
+T142	Treatment 17721 17753	Тромбо АСС 100мг х 1 раз в день.
+T143	Treatment 17897 17940	доза капотена была повышена до 93,75 мг/сут
+T144	Treatment 17944 17991	подключен к терапии фенибут в дозе 750 мг в сут
+T145	Drug 17433 17440	Капотен
+T146	Drug 17567 17573	Козаар
+T147	Drug 17675 17682	Фенибут
+T148	Drug 17721 17731	Тромбо АСС
+T93	Drug 19526 19535	аугментин
+T94	Drug 19537 19543	цедекс

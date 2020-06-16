@@ -1,0 +1,149 @@
+T1	Disease 21 44	Врожденный порок сердца
+A1	Time T1 now
+T2	Disease 46 81	Недостаточность митрального клапана
+A2	Time T2 now
+T3	Disease 83 86	ХСН
+A3	Time T3 now
+T4	Severity 87 92	2А ст
+R1	Severity_rel Arg1:T4 Arg2:T3	
+T5	Severity 94 107	ФК II по Ross
+R2	Severity_rel Arg1:T5 Arg2:T3	
+T6	Disease 119 142	Врожденный порок сердца
+A4	Time T6 now
+T7	Disease 144 179	Недостаточность митрального клапана
+A5	Time T7 now
+T8	Disease 181 184	ХСН
+T9	Severity 185 190	2А ст
+T10	Severity 192 205	ФК II по Ross
+R3	Severity_rel Arg1:T10 Arg2:T8	
+R4	Severity_rel Arg1:T9 Arg2:T8	
+T11	Disease 264 276	пиелонефрита
+A6	NotPatient T11
+A7	Time T11 before
+T12	Disease 278 287	аднексита
+A8	NotPatient T12
+A9	Time T12 before
+T13	Disease 289 300	трихомониаз
+A10	NotPatient T13
+A11	Time T13 before
+T14	Disease 303 307	ОРВИ
+A12	NotPatient T14
+A13	Time T14 before
+T15	Disease 656 663	бронхит
+A14	Time T15 before
+T16	Disease 666 675	пневмонии
+A15	Time T16 after
+T17	Body_location 136 142	сердца
+T18	Body_location 160 171	митрального
+T19	Body_location 62 81	митрального клапана
+T20	Body_location 38 44	сердца
+R5	Body_location_rel Arg1:T20 Arg2:T1	
+R6	Body_location_rel Arg1:T19 Arg2:T2	
+R7	Body_location_rel Arg1:T17 Arg2:T6	
+R8	Body_location_rel Arg1:T18 Arg2:T7	
+T21	Treatment 967 1014	дигоксин 0,00004*2 р/сут, аспаркам, верошпирон.
+A16	Effect T21 positive
+T22	Body_location 1040 1042	ЛЖ
+T23	Symptom 1043 1054	дилатирован
+R9	Symptom_bdyloc_rel Arg1:T22 Arg2:T23	
+T24	Symptom 1087 1121	снижена сократительная способность
+T25	Body_location 1122 1124	ЛЖ
+R10	Symptom_bdyloc_rel Arg1:T25 Arg2:T24	
+T26	Symptom 1141 1153	регургитация
+T27	Symptom 1157 1160	ООО
+T28	Disease 1665 1692	Дилатационная кадиомиопатия
+A17	Negation T28
+A18	Time T28 before
+T29	Symptom 1918 1932	синусовый ритм
+A19	SType T29 normal
+T30	Treatment 2332 2408	цефазолин, амбробене, ингаляции с беродуалом, верошпирон, капотен, аспаркам.
+A20	Effect T30 unknown
+T31	Drug 5239 5246	капотен
+T32	Drug 5295 5305	гипотиазид
+T33	Drug 5322 5328	конкор
+T34	Drug 5345 5352	панагин
+T35	Disease 5837 5859	Хроническмий миокардит
+A21	Time T35 before
+T36	Disease 5871 5893	Врожденный порок сердц
+A22	Time T36 now
+T37	Body_location 5888 5894	сердца
+T38	Body_location 5850 5859	миокардит
+R11	Body_location_rel Arg1:T38 Arg2:T35	
+R12	Body_location_rel Arg1:T37 Arg2:T36	
+T39	Drug 5951 5961	гипотиазид
+T40	Disease 6072 6092	фолликулярную ангину
+A23	Time T40 before
+T41	Symptom 6335 6350	гиперэластичные
+T42	Body_location 6320 6334	Кожные покровы
+R13	Symptom_bdyloc_rel Arg1:T42 Arg2:T41	
+T43	Symptom 6383 6389	отеков
+T44	Body_location 6436 6445	миндалины
+T45	Body_location 6431 6434	Зев
+T46	Body_location 6673 6687	ушные раковины
+T47	Symptom 6666 6672	Мягкие
+A24	SType T47 disorder
+R14	Symptom_bdyloc_rel Arg1:T46 Arg2:T47	
+T48	Symptom 6451 6482	острых воспалительных изменений
+T49	Symptom 6414 6429	чистые, розовые
+A25	SType T49 normal
+T50	Body_location 6395 6413	Слизистые оболочки
+R15	Symptom_bdyloc_rel Arg1:T50 Arg2:T49	
+R16	Symptom_bdyloc_rel Arg1:T44 Arg2:T48	
+R17	Symptom_bdyloc_rel Arg1:T45 Arg2:T48	
+T51	Body_location 6577 6598	Лимфатическая система
+T52	Symptom 4212 4236	замедление АВ проведения
+T53	Drug 3899 3909	цитофлавин
+T54	Body_location 2954 2959	аорты
+T55	Symptom 6790 6806	Гипермобильность
+T56	Body_location 6807 6815	коленных
+T57	Body_location 6817 6825	локтевых
+T58	Body_location 6827 6850	лучезапястных суставов.
+R18	Symptom_bdyloc_rel Arg1:T56 Arg2:T55	
+R19	Symptom_bdyloc_rel Arg1:T57 Arg2:T55	
+R20	Symptom_bdyloc_rel Arg1:T58 Arg2:T55	
+T59	Symptom 6925 6938	легочный звук
+A26	SType T59 normal
+T60	Symptom 6952 6972	дыхание везикулярное
+A27	SType T60 normal
+T61	Symptom 7020 7026	хрипов
+A28	Negation T61
+A29	SType T61 disorder
+T62	Symptom 7237 7258	Тоны сердца ритмичные
+T63	Symptom 7290 7307	систолический шум
+A30	SType T63 disorder
+T64	Body_location 7519 7524	Живот
+T65	Body_location 7614 7623	Селезенка
+T66	Symptom 7694 7700	Фимоз.
+A31	SType T66 disorder
+T67	Symptom 8102 8126	Замедление АВ-проведения
+A32	SType T67 disorder
+T68	Symptom 8128 8170	Удлинение электрической систолы желудочков
+T69	Symptom 8192 8225	Нарушение процесса реполяризации,
+T70	Symptom 9944 9968	снижение фракции выброса
+A33	SType T70 disorder
+T71	Symptom 9987 10005	повышение давления
+T72	Body_location 10016 10033	легочной артерии;
+R21	Symptom_bdyloc_rel Arg1:T72 Arg2:T71	
+T73	Body_location 9969 9985	левого желудочка
+R22	Symptom_bdyloc_rel Arg1:T73 Arg2:T70	
+T74	Symptom 10234 10277	острых очаговых и инфильтративных изменений
+A34	Negation T74
+A35	SType T74 disorder
+T75	Body_location 10473 10479	Сердце
+T76	Body_location 10509 10515	Сердце
+T77	Body_location 10850 10861	ЛЕВАЯ ПОЧКА
+T78	Body_location 11461 11473	ПРАВАЯ ПОЧКА
+T79	Symptom 13071 13132	ентгенологическая картина без костно-травматических изменений
+A36	SType T79 disorder
+T80	Drug 14600 14610	гипотиазид
+T81	Drug 15290 15296	Козаар
+T82	Drug 15351 15359	Панангин
+T83	Drug 15432 15442	Гипотиазид
+T84	Drug 15499 15509	Верошпирон
+T85	Drug 15551 15557	Конкор
+T86	Drug 15621 15631	Цитофлавин
+T87	Drug 15742 15749	Кудесан
+T88	Drug 15812 15818	Элькар
+T89	Drug 15893 15900	Хофитол
+T90	Treatment 16069 16098	аугментин, флемоклав, супракс
+T91	Drug 16101 16108	виферон

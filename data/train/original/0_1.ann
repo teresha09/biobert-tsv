@@ -1,0 +1,116 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Disease 176 195	Аллергический ринит
+T3	Disease 107 135	риноконъюнктивальный синдром
+T4	Disease 137 164	сезонная бронхиальная астма
+T5	Disease 229 249	Хронический фарингит
+T6	Severity 48 77	легкое персистирующее течение
+A1	Degree T6 light
+T7	Course 166 174	ремиссия
+A2	CType T7 improved
+T8	Severity 197 217	персистирующая форма
+A3	Degree T8 medium
+T9	Course 219 227	ремиссия
+A4	CType T9 improved
+R1	Severity_rel Arg1:T6 Arg2:T1	
+R2	Course_rel Arg1:T7 Arg2:T4	
+R3	Course_rel Arg1:T7 Arg2:T3	
+R4	Course_rel Arg1:T9 Arg2:T2	
+R5	Severity_rel Arg1:T8 Arg2:T2	
+T10	Symptom 342 365	малопродуктивный кашель
+T11	Disease 710 723	ветряная оспа
+T12	Disease 778 794	пищевой аллергии
+T13	Treatment 796 827	купировавшиеся коррекцией диеты
+A5	Effect T13 positive
+T14	Disease 951 973	респираторные инфекции
+T15	Disease 994 997	ОРИ
+T16	Symptom 1072 1095	малопродуктивный кашель
+T17	Symptom 1042 1070	затруднение носового дыхания
+T18	Drug 1268 1279	кромогексал
+T19	Body_location 1280 1285	в нос
+T20	Body_location 1288 1295	в глаза
+T21	Drug 1297 1303	зиртек
+T22	Symptom 1344 1367	малопродуктивного кашля
+T25	Drug 1390 1400	беродуалом
+T26	Drug 1403 1415	пульмикортом
+T23	Drug 1417 1424	кромоны
+T24	Treatment 1368 1432	в лечении ингаляции с беродуалом и пульмикортом, кромоны курсами
+T27	Treatment 1458 1481	гомеопатическое лечение
+A6	Effect T27 positive
+T28	Drug 1458 1473	гомеопатическое
+T29	Body_location 2772 2775	Зев
+T30	Body_location 2801 2815	Кожные покровы
+T31	Body_location 2840 2848	В легких
+T32	Body_location 2950 2956	сердца
+T33	Symptom 3001 3021	Менингеальных знаков
+A7	Negation T33
+T34	Symptom 2975 2987;2991 2999	Стул, диурез нарушены
+A8	SType T34 disorder
+T35	Symptom 2957 2973	ясные, ритмичные
+A9	SType T35 normal
+T36	Symptom 2921 2926	хрипы
+A10	Negation T36
+T37	Symptom 2864 2884	везикулярное дыхание
+A11	SType T37 normal
+T38	Symptom 2816 2838	бледно-розовые, чистые
+A12	SType T38 normal
+T39	Symptom 2780 2799	катаральных явлений
+A13	Negation T39
+T40	Disease 2070 2107	Бронхиальная астма, атопическая форма
+T41	Severity 2109 2138	легкое персистирующее течение
+A14	Degree T41 light
+T42	Disease 2239 2258	Аллергический ринит
+T43	Disease 2168 2196	риноконъюнктивальный синдром
+T44	Disease 2198 2225	сезонная бронхиальная астма
+T45	Course 2227 2237	обострение
+A15	CType T45 worsened
+R6	Course_rel Arg1:T45 Arg2:T44	
+R7	Course_rel Arg1:T45 Arg2:T43	
+R8	Severity_rel Arg1:T41 Arg2:T40	
+T46	Severity 2260 2280	персистирующая форма
+A16	Degree T46 medium
+T47	Course 2282 2292	обострение
+A17	CType T47 worsened
+R9	Severity_rel Arg1:T46 Arg2:T42	
+R10	Course_rel Arg1:T47 Arg2:T42	
+T48	Symptom 1826 1904	умеренные нарушения бронхиальной проходимости на уровне периферических бронхов
+A18	SType T48 disorder
+T49	Treatment 2295 2365	В терапии серетид 100/50 мкг по 1 инг 2 раза в день, фликсоназе, эриус
+A19	Effect T49 positive
+T50	Drug 2305 2312	серетид
+T51	Drug 2348 2358	фликсоназе
+T52	Drug 2360 2365	эриус
+T53	Disease 2495 2511	пищевая аллергия
+A20	NotPatient T53
+T54	Disease 2514 2534	атопический дерматит
+A21	NotPatient T54
+T55	Symptom 2536 2546	обструкция
+A22	Negation T55
+A23	SType T55 disorder
+T56	Disease 2549 2577	риноконъюнктивальный синдром
+A24	NotPatient T56
+T57	Treatment 1607 1617	гомеопатии
+T58	Symptom 312 340	затруднение носового дыхания
+A25	SType T58 disorder
+T59	Symptom 1701 1731	риноконъюнктивального синдрома
+T60	Symptom 1555 1573	симптомы поллиноза
+A26	SType T60 disorder
+T61	Symptom 1734 1757	бронхиальная обструкция
+A27	SType T61 disorder
+A28	SType T59 disorder
+T62	Symptom 2885 2918	с жестким оттенком (выдох удлинен
+A29	SType T62 disorder
+T63	Treatment 1258 1310	В терапии кромогексал в нос и в глаза, зиртек внутрь
+A30	Conditional T56
+R11	Symptom_bdyloc_rel Arg1:T29 Arg2:T39	
+R12	Symptom_bdyloc_rel Arg1:T30 Arg2:T38	
+R13	Symptom_bdyloc_rel Arg1:T31 Arg2:T37	
+R14	Symptom_bdyloc_rel Arg1:T31 Arg2:T62	
+R15	Symptom_bdyloc_rel Arg1:T31 Arg2:T36	
+R16	Symptom_bdyloc_rel Arg1:T32 Arg2:T35	
+T64	Disease 97 105	Поллиноз
+A31	SType T10 disorder
+T65	Drug 1914 1924	вентолином
+A32	SType T17 disorder
+A33	SType T16 disorder
+A34	Negation T34
+T66	Symptom 2582 2590	контакте

@@ -1,0 +1,187 @@
+T1	Symptom 123 224	умеренные генерализованные нарушения бронхиальной проходимости со значительным снижением на периферии
+A1	SType T1 disorder
+T2	Body_location 233 256	органов брюшной полости
+T3	Body_location 269 283	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T4	Body_location 376 397	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА:
+T5	Body_location 439 448	СЕЛЕЗЕНКА
+T6	Body_location 501 507	ПЕЧЕНЬ
+T7	Body_location 596 603	ЖЕЛУДОК
+T8	Body_location 605 621	12ПЕРСТНАЯ КИШКА
+T9	Symptom 285 291	размер
+A2	SType T9 normal
+T10	Body_location 304 310	стенки
+T11	Symptom 316 324	утолщены
+A3	Negation T11
+T12	Symptom 326 351	форма – бумерангообразная
+A4	SType T12 disorder
+T13	Symptom 353 374	просвет - анэхогенный
+A5	SType T13 disorder
+T14	Symptom 544 566	паренхима -  гомогенна
+A6	SType T14 normal
+T15	Body_location 568 581	воротная вена
+T16	Symptom 585 594	расширена
+A7	Negation T16
+T17	Symptom 636 653	стенки нормальные
+T18	Symptom 420 437	паренхима – норма
+A8	SType T18 normal
+T19	Symptom 450 476	размер средний 93х24х20 мм
+A9	SType T19 normal
+T20	Symptom 509 543	размер – ЛД – 84 мм, ПД –  120 мм;
+A10	SType T20 disorder
+T21	Symptom 398 418	размер – 19х10х16 мм
+A11	SType T21 normal
+T22	Treatment 2872 2898	серетид 250/25 мкг х 2 р/д
+T23	Drug 2872 2879	серетид
+T24	Treatment 2900 2918	фестал 1т. х 3 р/д
+T25	Drug 2900 2906	фестал
+T26	Treatment 2920 2944	беллатаминал 1т. на ночь
+T27	Drug 2920 2932	беллатаминал
+T28	Treatment 2946 2966	зиртек 10 мг на ночь
+T29	Drug 2946 2952	зиртек
+T30	Treatment 2976 3010	1% метилен. син., тридерм+крем Уна
+T31	Treatment 3012 3031	холенхим 1т. х 3р/д
+T32	Treatment 3033 3054	назонекс (1+) на ночь
+T33	Treatment 3062 3080	имудон 1т. х 6 р/д
+T34	Drug 3033 3041	назонекс
+T35	Drug 2976 2991	1% метилен. син
+T36	Drug 2994 3001	тридерм
+T37	Drug 3002 3010	крем Уна
+T38	Drug 3012 3020	холенхим
+T39	Body_location 3055 3060	в нос
+T40	Disease 2698 2713	грудной сколиоз
+T41	Severity 2714 2718	1 ст
+A12	Degree T41 light
+R1	Severity_rel Arg1:T41 Arg2:T40	
+T42	Disease 2721 2733	вялая осанка
+T43	Disease 2735 2758	продольное плоскостопие
+T44	Severity 2759 2763	1 ст
+A13	Degree T44 light
+R2	Severity_rel Arg1:T44 Arg2:T43	
+T45	Disease 2307 2326	Аллергический ринит
+T46	Disease 2328 2355	Гипертрофия небных миндалин
+T47	Body_location 2340 2355	небных миндалин
+T48	Disease 2396 2409	Серные пробки
+T49	Disease 2586 2637	Вегетососудистая дисфункция по гипотоническому типу
+T50	Treatment 2427 2453	назонекс 1+1 х 2р. 14 дней
+T51	Treatment 2481 2537	имудон 1т. х 6 р/. рассасывать 14 дней в ноябре, декабре
+T52	Drug 2427 2435	назонекс
+T53	Drug 2481 2487	имудон
+T54	Treatment 2455 2479	промывание серных пробок
+T55	Body_location 1458 1472	грудной клетки
+T56	Body_location 1765 1771	Сердце
+T57	Symptom 1833 1856	Синусы дифференцируются
+A14	SType T57 normal
+T58	Symptom 1562 1588	очаговых и инфильтративных
+A15	Negation T58
+T59	Symptom 1772 1796	обычной формы и размеров
+A16	SType T59 normal
+T60	Body_location 1206 1211	ПОЧКИ
+T61	Symptom 1213 1256	размер – ЛП – 95х31х32 мм; ПП – 99х33х34 мм
+A17	SType T61 normal
+T62	Symptom 1261 1278	положение обычное
+A18	SType T62 normal
+T63	Symptom 1301 1324	паренхима – не изменена
+A19	SType T63 normal
+T64	Body_location 1326 1329	ЧЛС
+T65	Symptom 1335 1347	дилатирована
+A20	Negation T65
+T66	Body_location 1349 1360	мочеточники
+T67	Symptom 1366 1375	расширены
+A21	Negation T67
+T68	Body_location 1377 1391	Мочевой пузырь
+T69	Symptom 1392 1401	нормальны
+A22	SType T69 normal
+T70	Disease 1936 1957	синусовая брадикардия
+T71	Disease 1969 1976	аритмия
+T72	Body_location 2022 2041	миокарде желудочков
+T75	Symptom 1901 1927	Вертикальное положение ЭОС
+A26	SType T75 normal
+T76	Disease 692 707	гастродуоденита
+T77	Symptom 709 735	увеличения размеров печени
+A28	SType T77 disorder
+T78	Symptom 738 765	деформации желчного пузыря.
+A29	SType T78 disorder
+T79	Body_location 729 735	печени
+T80	Body_location 749 764	желчного пузыря
+T81	Body_location 766 822	Внутрипеченочные желчные протоки, левый и правый долевые
+T82	Symptom 826 838	дилатированы
+A30	Negation T82
+T83	Body_location 840 855	Гепатикохоледох
+T84	Body_location 875 880	12п.к
+T85	Symptom 885 893	расширен
+A31	Negation T85
+T86	Body_location 895 908	Чревный ствол
+T87	Body_location 911 914	IVC
+T88	Symptom 918 930	дилатированы
+A32	Negation T88
+T89	Body_location 932 941	ЛСК в IVC
+T90	Symptom 945 953	изменена
+A33	Negation T90
+T91	Symptom 1147 1171	отека слизистой оболочки
+A34	SType T91 disorder
+T92	Body_location 1172 1188	гайморовых пазух
+T93	Body_location 1704 1711	бронхов
+T94	Body_location 1729 1735	стенки
+T95	Body_location 2211 2235	Дополнительная трабекула
+T96	Body_location 2238 2262	полости левого желудочка
+T97	Symptom 2170 2209	Функциональные параметры сердца в норме
+A35	SType T97 normal
+T98	Disease 2067 2094	пролапс митрального клапана
+T99	Symptom 2097 2122	минимальной регургитацией
+A37	SType T99 disorder
+T100	Body_location 2075 2094	митрального клапана
+T101	Symptom 1088 1105	венозная дисгемия
+A38	SType T101 normal
+T102	Symptom 1027 1059	Кровоток по гипотоническому типу
+A39	SType T102 disorder
+T103	Symptom 1107 1119	Гипотонус ГА
+A40	SType T103 disorder
+T104	Symptom 1604 1642	Легочный рисунок умеренно деформирован
+A41	SType T104 disorder
+T105	Symptom 1644 1687	обеднен на периферии, сгущен в нижних зонах
+A42	SType T105 disorder
+T106	Symptom 1798 1832	Поперечник сердца 10 см, КТИ=0.44.
+A43	SType T106 normal
+T107	Body_location 1809 1815	сердца
+R3	Body_location_rel Arg1:T47 Arg2:T46	
+R4	Body_location_rel Arg1:T100 Arg2:T98	
+R5	Symptom_bdyloc_rel Arg1:T3 Arg2:T9	
+R6	Symptom_bdyloc_rel Arg1:T10 Arg2:T11	
+R7	Symptom_bdyloc_rel Arg1:T4 Arg2:T21	
+R8	Symptom_bdyloc_rel Arg1:T4 Arg2:T18	
+R9	Symptom_bdyloc_rel Arg1:T5 Arg2:T19	
+R10	Symptom_bdyloc_rel Arg1:T6 Arg2:T20	
+R11	Symptom_bdyloc_rel Arg1:T6 Arg2:T14	
+R12	Symptom_bdyloc_rel Arg1:T15 Arg2:T16	
+R13	Symptom_bdyloc_rel Arg1:T8 Arg2:T17	
+R14	Symptom_bdyloc_rel Arg1:T7 Arg2:T17	
+R15	Symptom_bdyloc_rel Arg1:T79 Arg2:T77	
+R16	Symptom_bdyloc_rel Arg1:T80 Arg2:T78	
+R17	Symptom_bdyloc_rel Arg1:T81 Arg2:T82	
+R18	Symptom_bdyloc_rel Arg1:T83 Arg2:T85	
+R19	Symptom_bdyloc_rel Arg1:T86 Arg2:T88	
+R20	Symptom_bdyloc_rel Arg1:T87 Arg2:T88	
+R21	Symptom_bdyloc_rel Arg1:T89 Arg2:T90	
+R22	Symptom_bdyloc_rel Arg1:T60 Arg2:T61	
+R23	Symptom_bdyloc_rel Arg1:T60 Arg2:T62	
+R24	Symptom_bdyloc_rel Arg1:T64 Arg2:T65	
+R25	Symptom_bdyloc_rel Arg1:T66 Arg2:T67	
+R26	Symptom_bdyloc_rel Arg1:T68 Arg2:T69	
+R27	Symptom_bdyloc_rel Arg1:T56 Arg2:T59	
+T74	Severity 1929 1935	Легкая
+A23	Degree T74 light
+R28	Severity_rel Arg1:T74 Arg2:T70	
+T108	Severity 1959 1968	умеренная
+A24	Degree T108 medium
+R29	Severity_rel Arg1:T108 Arg2:T71	
+T109	Treatment 2849 2870	гипоаллергенная диета
+T110	Disease 1147 1152	отека
+T111	Disease 1873 1888	грудной сколиоз
+T73	Disease 2383 2393	тонзиллиту
+A25	SType T11 disorder
+A27	SType T16 disorder
+A36	SType T17 normal
+A44	SType T85 disorder
+A45	SType T90 disorder
+A46	SType T67 disorder
+T112	Drug 3062 3068	имудон

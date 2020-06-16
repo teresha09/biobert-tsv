@@ -1,0 +1,261 @@
+T2	Body_location 83 108	миокарда левого желудочка
+T3	Symptom 133 187	Недостаточность митрального, трикуспидального клапонов
+T4	Disease 274 277	ХСН
+T5	Severity 278 284	1-2 ст
+R1	Severity_rel Arg1:T5 Arg2:T4	
+T6	Severity 286 290	ФК 2
+T7	Disease 563 566	ХСН
+T8	Severity 567 573	1-2 ст
+R2	Severity_rel Arg1:T8 Arg2:T7	
+T9	Symptom 604 614	Дискинезия
+T10	Body_location 615 635	желчевыводящих путей
+R3	Symptom_bdyloc_rel Arg1:T10 Arg2:T9	
+T11	Disease 717 721	ДМПП
+A1	NotPatient T11
+T12	Body_location 805 813	миокарда
+T13	Symptom 793 804	гипертрофии
+A2	NotPatient T13
+A3	Negation T13
+T14	Severity 575 579	ФК 2
+T15	Drug 1419 1425	конкор
+T16	Disease 1471 1494	артериальная гипертония
+A4	NotPatient T16
+T17	Disease 1524 1531	инфаркт
+A5	NotPatient T17
+T18	Disease 1874 1887	ветряная оспа
+A6	Time T18 before
+T19	Disease 1889 1918	двусторонний катаральный отит
+A7	Time T19 before
+T20	Disease 1931 1951	фолликулярная ангина
+A8	Time T20 before
+T21	Disease 2041 2057	зоб I-II степени
+T22	Disease 2129 2146	хронический ринит
+T23	Symptom 2297 2319	боли в области голеней
+T24	Symptom 2423 2432	нарушения
+T25	Body_location 2449 2468	миокарде желудочков
+R4	Symptom_bdyloc_rel Arg1:T25 Arg2:T24	
+T26	Symptom 2519 2539	Синусовая тахикардия
+T27	Symptom 2765 2800	перегрузка объемом обоих предсердий
+T28	Body_location 2790 2800	предсердий
+R5	Symptom_bdyloc_rel Arg1:T28 Arg2:T27	
+T29	Body_location 3487 3503	левого желудочка
+T30	Symptom 3337 3347	увеличения
+T31	Body_location 3354 3364	желудочков
+R6	Symptom_bdyloc_rel Arg1:T31 Arg2:T30	
+T32	Drug 24759 24769	Верошпирон
+T33	Drug 24662 24672	Тромбо АСС
+T34	Drug 24596 24602	Конкор
+T35	Drug 24526 24536	Престариум
+T36	Treatment 24526 24592;24593 24658;24659 24755;24756 24827	Престариум (Периндоприл) 5 мг х 1 раз в день в 08.00 - длительно.. 5. Конкор(Бисопролол) 1,25мг х 1 раз в день в 20.00 - длительно.. 6. Тромбо АСС (Ацетилсалициловая кислота) 100мг х 1 раз в день , в 19.00, после еды - длительно. 7. Верошпирон(Спиронолактон ) 12,5 мг х 1 раз в день в 18.00, длительно
+A9	Effect T36 unknown
+T37	Drug 23847 23854	Урдокса
+T38	Drug 23795 23805	Тромбо АСС
+T39	Drug 23761 23771	Верошпирон
+T40	Drug 23721 23727	Конкор
+T41	Drug 23681 23691	Престариум
+T42	Drug 24114 24140	урсодезоксихолевая кислота
+T43	Treatment 23681 23720;23721 23760;23761 23794;23795 23846;23847 23881	Престариум 5мг х 1 раз в день, в 08.00. Конкор 1,25мг х 1 раз в день , в 20.00. Верошпирон 12,5мг х 1 раз в день. Тромбо АСС 100мг х 1раз в день, в 19.00, после еды. Урдокса 250мг на ночь с 17.05.2045
+T44	Body_location 21792 21803	ЛЕВАЯ ПОЧКА
+T45	Body_location 22404 22416	ПРАВАЯ ПОЧКА
+T46	Body_location 23058 23072	МОЧЕВОЙ ПУЗЫРЬ
+T47	Body_location 20762 20776	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T48	Body_location 20883 20889	ПЕЧЕНЬ
+T49	Body_location 21251 21271	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T50	Body_location 21434 21443	СЕЛЕЗЕНКА
+T51	Body_location 21585 21592	ЖЕЛУДОК
+T52	Body_location 21608 21624	Д\ПЕРСТНАЯ КИШКА
+T53	Body_location 21661 21670	ЛИМФОУЗЛЫ
+T54	Body_location 21065 21078	Воротная вена
+T55	Body_location 19103 19125	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T56	Symptom 19431 19452	Расширение предсердий
+T57	Body_location 19328 19336	ПЕРИКАРД
+T58	Body_location 19358 19375	НИЖНЯЯ ПОЛАЯ ВЕНА
+T59	Body_location 18182 18198	ЛЕВОЕ ПРЕДСЕРДИЕ
+T60	Body_location 18381 18396	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T61	Body_location 18558 18585	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА
+T62	Body_location 19019 19036	МИТРАЛЬНЫЙ КЛАПАН
+T63	Body_location 18632 18662	ЗАДНЯЯ СТЕНКА ЛЕВОГО ЖЕЛУДОЧКА
+T64	Body_location 18228 18245	ПРАВОЕ ПРЕДСЕРДИЕ
+T65	Body_location 17789 17794	АОРТА
+T66	Body_location 18049 18065	ЛЕГОЧНАЯ АРТЕРИЯ
+T67	Body_location 16755 16774	миокарде желудочков
+T68	Symptom 16811 16826	ишемии миокарда
+R7	Symptom_bdyloc_rel Arg1:T67 Arg2:T68	
+T69	Symptom 16549 16560	гипертрофии
+T70	Body_location 16561 16569	миокарда
+R8	Symptom_bdyloc_rel Arg1:T70 Arg2:T69	
+T71	Body_location 14751 14765	Зев, миндалины
+T72	Body_location 14935 14949	Мышцы, суставы
+T73	Drug 13858 13868	престариум
+T74	Drug 13882 13888	конкор
+T75	Drug 13905 13915	тромбо АСС
+T76	Drug 13930 13937	МагнеВ6
+T77	Drug 13951 13961	верошпирон
+T78	Treatment 13858 13975	престариум 5 мг х 1р/д, конкор 1,25 мг х 1р/д; тромбо АСС 100мг х 1р/д; МагнеВ6 1таб х 3р/д; верошпирон 6.25мг х 1р/д
+T79	Drug 14261 14271	престариум
+T80	Drug 14273 14279	конкор
+T81	Drug 14281 14291	тромбо АСС
+T82	Drug 14293 14303	верошпирон
+T83	Treatment 14261 14303	престариум, конкор, тромбо АСС, верошпирон
+T84	Symptom 13816 13836	легочная гипертензия
+T85	Symptom 5240 5272	нарушения диастолической функции
+T86	Body_location 5830 5847	правого желудочка
+T87	Symptom 5809 5829	нарушение заполнения
+R9	Symptom_bdyloc_rel Arg1:T86 Arg2:T87	
+T88	Drug 6988 6995	капотен
+T89	Drug 7012 7019	трентал
+T90	Drug 7033 7042	предуктал
+T91	Drug 7056 7066	цитофлавин
+T92	Drug 7078 7086	магне В6
+T93	Drug 7098 7104	глицин
+T94	Drug 7116 7123	хофитол
+T95	Drug 7134 7144	вильпрафен
+T96	Treatment 6988 7144	капотен 18.75мг х 3р/д; трентал 50мг х 3р/д; предуктал 35мг х 1р/д; цитофлавин 1т х 2р/д; магне В6 1т х 3р/д; глицин 1т х 1р/д; хофитол 1т х3р/д; вильпрафен
+T97	Symptom 6772 6801	повышенным содержанием железа
+T98	Symptom 5750 5770	легочную гипертензию
+A10	Negation T98
+T99	Symptom 5518 5532	микрокальцинат
+T100	Severity 5137 5141	0.76
+T101	Symptom 5121 5136	ФВ по Тейхольцу
+T102	Body_location 4348 4379	Двустворчатый аортальный клапан
+T103	Symptom 4384 4406	нарушения гемодинамики
+A11	Negation T103
+R10	Symptom_bdyloc_rel Arg1:T102 Arg2:T103	
+T104	Body_location 4468 4477	перикарда
+T105	Symptom 4457 4477	кальциноза перикарда
+A12	Negation T105
+T106	Symptom 4562 4575	кардиомегалии
+A13	Negation T106
+T107	Body_location 4623 4629	легких
+T108	Body_location 1167 1175	миокарде
+T109	Symptom 1132 1164	нарушение процесса реполяризации
+R11	Symptom_bdyloc_rel Arg1:T108 Arg2:T109	
+T110	Symptom 1225 1246	синусовой брадикардии
+T111	Body_location 1334 1350	левого желудочка
+T112	Symptom 1307 1333	повышенная трабекулярность
+R12	Symptom_bdyloc_rel Arg1:T111 Arg2:T112	
+T113	Treatment 1419 1425	конкор
+T114	Body_location 6425 6433	миокарда
+T115	Symptom 1039 1059	легочная гипертензия
+A14	SType T115 disorder
+A15	SType T26 disorder
+T116	Symptom 4584 4620	инфильтративных и очаговых изменений
+A16	Negation T116
+T117	Symptom 2633 2653	изменения в миокарде
+A17	SType T117 disorder
+T118	Body_location 2645 2653	миокарде
+T119	Disease 310 343	Неклассифицируемая кардиомиопатия
+A18	Time T119 now
+T120	Disease 21 54	Неклассифицируемая кардиомиопатия
+A19	Time T120 now
+T1	Symptom 56 82	Повышенная трабекулярность
+A20	SType T1 disorder
+R13	Symptom_bdyloc_rel Arg1:T2 Arg2:T1	
+T121	Body_location 149 187	митрального, трикуспидального клапонов
+R14	Symptom_bdyloc_rel Arg1:T121 Arg2:T3	
+T122	Body_location 3205 3213	миокарда
+T123	Symptom 7495 7516	затрудненного дыхания
+T124	Symptom 7559 7580	боли в области сердца
+A21	SType T124 disorder
+T125	Body_location 7574 7580	сердца
+R15	Symptom_bdyloc_rel Arg1:T125 Arg2:T124	
+T126	Severity 7681 7685	44.9
+T127	Symptom 7746 7777	Неполная блокада правой ножки п
+A22	SType T127 disorder
+T128	Symptom 7909 7924	ФВ по Тейхольцу
+T129	Severity 7925 7928	67%
+T130	Symptom 8230 8252	Удлинение интервала QT
+A23	SType T130 disorder
+T131	Severity 8256 8270	0.08 – 0.11сек
+T132	Symptom 8382 8399	затруднение вдоха
+A24	SType T132 disorder
+T133	Drug 8483 8490	капотен
+T134	Drug 8507 8514	трентал
+T135	Drug 8528 8537	предуктал
+T136	Drug 8551 8561	тромбо АСС
+T137	Drug 8575 8581	глицин
+T138	Drug 8593 8599	клацид
+T139	Treatment 8483 8599	капотен 18.75мг х 3р/д, трентал 50мг х 3р/д, предуктал 35мг х 1р/д, тромбо АСС 50мг х 1р/д, глицин 1т х 3р/д, клацид
+T140	Drug 8873 8881	диазолин
+T141	Drug 9817 9824	клацида
+T142	Drug 9834 9843	капотеном
+T143	Drug 9862 9871	предуктал
+T144	Drug 9887 9896	тромбоАСС
+T145	Treatment 9817 9896	клацида, терапия капотеном 18,75 мг х 3 р/д, предуктал 35 мг х 2 р/д, тромбоАСС
+A25	Effect T145 unknown
+T146	Severity 10410 10412	63
+T147	Symptom 10394 10409	ФВ по Тейхольцу
+T148	Body_location 10424 10431	миокард
+T149	Body_location 10823 10825	ЛЖ
+T150	Symptom 10796 10822	Повышенная трабекулярность
+A26	SType T150 disorder
+R16	Symptom_bdyloc_rel Arg1:T149 Arg2:T150	
+T151	Disease 11323 11356	неклассифицируемую кардиомиопатию
+A27	Time T151 now
+T152	Body_location 11371 11395	миокард левого желудочка
+T153	Severity 11435 11437	II
+T154	Severity 11423 11430	II А ст
+T155	Symptom 11420 11422	НК
+T156	Symptom 11432 11434	ФК
+T157	Drug 11443 11453	вильпрафен
+T158	Drug 11456 11462	клацид
+T159	Treatment 11443 11462	вильпрафен и клацид
+A28	Effect T159 negative
+T160	Severity 11737 11740	69%
+T161	Body_location 12193 12218	миокарде левого желудочка
+T162	Symptom 12529 12556	Расширение обоих предсердий
+A29	SType T162 disorder
+T163	Body_location 12707 12723	левого желудочка
+T164	Symptom 12812 12844	персистирующие синусоиды, лакуны
+A30	SType T164 disorder
+T165	Symptom 13048 13085	гипертрофии миокарда обоих желудочков
+A31	SType T165 disorder
+T166	Body_location 13060 13068	миокарда
+R17	Symptom_bdyloc_rel Arg1:T166 Arg2:T165	
+T167	Body_location 13176 13195	миокарде желудочков
+T168	Symptom 13209 13224	ишемии миокарда
+A32	SType T168 disorder
+R18	Symptom_bdyloc_rel Arg1:T167 Arg2:T168	
+T169	Body_location 13379 13387	миокарда
+T170	Symptom 13372 13378	ишемии
+A33	SType T170 disorder
+R19	Symptom_bdyloc_rel Arg1:T169 Arg2:T170	
+T171	Symptom 13445 13467	депрессией сегмента ST
+A34	SType T171 disorder
+T172	Severity 13471 13477	2,5 мм
+T173	Symptom 13792 13814	признаки застоя по МКК
+A35	SType T173 disorder
+T174	Body_location 14895 14910	Костная система
+T175	Body_location 14859 14880	Лимфатическая система
+T176	Body_location 14794 14813	Подкожная клетчатка
+T177	Body_location 14978 14985	Суставы
+T178	Body_location 15577 15583	сердца
+T179	Body_location 15865 15883	Органы пищеварения
+T180	Body_location 15902 15907	Живот
+T181	Body_location 15991 15997	Печень
+T182	Body_location 16094 16113	Мочеполовая система
+T183	Body_location 16184 16199	Нервная система
+T184	Body_location 18313 18329	ПРАВЫЙ ЖЕЛУДОЧЕК
+T185	Body_location 18831 18857	правого и левого желудочка
+T186	Symptom 18995 19017	эмбриональном миокарде
+A36	SType T186 disorder
+T187	Symptom 19377 19386	расширена
+A37	SType T187 disorder
+R20	Symptom_bdyloc_rel Arg1:T58 Arg2:T187	
+T188	Severity 19414 19417	50%
+T189	Body_location 19901 19917	легочной артерии
+T190	Symptom 19872 19890	повышение давления
+A38	SType T190 disorder
+R21	Symptom_bdyloc_rel Arg1:T189 Arg2:T190	
+T191	Body_location 20210 20224	легочной ткани
+T192	Symptom 20182 20207	инфильтративных изменений
+A39	Negation T192
+R22	Symptom_bdyloc_rel Arg1:T191 Arg2:T192	
+T193	Body_location 20667 20682	Костная система
+T194	Body_location 21156 21159	ОЖП
+T195	Body_location 21969 21978	Паренхима
+T196	Body_location 22943 22953	Мочеточник
+T197	Symptom 24019 24037	синдрома холестаза
+A40	SType T197 disorder
+T198	Drug 25023 25032	аугментин
+T199	Drug 25015 25021	зиннат

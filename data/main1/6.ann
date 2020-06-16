@@ -1,0 +1,163 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 57 71	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T3	Body_location 160 180	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T4	Body_location 361 368	ЖЕЛУДОК
+T5	Body_location 384 401	12-ПЕРСТНАЯ КИШКА
+T6	Body_location 245 254	СЕЛЕЗЕНКА
+T7	Body_location 296 302	ПЕЧЕНЬ
+T8	Symptom 479 498	вторичных изменений
+A1	SType T8 disorder
+T9	Symptom 442 461	признаки деформации
+A2	SType T9 disorder
+T10	Body_location 462 477	желчного пузыря
+T11	Body_location 499 519	поджелудочной железы
+T12	Symptom 546 581	умеренного отека слизистой оболочки
+A3	SType T12 disorder
+T13	Body_location 582 598	гайморовых пазух
+T14	Body_location 600 618	Фронтальная пазуха
+T15	Symptom 619 627	воздушна
+A4	SType T15 normal
+T16	Treatment 2204 2234	Фликсотид 50 мкг 2 раза в день
+T17	Symptom 2257 2285	приступа затруднения дыхания
+A5	SType T17 disorder
+T18	Symptom 2287 2305	свистящего дыхания
+A6	SType T18 disorder
+T19	Symptom 2307 2319	сухого кашля
+A7	SType T19 disorder
+T20	Disease 2330 2333	ОРИ
+T21	Treatment 2335 2374	вентолин по 1-2 инг. до 2-3 раз в день.
+T22	Drug 2335 2343	вентолин
+T23	Treatment 2393 2449	через небулайзер - беродуал 10 кап. + пульмикорт 250 мкг
+T24	Drug 2412 2420	беродуал
+T25	Drug 2431 2441	пульмикорт
+T26	Symptom 2469 2474	кашля
+A8	SType T26 disorder
+T27	Treatment 2477 2522	лазолван по 1/2т. 2-3 раза в день на 4-5 дней
+T28	Drug 2477 2485	лазолван
+T29	Disease 2542 2563	аллергического ринита
+T30	Treatment 2590 2826	солевыми растворами (Аква-Марис,  Салин,  Маример)  3-4   раза  в  день,  сосудосуживающие  средства  (Називин,  Отривин, Ксимелин и др.) 5-7 дней, Фликсоназе (или Насобек, или Назонекс) по 1 инстилляции 1 раз в день курсом до 14-21 дня
+T31	Body_location 2576 2589	носовых ходов
+T32	Drug 2611 2621	Аква-Марис
+T33	Drug 2624 2629	Салин
+T34	Drug 2631 2639	 Маример
+T35	Drug 2693 2700	Називин
+T36	Drug 2703 2710	Отривин
+T37	Drug 2712 2720	Ксимелин
+T38	Drug 2738 2748	Фликсоназе
+T39	Drug 2754 2761	Насобек
+T40	Drug 2767 2775	Назонекс
+T41	Body_location 3333 3362	сосудов головного мозга и шеи
+T42	Treatment 3240 3294	Холензим 1т. 3 раза в день после еды курсами с креоном
+T43	Drug 3240 3248	Холензим
+T44	Drug 3287 3294	креоном
+T45	Treatment 3167 3234	Креон по 1к. х 3 раза в день во время еды 2 недели месяца (3 курса)
+T46	Drug 3167 3172	Креон
+T47	Disease 3106 3128	атопического дерматита
+T48	Treatment 3131 3161	элидел 2 раза в день длительно
+T49	Symptom 3083 3105	минимальных проявлений
+A9	SType T49 disorder
+T50	Drug 3131 3137	элидел
+T51	Treatment 3001 3063	ежедневно (авен, биодерма, урьяж, ла рош позе, локобейз рипеа)
+T52	Body_location 2993 2998	кожей
+T53	Drug 3012 3016	авен
+T54	Drug 3018 3026	биодерма
+T55	Drug 3028 3033	урьяж
+T56	Drug 3035 3046	ла рош позе
+T57	Drug 3048 3062	локобейз рипеа
+T58	Symptom 2926 2934	расчесов
+A10	SType T58 disorder
+T59	Treatment 2937 2970	фукорцин 1 раз в день на 5-7 дней
+T60	Drug 2937 2945	фукорцин
+T61	Treatment 2866 2907	Местно кератозан 15  1 раз в день 1 месяц
+T62	Drug 2873 2882	кератозан
+T63	Treatment 2831 2861	Ксизал  1т. 1 раз в день 1 мес
+T64	Drug 2831 2837	Ксизал
+T65	Symptom 743 775	умеренные нарушения проходимости
+A11	SType T65 disorder
+T66	Body_location 776 798	периферических бронхов
+T67	Disease 974 992	вазомоторный ринит
+T68	Symptom 916 935	показатели в норме.
+A12	SType T68 normal
+T69	Symptom 1061 1079	микоз гладкой кожи
+A13	SType T69 disorder
+T70	Symptom 1109 1128	грибковое поражение
+A14	Negation T70
+A15	SType T70 disorder
+T71	Body_location 1129 1133	коже
+T72	Disease 1215 1236	невротические реакции
+T73	Disease 1238 1264	Цефалгии смешанного генеза
+T74	Disease 1266 1310	Синдром дефицита внимания с гиперактивностью
+T75	Disease 1312 1352	Парциальный дефицит когнитивных функций.
+T76	Treatment 1785 1908	ксизал, тридерм, фукорцин, кератозан 15, беллатаминал, серетид 25/50 мкг 2 раза в день, холензим, креон, фликсотид, элидел.
+T77	Drug 1785 1791	ксизал
+T78	Drug 1793 1800	тридерм
+T79	Drug 1802 1810	фукорцин
+T80	Drug 1812 1824	кератозан 15
+T81	Drug 1826 1838	беллатаминал
+T82	Drug 1840 1847	серетид
+T83	Drug 1873 1881	холензим
+T84	Drug 1883 1888	креон
+T85	Drug 1890 1899	фликсотид
+T86	Drug 1901 1907	элидел
+T87	Symptom 1410 1428	Резкая брадикардия
+A16	SType T87 disorder
+T88	Symptom 1430 1447	умеренная аритмия
+T89	Symptom 1456 1479	миграции водителя ритма
+T90	Body_location 1483 1498	синусового узла
+T91	Body_location 1501 1527	миокард правого предсердия
+T92	Symptom 1529 1557	Синдром ранней реполяризации
+T93	Body_location 1558 1568	желудочков
+T94	Symptom 1570 1623	Непостоянное замедление внутрипредсердного проведения
+T95	Symptom 1625 1659	Повышение электрической активности
+T96	Body_location 1660 1685	миокарда левого желудочка
+T97	Symptom 1723 1760	перегрузки миокарда левого предсердия
+A17	SType T97 disorder
+T98	Body_location 1734 1760	миокарда левого предсердия
+T99	Symptom 92 110	стенки – уплотнены
+A18	SType T99 disorder
+T100	Symptom 112 137	форма – перегиб в воронке
+A19	SType T100 disorder
+T101	Symptom 139 158	просвет - свободный
+A20	SType T101 normal
+T102	Symptom 192 213	размер – 15х14х20 мм;
+A21	SType T102 disorder
+T103	Symptom 214 243	паренхима – эхогенность норма
+A22	SType T103 normal
+T104	Symptom 256 271	размер 78х45 мм
+A23	SType T104 normal
+T105	Symptom 304 359	размер – ЛД – 59 мм, ПД –84 мм; паренхима -  однородная
+A24	SType T105 normal
+T106	Symptom 371 382	секрет есть
+A25	SType T106 normal
+T107	Symptom 402 428	секрет есть, стенки тонкие
+A26	SType T107 normal
+T108	Symptom 273 294	паренхима не изменена
+A27	SType T108 normal
+T109	Treatment 2565 2589	промывание носовых ходов
+R1	Symptom_bdyloc_rel Arg1:T2 Arg2:T99	
+R2	Symptom_bdyloc_rel Arg1:T2 Arg2:T100	
+R3	Symptom_bdyloc_rel Arg1:T2 Arg2:T101	
+R4	Symptom_bdyloc_rel Arg1:T3 Arg2:T102	
+R5	Symptom_bdyloc_rel Arg1:T3 Arg2:T103	
+R6	Symptom_bdyloc_rel Arg1:T6 Arg2:T104	
+R7	Symptom_bdyloc_rel Arg1:T6 Arg2:T108	
+R8	Symptom_bdyloc_rel Arg1:T7 Arg2:T105	
+R9	Symptom_bdyloc_rel Arg1:T4 Arg2:T106	
+R10	Symptom_bdyloc_rel Arg1:T5 Arg2:T107	
+T110	Disease 479 519	вторичных изменений поджелудочной железы
+R11	Body_location_rel Arg1:T11 Arg2:T110	
+T111	Disease 557 562	отека
+T112	Body_location 563 598	слизистой оболочки гайморовых пазух
+R12	Body_location_rel Arg1:T112 Arg2:T111	
+R13	Symptom_bdyloc_rel Arg1:T66 Arg2:T65	
+R14	Symptom_bdyloc_rel Arg1:T71 Arg2:T70	
+T113	Disease 1417 1428	брадикардия
+T114	Disease 1440 1447	аритмия
+T115	Disease 1529 1557	Синдром ранней реполяризации
+R15	Body_location_rel Arg1:T93 Arg2:T115	
+R16	Symptom_bdyloc_rel Arg1:T96 Arg2:T95	
+R17	Symptom_bdyloc_rel Arg1:T98 Arg2:T97	
+T116	Treatment 2063 2116	Соблюдать гипоаллергенную диету, элиминационный режим
+T117	Treatment 2121 2199	Ежедневная пикфлоуметрия (до приема лекарств) с ведением дневника самоконтроля
+T118	Drug 2204 2213	Фликсотид
+T119	Disease 1061 1066	микоз

@@ -1,0 +1,69 @@
+T1	Symptom 19 47	риноконъюнктивальный синдром
+A1	SType T1 disorder
+T2	Course 49 57	ремиссия
+A2	CType T2 improved
+T3	Disease 59 75	Пищевая аллергия
+T4	Disease 9 17	Поллиноз
+R1	Course_rel Arg1:T2 Arg2:T4	
+T5	Disease 77 108	Искривление носовой перегородки
+T6	Disease 110 136	Хронический гастродуоденит
+T7	Disease 138 166	Дисфункция билиарного тракта
+T8	Body_location 89 108	носовой перегородки
+T9	Body_location 149 166	билиарного тракта
+T10	Symptom 236 242	ринита
+A3	SType T10 disorder
+T11	Symptom 244 257	конъюнктивита
+A4	SType T11 disorder
+T12	Symptom 354 372	угрозой прерывания
+A5	SType T12 disorder
+T13	Disease 596 618	атопического дерматита
+T14	Treatment 620 667	В терапии местные средства, при коррекции диеты
+A6	Effect T14 positive
+T15	Disease 723 739	пищевой аллергии
+T16	Symptom 830 836	ринита
+A7	SType T16 disorder
+T17	Symptom 838 851	конъюнктивита
+A8	SType T17 disorder
+T18	Treatment 853 915	В терапии антигистаминные препараты, симптоматические средства
+A9	Effect T18 positive
+T19	Disease 970 986	пищевая аллергия
+T20	Disease 1005 1013	поллиноз
+A10	NotPatient T20
+A11	NotPatient T19
+T21	Body_location 1066 1080	Кожные покровы
+T22	Symptom 1110 1120	Зев рыхлый
+A12	SType T22 disorder
+T23	Symptom 1122 1158	Носовое дыхание несколько затруднено
+A13	SType T23 disorder
+T24	Body_location 1160 1168	В лёгких
+T25	Symptom 1169 1189	дыхание везикулярное
+A14	SType T25 normal
+T26	Symptom 1191 1197	хрипов
+A15	Negation T26
+T27	Symptom 1203 1236	Сердечные тоны звучные, ритмичные
+A16	SType T27 normal
+T28	Symptom 1289 1296	дизурии
+A17	Negation T28
+T29	Symptom 1302 1330	Стул регулярный, оформленный
+A18	SType T29 normal
+T30	Symptom 1332 1352	Менингеальных знаков
+A19	Negation T30
+T31	Symptom 1081 1087	чистые
+A20	SType T31 normal
+T32	Symptom 1089 1108	со смуглым оттенком
+A21	SType T32 normal
+R2	Body_location_rel Arg1:T9 Arg2:T7	
+R3	Body_location_rel Arg1:T8 Arg2:T5	
+T33	Disease 19 47	риноконъюнктивальный синдром
+T34	Disease 236 242	ринита
+T35	Disease 244 257	конъюнктивита
+A22	NotPatient T12
+R4	Symptom_bdyloc_rel Arg1:T21 Arg2:T31	
+R5	Symptom_bdyloc_rel Arg1:T21 Arg2:T32	
+T36	Body_location 1110 1113	Зев
+R6	Symptom_bdyloc_rel Arg1:T36 Arg2:T22	
+R7	Symptom_bdyloc_rel Arg1:T24 Arg2:T25	
+R8	Symptom_bdyloc_rel Arg1:T24 Arg2:T26	
+T37	Disease 830 836	ринита
+T38	Disease 838 851	конъюнктивита
+A23	SType T26 disorder

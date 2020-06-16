@@ -1,0 +1,107 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 57 71	желчный пузырь
+T3	Symptom 88 96	увеличен
+A1	Negation T3
+T4	Symptom 98 116	форма – правильная
+A2	SType T4 normal
+T5	Symptom 140 156	просвет свободен
+A3	SType T5 normal
+T6	Body_location 118 124	стенки
+T7	Symptom 129 137	изменены
+A4	Negation T7
+T8	Body_location 158 164	Печень
+T9	Symptom 165 184	ЛД 44 мм, ПД 102 мм
+A5	SType T9 normal
+T10	Symptom 186 199	контур ровный
+A6	SType T10 normal
+T11	Symptom 202 222	паренхима  однородна
+A7	SType T11 normal
+T12	Symptom 224 243	средней эхогенности
+A8	SType T12 normal
+T13	Body_location 245 258	воротная вена
+T14	Symptom 259 263	6 мм
+A9	SType T14 normal
+T15	Body_location 265 280	печеночные вены
+T16	Symptom 284 292	изменены
+A10	Negation T16
+T17	Body_location 294 314	Поджелудочная железа
+T18	Symptom 339 363	паренхима нормоэхогенная
+A11	SType T18 normal
+T19	Body_location 365 371	проток
+T20	Symptom 375 383	расширен
+A12	Negation T20
+T21	Symptom 328 337	8х5х12 мм
+A13	SType T21 normal
+T22	Body_location 385 394	Селезенка
+T23	Body_location 498 527	Желудок, 12-ти перстная кишка
+T24	Symptom 530 560	секрета нет, стенки нормальные
+A14	SType T24 normal
+T25	Symptom 423 443	паренхима однородная
+A15	SType T25 normal
+T26	Symptom 445 464	средней эхогенности
+A16	SType T26 normal
+T27	Body_location 466 483	селезеночная вена
+T28	Symptom 487 496	расширена
+A17	Negation T28
+T29	Symptom 395 421	средних размеров, 95х47 мм
+A18	SType T29 normal
+T30	Symptom 628 654	вертикальное положение ЭОС
+A19	SType T30 normal
+T31	Symptom 656 679	миграция водителя ритма
+T32	Body_location 683 698	синусового узла
+T33	Body_location 702 728	миокард правого предсердия
+T34	Symptom 730 744	резкая аритмия
+T35	Symptom 746 786	неполная блокада правой ножки пучка Гиса
+T36	Symptom 788 827	легкие нарушения процесса реполяризации
+T37	Disease 870 904	аллергический персистирующий ринит
+T38	Disease 906 914	Аденоиды
+T39	Severity 915 919	2 ст
+A20	Degree T39 medium
+R1	Severity_rel Arg1:T39 Arg2:T38	
+T40	Body_location 936 946	носоглотки
+T41	Body_location 951 959	миндалин
+T42	Treatment 979 1135	Ежедневное орошение полости носа Физиомер (с 2-х нед. и старше) (или аквалор софт, или маример, или аква-марис) х 3-4 раза в день (тщательное отсмаркивание)
+T43	Drug 1012 1020	Физиомер
+T44	Drug 1048 1060	аквалор софт
+T45	Drug 1066 1073	маример
+T46	Drug 1079 1090	аква-марис)
+T47	Body_location 1238 1248	носоглотки
+T48	Disease 1263 1284	гипертрофия аденоидов
+T49	Severity 1285 1299	II-III степени
+A21	Degree T49 medium
+R2	Severity_rel Arg1:T49 Arg2:T48	
+T50	Treatment 1315 1374	аденотомия под эндоскопическим контролем в плановом порядке
+T51	Treatment 1475 1568	Физиомер 2 инст. х 3 раза в день; назонекс по 1 инг 2 р/д 7 дней, затем по 1 инг 1 раз в день
+T52	Drug 1475 1483	Физиомер
+T53	Drug 1509 1517	назонекс
+T54	Treatment 1752 1811	Аденотомия под эндоскопическим контролем в плановом порядке
+T55	Treatment 1816 1867	Туалет носа с физиомером продолжить 2-3 раза в день
+T56	Treatment 1872 1958	Ежедневно – уход за кожей (увлажнение и очищение средствами для сухой, атопичной кожи)
+T57	Treatment 1700 1747	гипоаллергенного стола и элиминационного режима
+T58	Drug 1830 1840	физиомером
+R3	Symptom_bdyloc_rel Arg1:T2 Arg2:T3	
+R4	Symptom_bdyloc_rel Arg1:T2 Arg2:T4	
+R5	Symptom_bdyloc_rel Arg1:T6 Arg2:T7	
+R6	Symptom_bdyloc_rel Arg1:T6 Arg2:T5	
+R7	Symptom_bdyloc_rel Arg1:T8 Arg2:T9	
+R8	Symptom_bdyloc_rel Arg1:T8 Arg2:T10	
+R9	Symptom_bdyloc_rel Arg1:T8 Arg2:T11	
+R10	Symptom_bdyloc_rel Arg1:T8 Arg2:T12	
+R11	Symptom_bdyloc_rel Arg1:T13 Arg2:T14	
+R12	Symptom_bdyloc_rel Arg1:T15 Arg2:T16	
+R13	Symptom_bdyloc_rel Arg1:T17 Arg2:T21	
+R14	Symptom_bdyloc_rel Arg1:T17 Arg2:T18	
+R15	Symptom_bdyloc_rel Arg1:T19 Arg2:T20	
+R16	Symptom_bdyloc_rel Arg1:T22 Arg2:T29	
+R17	Symptom_bdyloc_rel Arg1:T22 Arg2:T25	
+R18	Symptom_bdyloc_rel Arg1:T22 Arg2:T26	
+R19	Symptom_bdyloc_rel Arg1:T27 Arg2:T28	
+R20	Symptom_bdyloc_rel Arg1:T23 Arg2:T24	
+T59	Disease 737 744	аритмия
+T60	Disease 755 786	блокада правой ножки пучка Гиса
+T61	Treatment 922 959	Взят посев из носоглотки и с миндалин
+T62	Treatment 1399 1442	Гипоаллергенная диета, элиминационный режим
+A22	SType T28 disorder
+A23	SType T16 disorder
+A24	SType T3 disorder
+A25	SType T7 disorder

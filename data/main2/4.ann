@@ -1,0 +1,150 @@
+T1	Symptom 75 85	боли в шее
+T2	Treatment 218 234	кесарево сечение
+A1	NotPatient T2
+T3	Disease 309 317	Асфиксия
+A2	Negation T3
+T4	Disease 384 391	желтуха
+A3	Negation T4
+T5	Body_location 80 85	в шее
+R1	Symptom_bdyloc_rel Arg1:T5 Arg2:T1	
+T6	Symptom 703 713	боли в шее
+A4	SType T6 disorder
+A5	SType T1 disorder
+T7	Body_location 708 713	в шее
+R2	Symptom_bdyloc_rel Arg1:T7 Arg2:T6	
+T8	Body_location 1421 1435	Кожные покровы
+T9	Symptom 1437 1443	чистые
+A6	SType T9 normal
+T10	Symptom 1445 1460	обычной окраски
+A7	SType T10 normal
+R3	Symptom_bdyloc_rel Arg1:T8 Arg2:T9	
+R4	Symptom_bdyloc_rel Arg1:T8 Arg2:T10	
+T11	Body_location 1462 1480	Слизистые оболочки
+T12	Symptom 1482 1488	чистые
+A8	SType T12 normal
+T13	Symptom 1491 1498	влажные
+A9	SType T13 normal
+T14	Symptom 1514 1524	воспаления
+A10	Negation T14
+A11	SType T14 disorder
+R5	Symptom_bdyloc_rel Arg1:T11 Arg2:T12	
+R6	Symptom_bdyloc_rel Arg1:T11 Arg2:T13	
+R7	Symptom_bdyloc_rel Arg1:T11 Arg2:T14	
+T15	Body_location 1527 1530	Зев
+T16	Body_location 1532 1541	миндалины
+T17	Symptom 1544 1551	налетов
+A12	Negation T17
+A13	SType T17 disorder
+T18	Symptom 1553 1562	гиперемии
+A14	Negation T18
+A15	SType T18 disorder
+R8	Symptom_bdyloc_rel Arg1:T15 Arg2:T17	
+R9	Symptom_bdyloc_rel Arg1:T16 Arg2:T17	
+R10	Symptom_bdyloc_rel Arg1:T16 Arg2:T18	
+R11	Symptom_bdyloc_rel Arg1:T15 Arg2:T18	
+T19	Symptom 1940 1946	лордоз
+A16	SType T19 disorder
+T20	Body_location 1933 1939	шейный
+R12	Symptom_bdyloc_rel Arg1:T20 Arg2:T19	
+T21	Symptom 1957 1962	кифоз
+A17	SType T21 disorder
+T22	Body_location 1949 1956	грудной
+R13	Symptom_bdyloc_rel Arg1:T22 Arg2:T21	
+T23	Body_location 2106 2120	Грудная клетка
+T24	Symptom 2126 2136	деформаций
+A18	Negation T24
+A19	SType T24 disorder
+R14	Symptom_bdyloc_rel Arg1:T23 Arg2:T24	
+T25	Body_location 2593 2601	в легких
+T26	Symptom 2602 2622	дыхание везикулярное
+A20	SType T26 normal
+R15	Symptom_bdyloc_rel Arg1:T25 Arg2:T26	
+T27	Symptom 2624 2630	хрипов
+A21	Negation T27
+A22	SType T27 disorder
+R16	Symptom_bdyloc_rel Arg1:T25 Arg2:T27	
+T28	Symptom 2722 2743	тоны ритмичные, ясные
+A23	SType T28 normal
+T29	Body_location 2891 2895	язык
+T30	Symptom 2896 2902	чистый
+A24	SType T30 normal
+R17	Symptom_bdyloc_rel Arg1:T29 Arg2:T30	
+T31	Body_location 2903 2908	живот
+T32	Symptom 2933 2945	симметричный
+A25	SType T32 normal
+R18	Symptom_bdyloc_rel Arg1:T31 Arg2:T32	
+T33	Symptom 2982 2988	мягкий
+A26	SType T33 normal
+R19	Symptom_bdyloc_rel Arg1:T31 Arg2:T33	
+T34	Symptom 2991 3005	безболезненный
+A27	SType T34 normal
+R20	Symptom_bdyloc_rel Arg1:T31 Arg2:T34	
+T35	Body_location 3036 3042	печень
+T36	Symptom 3046 3055	увеличена
+A28	Negation T36
+A29	SType T36 disorder
+R21	Symptom_bdyloc_rel Arg1:T35 Arg2:T36	
+T37	Body_location 3056 3065	селезенка
+T38	Symptom 3069 3078	увеличена
+A30	Negation T38
+A31	SType T38 disorder
+R22	Symptom_bdyloc_rel Arg1:T37 Arg2:T38	
+T39	Symptom 3233 3254	менингеальные явления
+A32	Negation T39
+A33	SType T39 disorder
+T40	Disease 3780 3798	дистальные эпифизы
+T41	Body_location 3799 3814	локтевых костей
+R23	Body_location_rel Arg1:T41 Arg2:T40	
+T42	Disease 4183 4194	БРАДИКАРДИЯ
+T43	Severity 4196 4205	умеренная
+A34	Degree T43 medium
+R24	Severity_rel Arg1:T43 Arg2:T42	
+T44	Disease 4207 4214	АРИТМИЯ
+T45	Severity 4216 4226	выраженная
+A35	Degree T45 medium
+R25	Severity_rel Arg1:T45 Arg2:T44	
+T46	Disease 4341 4372	блокада правой ножки пучка Гиса
+T47	Body_location 4388 4393	АОРТА
+T48	Symptom 4398 4407	расширена
+A36	Negation T48
+A37	SType T48 disorder
+R26	Symptom_bdyloc_rel Arg1:T47 Arg2:T48	
+T49	Disease 4980 4987	пролапс
+T50	Body_location 4988 4995	створок
+R27	Body_location_rel Arg1:T50 Arg2:T49	
+T51	Severity 4969 4979	незначимый
+A38	Degree T51 light
+R28	Severity_rel Arg1:T51 Arg2:T49	
+T52	Disease 5733 5740	пролапс
+T53	Body_location 5741 5768	створок митрального клапана
+R29	Body_location_rel Arg1:T53 Arg2:T52	
+T54	Severity 5722 5732	незначимый
+A39	Degree T54 light
+R30	Severity_rel Arg1:T54 Arg2:T52	
+T55	Disease 6029 6049	Легочной гипертензии
+A40	Negation T55
+T56	Symptom 6438 6451	ангиодистония
+T57	Symptom 6900 6907	лордоза
+T58	Body_location 6892 6899	шейного
+R31	Symptom_bdyloc_rel Arg1:T58 Arg2:T57	
+T59	Body_location 7034 7042	грудного
+T60	Symptom 7043 7049	кифоза
+R32	Symptom_bdyloc_rel Arg1:T59 Arg2:T60	
+T61	Treatment 7203 7363	Режим – щадяще-тренирующий, ЛГ при нарушении осанки, плоскостопии дыхательная гимнастика; периферическая гимнастика, Массаж: воротниковой зоны, спины -№ 10, е/д
+T62	Treatment 7705 8035	получил: 1.Э/ф с эуфиллином №10 на шейный отдел позвоночника.2.ЭПС массаж стопы,паравертебрально№10.3.Аэроионотерапия№10.4.Энтеральная оксигенотерапия№10.5.Бальнеотерапия№10 (гидровоздушные ванны).6. ЛГ при нарушении осанки, плоскостопии дыхательная гимнастика; периферическая гимнастика, 7. Массаж: воротниковой зоны, спины -№ 10
+A41	Effect T62 positive
+T63	Disease 1514 1524	воспаления
+A42	Negation T63
+T64	Disease 1553 1562	гиперемии
+A43	Negation T64
+T65	Disease 1940 1946	лордоз
+T66	Disease 1957 1962	кифоз
+T67	Disease 6900 6907	лордоза
+T68	Disease 7043 7049	кифоза
+T69	Disease 7170 7182	плоскостопие
+T70	Disease 7256 7268	плоскостопии
+T71	Disease 7930 7942	плоскостопии
+T72	Disease 8185 8191	кифоза
+T73	Drug 7722 7732	эуфиллином
+A44	SType T57 disorder
+A45	SType T60 disorder

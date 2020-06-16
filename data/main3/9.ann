@@ -1,0 +1,375 @@
+T1	Disease 66 94	Рестриктивная кардиомиопатия
+A1	Time T1 now
+T2	Disease 96 131	Недостаточность митрального клапана
+A2	Time T2 now
+T3	Severity 132 135	2ст
+A3	Degree T3 medium
+R1	Severity_rel Arg1:T3 Arg2:T2	
+T4	Body_location 112 131	митрального клапана
+R2	Body_location_rel Arg1:T4 Arg2:T2	
+T5	Disease 137 177	Недостаточность трикуспидального клапана
+A4	Time T5 now
+T6	Disease 367 387	Легочная гипертензия
+A5	Time T6 now
+T7	Disease 389 415	Дисфункция синусового узла
+A6	Time T7 now
+T8	Disease 284 319	Недостаточность митрального клапана
+A7	Time T8 now
+T9	Disease 179 199	Легочная гипертензия
+A8	Time T9 now
+T10	Disease 201 227	Дисфункция синусового узла
+A9	Time T10 now
+T11	Disease 245 282	Основной Рестриктивная кардиомиопатия
+A10	Time T11 now
+T12	Disease 229 232	ХСН
+A11	Time T12 now
+T13	Treatment 16620 16764	Пантогам по 125мг.х2р/день в течение 5 дней, затем по 125мг.х3р/день ( последний прием не позднее 18.00) в течение 2 мес, с постепенной отменой.
+T14	Drug 16620 16628	Пантогам
+T15	Treatment 16550 16613	Беллатаминал по 1/2т.х1р/день на ночь в арпеле, мае, июне 2065г
+T16	Drug 16550 16562	Беллатаминал
+T17	Treatment 16493 16543	Трентал ( пентоксифиллин) 25мг.х3р/день, постоянно
+T18	Drug 16493 16500	Трентал
+T19	Drug 16503 16517	пентоксифиллин
+T20	Treatment 16439 16486	Предуктал (триметазидин) 8,75мг х2р/д постоянно
+T21	Drug 16439 16448	Предуктал
+T22	Drug 16450 16462	триметазидин
+T23	Treatment 16368 16433	Капотен (каптоприл) 3,125мг х3р/д в 7.00, 15.00, 22.00, длительно
+T24	Drug 16368 16375	Капотен
+T25	Drug 16377 16386	каптоприл
+T26	Treatment 16314 16362	Диувер (торасемид) 1,875мг х1р/д 9.00, длительно
+T27	Drug 16314 16320	Диувер
+T28	Drug 16322 16331	торасемид
+T29	Severity 320 323	2ст
+A12	Degree T29 medium
+T30	Disease 511 519	поллиноз
+A13	NotPatient T30
+A14	Time T30 before
+T31	Disease 2490 2544	Врожденный порок сердца: открытый артериальный проток.
+A15	Time T31 before
+T32	Treatment 16996 17087	аугментин, зиннат, цедекс), а также подключение виферона 500тыс МЕ 2 раза в день на 10 дней
+R3	Severity_rel Arg1:T29 Arg2:T8	
+T34	Disease 325 366	Недостаточность трикуспидального клапана.
+A17	Time T34 now
+T35	Body_location 300 319	митрального клапана
+R4	Body_location_rel Arg1:T35 Arg2:T8	
+T36	Body_location 341 365	трикуспидального клапана
+R5	Body_location_rel Arg1:T36 Arg2:T34	
+T37	Severity 233 236	IIА
+R6	Severity_rel Arg1:T37 Arg2:T12	
+T38	Severity 421 424	IIА
+T39	Disease 417 420	ХСН
+A18	Time T39 now
+R7	Severity_rel Arg1:T38 Arg2:T39	
+T41	Disease 577 596	рак молочной железы
+A20	Time T41 before
+T42	Disease 652 676	Артериальная гипертензия
+A21	Time T42 before
+A22	NotPatient T41
+A23	NotPatient T42
+T43	Disease 699 702	ВПС
+A24	NotPatient T43
+A25	Time T43 before
+T44	Body_location 930 937	ключицы
+T45	Disease 939 944	Ринит
+A26	Time T45 after
+T46	Disease 1129 1133	ОРВИ
+A27	Time T46 before
+T47	Disease 1159 1178	Острый ринофарингит
+A28	Time T47 before
+T48	Disease 1292 1303	Гипертрофия
+A29	Time T48 now
+T49	Body_location 1304 1321	левого предсердия
+R8	Body_location_rel Arg1:T49 Arg2:T48	
+T50	Symptom 1553 1575	Систолическое давление
+T51	Body_location 1576 1594	в легочной артерии
+R9	Symptom_bdyloc_rel Arg1:T51 Arg2:T50	
+T52	Body_location 1607 1624	Нижняя полая вена
+T53	Symptom 1680 1709	Относительная недостаточность
+T54	Disease 1710 1712	МК
+A30	Time T54 now
+T55	Disease 1721 1724	ТПК
+A31	Time T55 now
+T56	Severity 1725 1730	II ст
+T57	Severity 1713 1720	II-III,
+R10	Severity_rel Arg1:T56 Arg2:T55	
+R11	Severity_rel Arg1:T57 Arg2:T54	
+T58	Disease 1732 1752	Гипертрофия миокарда
+A32	Time T58 now
+T59	Disease 1774 1794	Легочная гипертензия
+A33	Time T59 now
+T60	Disease 1796 1799	ОАП
+A34	Time T60 now
+T61	Disease 1810 1863	Врожденный порок сердца: открытый артериальный проток
+A35	Time T61 now
+T62	Symptom 2115 2132	синусовая аритмия
+T63	Symptom 2247 2260	кардиомегалии
+T64	Disease 2433 2453	Легочная гипертензия
+A36	Time T64 now
+T65	Disease 2469 2472	ОАП
+A37	Time T65 now
+T66	Disease 2545 2573	Рестриктивная кардиомиопатия
+A38	Time T66 before
+T67	Disease 2575 2577	НК
+A39	Time T67 before
+T68	Severity 2578 2584	0-I ст
+R12	Severity_rel Arg1:T68 Arg2:T67	
+T69	Body_location 2752 2769	Митральный клапан
+T70	Symptom 2772 2796	створки тонкие подвижные
+R13	Symptom_bdyloc_rel Arg1:T69 Arg2:T70	
+T71	Body_location 2816 2825	Ао клапан
+T33	Severity 238 243	ФК 2.
+A16	Degree T33 medium
+A40	Degree T38 medium
+T40	Severity 426 431	ФК 2.
+A19	Degree T40 medium
+T73	Body_location 2846 2851	Аорта
+T74	Body_location 2895 2918	Клапан легочной артерии
+T75	Disease 3019 3055	Кардиомиопатия, легочная гипертензия
+A41	Time T75 now
+T76	Symptom 3461 3498	признаки рестриктивной кардиомиопатии
+T77	Disease 3500 3539	Выраженная левая и правая атриомегалия.
+A42	Time T77 now
+T78	Body_location 3574 3593	сосуд от нисх.аорты
+T79	Body_location 3622 3651	Признаки легочной гипертензии
+T80	Disease 3664 3673	Миокардит
+A43	Time T80 now
+T81	Symptom 3960 3972	сухой кашель
+T82	Symptom 4237 4275	признаки перегрузки правого предсердия
+T83	Symptom 4295 4311	неполная блокада
+T84	Symptom 4318 4343	неспецифические изменения
+T85	Body_location 4366 4380	грудной клетки
+T86	Disease 4391 4404	кардиомегалии
+A44	Time T86 now
+R14	Body_location_rel Arg1:T85 Arg2:T86	
+T87	Disease 4426 4455	Рестриктивная кардиомиопатия.
+A45	Time T87 now
+T88	Symptom 4587 4596	выбухание
+T89	Body_location 4607 4613	сердца
+R15	Symptom_bdyloc_rel Arg1:T89 Arg2:T88	
+T90	Symptom 4615 4646	акцент и расщепление 2 тона над
+T91	Body_location 4647 4664	легочной артерией
+R16	Symptom_bdyloc_rel Arg1:T91 Arg2:T90	
+T92	Disease 4666 4678	гепатомегали
+A46	Time T92 now
+T93	Symptom 4681 4687	одышка
+T94	Symptom 4735 4751	расширение обоих
+T95	Body_location 4752 4762	предсердий
+R17	Symptom_bdyloc_rel Arg1:T95 Arg2:T94	
+T96	Symptom 4800 4835	снижение сократительной способности
+T97	Body_location 4836 4861	миокарда левого желудочка
+R18	Symptom_bdyloc_rel Arg1:T97 Arg2:T96	
+T98	Disease 4870 4894	митральная недостатность
+A47	Time T98 now
+T99	Body_location 5073 5081	миокарда
+T100	Body_location 5088 5097	председий
+T101	Body_location 5100 5116	обоих желудочков
+T102	Treatment 5156 5211	каптеном 9,275сн/сут, диувером 1,25мг/сут, предукталом,
+T103	Drug 5156 5164	каптеном
+T104	Drug 5178 5186	диувером
+T105	Drug 5199 5210	предукталом
+T106	Body_location 5257 5263	печени
+T107	Body_location 5334 5346	прямой кишки
+T108	Disease 5642 5655	гепатомегалия
+A48	Time T108 now
+T109	Body_location 5713 5719	сердца
+T110	Symptom 5721 5748	акцент и расщепление 2 тона
+T111	Disease 5788 5811	выраженная атриомегалия
+A49	Time T111 now
+T112	Disease 5858 5885	митральная неостатоность +2
+A50	Time T112 now
+T113	Disease 5887 5907	легочная гипертензия
+A51	Time T113 now
+T114	Symptom 5999 6021	признаки кардиомегалии
+T115	Symptom 6023 6033	увеличение
+T116	Body_location 6034 6043	предсерий
+R19	Symptom_bdyloc_rel Arg1:T116 Arg2:T115	
+T117	Disease 6045 6065	легочной гипертензии
+A52	Time T117 now
+T118	Treatment 6169 6191	диувера до 1,875мг/сут
+T119	Drug 6169 6176	диувера
+T120	Body_location 6235 6251	легочной артерии
+T121	Body_location 6314 6326	прямой кишки
+T122	Symptom 6337 6346	гипотония
+T123	Body_location 6347 6365	толстого кишечника
+R20	Symptom_bdyloc_rel Arg1:T123 Arg2:T122	
+T124	Body_location 7520 7538	Слизистые оболочки
+T125	Body_location 7556 7570	Зев, миндалины
+T126	Body_location 7604 7623	Подкожная клетчатка
+T127	Body_location 7676 7697	Лимфатическая система
+T128	Body_location 7472 7486	Кожные покровы
+T129	Body_location 7766 7780	Мышцы, суставы
+T130	Body_location 8101 8107	сердца
+T131	Body_location 7961 7967	легких
+T132	Body_location 8451 8457	Печень
+T133	Body_location 8587 8606	Мочеполовая система
+T134	Disease 8626 8633	дизурии
+A53	Time T134 before
+R21	Body_location_rel Arg1:T133 Arg2:T134	
+T135	Symptom 8801 8813	вертикальное
+T136	Symptom 8832 8843	БРАДИКАРДИЯ
+T137	Symptom 8853 8860	АРИТМИЯ
+T138	Symptom 8870 8880	ПРЕДСЕРДИЯ
+T139	Symptom 8882 8902	Признаки гипертрофии
+T140	Body_location 8903 8911	миокарда
+R22	Symptom_bdyloc_rel Arg1:T140 Arg2:T139	
+T141	Body_location 8912 8929	обоих предсердий;
+R23	Symptom_bdyloc_rel Arg1:T141 Arg2:T139	
+T142	Symptom 8941 8970	Признаки гипертрофии миокарда
+T143	Body_location 8971 8988	правого желудочка
+R24	Symptom_bdyloc_rel Arg1:T143 Arg2:T142	
+T144	Symptom 9021 9037	Неполная блокада
+T145	Body_location 9038 9060	правой ножки пучка Гис
+R25	Symptom_bdyloc_rel Arg1:T145 Arg2:T144	
+T146	Body_location 6676 6682	сердца
+T147	Body_location 9215 9221	Сердца
+T148	Body_location 9251 9257	АОРТА:
+T149	Body_location 9470 9495	Правая коронарная артерия
+T150	Body_location 9439 9463	Левая коронарная артерия
+T151	Body_location 9527 9543	ЛЕГОЧНАЯ АРТЕРИЯ
+T152	Body_location 9821 9837	ПРАВЫЙ ЖЕЛУДОЧЕК
+T153	Body_location 9892 9907	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T154	Body_location 9783 9809	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T155	Body_location 10116 10144	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА:
+T156	Body_location 10386 10408	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T157	Body_location 10252 10269	МИТРАЛЬНЫЙ КЛАПАН
+T158	Body_location 10666 10683	НИЖНЯЯ ПОЛАЯ ВЕНА
+T159	Body_location 10207 10223	ЛЕВОГО ЖЕЛУДОЧКА
+T160	Body_location 11631 11645	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T161	Body_location 11742 11748	ПЕЧЕНЬ
+T162	Body_location 12129 12149	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T163	Body_location 12309 12318	СЕЛЕЗЕНКА
+T164	Body_location 12557 12567	ЛИМФОУЗЛЫ:
+T165	Body_location 12433 12439	Сосуды
+T166	Body_location 12460 12467	ЖЕЛУДОК
+T167	Body_location 12504 12514	Д\ПЕРСТНАЯ
+T168	Body_location 12688 12699	ЛЕВАЯ ПОЧКА
+T169	Body_location 13949 13963	МОЧЕВОЙ ПУЗЫРЬ
+T170	Body_location 13297 13309	ПРАВАЯ ПОЧКА
+T171	Body_location 13224 13234	Мочеточник
+T172	Body_location 12864 12873	Паренхима
+T173	Body_location 14218 14239	Скелет грудной клетки
+T174	Body_location 14397 14413	сегментов легких
+T175	Body_location 14576 14582	трахеи
+T176	Body_location 15016 15026	Дуга аорты
+T177	Body_location 15070 15086	Куполы диафрагмы
+T178	Treatment 15355 15407	диувер 1,875мг.х1р/ден в 09.00, капотен 9,375мг/сут.
+T179	Drug 15355 15361	диувер
+T180	Drug 15387 15394	капотен
+T181	Body_location 5326 5331	десны
+T182	Body_location 8371 8389	Органы пищеварения
+T183	Symptom 8391 8449	живот при пальпации мягкий, безболезненный во всех отделах
+A54	SType T183 normal
+T184	Symptom 7782 7842	мышечный тонус удовлетворительный, мышечная сила достаточная
+A55	SType T184 normal
+T185	Body_location 7916 7930	Органы дыхания
+T186	Symptom 7932 7957	Носовое дыхание свободное
+A56	SType T186 normal
+T187	Symptom 7968 8031	дыхание жесткое, проводится равномерно во все отделы, хрипов не
+A57	SType T187 normal
+T188	Body_location 11450 11474	ЖЕЛУДОЧКОВАЯ АКТИВНОСТЬ:
+T189	Body_location 11480 11507	НАДЖЕЛУДОЧКОВАЯ АКТИВНОСТЬ:
+T72	Disease 1243 1256	кардиомегалии
+A58	Time T72 now
+T190	Body_location 3398 3414	Легочная артерия
+T191	Body_location 3338 3340	ЛП
+T192	Body_location 3348 3350	ПЖ
+T193	Body_location 3371 3373	ПП
+T194	Body_location 2881 2883	ПП
+T195	Symptom 4899 4936	повышение давления в легочной артерии
+A59	SType T195 disorder
+T196	Symptom 4952 5007	Нарушение диастоличекий функции по рестриктивному типу,
+A60	SType T196 disorder
+T197	Body_location 6096 6104	миокарда
+T198	Body_location 6105 6121	обоих предсердий
+T199	Body_location 6124 6141	правого желудочка
+T200	Symptom 7487 7518	бледно-розовые, чистые, румянец
+A61	SType T200 normal
+T201	Symptom 7539 7555	чистые, розовые.
+A62	SType T201 normal
+T202	Symptom 7572 7602	не гиперемирован, не увеличены
+A63	SType T202 normal
+T203	Symptom 7624 7674	развита удовлетворительно, распределена равномерно
+A64	SType T203 normal
+T204	Body_location 7726 7741	Костная система
+T205	Body_location 7844 7851	Суставы
+T206	Symptom 7698 7724	увеличены подчелюстные л/у
+A65	SType T206 disorder
+T207	Symptom 7743 7764	без видимой патологии
+A66	SType T207 normal
+T208	Symptom 7852 7914	визуально не изменены, движения в полном объеме, безболезненны
+A67	SType T208 normal
+T209	Symptom 8108 8124	немного выбухает
+A68	SType T209 disorder
+R26	Symptom_bdyloc_rel Arg1:T130 Arg2:T209	
+R27	Symptom_bdyloc_rel Arg1:T131 Arg2:T187	
+T210	Drug 17044 17052	виферона
+T211	Body_location 581 596	молочной железы
+R28	Body_location_rel Arg1:T211 Arg2:T41	
+R29	Severity_rel Arg1:T33 Arg2:T12	
+R30	Severity_rel Arg1:T40 Arg2:T39	
+T212	Symptom 457 480	повышенная утомляемость
+A69	SType T212 disorder
+T213	Symptom 915 929	перелом правой
+A70	SType T213 disorder
+R31	Symptom_bdyloc_rel Arg1:T44 Arg2:T213	
+T214	Symptom 1135 1158	рецидивирующее течение.
+A71	SType T214 disorder
+T215	Symptom 1625 1634	расширена
+A72	SType T215 disorder
+R32	Symptom_bdyloc_rel Arg1:T52 Arg2:T215	
+T216	Symptom 2828 2844	створки подвижны
+A73	SType T216 disorder
+R33	Symptom_bdyloc_rel Arg1:T71 Arg2:T216	
+T217	Symptom 2854 2879	дуга и перешеек не сужены
+A74	SType T217 disorder
+R34	Symptom_bdyloc_rel Arg1:T73 Arg2:T217	
+T218	Symptom 2921 2945	створки тонкие подвижные
+A75	SType T218 disorder
+R35	Symptom_bdyloc_rel Arg1:T109 Arg2:T110	
+T219	Body_location 5920 5937	Нижняя полая вена
+T220	Symptom 5938 5964	расширена, не коллабирует.
+A76	SType T220 disorder
+R36	Symptom_bdyloc_rel Arg1:T219 Arg2:T220	
+R37	Symptom_bdyloc_rel Arg1:T128 Arg2:T200	
+R38	Symptom_bdyloc_rel Arg1:T124 Arg2:T201	
+R39	Symptom_bdyloc_rel Arg1:T125 Arg2:T202	
+R40	Symptom_bdyloc_rel Arg1:T126 Arg2:T203	
+R41	Symptom_bdyloc_rel Arg1:T127 Arg2:T206	
+R42	Symptom_bdyloc_rel Arg1:T204 Arg2:T207	
+R43	Symptom_bdyloc_rel Arg1:T129 Arg2:T184	
+R44	Symptom_bdyloc_rel Arg1:T205 Arg2:T208	
+R45	Symptom_bdyloc_rel Arg1:T185 Arg2:T186	
+R46	Symptom_bdyloc_rel Arg1:T182 Arg2:T183	
+T221	Symptom 9258 9296	Диаметр на уровне синусов 15 мм; норма
+R47	Symptom_bdyloc_rel Arg1:T148 Arg2:T221	
+T222	Symptom 9496 9526	2 мм; Описание: ФК АК - 12 мм;
+R48	Symptom_bdyloc_rel Arg1:T149 Arg2:T222	
+T223	Symptom 9545 9551	норма;
+R49	Symptom_bdyloc_rel Arg1:T151 Arg2:T223	
+T224	Symptom 9811 9819	интактна
+A77	SType T224 normal
+R50	Symptom_bdyloc_rel Arg1:T154 Arg2:T224	
+T225	Symptom 9839 9844	норма
+A78	SType T225 disorder
+R51	Symptom_bdyloc_rel Arg1:T152 Arg2:T225	
+T226	Symptom 9909 9929	КДР 31 мм; уменьшен;
+A79	SType T226 normal
+R52	Symptom_bdyloc_rel Arg1:T153 Arg2:T226	
+T227	Symptom 10145 10171	не утолщена; Толщина 6 мм;
+A80	SType T227 disorder
+T228	Symptom 10271 10290	Створки не изменены
+A81	SType T228 normal
+R53	Symptom_bdyloc_rel Arg1:T157 Arg2:T228	
+R54	Symptom_bdyloc_rel Arg1:T155 Arg2:T227	
+T229	Symptom 10410 10429	Створки не изменены
+A82	SType T229 disorder
+R55	Symptom_bdyloc_rel Arg1:T156 Arg2:T229	
+T230	Symptom 10685 10726	расширена, коллабирует на вдох менее 50%;
+A83	SType T230 disorder
+R56	Symptom_bdyloc_rel Arg1:T158 Arg2:T230	
+T231	Symptom 11750 11775	Размер ЛД 80 мм; увеличен
+A84	SType T231 normal
+R57	Symptom_bdyloc_rel Arg1:T161 Arg2:T231	
+T232	Symptom 12440 12459	не изменены; норма;
+A85	SType T232 normal
+R58	Symptom_bdyloc_rel Arg1:T165 Arg2:T232	

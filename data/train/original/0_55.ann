@@ -1,0 +1,87 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 84	среднетяжелое персистирующее течение
+A1	Degree T2 medium
+T3	Course 86 94	ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 96 122	Холинергическая крапивница
+T5	Disease 124 185	Искривление носовой перегородки с нарушением носового дыхания
+T6	Body_location 136 155	носовой перегородки
+T7	Disease 187 205	Вазомоторный ринит
+T8	Disease 207 215	Аденоиды
+T9	Severity 216 220	2 ст
+A3	Degree T9 medium
+R3	Severity_rel Arg1:T9 Arg2:T8	
+T10	Disease 222 261	Хронический верхнечелюстной риносинусит
+T11	Disease 263 301	Хронический компенсированный тонзиллит
+T12	Disease 303 329	Хронический гастродуоденит
+T13	Disease 331 350	Дистальный эзофагит
+T14	Disease 352 380	Дисфункция билиарного тракта
+T15	Disease 382 422	Вторичные изменения поджелудочной железы
+T16	Body_location 402 422	поджелудочной железы
+T17	Symptom 483 514	эпизоды малопродуктивного кашля
+A4	SType T17 disorder
+T18	Symptom 516 527	покраснение
+A5	SType T18 disorder
+T19	Body_location 528 543	кожных покровов
+T20	Symptom 913 946	проявления атопического дерматита
+A6	SType T20 disorder
+T21	Treatment 948 1008	В терапии антигистаминные препараты, местные средства, диета
+A7	Effect T21 positive
+T22	Disease 1056 1059	ОРИ
+T23	Symptom 1099 1122	бронхиальной обструкции
+A8	SType T23 disorder
+T24	Symptom 1124 1154	риноконъюнктивального синдрома
+A9	SType T24 disorder
+T25	Disease 1190 1208	бронхиальная астма
+T26	Severity 1209 1231	среднетяжелого течения
+A10	Degree T26 medium
+R4	Severity_rel Arg1:T26 Arg2:T25	
+T27	Treatment 1233 1276	В базисной терапии интал, фликсотид курсами
+A11	Effect T27 positive
+T28	Drug 1252 1257	интал
+T29	Drug 1259 1268	фликсотид
+T30	Symptom 1305 1333	Приступы затруднения дыхания
+A12	SType T30 disorder
+T31	Symptom 1336 1359	малопродуктивного кашля
+A13	SType T31 disorder
+T32	Treatment 1438 1469	Купируются ингаляцией вентолина
+A14	Effect T32 positive
+T33	Drug 1460 1469	вентолина
+T34	Body_location 1550 1564	Кожные покровы
+T35	Symptom 1565 1587	бледно-розовые, чистые
+A15	SType T35 normal
+T36	Symptom 1589 1600	Зев спокоен
+A16	SType T36 normal
+T37	Symptom 1602 1639	Носовое дыхание несколько затруднено.
+A17	SType T37 disorder
+T38	Body_location 1640 1648	В лёгких
+T39	Symptom 1649 1669	дыхание везикулярное
+A18	SType T39 normal
+T40	Symptom 1671 1689	с жестким оттенком
+A19	SType T40 disorder
+T41	Symptom 1691 1697	хрипов
+A20	Negation T41
+T42	Symptom 1703 1736	Сердечные тоны звучные, ритмичные
+A21	SType T42 normal
+T43	Body_location 1738 1743	Живот
+T44	Symptom 1744 1750	мягкий
+A22	SType T44 normal
+T45	Symptom 1766 1781	безболезненный.
+A23	SType T45 normal
+T46	Symptom 1833 1840	дизурии
+A24	Negation T46
+T47	Symptom 1846 1874	Стул регулярный, оформленный
+A25	SType T47 normal
+T48	Symptom 1876 1896	Менингеальных знаков
+A26	Negation T48
+R5	Body_location_rel Arg1:T16 Arg2:T15	
+R6	Body_location_rel Arg1:T6 Arg2:T5	
+R7	Symptom_bdyloc_rel Arg1:T19 Arg2:T18	
+R8	Symptom_bdyloc_rel Arg1:T34 Arg2:T35	
+R9	Symptom_bdyloc_rel Arg1:T38 Arg2:T39	
+R10	Symptom_bdyloc_rel Arg1:T43 Arg2:T44	
+R11	Symptom_bdyloc_rel Arg1:T43 Arg2:T45	
+T49	Disease 924 946	атопического дерматита
+T50	Disease 1124 1154	риноконъюнктивального синдрома

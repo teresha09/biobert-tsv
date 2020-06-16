@@ -1,0 +1,65 @@
+T2	Disease 91 110	Аллергический ринит
+T3	Body_location 170 190	поджелудочной железы
+T4	Severity 42 71	легкое персистирующее течение
+A1	Degree T4 light
+T5	Symptom 260 283	малопродуктивного кашля
+T6	Disease 666 676	скарлатина
+T8	Disease 1270 1288	бронхиальная астма
+A3	NotPatient T8
+T9	Disease 1176 1198	лекарственная аллергия
+A4	NotPatient T9
+T10	Disease 1232 1248	пищевая аллергия
+A5	NotPatient T10
+T11	Disease 9 40	Бронхиальная астма, атопическая
+T1	Disease 150 190	Вторичные изменения поджелудочной железы
+T12	Symptom 732 755	малопродуктивный кашель
+T13	Symptom 767 772	рвоты
+T15	Symptom 1068 1074	кашель
+T14	Symptom 1515 1520	хрипы
+A6	Negation T14
+T16	Symptom 292 315	обструктивный ларингиты
+T17	Treatment 839 875	В терапии симптоматические препараты
+A7	Effect T17 positive
+T19	Course 134 148	вне обострения
+A9	CType T19 improved
+T20	Symptom 1605 1625	Менингеальных знаков
+A10	Negation T20
+T21	Symptom 1409 1428	катаральных явлений
+A11	Negation T21
+T22	Body_location 1401 1404	Зев
+T23	Body_location 1430 1444	Кожные покровы
+T24	Body_location 1469 1477	В легких
+T25	Body_location 1544 1550	сердца
+T26	Symptom 1551 1567	ясные, ритмичные
+T27	Symptom 1493 1513	везикулярное дыхание
+R2	Course_rel Arg1:T19 Arg2:T2	
+R3	Severity_rel Arg1:T4 Arg2:T11	
+T28	Drug 1202 1213	пенициллины
+T18	Symptom 1586 1592	диурез
+A12	SType T26 normal
+A13	SType T18 normal
+A14	SType T27 normal
+T29	Symptom 1569 1573	Стул
+A15	SType T29 normal
+T30	Symptom 1445 1467	бледно-розовые, чистые
+A16	SType T30 normal
+T31	Disease 324 346	респираторных инфекций
+T32	Symptom 411 429	угрозой прерывания
+A17	SType T32 disorder
+T33	Symptom 561 603	Раннее психомоторное развитие без задержек
+A18	SType T33 normal
+R4	Body_location_rel Arg1:T3 Arg2:T1	
+A8	SType T13 disorder
+A19	SType T12 disorder
+R5	Symptom_bdyloc_rel Arg1:T22 Arg2:T21	
+A20	SType T16 disorder
+A21	SType T15 disorder
+T34	Disease 292 315	обструктивный ларингиты
+R6	Symptom_bdyloc_rel Arg1:T23 Arg2:T30	
+R7	Symptom_bdyloc_rel Arg1:T24 Arg2:T27	
+R8	Symptom_bdyloc_rel Arg1:T24 Arg2:T14	
+R9	Symptom_bdyloc_rel Arg1:T25 Arg2:T26	
+T7	Severity 112 132	персистирующая форма
+A2	Degree T7 medium
+R1	Severity_rel Arg1:T7 Arg2:T2	
+A22	SType T5 disorder

@@ -1,0 +1,146 @@
+T1	Disease 682 722	вторичных изменений поджелудочной железы
+T2	Body_location 702 722	поджелудочной железы
+R1	Body_location_rel Arg1:T2 Arg2:T1	
+T3	Body_location 57 71	желчный пузырь
+T4	Body_location 160 166	Печень
+T5	Body_location 291 304	воротная вена
+T6	Body_location 311 326	печеночные вены
+T7	Body_location 340 360	Поджелудочная железа
+T8	Body_location 481 490	Селезенка
+T9	Body_location 594 601	Желудок
+T10	Body_location 603 623	12-ти перстная кишка
+T11	Disease 961 980	аллергический ринит
+T12	Severity 982 1002	персистирующая форма
+A1	Degree T12 medium
+R2	Severity_rel Arg1:T12 Arg2:T11	
+T13	Drug 1022 1030	Физиомер
+T14	Treatment 1022 1099	Физиомер – промывание полости носа 3-4 раза в день (тщательное отсмаркивание)
+T15	Body_location 1120 1135	грудной  клетки
+T16	Symptom 1156 1189	очагово-инфильтративных изменений
+A2	Negation T16
+T17	Body_location 1313 1319	сердца
+T18	Body_location 1249 1261	Корни легких
+T19	Symptom 1262 1273	структурные
+A3	SType T19 normal
+T20	Symptom 1278 1288	расширены,
+A4	Negation T20
+T21	Body_location 1321 1327	Сердце
+T22	Body_location 1366 1376	диафрагме.
+T23	Body_location 31 54	органов брюшной полости
+T24	Symptom 75 85	измененный
+A5	Negation T24
+T25	Symptom 94 102	увеличен
+A6	SType T25 disorder
+T26	Body_location 104 110	стенки
+T27	Symptom 114 122	изменены
+A7	Negation T27
+T28	Symptom 124 140	форма правильная
+A8	SType T28 normal
+T29	Symptom 142 158	просвет свободен
+A9	SType T29 normal
+T30	Symptom 225 246	паренхима  однородная
+A10	SType T30 normal
+T31	Symptom 330 338	изменены
+A11	Negation T31
+T32	Symptom 269 289	контур печени ровный
+A12	SType T32 normal
+T33	Body_location 276 282	печени
+T34	Symptom 168 184	средних размеров
+A13	SType T34 normal
+T35	Symptom 362 388	нормальная, размер средний
+A14	SType T35 normal
+T36	Symptom 402 433	паренхима сниженной эхогенности
+A15	SType T36 disorder
+T37	Symptom 435 460	уплотнены стенки сосудов,
+A16	SType T37 disorder
+T38	Body_location 445 459	стенки сосудов
+T39	Body_location 461 467	проток
+T40	Symptom 471 479	расширен
+A17	Negation T40
+T41	Symptom 639 656	стенки нормальные
+A18	SType T41 normal
+T42	Body_location 639 645	стенки
+T43	Body_location 562 579	селезеночная вена
+T44	Symptom 583 592	расширена
+A19	Negation T44
+T45	Symptom 491 507	средних размеров
+A20	SType T45 normal
+T46	Symptom 519 539	паренхима однородная
+A21	SType T46 normal
+T47	Symptom 541 560	средней эхогенности
+A22	SType T47 normal
+T48	Symptom 833 851	Выраженная аритмия
+A23	SType T48 disorder
+T49	Body_location 805 832	миокард правого предсердия.
+T50	Body_location 898 917	миокарде желудочков
+T51	Symptom 760 783	Миграция водителя ритма
+A24	SType T51 disorder
+T52	Body_location 787 802	синусового узла
+T53	Symptom 853 895	Умеренные нарушения процесса реполяризации
+A25	SType T53 disorder
+T54	Symptom 1377 1406	Контуры сердечной тени четкие
+A26	SType T54 normal
+T55	Body_location 1420 1436	Куполы диафрагмы
+T56	Symptom 1437 1488	ровные, четкие, на уровне передних отрезков V ребер
+A27	SType T56 normal
+T57	Symptom 1490 1513	Синусы дифференцируются
+A28	SType T57 normal
+T58	Treatment 1618 1664	Серетид 125/25 мкг 2 раза в день через спейсер
+T59	Drug 1618 1625	Серетид
+T60	Treatment 1669 1719	Физиомер – промывание полости носа 3-4 раза в день
+T61	Drug 1669 1677	Физиомер
+T62	Treatment 1724 1761	Вентолин условно, при приступах кашля
+T63	Drug 1724 1732	Вентолин
+T64	Symptom 1746 1761	приступах кашля
+A29	SType T64 disorder
+T65	Treatment 1766 1795	Смекта по 1/2п. 3 раза в день
+T66	Drug 1766 1772	Смекта
+T67	Treatment 1538 1581	Гипоаллергенная диета, элиминационный режим
+T68	Treatment 3071 3126	Креон по 1 капс. 3 раза в день с едой по 10 дней месяца
+T69	Drug 3071 3076	Креон
+T70	Symptom 2914 2937	малопродуктивного кашля
+A30	SType T70 disorder
+T71	Disease 2946 2968	респираторной инфекции
+T72	Treatment 2969 3066	ингаляции (ч/з небулайзер) лазолвана в растворе 1,5 мл 3 раза в день (не позднее 18.30) на 5 дней
+T73	Drug 2996 3005	лазолвана
+T74	Symptom 2574 2678	симптомов обструкции (одышка, свистящее дыхание, приступы затруднения дыхания и малопродуктивного кашля)
+A31	SType T74 disorder
+T75	Treatment 2692 2775	вентолин (сальбутамол или саламол) по 1-2 ингаляции через спейсер до 3-х раз в день
+T76	Drug 2692 2700	вентолин
+T77	Drug 2702 2713	сальбутамол
+T78	Drug 2718 2725	саламол
+T79	Treatment 2512 2551	Серетид 125/25 мкг 2 инг. 2 раза в день
+T80	Drug 2512 2519	Серетид
+T81	Treatment 2452 2507	Авамис 1 раз в день после туалета носа, утром, 3 недели
+T82	Drug 2452 2458	Авамис
+T83	Treatment 2398 2436	Туалет носа с физиомером 3 раза в день
+T84	Drug 2412 2422	физиомером
+T85	Treatment 1944 2217	Гипоаллергенная диета (исключить рыбу и морепродукты, орехи, цитрусовые, сладости, продукты с консервантами и красителями) на основании стола №5 дробное питание с исключением жирных, жареных, копченых продуктов, газированных напитков, достаточное количество пищевых волокон
+T86	Drug 3300 3311	вентолином)
+R3	Symptom_bdyloc_rel Arg1:T3 Arg2:T24	
+R4	Symptom_bdyloc_rel Arg1:T3 Arg2:T25	
+R5	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+R6	Symptom_bdyloc_rel Arg1:T4 Arg2:T34	
+R7	Symptom_bdyloc_rel Arg1:T33 Arg2:T32	
+R8	Symptom_bdyloc_rel Arg1:T6 Arg2:T31	
+R9	Symptom_bdyloc_rel Arg1:T18 Arg2:T19	
+R10	Symptom_bdyloc_rel Arg1:T18 Arg2:T20	
+T87	Disease 2803 2806	ОРИ
+T88	Treatment 2807 2891	через небулайзер: беродуал 12 капель + пульмикорт 250 мкг 3 раза в день на 7-10 дней
+T89	Treatment 3142 3175	Активная иммунизация (вакцинация)
+T90	Disease 844 851	аритмия
+T91	Drug 2825 2833	беродуал
+T92	Drug 2846 2856	пульмикорт
+A32	SType T24 disorder
+A33	SType T27 disorder
+A34	SType T31 disorder
+A35	SType T40 disorder
+A36	SType T44 disorder
+A37	SType T16 disorder
+R11	Symptom_bdyloc_rel Arg1:T3 Arg2:T28	
+R12	Symptom_bdyloc_rel Arg1:T3 Arg2:T29	
+R13	Symptom_bdyloc_rel Arg1:T4 Arg2:T30	
+R14	Symptom_bdyloc_rel Arg1:T7 Arg2:T35	
+R15	Symptom_bdyloc_rel Arg1:T7 Arg2:T36	
+R17	Symptom_bdyloc_rel Arg1:T7 Arg2:T37	
+R18	Symptom_bdyloc_rel Arg1:T39 Arg2:T40	

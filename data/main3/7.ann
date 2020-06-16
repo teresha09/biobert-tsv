@@ -1,0 +1,108 @@
+T1	Treatment 20130 20212	Кордарон (амиодарон) 80 мг х 1р/д в 09.00, кроме субботы и воскресенья – длительно
+T2	Treatment 20218 20286	Конкор (бисопролол) 0.625 мг х 1 р/д в 09.00 - длительно, непрерывно
+T3	Treatment 20292 20354	Панангин (калия и магния аспарагинат) ¼ таб х 3р/д – длительно
+T4	Drug 20292 20300	Панангин
+T5	Drug 20302 20328	калия и магния аспарагинат
+T6	Drug 20218 20224	Конкор
+T7	Drug 20226 20236	бисопролол
+T8	Drug 20130 20138	Кордарон
+T9	Drug 20140 20149	амиодарон
+T10	Severity 311 315	2Аст
+T11	Severity 320 330	II по Ross
+T12	Disease 307 310	ХСН
+R1	Severity_rel Arg1:T10 Arg2:T12	
+T13	Symptom 317 319	ФК
+A1	SType T13 disorder
+T14	Disease 343 387	Нарушение ритма сердца: желудочковая аритмия
+A2	Time T14 now
+T15	Severity 633 637	2Аст
+T16	Disease 629 632	ХСН
+T17	Severity 642 652	II по Ross
+T18	Symptom 639 641	ФК
+T19	Disease 852 860	гайморит
+A3	NotPatient T19
+A4	SType T19 disorder
+A5	Time T19 before
+T20	Body_location 1790 1817	левого и правого желудочков
+T21	Symptom 1762 1772	обструкции
+A6	Negation T21
+A7	SType T21 disorder
+R2	Symptom_bdyloc_rel Arg1:T20 Arg2:T21	
+T22	Symptom 2819 2858	преждевременного возбуждения желудочков
+A8	SType T22 disorder
+T23	Body_location 2848 2859	желудочков.
+R3	Symptom_bdyloc_rel Arg1:T23 Arg2:T22	
+T24	Body_location 4263 4290	межжелудочковой перегородки
+T25	Symptom 4251 4262	образование
+A9	SType T25 disorder
+R4	Symptom_bdyloc_rel Arg1:T24 Arg2:T25	
+T26	Body_location 4597 4623	миокарда правого желудочка
+T27	Symptom 4585 4596	гипертрофии
+A10	SType T27 disorder
+R5	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+T28	Severity 4431 4434	62%
+T29	Symptom 4435 4447	по Тейхольцу
+T30	Symptom 4502 4521	ускорение кровотока
+A11	SType T30 disorder
+T31	Body_location 4540 4556	левого желудочка
+R6	Symptom_bdyloc_rel Arg1:T31 Arg2:T30	
+T32	Body_location 4848 4867	миокарде желудочков
+T33	Symptom 4813 4845	нарушения процесса реполяризации
+A12	SType T33 disorder
+R7	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+T34	Symptom 6631 6643	гемодинамики
+A13	Negation T34
+T35	Symptom 7335 7359	неоднородное образование
+A14	SType T35 disorder
+T36	Body_location 7263 7290	межжелудочковой перегородки
+R8	Symptom_bdyloc_rel Arg1:T36 Arg2:T35	
+T37	Body_location 7623 7631	миокарда
+T38	Symptom 7604 7622	рубцовые изменения
+A15	SType T38 disorder
+R9	Symptom_bdyloc_rel Arg1:T37 Arg2:T38	
+T39	Disease 6977 6995	туберозный склероз
+A16	Negation T39
+T40	Symptom 8792 8815	миграции водителя ритма
+A17	SType T40 disorder
+T41	Body_location 8818 8844	миокард правого предсердия
+R10	Symptom_bdyloc_rel Arg1:T41 Arg2:T40	
+T42	Body_location 9760 9774	Мышцы, суставы
+T43	Body_location 9705 9720	Костная система
+T44	Body_location 9803 9810	Суставы
+T45	Body_location 10053 10074	Органы кровообращения
+T46	Body_location 10396 10414	Органы пищеварения
+T47	Body_location 10539 10548	Селезенка
+T48	Body_location 10497 10503	Печень
+T49	Severity 10504 10508	+0.5
+A18	Degree T49 light
+T50	Body_location 10873 10888	головного мозга
+T51	Body_location 11183 11203	Желудочковая система
+T52	Body_location 12086 12097	ЛЕВАЯ ПОЧКА
+T53	Body_location 12697 12709	ПРАВАЯ ПОЧКА
+T54	Body_location 13351 13365	МОЧЕВОЙ ПУЗЫРЬ
+T55	Body_location 13529 13534	АОРТА
+T56	Body_location 13989 14015	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T57	Body_location 13902 13918	ЛЕВОЕ ПРЕДСЕРДИЕ
+T58	Body_location 13945 13962	ПРАВОЕ ПРЕДСЕРДИЕ
+T59	Body_location 14153 14168	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T60	Body_location 14027 14043	ПРАВЫЙ ЖЕЛУДОЧЕК
+T61	Body_location 14335 14362	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА
+T62	Severity 14259 14261	63
+T63	Symptom 14243 14258	ФВ по Тейхольцу
+T64	Body_location 14601 14618	МИТРАЛЬНЫЙ КЛАПАН
+T65	Body_location 14682 14704	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T66	Body_location 14542 14572	ЗАДНЯЯ СТЕНКА ЛЕВОГО ЖЕЛУДОЧКА
+T67	Body_location 15188 15205	Щитовидной железы
+T68	Body_location 15122 15139	правого желудочка
+T69	Symptom 15048 15077	небольшое увеличение размеров
+A19	SType T69 disorder
+R11	Symptom_bdyloc_rel Arg1:T68 Arg2:T69	
+T70	Body_location 17318 17332	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T71	Body_location 17778 17798	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T72	Body_location 17966 17975	СЕЛЕЗЕНКА
+T73	Body_location 18121 18128	ЖЕЛУДОК
+T74	Body_location 19487 19506	миокарде желудочков
+T75	Symptom 19452 19484	Нарушение процесса реполяризации
+A20	SType T75 disorder
+R12	Symptom_bdyloc_rel Arg1:T74 Arg2:T75	
+T76	Body_location 15773 15780	Ключицы

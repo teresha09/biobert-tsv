@@ -1,0 +1,183 @@
+T1	Body_location 508 512	носа
+T2	Symptom 43 48	Апноэ
+A1	SType T2 disorder
+A2	Negation T2
+T3	Symptom 526 533	Дыхание
+A3	SType T3 normal
+T4	Body_location 540 543	нос
+T5	Symptom 492 497	Форма
+A4	SType T5 normal
+T6	Symptom 591 605	бледно-розовая
+A5	SType T6 normal
+T7	Symptom 607 622	немного отечна.
+A6	SType T7 disorder
+T8	Body_location 559 590	Слизистая оболочка полости носа
+T9	Symptom 75 90	частоты дыхания
+A7	SType T9 normal
+T10	Symptom 92 112	дыхательного индекса
+A8	SType T10 normal
+T11	Symptom 114 137	времени пикового выдоха
+A9	SType T11 normal
+T12	Symptom 140 168	частоты сердечных сокращений
+A10	SType T12 normal
+T13	Symptom 232 261	относительного объёма дыхания
+A11	SType T13 disorder
+T14	Body_location 918 934	Слуховые проходы
+T15	Disease 1052 1071	Аллергический ринит
+T16	Treatment 1088 1215	ежедневное орошение полости носа любым солевым раствором (Физиомер, Маример, Аква-марис, Аквалор софт и т.д.) х 3-4 раза в день
+T17	Drug 1146 1154	Физиомер
+T18	Drug 1156 1163	Маример
+T19	Drug 1165 1175	Аква-марис
+T20	Drug 1177 1189	Аквалор софт
+T21	Body_location 1354 1377	органов брюшной полости
+T22	Body_location 1380 1394	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T23	Symptom 1407 1413	размер
+A12	SType T23 normal
+T24	Symptom 1427 1443	форма правильная
+A13	SType T24 normal
+T25	Symptom 1445 1451	стенки
+A14	SType T25 normal
+T26	Symptom 1465 1481	просвет свободен
+A15	SType T26 normal
+T27	Body_location 1483 1503	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T28	Symptom 1516 1542	размер увеличен (9х9х13мм)
+A16	SType T28 disorder
+T29	Symptom 1544 1574	эхогенность паренхимы повышена
+A17	SType T29 disorder
+T30	Symptom 1576 1600	уплотнены стенки сосудов
+A18	SType T30 disorder
+T31	Symptom 1602 1608	проток
+A19	SType T31 normal
+T32	Body_location 1622 1628	ПЕЧЕНЬ
+T33	Symptom 1630 1688	размер средний (ЛД = 44 мм, 1-й сегмент 14 мм, ПД = 87 мм)
+A20	SType T33 normal
+T34	Symptom 1690 1703	контур ровный
+A21	SType T34 normal
+T35	Symptom 1705 1725	паренхима однородная
+A22	SType T35 normal
+T36	Symptom 1727 1746	средней эхогенности
+A23	SType T36 normal
+T37	Body_location 1748 1761	воротная вена
+T38	Body_location 1770 1785	печёночные вены
+T39	Symptom 1789 1797	изменены
+A24	Negation T39
+T40	Body_location 1799 1808	СЕЛЕЗЁНКА
+T41	Body_location 1922 1929	ЖЕЛУДОК
+T42	Body_location 1963 1980	12-ПЕРСТНАЯ КИШКА
+T43	Symptom 1821 1845	размер средний (53х30мм)
+A25	SType T43 normal
+T44	Symptom 1847 1867	паренхима однородная
+A26	SType T44 normal
+T45	Symptom 1869 1888	средней эхогенности
+T46	Body_location 1890 1907	селезёночная вена
+T47	Symptom 1911 1920	расширена
+A27	Negation T47
+T48	Symptom 1944 1961	стенки нормальные
+A28	SType T48 normal
+T49	Symptom 384 393	Гиперпноэ
+T50	Body_location 748 764	Небные миндалины
+T51	Severity 765 777	I-II степени
+A29	Degree T51 medium
+T52	Symptom 783 810	патологического содержимого
+A30	Negation T52
+T53	Body_location 822 842	Задняя стенка глотки
+T54	Symptom 843 858	розовая, чистая
+A31	SType T54 normal
+T55	Body_location 865 889	AD et AS заушные области
+A32	SType T55 normal
+T56	Symptom 893 901	изменены
+A33	Negation T56
+T57	Symptom 903 916	безболезненны
+A34	SType T57 normal
+T58	Symptom 935 942	широкие
+A35	SType T58 normal
+T59	Symptom 944 953	свободные
+A36	SType T59 normal
+T60	Symptom 958 994	бледно-розового цвета, контурируются
+A37	SType T60 normal
+T61	Body_location 955 957	Mt
+T62	Body_location 675 685	Ротоглотка
+T63	Body_location 654 673	общих носовых ходах
+T64	Symptom 623 651	Скудное слизистое отделяемое
+A38	SType T64 disorder
+T65	Treatment 2869 2927	Ксизал (зиртек) по 10 к. 1 раз в день продолжить 2 месяца.
+T66	Treatment 2931 2982	Скин-кап аэрозоль 2 раза в день 10 дней продолжить.
+T67	Treatment 3143 3189	очищение и увлажнение для сухой атопичной кожи
+T68	Symptom 3365 3394	приступах затруднения дыхания
+A39	SType T68 disorder
+T69	Symptom 3399 3422	малопродуктивного кашля
+A40	SType T69 disorder
+T70	Drug 3424 3432	вентолин
+T71	Drug 3434 3441	саломол
+T72	Treatment 3424 3471	вентолин (саломол) по 1-2 инг. до 3 раз в день.
+T73	Disease 3500 3522	респираторной инфнкции
+T74	Treatment 3542 3625	пульмикорт 250 мкг +беродуал 12 капель + физ раствор 1 мл,  3 раза в день на 7 дней
+T75	Drug 3542 3552	пульмикорт
+T76	Drug 3562 3570	беродуал
+T77	Drug 3583 3594	физ раствор
+T78	Symptom 3645 3668	малопродуктивного кашля
+A41	SType T78 disorder
+T79	Treatment 3678 3767	лазолван в растворе по 1 мл 3 раза в день на 5 дней (вечерняя ингаляция не позднее 18.00)
+T80	Drug 3678 3686	лазолван
+T81	Treatment 3810 3895	Креон 10тыс. по ½ капс. 3 раза в день с едой 2 недели, затем 2 недели перерыв. 3 курс
+T82	Treatment 3901 3950	Туалет носа с физиомером 3 раза в день продолжить
+T83	Symptom 1995 2001	стенки
+A42	SType T83 normal
+T84	Body_location 2068 2088	поджелудочной железы
+T86	Body_location 2153 2168	синусового узла
+T87	Body_location 2171 2197	миокард правого предсердия
+T88	Symptom 2199 2220	Умеренная тахиаритмия
+A44	SType T88 disorder
+T89	Symptom 2361 2403	Умеренные нарушения процесса реполяризации
+T90	Body_location 2406 2425	миокарде желудочков
+T91	Symptom 2299 2333	Повышение электрической активности
+T92	Body_location 2334 2359	миокарда левого желудочка
+T93	Symptom 2100 2124	Нормальное положение ЭОС
+A45	SType T93 normal
+T94	Symptom 290 345	относительное снижение насыщения гемоглобина кислородом
+T95	Body_location 687 716	Слизистая оболочка преддверия
+T96	Body_location 719 730	полости рта
+T97	Symptom 731 746	розовая, чистая
+A46	SType T97 normal
+T98	Body_location 811 820	в лакунах
+T99	Body_location 860 863	Уши
+T100	Treatment 2564 2696	физиомер – промывание полости носа 2-3 раза в день; ксизал по 10 к. 1 р/д, атодерм крем 2 р/д местно, скин-кап аэрозоль 2 р/д местно
+T101	Drug 2564 2572	физиомер
+T102	Drug 2616 2622	ксизал
+T103	Drug 2639 2651	атодерм крем
+T104	Drug 2666 2683	скин-кап аэрозоль
+T105	Drug 3191 3195	Авен
+T106	Drug 3197 3202	Урьяж
+T107	Drug 3204 3215	Ла рош позе
+T108	Drug 3217 3224	А-дерма
+T109	Drug 3226 3231	Дюкре
+T110	Drug 3233 3241	Биодерма
+T111	Drug 3915 3925	физиомером
+T112	Drug 3810 3815	Креон
+T113	Disease 2048 2088	вторичных изменений поджелудочной железы
+T114	Severity 2038 2047	умеренных
+A47	Degree T114 medium
+R1	Severity_rel Arg1:T114 Arg2:T113	
+R2	Body_location_rel Arg1:T84 Arg2:T113	
+R3	Symptom_bdyloc_rel Arg1:T63 Arg2:T64	
+R4	Symptom_bdyloc_rel Arg1:T8 Arg2:T6	
+R5	Symptom_bdyloc_rel Arg1:T8 Arg2:T7	
+R6	Symptom_bdyloc_rel Arg1:T62 Arg2:T97	
+R7	Symptom_bdyloc_rel Arg1:T50 Arg2:T52	
+R8	Symptom_bdyloc_rel Arg1:T98 Arg2:T52	
+R9	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	
+R10	Symptom_bdyloc_rel Arg1:T55 Arg2:T56	
+R11	Symptom_bdyloc_rel Arg1:T55 Arg2:T57	
+R12	Symptom_bdyloc_rel Arg1:T14 Arg2:T58	
+R13	Symptom_bdyloc_rel Arg1:T14 Arg2:T59	
+R14	Symptom_bdyloc_rel Arg1:T61 Arg2:T60	
+T85	Treatment 1223 1320	туалет носа (ребенка высморкать или аспирироватъ патологическую слизь из полости носа аспиратором
+T115	Disease 43 48	Апноэ
+T116	Treatment 2488 2510	Гипоаллергенная диета,
+T117	Treatment 2511 2531	элиминационный режим
+T118	Drug 2877 2883	зиртек
+T119	Drug 2931 2939	Скин-кап
+T120	Drug 2869 2875	Ксизал
+A43	SType T49 disorder
+A48	SType T39 disorder
+A49	SType T47 disorder

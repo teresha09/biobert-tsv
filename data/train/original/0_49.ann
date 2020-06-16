@@ -1,0 +1,62 @@
+T1	Disease 9 48	Бронхиальная астма, неатопическая форма
+T2	Severity 50 87	средне-тяжелое персистирующее течение
+A1	Degree T2 medium
+T3	Course 89 99	обострение
+A2	CType T3 worsened
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 101 136	Двусторонний острый гаймороэтмоидит
+T5	Symptom 213 238	длительный влажный кашель
+A3	SType T5 disorder
+T6	Disease 245 248	ОРИ
+T7	Symptom 311 317	ринита
+A4	SType T7 disorder
+T8	Disease 492 497	грипп
+T9	Disease 499 502	ОРИ
+T10	Symptom 622 639	длительным кашлем
+A5	SType T10 disorder
+T11	Symptom 641 670	бронхообструктивным синдромом
+A6	SType T11 disorder
+T12	Disease 600 603	ОРИ
+T13	Disease 794 829	бронхит с обструктивным компонентом
+T14	Treatment 831 867	В терапии беродуал  через небулайзер
+A7	Effect T14 positive
+T15	Drug 841 849	беродуал
+T16	Disease 982 985	ОРИ
+T17	Symptom 988 1014	обструктивным компонентом.
+A8	SType T17 disorder
+T18	Disease 1045 1064	хронический бронхит
+A9	NotPatient T18
+T19	Body_location 1117 1131	Кожные покровы
+T20	Symptom 1132 1138	чистые
+A10	SType T20 normal
+T21	Symptom 1140 1155	бледно-розовые.
+A11	SType T21 normal
+T22	Symptom 1156 1166	Зев рыхлый
+A12	SType T22 disorder
+T23	Symptom 1168 1194	Носовое дыхание затруднено
+A13	SType T23 disorder
+T24	Body_location 1196 1204	В лёгких
+T25	Symptom 1205 1225	дыхание везикулярное
+A14	SType T25 normal
+T26	Symptom 1227 1245	с жестким оттенком
+A15	SType T26 disorder
+T27	Symptom 1247 1276	выслушиваются проводные хрипы
+A16	SType T27 disorder
+T28	Symptom 1278 1311	Сердечные тоны звучные, ритмичные
+A17	SType T28 normal
+T29	Symptom 1364 1371	дизурии
+A18	Negation T29
+T30	Symptom 1377 1405	Стул регулярный, оформленный
+A19	SType T30 normal
+T31	Symptom 1407 1427	Менингеальных знаков
+A20	Negation T31
+T32	Treatment 732 760	получал терапию в стационаре
+A21	Effect T32 unknown
+R3	Symptom_bdyloc_rel Arg1:T19 Arg2:T20	
+R4	Symptom_bdyloc_rel Arg1:T19 Arg2:T21	
+R5	Symptom_bdyloc_rel Arg1:T24 Arg2:T25	
+R6	Symptom_bdyloc_rel Arg1:T24 Arg2:T26	
+R7	Symptom_bdyloc_rel Arg1:T24 Arg2:T27	
+T33	Disease 311 317	ринита
+T34	Disease 641 670	бронхообструктивным синдромом

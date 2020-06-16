@@ -1,0 +1,135 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 78	тяжелое персистирующее течение
+A1	Degree T2 hard
+T3	Course 80 88	ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 90 125	Аллергический ринит, персистирующий
+T5	Disease 127 158	Пищевая, лекарственная аллергия
+T6	Disease 160 181	Гипертрофия аденоидов
+T7	Severity 182 191	2 степени
+A3	Degree T7 medium
+T8	Disease 193 214	Хронический аденоидит
+T9	Disease 216 290	Синдром вегетативной дисфункции, ваготонический тип, гипотензивный вариант
+T10	Severity 292 307	тяжелое течение
+A4	Degree T10 hard
+T11	Course 336 353	период обострения
+A5	CType T11 worsened
+R3	Severity_rel Arg1:T10 Arg2:T9	
+R4	Course_rel Arg1:T11 Arg2:T9	
+T12	Disease 355 396	Врожденная дисплазия соединительной ткани
+T13	Disease 398 455	Кардиопатия, нарушение функции автоматизма: венечный ритм
+T14	Disease 457 483	Хронический гастродуоденит
+T15	Course 485 502	неполная ремиссия
+A6	CType T15 improved
+R5	Course_rel Arg1:T15 Arg2:T14	
+T16	Disease 504 532	Дисфункция билиарного тракта
+T17	Body_location 515 532	билиарного тракта
+R6	Body_location_rel Arg1:T17 Arg2:T16	
+T18	Body_location 552 567	желчного пузыря
+T20	Disease 989 1011	атопического дерматита
+T21	Treatment 1013 1073	В терапии местные средства, антигистаминные препараты, диета
+A8	Effect T21 positive
+T22	Drug 1041 1056	антигистаминные
+T23	Disease 1109 1130	обструктивный бронхит
+T24	Disease 1166 1169	ОРИ
+T25	Treatment 1171 1196	В терапии зиртек, аскорил
+A9	Effect T25 positive
+T26	Drug 1181 1187	зиртек
+T27	Drug 1189 1196	аскорил
+T28	Disease 1276 1307	бронхиальная астма, атопическая
+T29	Severity 1309 1338	легкое персистирующее течение
+A10	Degree T29 light
+R8	Severity_rel Arg1:T29 Arg2:T28	
+T30	Treatment 1340 1362	Назначен интал курсами
+A11	Effect T30 no-effect
+T19	Symptom 637 656	затруднения дыхания
+A7	SType T19 disorder
+T31	Disease 695 698	ОРИ
+T32	Symptom 1429 1448	затруднения дыхания
+A12	SType T32 disorder
+T33	Disease 1542 1560	бронхиальной астмы
+T34	Severity 1587 1600	среднетяжелую
+A13	Degree T34 medium
+T35	Treatment 1602 1658	В базисной терапии интал заменен на беклазон 400 мкг/сут
+A14	Effect T35 negative
+T36	Drug 1621 1626	интал
+T37	Drug 1638 1646	беклазон
+T38	Treatment 1748 1790	беклазон был заменен на серетид 25/125 мкг
+T39	Drug 1772 1779	серетид
+T40	Drug 1748 1756	беклазон
+T41	Disease 1815 1846	бронхиальная астма, атопическая
+T42	Severity 1848 1878	тяжелое персистирующее течение
+A15	Degree T42 hard
+R9	Severity_rel Arg1:T42 Arg2:T41	
+T43	Symptom 1951 1970	затруднения дыхания
+A16	SType T43 disorder
+T44	Disease 2037 2056	аллергический ринит
+T45	Disease 2058 2066	аденоиды
+T46	Severity 2067 2076	2 степени
+A17	Degree T46 medium
+R10	Severity_rel Arg1:T46 Arg2:T45	
+T47	Symptom 2183 2185	ДН
+A18	SType T47 disorder
+T48	Severity 2186 2197	1-2 степени
+A19	Degree T48 medium
+T49	Treatment 2300 2346	назначались ИГКС до 1000мкг/сут по флутиказону
+T50	Drug 2312 2316	ИГКС
+T51	Disease 2389 2405	Пищевая аллергия
+T52	Symptom 2418 2427	высыпания
+A20	SType T52 disorder
+T53	Disease 2430 2452	Лекарственная аллергия
+T54	Drug 2456 2464	лидокаин
+T55	Disease 2504 2520	пищевая аллергия
+A21	NotPatient T55
+T56	Disease 2539 2564	рецидивирующая крапивница
+A22	NotPatient T56
+T57	Disease 2580 2596	пищевая аллергия
+A23	NotPatient T57
+T58	Body_location 2699 2713	Кожные покровы
+T59	Body_location 2831 2845	грудной клетки
+T60	Symptom 2804 2830	Воронкообразная деформация
+T61	Symptom 2766 2802	Носовое дыхание несколько затруднено
+T62	Symptom 2714 2729	чистые, бледные
+A24	SType T62 normal
+T63	Symptom 2731 2751	периорбитальные тени
+A25	SType T63 disorder
+T64	Symptom 2856 2876	дыхание везикулярное
+A26	SType T64 normal
+T65	Symptom 2898 2904	хрипов
+A27	Negation T65
+T66	Symptom 2878 2896	с жестким оттенком
+T67	Body_location 2847 2855	В лёгких
+T68	Symptom 2753 2764	Зев спокоен
+A28	SType T68 normal
+T69	Symptom 2996 3003	дизурии
+A29	Negation T69
+T70	Symptom 3009 3013	Стул
+A30	SType T70 normal
+T71	Symptom 3039 3059	Менингеальных знаков
+A31	Negation T71
+T72	Symptom 2910 2943	Сердечные тоны звучные, ритмичные
+A32	SType T72 normal
+T73	Treatment 2212 2245	серетида 25/250 мкг 2 раза в день
+T74	Drug 2212 2220	серетида
+R11	Severity_rel Arg1:T7 Arg2:T6	
+R12	Severity_rel Arg1:T34 Arg2:T33	
+T75	Symptom 541 567	деформации желчного пузыря
+A33	SType T75 disorder
+R7	Symptom_bdyloc_rel Arg1:T18 Arg2:T75	
+R13	Symptom_bdyloc_rel Arg1:T58 Arg2:T62	
+R14	Symptom_bdyloc_rel Arg1:T58 Arg2:T63	
+R15	Symptom_bdyloc_rel Arg1:T59 Arg2:T60	
+R16	Symptom_bdyloc_rel Arg1:T67 Arg2:T64	
+R17	Symptom_bdyloc_rel Arg1:T67 Arg2:T66	
+R18	Symptom_bdyloc_rel Arg1:T67 Arg2:T65	
+T76	Course 1561 1600	с легкой была изменена на среднетяжелую
+R19	Course_rel Arg1:T76 Arg2:T33	
+T77	Disease 2379 2383	отек
+A34	Conditional T77
+T78	Drug 1349 1354	интал
+T79	Drug 2335 2346	флутиказону
+A35	SType T61 disorder
+A36	SType T66 disorder
+A37	SType T65 disorder

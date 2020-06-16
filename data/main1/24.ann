@@ -1,0 +1,154 @@
+T1	Treatment 2821 2865	Гипоаллергенная диета, элиминационный режим.
+T2	Symptom 2990 3005	приступах кашля
+A1	SType T2 disorder
+T3	Symptom 3007 3028	затрудненного дыхания
+A2	SType T3 disorder
+T4	Treatment 3042 3123	вентолин (сальбутамол или саламол) по 2 ингаляции через спейсер до 3-х раз в день
+T5	Drug 3042 3050	вентолин
+T6	Drug 3052 3063	сальбутамол
+T7	Drug 3068 3075	саламол
+T8	Disease 3151 3154	ОРИ
+T9	Symptom 139 166	показатели исходно в норме,
+A3	SType T9 normal
+T10	Symptom 167 199	проба с вентолином положительная
+A4	SType T10 disorder
+T11	Drug 175 185	вентолином
+T12	Symptom 446 472	показатели исходно в норме
+A5	SType T12 normal
+T13	Body_location 622 645	органов брюшной полости
+T14	Body_location 647 661	Желчный пузырь
+T15	Symptom 663 699	размер – 56х15, стенки - не изменены
+A6	SType T15 normal
+T16	Symptom 701 726	форма – перегиб в воронке
+A7	SType T16 disorder
+T17	Symptom 729 747	просвет - свободен
+A8	SType T17 normal
+T18	Body_location 749 755	Печень
+T19	Symptom 757 853	размер средний, ЛД- 65 мм, ПД- 90 мм, контур- ровный, паренхима- однородная, средней эхогенности
+A9	SType T19 normal
+T20	Body_location 855 870	печеночные вены
+T21	Body_location 885 898	воротная вена
+T22	Symptom 875 883	изменены
+A10	Negation T22
+T23	Symptom 901 904	6мм
+A11	SType T23 normal
+T24	Body_location 906 926	Поджелудочная железа
+T25	Body_location 1044 1053	Селезенка
+T26	Body_location 1171 1200	Желудок, 12-ти перстная кишка
+T27	Symptom 1203 1233	стенки нормальные, секрета нет
+A12	SType T27 normal
+T28	Symptom 1055 1136	нормальная, размер - средний 85х43 мм, паренхима- однородная, средней эхогенности
+A13	SType T28 normal
+T29	Body_location 1138 1155	селезеночная вена
+T30	Symptom 1160 1169	расширена
+A14	Negation T30
+T31	Symptom 928 988	размер - увеличен, головка- 17 мм, тело- 14 мм, хвост- 18 мм
+A15	SType T31 disorder
+T32	Symptom 991 1021	паренхима- эхогенность средняя
+A16	SType T32 normal
+T33	Body_location 1023 1029	проток
+T34	Symptom 1034 1042	расширен
+A17	Negation T34
+T35	Symptom 1247 1282	признаки деформации желчного пузыря
+A18	SType T35 disorder
+T36	Symptom 1284 1324	вторичные изменения поджелудочной железы
+A19	SType T36 disorder
+T37	Body_location 1267 1282	желчного пузыря
+T38	Body_location 1304 1324	поджелудочной железы
+T39	Body_location 1346 1361	грудной  клетки
+T40	Symptom 1414 1454	острых очагово-инфильтративных изменений
+A20	Negation T40
+T41	Body_location 1566 1579	Корни легкого
+T42	Body_location 1606 1617	Средостение
+T43	Body_location 1632 1638	Сердце
+T44	Treatment 3155 3239	через небулайзер: беродуал 14 капель + пульмикорт 250 мкг 3 раза в день на 5-7 дней.
+T45	Treatment 2387 2430	Гипоаллергенная диета, элиминационный режим
+T46	Body_location 1688 1704	Куполы диафрагмы
+T47	Body_location 1731 1761	Костная система и мягкие ткани
+T48	Body_location 1713 1719	Синусы
+T49	Symptom 1621 1630	увеличено
+A21	Negation T49
+A22	SType T49 disorder
+T50	Symptom 1659 1674	Форма и размеры
+A23	SType T50 normal
+T51	Symptom 1720 1729	воздушные
+A24	SType T51 normal
+T52	Symptom 1580 1604	структурны, не расширены
+A25	SType T52 normal
+T53	Symptom 1363 1388	легочный фон симметричный
+A26	SType T53 normal
+T54	Symptom 1390 1401;1405 1412	воздушность снижена
+A27	SType T54 disorder
+T55	Symptom 1460 1564	Легочный рисунок по смешанному типу, немного обогащен в прикорневых зонах за счет сосудистого компонента
+T56	Body_location 1516 1533	прикорневых зонах
+T57	Disease 1866 1901	Аллергический ринит, персистирующий
+T58	Treatment 1919 2173	Ежедневно орошать  полость носа Физиомер (с 2-х нед. и старше) (или Аквалор софт, или Маример, или Аква – марис) х 3-4 раза в день (тщательное отсмаркивание) – Назонекс (или Авамис, или Фликсоназе) по 1 впр. х 1 раз в день в каждую половину носа 2 недели
+T59	Drug 1951 1959	Физиомер
+T60	Drug 1987 2000	Аквалор софт,
+T61	Drug 2005 2012	Маример
+T62	Drug 2018 2030	Аква – марис
+T63	Drug 2079 2087	Назонекс
+T64	Drug 2093 2099	Авамис
+T65	Drug 2105 2115	Фликсоназе
+T66	Body_location 1938 1950	полость носа
+T67	Body_location 2142 2164	в каждую половину носа
+T68	Symptom 2323 2363	Неполная блокада правой ножки пучка Гиса
+A28	SType T68 normal
+T69	Symptom 2284 2321	Аритмия выраженная (70-91 уд. в мин.)
+A29	SType T69 disorder
+T70	Symptom 2211 2282	Миграция водителя ритма из синусового узла в миокард правого предсердия
+A30	SType T70 disorder
+T71	Body_location 2238 2253	синусового узла
+T72	Body_location 2256 2282	миокард правого предсердия
+T73	Symptom 2185 2209	Нормальное положение ЭОС
+A31	SType T73 normal
+T74	Treatment 2466 2516	Физиомер – промывание полости носа 3-4 раза в день
+T75	Treatment 2521 2582	Назонекс – по 1 инстилляции в каждый носовой ход 1 раз в день
+T76	Treatment 2587 2618	Серетид 50/25 мкг 2 раза в день
+T77	Treatment 2623 2643	Элидел 2 раза в день
+T78	Treatment 2648 2668	Атодерм 1 раз в день
+T79	Treatment 2931 2981	Серетид 50/25 по 1 инг. 2 раз в день через спейсер
+T80	Treatment 3374 3454	Элидел 2 раза в день 2 недели. Ежедневно средства ухода за кожей (атодерм и др.)
+T81	Body_location 3487 3504	щитовидной железы
+T82	Drug 3374 3380	Элидел
+T83	Drug 2521 2529	Назонекс
+T84	Drug 2587 2594	Серетид
+T85	Drug 2623 2629	Элидел
+T86	Drug 2648 2655	Атодерм
+T87	Drug 2466 2474	Физиомер
+T88	Drug 2931 2938	Серетид
+T89	Drug 3173 3181	беродуал
+T90	Drug 3194 3204	пульмикорт
+T91	Symptom 3258 3281	малопродуктивного кашля
+A32	SType T91 disorder
+T92	Treatment 3291 3369	ингаляции лазолвана в растворе 2 мл 3 раза в день (не позднее 18.00) на 5 дней
+T93	Drug 3301 3310	лазолвана
+T94	Drug 3440 3447	атодерм
+T95	Symptom 1639 1657	расположено обычно
+A33	SType T95 normal
+T96	Symptom 1705 1711	четкие
+A34	SType T96 normal
+T97	Disease 1284 1324	вторичные изменения поджелудочной железы
+R1	Body_location_rel Arg1:T38 Arg2:T97	
+T98	Disease 2284 2291	Аритмия
+T99	Disease 2332 2363	блокада правой ножки пучка Гиса
+R2	Symptom_bdyloc_rel Arg1:T14 Arg2:T15	
+R3	Symptom_bdyloc_rel Arg1:T14 Arg2:T16	
+R4	Symptom_bdyloc_rel Arg1:T14 Arg2:T17	
+R5	Symptom_bdyloc_rel Arg1:T18 Arg2:T19	
+R6	Symptom_bdyloc_rel Arg1:T20 Arg2:T22	
+R7	Symptom_bdyloc_rel Arg1:T21 Arg2:T23	
+R8	Symptom_bdyloc_rel Arg1:T24 Arg2:T31	
+R9	Symptom_bdyloc_rel Arg1:T24 Arg2:T32	
+R10	Symptom_bdyloc_rel Arg1:T33 Arg2:T34	
+R11	Symptom_bdyloc_rel Arg1:T25 Arg2:T28	
+R12	Symptom_bdyloc_rel Arg1:T29 Arg2:T30	
+R13	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+R14	Symptom_bdyloc_rel Arg1:T39 Arg2:T53	
+R15	Symptom_bdyloc_rel Arg1:T39 Arg2:T54	
+A35	Negation T54
+R16	Symptom_bdyloc_rel Arg1:T39 Arg2:T40	
+R17	Symptom_bdyloc_rel Arg1:T41 Arg2:T52	
+R18	Symptom_bdyloc_rel Arg1:T42 Arg2:T49	
+R19	Symptom_bdyloc_rel Arg1:T46 Arg2:T96	
+R20	Symptom_bdyloc_rel Arg1:T48 Arg2:T51	

@@ -1,0 +1,135 @@
+T1	Disease 36 55	Аллергический ринит
+T2	Disease 91 99	Аденоиды
+T3	Severity 100 105	II ст
+A1	Degree T3 medium
+R1	Severity_rel Arg1:T3 Arg2:T2	
+T4	Disease 107 128	Катаральный аденоидит
+T5	Disease 166 185	Аллергический ринит
+T6	Body_location 238 261	органов брюшной полости
+T7	Body_location 263 277	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T8	Body_location 361 381	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T9	Body_location 461 470	СЕЛЕЗЕНКА
+T10	Body_location 512 518	ПЕЧЕНЬ
+T11	Body_location 593 600	ЖЕЛУДОК
+T12	Body_location 617 634	12-ПЕРСТНАЯ КИШКА
+T13	Symptom 701 742	реактивных изменений поджелудочной железы
+A2	SType T13 disorder
+T14	Body_location 722 742	поджелудочной железы
+T15	Body_location 775 798	почек и мочевого пузыря
+T16	Symptom 1194 1221	полного удвоения ЧЛС справа
+A3	SType T16 normal
+T17	Body_location 1202 1221	удвоения ЧЛС справа
+T18	Symptom 1223 1234	ПМР? справа
+A4	SType T18 disorder
+T19	Treatment 1665 1771	туалет носа с маример, виброцил, софрадекс, назонекс 1 инст. х 1 р/д, атодерм PO Zn, локоид, креон, зиртек
+T20	Drug 1679 1686	маример
+T21	Drug 1688 1696	виброцил
+T22	Drug 1698 1707	софрадекс
+T23	Drug 1709 1717	назонекс
+T24	Drug 1735 1749	атодерм PO Zn,
+T25	Drug 1750 1756	локоид
+T26	Drug 1758 1763	креон
+T27	Drug 1765 1771	зиртек
+T28	Treatment 1988 2036	Туалет носа с маример 3-4 раза в день продолжить
+T29	Treatment 2041 2085	Назонекс в нос (1+1) 1 р/д в течение 20 дней
+T30	Treatment 2090 2126	Зиртек 10 к. х 1 раз в день 20 дней.
+T31	Symptom 2148 2162	приступа кашля
+A5	SType T31 disorder
+T32	Symptom 2167 2186	затруднения дыхания
+A6	SType T32 disorder
+T33	Disease 2198 2201	ОРИ
+T34	Treatment 2203 2257	вентолин через спейсер по 1-2 инг. до 2-4 раз в сутки.
+T35	Treatment 2276 2333	через небулайзер - беродуал 8 кап. +  пульмикорт 250 мкг.
+T36	Drug 2295 2303	беродуал
+T37	Drug 2314 2324	пульмикорт
+T38	Treatment 2337 2357	Атодерм PO Zn местно
+T39	Drug 2337 2350	Атодерм PO Zn
+T40	Treatment 2362 2424	Креон 10000 по 1/2к. х 3 раза в день с едой продолжить 14 дней
+T41	Drug 2362 2367	Креон
+T42	Drug 2090 2096	Зиртек
+T43	Drug 2041 2049	Назонекс
+T44	Drug 2002 2009	маример
+T45	Treatment 1927 1984	Соблюдение гипоаллергенной диеты, элиминационного режима.
+T46	Symptom 1355 1379	Нормальное положение ЭОС
+A7	SType T46 normal
+T47	Symptom 1381 1427	Легкая аритмия на фоне миграции водителя ритма
+T48	Body_location 1431 1446	синусового узла
+T49	Body_location 1449 1475	миокард правого предсердия
+T50	Symptom 1477 1518	Неполная блокада правой ножки пучка Гиса.
+A8	SType T50 normal
+T51	Body_location 1494 1518	правой ножки пучка Гиса.
+T52	Symptom 1519 1578	Парциальный синдром преждевременного возбуждения желудочков
+A9	SType T52 disorder
+T53	Body_location 1568 1578	желудочков
+T54	Symptom 1580 1640	Некоторые нарушения процесса метаболизма миокарда желудочков
+A10	SType T54 normal
+T55	Body_location 1621 1640	миокарда желудочков
+T56	Body_location 1130 1144	Мочевой пузырь
+T57	Symptom 948 977	признаки полного удвоения ЧЛС
+A11	SType T57 disorder
+T58	Body_location 1104 1115	мочеточники
+T59	Symptom 1119 1128	расширены
+A12	Negation T59
+A13	SType T59 disorder
+T60	Symptom 1145 1168	выполнен, стенки тонкие
+A14	SType T60 normal
+T61	Symptom 279 296	размер – 40х13 мм
+A15	SType T61 normal
+T62	Body_location 298 304	стенки
+T63	Symptom 310 318	утолщены
+A16	Negation T63
+T64	Symptom 320 338	форма – правильная
+A17	SType T64 normal
+T65	Symptom 340 360	просвет – свободный;
+A18	SType T65 normal
+T66	Symptom 383 402	размер – 10х7х13 мм
+A19	SType T66 normal
+T67	Symptom 404 459	паренхима – эхогенность умеренно повышена, неоднородная
+A20	SType T67 disorder
+T68	Symptom 472 510	размер 79х33 мм; паренхима не изменена
+A21	SType T68 normal
+T69	Symptom 520 591	размер – ЛД – 47, 1й сегмент 13 мм, ПД –88 мм; паренхима -  не изменена
+A22	SType T69 normal
+T70	Symptom 635 674	секрет есть, стенки тонкие, не изменены
+A23	SType T70 normal
+T71	Symptom 604 615	секрет есть
+A24	SType T71 normal
+T72	Body_location 800 805	Левая
+T73	Body_location 816 822	правая
+T74	Symptom 800 882	Левая 69х33 мм, правая 83х30 мм, расположены в типичном месте, паренхима сохранена
+A25	SType T74 normal
+T75	Body_location 884 894	ЧЛС  слева
+T76	Symptom 900 909	расширена
+A26	Negation T76
+T77	Body_location 911 917	справа
+T78	Body_location 999 1012	капсулы почки
+T79	Body_location 1029 1045	дуговых артериях
+T80	Symptom 979 1067	кровоток при ЦДК до капсулы почки, справа – ИР на дуговых артериях до 0,61-0,62 (снижен)
+A27	SType T80 disorder
+T81	Disease 1388 1395	аритмия
+T82	Severity 1381 1387	Легкая
+A28	Degree T82 light
+R2	Severity_rel Arg1:T82 Arg2:T81	
+T83	Disease 1486 1517	блокада правой ножки пучка Гиса
+R3	Body_location_rel Arg1:T51 Arg2:T83	
+T84	Course 57 89	осложненный бактериальной флорой
+A29	CType T84 worsened
+R4	Course_rel Arg1:T84 Arg2:T1	
+T85	Disease 1519 1567	Парциальный синдром преждевременного возбуждения
+R5	Body_location_rel Arg1:T53 Arg2:T85	
+T86	Drug 2203 2211	вентолин
+R6	Symptom_bdyloc_rel Arg1:T7 Arg2:T61	
+R7	Symptom_bdyloc_rel Arg1:T62 Arg2:T63	
+R8	Symptom_bdyloc_rel Arg1:T7 Arg2:T63	
+R9	Symptom_bdyloc_rel Arg1:T7 Arg2:T64	
+R10	Symptom_bdyloc_rel Arg1:T7 Arg2:T65	
+R11	Symptom_bdyloc_rel Arg1:T8 Arg2:T66	
+R12	Symptom_bdyloc_rel Arg1:T8 Arg2:T67	
+R13	Symptom_bdyloc_rel Arg1:T9 Arg2:T68	
+R14	Symptom_bdyloc_rel Arg1:T10 Arg2:T69	
+R15	Symptom_bdyloc_rel Arg1:T11 Arg2:T71	
+R16	Symptom_bdyloc_rel Arg1:T12 Arg2:T70	
+R17	Symptom_bdyloc_rel Arg1:T14 Arg2:T13	
+R18	Symptom_bdyloc_rel Arg1:T75 Arg2:T76	
+R19	Symptom_bdyloc_rel Arg1:T56 Arg2:T60	
+R20	Symptom_bdyloc_rel Arg1:T58 Arg2:T59	

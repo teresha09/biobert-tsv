@@ -1,0 +1,192 @@
+T1	Disease 21 42	Хронический миокардит
+T2	Disease 44 84	Недостаточность митрального клапана 1 ст
+T3	Disease 86 89	ХСН
+A1	Time T3 now
+A2	Time T2 after
+T4	Body_location 60 79	митрального клапана
+T5	Severity 90 93	1ст
+T6	Severity 97 99	ФК
+A3	Degree T6 light
+A4	Degree T5 light
+R1	Severity_rel Arg1:T5 Arg2:T3	
+R2	Severity_rel Arg1:T6 Arg2:T3	
+T7	Disease 121 142	Хронический миокардит
+A5	Time T7 now
+T8	Disease 144 179	Недостаточность митрального клапана
+T9	Severity 180 184	1 ст
+R3	Severity_rel Arg1:T9 Arg2:T8	
+T10	Disease 186 189	ХСН
+T11	Severity 190 193	1ст
+T12	Severity 197 201	ФК 1
+T13	Disease 226 295	Синдром вегето-сосудистой дисфункции кардиально- гипотензивного типа,
+T14	Severity 296 318	легкой степени тяжести
+R4	Severity_rel Arg1:T14 Arg2:T13	
+T15	Disease 320 365	Остаточные явления двустороннего риносинусита
+A6	Time T15 after
+T16	Symptom 395 407	утомляемость
+A7	SType T16 disorder
+T17	Symptom 409 440	одышку при физических нагрузках
+A8	SType T17 disorder
+T18	Symptom 442 455	головные боли
+A9	SType T18 disorder
+T19	Symptom 457 471	плохой аппетит
+A10	SType T19 disorder
+T20	Symptom 473 492	редкие колющие боли
+A11	SType T20 disorder
+T21	Symptom 520 539	отёки в области век
+A12	SType T21 disorder
+T22	Disease 644 670	Ишемическая болезнь сердца
+A13	NotPatient T22
+A14	Time T22 after
+T23	Disease 695 715	гестоз во 2 половине
+T24	Symptom 869 902	1 года выслушан систолический шум
+T25	Disease 1211 1215	ДКМП
+A15	Time T25 before
+T26	Drug 1261 1268	элькара
+T27	Disease 1384 1396	дилатация ЛЖ
+A16	Time T27 after
+T28	Disease 1399 1452	недостаточностью митрального клапана без нарушения ФВ
+A17	Time T28 before
+T29	Disease 1480 1484	ДКМП
+T30	Disease 1486 1527	Недостаточность митрального клапана I ст.
+A18	Time T30 before
+T31	Drug 1560 1567	элькара
+T32	Symptom 1648 1659	снижение ФВ
+A19	SType T32 disorder
+T33	Symptom 1680 1698	дилатация полостей
+A20	SType T33 disorder
+T34	Symptom 1700 1735	недостаточность митрального клапана
+T35	Symptom 1923 1943	дилатация полости ЛЖ
+T36	Symptom 1989 2023	недостаточность митрального капана
+A21	SType T36 disorder
+T37	Symptom 2167 2193	свечение листков перикарда
+A22	SType T37 disorder
+T38	Disease 2272 2298	ДКМП, исход миоперикардита
+A23	Time T38 after
+T39	Severity 2304 2310	1-2 ст
+R5	Severity_rel Arg1:T39 Arg2:T38	
+T40	Treatment 2348 2420	найзом, аскорутином, панангином, преднизолоном 5 мг/сут, предукталом, ви
+A24	Effect T40 positive
+T41	Treatment 2423 2434	В1, В6 в/м,
+A25	Effect T41 positive
+T42	Drug 2484 2495	преднизолон
+T43	Drug 3120 3131	преднизолон
+T44	Drug 3542 3553	преднизолон
+T45	Disease 3735 3763	Дилатационная кардиомиопатия
+A26	Time T45 before
+T46	Drug 3914 3925	преднизолон
+T47	Symptom 3962 3982	гипертрофии миокарда
+T48	Body_location 3983 4003	левых отделов сердца
+R6	Symptom_bdyloc_rel Arg1:T48 Arg2:T47	
+T49	Body_location 4006 4023	правого желудочка
+R7	Symptom_bdyloc_rel Arg1:T49 Arg2:T47	
+T50	Treatment 4532 4607	капотен, гипотиазид, трентал, вольтарен, ретарпен, панангин, курс вобэнзима
+A27	Effect T50 unknown
+T51	Symptom 4696 4730	положительные маркеры к микоплазме
+A28	SType T51 disorder
+T52	Drug 5009 5016	капотен
+T53	Drug 5051 5061	гипотиазид
+T54	Drug 5075 5083	панангин
+T55	Drug 5087 5096	вольтарен
+T56	Drug 5110 5117	трентал
+T57	Drug 5132 5140	вобэнзим
+T58	Drug 5144 5152	ретарпен
+T59	Drug 5156 5167	пентаглобин
+T60	Drug 5178 5184	клацид
+T61	Treatment 5215 5344	капотеном, гипотиазидом, вольтареном, тренталом, ретарпеном, курсовой прием цитофлавина, коэнзима, рибомунила, клацида, вобэнзима
+A29	Effect T61 unknown
+T62	Treatment 5608 5698	капотен, гипотиазид, трентал, панангин в прежних дозировках, цитофлавин в/в 7 мл, ретарпен
+A30	Effect T62 unknown
+T63	Treatment 5722 5917	капотеном, гипотиазидом (с отменой за месяц до поступления в НЦЗД РАМН), тренталом, панангином, вольтареном, цитофлавином, кудесаном-форте, элькаром, нейромультивитом, ретарпеном, курс рибомунила
+A31	Effect T63 unknown
+T64	Symptom 6387 6418	эпизоды миграции водителя ритма
+A32	SType T64 disorder
+T65	Symptom 6457 6470	экстрасистолы
+A33	SType T65 disorder
+T66	Treatment 6563 6671	капотен 37,5мг/сут, трентал 150мг/сут, панагин, цитофлавин, вольтарен с постепенной отменой к 23.12.2051 г..
+A34	Effect T66 positive
+T67	Disease 6759 6790	острый ОS халязион нижнего века
+A35	Time T67 before
+T68	Symptom 6842 6881	положительные АТ IgM и IgG H.simplex1/2
+A36	SType T68 disorder
+T69	Treatment 6924 7197	капотен 12,5 мг/д х 3 р/д в связи с длительностью приема с 12.08.2052 заменен на козаар 12,5 мг х 2 р/день (9:00 и 21:00), трентал 150 мг/сут, реамберин в/в 100 мл, зиртек 1 табл/сут, флоксал 1-2 капли х 4 р/д, тетрациклиновая мазь (глазная) 4 р/д, ацикловир 200 мг х 4 р/д
+T70	Symptom 7593 7618	сократительная активность
+A37	Negation T70
+A38	SType T70 disorder
+T71	Treatment 7929 8086	трентал 50 мг 3 р/день, цитофлавин в/в 10 мл в 80 мл 5% р-ре глюкозы, элькар 30% 5 мл 2 раза в день, козаар 50 мг 1/4 таб. 2 раза в день, рибомунил 1 таб/сут
+A39	Effect T71 unknown
+T72	Disease 8186 8223	Дакриоаденит OS, острый конъюнктивит.
+A40	Time T72 before
+T73	Disease 8242 8261	Ангиопатия сетчатки
+A41	Time T73 before
+T74	Disease 8302 8310	мейбомит
+A42	Time T74 before
+T75	Disease 8367 8401	Синдром вегето-сосудистой дистонии
+A43	Time T75 before
+T76	Symptom 8605 8628	умеренное расширение ЛЖ
+A44	SType T76 disorder
+T77	Symptom 8647 8659	регургитация
+T78	Symptom 8808 8852	умеренные нарушения процесса реполяризации в
+A45	SType T78 disorder
+T79	Body_location 8853 8872	миокарде желудочков
+R8	Symptom_bdyloc_rel Arg1:T79 Arg2:T78	
+T80	Symptom 9255 9290	воспалительных изменений в миокарде
+T81	Drug 19595 19602	Трентал
+T82	Drug 19545 19554	Дилатренд
+T83	Drug 19477 19485	Моноприл
+T84	Drug 18938 18962	дилатренда в дозе 1,56мг
+T85	Drug 18997 19023	моноприла до 17,5 мг в сут
+T86	Drug 18518 18526	моноприл
+T87	Drug 18606 18613	трентал
+T88	Drug 18639 18646	кудесан
+T89	Drug 18682 18691	дилатренд
+T90	Body_location 17171 17182	ЛЕВАЯ ПОЧКА
+T91	Body_location 17782 17794	ПРАВАЯ ПОЧКА
+T92	Body_location 18436 18450	МОЧЕВОЙ ПУЗЫРЬ
+T93	Body_location 16536 16539	ОЖП
+T94	Body_location 16137 16151	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T95	Body_location 16264 16270	ПЕЧЕНЬ
+T96	Body_location 13914 13930	ЛЕВОЕ ПРЕДСЕРДИЕ
+T97	Body_location 13781 13797	ЛЕГОЧНАЯ АРТЕРИЯ
+T98	Body_location 14113 14128	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T99	Body_location 13960 13977	ПРАВОЕ ПРЕДСЕРДИЕ
+T100	Body_location 14007 14033	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T101	Body_location 14045 14062	ПРАВЫЙ ЖЕЛУДОЧЕК:
+T102	Symptom 14869 14897	меренное расширение полостей
+A46	SType T102 disorder
+T103	Symptom 14899 14925	умеренное утолщение стенок
+A47	SType T103 disorder
+T104	Body_location 14926 14942	левого желудочка
+R9	Symptom_bdyloc_rel Arg1:T104 Arg2:T103	
+R10	Symptom_bdyloc_rel Arg1:T104 Arg2:T102	
+T105	Symptom 13473 13517	синдрома ранней реполяризации в ночное время
+A48	SType T105 disorder
+T106	Symptom 13420 13462	Умеренное нарушение процесса реполяризации
+A49	SType T106 disorder
+T107	Symptom 13245 13304	миграции водителя ритма в миокард правого предсердия во сне
+A50	SType T107 disorder
+T108	Symptom 12185 12205	менингеальных знаков
+A51	Negation T108
+A52	SType T108 disorder
+T109	Symptom 11719 11737	систолический шум.
+A53	SType T109 disorder
+T110	Treatment 10128 10327	Козаар 18,75 мг в 9.00, 12,5 мг в 21.00, трентал 50 мг х 3 р/день, цитофлавин 1 таб х 2 р/день, кудесан-форте 1 мл х 2 р/день, элькар 5 мл х 2 р/день, рибомунил курсами 15,16,17,18 числа каждого мес.
+A54	Effect T110 unknown
+T111	Treatment 10008 10101	Моноприл 7,5 мг х 2р/д, трентал 50мг х 3 раза в день, после еды, кудесан 1 мл х 2 раза в день
+A55	Effect T111 unknown
+T112	Symptom 10604 10611	бледные
+A56	SType T112 disorder
+T113	Body_location 10589 10603	Кожные покровы
+R11	Symptom_bdyloc_rel Arg1:T113 Arg2:T112	
+T114	Symptom 11188 11223	Носовое дыхание умеренно затруднено
+A57	SType T114 disorder
+T115	Symptom 11307 11326	ясный легочный звук
+A58	SType T115 normal
+T116	Symptom 11337 11357	дыхание везикулярное
+A59	SType T116 disorder
+T117	Symptom 11382 11387	хрипы
+A60	Negation T117
+A61	SType T117 disorder
+T118	Symptom 10825 10831	отеков
+A62	Negation T118
+A63	SType T118 disorder

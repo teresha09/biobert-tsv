@@ -1,0 +1,97 @@
+T1	Disease 9 40	Бронхиальная астма, атопическая
+T2	Severity 42 73	легкое интермиттирующее течение
+A1	Degree T2 light
+R1	Severity_rel Arg1:T2 Arg2:T1	
+T3	Disease 93 135	Аллергический ринит, персистирующиая форма
+T4	Course 137 151	вне обострения
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Symptom 214 242	затруднение носового дыхания
+A3	SType T5 disorder
+T6	Symptom 264 291	эпизоды затруднения дыхания
+A4	SType T6 disorder
+T7	Disease 300 322	респираторных инфекций
+T8	Disease 665 678	ветряная оспа
+T9	Symptom 711 730	затруднения дыхания
+A5	SType T9 disorder
+T10	Disease 758 780	респираторной инфекции
+T11	Treatment 782 872	Получал терапию в стационаре: эуфиллин, дексаметазон, супрастин в/м, беродуал в ингаляциях
+A6	Effect T11 positive
+T12	Drug 812 820	эуфиллин
+T13	Drug 822 834	дексаметазон
+T14	Drug 836 845	супрастин
+T15	Drug 851 859	беродуал
+T16	Symptom 935 958	бронхиальной обструкции
+A7	SType T16 disorder
+T17	Disease 922 925	ОРИ
+T18	Symptom 1263 1291	затруднение носового дыхания
+A8	SType T18 disorder
+T19	Symptom 1302 1312	обструкции
+A9	SType T19 disorder
+T20	Treatment 1334 1387	Для купирования симптомов используется беродуал (ДАИ)
+A10	Effect T20 positive
+T21	Drug 1373 1381	беродуал
+T22	Disease 1873 1904	Бронхиальная астма, атопическая
+T23	Severity 1906 1937	легкое интермиттирующее течение
+A11	Degree T23 light
+R3	Severity_rel Arg1:T23 Arg2:T22	
+T24	Disease 1957 1999	Аллергический ринит, персистирующиая форма
+T25	Course 2001 2015	вне обострения
+A12	CType T25 improved
+R4	Course_rel Arg1:T25 Arg2:T24	
+T26	Disease 2017 2041	Атопический конъюнктивит
+T27	Disease 2043 2069	Хронический гастродуоденит
+T28	Course 2071 2081	обострение
+A13	CType T28 worsened
+T29	Disease 2083 2111	Дисфункция билиарного тракта
+T30	Body_location 2094 2111	билиарного тракта
+T31	Disease 2113 2153	Вторичные изменения поджелудочной железы
+T32	Disease 2155 2163	Лямблиоз
+T33	Treatment 2166 2253	В терапии сингуляр, получил курс противолямблиозной терапии, курс антацидных препаратов
+A14	Effect T33 positive
+T34	Drug 2176 2184	сингуляр
+T35	Drug 2232 2253	антацидных препаратов
+T36	Symptom 2300 2319	затруднения дыхания
+A15	SType T36 disorder
+T37	Disease 2364 2383	контактный дерматит
+A16	NotPatient T37
+T38	Disease 2392 2411	аллергический ринит
+A17	NotPatient T38
+T39	Body_location 2468 2471	Зев
+T40	Symptom 2476 2495	катаральных явлений
+A18	Negation T40
+T41	Body_location 2535 2549	Кожные покровы
+T42	Body_location 2579 2587	В легких
+T43	Symptom 2588 2623	аускультативно везикулярное дыхание
+A19	SType T43 normal
+T44	Symptom 2625 2630	хрипы
+A20	Negation T44
+T45	Symptom 2649 2677	Тоны сердца ясные, ритмичные
+A21	SType T45 normal
+T46	Symptom 2679 2683	Стул
+A22	Negation T46
+T47	Symptom 2685 2691	диурез
+A23	Negation T47
+T48	Symptom 2705 2725	Менингеальных знаков
+A24	Negation T48
+T49	Symptom 2553 2569	смуглым оттенком
+A25	SType T49 normal
+T50	Symptom 2571 2577	чистые
+A26	SType T50 normal
+T51	Symptom 2497 2533	Носовое дыхание несколько затруднено
+A27	SType T51 disorder
+R5	Body_location_rel Arg1:T30 Arg2:T29	
+R6	Course_rel Arg1:T28 Arg2:T27	
+T52	Treatment 1011 1039	получал терапию в стационаре
+T53	Body_location 2133 2153	поджелудочной железы
+R7	Body_location_rel Arg1:T53 Arg2:T31	
+R8	Symptom_bdyloc_rel Arg1:T39 Arg2:T40	
+R9	Symptom_bdyloc_rel Arg1:T41 Arg2:T49	
+R10	Symptom_bdyloc_rel Arg1:T41 Arg2:T50	
+R11	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R12	Symptom_bdyloc_rel Arg1:T42 Arg2:T44	
+T54	Disease 565 586	развитие без задержек
+T55	Disease 1474 1481	герпесу
+T56	Disease 1705 1712	герпеса
+A28	Negation T55
+A29	SType T44 disorder

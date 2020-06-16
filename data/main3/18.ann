@@ -1,0 +1,572 @@
+T1	Disease 21 59	Врожденный порок сердца: тетрада Фалло
+A1	Time T1 now
+T2	Disease 622 625	ХСН
+A2	Time T2 now
+T3	Severity 626 636	IIА стадии
+A3	Degree T3 medium
+R1	Severity_rel Arg1:T3 Arg2:T2	
+T4	Disease 1342 1361	Хронический гастрит
+A4	Time T4 now
+T5	Course 1363 1391	стадия клинической ¶ремиссии
+A5	CType T5 improved
+R2	Course_rel Arg1:T5 Arg2:T4	
+T6	Body_location 1442 1457	желчного пузыря
+T7	Disease 1393 1457	Дисфункция билиарного тракта на фоне деформации ¶желчного пузыря
+A6	Time T7 now
+R3	Body_location_rel Arg1:T6 Arg2:T7	
+T8	Drug 1538 1545	трентал
+T9	Treatment 5498 5552	Назначен фуросемид 30мг/сут, повышена доза верошпирона
+T10	Treatment 7669 7696	подключен фуросемид 5мг/сут
+T11	Treatment 7698 7747	корватон с постепенным повышением дозы до 1мг\сут
+T12	Symptom 11336 11347	пастозность
+A7	SType T12 disorder
+T13	Body_location 11348 11352	лица
+R4	Symptom_bdyloc_rel Arg1:T13 Arg2:T12	
+T14	Symptom 17274 17280	хрипов
+A8	Negation T14
+A9	SType T14 disorder
+T15	Treatment 24742 24801	Энап (эналаприл) 1,25мг х2р/день в 09.00 и 21.00, длительно
+T16	Body_location 87 108	подключично-легочного
+T17	Treatment 109 130	анастомоза по Blalock
+T18	Treatment 202 211	перевязки
+T19	Body_location 230 251	подключично-легочного
+T21	Treatment 252 268	анастомоза слева
+T22	Treatment 270 296	реконструкции путей оттока
+A10	Effect T22 positive
+T23	Body_location 300 317	правого желудочка
+T24	Body_location 336 343	артерии
+T25	Body_location 320 335	ствола легочной
+T26	Treatment 406 427	радикальной коррекции
+T27	Disease 428 442	тетерады Фалло
+A11	Time T27 now
+T20	Treatment 444 460	ушивания дефекта
+T28	Body_location 461 488	межжелудочковой перегородки
+T29	Body_location 491 515	открытого овального окна
+T30	Disease 529 570	Недостаточность трикуспидального клапана.
+A12	Time T30 now
+T31	Disease 571 621	Стеноз и недостаточность клапана легочной артерии.
+A13	Time T31 now
+T32	Disease 638 651	ФК II по Ross
+T33	Disease 664 701	рожденный порок сердца: тетрада Фалло
+A14	Time T33 now
+A15	Time T32 now
+T34	Disease 1264 1267	ХСН
+A16	Time T34 now
+T35	Severity 1268 1279	IIА стадии.
+T36	Disease 1280 1294	ФК II по Ross.
+A17	Time T36 now
+T37	Disease 1310 1340	Дисплазия соединительной ткани
+A18	Time T37 now
+T38	Drug 1547 1557	цитофлавин
+T39	Disease 1613 1617	ОРВИ
+A19	Time T39 after
+T40	Symptom 1629 1638	отечность
+A20	SType T40 disorder
+T41	Body_location 1639 1643	лица
+T42	Symptom 1645 1657	утомляемость
+A21	SType T42 disorder
+T43	Symptom 1669 1675	одышка
+A22	SType T43 disorder
+R5	Symptom_bdyloc_rel Arg1:T41 Arg2:T40	
+T44	Disease 1753 1758	киста
+A23	Time T44 after
+T45	Body_location 1759 1772	правой почки,
+R6	Body_location_rel Arg1:T45 Arg2:T44	
+A24	Negation T44
+T46	Treatment 1782 1791	мед.аборт
+A25	Effect T46 positive
+T47	Disease 1820 1833	поликистозная
+A26	Negation T47
+T48	Disease 1834 1841	болезнь
+A27	Negation T48
+T49	Symptom 2188 2203	субиктеричность
+A28	SType T49 disorder
+T50	Body_location 2204 2219	кожных покровов
+T51	Symptom 2221 2240	ослабленное дыхание
+A29	SType T51 disorder
+T52	Body_location 2266 2272	печень
+R7	Symptom_bdyloc_rel Arg1:T50 Arg2:T49	
+T53	Symptom 2273 2304	+3 см из-под края реберной дуги
+A30	SType T53 disorder
+R8	Symptom_bdyloc_rel Arg1:T52 Arg2:T53	
+T54	Symptom 2306 2339	гипербилирубинемия до 260мкмоль/л
+A31	SType T54 disorder
+T55	Symptom 2341 2355	нестабильность
+A32	SType T55 disorder
+T56	Body_location 2356 2389	шейного отдела позвоночника С1-С2
+R9	Symptom_bdyloc_rel Arg1:T56 Arg2:T55	
+T57	Disease 2415 2428	тетрада Фалло
+A33	Time T57 now
+T58	Body_location 2514 2519	аорта
+T59	Symptom 2520 2554	расширена, смещена вправо, ЛА 5 мм
+A34	SType T59 disorder
+R10	Symptom_bdyloc_rel Arg1:T58 Arg2:T59	
+T60	Symptom 2602 2619	утолщение створок
+A35	SType T60 disorder
+T61	Body_location 2620 2622	ТК
+R11	Symptom_bdyloc_rel Arg1:T61 Arg2:T60	
+T62	Body_location 2624 2644	правые камеры сердца
+T63	Symptom 2645 2654	увеличены
+R12	Symptom_bdyloc_rel Arg1:T62 Arg2:T63	
+T64	Symptom 2656 2664	утолщена
+A36	SType T64 disorder
+A37	SType T63 disorder
+T65	Body_location 2665 2674	стенка ПЖ
+T66	Disease 2695 2723	Врожденный порок синего типа
+A38	Time T66 now
+T67	Disease 2725 2730	ДМЖП.
+T68	Disease 2731 2734	ОАП
+T69	Disease 2736 2763	Гипоплазия легочной артерии
+T71	Symptom 2831 2862	одышечно-цианотические приступы
+A39	SType T71 disorder
+T72	Drug 2946 2953	обзидан
+T73	Symptom 3113 3139	признаки гипоплазии ствола
+A40	SType T73 disorder
+T74	Body_location 3140 3156	легочной артерии
+T75	Symptom 3158 3172	Декстрапозиция
+T76	Body_location 3173 3178	аорты
+R13	Symptom_bdyloc_rel Arg1:T76 Arg2:T75	
+T77	Body_location 3349 3358	ЛА клапан
+T78	Symptom 3359 3371	атрезирован,
+T79	Disease 3435 3459	Атрезии легочной артерии
+A41	Time T79 now
+T80	Severity 3461 3466	1 тип
+R14	Severity_rel Arg1:T80 Arg2:T79	
+T81	Disease 3468 3503	гипоплазия системы легочной артерии
+A42	Time T81 now
+T82	Treatment 3621 3714	наложение модифицированного подключично-легочного анастомоза по Blalock слева с синтетическим
+A43	Effect T82 unknown
+T83	Treatment 3736 3803	В терапии рекомендовано продолжить прием аспирина в течение 2-3 мес
+A44	Effect T83 unknown
+T84	Symptom 3889 3901	исчез цианоз
+A45	SType T84 normal
+T85	Symptom 3844 3872	состояние ребенка улучшилось
+A46	SType T85 normal
+T86	Symptom 3874 3887	более активна
+A47	SType T86 normal
+T87	Treatment 3965 4020	перевязка ранее наложенного анастомоза по Blalock слева
+A48	Effect T87 unknown
+T88	Treatment 4022 4200	Реконструкция путей оттока из правого желудочка с пластикой выводного отдела правого желудочка и ствола легочной артерии ксеноперикардиальной заплатой в условиях ИК и гипотермии.
+A49	Effect T88 unknown
+T89	Body_location 4261 4263	ПЖ
+T90	Symptom 4264 4272	увеличен
+A50	SType T90 disorder
+R15	Symptom_bdyloc_rel Arg1:T89 Arg2:T90	
+T91	Symptom 4311 4338	Ао расширена декстрапозиция
+A51	SType T91 disorder
+T92	Disease 4452 4465	тетрада Фалло
+T93	Severity 4466 4480	крайняя форма.
+R16	Severity_rel Arg1:T93 Arg2:T92	
+T94	Treatment 4541 4626	фуросемидом 16 мг\сут в течение 1 недели, затем постепенная отмена в течение 2 недель
+T95	Treatment 4628 4688	верошпирон 25мг\сут в течение 2-3 мес с постепенной отменой.
+T96	Symptom 4754 4773	оявлением отечности
+A52	SType T96 disorder
+T97	Body_location 4774 4779	лица,
+R17	Symptom_bdyloc_rel Arg1:T97 Arg2:T96	
+T98	Symptom 4780 4797	появлением одышки
+A53	SType T98 disorder
+T99	Symptom 4799 4804	рвоты
+A54	SType T99 disorder
+T100	Symptom 4856 4899	При обследовании выявлены застойные явления
+A55	SType T100 disorder
+T101	Body_location 4902 4908	легких
+T102	Symptom 4910 4915	асцит
+A56	SType T102 disorder
+R18	Symptom_bdyloc_rel Arg1:T101 Arg2:T100	
+T103	Drug 4927 4936	фуросемид
+T104	Drug 4541 4552	фуросемидом
+T105	Treatment 4927 4997	фуросемид 20мг\сут, верошпирон 25мг\сут, супракс, дигоксин 0,04мг\сут.
+T106	Drug 4947 4957	верошпирон
+T107	Drug 4968 4975	супракс
+T108	Drug 4977 4985	дигоксин
+T109	Disease 5056 5082	митральная недостаточность
+A57	Time T109 now
+T110	Severity 5083 5094	1-2 степени
+R19	Severity_rel Arg1:T110 Arg2:T109	
+T111	Disease 5150 5209	недостаточность клапана легочной артерии и трикуспидального
+T112	Severity 5210 5219	3 степени
+T113	Treatment 5281 5339	Рекомендовано продолжить прием фуросемидом в дозе 5мг\сут.
+T114	Drug 5312 5323	фуросемидом
+T115	Drug 5376 5385	фуросемид
+T116	Drug 5507 5516	фуросемид
+T117	Drug 5541 5552	верошпирона
+T118	Body_location 5728 5730	ПЖ
+T119	Symptom 5731 5739	увеличен
+A58	SType T119 disorder
+R20	Symptom_bdyloc_rel Arg1:T118 Arg2:T119	
+T120	Symptom 5832 5839	Сужение
+A59	SType T120 disorder
+T121	Body_location 5840 5863	ствола легочной артерии
+R21	Symptom_bdyloc_rel Arg1:T121 Arg2:T120	
+T70	Disease 2765 2773	НК 2Аст.
+A60	Time T70 before
+T122	Symptom 5922 5948	выраженная недостаточность
+A61	SType T122 disorder
+T123	Body_location 5950 5973	рикуспидального клапана
+T124	Disease 6003 6024	легочная гипертензия.
+A62	Time T124 now
+T125	Severity 5993 6002	Умеренная
+R22	Severity_rel Arg1:T125 Arg2:T124	
+T126	Disease 6039 6053	Тетрада Фалло.
+A63	Time T126 now
+T127	Disease 6059 6077	Недостаточность ТК
+A64	Time T127 now
+T128	Severity 6078 6089	2-3 степени
+T129	Disease 6091 6126	Недостаточность аортального клапана
+A65	Time T129 now
+T130	Body_location 6075 6077	ТК
+T131	Body_location 6107 6126	аортального клапана
+T132	Severity 6127 6131	1ст.
+A66	Degree T132 light
+R23	Severity_rel Arg1:T132 Arg2:T129	
+T133	Treatment 6148 6186	перевязки ранее наложенного анастомоза
+A67	Effect T133 unknown
+T134	Treatment 6217 6242	радикальная коррекция ВПС
+T135	Drug 6322 6332	фуросемида
+T136	Drug 6334 6347	верошпирона..
+T137	Symptom 6506 6532	появление отеков век, лица
+A68	SType T137 disorder
+T138	Body_location 6523 6527	век,
+T139	Body_location 6528 6532	лица
+T140	Treatment 6562 6604	назначена терапия верошпироном 37,5мг\сут.
+T141	Drug 6580 6592	верошпироном
+T142	Symptom 6709 6730	повышенная потливость
+A69	SType T142 disorder
+T143	Symptom 6732 6743	пастозность
+A70	SType T143 disorder
+T144	Body_location 6744 6747	век
+T145	Symptom 6749 6774	гипермобильность суставов
+A71	SType T145 disorder
+T146	Symptom 6776 6800	расширение границ сердца
+A72	SType T146 disorder
+T147	Body_location 6794 6800	сердца
+T148	Symptom 6802 6857	систолический и диастолический шум над областью сердца,
+A73	SType T148 disorder
+T149	Body_location 6850 6856	сердца
+T150	Symptom 6867 6887	признаки гипертрофии
+A74	SType T150 disorder
+T151	Body_location 6888 6896	миокарда
+R24	Symptom_bdyloc_rel Arg1:T149 Arg2:T148	
+R25	Symptom_bdyloc_rel Arg1:T151 Arg2:T150	
+T152	Symptom 6975 6999	увеличены оба предсердия
+A75	SType T152 disorder
+T153	Symptom 7179 7208	признаки легочной гипертензии
+A76	SType T153 disorder
+T154	Disease 7220 7238	ВПС, тетрада Фалло
+A77	Time T154 now
+T155	Treatment 7256 7309	наложения подключично-легочного анастомоза по Blalock
+A78	Effect T155 positive
+T156	Treatment 7327 7362	радикальной коррекции тетрады Фалло
+A79	Effect T156 positive
+T157	Disease 7369 7405	Стеноз и недостаточность клапана ЛА.
+A80	Time T157 now
+T158	Disease 7406 7408	НК
+A81	Time T158 now
+T159	Severity 7409 7418	2А стадии
+T160	Symptom 7821 7838	уменьшились отеки
+A82	SType T160 normal
+T161	Symptom 7840 7884	повысилась переносимость физических нагрузок
+A83	SType T161 normal
+T162	Symptom 8036 8081	на одышку при нагрузке, повышенную потливость
+A84	SType T162 disorder
+T163	Disease 8121 8152	трикуспилальная недостаточность
+A85	Time T163 now
+T164	Drug 8181 8190	корватона
+T165	Drug 8217 8229	цитофлавина.
+T166	Symptom 8410 8419	выпадение
+A86	SType T166 disorder
+T167	Body_location 8420 8425	волос
+R26	Symptom_bdyloc_rel Arg1:T167 Arg2:T166	
+T168	Treatment 8427 8487	В терапии: Зодак, момат, лактофильтрум с временным эффектом.
+T169	Drug 8438 8443	Зодак
+T170	Drug 8445 8450	момат
+T171	Drug 8452 8465	лактофильтрум
+T172	Drug 8551 8560	фуросемид
+T173	Drug 8563 8572	предуктал
+T174	Treatment 8600 8641	на фоне антигистаминной и местной терапии
+A87	Effect T174 positive
+T175	Symptom 8642 8674	высыпания стали менее выраженные
+T176	Symptom 8689 8700	сохранялись
+A88	SType T176 disorder
+T177	Drug 8780 8790	вобензимом
+T178	Treatment 8765 8835	а фоне терапии вобензимом мать отмечает, что девочка стала реже болеть
+T179	Drug 9042 9052	корватоном
+T180	Drug 9054 9063	тренталом
+T181	Drug 9065 9075	верошпирон
+T182	Drug 9087 9097	гипотиазид
+T183	Treatment 9023 9097	Продолжена терапия корватоном, тренталом, верошпирон заменен на гипотиазид
+T184	Symptom 9161 9166	отеки
+A89	SType T184 disorder
+T185	Body_location 9170 9174	лице
+R27	Symptom_bdyloc_rel Arg1:T185 Arg2:T184	
+T186	Drug 9260 9269	фуросемид
+T187	Drug 9279 9287	триампур
+T188	Treatment 9225 9294	рекомендовано подключить к терапии фуросемид 5мг/сут, триампур 1т/сут
+T189	Drug 9315 9325	фуросемида
+T190	Drug 9394 9401	капотен
+T191	Symptom 9494 9499	отеки
+A90	SType T191 disorder
+T192	Body_location 9503 9507	лице
+R28	Symptom_bdyloc_rel Arg1:T192 Arg2:T191	
+T193	Symptom 9509 9515	одышку
+A91	SType T193 disorder
+T194	Symptom 9517 9531	плохой аппетит
+A92	SType T194 disorder
+T195	Symptom 9602 9625	недостаточность клапана
+A93	SType T195 disorder
+T196	Body_location 9626 9642	легочной артерии
+R29	Symptom_bdyloc_rel Arg1:T196 Arg2:T195	
+T197	Symptom 9732 9759	синдрома верхней полой вены
+A94	SType T197 disorder
+T200	Treatment 9882 9937	проведение КТ-аортографии с исследованием венозной фазы
+A96	Effect T200 unknown
+T198	Disease 9841 9866	стеноз верхней полой вены
+A95	Time T198 now
+T199	Drug 9949 9956	капотен
+T201	Drug 9968 9972	энап
+T202	Drug 9999 10009	реамберина
+T203	Treatment 9939 10009	В терапии капотен заменен на энап 2,5 мг/сут, проведен курс реамберина
+A97	Effect T203 unknown
+T204	Disease 10049 10071	атопического дерматита
+A98	Time T204 now
+T205	Symptom 10112 10123	пастозность
+A99	SType T205 disorder
+T206	Body_location 10124 10127	век
+R30	Symptom_bdyloc_rel Arg1:T206 Arg2:T205	
+T207	Symptom 10166 10193	девочка стала более активна
+A100	SType T207 normal
+T208	Symptom 10253 10276	повышенную утомляемость
+A101	SType T208 disorder
+T209	Symptom 10278 10288	потливость
+A102	SType T209 disorder
+T210	Symptom 10303 10324	периорбитальные отеки
+A103	SType T210 disorder
+T211	Symptom 10352 10362	лейкопения
+A104	SType T211 disorder
+T212	Symptom 10382 10393	лимфопенией
+A105	SType T212 disorder
+T213	Symptom 10637 10681	выраженное нарушение процессов реполяриазции
+A106	SType T213 disorder
+T214	Body_location 10684 10692	миокарде
+R31	Symptom_bdyloc_rel Arg1:T214 Arg2:T213	
+T215	Symptom 10791 10813	Признаки кардиомегалии
+A107	SType T215 disorder
+T216	Symptom 10815 10835	легочной гипертензии
+A108	SType T216 disorder
+T217	Symptom 10837 10878	Увеличение калибра восходящей части аорты
+A109	SType T217 disorder
+T218	Symptom 10905 10965	Частичная облитерация подключично-легочного анастомоза слева
+A110	SType T218 disorder
+T219	Body_location 11039 11061	Левая легочная артерия
+T220	Symptom 11062 11085	имеет локальное сужение
+A111	SType T220 disorder
+T221	Body_location 11134 11146	Корни легких
+R32	Symptom_bdyloc_rel Arg1:T219 Arg2:T220	
+T222	Symptom 11147 11171	расширены с обеих сторон
+A112	SType T222 disorder
+R33	Symptom_bdyloc_rel Arg1:T221 Arg2:T222	
+T223	Symptom 11399 11434	повышенную утомляемость, потливость
+A113	SType T223 disorder
+T224	Body_location 11449 11464	периорбитальные
+T225	Symptom 11465 11470	отеки
+A114	SType T225 disorder
+T226	Disease 11507 11533	Внутрипредсердная блокада.
+A115	Time T226 now
+T227	Symptom 11543 11554	гипертрофия
+A116	SType T227 disorder
+T228	Body_location 11555 11574	миокарда предсердий
+R34	Symptom_bdyloc_rel Arg1:T228 Arg2:T227	
+T229	Symptom 11585 11596	гипертрофии
+A117	SType T229 disorder
+T230	Body_location 11597 11623	миокарда правого желудочка
+T231	Disease 11625 11665	неполная блокада правой ножки пучка Гиса
+A118	Time T231 now
+T232	Symptom 11667 11699	нарушения процесса реполяризации
+T233	Body_location 11702 11721	миокарде желудочков
+R35	Symptom_bdyloc_rel Arg1:T230 Arg2:T229	
+T234	Symptom 11985 12028	Выраженное нарушение процесса реполяризации
+R36	Symptom_bdyloc_rel Arg1:T233 Arg2:T232	
+A119	SType T234 disorder
+T235	Body_location 12031 12050	миокарде желудочков
+T236	Symptom 12113 12149	минимальная аортальная регургитациия
+A120	SType T236 disorder
+R37	Symptom_bdyloc_rel Arg1:T235 Arg2:T234	
+T237	Disease 12300 12319	себорейный дерматит
+A121	Time T237 now
+T238	Treatment 12343 12380	Фуросемид 5мг.х1р/день, корватон 1мг.
+T239	Drug 12343 12352	Фуросемид
+T240	Drug 12367 12375	корватон
+T241	Treatment 12381 12402	х2р/день, энап 1,25мг
+T242	Drug 12391 12395	энап
+T243	Treatment 12404 12429	х2р/день, трентал по 50мг
+T244	Drug 12414 12421	трентал
+T245	Treatment 12431 12456	х3р/день, триампур по 1т.
+T246	Treatment 12457 12483	х1р/день, панагин по 1/2т.
+T247	Treatment 12484 12512	х3р/день, тромбо АСС по 50мг
+T248	Drug 12467 12474	панагин
+T249	Drug 12494 12500	тромбо
+T250	Treatment 12514 12691	х1р/день, супрастин 1/3 таб х 3 р/д, предуктал 8,75 мг х 2 р/д, мазь Тридерм х 2 р/д, в/в инфузии Реамберина 70,0 №11, гидрокортизоновая мазь, метиленовый синий, эриус 5 мг/сут.
+T251	Drug 12524 12533	супрастин
+T252	Drug 12551 12560	предуктал
+T253	Drug 12583 12590	Тридерм
+T254	Drug 12604 12622	инфузии Реамберина
+T255	Drug 12633 12655	гидрокортизоновая мазь
+T256	Drug 12657 12674	метиленовый синий
+T257	Drug 12676 12681	эриус
+T258	Symptom 12764 12784	Признаки гипертрофии
+A122	SType T258 disorder
+T259	Body_location 12785 12787	ПП
+T260	Disease 12789 12826	Блокада внутрипредсердного проведения
+A123	Time T260 now
+T261	Symptom 12828 12848	Признаки гипертрофии
+A124	SType T261 disorder
+T262	Body_location 12849 12851	ПЖ
+R38	Symptom_bdyloc_rel Arg1:T259 Arg2:T258	
+R39	Symptom_bdyloc_rel Arg1:T262 Arg2:T261	
+T263	Disease 12853 12893	Неполная блокада правой ножки пучка Гиса
+A125	Time T263 now
+T264	Disease 12895 12959	Умеренные нарушения процесса реполяризации в миокарде желудочков
+A126	Time T264 now
+T265	Symptom 12974 13014	улучшение процесса реполяризации в V4-V6
+A127	SType T265 normal
+T266	Symptom 13159 13199	Склонность к брадикардии в дневное время
+A128	SType T266 disorder
+T267	Body_location 13425 13431	ЛП, ПП
+T268	Symptom 13432 13441	увеличено
+A129	SType T268 disorder
+R40	Symptom_bdyloc_rel Arg1:T267 Arg2:T268	
+T269	Body_location 13484 13486	ПЖ
+T270	Symptom 13487 13495	увеличен
+A130	SType T270 disorder
+R41	Symptom_bdyloc_rel Arg1:T269 Arg2:T270	
+T271	Symptom 13503 13527	Передняя стенка утолщена
+A131	SType T271 disorder
+R42	Symptom_bdyloc_rel Arg1:T269 Arg2:T271	
+T272	Treatment 13722 13753	корватон (сиднофарм) 1мг х 2р/д
+A132	Effect T272 positive
+T273	Treatment 13755 13775	фуросемид 5мг х 1р/д
+T274	Treatment 13777 13795	энап 1.25мг х 2р/д
+A133	Effect T274 positive
+T275	Treatment 13797 13817	триампур 1таб х 1р/д
+T276	Treatment 13819 13841	панангин 1/2таб х 3р/д
+T277	Treatment 13843 13860	тромбо АСС 50мг х
+A134	Effect T277 positive
+T278	Treatment 13867 13885	кудесан 1мл х 2р/д
+A135	Effect T278 positive
+T279	Treatment 13887 13960	трентал в 50мг х 3р/д с отменой в связи с развитием аллергической реакции
+A136	Effect T279 positive
+T280	Disease 14051 14055	ОРВИ
+A137	Time T280 after
+T281	Treatment 14088 14125	проводилась антибактериальная терапия
+A138	Effect T281 unknown
+T282	Treatment 14249 14271	Корватон 1 мг х 2 р/д.
+T283	Treatment 14273 14293	энап 1,25 мг х 2 р/д
+A139	Effect T283 unknown
+T284	Treatment 14295 14317	фуросемид 5 мг х 1 р/д
+A140	Effect T284 unknown
+T285	Treatment 14319 14334	триампур 1 т./д
+A141	Effect T285 unknown
+T286	Treatment 14336 14353	тромбоАСС 50 мг/д
+A142	Effect T286 unknown
+T287	Treatment 14355 14372	панангин 1,5 т./д
+A143	Effect T287 unknown
+T288	Treatment 14374 14399	элькар 20% 2,5 мл х 1 р/д
+T289	Symptom 14480 14519	Легкие нарушения процесса реполяризации
+A144	SType T289 disorder
+T290	Body_location 14736 14739	НПВ
+T291	Symptom 14740 14780	расширена, коллабирует на вдох менее 50%
+A145	SType T291 disorder
+T292	Treatment 14825 14941	Фуросемид 5мг х 1р/день в 07.00 до еды; Корватон 1мг х 2р/день в 09.00 и 21.00; Энап 1,25мг х2р/день в 09.00 и 21.00
+A146	Effect T292 no-effect
+T293	Treatment 14943 15080	Триампур по 1т х1р/день в 14.00; Панагин по 1/2т х3р/день после еды ;Тромбо АСС по 50мг х1р/день после обеда; Элькар 20% 2,5 мл х 1 р/д..
+A147	Effect T293 no-effect
+T294	Symptom 15189 15248	сниженная толерантность к физическим нагрузкам, гипергидроз
+A148	SType T294 disorder
+T295	Symptom 15258 15388	замедление внутрипредсердного проведения, признаки гипертрофии миокарда обоих желудочков, неполная блокада правой ножки пучка Гиса
+A149	SType T295 disorder
+T296	Symptom 15401 15433	нарушения процесса реполяризации
+A150	SType T296 disorder
+T297	Body_location 15436 15455	миокарде желудочков
+T298	Body_location 15482 15487	Аорта
+T299	Symptom 15488 15497	расширена
+A151	SType T299 disorder
+R43	Symptom_bdyloc_rel Arg1:T297 Arg2:T296	
+R44	Symptom_bdyloc_rel Arg1:T298 Arg2:T299	
+T300	Body_location 15556 15572	Легочная артерия
+T301	Symptom 15574 15586	регургитация
+A152	SType T301 disorder
+R45	Symptom_bdyloc_rel Arg1:T300 Arg2:T301	
+T302	Symptom 15591 15621	Увеличены правые отделы сердца
+A153	SType T302 disorder
+T303	Symptom 15686 15829	ренгенологические признаки увеличения правых отделов сердца, расширение легочной артерии, умеренное обеднение легочного кровотока по периферии.
+A154	SType T303 disorder
+T304	Disease 15889 15893	ОРВИ
+A155	Time T304 after
+T305	Disease 16065 16069	ОРВИ
+A156	Time T305 now
+T306	Disease 16071 16102	острый ринофаринготрахеобронхит
+A157	Time T306 now
+T307	Severity 16104 16128	средней степени тяжести.
+R46	Severity_rel Arg1:T307 Arg2:T306	
+T308	Treatment 16129 16207	Получала антибактериальную и симтоматическую терапию с положительном эффектом.
+A158	Effect T308 positive
+T309	Treatment 16243 16393	фуросемид 5 мг х 1р/д, сиднофарм 1мг х 2р/д, энап 1,25 мг х 2р/д, триампур по 1 таб х 1 р/д, панангин по пол. таб х 3р/д, тромбоАСС по 50 мг х 1 р/д..
+A159	Effect T309 positive
+T310	Symptom 18083 18103	Признаки гипертрофии
+A160	SType T310 disorder
+T311	Body_location 18104 18122	правого предсердия
+T312	Symptom 18135 18178	Повышение электрической активности миокарда
+A161	SType T312 disorder
+T313	Body_location 18179 18196	правого желудочка
+R47	Symptom_bdyloc_rel Arg1:T313 Arg2:T312	
+R48	Symptom_bdyloc_rel Arg1:T311 Arg2:T310	
+T314	Disease 18229 18269	Неполная блокада правой ножки пучка Гиса
+A162	Time T314 now
+T315	Symptom 18271 18303	Нарушение процесса реполяризации
+A163	SType T315 disorder
+T316	Body_location 18322 18363	миокарде передней стенки левого желудочка
+T317	Symptom 18448 18543	Диаметр на уровне синусов 29 мм; расширена; Диаметр на уровне восходящей части 27 мм; расширена
+A164	SType T317 disorder
+T318	Body_location 18991 19007	ПРАВЫЙ ЖЕЛУДОЧЕК
+T319	Symptom 19009 19063	увеличен; Размер 19 мм; Передняя стенка утолщена; 6 мм
+A165	SType T319 disorder
+R49	Symptom_bdyloc_rel Arg1:T318 Arg2:T319	
+T320	Body_location 19065 19080	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T321	Symptom 19082 19126	КДР 31 мм; уменьшен; КСР 20 мм; КДО 37,92 мл
+A166	SType T321 disorder
+R50	Symptom_bdyloc_rel Arg1:T320 Arg2:T321	
+T322	Body_location 20003 20026	органов грудной полости
+T323	Symptom 20027 20099	острых очаговых и инфильтративных изменений в легочной ткани не выявлено
+A167	SType T323 normal
+R51	Symptom_bdyloc_rel Arg1:T322 Arg2:T323	
+T324	Body_location 20128 20144	Легочный рисунок
+T325	Symptom 20146 20182	силен за счет сосудистого компонента
+A168	SType T325 disorder
+T326	Treatment 24808 24881	Триампур (триамтерен + гидрохлортиазид) по 1т х1р/день в 14.00, длительно
+A169	Effect T326 unknown
+T327	Treatment 24888 24962	Панагин (калия и магния аспарагинат) по 1/2т х3р/день после еды длительно.
+T328	Treatment 24968 25046	Тромбо АСС (ацетилсалициловая кислота) по 50мг х1р/день после обеда, длительно
+T329	Treatment 25053 25119	Предуктал (триметазидин) 8,75 мг х 2 р/д, март, апрель, июль 2057г
+T330	Treatment 25126 25195	Элькар (левокарнитин) 20% 2,5 мл х 1 р/д, июнь, июль, август 2057 г..
+T331	Treatment 25200 25273	Кудесан (убидекаренон) 1 мл х 2 р/д, сентябрь, октябрь, ноябрь, 2057 года
+T332	Treatment 25280 25520	При присоединении ОРВИ обязательное назначение антибактериальной терапии курсом не менее 5 дней в возрастной дозировке (аугментин, супракс, цедекс) а также подключение виферона 500тыс МЕ 2 раза в день на 10 дней с последующим анализом крови
+T333	Treatment 25527 25570	Повторная госпитализация в НЦЗД 04.11.2057г
+T334	Treatment 24673 24736	Сиднофарм (молсидомин) 1мг х 2р/день в 09.00 и 21.00, длительно
+T335	Treatment 24618 24667	Фуросемид 5мг х 1р/день в 07.00 до еды, длительно
+T336	Treatment 24439 24526;24527 24613	Мед.отвод от профилактических прививок, пробу Манту проводить в декретированные сроки.. Препараты назначены по жизненным показаниям, отмене или замене на аналоги не подлежат!
+T337	Symptom 23730 23751	сохраняется дилатация
+A170	SType T337 disorder
+T338	Body_location 23752 23773	правых отделов сердца
+R52	Symptom_bdyloc_rel Arg1:T338 Arg2:T337	
+T339	Symptom 23776 23794	гипертрофия стенки
+A171	SType T339 disorder
+T340	Body_location 23795 23797	ПЖ
+R53	Symptom_bdyloc_rel Arg1:T340 Arg2:T339	
+T341	Treatment 23061 23225	Стол№5, Фуросемид 5мг х 1раз в день, в 07.00, до еды, сиднофарм 1мг х 2 раза в день, в 09.00 и 21.00, энап 1,25 мг х 2 раза в день, в 09.00 и 21.00, триампур по 1 т
+A172	Effect T341 unknown
+T342	Treatment 23227 23267	х 1 раз в день, в 14.00, панангин по пол
+A173	Effect T342 unknown
+T343	Treatment 23537 23571	Зиннат по 250 мг х 2 раза в день..
+A174	Effect T343 unknown
+T344	Treatment 23274 23535	х 3 раза в день, после еды, тромбо АСС по 50мг х 1 раз в день, после обеда, називин 0,05% по 2 капли в каждый носовой ход 2–3 раза в день, интерферон капли в нос- по 2 капли в каждый носовой ход, 2-3 раза в день, лазолван раствор внутрь по 1,5мл -2 раза в день,
+A175	Effect T344 unknown

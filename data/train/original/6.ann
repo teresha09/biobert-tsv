@@ -1,0 +1,123 @@
+T1	Disease 102 139	Бронхиальная астма, атопическая форма
+T2	Disease 180 188	Поллиноз
+T4	Disease 283 299	Пищевая аллергия
+T5	Disease 230 249	Аллергический ринит
+T8	Symptom 362 393	эпизоды малопродуктивного кашля
+T9	Symptom 404 510	затруднения дыхания на фоне физической нагрузки, стресса, респираторных инфекций и в весенне-летний период
+T10	Symptom 564 596	протекавшей с угрозой прерывания
+A1	NotPatient T10
+T11	Symptom 831 853	кожные признаки атопии
+T12	Body_location 831 837	кожные
+T13	Symptom 901 931	эпизод бронхиальной обструкции
+T15	Symptom 952 985	по поводу бронхиальной обструкции
+T16	Drug 1040 1051	преднизолон
+T17	Drug 1053 1060	беротек
+T18	Treatment 1010 1060	получал терапию в реанимации (преднизолон, беротек
+T19	Drug 1148 1158	беродуалом
+T20	Drug 1160 1169	беротеком
+T21	Treatment 1134 1169	ингаляциями с беродуалом, беротеком
+T22	Symptom 1076 1107	эпизоды бронхиальной обструкции
+T24	Disease 1288 1306	бронхиальная астма
+T25	Disease 1331 1339	поллиноз
+T26	Disease 1341 1360	аллергический ринит
+T27	Disease 1362 1378	пищевая аллергия
+T28	Treatment 1380 1431	В базисной терапии серетид 125/25 мкг 2 раза в день
+T29	Drug 1399 1406	серетид
+T30	Treatment 1449 1516	курс АСИТ с пыльцевыми аллергенами сублингвальным способом введения
+T31	Drug 1461 1483	пыльцевыми аллергенами
+T32	Disease 1570 1579	поллиноза
+T33	Treatment 1674 1784	второй курс АСИТ сублингвальным способом введения пыльцевыми аллергенами ольхи, березы, лещины, полыни, лебеды
+T34	Drug 1724 1784	пыльцевыми аллергенами ольхи, березы, лещины, полыни, лебеды
+T35	Treatment 1838 1907	дозировку базисной терапии удается снизить до 50/25 мкг 2 раза в день
+T36	Symptom 1982 2010	приступы затруднения дыхания
+T37	Treatment 2065 2123	купируются ингаляциями с беродуалом, беротеком, вентолином
+T38	Drug 2090 2100	беродуалом
+T39	Drug 2102 2111	беротеком
+T40	Drug 2113 2123	вентолином
+T41	Disease 2159 2170	отек Квинке
+T42	Symptom 2269 2281	отек гортани
+T43	Symptom 2283 2311	приступы затруднения дыхания
+T44	Body_location 2274 2281	гортани
+T46	Disease 2411 2419	поллиноз
+T47	Symptom 2482 2496	бледно-розовые
+T48	Body_location 2467 2481	Кожные покровы
+T49	Symptom 2510 2517	спокоен
+T50	Body_location 2506 2509	Зев
+T51	Symptom 2519 2555	Носовое дыхание несколько затруднено
+T52	Body_location 2519 2526	Носовое
+T53	Body_location 2557 2565	В лёгких
+T54	Symptom 2566 2621	дыхание везикулярное с жестким оттенком (выдох удлинен)
+T55	Symptom 2623 2629	хрипов
+T56	Symptom 2645 2657	тоны звучные
+T57	Symptom 2659 2668	ритмичные
+T58	Body_location 2635 2644	Сердечные
+T59	Symptom 2676 2682	мягкий
+T60	Body_location 2670 2675	Живот
+T61	Symptom 2684 2712	при пальпации безболезненный
+T62	Body_location 2714 2733	Мочеполовая система
+T63	Symptom 2765 2772	дизурии
+T64	Symptom 2808 2828	Менингеальных знаков
+A3	Negation T64
+T65	Severity 141 162	среднетяжелое течение
+A4	Degree T65 medium
+R1	Severity_rel Arg1:T65 Arg2:T1	
+T6	Disease 190 218	риноконъюнктивальный синдром
+T66	Course 220 228	ремиссия
+A5	CType T66 resolved
+R2	Course_rel Arg1:T66 Arg2:T2	
+T3	Course 267 281	вне обострения
+A6	CType T3 improved
+T7	Disease 847 853	атопии
+T14	Severity 1307 1329	среднетяжелого течения
+A7	Degree T14 medium
+R3	Severity_rel Arg1:T14 Arg2:T24	
+A8	Effect T30 positive
+T23	Symptom 1561 1579	симптомы поллиноза
+T67	Course 1580 1603	значительно уменьшились
+A9	CType T67 improved
+R4	Course_rel Arg1:T67 Arg2:T32	
+A10	Effect T33 positive
+A11	Conditional T41
+T68	Disease 2269 2273	отек
+R5	Body_location_rel Arg1:T44 Arg2:T68	
+A2	NotPatient T46
+T45	Symptom 2498 2504	чистые
+A12	SType T45 normal
+A13	SType T47 normal
+R6	Symptom_bdyloc_rel Arg1:T48 Arg2:T47	
+R7	Symptom_bdyloc_rel Arg1:T48 Arg2:T45	
+R8	Symptom_bdyloc_rel Arg1:T50 Arg2:T49	
+A14	SType T49 normal
+A15	SType T51 disorder
+A16	SType T54 disorder
+R9	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	
+A17	Negation T55
+A18	SType T55 disorder
+R10	Symptom_bdyloc_rel Arg1:T58 Arg2:T56	
+R11	Symptom_bdyloc_rel Arg1:T58 Arg2:T57	
+R12	Symptom_bdyloc_rel Arg1:T60 Arg2:T59	
+R13	Symptom_bdyloc_rel Arg1:T60 Arg2:T61	
+A19	SType T56 normal
+A20	SType T57 normal
+A21	SType T59 normal
+A22	SType T61 normal
+A23	Negation T63
+T69	Symptom 2778 2806	Стул регулярный, оформленный
+A24	SType T69 normal
+A25	SType T64 disorder
+A26	SType T42 disorder
+A27	SType T43 disorder
+A28	SType T36 disorder
+A29	SType T23 disorder
+A30	SType T22 disorder
+A31	SType T15 disorder
+A32	SType T13 disorder
+A33	SType T11 disorder
+A34	SType T10 disorder
+A35	SType T8 disorder
+A36	SType T9 disorder
+R14	Course_rel Arg1:T3 Arg2:T5	
+T70	Severity 251 265	персистирующий
+A37	Degree T70 medium
+R15	Severity_rel Arg1:T70 Arg2:T5	
+R16	Symptom_bdyloc_rel Arg1:T53 Arg2:T55	

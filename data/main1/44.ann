@@ -1,0 +1,311 @@
+T1	Treatment 5602 5660	Соблюдение гипоаллергенного стола и элиминационного режима
+T2	Treatment 5729 5783	Фликсотид 125 мкг по 1 инг 2 раза в день через спейсер
+T3	Treatment 5788 5828	Сингуляр 4 мг по 1т 1 раз в день на ночь
+T4	Symptom 5847 5866	затруднения дыхания
+A1	SType T4 disorder
+T5	Symptom 5871 5894	малопродуктивного кашля
+A2	SType T5 disorder
+T6	Treatment 5896 5942	вентолин (саломол) по 1-2 инг. до 3 раз в день
+T7	Drug 5896 5904	вентолин
+T8	Drug 5906 5913	саломол
+T9	Disease 5972 5994	респираторной инфекции
+T10	Treatment 5995 6078	через небулайзер – пульмикорт 250 мкг + беродуал 10 капель  3 раза в день на 7 дней
+T11	Drug 6014 6024	пульмикорт
+T12	Drug 6035 6043	беродуал
+T13	Symptom 6098 6121	малопродуктивного кашля
+A3	SType T13 disorder
+T14	Treatment 6131 6203	лазолван в растворе по 1,5 мл 3 раза в день на 5 дней (не позднее 18.30)
+T15	Drug 6131 6139	лазолван
+T16	Treatment 6208 6257	Туалет носа с физиомером 3 раза в день продолжить
+T17	Drug 6222 6232	физиомером
+T18	Drug 5788 5796	Сингуляр
+T19	Drug 5729 5738	Фликсотид
+T20	Treatment 5265 5434	туалет носа с физиомером х 3 р/д, ксизал 10 к. 1 р/д, назонекс, зиннат (250 мг) по 1т 2 р/д (7 дн), линекс по 1 к. 3 р/д, фликсотид 125 мкг по 1 инг 2 р/д через спейсер.
+T21	Drug 5279 5289	физиомером
+T22	Drug 5299 5305	ксизал
+T23	Drug 5319 5327	назонекс
+T24	Drug 5329 5335	зиннат
+T25	Drug 5365 5371	линекс
+T26	Drug 5387 5396	фликсотид
+T27	Symptom 5155 5223	Типичной эпилептической, пароксизмальной активности, грубых очаговых
+A4	Negation T27
+A5	SType T27 disorder
+T28	Body_location 5085 5119	нижних срединно-стволовых структур
+T29	Body_location 5122 5153	дисфункции подкорковых структур
+T30	Symptom 5065 5084	Признаки дисфункции
+A6	SType T30 disorder
+T31	Body_location 5029 5063	корково-подкорковых взаимодействий
+T32	Symptom 5009 5028	Признаки дисфункции
+A7	SType T32 disorder
+T33	Body_location 4941 4972	затылочно-задневисочных отделах
+T34	Body_location 4857 4884	задневисочные отделы справа
+T35	Disease 4611 4625	рубцовый фимоз
+T36	Body_location 2303 2317	наружного носа
+T37	Body_location 2345 2348	нос
+T38	Symptom 2349 2373	незначительно затруднено
+A8	SType T38 disorder
+T39	Symptom 2407 2421	бледно-розовая
+A9	SType T39 normal
+T40	Symptom 2423 2438	умеренно отечна
+A10	SType T40 disorder
+T41	Body_location 2375 2406	Слизистая оболочка полости носа
+T42	Body_location 2461 2482	в общих носовых ходах
+T43	Symptom 2440 2460	Слизистое отделяемое
+T44	Body_location 2484 2494	Ротоглотка
+T45	Body_location 2496 2539	Слизистая оболочка преддверия и полости рта
+T46	Symptom 2540 2555	розовая, чистая
+A11	SType T46 normal
+T47	Body_location 19 42	органов грудной полости
+T48	Symptom 98 134	очаговых и инфильтративных изменений
+A12	Negation T48
+A13	SType T48 disorder
+T49	Body_location 162 176	лёгочной ткани
+T50	Symptom 148 188	Пневматизация лёгочной ткани не изменена
+A14	SType T50 normal
+T51	Symptom 190 233	Лёгочный рисунок сгущён с базальных отделах
+A15	SType T51 disorder
+T52	Symptom 235 270	несколько усилен по смешанному типу
+A16	SType T52 disorder
+T53	Symptom 285 296	структурные
+A17	SType T53 normal
+T54	Symptom 301 310	расширены
+A18	Negation T54
+A19	SType T54 disorder
+T55	Body_location 272 284	Корни лёгких
+T56	Body_location 312 318	Сердце
+T57	Body_location 216 233	базальных отделах
+T58	Body_location 379 395	Куполы диафрагмы
+T59	Body_location 415 432	уровне V-VI рёбер
+T60	Body_location 434 440	Синусы
+T61	Symptom 319 354	расположено обычно, форма и размеры
+A20	SType T61 normal
+T62	Symptom 396 410	ровные, чёткие
+A21	SType T62 normal
+T63	Symptom 441 457	дифференцируются
+A22	SType T63 normal
+T64	Symptom 2092 2106	Ритм синусовый
+A23	SType T64 normal
+T65	Symptom 2066 2090	Нормальное положение ЭОС
+A24	SType T65 normal
+T66	Symptom 2108 2125	умеренная аритмия
+A25	SType T66 normal
+T67	Symptom 2164 2213	Непостоянное удлинение систолы желудочков на 0.05
+A26	SType T67 disorder
+T68	Body_location 491 514	органов брюшной полости
+T69	Body_location 516 530	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T70	Body_location 1920 1935	желчного пузыря
+T71	Body_location 1979 1985	печени
+T72	Body_location 1988 2008	поджелудочной железы
+T73	Symptom 1899 1935	лабильной деформации желчного пузыря
+A27	SType T73 disorder
+T74	Symptom 1937 1956	гепатоспленомегалии
+A28	SType T74 disorder
+T75	Symptom 1958 2008	реактивных изменений печени и поджелудочной железы
+A29	SType T75 disorder
+T76	Symptom 2321 2329	изменена
+A30	Negation T76
+T77	Body_location 640 660	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T78	Body_location 753 759	ПЕЧЕНЬ
+T79	Body_location 869 878	СЕЛЕЗЁНКА
+T80	Body_location 992 1019	ЖЕЛУДОК и 12-ПЕРСТНАЯ КИШКА
+T81	Body_location 1190 1213	органов брюшной полости
+T82	Body_location 1215 1229	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T83	Body_location 1329 1349	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T84	Body_location 1443 1449	ПЕЧЕНЬ
+T85	Body_location 1690 1699	СЕЛЕЗЁНКА
+T86	Body_location 1814 1841	ЖЕЛУДОК и 12-ПЕРСТНАЯ КИШКА
+T87	Body_location 1098 1113	желчного пузыря
+T88	Body_location 1126 1132	печени
+T89	Symptom 1077 1113	лабильной деформации желчного пузыря
+A31	SType T89 disorder
+T90	Symptom 1115 1132	увеличения печени
+A32	SType T90 disorder
+T91	Symptom 1021 1051	секрета нет, стенки нормальные
+A33	SType T91 normal
+T92	Symptom 673 731	размер средний (14х12х14мм), эхогенность паренхимы средняя
+A34	SType T92 normal
+T93	Body_location 733 739	проток
+T94	Symptom 743 751	расширен
+A35	Negation T94
+T95	Symptom 761 801	размер увеличен (ЛД = 59 мм, ПД = 99 мм)
+A36	SType T95 disorder
+T96	Symptom 803 816	контур ровный
+A37	SType T96 normal
+T97	Symptom 818 838	паренхима однородная
+A38	SType T97 normal
+T98	Body_location 840 855	печёночные вены
+T99	Symptom 859 867	изменены
+A39	Negation T99
+T100	Symptom 891 915	размер средний (73х37мм)
+A40	SType T100 normal
+T101	Symptom 917 937	паренхима однородная
+A41	SType T101 normal
+T102	Symptom 939 958	средней эхогенности
+A42	SType T102 normal
+T103	Body_location 960 977	селезёночная вена
+T104	Symptom 981 990	расширена
+A43	Negation T104
+A44	SType T104 disorder
+T105	Symptom 543 567	размер средний (46х13мм)
+A45	SType T105 normal
+T106	Body_location 599 605	стенки
+T107	Symptom 609 617	изменены
+A46	Negation T107
+T108	Symptom 569 597	лабильная перегородка в теле
+A47	SType T108 disorder
+T109	Symptom 619 638	просвет анэхогенный
+A48	SType T109 normal
+T110	Symptom 1362 1390	размер увеличен (15х20х17мм)
+A49	SType T110 disorder
+T111	Symptom 1392 1421	эхогенность паренхимы снижена
+A50	SType T111 disorder
+T112	Body_location 1423 1429	проток
+T113	Symptom 1433 1441	расширен
+A51	Negation T113
+T114	Symptom 1451 1511	размер увеличен (ЛД = 60 мм, 1-й сегмент 15 мм, ПД = 109 мм)
+A52	SType T114 disorder
+T115	Symptom 1571 1637	резко усилен сосудистый рисунок, выражено уплотнены стенки сосудов
+A53	SType T115 disorder
+T116	Body_location 1639 1652	воротная вена
+T117	Body_location 1661 1676	печёночные вены
+T118	Symptom 1712 1737	размер увеличен (93х42мм)
+A54	SType T118 disorder
+T119	Symptom 1739 1759	паренхима однородная
+A55	SType T119 normal
+T120	Symptom 1761 1780	средней эхогенности
+A56	SType T120 normal
+T121	Body_location 1782 1799	селезёночная вена
+T122	Symptom 1803 1812	расширена
+A57	Negation T122
+T123	Symptom 1843 1854	секрета нет
+A58	SType T123 normal
+T124	Symptom 1856 1873	стенки нормальные
+A59	SType T124 normal
+T125	Symptom 1242 1256	размер средний
+A60	SType T125 normal
+T126	Symptom 1288 1306	стенки не изменены
+A61	SType T126 normal
+T127	Symptom 1258 1286	лабильная перегородка в теле
+A62	SType T127 disorder
+T128	Symptom 1308 1327	просвет анэхогенный
+T129	Symptom 1513 1569	контур ровный, паренхима однородная, средней эхогенности
+A63	SType T129 normal
+T130	Symptom 1680 1688	изменены
+A64	Negation T130
+T131	Body_location 2557 2573	Небные миндалины
+T132	Severity 2574 2586	I-II степени
+A65	Degree T132 light
+T133	Body_location 2622 2629	лакунах
+T134	Symptom 2592 2619	патологического содержимого
+A66	Negation T134
+A67	SType T134 disorder
+T135	Symptom 2652 2667	розовая, чистая
+A68	SType T135 normal
+T136	Body_location 2631 2651	Задняя стенка глотки
+T137	Disease 2844 2878	Аллергический персистирующий ринит
+T138	Treatment 2895 3059	Ежедневно орошать слизистую полости носа Физиомер (с 2-х нед. и старше) (или Аквалор софт, или Маример, или Аква-марис) х 3-4 раза в день (тщательное отсмаркивание)
+T139	Body_location 2913 2935	слизистую полости носа
+T140	Drug 2936 2944	Физиомер
+T141	Drug 2972 2984	Аквалор софт
+T142	Drug 2990 2997	Маример
+T143	Drug 3003 3013	Аква-марис
+T144	Disease 3196 3216	вирусного гепатита В
+T145	Disease 3259 3271	полиомиелита
+T146	Drug 3273 3286	Имовакс-полио
+T147	Drug 3328 3337	Инфанрикс
+T148	Disease 3297 3304	коклюша
+T149	Disease 3306 3314	дифтерии
+T150	Disease 3317 3326	столбняка
+T151	Treatment 3541 3567	антигистаминных препаратов
+T152	Disease 3681 3701	вирусного гепатита В
+T153	Disease 4059 4071	полиомиелита
+T154	Disease 4073 4080	коклюша
+T155	Disease 4081 4089	дифтерии
+T156	Disease 4091 4100	столбняка
+T157	Drug 4120 4133	Имовакс-полио
+T158	Drug 4138 4147	Полиорикс
+T159	Drug 4156 4165	Инфанрикс
+T160	Disease 4282 4295	полиоимиелита
+T161	Disease 4319 4323	кори
+T162	Disease 4325 4333	краснухи
+T163	Disease 4336 4359	эпидемического паротита
+T164	Drug 4361 4369	Приорикс
+T165	Disease 4476 4499	пневмококковой инфекции
+T166	Drug 4501 4509	Превенар
+T167	Disease 4512 4532	гемофильной инфекции
+T168	Drug 4534 4541	Акт-ХИБ
+T169	Drug 4546 4554	Хиберикс
+T170	Symptom 4711 4790	Дезорганизованный тип ЭЭГ с нерегулярным по частоте и амплитуде основным ритмом
+A69	SType T170 disorder
+T171	Symptom 4792 4884	Непостоянное смешение амплитудного акцента основной активности в задневисочные отделы справа
+A70	SType T171 disorder
+T172	Symptom 4886 5007	Усиление медленно-волновой активности в ряду ритмики в затылочно-задневисочных отделах, иногда то больше справа, то слева
+A71	SType T172 disorder
+T173	Body_location 2674 2698	AD et AS заушные области
+T174	Symptom 2702 2710	изменены
+A72	Negation T174
+T175	Symptom 2712 2725	безболезненны
+A73	SType T175 normal
+T176	Body_location 2727 2743	Слуховые проходы
+T177	Symptom 2744 2762	широкие, свободные
+A74	SType T177 normal
+T178	Body_location 2764 2766	Mt
+T179	Symptom 2767 2803	бледно-розового цвета, контурируются
+A75	SType T179 normal
+R1	Symptom_bdyloc_rel Arg1:T28 Arg2:T30	
+R2	Symptom_bdyloc_rel Arg1:T29 Arg2:T30	
+R3	Symptom_bdyloc_rel Arg1:T31 Arg2:T32	
+R4	Symptom_bdyloc_rel Arg1:T33 Arg2:T172	
+R5	Symptom_bdyloc_rel Arg1:T34 Arg2:T171	
+R6	Symptom_bdyloc_rel Arg1:T178 Arg2:T179	
+R7	Symptom_bdyloc_rel Arg1:T176 Arg2:T177	
+R8	Symptom_bdyloc_rel Arg1:T173 Arg2:T174	
+R9	Symptom_bdyloc_rel Arg1:T173 Arg2:T175	
+R10	Symptom_bdyloc_rel Arg1:T136 Arg2:T135	
+R11	Symptom_bdyloc_rel Arg1:T133 Arg2:T134	
+R12	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R13	Symptom_bdyloc_rel Arg1:T41 Arg2:T39	
+R14	Symptom_bdyloc_rel Arg1:T41 Arg2:T40	
+R15	Symptom_bdyloc_rel Arg1:T37 Arg2:T38	
+R16	Symptom_bdyloc_rel Arg1:T36 Arg2:T76	
+R17	Symptom_bdyloc_rel Arg1:T70 Arg2:T73	
+R18	Symptom_bdyloc_rel Arg1:T71 Arg2:T75	
+R19	Symptom_bdyloc_rel Arg1:T72 Arg2:T75	
+R20	Symptom_bdyloc_rel Arg1:T86 Arg2:T123	
+R21	Symptom_bdyloc_rel Arg1:T86 Arg2:T124	
+R22	Symptom_bdyloc_rel Arg1:T85 Arg2:T118	
+R23	Symptom_bdyloc_rel Arg1:T85 Arg2:T119	
+R24	Symptom_bdyloc_rel Arg1:T85 Arg2:T120	
+R25	Symptom_bdyloc_rel Arg1:T121 Arg2:T122	
+R26	Symptom_bdyloc_rel Arg1:T84 Arg2:T114	
+R27	Symptom_bdyloc_rel Arg1:T84 Arg2:T129	
+R28	Symptom_bdyloc_rel Arg1:T84 Arg2:T115	
+R29	Symptom_bdyloc_rel Arg1:T116 Arg2:T130	
+R30	Symptom_bdyloc_rel Arg1:T117 Arg2:T130	
+R31	Symptom_bdyloc_rel Arg1:T83 Arg2:T110	
+R32	Symptom_bdyloc_rel Arg1:T83 Arg2:T111	
+R33	Symptom_bdyloc_rel Arg1:T112 Arg2:T113	
+R34	Symptom_bdyloc_rel Arg1:T82 Arg2:T125	
+R35	Symptom_bdyloc_rel Arg1:T82 Arg2:T127	
+R36	Symptom_bdyloc_rel Arg1:T82 Arg2:T126	
+R37	Symptom_bdyloc_rel Arg1:T82 Arg2:T128	
+R38	Symptom_bdyloc_rel Arg1:T55 Arg2:T53	
+R39	Symptom_bdyloc_rel Arg1:T55 Arg2:T54	
+R40	Symptom_bdyloc_rel Arg1:T56 Arg2:T61	
+R41	Symptom_bdyloc_rel Arg1:T58 Arg2:T62	
+R42	Symptom_bdyloc_rel Arg1:T60 Arg2:T63	
+R43	Symptom_bdyloc_rel Arg1:T69 Arg2:T105	
+R44	Symptom_bdyloc_rel Arg1:T69 Arg2:T108	
+R45	Symptom_bdyloc_rel Arg1:T106 Arg2:T107	
+R46	Symptom_bdyloc_rel Arg1:T106 Arg2:T109	
+R47	Symptom_bdyloc_rel Arg1:T77 Arg2:T92	
+R48	Symptom_bdyloc_rel Arg1:T93 Arg2:T94	
+R49	Symptom_bdyloc_rel Arg1:T78 Arg2:T95	
+R50	Symptom_bdyloc_rel Arg1:T78 Arg2:T96	
+R51	Symptom_bdyloc_rel Arg1:T78 Arg2:T97	
+R52	Symptom_bdyloc_rel Arg1:T98 Arg2:T99	
+R53	Symptom_bdyloc_rel Arg1:T79 Arg2:T100	
+R54	Symptom_bdyloc_rel Arg1:T79 Arg2:T101	
+R55	Symptom_bdyloc_rel Arg1:T79 Arg2:T102	
+R56	Symptom_bdyloc_rel Arg1:T103 Arg2:T104	
+R57	Symptom_bdyloc_rel Arg1:T80 Arg2:T91	

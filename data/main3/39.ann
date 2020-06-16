@@ -1,0 +1,162 @@
+T1	Disease 21 42	Хронический миокардит
+T3	Disease 63 84	Хронический миокардит
+A1	Time T3 now
+A2	Time T1 now
+T2	Disease 44 46	НК
+A3	Time T2 now
+T4	Severity 47 52	I ст.
+A4	Degree T4 light
+T5	Disease 86 88	НК
+A5	Time T5 now
+T6	Severity 89 93	I ст
+A6	Degree T6 light
+T7	Disease 110 124	Гастродуоденит
+A7	Time T7 now
+T8	Disease 126 131	ДЖВП.
+A8	Time T8 now
+T9	Symptom 193 212	угрозой прерывания,
+A9	NotPatient T9
+A10	SType T9 disorder
+T10	Disease 240 255	гипоксией плода
+A11	Time T10 before
+T11	Disease 466 472	ангины
+A12	Time T11 before
+T12	Disease 475 479	ОРВИ
+A13	Time T12 before
+T13	Symptom 576 582	одышку
+A14	SType T13 disorder
+T14	Body_location 864 871	миокард
+T15	Disease 982 1025	Идиопатическая дилатационная кардиомиопатия
+A15	Time T15 before
+R1	Severity_rel Arg1:T6 Arg2:T5	
+R2	Severity_rel Arg1:T4 Arg2:T2	
+T16	Drug 1086 1097	цефтриаксон
+T17	Drug 1118 1126	аспаркам
+T18	Drug 1128 1137	магний В6
+T19	Drug 1139 1146	виферон
+T20	Drug 1148 1158	верошпирон
+T21	Drug 1174 1183	фуросемид
+T22	Drug 1210 1217	капотен
+T23	Symptom 1433 1445	дилатация ЛЖ
+A16	SType T23 disorder
+T24	Drug 1632 1640	дигоксин
+T25	Drug 1654 1663	фуросемид
+T26	Drug 1674 1682	курантил
+T27	Drug 1698 1706	моноприл
+T28	Drug 1724 1731	виферон
+T29	Treatment 1767 1831	неотон 6 г в/в, циофлавина № 10, проведен курс интраглобина 13 г
+A17	Effect T29 positive
+T30	Drug 2040 2049	фуросемид
+T31	Drug 2054 2062	триампур
+T32	Drug 2074 2083	дилатренд
+T33	Drug 2099 2107	моноприл
+T34	Drug 2124 2134	цитофлавин
+T35	Drug 2147 2158	интраглобин
+T36	Body_location 2351 2367	правый желудочек
+T37	Body_location 2373 2388	левый желудочек
+T38	Body_location 2696 2711	грудной полости
+T39	Symptom 2748 2754	усилен
+T40	Body_location 2731 2739	легочный
+R3	Symptom_bdyloc_rel Arg1:T40 Arg2:T39	
+T41	Body_location 2870 2872	ЛЖ
+T42	Symptom 3124 3134	Тахикардия
+A18	SType T42 disorder
+T43	Symptom 3155 3187	нарушения циркадного профиля ЧСС
+A19	SType T43 disorder
+T44	Symptom 3217 3240	миграции водителя ритма
+A20	SType T44 disorder
+T45	Body_location 3251 3269	правого предсердия
+R4	Symptom_bdyloc_rel Arg1:T45 Arg2:T44	
+T46	Symptom 3308 3330	синоатриальные блокады
+A21	SType T46 disorder
+T47	Symptom 3670 3681	снижение ФВ
+A22	SType T47 disorder
+T48	Body_location 3682 3684	ЛЖ
+R5	Symptom_bdyloc_rel Arg1:T48 Arg2:T47	
+T49	Symptom 4104 4118	Ритм синусовый
+A23	SType T49 normal
+T50	Symptom 4039 4049	тахикардия
+A24	SType T50 disorder
+T51	Treatment 4450 4613	трентал 75мг/с, моноприл 7мг/с в связи с длительностью приема проведена замена и-АПФ на АРА (козаар в дозе 20мг/с), в связи с тахикардией назначен конкор 1,25 мг/с
+A25	Effect T51 positive
+T52	Drug 4651 4657	Козаар
+T53	Drug 4698 4704	Конкор
+T54	Drug 4725 4732	Трентал
+T55	Drug 4751 4761	Цитофлавин
+T56	Symptom 4995 5013	питания повышенное
+A26	SType T56 disorder
+T57	Disease 4939 4953	ожирение II ст
+A27	Time T57 now
+T58	Symptom 5133 5139	рыхлый
+A28	SType T58 disorder
+T59	Symptom 5148 5161	гиперемиорван
+A29	SType T59 disorder
+T60	Body_location 5117 5120	Зев
+R6	Symptom_bdyloc_rel Arg1:T60 Arg2:T58	
+R7	Symptom_bdyloc_rel Arg1:T60 Arg2:T59	
+T61	Symptom 5183 5200	развита избыточно
+A30	SType T61 disorder
+T62	Body_location 5163 5182	Подкожная клетчатка
+R8	Symptom_bdyloc_rel Arg1:T62 Arg2:T61	
+T63	Body_location 5226 5235	лимфоузлы
+T64	Body_location 5316 5324	суставах
+T65	Symptom 5325 5339	в полном объем
+A31	SType T65 normal
+T66	Symptom 5342 5356	безболезненные
+A32	SType T66 normal
+T67	Symptom 5358 5374	гипермоблиьность
+A33	SType T67 disorder
+T68	Body_location 5375 5391	суставов кистей.
+R9	Symptom_bdyloc_rel Arg1:T68 Arg2:T67	
+T69	Body_location 5406 5409	нос
+T70	Symptom 5470 5490	дыхание везикулярное
+A34	SType T70 normal
+T71	Symptom 5747 5764	Систолический шум
+A35	SType T71 disorder
+T72	Body_location 6228 6242	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T73	Body_location 7195 7211	Д\ПЕРСТНАЯ КИШКА
+T74	Symptom 6515 6531	стенки уплотнены
+A36	SType T74 disorder
+T75	Symptom 6533 6547	уплотены стенк
+A37	SType T75 disorder
+T76	Body_location 7385 7397	ЛЕВАЯ ПОЧКА:
+T77	Body_location 8670 8684	МОЧЕВОЙ ПУЗЫРЬ
+T78	Body_location 8006 8018	ПРАВАЯ ПОЧКА
+T79	Body_location 8735 8741	Сердца
+T80	Body_location 8770 8775	АОРТА
+T81	Body_location 8982 8997	ЛЕГОЧНАЯ АРТЕРИ
+T82	Body_location 9092 9108	ЛЕВОЕ ПРЕДСЕРДИЕ
+T83	Body_location 9135 9152	ПРАВОЕ ПРЕДСЕРДИЕ
+T84	Body_location 9179 9205	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T85	Body_location 9777 9799	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T86	Body_location 9635 9665	ЗАДНЯЯ СТЕНКА ЛЕВОГО ЖЕЛУДОЧКА
+T87	Symptom 10131 10141	расширение
+T88	Body_location 10150 10152	ЛЖ
+R10	Symptom_bdyloc_rel Arg1:T88 Arg2:T87	
+T89	Symptom 10164 10182	гипертрофия стенок
+T90	Body_location 10183 10185	ЛЖ
+R11	Symptom_bdyloc_rel Arg1:T90 Arg2:T89	
+T91	Body_location 10298 10315	Щитовидной железы
+T92	Symptom 10646 10669	миграция водителя ритма
+A38	SType T92 disorder
+T93	Body_location 10699 10717	правого предсердия
+R12	Symptom_bdyloc_rel Arg1:T93 Arg2:T92	
+T94	Symptom 10740 10747	АРИТМИЯ
+A39	SType T94 disorder
+T95	Body_location 10815 10831	левого желудочка
+T96	Symptom 10771 10805	Повышение электрической активности
+A40	SType T96 disorder
+R13	Symptom_bdyloc_rel Arg1:T95 Arg2:T96	
+T97	Symptom 10864 10906	Неспецифическая внутрижелудочковая блокада
+A41	SType T97 disorder
+T98	Drug 11082 11088	Козаар
+T99	Drug 11118 11124	Конкор
+T100	Treatment 11144 11151	Трентал
+T101	Drug 11167 11177	Цитофлавин
+T102	Drug 11201 11208	Хофитол
+T103	Drug 12335 12342	Хофитол
+T104	Drug 12257 12267	Цитофлавин
+T105	Drug 12185 12193	Курантил
+T106	Drug 12112 12119	Трентал
+T107	Drug 12034 12040	Конкор
+T108	Drug 11987 11993	Козаар

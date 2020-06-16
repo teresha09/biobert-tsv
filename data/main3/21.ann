@@ -1,0 +1,374 @@
+T1	Disease 21 58	Хронический констриктивный перикардит
+A1	Time T1 now
+T3	Disease 186 192	Асцит.
+A3	Time T3 now
+T4	Disease 193 196	ХСН
+A4	Time T4 now
+T5	Severity 197 201	2Аст
+R1	Severity_rel Arg1:T5 Arg2:T4	
+T6	Disease 228 265	Хронический констриктивный перикардит
+A5	Time T6 now
+T8	Disease 440 458	Кардиальный фиброз
+A6	Time T8 now
+T9	Symptom 426 439	Сопутствующий
+R3	Severity_rel Arg1:T9 Arg2:T8	
+T10	Symptom 522 532	увеличение
+A7	SType T10 disorder
+T11	Body_location 533 539	живота
+R4	Symptom_bdyloc_rel Arg1:T11 Arg2:T10	
+T12	Symptom 790 813	Физиологическая желтуха
+A8	SType T12 normal
+T13	Symptom 1020 1031	гипертрофию
+T14	Body_location 1032 1048	обоих желудочков
+R5	Symptom_bdyloc_rel Arg1:T14 Arg2:T13	
+T15	Symptom 1076 1086	коарктацию
+A9	SType T15 disorder
+T16	Body_location 1087 1092	аорты
+R6	Symptom_bdyloc_rel Arg1:T16 Arg2:T15	
+T17	Disease 1154 1194	Дивертикул правого желудочка, перикардит
+A10	Time T17 after
+T18	Treatment 1206 1338	проведена линейная пластика дивертикула правого желудочка, пункция перикарда, задета печень, экстренно проведено оперативное лечение
+A11	Effect T18 positive
+T19	Symptom 1378 1418	нарастание перикардита, появление асцита
+A12	SType T19 disorder
+T20	Symptom 1449 1459	увеличение
+A13	SType T20 disorder
+T21	Body_location 1460 1466	живота
+R7	Symptom_bdyloc_rel Arg1:T21 Arg2:T20	
+T22	Symptom 1679 1699	шум трения перикарда
+A14	SType T22 disorder
+T23	Symptom 1701 1714	гепатомегалия
+A15	SType T23 disorder
+T24	Symptom 1716 1721	асцит
+T25	Symptom 1732 1777	признаки перегрузки миокарда обоих предсердий
+A16	SType T25 disorder
+T26	Disease 2358 2395	Хронический констриктивный перикардит
+A17	Time T26 after
+T27	Treatment 2435 2506	линейной пластики дивертикула правого желудочка, дренирования перикарда
+A18	Effect T27 positive
+T28	Drug 2583 2591	колхицин
+T29	Drug 2593 2602	торасемид
+T30	Drug 2604 2617	спиронолактон
+T31	Drug 2630 2638	бициллин
+T32	Treatment 2699 2756	получал лечение джозамицином 500 мг/сут в течение 10 дней
+A19	Effect T32 unknown
+T33	Symptom 3377 3396	Катаральных явлений
+A20	Negation T33
+T35	Symptom 7458 7524	Сохраняется уплотнение и неравномерное утолщение листков перикарда
+A22	SType T35 disorder
+T36	Symptom 7569 7637	В области верхушки сердца линейной формы высокоплотностное включение
+A23	SType T36 disorder
+T37	Body_location 7718 7724	Сердце
+T38	Symptom 7725 7745	увеличено в размерах
+A24	SType T38 disorder
+R8	Symptom_bdyloc_rel Arg1:T37 Arg2:T38	
+T40	Disease 8554 8567	Кардиомегалия
+A26	Time T40 now
+T43	Body_location 10133 10142	Паренхима
+T44	Symptom 10143 10181	мелкоочаговая диффузная неоднородность
+A29	SType T44 disorder
+R9	Symptom_bdyloc_rel Arg1:T43 Arg2:T44	
+T45	Symptom 10277 10292	стенки утолщены
+A30	SType T45 disorder
+T46	Body_location 10397 10400	ОЖП
+T47	Symptom 10415 10430	стенки утолщены
+A31	SType T47 disorder
+R10	Symptom_bdyloc_rel Arg1:T46 Arg2:T47	
+T48	Body_location 10433 10448	Печеночные вены
+T49	Symptom 10449 10468	изменены, расширены
+R11	Symptom_bdyloc_rel Arg1:T48 Arg2:T49	
+T50	Body_location 10503 10510	Головка
+T51	Symptom 10519 10528	увеличена
+A32	SType T51 disorder
+R12	Symptom_bdyloc_rel Arg1:T50 Arg2:T51	
+T52	Treatment 13417 13443	Режим общий 2. Диета №5 3.
+T53	Treatment 13444 13597	Диувер 10 мг х 1 р/д 8.00 4. Верошпирон 75 мг х 1 р/д 17.00 5. Колхицин 1 мг 8.00 6. Нексиум 20 мг на ночь 7. МагнеB6 1 т х 3 р/д 8. Панангин 1 т х 3 р/д
+T54	Disease 13738 13776	Хронический констриктивный перикардит.
+A33	Time T54 now
+T55	Disease 13903 13908	Асцит
+A34	Time T55 now
+T56	Disease 13910 13913	ХСН
+A35	Time T56 now
+T57	Severity 13914 13918	2Аст
+R13	Severity_rel Arg1:T57 Arg2:T56	
+T59	Severity 203 218	II ФК по NYHA..
+A37	Degree T59 medium
+R14	Severity_rel Arg1:T59 Arg2:T4	
+T60	Drug 2715 2727	джозамицином
+T2	Disease 393 398	Асцит
+A2	Time T2 now
+T61	Disease 400 403	ХСН
+A38	Time T61 now
+T62	Severity 404 408	2Аст
+R15	Severity_rel Arg1:T62 Arg2:T61	
+T63	Severity 410 424	II ФК по NYHA.
+A39	Degree T63 medium
+R16	Severity_rel Arg1:T63 Arg2:T61	
+T64	Symptom 650 660	токсикозом
+A40	NotPatient T64
+T65	Disease 1502 1515	гепатомегалия
+A41	Time T65 now
+T66	Symptom 1517 1525	признаки
+A42	SType T66 disorder
+T67	Disease 1526 1548	портальной гипертензии
+A43	Time T67 before
+T68	Symptom 1864 1916	нарушения реполяризации с признаками ишемии миокарда
+A44	SType T68 disorder
+T69	Symptom 1961 1974	кардиомегалия
+A45	SType T69 disorder
+T70	Symptom 2010 2026	расширение обоих
+T71	Body_location 2027 2037	предсердий
+R17	Symptom_bdyloc_rel Arg1:T71 Arg2:T70	
+T72	Symptom 2039 2074	дрожание межжелудочковой перегородк
+A46	SType T72 disorder
+T73	Symptom 2077 2104	утолщение листков перикарда
+A47	SType T73 disorder
+T74	Symptom 2106 2116	расширение
+T75	Body_location 2117 2129	нижней полой
+T76	Body_location 2130 2147	и печеночных вен,
+T77	Symptom 2191 2218	утолщение листков перикарда
+A48	SType T77 disorder
+T78	Disease 2523 2528	Асцит
+A49	Time T78 now
+T79	Disease 2530 2533	ХСН
+A50	Time T79 now
+T80	Severity 2534 2538	2Аст
+R18	Severity_rel Arg1:T80 Arg2:T79	
+T81	Severity 2540 2554	II ФК по NYHA"
+A51	Degree T81 medium
+R19	Severity_rel Arg1:T81 Arg2:T79	
+T82	Treatment 2583 2644	колхицин, торасемид, спиронолактон, ежемесячно бициллин-5 в/м
+T83	Body_location 3188 3202	Кожные покровы
+T84	Body_location 3233 3240	на лице
+T85	Body_location 3242 3247	груди
+T86	Body_location 3249 3254	спине
+T87	Symptom 3203 3217	бледно-розовые
+A52	SType T87 normal
+T88	Symptom 3256 3279	послеоперационный рубец
+A53	SType T88 disorder
+T89	Body_location 3402 3421	Подкожная клетчатка
+T90	Body_location 3516 3531	Костная система
+T91	Symptom 3532 3553	без видимой патологии
+A54	SType T91 normal
+T92	Symptom 3706 3779	Аускультативно дыхание везикулярное, проводится во все отделы, хрипов нет
+A55	SType T92 normal
+T93	Body_location 3803 3809	сердца
+T94	Symptom 3810 3831	визуально не изменена
+A56	SType T94 normal
+R20	Symptom_bdyloc_rel Arg1:T93 Arg2:T94	
+R21	Symptom_bdyloc_rel Arg1:T90 Arg2:T91	
+R22	Symptom_bdyloc_rel Arg1:T83 Arg2:T87	
+T95	Body_location 4046 4052	сердца
+T96	Symptom 4053 4098	ритмичные, приглушены по правому краю грудины
+A57	SType T96 normal
+R23	Symptom_bdyloc_rel Arg1:T95 Arg2:T96	
+T97	Body_location 4105 4121	егочной артерией
+T98	Symptom 4122 4208	расщепление II тона, систолический шум, на верхушке I тон приглушен, систолический шум
+A58	SType T98 normal
+R24	Symptom_bdyloc_rel Arg1:T97 Arg2:T98	
+T99	Body_location 4302 4306	Язык
+T100	Body_location 4315 4319	Живо
+T101	Symptom 4321 4367	увеличен в объеме, доступен глубокой пальпации
+A59	SType T101 disorder
+T102	Body_location 4369 4375	Печень
+T103	Symptom 4376 4398	+2,5 см , край плотный
+A60	SType T103 disorder
+R25	Symptom_bdyloc_rel Arg1:T100 Arg2:T101	
+R26	Symptom_bdyloc_rel Arg1:T102 Arg2:T103	
+T104	Body_location 4400 4409	Селезенка
+T105	Symptom 4410 4422	не увеличена
+A61	SType T105 normal
+R27	Symptom_bdyloc_rel Arg1:T104 Arg2:T105	
+T106	Symptom 4496 4520	Дизурических явлений нет
+A62	SType T106 normal
+T107	Body_location 4565 4577	Слух, зрение
+T108	Body_location 4656 4661	АОРТА
+T109	Body_location 4746 4767	Клапан трехстворчатый
+T110	Symptom 4769 4788	створки не изменены
+A63	SType T110 normal
+R28	Symptom_bdyloc_rel Arg1:T109 Arg2:T110	
+T111	Body_location 4846 4870	Левая коронарная артерия
+T112	Body_location 4877 4902	Правая коронарная артерия
+T113	Body_location 4909 4925	ЛЕГОЧНАЯ АРТЕРИЯ
+T114	Body_location 4950 4956	Клапан
+T115	Symptom 4957 4968	не изменен.
+A64	SType T115 normal
+T116	Body_location 5049 5065	ЛЕВОЕ ПРЕДСЕРДИЕ
+T117	Body_location 5096 5113	ПРАВОЕ ПРЕДСЕРДИЕ
+T118	Body_location 5144 5170	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T119	Body_location 5182 5199	ПРАВЫЙ ЖЕЛУДОЧЕК:
+T120	Body_location 5383 5398	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T121	Body_location 5512 5539	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА
+T122	Body_location 5590 5620	ЗАДНЯЯ СТЕНКА ЛЕВОГО ЖЕЛУДОЧКА
+T123	Body_location 5650 5667	МИТРАЛЬНЫЙ КЛАПАН
+T124	Body_location 5727 5748	РИКУСПИДАЛЬНЫЙ КЛАПАН
+T125	Symptom 5086 5094	увеличен
+A65	SType T125 disorder
+R29	Symptom_bdyloc_rel Arg1:T116 Arg2:T125	
+T126	Symptom 5134 5142	увеличен
+A66	SType T126 disorder
+R30	Symptom_bdyloc_rel Arg1:T117 Arg2:T126	
+T127	Symptom 5253 5381	оп.особенности в области верхушки правого желудочка определяется полость 14*6 мм заполняемая кровью из полости правого желудочка
+A67	SType T127 disorder
+R31	Symptom_bdyloc_rel Arg1:T119 Arg2:T127	
+T128	Symptom 5541 5567	не утолщена - толщина 8 мм
+A68	SType T128 normal
+R32	Symptom_bdyloc_rel Arg1:T121 Arg2:T128	
+T129	Symptom 5622 5649	не утолщена - толщина 7 мм.
+A69	SType T129 normal
+R33	Symptom_bdyloc_rel Arg1:T122 Arg2:T129	
+T130	Symptom 5669 5706	Створки - пролапс митрального клапана
+A70	SType T130 normal
+R34	Symptom_bdyloc_rel Arg1:T123 Arg2:T130	
+T131	Symptom 5750 5769	Створки не изменены
+A71	SType T131 normal
+R35	Symptom_bdyloc_rel Arg1:T124 Arg2:T131	
+T132	Body_location 5951 5959	ПЕРИКАРД
+T133	Symptom 5961 5987	Листки утолщены, слоистые.
+A72	SType T133 disorder
+R36	Symptom_bdyloc_rel Arg1:T132 Arg2:T133	
+T134	Body_location 5988 6005	НИЖНЯЯ ПОЛАЯ ВЕНА
+T135	Symptom 6007 6047	расширена, коллабирует на вдох менее 50%
+A73	SType T135 disorder
+R37	Symptom_bdyloc_rel Arg1:T134 Arg2:T135	
+T136	Disease 6102 6131	Девиртикула правого желудочка
+A74	Time T136 now
+T137	Symptom 6133 6167	сообщающегося с полостью желудочка
+A75	SType T137 disorder
+T34	Body_location 6950 6976	НАДЖЕЛУДОЧКОВАЯ АКТИВНОСТЬ
+T138	Symptom 6978 7019	16 изолированных предсердных экстрасистол
+A21	SType T138 disorder
+R38	Symptom_bdyloc_rel Arg1:T34 Arg2:T138	
+T139	Symptom 7020 7077	(некоторые - с блокадой проведения по правой ножке п.Гиса
+A76	SType T139 disorder
+R39	Symptom_bdyloc_rel Arg1:T34 Arg2:T139	
+T39	Disease 8569 8574	Асцит
+A25	Time T39 now
+T41	Body_location 8734 8755	Скелет грудной клетки
+T140	Symptom 8756 8822	сформирован симметрично, ограниченные утолщения плевры отсутствуют
+A27	SType T140 normal
+R40	Symptom_bdyloc_rel Arg1:T41 Arg2:T140	
+T141	Body_location 8942 8958	Легочный рисунок
+T142	Symptom 8959 9051	усилен, обогащен за счет сосудистого компонента, в прикорневых зонах, ослаблен по периферии.
+A77	SType T142 disorder
+R41	Symptom_bdyloc_rel Arg1:T141 Arg2:T142	
+T143	Body_location 9513 9523	Дуга аорты
+T144	Body_location 9566 9582	Куполы диафрагмы
+T145	Body_location 9592 9608	Синусы диафрагмы
+T146	Body_location 9144 9150	Бронхи
+T147	Symptom 9525 9564	по положению и конфигурации не изменена
+A78	SType T147 normal
+T148	Symptom 9151 9195	прослежены до уровня субсегментарных ветвей,
+A79	SType T148 normal
+R42	Symptom_bdyloc_rel Arg1:T146 Arg2:T148	
+T149	Symptom 9196 9240	просвет бронхов не расширен, не деформирован
+A80	SType T149 normal
+R43	Symptom_bdyloc_rel Arg1:T146 Arg2:T149	
+R44	Symptom_bdyloc_rel Arg1:T143 Arg2:T147	
+T150	Symptom 9584 9590	четкий
+A81	SType T150 normal
+R45	Symptom_bdyloc_rel Arg1:T144 Arg2:T150	
+T151	Symptom 9610 9642	дифференцируется; с двух сторон.
+A82	SType T151 normal
+R46	Symptom_bdyloc_rel Arg1:T145 Arg2:T151	
+T152	Body_location 9897 9911	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T153	Symptom 9913 9941	Локализация в типичном месте
+R47	Symptom_bdyloc_rel Arg1:T152 Arg2:T153	
+T42	Disease 9797 9829	выбухание дуги легочной артерии,
+A28	Time T42 now
+T154	Disease 9830 9852	легочная гипертензия.;
+A83	Time T154 now
+T155	Body_location 10030 10036	ПЕЧЕНЬ
+T156	Symptom 10038 10065	Размер ЛД 124 мм - увеличен
+A84	SType T156 disorder
+R48	Symptom_bdyloc_rel Arg1:T155 Arg2:T156	
+T157	Body_location 10481 10502	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА:
+R49	Symptom_bdyloc_rel Arg1:T157 Arg2:T51	
+T158	Body_location 10683 10692	СЕЛЕЗЕНКА
+T159	Body_location 10860 10867	ЖЕЛУДОК
+T160	Body_location 10907 10922	\ПЕРСТНАЯ КИШКА
+T161	Body_location 11192 11202	ЕВАЯ ПОЧКА
+T162	Body_location 11231 11243	РАВАЯ ПОЧКА:
+T163	Body_location 11837 11851	МОЧЕВОЙ ПУЗЫРЬ
+T164	Body_location 11990 12001	ЛЕВАЯ ПОЧКА
+T165	Body_location 13264 13278	МОЧЕВОЙ ПУЗЫРЬ
+T166	Body_location 12598 12610	ПРАВАЯ ПОЧКА
+T167	Body_location 12165 12174	Паренхима
+T168	Symptom 12003 12027	норма; Размер 110Х40 мм;
+A85	SType T168 normal
+R50	Symptom_bdyloc_rel Arg1:T164 Arg2:T168	
+T169	Symptom 12176 12202	дифференцировка сохранена;
+A86	SType T169 normal
+R51	Symptom_bdyloc_rel Arg1:T167 Arg2:T169	
+T170	Symptom 12612 12636	норма; Размер 109Х40 мм;
+A87	SType T170 normal
+R52	Symptom_bdyloc_rel Arg1:T166 Arg2:T170	
+T171	Symptom 13280 13349	заполнен; Форма обычная; Стенки не изменены; Внутренний контур ровный
+A88	SType T171 normal
+R53	Symptom_bdyloc_rel Arg1:T165 Arg2:T171	
+T172	Body_location 12525 12535	Мочеточник
+T173	Symptom 12537 12596	не расширена; нижняя треть не расширена; стенки не изменены
+A89	SType T173 normal
+R54	Symptom_bdyloc_rel Arg1:T172 Arg2:T173	
+T174	Drug 13444 13450	Диувер
+T175	Drug 13473 13483	Верошпирон
+T176	Drug 13507 13515	Колхицин
+T177	Drug 13529 13536	Нексиум
+T178	Drug 13554 13561	МагнеB6
+T179	Drug 13577 13585	Панангин
+T180	Severity 13920 13933	II ФК по NYHA
+R55	Severity_rel Arg1:T180 Arg2:T56	
+T58	Treatment 14720 14771	Диувер (торасемид) 10 мг х 1 р/д в 8.00 – постоянно
+T181	Treatment 14777 14834	Верошпирон (спиронолактон) 75 мг 1 р/д, 17.00 - постоянно
+T182	Treatment 14839 14895	Колхицин (колхицин) 500 мг 2 р/д, после еды - постоянно.
+T183	Treatment 14899 14946	Нексиум (эзомепразол) 20 мг на ночь - постоянно
+T184	Treatment 14952 15001	Панангин (Калия и магния аспарагинат) 1 т х 3 р/д
+T185	Treatment 15007 15047	Магнерот (магния оротат) по 1 т х 3 р/д.
+T186	Treatment 15052 15175	в/м Бициллин-5 (Бензатина бензилпенициллин+ Бензилпенициллин прокаина+Бензилпенициллин) 1млн 200тЕД 17 число каждого месяца
+T187	Drug 14720 14726	Диувер
+T188	Drug 14777 14787	Верошпирон
+T189	Drug 14839 14847	Колхицин
+T190	Drug 14899 14906	Нексиум
+T191	Drug 14952 14960	Панангин
+T192	Drug 15007 15015	Магнерот
+T193	Drug 15056 15066	Бициллин-5
+T194	Drug 15068 15094	Бензатина бензилпенициллин
+T195	Drug 15096 15121	Бензилпенициллин прокаина
+T196	Drug 15122 15138	Бензилпенициллин
+T197	Body_location 8017 8035	сосудистый рисунок
+T198	Symptom 8036 8059	усилен, не деформирован
+A36	SType T198 normal
+R56	Symptom_bdyloc_rel Arg1:T197 Arg2:T198	
+T199	Body_location 9109 9115	трахеи
+T200	Symptom 9116 9142	главных бронхов не изменен
+A90	SType T200 normal
+R57	Symptom_bdyloc_rel Arg1:T199 Arg2:T200	
+T201	Symptom 10694 10717	Размер 120х56 мм, норма
+A91	SType T201 normal
+R58	Symptom_bdyloc_rel Arg1:T158 Arg2:T201	
+T202	Body_location 11792 11803	Мочеточник:
+T203	Symptom 11804 11835	не расширен, стенки не изменены
+A92	SType T203 normal
+R59	Symptom_bdyloc_rel Arg1:T202 Arg2:T203	
+T204	Symptom 10869 10882	Стенки норма.
+A93	SType T204 normal
+T205	Symptom 10924 10961	Стенки - норма .Секреция - содержимое
+A94	SType T205 normal
+R60	Symptom_bdyloc_rel Arg1:T159 Arg2:T204	
+R61	Symptom_bdyloc_rel Arg1:T160 Arg2:T205	
+T206	Symptom 11204 11228	Размер 110Х40 мм - норма
+A95	SType T206 normal
+R62	Symptom_bdyloc_rel Arg1:T161 Arg2:T206	
+T207	Body_location 11421 11430	Паренхима
+T208	Symptom 11432 11581	дифференцировка сохранена, эхогенность коркового слоя нормальная, эхогенность мозгового слоя нормальная, толщина - норма, стенки сосудов не изменены.
+A96	SType T208 normal
+R63	Symptom_bdyloc_rel Arg1:T207 Arg2:T208	
+T209	Treatment 98 184	линейной пластики дивертикула правого желудочка, дренирования перикарда от 27.11.2054г
+T210	Body_location 128 145	правого желудочка
+T211	Body_location 160 169	перикарда
+T7	Body_location 3280 3313	по срединной линии грудной клетки
+R2	Symptom_bdyloc_rel Arg1:T7 Arg2:T88	
+T212	Symptom 3315 3343	крупнопластинчатое шелушение
+A97	SType T212 disorder
+T213	Drug 14789 14802	спиронолактон
+T214	Drug 14728 14737	торасемид

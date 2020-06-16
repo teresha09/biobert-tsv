@@ -1,0 +1,112 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 84	среднетяжелое персистирующее течение
+A1	Degree T2 medium
+R1	Severity_rel Arg1:T2 Arg2:T1	
+T3	Disease 96 124	риноконъюнктивальный синдром
+T4	Course 126 134	ремиссия
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 136 170	Круглогодичный аллергический ринит
+T6	Course 172 189	подострое течение
+A3	CType T6 worsened
+R3	Course_rel Arg1:T6 Arg2:T5	
+T7	Symptom 256 273	свистящее дыхание
+A4	SType T7 disorder
+T8	Symptom 284 303	затруднения дыхания
+A5	SType T8 disorder
+T9	Symptom 400 418	угрозой прерывания
+A6	SType T9 disorder
+T10	Disease 630 646	пищевой аллергии
+T11	Disease 714 717	ОРИ
+T12	Symptom 746 774	сухой продолжительный кашель
+A7	SType T12 disorder
+T13	Symptom 777 797	затрудненное дыхание
+A8	SType T13 disorder
+T14	Symptom 852 855	РКС
+A9	SType T14 disorder
+T15	Treatment 857 883	в терапии зиртек, кларитин
+A10	Effect T15 positive
+T16	Drug 867 873	зиртек
+T17	Drug 875 883	кларитин
+T18	Disease 968 989	обструктивный бронхит
+T19	Treatment 992 1035	в терапии беродуал 5-7 капель 2 раза в день
+A11	Effect T19 positive
+T20	Drug 1002 1010	беродуал
+T21	Disease 1131 1168	Бронхиальная астма, атопическая форма
+T22	Severity 1170 1199	легкое персистирующее течение
+A12	Degree T22 light
+T23	Course 1201 1216	период ремиссии
+A13	CType T23 improved
+R4	Severity_rel Arg1:T22 Arg2:T21	
+R5	Course_rel Arg1:T23 Arg2:T21	
+T24	Disease 1228 1256	риноконъюнктивальный синдром
+T25	Course 1258 1266	ремиссия
+A14	CType T25 improved
+R6	Course_rel Arg1:T25 Arg2:T24	
+T26	Treatment 1269 1303	Назначена базисная терапия – интал
+A15	Effect T26 positive
+T27	Drug 1298 1303	интал
+T28	Symptom 1356 1384	приступы затруднения дыхания
+T29	Symptom 1394 1411	свистящее дыхание
+A16	SType T29 disorder
+A17	SType T28 disorder
+T30	Disease 1431 1434	ОРИ
+T31	Treatment 1512 1555	В терапии беродуал через небулайзер, теопек
+A18	Effect T31 positive
+T32	Drug 1522 1530	беродуал
+T33	Drug 1549 1555	теопек
+T34	Symptom 1609 1636	обострение кожного процесса
+A19	SType T34 disorder
+T35	Symptom 1638 1650	слезотечение
+A20	SType T35 disorder
+T36	Symptom 1652 1664	сухой кашель
+A21	SType T36 disorder
+T37	Treatment 1698 1762	купирован ингаляцией беродуала через небулайзер, приемом теопека
+A22	Effect T37 positive
+T38	Drug 1719 1728	беродуала
+T39	Drug 1755 1762	теопека
+T40	Symptom 1890 1907	свистящее дыхание
+A23	SType T40 disorder
+T41	Disease 1949 1952	РКС
+T42	Disease 2019 2022	РКС
+A24	NotPatient T41
+A25	NotPatient T42
+T43	Symptom 2025 2034	высыпания
+A26	SType T43 disorder
+T44	Body_location 2035 2042	на коже
+T45	Disease 2078 2100	лекарственная аллергия
+T46	Symptom 2102 2113	отек Квинке
+A27	SType T46 disorder
+T47	Body_location 2163 2177	Кожные покровы
+T48	Symptom 2178 2184	чистые
+A28	SType T48 normal
+T49	Symptom 2186 2197	Зев спокоен
+A29	SType T49 normal
+T50	Symptom 2199 2235	Носовое дыхание несколько затруднено
+A30	SType T50 normal
+T51	Body_location 2237 2245	В лёгких
+T52	Symptom 2260 2271	сухие хрипы
+A31	SType T52 disorder
+T53	Symptom 2273 2290	дыхание ослаблено
+A32	SType T53 disorder
+T54	Symptom 2292 2328	Сердечные тоны приглушены, ритмичные
+A33	SType T54 normal
+T55	Body_location 2330 2334	Живо
+T56	Symptom 2336 2342	мягкий
+A34	SType T56 normal
+T57	Symptom 2358 2372	безболезненный
+A35	SType T57 normal
+T58	Symptom 2374 2402	Стул ежедневный, оформленный
+A36	SType T58 normal
+T59	Symptom 2404 2424	Менингеальных знаков
+A37	Negation T59
+A38	NotPatient T43
+R7	Symptom_bdyloc_rel Arg1:T44 Arg2:T43	
+A39	Negation T45
+A40	Negation T46
+R8	Symptom_bdyloc_rel Arg1:T47 Arg2:T48	
+R9	Symptom_bdyloc_rel Arg1:T51 Arg2:T52	
+R10	Symptom_bdyloc_rel Arg1:T51 Arg2:T53	
+R11	Symptom_bdyloc_rel Arg1:T55 Arg2:T56	
+T60	Disease 2102 2113	отек Квинке
+A41	Negation T60

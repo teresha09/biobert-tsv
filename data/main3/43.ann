@@ -1,0 +1,196 @@
+T1	Disease 21 35	Кардиомиопатия
+A1	Time T1 now
+T2	Body_location 78 94	левого желудочка
+T3	Disease 62 94	трабекулярность левого желудочка
+A2	Time T3 now
+T4	Body_location 112 131	митрального клапана
+T5	Disease 165 179	Кардиомиопатия
+A3	Time T5 now
+T6	Body_location 222 238	левого желудочка
+T7	Disease 399 423	язвенная болезнь желудка
+A4	NotPatient T7
+A5	Time T7 before
+T8	Disease 426 432	12п.к.
+A6	NotPatient T8
+A7	Time T8 before
+T9	Disease 434 439	СД 2т
+A8	NotPatient T9
+T10	Disease 441 470	заболевания щитовидной железы
+A9	NotPatient T10
+T11	Body_location 453 470	щитовидной железы
+T12	Disease 504 527	опухоль головного мозга
+A10	NotPatient T12
+A11	Time T12 before
+T13	Disease 550 572	язвенная болезнь 12п.к
+A12	NotPatient T13
+T14	Disease 574 584	гипотириоз
+A13	NotPatient T14
+A14	Time T14 now
+T15	Drug 608 618	L-тироксин
+T16	Disease 644 662	бронхиальная астма
+A15	NotPatient T16
+T17	Disease 790 792	АГ
+A16	NotPatient T17
+A17	Time T17 now
+T18	Disease 778 787	тугоухост
+A18	Time T18 now
+T19	Disease 808 826	бронхиальная астма
+A19	NotPatient T19
+T20	Symptom 1065 1082	угроза прерывания
+A20	NotPatient T20
+A21	SType T20 disorder
+T21	Symptom 2088 2113	синдром гипервозбудимости
+T22	Symptom 2115 2135	рудементарный тремор
+T23	Disease 2901 2905	ОРВИ
+A22	Time T23 before
+T24	Symptom 2991 2999	слабость
+A23	SType T24 disorder
+T25	Symptom 2968 2989	повышенную потливость
+A24	SType T25 disorder
+T26	Symptom 2954 2966	утомляемость
+A25	SType T26 disorder
+T27	Severity 3063 3066	3ст
+T28	Disease 3053 3057	ДКМП
+T29	Disease 3059 3062	НМК
+R1	Severity_rel Arg1:T27 Arg2:T29	
+T30	Drug 3118 3128	верошпирон
+T31	Drug 3139 3143	энап
+T32	Treatment 3118 3154	верошпирон 20мг/сут, энап 1,25мг/сут
+T33	Symptom 3314 3352	снижение сократительной функции сердца
+A26	SType T33 disorder
+T34	Severity 3356 3359	39%
+T35	Severity 3365 3370	IIIст
+A27	Degree T35 hard
+T36	Disease 3361 3364	НМК
+R2	Severity_rel Arg1:T35 Arg2:T36	
+T37	Symptom 3404 3425	синусовая брадикардия
+A28	SType T37 disorder
+T38	Symptom 3463 3493	расширение границ сердца влево
+A29	SType T38 disorder
+T39	Body_location 3481 3487	сердца
+R3	Symptom_bdyloc_rel Arg1:T39 Arg2:T38	
+T40	Drug 3524 3535	преднизолон
+T41	Drug 3505 3513	дигоксин
+T42	Drug 3546 3556	верошпирон
+T43	Drug 3567 3571	энап
+T44	Drug 3584 3591	аспирин
+T45	Treatment 3505 3617	дигоксин 0,00006г, преднизолон 15мг/сут, верошпирон 20мг/сут, энап 1,25мг/сут, аспирин 1/4т, инфузионная терапия
+T46	Disease 3640 3661	Неревматоидный кардит
+T47	Severity 3683 3686	IIА
+T48	Severity 3692 3695	3ст
+T49	Disease 3697 3701	ДКМП
+T50	Drug 21333 21343	Цитофлавин
+T51	Drug 21254 21266	Предуктал МВ
+T52	Drug 21176 21189	Кудесан-форте
+T53	Drug 21099 21106	МагнеВ6
+T54	Drug 21034 21041	Трентал
+T55	Drug 20918 20924	Диувер
+T56	Drug 20853 20859	Конкор
+T57	Drug 20778 20785	Капотен
+T58	Treatment 20778 20848;20849 20913;20914 21029;21030 21094;21095 21171;21172 21249;21250 21328;21329 21484	Капотен (Каптоприл) 18,25 мг х 3р/д в 7.00, 15.00 и 22.00, длительно.. 11. Конкор (Бисопролол) 2,5мг х 2р/д в 9.00 и 21.00, длительно.. 12. Диувер (Торасемид) 5мг х 1р/д в 9.00 и 1,25мг в 16.00,после еды, длительно. Контроль диуреза по выходным дням.. 13. Трентал (Пентоксифиллин) 100мг х 3р/д после еды, длительно.. 14. МагнеВ6 (Магния лактата дигидрат) 2 таб х 2р/д –апрель, май, июнь 2058.. 15. Кудесан-форте р-р (Убидекаренон) 1мл х 1 р/д -апрель, май, июнь 2058г. .. 16. Предуктал МВ (Триметазидин) 17,5мг х 2р/д - октябрь - январь 2058-59года.. 17. Цитофлавин (Янтарная кислота, инозин, никотинамид, рибофлавина мононуклеотид ) 2 таб х 2р/д строго после еды (утро, обед) – с июля по сентябрь 2058года
+T59	Drug 18841 18848	капотен
+T60	Drug 18859 18865	конкор
+T61	Drug 18908 18914	диувер
+T62	Drug 18956 18963	трентал
+T63	Drug 18975 18985	цитофлавин
+T64	Drug 18994 19001	коэнзим
+T65	Treatment 18841 18907	капотен 54мг/сут, конкор 2,5мг/сут с повышением дозы до 2,5мг/сут,
+T66	Treatment 18908 19005	диувер 5мг/сут с повышением дозы до 6,25мг/сут, трентал 150мг/сут, цитофлавин 4т/сут, коэнзим Q10
+T67	Body_location 17397 17408	ЛЕВАЯ ПОЧКА
+T68	Symptom 17410 17419	увеличена
+A30	SType T68 disorder
+R4	Symptom_bdyloc_rel Arg1:T67 Arg2:T68	
+T69	Body_location 18012 18024	ПРАВАЯ ПОЧКА
+T70	Symptom 18026 18035	увеличена
+A31	SType T70 disorder
+R5	Symptom_bdyloc_rel Arg1:T69 Arg2:T70	
+T71	Body_location 18670 18684	МОЧЕВОЙ ПУЗЫРЬ
+T72	Body_location 16757 16760	ОЖП
+T73	Body_location 17160 17167	ЖЕЛУДОК
+T74	Body_location 17005 17014	СЕЛЕЗЕНКА
+T75	Body_location 17213 17229	Д\ПЕРСТНАЯ КИШКА
+T76	Body_location 17266 17275	ЛИМФОУЗЛЫ
+T77	Body_location 16358 16372	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T78	Body_location 16479 16485	ПЕЧЕНЬ
+T79	Disease 16715 16735	ангиометоз.трансформ
+A32	Time T79 now
+R6	Body_location_rel Arg1:T78 Arg2:T79	
+T80	Body_location 16033 16040	Миокард
+T81	Body_location 12926 12932	АОРТА:
+T82	Body_location 13340 13363	КЛАПАН ЛЕГОЧНОЙ АРТЕРИИ
+T83	Body_location 13856 13882	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T84	Body_location 13894 13911	ПРАВЫЙ ЖЕЛУДОЧЕК:
+T85	Body_location 13813 13830	ПРАВОЕ ПРЕДСЕРДИЕ
+T86	Body_location 12319 12327	ПЕРИКАРД
+T87	Severity 11735 11738	46%
+T88	Body_location 11780 11807	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА
+T89	Severity 11695 11699	0,46
+T90	Body_location 10738 10746	ПЕРИКАРД
+T91	Symptom 11679 11694	ФВ по Тейхольцу
+T92	Symptom 11720 11734	ФВ по Симпсону
+T93	Body_location 11435 11452	ПРАВОЕ ПРЕДСЕРДИЕ
+T94	Body_location 11588 11603	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T95	Body_location 11482 11508	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T96	Body_location 11520 11536	ПРАВЫЙ ЖЕЛУДОЧЕК
+T97	Body_location 12061 12083	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T98	Symptom 11454 11462	увеличен
+A33	SType T98 disorder
+R7	Symptom_bdyloc_rel Arg1:T93 Arg2:T98	
+T99	Body_location 10965 10970	АОРТА
+T100	Body_location 9586 9591	АОРТА
+T101	Body_location 9963 9979	ЛЕВОЕ ПРЕДСЕРДИЕ
+T102	Body_location 9830 9846	ЛЕГОЧНАЯ АРТЕРИЯ
+T103	Body_location 10009 10026	ПРАВОЕ ПРЕДСЕРДИЕ
+T104	Body_location 10162 10177	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T105	Body_location 10341 10368	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА
+T106	Body_location 10418 10448	ЗАДНЯЯ СТЕНКА ЛЕВОГО ЖЕЛУДОЧКА
+T107	Body_location 10768 10785	НИЖНЯЯ ПОЛАЯ ВЕНА
+T108	Body_location 10569 10591	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T109	Body_location 9263 9272	ЖЕЛУДОЧКИ
+T110	Symptom 9274 9311	Гипертрофия миокарда левого желудочка
+A34	SType T110 disorder
+R8	Symptom_bdyloc_rel Arg1:T109 Arg2:T110	
+T111	Disease 4358 4397	Врожденная аномалия митрального клапана
+A35	Time T111 before
+T112	Drug 4538 4547	мелдронат
+T113	Drug 4549 4555	элькар
+T114	Drug 4557 4565	магнерот
+T115	Treatment 4514 4536	метаболической терапии
+T116	Disease 3680 3682	НК
+R9	Severity_rel Arg1:T47 Arg2:T116	
+T117	Disease 3688 3691	НМК
+R10	Severity_rel Arg1:T48 Arg2:T117	
+T118	Symptom 195 238	Повышенная трабекулярность левого желудочка
+A36	SType T118 disorder
+T119	Body_location 256 275	митрального клапана
+T120	Symptom 324 347	повышенная утомляемость
+A37	SType T120 disorder
+T121	Symptom 96 131	Недостаточность митрального клапана
+A38	SType T121 disorder
+R11	Symptom_bdyloc_rel Arg1:T4 Arg2:T121	
+T122	Symptom 240 275	Недостаточность митрального клапана
+A39	SType T122 disorder
+R12	Symptom_bdyloc_rel Arg1:T119 Arg2:T122	
+T123	Drug 7139 7146	капотен
+T124	Drug 7178 7184	конкор
+T125	Drug 7217 7223	диувер
+T126	Drug 7233 7240	трентал
+T127	Treatment 7139 7274	капотен с повышением дозы до 54мг\сут, конкор с повышением дозы до 2,5мг\сут, диувер 5мг/сут, трентал 150мг/сут, метаболическая терапия
+T128	Symptom 7651 7669	избытка массы тела
+A40	SType T128 disorder
+T129	Symptom 7813 7878	пигментные пятна на передней брюшной стенке и в ягодичной области
+A41	SType T129 disorder
+T130	Symptom 7785 7811	гипергидроз ладоней и стоп
+A42	SType T130 disorder
+T131	Body_location 7718 7732	Кожные покровы
+T132	Symptom 7742 7783	умеренный цианоз носогубного треугольника
+A43	SType T132 disorder
+R13	Symptom_bdyloc_rel Arg1:T131 Arg2:T130	
+R14	Symptom_bdyloc_rel Arg1:T131 Arg2:T129	
+R15	Symptom_bdyloc_rel Arg1:T131 Arg2:T132	
+T133	Body_location 8984 9003	Мочеполовая система
+T134	Body_location 12349 12366	НИЖНЯЯ ПОЛАЯ ВЕНА
+T135	Body_location 12821 12840	митрального клапана
+T136	Symptom 12857 12897	несколько аномально прикрепляющихся хорд
+A44	SType T136 disorder
+R16	Symptom_bdyloc_rel Arg1:T135 Arg2:T136	

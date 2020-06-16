@@ -1,0 +1,125 @@
+T1	Symptom 329 352	малопродуктивного кашля
+T2	Symptom 354 382	приступы затруднения дыхания
+T3	Disease 391 413	респираторной инфекции
+T4	Disease 424 430	ринита
+T5	Disease 432 445	конъюнктивита
+T6	Symptom 447 470	малопродуктивный кашель
+T7	Disease 473 485	отеки Квинке
+T8	Treatment 714 739	Профилактические прививки
+T9	Disease 791 797	атопии
+T11	Drug 822 848	антигистаминных препаратов
+T12	Treatment 871 887	коррекцией диеты
+T13	Disease 974 996	респираторных инфекций
+T14	Symptom 1005 1018	лающего кашля
+T15	Disease 1051 1080	обструктивные ларинготрахеиты
+T16	Treatment 1090 1110	терапию в стационаре
+T17	Disease 1133 1136	ОРИ
+T18	Disease 1157 1180	бронхиальной обструкции
+T20	Drug 1202 1211	беродуала
+T19	Treatment 1182 1224	В терапии ингаляции беродуала, пульмикорта
+T21	Disease 1321 1329	Поллиноз
+T22	Disease 1331 1349	бронхиальная астма
+T23	Disease 1351 1379	риноконъюнктивальный синдром
+T27	Treatment 1467 1509	терапию: ингаляции пульмикорта и беродуала
+T28	Drug 1486 1497	пульмикорта
+T29	Drug 1500 1509	беродуала
+T30	Disease 1775 1786	отек Квинке
+T31	Treatment 1650 1691	получал ингаляции бероудала и пульмикорта
+T32	Drug 1668 1677	бероудала
+T33	Treatment 1810 1823	инъекцией ГКС
+T34	Disease 1865 1874	поллиноза
+T35	Symptom 1876 1904	затруднение носового дыхания
+T36	Disease 1915 1928	конъюнктивита
+T37	Disease 1930 1942	отеки Квинке
+T38	Disease 2004 2020	пищевая аллергия
+T39	Treatment 2042 2062	Элиминационный режим
+T40	Body_location 2093 2107	кожные покровы
+T41	Symptom 2093 2130	кожные покровы свободные от высыпаний
+T42	Body_location 2132 2140	В легких
+T43	Symptom 2141 2161	везикулярное дыхание
+T44	Symptom 2162 2168	хрипов
+T10	Treatment 814 848	приемом антигистаминных препаратов
+T48	Symptom 901 927	кожные проявления аллергии
+T49	Treatment 610 626	кесарева сечения
+T50	Disease 62 70	Поллиноз
+T51	Disease 72 90	бронхиальная астма
+T52	Disease 92 120	риноконъюнктивальный синдром
+T57	Body_location 197 216	носовой перегородки
+T59	Body_location 238 258	поджелудочной железы
+T60	Disease 218 258	Вторичные изменения поджелудочной железы
+T61	Drug 1213 1224	пульмикорта
+T62	Treatment 1282 1306	лечении в ОДВЛ НЦЗД РАМН
+T63	Drug 1680 1691	пульмикорта
+A4	NotPatient T49
+T53	Course 122 130	ремиссия
+T58	Disease 185 196	Искривление
+T55	Disease 132 151	Аллергический ринит
+T54	Course 175 183	ремиссия
+R1	Course_rel Arg1:T53 Arg2:T52	
+R2	Course_rel Arg1:T53 Arg2:T51	
+R3	Course_rel Arg1:T53 Arg2:T50	
+R4	Course_rel Arg1:T54 Arg2:T55	
+R5	Body_location_rel Arg1:T57 Arg2:T58	
+R6	Body_location_rel Arg1:T59 Arg2:T60	
+A7	Conditional T7
+A3	Effect T10 positive
+A5	Effect T12 positive
+A8	Effect T19 positive
+T66	Disease 919 927	аллергии
+A9	Negation T66
+T24	Course 1381 1391	обострение
+R7	Course_rel Arg1:T24 Arg2:T23	
+R8	Course_rel Arg1:T24 Arg2:T22	
+R9	Course_rel Arg1:T24 Arg2:T21	
+T25	Disease 1439 1457	бронхиальной астмы
+T26	Disease 1538 1560	респираторных инфекций
+T68	Course 1561 1607	стали отмечаться реже – не более 1-2 раз в год
+R10	Course_rel Arg1:T68 Arg2:T26	
+A12	Effect T31 positive
+A13	Effect T33 positive
+T69	Body_location 1888 1896	носового
+A14	Conditional T37
+A15	NotPatient T38
+T72	Symptom 2174 2202	Тоны сердца ясные, ритмичные
+A1	CType T53 improved
+A2	CType T54 improved
+T73	Treatment 850 869	местными средствами
+T74	Body_location 901 907	кожные
+R12	Body_location_rel Arg1:T74 Arg2:T66	
+A6	CType T24 worsened
+A10	CType T68 improved
+A11	Conditional T36
+T45	Symptom 2204 2233	Живот мягкий, безболезненный.
+T46	Symptom 2234 2258	Стул, диурез не нарушены
+T47	Symptom 2260 2280	Менингеальных знаков
+A19	Negation T47
+T71	Severity 153 173	персистирующая форма
+R15	Severity_rel Arg1:T71 Arg2:T55	
+A20	Effect T73 positive
+T77	Severity 1396 1401	2 ст.
+A21	Degree T77 medium
+#1	AnnotatorNotes T77	Что означает ДН?
+A22	Conditional T30
+T56	Disease 1393 1395	ДН
+R16	Severity_rel Arg1:T77 Arg2:T56	
+R17	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R18	Symptom_bdyloc_rel Arg1:T42 Arg2:T44	
+A23	Degree T71 medium
+A24	SType T1 disorder
+A25	SType T2 disorder
+A26	SType T14 disorder
+A27	SType T35 disorder
+A28	SType T41 normal
+A29	Conditional T4
+A30	Conditional T5
+A18	SType T6 disorder
+A31	SType T48 disorder
+R11	Symptom_bdyloc_rel Arg1:T69 Arg2:T35	
+A32	SType T45 normal
+A33	SType T72 normal
+T64	Body_location 2204 2209	Живот
+R19	Symptom_bdyloc_rel Arg1:T64 Arg2:T45	
+A34	SType T46 normal
+A17	Negation T44
+A35	SType T44 disorder
+R13	Symptom_bdyloc_rel Arg1:T40 Arg2:T41	

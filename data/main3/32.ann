@@ -1,0 +1,271 @@
+T1	Disease 21 77	Неклассифицируемая кардиомиопатия, дилатационный вариант
+A1	Time T1 now
+T2	Disease 79 111	Бикуспидальный аортальный клапан
+A2	Time T2 now
+T3	Disease 113 180	Недостаточность аортального, митрального, трикуспидального клапанов
+A3	Time T3 now
+T4	Body_location 172 180	клапанов
+R1	Body_location_rel Arg1:T4 Arg2:T3	
+T5	Disease 182 213	Аплазия левой огибающей артерии
+A4	Time T5 now
+T6	Body_location 190 213	левой огибающей артерии
+R2	Body_location_rel Arg1:T6 Arg2:T5	
+T7	Disease 254 281	желудочковая экстрасистолия
+A5	Time T7 now
+T8	Severity 282 300	V градации по Lown
+R3	Severity_rel Arg1:T8 Arg2:T7	
+T9	Disease 302 329	атриовентрикулярная блокада
+A6	Time T9 now
+T10	Severity 330 334	I ст
+R4	Severity_rel Arg1:T10 Arg2:T9	
+T11	Disease 337 382	блокада передней ветви левой ножки пучка Гиса
+A7	Time T11 now
+T12	Body_location 360 382	левой ножки пучка Гиса
+R5	Body_location_rel Arg1:T12 Arg2:T11	
+T13	Disease 384 424	неполная блокада правой ножки пучка Гиса
+A8	Time T13 now
+T14	Body_location 401 424	правой ножки пучка Гиса
+R6	Body_location_rel Arg1:T14 Arg2:T13	
+T15	Disease 426 450	Межпредсердное сообщение
+A9	Time T15 now
+T16	Disease 452 472	Легочная гипертензия
+A10	Time T16 now
+T17	Disease 474 476	НК
+A11	Time T17 now
+T18	Severity 477 483	IIа ст
+R7	Severity_rel Arg1:T18 Arg2:T17	
+T19	Severity 485 490	ФК II
+R8	Severity_rel Arg1:T19 Arg2:T17	
+T20	Disease 492 520	Дисфункция билиарного тракта
+A12	Time T20 now
+T21	Body_location 503 520	билиарного тракта
+R9	Body_location_rel Arg1:T21 Arg2:T20	
+T22	Disease 529 555	деформации желчного пузыря
+A13	Time T22 now
+T23	Body_location 540 555	желчного пузыря
+R10	Body_location_rel Arg1:T23 Arg2:T22	
+T24	Disease 557 587	Дисплазия соединительной ткани
+A14	Time T24 now
+T25	Disease 599 655	Неклассифицируемая кардиомиопатия, дилатационный вариант
+A15	Time T25 now
+T26	Disease 657 689	Бикуспидальный аортальный клапан
+A16	Time T26 now
+T27	Body_location 672 689	аортальный клапан
+R11	Body_location_rel Arg1:T27 Arg2:T26	
+T28	Disease 691 758	Недостаточность аортального, митрального, трикуспидального клапанов
+A17	Time T28 now
+T29	Body_location 707 758	аортального, митрального, трикуспидального клапанов
+R12	Body_location_rel Arg1:T29 Arg2:T28	
+T30	Disease 760 791	Аплазия левой огибающей артерии
+A18	Time T30 now
+T31	Body_location 768 791	левой огибающей артерии
+R13	Body_location_rel Arg1:T31 Arg2:T30	
+T32	Disease 832 859	желудочковая экстрасистолия
+A19	Time T32 now
+T33	Severity 860 878	V градации по Lown
+R14	Severity_rel Arg1:T33 Arg2:T32	
+T34	Disease 880 907	атриовентрикулярная блокада
+A20	Time T34 now
+T35	Course 908 912	I ст
+R15	Course_rel Arg1:T35 Arg2:T34	
+T36	Disease 915 960	блокада передней ветви левой ножки пучка Гиса
+A21	Time T36 now
+T37	Body_location 923 960	передней ветви левой ножки пучка Гиса
+R16	Body_location_rel Arg1:T37 Arg2:T36	
+T38	Disease 962 1002	неполная блокада правой ножки пучка Гиса
+A22	Time T38 now
+T39	Body_location 979 1002	правой ножки пучка Гиса
+R17	Body_location_rel Arg1:T39 Arg2:T38	
+T40	Disease 1004 1028	Межпредсердное сообщение
+A23	Time T40 now
+T41	Disease 1030 1050	Легочная гипертензия
+A24	Time T41 now
+T42	Disease 1052 1054	НК
+A25	Time T42 now
+T44	Severity 1063 1068	ФК II
+R19	Severity_rel Arg1:T44 Arg2:T42	
+T45	Disease 1070 1098	Дисфункция билиарного тракта
+A26	Time T45 now
+T46	Body_location 1081 1098	билиарного тракта
+R20	Body_location_rel Arg1:T46 Arg2:T45	
+T47	Disease 1107 1133	деформации желчного пузыря
+A27	Time T47 now
+T48	Body_location 1118 1133	желчного пузыря
+R21	Body_location_rel Arg1:T48 Arg2:T47	
+T49	Disease 1135 1165	Дисплазия соединительной ткани
+A28	Time T49 now
+T50	Symptom 1192 1215	повышенная утомляемость
+A29	SType T50 disorder
+T51	Symptom 1217 1263	сниженная толерантность к физическим нагрузкам
+A30	SType T51 disorder
+T43	Course 1055 1061	IIа ст
+R18	Course_rel Arg1:T43 Arg2:T42	
+T52	Symptom 1297 1312	снижение зрения
+A31	NotPatient T52
+A32	SType T52 disorder
+T56	Disease 1573 1595	крапивница (на солнце)
+A39	NotPatient T56
+T55	Disease 1412 1436	артериальная гипертензия
+A37	NotPatient T55
+T54	Disease 1326 1385	порок аортального клапана ( бикуспидальный с регургитацией)
+A35	NotPatient T54
+T53	Disease 1320 1324	ДКМП
+A33	NotPatient T53
+T57	Body_location 1332 1351	аортального клапана
+R22	Body_location_rel Arg1:T57 Arg2:T54	
+T58	Symptom 1652 1693	угрозой прерывания в 18 недель, 31 недель
+A34	NotPatient T58
+A36	SType T58 disorder
+T59	Disease 1695 1702	анемией
+A38	NotPatient T59
+T60	Severity 1703 1726	средней степени тяжести
+R23	Severity_rel Arg1:T60 Arg2:T59	
+T62	Body_location 1752 1763	обоих глаз.
+T63	Severity 1736 1751	высокой степени
+T61	Disease 1728 1735	миопией
+A40	NotPatient T61
+R24	Severity_rel Arg1:T63 Arg2:T61	
+R25	Body_location_rel Arg1:T62 Arg2:T61	
+T64	Symptom 1853 1874	Вес при рождении 3300
+A41	SType T64 disorder
+T65	Disease 2315 2342	Перинатальная энцефалопатия
+A42	Time T65 before
+T66	Disease 2393 2399	Миопия
+A43	Time T66 before
+T67	Severity 2400 2414	слабой степени
+R26	Severity_rel Arg1:T67 Arg2:T66	
+T68	Disease 2550 2554	ОРВИ
+A44	Time T68 before
+T69	Disease 2556 2566	о.ларингит
+A45	Time T69 before
+T70	Disease 2568 2581	ветряная оспа
+A46	Time T70 before
+T71	Disease 2583 2591	краснуха
+A47	Time T71 before
+T72	Disease 2822 2826	ОРВИ
+A48	Time T72 before
+T73	Symptom 2828 2875	длительно (до 1 - 1.5месяцев) сохранялся кашель
+A49	SType T73 disorder
+A50	Negation T73
+T74	Symptom 3001 3021	стал быстрее устават
+A51	Negation T74
+A52	SType T74 disorder
+T75	Symptom 3052 3093	перед сном замечал усиленное сердцебиение
+A53	Negation T75
+A54	SType T75 disorder
+T76	Symptom 3157 3217	снижение результативности в спорте и повышенную утомляемость
+A55	Negation T76
+A56	SType T76 disorder
+T77	Symptom 3265 3287	Одиночные и парные ЖЭС
+A58	SType T77 disorder
+T78	Symptom 3298 3325	перегрузка миокарда ЛЖ и ЛП
+A57	SType T78 disorder
+T79	Symptom 3410 3433	дилатация всех полостей
+A59	SType T79 disorder
+T80	Symptom 3435 3479	снижение сократительной способности миокарда
+A60	SType T80 disorder
+T81	Body_location 3471 3479	миокарда
+R27	Symptom_bdyloc_rel Arg1:T81 Arg2:T80	
+T82	Symptom 3481 3505	недостаточность клапанов
+A61	SType T82 disorder
+T83	Body_location 3497 3505	клапанов
+R28	Symptom_bdyloc_rel Arg1:T83 Arg2:T82	
+T84	Disease 3507 3511	ДМПП
+A62	Time T84 before
+T85	Disease 3513 3551	множественные хорды в области верхушки
+A63	Time T85 before
+T86	Symptom 3553 3575	сужение просвета аорты
+A64	SType T86 disorder
+T87	Disease 3607 3627	легочная гипертензия
+A65	Time T87 before
+T88	Disease 3629 3632	ООО
+A66	Time T88 before
+T89	Symptom 3766 3802	сердечная область несколько выбухает
+A67	SType T89 disorder
+T90	Symptom 3804 3913	границы относительной тупости сердца перкуторно расширены преимущественно влево до передней аксиллярной линии
+A68	SType T90 disorder
+T91	Symptom 3915 3940	аритмичные сердечные тоны
+A69	SType T91 disorder
+T92	Symptom 3973 4000	повышение ТТГ до 7.45мМЕд/л
+A70	SType T92 disorder
+T93	Symptom 3955 3971	pro-BNP 880пг/мл
+A71	SType T93 disorder
+T94	Symptom 4018 4072	Положительные АТ IgG к ЭБВ, ЦМВ, IgG, IgM к микоплазме
+A72	SType T94 disorder
+T95	Disease 4113 4119	НБПНПГ
+A73	Time T95 now
+T96	Disease 4134 4162	блокадой передней ветви ЛНПГ
+A74	Time T96 now
+T97	Disease 4164 4174	АВ блокада
+A75	Time T97 now
+T98	Severity 4175 4179	I ст
+R29	Severity_rel Arg1:T98 Arg2:T97	
+T99	Symptom 4188 4208	частой монотопной ЖЭ
+A76	SType T99 disorder
+T100	Severity 4633 4647	L4b-L5 по Lown
+T101	Symptom 4649 4668	3 изолированные ПЭС
+A77	SType T101 disorder
+T102	Symptom 4698 4716	Депрессиея сегм.ST
+A78	SType T102 disorder
+T103	Symptom 4736 4754	двухфазные зубцы Т
+A79	SType T103 disorder
+T104	Symptom 4756 4772	Удлинение инт.QT
+A80	SType T104 disorder
+T105	Disease 4868 4886	бикуспидальный АоК
+A81	Time T105 now
+T106	Symptom 5006 5138	Некомпактный миокард в медиальном и апикальном сегментах ЛЖ: передней, передне-боковой, задней и нижней стенок, асинхрония стенок ЛЖ
+A82	SType T106 disorder
+T107	Disease 5280 5309	дискинез медиальной стенки ЛЖ
+A83	Time T107 now
+T108	Body_location 5289 5309	медиальной стенки ЛЖ
+R30	Body_location_rel Arg1:T108 Arg2:T107	
+T109	Symptom 5311 5372	ЗСЛЖ в апикальном отделе утолщена за счет требекулярного слоя
+A84	SType T109 disorder
+T110	Symptom 5421 5458	НПВ не расширена, коллабирует на вдох
+A85	SType T110 disorder
+T111	Symptom 5506 5560	сократительная активность всех стенок выражено снижена
+A86	SType T111 disorder
+T112	Symptom 5562 5582	ЛЖ, ПЖ, ЛП расширены
+A87	SType T112 disorder
+T113	Symptom 5584 5648	Определяются толстые редко расположенные трабекулы по стенкам ЛЖ
+A88	SType T113 disorder
+T114	Symptom 5733 5839	определяются единичные минимально выраженные участки замедления перфузии по перегородке в среднем сегменте
+A89	SType T114 disorder
+T115	Disease 5928 5964	аплазия огибающей коронарной артерии
+A90	Time T115 now
+T116	Body_location 5936 5964	огибающей коронарной артерии
+R31	Body_location_rel Arg1:T116 Arg2:T115	
+T118	Disease 6109 6122	расширение ПЖ
+A92	Time T118 now
+T117	Disease 6075 6107	полость ЛЖ значительно расширена
+A91	Time T117 now
+T119	Symptom 6135 6159	зоны акинеза и дискинеза
+A93	SType T119 disorder
+T120	Symptom 6161 6183	Перфузия неравномерная
+A94	SType T120 disorder
+T121	Symptom 6185 6265	очаговые нарушения в базальных и средних сегментах МЖП, передней и нижней стенок
+A95	SType T121 disorder
+T122	Body_location 6236 6265	МЖП, передней и нижней стенок
+R32	Symptom_bdyloc_rel Arg1:T122 Arg2:T121	
+T123	Symptom 6289 6344	область гипоперфузии в апикальном отделе боковой стенки
+A96	SType T123 disorder
+T124	Symptom 6418 6489	Слева незначительное количество свободной жидкости в плевральном синусе
+A97	SType T124 disorder
+T125	Course 6784 7196	отмечено улучшение самочувствия ребенка (стал меньше уставать, нет чувства усиленного сердцебиения), уменьшились симптомы сердечной недостаточности как клинически, так и по данным инструментальных обследований (купировался гидроторакс, по УЗИ уменьшение размеров печени, селезенка, поджелудочной железы, нормализовалось коллабирование нижней полой вены, на фоне подключения кордарона отмечена нормализация ритма)
+A98	CType T125 improved
+T126	Treatment 7625 8117	в/в поляризующая смесь №7, в/в лазикс 5мг после поляр.смеси, в/в цитофлавин в связи с аллергической реакцией заменен на реамберин №14; дигоксин 0.06мг х 1р/д; капотен 1мг х 3р/д с постепенным повышением до 18.75мг х 3р/д; фуросемид с 12.04 10 мг х 1р/д; кордарон 250мг х 1р/д с 5.04 по 11.04, 500мг с 12.04 по 21.04, далее 250мг (5мг/кг) х 1р/д; трентал 100мг х 3р/д; тромбо АСС 100мг х 1р/д; вильпрафен 750мг х 3р/д с 12.04 по 21.04; панангин 2таб х 3р/д; хофитол 2таб х 3р/д с 6.04 по 19.04
+T127	Drug 7656 7662	лазикс
+T128	Drug 7690 7700	цитофлавин
+T129	Drug 7745 7754	реамберин
+T130	Drug 7784 7791	капотен
+T131	Drug 7847 7856	фуросемид
+T132	Drug 7879 7887	кордарон
+T133	Drug 7971 7978	трентал
+T134	Drug 7993 8003	тромбо АСС
+T135	Drug 8018 8030	вильпрафен 7
+T136	Drug 8060 8068	панангин
+T137	Symptom 8375 8422	повышена трабекулярность в апикальных сегментах
+A99	SType T137 disorder
+T138	Treatment 8605 8879	капотен 54мг/сут, диакарб курсами,верошпирон 6,25мг/сут и фуросемид 10мг/сут замнен на диувер 10мг\сут, кордарон 300мг\сут, дилатренд с повышением дозы с 3,125мг до 6,25мг\сут, трентал 300мг\сут, панангин 6т/сут, тромбо АСС 100мг\сут, предуктал 79мг/сут, элькар, цитофлавин.
+T139	Drug 8605 8612	капотен
+T140	Drug 8623 8630	диакарб

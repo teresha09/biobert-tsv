@@ -1,0 +1,140 @@
+T1	Disease 19 46	сезонная бронхиальная астма
+T2	Disease 48 76	риноконъюнктивальный синдром
+T3	Course 78 86	ремиссия
+A1	CType T3 improved
+R1	Course_rel Arg1:T3 Arg2:T2	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 88 132	Атопический дерматит, распространенная форма
+T5	Severity 134 148	легкое течение
+A2	Degree T5 light
+T6	Course 150 167	период обострения
+A3	CType T6 worsened
+R3	Severity_rel Arg1:T5 Arg2:T4	
+R4	Course_rel Arg1:T6 Arg2:T4	
+T7	Disease 169 185	Пищевая аллергия
+T8	Disease 187 206	Аллергический ринит
+T9	Course 231 245	вне обострения
+A4	CType T9 improved
+R5	Course_rel Arg1:T9 Arg2:T8	
+T10	Disease 247 303	Искривление носовой перегородки без затруднения дыхания.
+T11	Body_location 259 278	носовой перегородки
+T12	Symptom 461 478	высыпания на коже
+A5	SType T12 disorder
+T13	Body_location 471 478	на коже
+T14	Symptom 489 495	ринита
+A6	SType T14 disorder
+T15	Symptom 497 510	конъюнктивита
+A7	SType T15 disorder
+T16	Symptom 513 536	малопродуктивный кашель
+A8	SType T16 disorder
+T17	Symptom 779 812	проявления атопического дерматита
+A9	SType T17 disorder
+T18	Treatment 814 834	В терапии пробиотики
+T19	Symptom 849 858	высыпания
+A10	Negation T19
+T20	Disease 902 918	пищевой аллергии
+T21	Symptom 928 949	периоральный дерматит
+A11	SType T21 disorder
+T22	Body_location 928 940	периоральный
+T23	Symptom 970 980	зуд в зеве
+A12	SType T23 disorder
+T24	Body_location 974 980	в зеве
+T25	Symptom 1031 1037	ринита
+A13	SType T25 disorder
+T26	Symptom 1039 1052	конъюнктивита
+A14	SType T26 disorder
+T27	Symptom 1054 1063	высыпания
+A15	SType T27 disorder
+T28	Symptom 1065 1071	кашель
+A16	SType T28 disorder
+T29	Treatment 1073 1110	При приеме антигистаминных препаратов
+A17	Effect T29 positive
+T30	Symptom 1145 1173	Затруднение носового дыхание
+A18	SType T30 disorder
+T31	Disease 1258 1279	гиперплазия аденоидов
+T32	Severity 1280 1291	2-3 степени
+A19	Degree T32 medium
+R6	Severity_rel Arg1:T32 Arg2:T31	
+T33	Symptom 1320 1348	риноконъюнктивальный синдром
+A20	SType T33 disorder
+T34	Symptom 1350 1359	высыпания
+A21	SType T34 disorder
+T35	Symptom 1389 1405	кожные высыпания
+A22	SType T35 disorder
+T36	Body_location 1389 1395	кожные
+T37	Disease 1451 1471	атопический дерматит
+T38	Treatment 1473 1496	Назначен локоид, ксизал
+A23	Effect T38 positive
+T39	Drug 1482 1488	локоид
+T40	Symptom 1563 1566	ркс
+A24	SType T40 disorder
+T41	Disease 1576 1596	холодовая крапивница
+A25	NotPatient T41
+A26	NotPatient T40
+T42	Disease 1598 1610	фотодерматит
+A27	NotPatient T42
+T43	Disease 1613 1631	инсектная аллергия
+A28	NotPatient T43
+T44	Disease 1649 1665	пищевая аллергия
+A29	NotPatient T44
+T45	Body_location 1741 1755	Кожные покровы
+T46	Symptom 1756 1765	суховатые
+A30	SType T46 disorder
+T47	Symptom 1767 1781	бледно-розовые
+A31	SType T47 normal
+T48	Symptom 1783 1806	на лице участки сухости
+A32	SType T48 disorder
+T49	Body_location 1783 1790	на лице
+T50	Symptom 1808 1846	на ногах эритематозно-сквамозные очаги
+A33	SType T50 disorder
+T51	Body_location 1808 1816	на ногах
+T52	Symptom 1848 1884	Носовое дыхание несколько затруднено
+A34	SType T52 disorder
+T53	Symptom 1886 1896	Зев рыхлый
+A35	SType T53 disorder
+T54	Body_location 1913 1921	В лёгких
+T55	Symptom 1922 1942	везикулярное дыхание
+A36	SType T55 normal
+T56	Symptom 1970 1976	хрипов
+A37	Negation T56
+T57	Symptom 1999 2032	Сердечные тоны громкие, ритмичные
+A38	SType T57 normal
+T58	Body_location 2034 2039	Живот
+T59	Symptom 2040 2046	мягкий
+A39	SType T59 normal
+T60	Symptom 2062 2076	безболезненный
+A40	SType T60 normal
+T61	Symptom 2078 2090	Стул, диурез
+A41	SType T61 normal
+T62	Symptom 2101 2121	Менингеальных знаков
+A42	Negation T62
+R7	Body_location_rel Arg1:T11 Arg2:T10	
+R8	Symptom_bdyloc_rel Arg1:T13 Arg2:T12	
+T63	Disease 489 495	ринита
+A43	Conditional T63
+T64	Disease 497 510	конъюнктивита
+A44	Conditional T64
+T65	Disease 790 812	атопического дерматита
+A45	Effect T18 positive
+T66	Disease 1031 1037	ринита
+A46	Conditional T66
+T67	Disease 1039 1052	конъюнктивита
+A47	Conditional T67
+T68	Disease 928 949	периоральный дерматит
+T69	Drug 1490 1496	ксизал
+T70	Symptom 1215 1219	храп
+A48	SType T70 disorder
+T71	Disease 1320 1348	риноконъюнктивальный синдром
+R9	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R10	Symptom_bdyloc_rel Arg1:T45 Arg2:T47	
+R11	Symptom_bdyloc_rel Arg1:T49 Arg2:T48	
+R12	Symptom_bdyloc_rel Arg1:T51 Arg2:T50	
+R13	Symptom_bdyloc_rel Arg1:T54 Arg2:T55	
+R14	Symptom_bdyloc_rel Arg1:T54 Arg2:T56	
+R15	Symptom_bdyloc_rel Arg1:T58 Arg2:T59	
+R16	Symptom_bdyloc_rel Arg1:T58 Arg2:T60	
+T72	Severity 209 229	персистирующая форма
+A49	Degree T72 medium
+R17	Severity_rel Arg1:T72 Arg2:T8	
+A50	SType T56 disorder
+A51	SType T19 disorder

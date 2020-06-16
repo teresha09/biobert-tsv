@@ -1,0 +1,700 @@
+T1	Treatment 21593 21629	проведена замена козаара на эналарил
+A1	Effect T1 positive
+T2	Treatment 21677 21704	замена дилатренда на конкор
+A2	Effect T2 positive
+T3	Treatment 22350 22402	Бисопролол 2,5мг.х2р/день в 08.00 и 20.00, постоянно
+T4	Treatment 22408 22463	Дигоксин по 0.03 мг. х 1 раз в сутки в 8.00 – длительно
+T5	Treatment 22469 22504	Торасемид 7,5 мг в 8:00 - длительно
+T6	Treatment 22510 22571	Пентоксифиллин по 50 мг х 3раза в день(после еды) – длительно
+T7	Treatment 22577 22631	Калия и сагния аспарагинат 1 т. х 2 р/день - постоянно
+T8	Treatment 22637 22688	Эналаприл по 10мг.х2р/день 8:00 и 20:00 - постоянно
+T9	Treatment 22695 22744	Элькар 30% 5 мл.*2 раза в день март - июль 2055 г
+T10	Treatment 22751 22800	Кудесан 1 мл*2 раза в день август - ноябрь 2055 г
+T11	Drug 22751 22758	Кудесан
+T12	Treatment 22842 23005	назначение антибактериальной терапии препаратами широкого спектра действия (аугментин, флемоклав, зиннат), аскорбиновой кислоты по 0,05мг 3 раза в день обязательно
+T13	Drug 22918 22927	аугментин
+T14	Drug 22929 22938	флемоклав
+T15	Drug 22940 22946	зиннат
+T16	Drug 22949 22969	аскорбиновой кислоты
+T17	Drug 22695 22701	Элькар
+T18	Drug 22637 22646	Эналаприл
+T19	Drug 22577 22603	Калия и сагния аспарагинат
+T20	Drug 22510 22524	Пентоксифиллин
+T21	Drug 22469 22478	Торасемид
+T22	Drug 22408 22416	Дигоксин
+T23	Drug 22350 22360	Бисопролол
+T24	Drug 21684 21694	дилатренда
+T25	Drug 21698 21704	конкор
+T26	Drug 21610 21617	козаара
+T27	Drug 21621 21629	эналарил
+T28	Treatment 21162 21291	Режим общий, стол№5, ограничение жидкости 800 мл\сут, дилатренд до 15,6 мг\сут с заменой на конкор с повышением дозы до 5,0мг/сут
+A3	Effect T28 positive
+T29	Treatment 21293 21377	дигоксин по 0,03 мг\сут, диувер 7,5мг/сут, трентал 150 мг\сут, панангин 1 таб. 2 р\д
+A4	Effect T29 positive
+T30	Treatment 21379 21448	козаар 25 мг\сут с заменой на эналаприл с повышением дозы до 20мг/сут
+A5	Effect T30 positive
+T31	Drug 21216 21225	дилатренд
+T32	Drug 21254 21260	конкор
+T33	Drug 21293 21301	дигоксин
+T34	Drug 21318 21324	диувер
+T35	Drug 21336 21343	трентал
+T36	Drug 21356 21364	панангин
+T37	Drug 21379 21385	козаар
+T38	Drug 21409 21418	эналаприл
+T39	Disease 21 90	Хронический миокардит с трансформацией в дилатационную кардиомиопатию
+A6	Time T39 now
+T40	Disease 92 146	Недостаточность митрального и трикуспидального клапана
+A7	Time T40 now
+T41	Disease 148 151	ХСН
+A8	Time T41 now
+T42	Severity 152 156	II A
+A9	Degree T42 medium
+T43	Severity 158 171	ФК II по NYHA
+A10	Degree T43 medium
+R1	Severity_rel Arg1:T42 Arg2:T41	
+R2	Severity_rel Arg1:T43 Arg2:T41	
+T44	Disease 183 252	Хронический миокардит с трансформацией в дилатационную кардиомиопатию
+A11	Time T44 now
+T45	Disease 254 308	Недостаточность митрального и трикуспидального клапана
+A12	Time T45 now
+T46	Disease 310 313	ХСН
+A13	Time T46 now
+T47	Severity 314 318	II A
+A14	Degree T47 medium
+T48	Severity 320 333	ФК II по NYHA
+A15	Degree T48 medium
+R3	Severity_rel Arg1:T47 Arg2:T46	
+R4	Severity_rel Arg1:T48 Arg2:T46	
+T49	Body_location 270 308	митрального и трикуспидального клапана
+T50	Body_location 108 146	митрального и трикуспидального клапана
+R5	Body_location_rel Arg1:T50 Arg2:T40	
+R6	Body_location_rel Arg1:T49 Arg2:T45	
+T51	Symptom 367 382	угроза выкидыша
+A16	NotPatient T51
+A17	SType T51 disorder
+T52	Symptom 409 427	стремительные роды
+A18	SType T52 disorder
+T53	Symptom 533 542	Апгар 9\9
+A19	SType T53 normal
+T54	Disease 783 803	атомический дерматит
+A21	Time T54 before
+A20	Conditional T54
+T55	Body_location 804 812	на щеках
+R7	Body_location_rel Arg1:T55 Arg2:T54	
+T56	Disease 1432 1454	герпетической инфекции
+A22	NotPatient T56
+A23	Time T56 before
+T57	Disease 1456 1476	фолликулярной ангины
+A24	NotPatient T57
+A25	Time T57 before
+T58	Symptom 1478 1495	угрозы прерывания
+A26	NotPatient T58
+A27	SType T58 disorder
+T59	Disease 1615 1619	ОРВИ
+A28	Time T59 before
+T60	Symptom 1637 1654	систолический шум
+A29	SType T60 disorder
+T61	Body_location 1655 1663	в сердце
+R8	Symptom_bdyloc_rel Arg1:T61 Arg2:T60	
+T62	Disease 1708 1720	Фиброэластоз
+T63	Disease 1722 1725	ВПС
+A30	Time T63 before
+A31	Time T62 before
+T64	Symptom 1764 1783	массивная дилатация
+A32	SType T64 disorder
+T65	Body_location 1784 1813	полостей левых отделов сердца
+R9	Symptom_bdyloc_rel Arg1:T65 Arg2:T64	
+T66	Symptom 1825 1860	Недостаточность митрального клапана
+A33	SType T66 disorder
+T67	Body_location 1841 1860	митрального клапана
+T68	Symptom 1862 1886	Обширные зоны гипокинеза
+A34	SType T68 disorder
+T69	Body_location 1887 1890	МЖП
+T70	Body_location 1892 1910	передней стенки ЛЖ
+R10	Symptom_bdyloc_rel Arg1:T69 Arg2:T68	
+R11	Symptom_bdyloc_rel Arg1:T70 Arg2:T68	
+T71	Treatment 1912 2021	Получала лечение: капотен 2,5мг/сут, дигоксин, верошпирон или фуросемид, рибоксин, панангин (дозы не указаны)
+A35	Effect T71 positive
+T72	Drug 1930 1937	капотен
+T73	Drug 1949 1957	дигоксин
+T74	Drug 1959 1969	верошпирон
+T75	Drug 1974 1983	фуросемид
+T76	Drug 1985 1993	рибоксин
+T77	Drug 1995 2003	панангин
+T78	Body_location 2181 2201	левых отделов сердца
+T79	Body_location 2203 2236	левая и правая коронарные артерии
+T80	Symptom 2267 2299	гемодинамически значимые стенозы
+A36	Negation T80
+A37	SType T80 disorder
+T81	Body_location 2300 2321	проксимальных отделов
+R12	Symptom_bdyloc_rel Arg1:T81 Arg2:T80	
+T82	Symptom 2416 2432	резкая дилатация
+A38	SType T82 disorder
+T83	Symptom 2434 2445	гипертрофия
+A39	SType T83 disorder
+T84	Body_location 2446 2462	левого желудочка
+R13	Symptom_bdyloc_rel Arg1:T84 Arg2:T83	
+R14	Symptom_bdyloc_rel Arg1:T84 Arg2:T82	
+T85	Symptom 2464 2501	резкое снижение систолической функции
+A40	SType T85 disorder
+T86	Body_location 2502 2513	миокарда ЛЖ
+T87	Symptom 2522 2543	диффузного гипокинеза
+A41	SType T87 disorder
+T88	Body_location 2544 2555	миокарда ЛЖ
+T89	Body_location 2557 2592	Коронарные артерии отходят от аорты
+T90	Symptom 2594 2623	Относительная недостаточность
+A42	SType T90 disorder
+T91	Body_location 2624 2643	митрального клапана
+R15	Symptom_bdyloc_rel Arg1:T91 Arg2:T90	
+T92	Symptom 2657 2685	растяжения фиброзного кольца
+A43	SType T92 disorder
+T93	Treatment 2687 2799	Проводимая терапия: дигоксин, верошпирон, фуросемид, аспаркам, капотен, метаболическая терапия (дозы не указаны)
+T94	Drug 2707 2715	дигоксин
+T95	Drug 2717 2727	верошпирон
+T96	Drug 2729 2738	фуросемид
+T97	Drug 2740 2748	аспаркам
+T98	Drug 2750 2758	капотен,
+T99	Symptom 3051 3071	гипертрофия миокарда
+A44	SType T99 disorder
+T100	Body_location 3072 3074	ЛЖ
+T101	Body_location 3077 3080	МЖП
+T102	Symptom 3082 3112	косвенные признаки гипертрофии
+A45	SType T102 disorder
+T103	Body_location 3113 3124	миокарда ПЖ
+R16	Symptom_bdyloc_rel Arg1:T103 Arg2:T102	
+R17	Symptom_bdyloc_rel Arg1:T100 Arg2:T99	
+R18	Symptom_bdyloc_rel Arg1:T101 Arg2:T99	
+T104	Body_location 3161 3204	коронарные артерии отходят в типичном месте
+T105	Symptom 3206 3258	дилатация ЛЖ со снижением его сократительной функции
+A46	SType T105 disorder
+T106	Body_location 3216 3218	ЛЖ
+T107	Symptom 3343 3372	признаки легочной гипертензии
+A47	SType T107 disorder
+T108	Disease 3383 3387	ДКМП
+A48	Time T108 before
+T109	Treatment 3401 3447	в терапии капотен заменен на моноприл 5 мг/сут
+A49	Effect T109 positive
+T110	Treatment 3449 3505	дигоксин 0,06 мг/сут, триампур с переходом на верошпирон
+T111	Treatment 3507 3594	назначены – дилатренд 1 мг/сут, трентал 75 мг/сут, курс пентаглобина 15 г, неотона 10 г
+T112	Treatment 3596 3617	начат курс рибомунила
+T113	Drug 3411 3418	капотен
+T114	Drug 3430 3438	моноприл
+T115	Drug 3449 3457	дигоксин
+T116	Drug 3471 3479	триампур
+T117	Drug 3495 3505	верошпирон
+T118	Drug 3519 3528	дилатренд
+T119	Drug 3539 3546	трентал
+T120	Drug 3563 3575	пентаглобина
+T121	Drug 3582 3589	неотона
+T122	Drug 3607 3617	рибомунила
+T123	Disease 3667 3671	ОРВИ
+A50	Time T123 before
+T124	Treatment 3689 3732	лечение: сумамед и симптоматическую терапию
+A51	Effect T124 positive
+T125	Drug 3698 3705	сумамед
+T126	Treatment 4062 4112	В лечении: увеличена доза моноприла до 6,25 мг/сут
+A52	Effect T126 positive
+T127	Treatment 4114 4175	дилатренда до 1,5 мг/сут, проведен курс пентаглобина (12,5 г)
+A53	Effect T127 positive
+T128	Drug 4088 4097	моноприла
+T129	Drug 4114 4124	дилатренда
+T130	Drug 4154 4166	пентаглобина
+T131	Treatment 4399 4433	В терапии – курс пентаглобина 20 г
+A54	Effect T131 positive
+T132	Treatment 4435 4502	повышены дозы моноприла до 7,5 мг/сут и дилатренда до 3, 125 мг/сут
+A55	Effect T132 positive
+T133	Drug 4416 4428	пентаглобина
+T134	Drug 4449 4458	моноприла
+T135	Drug 4475 4485	дилатренда
+T136	Symptom 4311 4334	нарастание регургитации
+A56	SType T136 disorder
+T137	Body_location 4335 4340	на МК
+R19	Symptom_bdyloc_rel Arg1:T137 Arg2:T136	
+T138	Treatment 4504 4538	На фоне третей инфузии цитофлавина
+A57	Effect T138 negative
+T139	Symptom 4541 4559	аллергическая сыпь
+A58	SType T139 disorder
+T140	Drug 4527 4538	цитофлавина
+T141	Disease 4725 4729	ДКМП
+T142	Symptom 4867 4902	толерантность к физической нагрузке
+A59	SType T142 normal
+T143	Treatment 4917 4932	Терапия прежняя
+T144	Body_location 5178 5188	МК-створки
+T145	Symptom 5189 5198	уплотнены
+A60	SType T145 disorder
+T146	Symptom 5200 5212	регургитация
+A61	SType T146 disorder
+R20	Symptom_bdyloc_rel Arg1:T144 Arg2:T145	
+R21	Symptom_bdyloc_rel Arg1:T144 Arg2:T146	
+T147	Body_location 5216 5225	клапан ЛА
+T148	Treatment 5268 5334	проведена замена моноприла 7.5мг в сутки на ренитек 7.5 мг в сутки
+T149	Treatment 5336 5379	в/в реамберин 15.0 курс №10,неотон 8 г/курс
+T150	Body_location 3917 3919	ЛЖ
+T151	Body_location 3933 3935	ЛП
+T152	Symptom 3982 4010	А-В регургитации на МК до +3
+A62	SType T152 disorder
+T153	Body_location 4002 4004	МК
+T154	Body_location 4012 4017	на ТК
+R22	Symptom_bdyloc_rel Arg1:T153 Arg2:T152	
+T155	Symptom 4018 4025	до +1+2
+A63	SType T155 disorder
+R23	Symptom_bdyloc_rel Arg1:T154 Arg2:T155	
+T156	Body_location 6621 6629	миокарда
+T157	Body_location 6696 6706	миокард ЛЖ
+T158	Symptom 6719 6749	с умеренным снижением перфузии
+A64	SType T158 disorder
+T159	Body_location 6750 6766	по задней стенки
+R24	Symptom_bdyloc_rel Arg1:T159 Arg2:T158	
+T160	Symptom 6833 6844	гипокинезом
+A65	SType T160 disorder
+T161	Body_location 6845 6848	МЖП
+R25	Symptom_bdyloc_rel Arg1:T161 Arg2:T160	
+T162	Body_location 6851 6883	задней стенки вплоть до верхушки
+R26	Symptom_bdyloc_rel Arg1:T162 Arg2:T160	
+T163	Treatment 7006 7076	В терапии увеличена доза дилатренда до 6,25 мг утром, 4,685 мг вечером
+T164	Treatment 7078 7191	курс Интраглобина 2,5 гр (50 мл) в/в капельно N3, Ренитек по 3.75мг х 2 р/день, Трентал по 50 мг х 3 раза в сутки
+T165	Treatment 7193 7292	Дигоксин по 0.03 мг х 1 раз в сутки, Фуросемид 10 мг х 1 р/день в 8.00, Триампур по 1 т. х 1 р/день
+T166	Treatment 7294 7378	Панангин ½ т. х 3 р/день, Виферон 150 тыс ЕД х 2 раза в день по вторникам и пятницам
+T167	Drug 7031 7041	дилатренда
+T168	Drug 7265 7273	Триампур
+T169	Drug 7083 7095	Интраглобина
+T170	Drug 7128 7135	Ренитек
+T171	Drug 7158 7165	Трентал
+T172	Drug 7193 7201	Дигоксин
+T173	Drug 7320 7327	Виферон
+T174	Drug 7294 7302	Панангин
+T175	Drug 7230 7239	Фуросемид
+T176	Body_location 7524 7534	МК створки
+T177	Symptom 7535 7544	уплотнены
+A66	SType T177 disorder
+T178	Symptom 7546 7563	регургитация +1+2
+A67	SType T178 disorder
+T179	Treatment 7663 7787	Получала лечение: ренитек 3,75 мг х 2 раза в день – заменен с 17.05 на капотен с увеличением дозы до 12,5мг х3р/день выписке
+A68	Effect T179 positive
+T180	Treatment 7790 7962	дилатренд 6,25 мг утром, 4,685 мг вечером; дигоксин 0,03 мг х 1 раз в день; фуросемид 10 мг х 1 раз в день; Триампур 1 табл х 1 раз в день; панангин ½ табл х 3 раза в день;
+A69	Effect T180 positive
+T181	Treatment 7963 8052	трентал 50 мг х 3 раза в день; в/в капельно Реамбирин 40 мл + 1 мл рибоксина с 21.06. N10
+A70	Effect T181 positive
+T182	Treatment 8054 8165	виферон 150т ЕД 2р/нед, арбидол 50мг 3р/день с 23.06.51-28.06.51, интерферон 2кап. 5р/день с 23.06.51 -28.06.51
+A71	Effect T182 positive
+T183	Symptom 8248 8281	выраженные периорбитальные «тени»
+A72	SType T183 disorder
+T184	Symptom 8283 8293	увеличение
+A73	SType T184 disorder
+T185	Body_location 8294 8302	миндалин
+T186	Severity 8303 8317	до 2-3 степени
+A74	Degree T186 medium
+R27	Symptom_bdyloc_rel Arg1:T185 Arg2:T184	
+T187	Symptom 8323 8330	налетов
+A75	Negation T187
+A76	SType T187 disorder
+T188	Symptom 8333 8342	гиперемии
+A77	SType T188 disorder
+R28	Symptom_bdyloc_rel Arg1:T185 Arg2:T187	
+R29	Symptom_bdyloc_rel Arg1:T185 Arg2:T188	
+T189	Symptom 8380 8426	резкая аритмия на фоне миграции водителя ритма
+A78	SType T189 disorder
+T190	Body_location 8427 8474	из синусового узла в миокард правого предсердия
+T191	Symptom 8664 8686	Диастолическая функция
+A79	SType T191 normal
+T192	Treatment 8736 8828	Получала лечение: режим с ограничением физической нагрузки, диета №5, капотен 12,5мг 3р/день
+T193	Treatment 8830 8945	увеличена доза дилатренда до 6,25 мг 2 раза в день; дигоксин 0,03 мг х 1 раз в день; фуросемид 10 мг х 1 раз в день
+T194	Treatment 8947 9041	Триампур 1 табл х 1 раз в день; панангин ½ табл х 3 раза в день; трентал 50 мг х 3 раза в день
+T195	Treatment 9043 9103	в/в капельно Реамбирин 30 мл + 3,0 мл рибоксина с 13.51. N10
+T196	Drug 8806 8813	капотен
+T197	Drug 8845 8855	дилатренда
+T198	Drug 8882 8890	дигоксин
+T199	Drug 8915 8924	фуросемид
+T200	Drug 8947 8955	Триампур
+T201	Drug 8979 8987	панангин
+T202	Drug 9012 9019	трентал
+T203	Drug 9056 9065	Реамбирин
+T204	Drug 9081 9090	рибоксина
+T205	Symptom 9327 9350	миграция водителя ритма
+A80	SType T205 disorder
+T206	Body_location 9351 9398	из синусового узла в миокард правого предсердия
+T207	Symptom 9400 9418	брадикардия резкая
+A81	SType T207 disorder
+R30	Symptom_bdyloc_rel Arg1:T206 Arg2:T205	
+T208	Body_location 9432 9446	грудной клетки
+T209	Body_location 9504 9519	левый желудочек
+T210	Symptom 9520 9528	расширен
+A82	SType T210 disorder
+T211	Symptom 9530 9577	Сокращение стенок ЛЖ асинхронные, неравномерные
+A83	SType T211 disorder
+T212	Body_location 9548 9550	ЛЖ
+T213	Symptom 9611 9637	3 дополнительных трабекулы
+A84	SType T213 disorder
+T214	Body_location 9579 9597	На верхушке сердца
+R31	Symptom_bdyloc_rel Arg1:T214 Arg2:T213	
+T215	Treatment 9685 9758	капотен 12,5мг х 3 р/д, дилатренд 6,25 мг х 2 р/д, дигоксин 0,03мг х 1р/д
+T216	Treatment 9760 9819	урегит 12.5 мг 1 р/д с повышением дозы с 06.11 до 18.75 мг,
+T217	Treatment 9820 9911	верошпирон 25мг х1р/д до 10.11. Фуросемид 10 мг 1 р/д с 12.11, триампур по 1т 1 р/д с 12,11
+T218	Treatment 9913 10051	панангин ½ табл х 3 р/д, трентал 50 мг х 3 р/д, предуктал 1/2таб (17,5мг) х 2р/д, в/в реамберин 40 мл + рибоксин 4,0 со скоростью 20, № 11
+T219	Drug 9685 9692	капотен
+T220	Drug 9938 9945	трентал
+T221	Drug 9709 9718	дилатренд
+T222	Drug 9736 9744	дигоксин
+T223	Drug 9760 9766	урегит
+T224	Drug 9820 9830	верошпирон
+T225	Drug 9852 9861	Фуросемид
+T226	Drug 9883 9891	триампур
+T227	Drug 9913 9921	панангин
+T228	Drug 9961 9970	предуктал
+T229	Drug 9999 10008	реамберин
+T230	Drug 10017 10025	рибоксин
+T231	Symptom 10366 10389	Миграция водителя ритма
+A85	SType T231 disorder
+T232	Body_location 10390 10437	из синусового узла в миокард правого предсердия
+T233	Symptom 10439 10457	выраженная аритмия
+A86	SType T233 disorder
+T234	Drug 5285 5294	моноприла
+T235	Drug 5312 5319	ренитек
+T236	Drug 5340 5349	реамберин
+T237	Drug 5364 5370	неотон
+T238	Body_location 5610 5620	МК-створки
+T239	Symptom 5621 5630	уплотнены
+A87	SType T239 disorder
+R32	Symptom_bdyloc_rel Arg1:T238 Arg2:T239	
+T240	Symptom 5632 5647	регургитация +2
+A88	SType T240 disorder
+R33	Symptom_bdyloc_rel Arg1:T238 Arg2:T240	
+T241	Body_location 5649 5658	клапан ТК
+T242	Symptom 5661 5666	норма
+A89	SType T242 normal
+R34	Symptom_bdyloc_rel Arg1:T241 Arg2:T242	
+T243	Body_location 5668 5677	клапан Ао
+T244	Symptom 5680 5685	норма
+A90	SType T244 normal
+R35	Symptom_bdyloc_rel Arg1:T243 Arg2:T244	
+T245	Treatment 5730 5754	ренитек 3.75мг х 2 р/сут
+T246	Treatment 5756 5817	увеличена доза дилатренда до 7.810мг в сутки под контролем АД
+A91	Effect T246 positive
+A92	Effect T245 positive
+T247	Treatment 5819 5952	дигоксин 0.03 мг 1 раз в сутки, фуросемид 10 мг х 1 р/сут, триампур 1 т. х 1 р/сут; трентал по 50 мгх3 р/сут; панангин ½ т. х 3 р/сут
+A93	Effect T247 positive
+T248	Treatment 5954 6003	магне В6 по ½ т.х2 р/сут, кудесан 10 кап х1 р/сут
+A94	Effect T248 positive
+T249	Treatment 6005 6079	с 10/Х в/в курс метаболической терапии реамберин с рибоксином (20.0+1 мл.)
+A95	Effect T249 positive
+T250	Treatment 6080 6105	интраглобин 0.5 г/кг/курс
+A96	Effect T250 positive
+T251	Drug 5730 5737	ренитек
+T252	Drug 5771 5781	дилатренда
+T253	Drug 5819 5827	дигоксин
+T254	Drug 5851 5860	фуросемид
+T255	Drug 5878 5886	триампур
+T256	Drug 5903 5910	трентал
+T257	Drug 5929 5937	панангин
+T258	Drug 5954 5962	магне В6
+T259	Drug 5980 5987	кудесан
+T260	Drug 6044 6053	реамберин
+T261	Drug 6056 6066	рибоксином
+T262	Drug 6080 6091	интраглобин
+T263	Symptom 6157 6204	толератность к физической нагрузке не снизилась
+A97	SType T263 normal
+T264	Disease 6216 6220	ОРВИ
+T265	Symptom 6221 6246	с фебрильной температурой
+A98	SType T265 disorder
+T266	Treatment 6267 6310	получала сумамед и симптоматическую терапию
+A99	Effect T266 positive
+T267	Drug 6276 6283	сумамед
+T268	Disease 6323 6331	фарингит
+A100	Time T268 before
+A101	Time T264 before
+T269	Body_location 6510 6520	МК створки
+T270	Symptom 6521 6530	уплотнены
+A102	SType T270 disorder
+R36	Symptom_bdyloc_rel Arg1:T269 Arg2:T270	
+T271	Symptom 6532 6547	регургитация +2
+A103	SType T271 disorder
+R37	Symptom_bdyloc_rel Arg1:T269 Arg2:T271	
+T272	Symptom 6768 6831	множественными зонами очень умеренной патологической асинхронии
+A104	SType T272 disorder
+R38	Symptom_bdyloc_rel Arg1:T157 Arg2:T272	
+T273	Drug 7681 7688	ренитек
+T274	Drug 7734 7741	капотен
+T275	Drug 7790 7799	дилатренд
+T276	Drug 7833 7841	дигоксин
+T277	Drug 7866 7875	фуросемид
+T278	Drug 7898 7906	Триампур
+T279	Drug 7930 7938	панангин
+T280	Drug 7963 7970	трентал
+T281	Drug 8007 8016	Реамбирин
+T282	Drug 8030 8039	рибоксина
+T283	Drug 8054 8061	виферон
+T284	Drug 8078 8085	арбидол
+T285	Drug 8120 8130	интерферон
+T286	Body_location 7609 7624	левый желудочек
+R39	Symptom_bdyloc_rel Arg1:T176 Arg2:T177	
+R40	Symptom_bdyloc_rel Arg1:T176 Arg2:T178	
+T287	Body_location 9460 9466	сердца
+R41	Symptom_bdyloc_rel Arg1:T209 Arg2:T210	
+T288	Symptom 10459 10478	Перегрузка миокарда
+A105	SType T288 disorder
+T289	Body_location 10479 10495	левого желудочка
+R42	Symptom_bdyloc_rel Arg1:T289 Arg2:T288	
+R43	Symptom_bdyloc_rel Arg1:T232 Arg2:T231	
+T290	Symptom 10497 10529	Нарушения процесса реполяризации
+A106	SType T290 disorder
+T291	Body_location 10530 10551	в миокарде желудочков
+R44	Symptom_bdyloc_rel Arg1:T291 Arg2:T290	
+T292	Treatment 10573 10608	дилатренд по 6,25 мг.*2 раза в день
+A107	Effect T292 positive
+T293	Treatment 10610 10684	увеличена доза капотена с 12,5 мг*3 раза в день до 15,625 мг*3 раза в день
+A108	Effect T293 positive
+T294	Treatment 10686 10847	дигоксин по 0,03 мг*1 раз в день, фуросемид 15 мг*1 раз в день, триампур по 1 таб*1 раз в день, верошпирон 6,25 мг*1 раз в день, трентал по 50 мг* 3 раза в сутки
+T295	Treatment 10849 10913	панангин 1\2 табл. *3 раза в день, кудесан по 15 мг*1 раз в день
+T296	Drug 10573 10582	дилатренд
+T297	Drug 10625 10633	капотена
+T298	Drug 10720 10729	фуросемид
+T299	Drug 10750 10758	триампур
+T300	Drug 10782 10792	верошпирон
+T301	Drug 10815 10822	трентал
+T302	Drug 10686 10694	дигоксин
+T303	Drug 10849 10857	панангин
+T304	Drug 10884 10891	кудесан
+T305	Drug 10915 10924	реамберин
+T306	Drug 10931 10939	рибоксин
+T307	Treatment 10915 10971	реамберин 70мл.+рибоксин 2 мл. со скоростью 20 мл\час №7
+A109	Effect T294 positive
+A110	Effect T295 positive
+A111	Effect T307 positive
+T308	Disease 11081 11093	Сальмонеллёз
+A112	Time T308 before
+T309	Disease 11095 11109	Гнойная ангина
+A113	Time T309 before
+T310	Treatment 11240 11404	дилатренд по 6,25 мг.*2 раза в день, капотен 15,625 мг*3 раза в день, дигоксин по 0,03 мг*1 раз в день, фуросемид 10 мг*2 раза в день, верошпирон 25 мг*1 раз в день
+A114	Effect T310 positive
+T311	Treatment 11406 11468	диакарб 0,125 мг*1 раз в сут, трентал по 50 мг* 3 раза в сутки
+A115	Effect T311 positive
+T312	Drug 11240 11249	дилатренд
+T313	Drug 11277 11284	капотен
+T314	Drug 11310 11318	дигоксин
+T315	Drug 11344 11353	фуросемид
+T316	Drug 11375 11385	верошпирон
+T317	Drug 11406 11413	диакарб
+T318	Drug 11436 11443	трентал
+T319	Symptom 11830 11853	миграция водителя ритма
+A116	SType T319 disorder
+T320	Body_location 11854 11901	из синусового узла в миокард правого предсердия
+R45	Symptom_bdyloc_rel Arg1:T320 Arg2:T319	
+T321	Symptom 11903 11960	Удлинение электрической систолы желудочков (QT) на 0,07 с
+A117	SType T321 disorder
+T322	Body_location 11935 11945	желудочков
+T323	Symptom 11962 11994	Нарушение процесса реполяризации
+A118	SType T323 disorder
+T324	Body_location 12016 12036	в грудных отведениях
+R46	Symptom_bdyloc_rel Arg1:T324 Arg2:T323	
+T325	Symptom 12082 12114	Нарушение процесса реполяризации
+A119	SType T325 disorder
+T326	Body_location 12115 12136	в миокарде желудочков
+R47	Symptom_bdyloc_rel Arg1:T326 Arg2:T325	
+T327	Body_location 11726 11729	МЖП
+T328	Symptom 11731 11759	7,5 мм с участками дискинеза
+A120	SType T328 disorder
+T329	Body_location 11792 11794	МК
+T330	Symptom 11796 11806	Регург. +1
+A121	SType T330 disorder
+R48	Symptom_bdyloc_rel Arg1:T329 Arg2:T330	
+T331	Body_location 11808 11810	ТК
+T332	Symptom 11812 11823	Регург. +/-
+A122	SType T332 disorder
+R49	Symptom_bdyloc_rel Arg1:T331 Arg2:T332	
+R50	Symptom_bdyloc_rel Arg1:T327 Arg2:T328	
+T333	Treatment 12169 12251	Дилатренд по 6,25 мг х2р/день 8.00,20.00, Капотен 15,625 мг х3р/д 7.00,15.00,22.00
+A123	Effect T333 positive
+T334	Treatment 12252 12303	С 26.11. Капотен заменён на Козаар 12,5 мгх2 р/день
+A124	Effect T334 positive
+T335	Treatment 12305 12434	Дигоксин 0,03 мг х 1 р/сут. 8.00, Фуросемид 10 мг х 2р/день, Верошпирон 25 мг х1р/день в 18.00, Трентал 50 мг х 3р/день после еды
+A125	Effect T335 positive
+T336	Treatment 12436 12510	Панангин 1 таб. х 2р/день, Предуктал 1т. х 2 р/день, Когитум 10 мл 2р/день
+A126	Effect T336 positive
+T337	Treatment 12551 12649	Дилатренд по 6, 25 мг 2 раза в день (в 8.00 и 20.00). Дигоксин по 0.03 мг. х 1 раз в сутки в 8.00о
+A127	Effect T337 positive
+T338	Treatment 12651 12812	Фуросемид 10 мг. х 2 р/день до 8.00, 13 ч до еды. Верошпирон 25мг х1р/д в 18.00. Трентал по 50 мг х 3раза в день(после еды). Панангин 1 т. х 2 р/день - постоянно
+A128	Effect T338 positive
+T339	Treatment 12814 12965	Предуктал 1/2таб (17,5мг) х2р/день. Козаар 12,5 мг х 2р/день. Магне В6 1таб х2р/день. Янтавит по ½ табл х 2 раза в день после еды 1-20 число ежемесячно
+A129	Effect T339 positive
+T340	Treatment 12967 13058	Хофитол по 1 таблетки х 3 раза в день за 20 минут до еды – 3 недели, затем 2 недели перерыв
+A130	Effect T340 positive
+T341	Treatment 13060 13152	Затем повторять курс, чередуя желчегонные препараты (хофитол, гепабене, фламин) – 3-4 месяца
+T342	Disease 13190 13236	острую внегоспитальную левостороннюю пневмонию
+A131	Time T342 before
+T343	Severity 13237 13253	тяжелого течения
+A132	Degree T343 hard
+R51	Severity_rel Arg1:T343 Arg2:T342	
+T344	Disease 13255 13287	левосторонний междолевой плеврит
+A133	Time T344 before
+T345	Disease 13289 13313	линейный ателектаз слева
+A134	Time T345 before
+T346	Treatment 13333 13382	цефипим, амикацин, цефатоксим, тиенам, ванкомицин
+A135	Effect T346 positive
+T347	Drug 13333 13340	цефипим
+T348	Drug 13342 13350	амикацин
+T349	Drug 13352 13362	цефатоксим
+T350	Drug 13364 13370	тиенам
+T351	Drug 13372 13382	ванкомицин
+T352	Drug 13113 13120	хофитол
+T353	Drug 13122 13130	гепабене
+T354	Drug 13132 13138	фламин
+T355	Drug 12967 12974	Хофитол
+T356	Drug 12814 12823	Предуктал
+T357	Drug 12850 12856	Козаар
+T358	Drug 12876 12884	Магне В6
+T359	Drug 12900 12907	Янтавит
+T360	Drug 12651 12660	Фуросемид
+T361	Drug 12701 12711	Верошпирон
+T362	Drug 12732 12739	Трентал
+T363	Drug 12776 12784	Панангин
+T364	Drug 12551 12560	Дилатренд
+T365	Drug 12605 12613	Дигоксин
+T366	Drug 12169 12178	Дилатренд
+T367	Drug 12211 12218	Капотен
+T368	Drug 12261 12268	Капотен
+T369	Drug 12280 12286	Козаар
+T370	Drug 12305 12313	Дигоксин
+T371	Drug 12339 12348	Фуросемид
+T372	Drug 12366 12376	Верошпирон
+T373	Drug 12401 12408	Трентал
+T374	Drug 12436 12444	Панангин
+T375	Drug 12463 12472	Предуктал
+T376	Drug 12489 12496	Когитум
+T377	Body_location 13639 13653	Кожные покровы
+T378	Body_location 13700 13718	Слизистые оболочки
+T379	Body_location 13752 13755	зев
+T380	Body_location 13778 13797	Подкожная клетчатка
+T381	Body_location 13845 13866	Лимфатическая система
+T382	Body_location 13896 13911	Костная система
+T383	Body_location 13964 13972	суставов
+T384	Body_location 13988 14002	Органы дыхания
+T385	Body_location 14166 14180	Область сердца
+T386	Body_location 14194 14233	Границы относительной сердечной тупости
+T387	Symptom 14415 14432	систолический шум
+A136	SType T387 disorder
+T388	Body_location 14433 14444	на верхушке
+T389	Body_location 14447 14456	в 5 точке
+R52	Symptom_bdyloc_rel Arg1:T388 Arg2:T387	
+R53	Symptom_bdyloc_rel Arg1:T389 Arg2:T387	
+T390	Body_location 14518 14523	Живот
+T391	Body_location 14567 14573	Печень
+T392	Body_location 14585 14610	из-под края рёберной дуги
+T393	Body_location 14812 14829	щитовидная железа
+T394	Body_location 14245 14252	3 ребро
+T395	Body_location 14261 14292	по правой парастернальной линии
+T396	Body_location 14300 14341	1 см влево от левой среднеключичной линии
+T397	Symptom 13678 13698	периорбитальные тени
+A137	SType T397 disorder
+T398	Body_location 13678 13693	периорбитальные
+R54	Symptom_bdyloc_rel Arg1:T398 Arg2:T397	
+T399	Symptom 13719 13725	чистые
+A138	SType T399 normal
+T400	Symptom 13756 13776	слегка гиперемирован
+A139	SType T400 normal
+T401	Symptom 13727 13734	влажные
+A140	SType T401 normal
+T402	Symptom 13654 13660	чистые
+A141	SType T402 normal
+T403	Symptom 13662 13676	бледно-розовые
+A142	SType T403 normal
+R55	Symptom_bdyloc_rel Arg1:T377 Arg2:T402	
+R56	Symptom_bdyloc_rel Arg1:T377 Arg2:T403	
+R57	Symptom_bdyloc_rel Arg1:T378 Arg2:T399	
+R58	Symptom_bdyloc_rel Arg1:T378 Arg2:T401	
+R59	Symptom_bdyloc_rel Arg1:T379 Arg2:T400	
+T404	Symptom 13798 13821	распределена равномерно
+A143	SType T404 normal
+R60	Symptom_bdyloc_rel Arg1:T380 Arg2:T404	
+T405	Symptom 13867 13892	без системного увеличения
+A144	SType T405 normal
+R61	Symptom_bdyloc_rel Arg1:T381 Arg2:T405	
+T406	Symptom 13913 13934	без видимой патологии
+A145	SType T406 normal
+R62	Symptom_bdyloc_rel Arg1:T382 Arg2:T406	
+T407	Symptom 14004 14021	Дыхание через нос
+A146	SType T407 normal
+T408	Symptom 13952 13963	подвижность
+A147	SType T408 normal
+R63	Symptom_bdyloc_rel Arg1:T383 Arg2:T408	
+T409	Symptom 14082 14117	Аускультативно дыхание везикулярное
+A148	SType T409 normal
+T410	Symptom 14119 14124	хрипы
+A149	Negation T410
+A150	SType T410 disorder
+T411	Body_location 14048 14059	над лёгкими
+T412	Symptom 14060 14080	ясный, лёгочный звук
+A151	SType T412 normal
+R64	Symptom_bdyloc_rel Arg1:T411 Arg2:T412	
+T413	Symptom 14615 14627	пальпируется
+A152	Negation T413
+A153	SType T413 disorder
+R65	Symptom_bdyloc_rel Arg1:T391 Arg2:T413	
+T414	Symptom 14692 14712	Дизурических явлений
+A154	Negation T414
+A155	SType T414 disorder
+T415	Symptom 14735 14755	менингеальных знаков
+A156	Negation T415
+A157	SType T415 disorder
+T416	Symptom 14524 14530	мягкий
+A158	SType T416 normal
+R66	Symptom_bdyloc_rel Arg1:T390 Arg2:T416	
+T417	Symptom 14532 14565	безболезненный доступен пальпации
+A159	SType T417 normal
+R67	Symptom_bdyloc_rel Arg1:T390 Arg2:T417	
+T418	Symptom 14184 14192	выбухает
+A160	Negation T418
+A161	SType T418 disorder
+R68	Symptom_bdyloc_rel Arg1:T385 Arg2:T418	
+T419	Symptom 14343 14365	Тоны сердца приглушены
+A162	SType T419 disorder
+T420	Symptom 14367 14377	аритмичные
+A163	SType T420 disorder
+T421	Body_location 14348 14354	сердца
+R69	Symptom_bdyloc_rel Arg1:T421 Arg2:T419	
+T422	Symptom 14650 14674	Мочеиспускание свободное
+A164	SType T422 normal
+T423	Symptom 14676 14690	безболезненное
+A165	SType T423 normal
+T424	Symptom 14833 14842	увеличена
+A166	Negation T424
+A167	SType T424 disorder
+R70	Symptom_bdyloc_rel Arg1:T393 Arg2:T424	
+T425	Body_location 10124 10126	ЛА
+T426	Body_location 10145 10147	ЛП
+T427	Body_location 10157 10159	ПП
+T428	Body_location 10169 10171	ПЖ
+T429	Body_location 10179 10181	ЛЖ
+T430	Body_location 9169 9171	ЛА
+T431	Body_location 8495 8497	ЛА
+T432	Body_location 8516 8518	ЛП
+T433	Body_location 8529 8531	ПП
+T434	Body_location 8550 8552	ЛЖ
+T435	Body_location 8599 8601	МК
+T436	Symptom 8602 8614	регургитация
+A168	SType T436 disorder
+R71	Symptom_bdyloc_rel Arg1:T435 Arg2:T436	
+T437	Body_location 8643 8645	ТК
+T438	Symptom 8646 8658	регургитация
+A169	SType T438 disorder
+T439	Severity 8659 8662	+/-
+A170	Degree T439 light
+R72	Symptom_bdyloc_rel Arg1:T437 Arg2:T438	
+T440	Severity 8615 8619	+1+2
+A171	Degree T440 light
+T441	Body_location 7430 7446	Правый желудочек
+T442	Body_location 7456 7471	левый желудочек
+T443	Body_location 7502 7504	ЛП
+T444	Body_location 7514 7516	ПП
+T445	Body_location 6888 6890	ЛЖ
+T446	Symptom 6336 6357	повышения температуры
+A172	Negation T446
+A173	SType T446 disorder
+T447	Symptom 6365 6388	изменением самочувствия
+A174	Negation T447
+A175	SType T447 disorder
+T448	Severity 5212 5214	+3
+A176	Degree T448 hard
+T449	Severity 4021 4025	+1+2
+A177	Degree T449 light
+T450	Severity 4008 4010	+3
+A178	Degree T450 medium

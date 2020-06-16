@@ -1,0 +1,244 @@
+T1	Treatment 3911 3954	Гипоаллергенная диета, элиминационный режим
+T2	Treatment 4021 4232	Продолжить СИТ с пыльцевыми аллергенами сублингвально по схеме (схема на руках). Поддерживающая доза аллергена в разведении 1:10  10 капель (0.5 мл) 1 раз в неделю до периода цветения (только в периоде ремиссии)
+T3	Drug 4032 4060	СИТ с пыльцевыми аллергенами
+T4	Symptom 4241 4256	приступах кашля
+A1	SType T4 disorder
+T5	Symptom 4258 4279	затрудненного дыхания
+A2	SType T5 disorder
+T6	Treatment 4293 4375	вентолин (сальбутамол или саламол) по 2 ингаляции через спейсер до 4-х раз в день.
+T7	Disease 4402 4405	ОРИ
+T8	Treatment 4406 4489	через небулайзер: беродуал 18 капель + пульмикорт 250 мкг 3 раза в день на 10 дней.
+T9	Drug 4424 4432	беродуал
+T10	Drug 4293 4301	вентолин
+T11	Drug 4303 4314	сальбутамол
+T12	Drug 4319 4326	саламол
+T13	Drug 4445 4455	пульмикорт
+T14	Symptom 4508 4531	малопродуктивного кашля
+A3	SType T14 disorder
+T15	Treatment 4541 4619	ингаляции лазолвана в растворе 3 мл 3 раза в день (не позднее 18.00) на 5 дней
+T16	Drug 4551 4560	лазолвана
+T17	Treatment 4624 4704	Ксизал (зиртек) 1 раз в день продолжить на время проведения основного курса СИТ.
+T18	Drug 4624 4630	Ксизал
+T19	Drug 4632 4638	зиртек
+T20	Treatment 4709 4791	Авамис – при появлении симптомов аллергического ринита - по 1 инст. 1 р/д 3 недели
+T21	Drug 4709 4715	Авамис
+T22	Disease 4742 4763	аллергического ринита
+T23	Treatment 3475 3557	физиомер 3 раза в день, ксизал по 1т. 1 раз в день, авамис по 1 инст. 1 раз в день
+T24	Treatment 3566 3693	курс СИТ с пыльцевыми аллергенами (райграс, тимофеевка, мятлик, костер, овсяница) сублингвальным методом по классической схеме.
+T25	Drug 3475 3483	физиомер
+T26	Drug 3499 3505	ксизал
+T27	Drug 3527 3533	авамис
+T28	Drug 3571 3599	СИТ с пыльцевыми аллергенами
+T29	Disease 2808 2839	Синдром вегетативной дисфункции
+T30	Treatment 3014 3132	онтрастный душ (чередование холодного и горячего по 10 секунд до 4-5 раз) с последующим растиранием жестким полотенцем
+T31	Treatment 3213 3278	Поливитамины с микроэлементами курсами по 1,5 мес. (весна, осень)
+T32	Symptom 3429 3451	полость рта санирована
+A4	SType T32 normal
+T33	Body_location 3429 3440	полость рта
+T34	Disease 3324 3348	Атопический конъюнктивит
+T35	Treatment 2858 2899	Режим дня и отдыха (ночной сон 8-9 часов)
+T36	Treatment 2904 2950	Прогулки на свежем воздухе до 1,5 часов в день
+T37	Treatment 2955 2974	Полноценное питание
+T38	Treatment 3137 3208	Ограничение просмотра TV и работы за ПК до 1,5 часов в сутки (суммарно)
+T39	Disease 2296 2317	Вульгарные бородавки.
+T40	Treatment 2344 2389	удаление бородавок методом электрокоагнуляции
+T41	Drug 2467 2488	раствором марганцовки
+T42	Treatment 2493 2596	Не мочить 3 дня! 2 раза в день в течение 5 дней тушировать сильным раствором марганцовки или фукарцином
+T43	Drug 2560 2581	раствором марганцовки
+T44	Drug 2586 2596	фукарцином
+T45	Disease 1869 1904	Аллергический, персистирующий ринит
+T46	Disease 1906 1937	Искривление носовой перегородки
+T47	Body_location 1918 1937	носовой перегородки
+R1	Body_location_rel Arg1:T47 Arg2:T46	
+T48	Treatment 1978 2133	Ежедневно орошать полость носа Физиомер (с 2-х нед. и старше) (или Аквалор софт, или Маример, или Аква-марис) х 3-4 раза в день (тщательное отсмаркивание).
+T49	Drug 2009 2017	Физиомер
+T50	Body_location 1996 2008	полость носа
+T51	Drug 2045 2057	Аквалор софт
+T52	Drug 2063 2070	Маример
+T53	Drug 2076 2086	Аква-марис
+T54	Body_location 31 54	органов брюшной полости
+T55	Body_location 56 70	желчный пузырь
+T56	Body_location 153 159	Печень
+T57	Body_location 253 266	Воротная вена
+T58	Body_location 556 562	сердца
+T59	Body_location 564 581	Митральный клапан
+T60	Body_location 636 641	Аорта
+T61	Body_location 702 718	восходящей аорты
+T62	Body_location 726 743	Аортальный клапан
+T63	Body_location 746 766	3-створчатый створки
+T64	Body_location 813 835	Трикуспидальный клапан
+T65	Body_location 903 919	Легочная артерия
+T66	Body_location 998 1013	Легочный клапан
+T67	Body_location 1136 1153	Правое предсердие
+T69	Body_location 1308 1335	Межжелудочковая перегородка
+T70	Body_location 1427 1441	Полость сердца
+T71	Body_location 1561 1567	сердца
+T72	Body_location 273 293	Поджелудочная железа
+T73	Body_location 347 356	Селезенка
+T74	Body_location 429 436	Желудок
+T75	Body_location 468 488	12-ти перстная кишка
+T76	Symptom 1640 1654	Ритм синусовый
+A5	SType T76 normal
+T77	Symptom 1656 1674	Легкая брадикардия
+A6	SType T77 disorder
+T78	Symptom 1692 1752	Повышение электрической активности миокарда левого желудочка
+A7	SType T78 disorder
+T79	Body_location 1727 1752	миокарда левого желудочка
+T80	Symptom 1754 1795	Неполная блокада правой ножки пучка Гиса.
+A8	SType T80 disorder
+T81	Symptom 1676 1691	Легкая аритмия.
+A9	SType T81 normal
+T82	Symptom 1607 1638	Положение ЭОС сердца нормальное
+A10	SType T82 normal
+T83	Symptom 1445 1454	расширены
+A11	Negation T83
+T84	Symptom 1466 1474	утолщены
+A12	Negation T84
+T85	Symptom 1488 1496	интактны
+A13	SType T85 normal
+T86	Body_location 1498 1505	клапаны
+T87	Body_location 1508 1522	крупные сосуды
+T88	Symptom 1526 1534	изменены
+A14	Negation T88
+T89	Symptom 924 933	расширена
+A15	Negation T89
+T90	Symptom 966 974	изменены
+A16	Negation T90
+T91	Body_location 935 962	ствол, правая и левая ветви
+T92	Body_location 1015 1022	створки
+T93	Symptom 1024 1094	гемодинамика не изменены, регургитация физиологическая град 3 мм рт ст
+A17	SType T93 normal
+T94	Body_location 1097 1113	Левое предсердие
+T95	Symptom 1117 1126	расширено
+A18	Negation T95
+T96	Symptom 1158 1167	расширено
+A19	Negation T96
+T97	Symptom 1200 1209	расширено
+A20	Negation T97
+T98	Body_location 1216 1231	Левый желудочек
+T99	Symptom 1345 1353	утолщена
+A21	Negation T99
+T100	Symptom 1355 1363	интактна
+A22	SType T100 normal
+T101	Body_location 1365 1395	задняя стенки левого желудочка
+T102	Symptom 1405 1413	утолщена
+A23	Negation T102
+T103	Symptom 1577 1594	Данных за ВПС нет
+A24	SType T103 normal
+T104	Symptom 1536 1560	функциональные параметры
+A25	SType T104 normal
+T105	Body_location 1476 1487	перегородки
+T106	Body_location 1456 1462	стенки
+T108	Symptom 583 616	створки, гемодинамика не изменены
+A26	SType T108 disorder
+T109	Body_location 657 680	восходящая часть и дуга
+T110	Symptom 657 680;684 692	восходящая часть и дуга изменены
+A27	Negation T110
+T111	Symptom 636 655	Аорта: не расширена
+T112	Symptom 746 781;785 793	3-створчатый створки и гемодинамика изменены
+A29	SType T112 disorder
+T113	Symptom 872 900	физиологическая регургитация
+A30	SType T113 normal
+T114	Symptom 71 81	нормальный
+A31	SType T114 normal
+T115	Symptom 160 209	размер: средний ЛД 75мм 1-й сегмент 16мм ПД 145мм
+A32	SType T115 normal
+T116	Symptom 294 304	нормальная
+A33	SType T116 normal
+T117	Symptom 437 454	стенки нормальные
+A34	SType T117 normal
+T118	Symptom 491 508	стенки нормальные
+A35	SType T118 normal
+T119	Symptom 357 367	нормальная
+A36	SType T119 normal
+T68	Body_location 1179 1195	Правый желудочек
+T120	Symptom 1943 1962	затруднения дыхания
+A37	Negation T120
+A38	SType T120 disorder
+T121	Disease 2206 2235	уро-андрологической патологии
+A39	Negation T121
+T122	Disease 1663 1674	брадикардия
+T123	Disease 1683 1690	аритмия
+T124	Disease 2353 2362	бородавок
+T125	Drug 3213 3225	Поливитамины
+R2	Symptom_bdyloc_rel Arg1:T79 Arg2:T78	
+R3	Symptom_bdyloc_rel Arg1:T55 Arg2:T114	
+R4	Symptom_bdyloc_rel Arg1:T56 Arg2:T115	
+R5	Symptom_bdyloc_rel Arg1:T72 Arg2:T116	
+R6	Symptom_bdyloc_rel Arg1:T73 Arg2:T119	
+R7	Symptom_bdyloc_rel Arg1:T74 Arg2:T117	
+R8	Symptom_bdyloc_rel Arg1:T75 Arg2:T118	
+R10	Symptom_bdyloc_rel Arg1:T60 Arg2:T111	
+R11	Symptom_bdyloc_rel Arg1:T109 Arg2:T110	
+R12	Symptom_bdyloc_rel Arg1:T63 Arg2:T112	
+R13	Symptom_bdyloc_rel Arg1:T64 Arg2:T113	
+R14	Symptom_bdyloc_rel Arg1:T65 Arg2:T89	
+R15	Symptom_bdyloc_rel Arg1:T91 Arg2:T90	
+R16	Symptom_bdyloc_rel Arg1:T92 Arg2:T93	
+R17	Symptom_bdyloc_rel Arg1:T94 Arg2:T95	
+R18	Symptom_bdyloc_rel Arg1:T67 Arg2:T96	
+R19	Symptom_bdyloc_rel Arg1:T68 Arg2:T97	
+R20	Symptom_bdyloc_rel Arg1:T69 Arg2:T99	
+R21	Symptom_bdyloc_rel Arg1:T69 Arg2:T100	
+R22	Symptom_bdyloc_rel Arg1:T101 Arg2:T102	
+R23	Symptom_bdyloc_rel Arg1:T70 Arg2:T83	
+R24	Symptom_bdyloc_rel Arg1:T106 Arg2:T84	
+R25	Symptom_bdyloc_rel Arg1:T105 Arg2:T85	
+R26	Symptom_bdyloc_rel Arg1:T86 Arg2:T88	
+R27	Symptom_bdyloc_rel Arg1:T87 Arg2:T88	
+R28	Symptom_bdyloc_rel Arg1:T71 Arg2:T104	
+T126	Symptom 618 630	регургитация
+A41	Negation T126
+A42	SType T126 disorder
+R29	Symptom_bdyloc_rel Arg1:T59 Arg2:T108	
+R30	Symptom_bdyloc_rel Arg1:T59 Arg2:T126	
+A43	SType T111 normal
+A44	SType T110 disorder
+T127	Symptom 694 723	диаметр восходящей аорты 25мм
+R31	Symptom_bdyloc_rel Arg1:T59 Arg2:T111	
+R32	Symptom_bdyloc_rel Arg1:T59 Arg2:T110	
+R33	Symptom_bdyloc_rel Arg1:T59 Arg2:T127	
+A45	Negation T112
+T128	Symptom 795 807	регургитация
+A46	Negation T128
+A47	SType T128 disorder
+R34	Symptom_bdyloc_rel Arg1:T62 Arg2:T112	
+R35	Symptom_bdyloc_rel Arg1:T62 Arg2:T128	
+T129	Symptom 837 858;862 870	створки, гемодинамика изменены
+A48	Negation T129
+A49	SType T129 disorder
+R36	Symptom_bdyloc_rel Arg1:T64 Arg2:T129	
+T107	Symptom 83 94	не увеличен
+A28	SType T107 normal
+T130	Symptom 96 115	стенки  не изменены
+T131	Symptom 117 133	форма правильная
+A40	SType T131 normal
+T132	Symptom 135 151	просвет свободен
+A50	SType T132 normal
+A51	SType T130 normal
+R9	Symptom_bdyloc_rel Arg1:T55 Arg2:T107	
+R37	Symptom_bdyloc_rel Arg1:T55 Arg2:T130	
+R38	Symptom_bdyloc_rel Arg1:T55 Arg2:T131	
+R39	Symptom_bdyloc_rel Arg1:T55 Arg2:T132	
+T133	Symptom 211 230	паренхима однородна
+A52	SType T133 normal
+T134	Symptom 232 251	средней эхогенности
+R40	Symptom_bdyloc_rel Arg1:T56 Arg2:T133	
+R41	Symptom_bdyloc_rel Arg1:T56 Arg2:T134	
+T135	Symptom 306 324	средний 15х10х19мм
+T136	Symptom 326 345	эхогенность средняя
+R42	Symptom_bdyloc_rel Arg1:T72 Arg2:T135	
+R43	Symptom_bdyloc_rel Arg1:T72 Arg2:T136	
+T137	Symptom 368 384	размер 125х65 мм
+T138	Symptom 386 406	паренхима однородная
+A53	SType T138 normal
+T139	Symptom 408 427	средней эхогенности
+R44	Symptom_bdyloc_rel Arg1:T73 Arg2:T137	
+R45	Symptom_bdyloc_rel Arg1:T73 Arg2:T138	
+R46	Symptom_bdyloc_rel Arg1:T73 Arg2:T139	
+T140	Symptom 456 467	секрет есть
+A54	SType T140 normal
+R47	Symptom_bdyloc_rel Arg1:T74 Arg2:T140	
+T141	Symptom 510 521	секрета нет
+A55	SType T141 normal
+R48	Symptom_bdyloc_rel Arg1:T75 Arg2:T141	

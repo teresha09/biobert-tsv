@@ -1,0 +1,67 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 77	легкое персистирующее течение
+A1	Degree T2 light
+T3	Course 79 87	ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 90 98	Аденоиды
+T5	Severity 99 103	2 ст
+A3	Degree T5 medium
+R3	Severity_rel Arg1:T5 Arg2:T4	
+T6	Disease 105 123	Вазомоторный ринит
+T7	Disease 125 156	Искривление носовой перегородки
+T8	Body_location 137 156	носовой перегородки
+T9	Disease 158 201	Парасомнии на резидуально-органическом фоне
+T10	Disease 203 241	Особенности эмоционально-волевой сферы
+T11	Disease 243 273	Хронический ситуационный запор
+T12	Disease 275 285	Сфинктерит
+T13	Disease 287 301	Панкреатопатия
+T14	Symptom 369 392	малопродуктивного кашля
+A4	SType T14 disorder
+T15	Symptom 404 427	бронхиальной обструкции
+A5	SType T15 disorder
+T16	Disease 436 440	ОРИ.
+T17	Disease 843 865	атопического дерматита
+T18	Symptom 935 944	высыпания
+A6	SType T18 disorder
+T19	Body_location 945 952	на коже
+T20	Disease 1117 1131	острый бронхит
+T21	Disease 1184 1203	аллергический ринит
+T22	Disease 1229 1232	ОРИ
+T23	Disease 1240 1263	обструктивного бронхита
+T24	Symptom 1266 1268	ДН
+T25	Severity 1269 1275	1-2 ст
+A7	Degree T25 light
+T26	Treatment 1277 1340	В терапии пульмикорт (750 мкг/сут.) и беродуал через небулайзер
+A8	Effect T26 positive
+T27	Drug 1287 1297	пульмикорт
+T28	Drug 1315 1323	беродуал
+T29	Disease 1420 1428	поллиноз
+A9	NotPatient T29
+T30	Disease 1449 1467	бронхиальная астма
+A10	NotPatient T30
+T31	Body_location 1520 1534	Кожные покровы
+T32	Symptom 1559 1570	Зев спокоен
+A11	SType T32 normal
+T33	Body_location 1612 1618	лёгких
+T34	Symptom 1619 1639	дыхание везикулярное
+A12	SType T34 normal
+T35	Symptom 1666 1691	единичные свистящие хрипы
+A13	SType T35 disorder
+T36	Symptom 1693 1726	Сердечные тоны звучные, ритмичные
+A14	SType T36 normal
+T37	Symptom 1779 1786	дизурии
+A15	Negation T37
+T38	Symptom 1792 1820	Стул регулярный, оформленный
+A16	SType T38 normal
+T39	Symptom 1822 1842	Менингеальных знаков
+A17	Negation T39
+T40	Symptom 1535 1557	чистые, бледно-розовые
+A18	SType T40 normal
+T41	Disease 1032 1035	ОРИ
+T42	Symptom 1054 1088	длительным малопродуктивным кашлем
+A19	SType T42 disorder
+R4	Body_location_rel Arg1:T8 Arg2:T7	
+R5	Symptom_bdyloc_rel Arg1:T19 Arg2:T18	
+R6	Severity_rel Arg1:T25 Arg2:T23	

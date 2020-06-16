@@ -1,0 +1,198 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 79	легкое интермиттирующее течение
+A1	Degree T2 light
+R1	Severity_rel Arg1:T2 Arg2:T1	
+T3	Disease 107 134	сезонная бронхиальная астма
+T4	Disease 136 164	риноконъюнктивальный синдром
+T5	Course 166 174	ремиссия
+A2	CType T5 improved
+R2	Course_rel Arg1:T5 Arg2:T4	
+R3	Course_rel Arg1:T5 Arg2:T3	
+T6	Disease 176 211	Аллергический ринит, персистирующий
+T7	Course 213 221	ремиссия
+A3	CType T7 improved
+R4	Course_rel Arg1:T7 Arg2:T6	
+T8	Disease 223 254	Искривление носовой перегородки
+T9	Body_location 235 254	носовой перегородки
+T10	Disease 256 276	Вульгарные бородавки
+T11	Symptom 348 354	ринита
+A4	SType T11 disorder
+T12	Symptom 356 369	конъюнктивита
+A5	SType T12 disorder
+T13	Symptom 372 395	малопродуктивный кашель
+A6	SType T13 disorder
+T14	Symptom 422 445	бронхиальной обструкции
+A7	SType T14 disorder
+T15	Disease 454 457	ОРИ
+T16	Disease 784 797	ветряная оспа
+T17	Disease 867 889	атопического дерматита
+T18	Treatment 891 926	В терапии антигистаминные препараты
+A8	Effect T18 positive
+T19	Disease 962 983	обструктивный бронхит
+T20	Disease 992 995	ОРИ
+T21	Treatment 1019 1049	В терапии эуфиллин в таблетках
+A9	Effect T21 positive
+T22	Drug 1029 1037	эуфиллин
+T23	Disease 1090 1112	обструктивные бронхиты
+T24	Disease 1160 1163	ОРИ
+T25	Treatment 1179 1224	приеме эуфиллина и антигистаминных препаратов
+A10	Effect T25 positive
+T26	Disease 1277 1280	ОРИ
+T27	Symptom 1290 1304	приступ удушья
+A11	SType T27 disorder
+T28	Disease 1401 1438	бронхиальная астма, атопической формы
+T29	Severity 1439 1462	средней степени тяжести
+A12	Degree T29 medium
+T30	Treatment 1464 1518	В качестве базисной терапии назначен интал на 3 месяца
+A13	Effect T30 unknown
+T31	Drug 1501 1506	интал
+T32	Symptom 1638 1662	эпизоды бронхообструкции
+A14	SType T32 disorder
+T33	Disease 1697 1719	респираторных инфекций
+T34	Treatment 1734 1754	ингаляцией вентолина
+A15	Effect T34 positive
+T35	Disease 1816 1819	ОРИ
+T36	Symptom 1830 1844	приступ удушья
+A16	SType T36 disorder
+T37	Treatment 1912 1971	небулайзерной терапией и однократным в/в ведением эуфиллина
+A17	Effect T37 positive
+T38	Drug 1962 1971	эуфиллина
+T39	Treatment 2046 2117	назначен альдецин по 2 ингаляции 3 раза в день, затем интал на 3 месяца
+A18	Effect T39 positive
+T40	Drug 2055 2063	альдецин
+T41	Drug 2100 2105	интал
+T42	Symptom 2196 2212	чихания по утрам
+A19	SType T42 disorder
+T43	Symptom 2214 2237	малопродуктивный кашель
+A20	SType T43 disorder
+T44	Symptom 2248 2254	ринита
+A21	SType T44 disorder
+T45	Treatment 2267 2301	приемом антигистаминных препаратов
+A22	Effect T45 positive
+T46	Disease 2388 2425	бронхиальная астма, атопическая форма
+T47	Severity 2427 2456	легкое персистирующее течение
+A23	Degree T47 light
+T48	Disease 2458 2477	аллергический ринит
+T49	Disease 2479 2510	синдром вегетативной дисфункции
+R5	Severity_rel Arg1:T47 Arg2:T46	
+T50	Disease 2512 2543	искривление носовой перегородки
+T51	Body_location 2524 2543	носовой перегородки
+T52	Treatment 2630 2699	базисной терапии получал серетид мультидиск 50/100 мкг 2 раза в сутки
+T53	Drug 2655 2673	серетид мультидиск
+T54	Treatment 2710 2758	получил три курса АСИТ с аллергенами пыльцы трав
+A24	Effect T54 positive
+T55	Disease 3047 3084	Бронхиальная астма, атопическая форма
+T56	Severity 3086 3117	легкое интермиттирующее течение
+A25	Degree T56 light
+R6	Severity_rel Arg1:T56 Arg2:T55	
+T57	Symptom 3145 3172	сезонная бронхиальная астма
+A26	SType T57 disorder
+T58	Disease 3135 3143	Поллиноз
+T59	Symptom 3174 3202	риноконъюнктивальный синдром
+A27	SType T59 disorder
+T60	Course 3204 3212	ремиссия
+A28	CType T60 improved
+R7	Course_rel Arg1:T60 Arg2:T58	
+T61	Disease 3214 3233	Аллергический ринит
+T62	Course 3251 3259	ремиссия
+A29	CType T62 improved
+R8	Course_rel Arg1:T62 Arg2:T61	
+T63	Disease 3261 3293	Искривление носовой перегородки.
+T64	Body_location 3273 3292	носовой перегородки
+T65	Disease 3294 3314	Вульгарные бородавки
+T66	Treatment 3316 3409	В терапии: физиомер 3 раза в день, ксизал по 1т. 1 раз в день, авамис по 1 инст. 1 раз в день
+T67	Treatment 3412 3463	Получил четвертый курс СИТ с пыльцевыми аллергенами
+T68	Drug 3327 3335	физиомер
+T69	Drug 3351 3357	ксизал
+T70	Drug 3379 3385	авамис
+A30	Effect T67 positive
+T71	Symptom 3647 3653	ринита
+A31	SType T71 disorder
+T72	Symptom 3655 3668	конъюнктивита
+A32	SType T72 disorder
+T73	Symptom 3670 3693	малопродуктивный кашель
+A33	SType T73 disorder
+T74	Disease 3758 3764	ангину
+T75	Treatment 3766 3807	получил 2 курса антибактериальной терапии
+A34	Effect T75 positive
+T76	Disease 3830 3853	хронического тонзиллита
+T77	Disease 3916 3920	отит
+T78	Treatment 3922 3997	В терапии местные симптоматические средства, курс антибактериальной терапии
+A35	Effect T78 positive
+T79	Symptom 4057 4087	риноконъюнктивального синдрома
+A36	SType T79 disorder
+T80	Symptom 4089 4095	кашель
+A37	SType T80 disorder
+T81	Disease 4194 4210	пищевая аллергия
+A38	NotPatient T81
+T82	Symptom 4218 4227	высыпаний
+A39	SType T82 disorder
+T83	Body_location 4228 4235	на коже
+T84	Body_location 4349 4363	кожные покровы
+T85	Symptom 4364 4378	бледно-розовые
+A40	SType T85 normal
+T86	Symptom 4380 4389	суховатые
+T87	Symptom 4402 4437	единичные элементы с гиперкератозом
+A41	SType T87 disorder
+T88	Symptom 4439 4449	Зев рыхлый
+A42	SType T88 disorder
+T89	Symptom 4451 4487	Носовое дыхание несколько затруднено
+A43	SType T89 disorder
+T90	Body_location 4489 4497	В легких
+T91	Symptom 4498 4518	дыхание везикулярное
+A44	SType T91 normal
+T92	Symptom 4520 4526	хрипов
+A45	Negation T92
+T93	Symptom 4532 4563	Сердечные топы ясные, ритмичные
+A46	SType T93 normal
+T94	Body_location 4565 4570	Живот
+T95	Symptom 4571 4577	мягкий
+A47	SType T95 normal
+T96	Symptom 4593 4607	безболезненный
+A48	SType T96 normal
+T97	Symptom 4609 4637	Стул ежедневный, оформленный
+A49	SType T97 normal
+T98	Symptom 4639 4659	Менингеальных знаков
+A50	Negation T98
+R9	Body_location_rel Arg1:T9 Arg2:T8	
+R10	Body_location_rel Arg1:T51 Arg2:T50	
+R11	Body_location_rel Arg1:T64 Arg2:T63	
+R12	Severity_rel Arg1:T29 Arg2:T28	
+T99	Disease 97 105	Поллиноз
+T100	Disease 3145 3172	сезонная бронхиальная астма
+T101	Disease 3174 3202	риноконъюнктивальный синдром
+T102	Disease 348 354	ринита
+T103	Disease 356 369	конъюнктивита
+T104	Disease 3647 3653	ринита
+T105	Disease 3655 3668	конъюнктивита
+T106	Course 3819 3829	обострения
+A51	CType T106 worsened
+R13	Course_rel Arg1:T106 Arg2:T76	
+T107	Treatment 3854 3882	получал терапию в стационаре
+T108	Disease 4057 4087	риноконъюнктивального синдрома
+A52	Conditional T108
+R14	Symptom_bdyloc_rel Arg1:T83 Arg2:T82	
+A53	NotPatient T82
+R15	Body_location_rel Arg1:T83 Arg2:T81	
+R16	Symptom_bdyloc_rel Arg1:T84 Arg2:T85	
+R17	Symptom_bdyloc_rel Arg1:T84 Arg2:T86	
+R18	Symptom_bdyloc_rel Arg1:T90 Arg2:T91	
+R19	Symptom_bdyloc_rel Arg1:T90 Arg2:T92	
+R20	Symptom_bdyloc_rel Arg1:T94 Arg2:T95	
+R21	Symptom_bdyloc_rel Arg1:T94 Arg2:T96	
+A54	Conditional T104
+A55	Conditional T105
+A56	Conditional T81
+T109	Disease 2248 2254	ринита
+T110	Disease 1290 1304	приступ удушья
+T111	Disease 1830 1844	приступ удушья
+R22	Course_rel Arg1:T60 Arg2:T101	
+R23	Course_rel Arg1:T60 Arg2:T100	
+T112	Drug 1745 1754	вентолина
+T113	Drug 2735 2758	аллергенами пыльцы трав
+T114	Drug 3441 3463	пыльцевыми аллергенами
+T115	Severity 3235 3249	персистирующий
+A57	Degree T115 medium
+R24	Severity_rel Arg1:T115 Arg2:T61	
+A58	SType T86 disorder
+A59	SType T92 disorder

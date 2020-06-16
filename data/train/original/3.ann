@@ -1,0 +1,88 @@
+T2	Disease 105 149	Атопический дерматит, распространенная форма
+T1	Disease 186 202	Пищевая аллергия
+T3	Disease 204 232	Дисфункция билиарного тракта
+T4	Body_location 215 232	билиарного тракта
+T5	Disease 269 309	Вторичные изменения поджелудочной железы
+T6	Body_location 289 309	поджелудочной железы
+T7	Body_location 382 389	на коже
+T8	Symptom 372 381	высыпания
+T9	Disease 630 652	атопического дерматита
+T10	Drug 827 832	зодак
+T11	Drug 834 839	креон
+T12	Drug 841 846	мезим
+T13	Drug 879 887	скин-кап
+T14	Drug 947 954	эмолиум
+T15	Body_location 929 944	кожных покровов
+T16	Disease 987 998	отек Квинке
+T17	Disease 1040 1052	отека Квинке
+T18	Disease 1130 1146	Пищевая аллергия
+T19	Symptom 1353 1362	высыпания
+T20	Body_location 1601 1631	На кончиках пальцев кистей рук
+T21	Symptom 1643 1652	шелушение
+T22	Symptom 1654 1665	лихенизация
+T23	Symptom 1667 1683	единичные папулы
+T24	Symptom 1696 1710	ониходистрофия
+T25	Body_location 1712 1738	Видимые слизистые оболочки
+T26	Symptom 1720 1754	слизистые оболочки розовые, чистые
+T27	Body_location 1756 1759	Зев
+T28	Symptom 1756 1767	Зев спокоен
+T29	Body_location 1800 1808	В лёгких
+T30	Symptom 1809 1829	дыхание везикулярное
+T31	Symptom 1831 1837	хрипов
+A3	Negation T31
+T32	Body_location 1856 1870	Область сердца
+T33	Symptom 1894 1925	Сердечные тоны ясные, ритмичные
+T34	Disease 1406 1412	атопии
+T35	Symptom 737 746	высыпаний
+T37	Symptom 1972 1992	Менингеальных знаков
+A5	Negation T37
+T39	Body_location 1769 1776	Носовое
+T40	Symptom 1769 1798	Носовое дыхание не затруднено
+T41	Severity 151 172	среднетяжелое течение
+A7	Degree T41 medium
+R1	Severity_rel Arg1:T41 Arg2:T2	
+T42	Course 174 184	обострение
+A8	CType T42 worsened
+R2	Course_rel Arg1:T42 Arg2:T2	
+T43	Disease 241 267	деформации желчного пузыря
+T44	Body_location 252 267	желчного пузыря
+R3	Body_location_rel Arg1:T44 Arg2:T43	
+R4	Symptom_bdyloc_rel Arg1:T7 Arg2:T8	
+T45	Treatment 578 589	Прививалась
+T36	Treatment 817 846	Лечилась: зодак, креон, мезим
+A4	Effect T36 no-effect
+T46	Treatment 868 887	применяли  скин-кап
+A9	Effect T46 positive
+T47	Treatment 947 954	эмолиум
+A10	Effect T47 unknown
+T48	Treatment 1431 1451	Элиминационный режим
+R5	Symptom_bdyloc_rel Arg1:T20 Arg2:T21	
+R6	Symptom_bdyloc_rel Arg1:T20 Arg2:T22	
+R7	Symptom_bdyloc_rel Arg1:T20 Arg2:T23	
+R8	Symptom_bdyloc_rel Arg1:T29 Arg2:T30	
+R9	Symptom_bdyloc_rel Arg1:T29 Arg2:T31	
+T49	Symptom 1959 1966	Дизурии
+A2	Negation T49
+T50	Symptom 1942 1957	Стул регулярный
+T51	Symptom 1884 1892	изменена
+A6	Negation T51
+R10	Symptom_bdyloc_rel Arg1:T32 Arg2:T51	
+A11	SType T33 normal
+A12	SType T50 normal
+A13	SType T40 normal
+A14	SType T28 normal
+R11	Symptom_bdyloc_rel Arg1:T25 Arg2:T26	
+A1	SType T26 normal
+A15	SType T21 disorder
+A16	SType T22 disorder
+A17	SType T23 disorder
+A18	SType T24 disorder
+A19	SType T19 disorder
+A20	SType T35 disorder
+A21	SType T8 disorder
+R12	Body_location_rel Arg1:T4 Arg2:T3	
+R13	Body_location_rel Arg1:T6 Arg2:T5	
+T38	Symptom 802 806	сыпи
+A22	SType T38 disorder
+A23	SType T30 normal
+A24	SType T31 disorder

@@ -1,0 +1,73 @@
+T1	Disease 9 25	Пищевая аллергия
+T2	Disease 27 48	Гипертрофия аденоидов
+T3	Severity 49 60	1-2 степени
+A1	Degree T3 medium
+R1	Severity_rel Arg1:T3 Arg2:T2	
+T4	Symptom 121 149	затруднение носового дыхания
+T5	Symptom 151 174	малопродуктивный кашель
+A2	SType T4 disorder
+A3	SType T5 disorder
+T6	Symptom 353 370	обвитием пуповины
+A4	SType T6 disorder
+T7	Symptom 248 266	угрозой прерывания
+A5	SType T7 disorder
+T8	Disease 388 397	пневмония
+T9	Treatment 399 431	получал интенсивную терапию, ИВЛ
+T10	Disease 559 575	Пищевая аллергия
+T11	Disease 688 711	обструктивных бронхитов
+T12	Disease 725 739	ларинготрахеит
+T13	Disease 676 679	ОРИ
+T14	Treatment 751 776	симптоматические средства
+A6	Effect T14 positive
+T15	Treatment 818 872	кленбутерол, аскорил, ингаляции атровента, антибиотики
+A7	Effect T15 positive
+T16	Drug 818 829	кленбутерол
+T17	Drug 831 838	аскорил
+T18	Drug 850 859	атровента
+T19	Drug 861 871	антибиотик
+T20	Disease 916 938	респираторной инфекции
+T21	Disease 939 953	острый бронхит
+T22	Disease 955 959	отит
+T23	Treatment 961 1026	В терапии местные средства, симптоматическое лечение, антибиотики
+A8	Effect T23 positive
+T24	Disease 1096 1137	правостороннюю полисегментарную пневмонию
+T25	Disease 1139 1153	ларинготрахеит
+T26	Treatment 1245 1286	Получил курс антибактериальных препаратов
+A9	Effect T26 positive
+T27	Disease 1428 1436	поллиноз
+A10	NotPatient T27
+T28	Symptom 640 649	высыпания
+A11	SType T28 disorder
+T29	Body_location 650 657	на коже
+T30	Body_location 1527 1541	Кожные покровы
+T31	Symptom 1542 1564	чистые, бледно-розовые
+A12	SType T31 normal
+T32	Body_location 1566 1569	Зев
+T33	Symptom 1570 1576	рыхлый
+A13	SType T33 disorder
+T34	Symptom 1578 1614	Носовое дыхание несколько затруднено
+T35	Body_location 1616 1624	В лёгких
+T36	Symptom 1625 1645	дыхание везикулярное
+A14	SType T36 normal
+T37	Symptom 1647 1653	хрипов
+A15	Negation T37
+T38	Symptom 1659 1692	Сердечные тоны звучные, ритмичные
+A16	SType T38 normal
+T39	Symptom 1745 1752	дизурии
+A17	Negation T39
+T40	Symptom 1758 1762	Стул
+A18	SType T40 normal
+T41	Symptom 1788 1808	Менингеальных знаков
+A19	Negation T41
+R2	Symptom_bdyloc_rel Arg1:T29 Arg2:T28	
+T42	Disease 1208 1231	микоплазменной инфекции
+A20	Negation T42
+T43	Disease 1195 1206;1223 1231	хламидийной инфекции
+A21	Negation T43
+T44	Disease 1438 1466	риноконъюнктивальный синдром
+A22	NotPatient T44
+R3	Symptom_bdyloc_rel Arg1:T30 Arg2:T31	
+R4	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+R5	Symptom_bdyloc_rel Arg1:T35 Arg2:T36	
+R6	Symptom_bdyloc_rel Arg1:T35 Arg2:T37	
+A23	SType T34 disorder

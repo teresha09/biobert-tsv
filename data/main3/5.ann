@@ -1,0 +1,347 @@
+T1	Treatment 21124 21183	Козаар по 25 мг х 2 раза в сутки в 8.00 и 20.00 – постоянно
+T2	Disease 21 95	Неклассифицированная кардиомиопатия: некомпактный миокард левого желудочка
+A1	Time T2 now
+T3	Body_location 71 95	миокард левого желудочка
+T4	Disease 97 152	Недостаточность митрального и трикуспидального клапанов
+T5	Body_location 113 152	митрального и трикуспидального клапанов
+T6	Disease 154 192	Полная блокада правой ножки пучка Гиса
+A2	Time T4 now
+A3	Time T6 now
+T7	Body_location 169 192	правой ножки пучка Гиса
+T8	Disease 194 196	НК
+A4	Time T8 now
+T9	Severity 197 204	1-2А ст
+A5	Degree T9 light
+R1	Severity_rel Arg1:T9 Arg2:T8	
+R2	Body_location_rel Arg1:T7 Arg2:T6	
+R3	Body_location_rel Arg1:T5 Arg2:T4	
+R4	Body_location_rel Arg1:T3 Arg2:T2	
+T10	Disease 206 237	Синдром вегетативной дисфункции
+A6	Time T10 now
+T11	Disease 249 323	Неклассифицированная кардиомиопатия: некомпактный миокард левого желудочка
+A7	Time T11 now
+T12	Body_location 299 323	миокард левого желудочка
+R5	Body_location_rel Arg1:T12 Arg2:T11	
+T13	Disease 325 380	Недостаточность митрального и трикуспидального клапанов
+A8	Time T13 now
+T14	Body_location 341 380	митрального и трикуспидального клапанов
+R6	Body_location_rel Arg1:T14 Arg2:T13	
+T15	Disease 382 420	Полная блокада правой ножки пучка Гиса
+A9	Time T15 now
+T16	Body_location 397 420	правой ножки пучка Гиса
+R7	Body_location_rel Arg1:T16 Arg2:T15	
+T17	Disease 422 424	НК
+T18	Severity 425 432	1-2А ст
+A10	Degree T18 light
+R8	Severity_rel Arg1:T18 Arg2:T17	
+T19	Disease 434 465	Синдром вегетативной дисфункции
+A11	Time T19 now
+T20	Disease 482 495	Acne vulgaris
+A12	Time T20 now
+T21	Symptom 522 545	повышенная утомляемость
+A13	SType T21 disorder
+T22	Symptom 547 557	пресинкопэ
+A14	SType T22 disorder
+T23	Symptom 644 662	с угрозой выкидыша
+A15	SType T23 disorder
+T24	Disease 718 742	гидронефроза левой почки
+A16	Time T24 before
+T25	Body_location 731 742	левой почки
+R9	Body_location_rel Arg1:T25 Arg2:T24	
+T26	Treatment 759 794	в возрасте 4 мес проведена операция
+T27	Disease 835 872	гипертензионно-гидроцефальный синдром
+A17	Time T27 before
+T28	Disease 874 905	Минимальная мозговая дисфункция
+A18	Time T28 before
+T29	Disease 959 973	ВПС (НТК, ООО)
+A19	Time T29 before
+T30	Disease 1029 1032	ВПС
+A20	Time T30 before
+T31	Disease 1104 1138	Хронический неревматический кардит
+A21	Time T31 before
+T32	Disease 1140 1201	Недостаточность митрального клапана, трикуспидального клапана
+A22	Time T32 before
+T33	Disease 1203 1241	Полная блокада правой ножки пучка Гиса
+A23	Time T33 before
+T34	Disease 1243 1245	НК
+A24	Time T34 before
+T35	Severity 1246 1250	2Аст
+A25	Degree T35 medium
+R10	Severity_rel Arg1:T35 Arg2:T34	
+T36	Body_location 1218 1241	правой ножки пучка Гиса
+T37	Body_location 1156 1175	митрального клапана
+T38	Body_location 1177 1201	трикуспидального клапана
+R11	Body_location_rel Arg1:T36 Arg2:T33	
+R12	Body_location_rel Arg1:T37 Arg2:T32	
+R13	Body_location_rel Arg1:T38 Arg2:T32	
+T39	Disease 1252 1311	Синдром недифференцированной дисплазии соединительной ткани
+A26	Time T39 before
+T40	Disease 1313 1327	Пупочная грыжа
+A27	Time T40 before
+T41	Symptom 1339 1365	повышенная трабекулярность
+A28	SType T41 disorder
+T42	Body_location 1366 1391	миокарда левого желудочка
+R14	Symptom_bdyloc_rel Arg1:T42 Arg2:T41	
+T43	Symptom 1526 1547	снижение В-лимфоцитов
+A29	SType T43 disorder
+T44	Symptom 1549 1555	Т-клон
+A30	SType T44 normal
+T45	Symptom 1598 1622	увеличилась регургитация
+A31	SType T45 disorder
+T46	Body_location 1626 1628	ТК
+R15	Symptom_bdyloc_rel Arg1:T46 Arg2:T45	
+T47	Body_location 1645 1647	ЛП
+T48	Body_location 1653 1655	ПП
+T49	Symptom 1696 1737	уменьшение вольтажа комплекса QRS в V3-V4
+A32	SType T49 disorder
+T50	Treatment 1765 1903	Проведена замена энапа на моноприл, получал виферон, рибомунил, проведен курс иммунокоррегирующей терапии пентаглобином в дозе 10г на курс
+T51	Drug 1791 1799	моноприл
+T52	Drug 1809 1816	виферон
+T53	Drug 1818 1827	рибомунил
+T54	Drug 1871 1884	пентаглобином
+A33	Effect T50 positive
+T55	Symptom 2123 2143	небольшое расширение
+A34	SType T55 disorder
+T56	Body_location 2144 2164	левой границы сердца
+R16	Symptom_bdyloc_rel Arg1:T56 Arg2:T55	
+T57	Symptom 2166 2180	удлинение дуги
+A35	SType T57 disorder
+T58	Body_location 2181 2183	ЛЖ
+R17	Symptom_bdyloc_rel Arg1:T58 Arg2:T57	
+T59	Symptom 2314 2337	77 эпизодов брадикардии
+A36	SType T59 disorder
+T60	Symptom 2391 2428	19 эпизодов синусовой тахикардии днем
+A37	SType T60 disorder
+T61	Symptom 2444 2475	полная блокад пр. ножки п. Гиса
+A38	SType T61 disorder
+T62	Body_location 2458 2475	пр. ножки п. Гиса
+R18	Symptom_bdyloc_rel Arg1:T62 Arg2:T61	
+T63	Treatment 2519 2572	Получал моноприл 7,5 мг/сут, виферон, кудесан, элькар
+A39	Effect T63 positive
+T64	Drug 2527 2535	моноприл
+T65	Drug 2548 2555	виферон
+T66	Drug 2557 2564	кудесан
+T67	Drug 2566 2572	элькар
+T68	Treatment 2943 2981	В терапии добавлен тромбоАСС 25 мг/сут
+T69	Drug 2962 2971	тромбоАСС
+T70	Symptom 2899 2941	некомпактный миокард верхушечных сегментов
+A40	SType T70 disorder
+T71	Body_location 2912 2941	миокард верхушечных сегментов
+R19	Symptom_bdyloc_rel Arg1:T71 Arg2:T70	
+T72	Disease 3017 3035	Гидронефроз справа
+A41	Time T72 before
+T73	Symptom 3240 3270	Толерантность к физ. нагрузкам
+A42	SType T73 disorder
+A43	Negation T73
+T74	Symptom 3351 3370	больше левые отделы
+A44	SType T74 disorder
+T75	Symptom 3421 3445	склонность к брадикардии
+A45	SType T75 disorder
+T76	Symptom 3528 3551	миграция водителя ритма
+A46	SType T76 disorder
+T77	Body_location 3554 3556	ПП
+R20	Symptom_bdyloc_rel Arg1:T77 Arg2:T76	
+T78	Treatment 3558 3582	Получил курс цитофлавина
+T79	Drug 3571 3582	цитофлавина
+T80	Symptom 3652 3662	пап. 14 мм
+A47	SType T80 disorder
+T81	Symptom 3686 3695	изменений
+A48	Negation T81
+A49	SType T81 disorder
+T82	Body_location 3696 3704	в легких
+R21	Symptom_bdyloc_rel Arg1:T82 Arg2:T81	
+T83	Treatment 4414 4506	моноприл 7,5мг \сут, тромбоАСС 50 мг\сут, трентал 50 мг 3р\сут, хофитол по 1 таб. 3р\сут д\е
+T84	Treatment 4508 4564	цитофлавин в\в № 9 (доза препарата в выписке не указана)
+T85	Treatment 4565 4665	пентаглобин 15 г\курс , изониазид 400мг 1 р\сут. , пиразинамид 400 мг 1р\сут, витамин В6 по 5 мг\сут
+T86	Drug 4414 4422	моноприл
+T87	Drug 4435 4444	тромбоАСС
+T88	Drug 4456 4463	трентал
+T89	Drug 4478 4485	хофитол
+T90	Drug 4508 4518	цитофлавин
+T91	Drug 4565 4576	пентаглобин
+T92	Drug 4589 4598	изониазид
+T93	Drug 4616 4627	пиразинамид
+T94	Drug 4643 4653	витамин В6
+T95	Treatment 5751 5790	повышена доза капотена до 18,75мгх3 р/д
+T96	Treatment 5314 5353	в/в цитофлавин 7мл в 30 мл физ р-ра №10
+T97	Treatment 5355 5392	проведена замена моноприла на капотен
+T98	Drug 5318 5328	цитофлавин
+T99	Drug 5372 5381	моноприла
+T100	Drug 5385 5392	капотен
+T101	Treatment 5792 5834	Терапия тромбо-Асс и курантилом продолжена
+T102	Drug 5800 5810	тромбо-Асс
+T103	Drug 5813 5823	курантилом
+T104	Drug 5765 5773	капотена
+T105	Symptom 5935 5966	повышение АД до 130\80 мм рт ст
+A50	SType T105 disorder
+T106	Symptom 5985 5991	рвотой
+A51	SType T106 disorder
+T107	Symptom 6260 6295	полная блокада правой ножки п. Гиса
+A52	SType T107 disorder
+T108	Symptom 6297 6329	признаки гипертрофии миокарда ЛП
+A53	SType T108 disorder
+T109	Body_location 6318 6329	миокарда ЛП
+T110	Body_location 6275 6295	правой ножки п. Гиса
+R22	Symptom_bdyloc_rel Arg1:T110 Arg2:T107	
+R23	Symptom_bdyloc_rel Arg1:T109 Arg2:T108	
+T111	Symptom 6331 6354	нарушение реполяризации
+A54	SType T111 disorder
+T112	Symptom 6632 6677	множественными разнонаправленными трабекулами
+A55	SType T112 disorder
+T113	Body_location 6593 6622	просвет верхушечного сегмента
+R24	Symptom_bdyloc_rel Arg1:T113 Arg2:T112	
+T114	Body_location 6747 6762	средний сегмент
+T115	Body_location 6764 6781	Базальный сегмент
+T116	Body_location 6569 6575	сердца
+T117	Symptom 6782 6798	без особенностей
+A56	SType T117 normal
+R25	Symptom_bdyloc_rel Arg1:T115 Arg2:T117	
+T118	Symptom 6800 6836	Истончения компактного слоя миокарда
+A57	Negation T118
+A58	SType T118 disorder
+T119	Symptom 6857 6883	Зон нарушения сократимости
+A59	Negation T119
+A60	SType T119 disorder
+T120	Body_location 6912 6951	стенки ЛЖ в области базального сегмента
+T121	Treatment 7002 7040	капотен заменен на ренитек 17,5 мг/сут
+T122	Treatment 7042 7106	проведен в/в курс цитофлавина №12 с переходом на прием через рот
+T123	Treatment 7108 7152	остальная терапия оставлена в прежнем объеме
+T124	Drug 7002 7009	капотен
+T125	Drug 7021 7028	ренитек
+T126	Drug 7060 7071	цитофлавина
+T127	Symptom 7192 7230	умеренная правопредсердная брадикардия
+A61	SType T127 disorder
+T128	Body_location 7202 7218	правопредсердная
+T129	Symptom 7232 7246	слабая аритмия
+A62	SType T129 disorder
+R26	Symptom_bdyloc_rel Arg1:T128 Arg2:T127	
+T130	Symptom 7248 7283	Полная блокада правой ножки п. Гиса
+A63	SType T130 disorder
+T131	Body_location 7263 7283	правой ножки п. Гиса
+R27	Symptom_bdyloc_rel Arg1:T131 Arg2:T130	
+T132	Symptom 7285 7314	Признаки гипертрофии миокарда
+A64	SType T132 disorder
+T133	Body_location 7315 7317	ПЖ
+T134	Body_location 7320 7322	ЛП
+R28	Symptom_bdyloc_rel Arg1:T133 Arg2:T132	
+R29	Symptom_bdyloc_rel Arg1:T134 Arg2:T132	
+T135	Symptom 7458 7475	легкая тахикардия
+A65	SType T135 disorder
+T136	Symptom 7536 7565	Регистрируется синусовый ритм
+A66	SType T136 normal
+T137	Symptom 7583 7601	НРС и проводимости
+A67	Negation T137
+A68	SType T137 disorder
+T138	Body_location 7771 7781	МК створки
+T139	Symptom 7785 7793	изменены
+A69	Negation T139
+A70	SType T139 disorder
+R30	Symptom_bdyloc_rel Arg1:T138 Arg2:T139	
+T140	Body_location 7813 7815	ТК
+T141	Body_location 7818 7825	створки
+T142	Symptom 7829 7837	изменены
+A71	Negation T142
+A72	SType T142 disorder
+R31	Symptom_bdyloc_rel Arg1:T141 Arg2:T142	
+T143	Symptom 7839 7854	регургитация +1
+A73	SType T143 disorder
+R32	Symptom_bdyloc_rel Arg1:T140 Arg2:T143	
+T144	Body_location 7875 7877	ЛА
+T145	Body_location 7892 7894	ЛП
+T146	Symptom 7895 7905	шаровидное
+A74	SType T146 disorder
+R33	Symptom_bdyloc_rel Arg1:T145 Arg2:T146	
+T147	Symptom 7907 7933	Повышенная трабекулярность
+A75	SType T147 disorder
+T148	Body_location 7934 7945	верхушки ЛЖ
+R34	Symptom_bdyloc_rel Arg1:T148 Arg2:T147	
+T149	Body_location 7983 8006	органов брюшной полости
+T150	Symptom 8008 8021	гиперсекреция
+A76	SType T150 disorder
+T151	Symptom 8024 8040	утолщение стенок
+A77	SType T151 disorder
+T152	Body_location 8041 8048	желудка
+T153	Body_location 8051 8075	двенадцатиперстной кишки
+R35	Symptom_bdyloc_rel Arg1:T152 Arg2:T150	
+R36	Symptom_bdyloc_rel Arg1:T152 Arg2:T151	
+R37	Symptom_bdyloc_rel Arg1:T153 Arg2:T150	
+R38	Symptom_bdyloc_rel Arg1:T153 Arg2:T151	
+T154	Treatment 8107 8197	ренитек 17,5 мг\сут; тромбо АСС 50мг/сут, курантил 25 мг х 3 р/д; в\в цитофлавин 5,0мл №11
+T155	Treatment 8199 8229	введен триампур 1 т. утром п/е
+T156	Treatment 8231 8270	начат курс хофитола по 1 т. х 3 р/д д\е
+T157	Treatment 8273 8291	нексиума 10 мг н/н
+T158	Drug 8107 8114	ренитек
+T159	Drug 8128 8138	тромбо АСС
+T160	Drug 8149 8157	курантил
+T161	Drug 8177 8187	цитофлавин
+T162	Drug 8206 8214	триампур
+T163	Drug 8242 8250	хофитола
+T164	Drug 8273 8281	нексиума
+T165	Symptom 8330 8368	полная блокада правой ножки пучка Гиса
+A78	SType T165 disorder
+T166	Symptom 8370 8416	признаки блокады внутрипредсердного проведения
+A79	SType T166 disorder
+T167	Symptom 8418 8438	гипертрофии миокарда
+A80	SType T167 disorder
+T168	Body_location 8439 8456	левого предсердия
+R39	Symptom_bdyloc_rel Arg1:T168 Arg2:T167	
+T169	Body_location 8387 8405	внутрипредсердного
+T170	Body_location 8345 8368	правой ножки пучка Гиса
+R40	Symptom_bdyloc_rel Arg1:T170 Arg2:T165	
+R41	Symptom_bdyloc_rel Arg1:T169 Arg2:T166	
+T171	Symptom 8819 8843	Повышена трабекулярность
+A81	SType T171 disorder
+T172	Body_location 8844 8871	верхушки и задней стенки ЛЖ
+R42	Symptom_bdyloc_rel Arg1:T172 Arg2:T171	
+T173	Body_location 8497 8502	АОРТА
+T174	Body_location 8537 8553	ЛЕГОЧНАЯ АРТЕРИЯ
+T175	Body_location 8788 8802	полости сердца
+T176	Symptom 8774 8783	Расширены
+A82	SType T176 disorder
+R43	Symptom_bdyloc_rel Arg1:T175 Arg2:T176	
+T177	Body_location 8918 8926	миокарда
+T178	Body_location 9086 9110	Полость левого желудочка
+T179	Symptom 9111 9120	расширена
+A83	SType T179 disorder
+R44	Symptom_bdyloc_rel Arg1:T178 Arg2:T179	
+T180	Body_location 9049 9084	в область миокарда левого желудочка
+T181	Body_location 9182 9199	правого желудочка
+T182	Symptom 9162 9181	Признаки увеличения
+A84	SType T182 disorder
+R45	Symptom_bdyloc_rel Arg1:T181 Arg2:T182	
+T183	Treatment 21189 21224	ТромбоАСС 50 мг 1 р\сут – постоянно
+T184	Treatment 21230 21272	Курантил 25 мг х 3 раза в день – постоянно
+T185	Treatment 21278 21330	Конкор по 2,5мг.х2р/день в 09.00 и 21.00 – постоянно
+T186	Treatment 21337 21386	Диувер 5 мг х в 09.00 и 2,5мг в 18.00 – постоянно
+T187	Treatment 21393 21434	Сиднофарм по 2мг.х2р/день в 09.00 и 21.00
+T188	Treatment 21440 21504	Цитофлавин 1т х 2 р\д перед едой (у,о) 1-20 число каждого месяца
+T189	Treatment 21511 21585	Кудесан по 10 капель х 2 раза в день – декабрь 2053, январь, февраль 2054г
+T190	Treatment 21592 21660	Предуктал МВ 35 мг х 2 раза в день – сентябрь, октябрь, ноябрь 2053г
+T191	Treatment 21667 21716	Милдронат 250мг.х2р/день в марте, апреле 2054года
+T192	Treatment 21723 21829	Профилактика респираторных инфекций: Рибомунил 3 табл. (0,75 мг) х 1 раз в сутки, утром, натощак по схеме.
+T193	Drug 21124 21130	Козаар
+T194	Drug 21189 21198	ТромбоАСС
+T195	Drug 21230 21238	Курантил
+T196	Drug 21278 21284	Конкор
+T197	Drug 21337 21343	Диувер
+T198	Drug 21393 21402	Сиднофарм
+T199	Drug 21440 21450	Цитофлавин
+T200	Drug 21511 21518	Кудесан
+T201	Drug 21592 21601	Предуктал
+T202	Drug 21667 21676	Милдронат
+T203	Drug 21760 21769	Рибомунил
+T204	Drug 21881 21887	цедекс
+T205	Drug 21889 21895	зиннат
+T206	Drug 21897 21906	аугментин
+T207	Drug 21910 21917	виферон
+T208	Treatment 21835 21954	При ОРВи обязательно назначение антибиотиков (цедекс, зиннат, аугментин) и виферон ежедневно по 500 т. х 2 раза в день.
+T209	Drug 20372 20378	козаар
+T210	Drug 20391 20400	ромбо АСС
+T211	Drug 20411 20419	курантил
+T212	Drug 20430 20439	дилатренд
+T213	Drug 20477 20483	диувер
+T214	Drug 20461 20467	конкор
+T215	Drug 20495 20504	сиднофарм
+T216	Drug 20514 20523	предуктал
+T217	Drug 20534 20541	юнидокс
+T218	Drug 20553 20561	бифиформ

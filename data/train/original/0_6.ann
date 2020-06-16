@@ -1,0 +1,120 @@
+T1	Disease 293 324	Дискинезия желчевыводящих путей
+T2	Body_location 304 324	желчевыводящих путей
+R1	Body_location_rel Arg1:T2 Arg2:T1	
+#1	AnnotatorNotes R1	Пожалуйста, проводите стрелки от Body_location к Disease
+T3	Disease 9 40	Бронхиальная астма, атопическая
+T4	Severity 42 71	легкое персистирующее течение
+A1	Degree T4 light
+T5	Course 73 81	ремиссия
+A2	CType T5 improved
+R2	Severity_rel Arg1:T4 Arg2:T3	
+R3	Course_rel Arg1:T5 Arg2:T3	
+T6	Disease 83 127	Атопический дерматит, распространенная форма
+T7	Course 129 139	обострение
+A3	CType T7 worsened
+R4	Course_rel Arg1:T7 Arg2:T6	
+T8	Disease 141 176	Аллергический ринит, персистирующий
+T9	Disease 178 204	Цефалгии смешанного генеза
+T10	Disease 206 250	Синдром дефицита внимания с гиперактивностью
+T11	Disease 252 291	Парциальный дефицит когнитивных функций
+T12	Body_location 344 359	желчного пузыря
+T13	Disease 361 402	Реактивные изменения поджелудочной железы
+T14	Body_location 382 402	поджелудочной железы
+R6	Body_location_rel Arg1:T14 Arg2:T13	
+T15	Symptom 465 474	высыпания
+T16	Body_location 475 482	на коже
+T17	Symptom 492 515	малопродуктивного кашля
+T18	Disease 844 847	ОРИ
+T19	Disease 898 919	обструктивный бронхит
+T20	Treatment 1040 1102	В терапии беродуал, лазолван через небулайзер, зиртек, эреспал
+A4	Effect T20 positive
+T21	Drug 1050 1058	беродуал
+T22	Drug 1060 1068	лазолван
+T23	Drug 1087 1093	зиртек
+T24	Drug 1095 1102	эреспал
+T25	Symptom 1184 1214	сухого малопродуктивного кашля
+T26	Treatment 1216 1260	В терапии ингаляции с беродуалом, лазолваном
+A5	Effect T26 positive
+T27	Drug 1238 1248	беродуалом
+T28	Drug 1250 1260	лазолваном
+T29	Symptom 1319 1328	высыпания
+T30	Body_location 1332 1343	коже ягодиц
+T31	Treatment 1382 1401	В терапии супрастин
+A6	Effect T31 no-effect
+T32	Drug 1392 1401	супрастин
+T33	Symptom 1431 1440	высыпания
+A7	Negation T33
+T34	Symptom 1516 1525	Высыпания
+T35	Symptom 1542 1547	зудом
+T36	Body_location 1568 1580	ногах, руках
+T37	Disease 855 868	ложного крупа
+T38	Body_location 1734 1748	Кожные покровы
+T39	Disease 1618 1636	бронхиальная астма
+A8	NotPatient T39
+T40	Disease 1647 1655	поллиноз
+A9	NotPatient T40
+T41	Symptom 1657 1685	риноконъюнктивальный синдром
+T42	Body_location 1882 1895	левой лодыжке
+T43	Body_location 1772 1783	кожа ягодиц
+T44	Body_location 1830 1880	на разгибательных поверхностях верхних конечностей
+T45	Body_location 1983 2025	на разгибательных поверхностях пальцев ног
+T46	Body_location 2117 2125	В лёгких
+T47	Body_location 2195 2200	Живот
+T48	Symptom 2303 2307	Стул
+A10	SType T48 normal
+T49	Symptom 2333 2353	Менингеальных знаков
+A11	Negation T49
+T50	Symptom 2290 2297	дизурии
+A12	Negation T50
+T51	Symptom 2201 2207	мягкий
+T52	Symptom 2223 2237	безболезненный
+A13	Negation T52
+T53	Symptom 2148 2154	хрипов
+A14	Negation T53
+T54	Symptom 2134 2146	везикулярное
+A15	SType T54 normal
+T55	Symptom 2175 2193	звучные, ритмичные
+A16	SType T55 normal
+T56	Symptom 1896 1916	эритематозные бляшки
+A17	SType T56 disorder
+T57	Body_location 1969 1981	на коже стоп
+T58	Symptom 1948 1968	обильная десквамация
+A18	SType T58 disorder
+T59	Symptom 2060 2071	с трещинами
+A19	SType T59 disorder
+T60	Symptom 2036 2054	выраженной сухости
+A20	SType T60 disorder
+T61	Symptom 1784 1828	инфильтрирована, с шелушением, экскориациями
+T62	Symptom 1749 1770	бледно-розовые, сухие
+T63	Symptom 1150 1165	бронхобструкции
+T64	Symptom 2086 2115	Носовое дыхание не затруднено
+A21	Negation T64
+T65	Symptom 2077 2084	спокоен
+A22	SType T65 normal
+T66	Body_location 2073 2076	Зев
+T67	Symptom 333 359	деформации желчного пузыря
+R5	Symptom_bdyloc_rel Arg1:T12 Arg2:T67	
+R7	Symptom_bdyloc_rel Arg1:T16 Arg2:T15	
+R8	Symptom_bdyloc_rel Arg1:T30 Arg2:T29	
+R9	Symptom_bdyloc_rel Arg1:T36 Arg2:T34	
+R10	Symptom_bdyloc_rel Arg1:T38 Arg2:T62	
+R11	Symptom_bdyloc_rel Arg1:T43 Arg2:T61	
+R12	Symptom_bdyloc_rel Arg1:T44 Arg2:T56	
+R13	Symptom_bdyloc_rel Arg1:T42 Arg2:T56	
+R14	Symptom_bdyloc_rel Arg1:T57 Arg2:T58	
+R15	Symptom_bdyloc_rel Arg1:T45 Arg2:T58	
+R16	Symptom_bdyloc_rel Arg1:T66 Arg2:T65	
+R17	Symptom_bdyloc_rel Arg1:T46 Arg2:T54	
+R18	Symptom_bdyloc_rel Arg1:T46 Arg2:T53	
+R19	Symptom_bdyloc_rel Arg1:T47 Arg2:T51	
+R20	Symptom_bdyloc_rel Arg1:T47 Arg2:T52	
+A23	SType T25 disorder
+A24	SType T29 disorder
+A25	SType T67 disorder
+A26	SType T15 disorder
+A27	SType T17 disorder
+A28	SType T63 disorder
+A29	SType T34 disorder
+A30	SType T35 disorder
+A31	SType T41 disorder
+A32	SType T61 disorder

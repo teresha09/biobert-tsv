@@ -1,0 +1,26 @@
+T1	Disease 68 95	перинатальное поражение ЦНС
+T2	Symptom 158 235	Своеобразие формирования психической деятельности вследствие нарушения зрения
+T3	Symptom 247 273	органическое поражение ЦНС
+A1	Negation T3
+A2	SType T3 disorder
+T4	Symptom 305 369	данных за объемное и очаговое поражение вещества головного мозга
+A3	Negation T4
+T5	Body_location 345 369	вещества головного мозга
+T6	Body_location 422 433	глазное дно
+T7	Disease 469 489	зонулярная катаракта
+T8	Body_location 526 530	глаз
+T9	Symptom 555 595	выраженного отека сетчатки с двух сторон
+A4	SType T9 disorder
+T10	Body_location 573 581	сетчатки
+T11	Symptom 597 632	деструкции стекловидного тела слева
+A5	SType T11 disorder
+T12	Body_location 608 632	стекловидного тела слева
+T13	Disease 634 656	двусторонней катаракты
+T14	Severity 97 129	поздний восстановительный период
+A7	Degree T14 hard
+R1	Severity_rel Arg1:T14 Arg2:T1	
+T15	Disease 131 156	синдром мышечной дистонии
+T16	Body_location 496 500	глаз
+R2	Body_location_rel Arg1:T16 Arg2:T7	
+T17	Disease 567 572	отека
+R3	Body_location_rel Arg1:T10 Arg2:T17	

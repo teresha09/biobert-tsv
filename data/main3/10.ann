@@ -1,0 +1,768 @@
+T1	Disease 111 132	Хронический миокардит
+A1	Time T1 now
+T2	Disease 191 194	ХСН
+A2	Time T2 now
+T3	Severity 195 204	2А стадии
+A3	Degree T3 medium
+T4	Severity 206 219	II ФК по NYHA
+A4	Degree T4 medium
+R1	Severity_rel Arg1:T3 Arg2:T2	
+R2	Severity_rel Arg1:T4 Arg2:T2	
+T5	Disease 134 189	Недостаточность митрального и трикуспидального клапанов
+A5	Time T5 now
+T6	Body_location 150 161	митрального
+T7	Body_location 164 189	трикуспидального клапанов
+T8	Disease 221 252	Дискинезия желчевыводящих путей
+A6	Time T8 now
+T9	Body_location 232 252	желчевыводящих путей
+T10	Disease 264 285	Хронический миокардит
+T11	Disease 287 342	Недостаточность митрального и трикуспидального клапанов
+A7	Time T11 now
+A8	Time T10 now
+T12	Body_location 303 314	митрального
+T13	Body_location 317 342	трикуспидального клапанов
+T14	Disease 344 347	ХСН
+A9	Time T14 now
+T15	Severity 348 357	2А стадии
+A10	Degree T15 medium
+T16	Severity 359 372	II ФК по NYHA
+A11	Degree T16 medium
+R3	Severity_rel Arg1:T15 Arg2:T14	
+R4	Severity_rel Arg1:T16 Arg2:T14	
+T17	Disease 374 405	Дискинезия желчевыводящих путей
+A12	Time T17 now
+T18	Body_location 385 405	желчевыводящих путей
+T19	Symptom 1045 1067	учащенное сердцебиение
+A13	SType T19 disorder
+T20	Symptom 1148 1158	асимметрию
+A14	SType T20 disorder
+T21	Body_location 1159 1173	грудной клетки
+R5	Symptom_bdyloc_rel Arg1:T21 Arg2:T20	
+T22	Symptom 1203 1220	систолический шум
+A15	SType T22 disorder
+T23	Body_location 1221 1240	над областью сердца
+R6	Symptom_bdyloc_rel Arg1:T23 Arg2:T22	
+T24	Disease 1373 1376	ВПС
+A16	Time T24 before
+T25	Disease 1385 1431	аномальное отхождение левой коронарной артерии
+A17	Time T25 before
+T26	Body_location 1407 1431	левой коронарной артерии
+T27	Disease 1303 1306	ВПС
+A18	Time T27 before
+T28	Disease 1487 1491	ДКМП
+A19	Time T28 before
+T29	Symptom 1613 1619	одышка
+A20	SType T29 normal
+T30	Symptom 1639 1691	расширение границ относительной тупости сердца влево
+A21	SType T30 disorder
+T31	Body_location 1692 1720	до средней аксиллярной линии
+R7	Symptom_bdyloc_rel Arg1:T31 Arg2:T30	
+T32	Symptom 1737 1771	тоны сердца значительно приглушены
+A22	SType T32 disorder
+T33	Symptom 1773 1782	ритмичные
+A23	SType T33 normal
+T34	Symptom 1798 1815	систолический шум
+A24	SType T34 disorder
+T35	Body_location 1816 1827	на верхушке
+R8	Symptom_bdyloc_rel Arg1:T35 Arg2:T34	
+T36	Symptom 1829 1852	умеренный акцент 2 тона
+A25	SType T36 disorder
+T37	Body_location 1853 1874	над легочной артерией
+R9	Symptom_bdyloc_rel Arg1:T37 Arg2:T36	
+T38	Symptom 1876 1886	тахикардия
+A26	SType T38 disorder
+T39	Symptom 1965 1989	гепатомегалия до +4,0 см
+A27	SType T39 disorder
+T40	Body_location 1990 2010	из-под реберной дуги
+T41	Symptom 2021 2071	трепетание предсердий с частотой волн f 300 уд/мин
+A28	SType T41 disorder
+T42	Symptom 2073 2116	ритм желудочков 165 уд/мин (проведение 2:1)
+A29	SType T42 disorder
+T43	Symptom 2118 2137	признаки перегрузки
+A30	SType T43 disorder
+T44	Body_location 2138 2144	левого
+T45	Body_location 2158 2175	правого желудочка
+T46	Symptom 2177 2236	резкое (инфарктноподобное) нарушение процесса реполяризации
+A31	SType T46 disorder
+T47	Body_location 2237 2287	в передней и заднебоковой стенках левого желудочка
+R10	Symptom_bdyloc_rel Arg1:T47 Arg2:T46	
+R11	Symptom_bdyloc_rel Arg1:T44 Arg2:T43	
+R12	Symptom_bdyloc_rel Arg1:T45 Arg2:T43	
+T48	Body_location 2032 2042	предсердий
+T49	Symptom 2300 2316	резкая дилатация
+A32	SType T49 disorder
+T50	Body_location 2317 2319	ЛЖ
+R13	Symptom_bdyloc_rel Arg1:T50 Arg2:T49	
+T51	Symptom 2334 2378	снижение сократительной способности миокарда
+A33	SType T51 disorder
+T52	Body_location 2470 2473	ОГК
+T53	Symptom 2474 2500	значительная кардиомегалия
+A34	SType T53 disorder
+T54	Body_location 2389 2391	ЛП
+T55	Body_location 2402 2404	ПП
+T56	Body_location 2415 2418	НМК
+T57	Severity 2419 2425	2-3 ст
+A35	Degree T57 hard
+R14	Symptom_bdyloc_rel Arg1:T40 Arg2:T39	
+R15	Symptom_bdyloc_rel Arg1:T52 Arg2:T53	
+T58	Disease 2736 2764	Дилатационная кардиомиопатия
+A36	Time T58 before
+T59	Symptom 2608 2670	эпизоды мерцания предсердий с частотой волн f около 300 уд/мин
+A37	SType T59 disorder
+T60	Symptom 2673 2714	тахисистолией желудочков около 150 уд/мин
+A38	SType T60 disorder
+T61	Disease 2766 2847	Недостаточность митрального, трикуспидального клапанов и клапана легочной артерии
+A39	Time T61 before
+T62	Disease 2849 2869	Легочная гипертензия
+A40	Time T62 before
+T63	Body_location 2782 2793	митрального
+T64	Body_location 2795 2820	трикуспидального клапанов
+T65	Body_location 2823 2847	клапана легочной артерии
+T66	Disease 2871 2891	Желудочковая аритмия
+A41	Time T66 before
+T67	Severity 2892 2912	1-2 градации по Lown
+A42	Degree T67 light
+R16	Severity_rel Arg1:T67 Arg2:T66	
+T68	Disease 2914 2944	Блокада левой ножки пучка Гиса
+A43	Time T68 before
+T69	Body_location 2922 2944	левой ножки пучка Гиса
+T70	Disease 2946 2948	НК
+A44	Time T70 before
+T71	Severity 2949 2958	2Б стадии
+A45	Degree T71 hard
+R17	Severity_rel Arg1:T71 Arg2:T70	
+T72	Treatment 2982 3040	коргликон 0,05 мл х 2 р/д с заменой на дигоксин 0.03мг/сут
+T73	Treatment 3042 3110	фуросемид 7мг/сут + лазикс 0,3 мл в/в (лазикс с постепенной отменой)
+T74	Treatment 3112 3134	преднизолон 0,5 мл в/в
+T75	Treatment 3136 3182	верошпирон 18,75 мг/сут, с 22.08.47 6,25мг/сут
+T76	Treatment 3184 3247	аспаркам 1т/сут, трентал 12.5 мг х 3 р/д, кордарон 25мг х 1 р/д
+T77	Treatment 3249 3317	капотен с повышением дозы до 6мг/сут и переводом на моноприл 2мг/сут
+T78	Treatment 3328 3367	курс в/в кап неотона 5г, пентаглобин 6г
+A46	Effect T72 positive
+A47	Effect T73 positive
+A48	Effect T74 positive
+A49	Effect T75 positive
+A50	Effect T76 positive
+A51	Effect T77 positive
+A52	Effect T78 positive
+T79	Symptom 3422 3428	одышка
+A53	SType T79 disorder
+T80	Symptom 3431 3441	тахикардия
+A54	SType T80 disorder
+T81	Body_location 3531 3533	ЛЖ
+T82	Drug 2982 2991	коргликон
+T83	Drug 3021 3029	дигоксин
+T84	Drug 3042 3051	фуросемид
+T85	Drug 3081 3087	лазикс
+T86	Drug 3112 3123	преднизолон
+T87	Drug 3136 3146	верошпирон
+T88	Drug 3184 3192	аспаркам
+T89	Drug 3201 3208	трентал
+T90	Drug 3226 3234	кордарон
+T91	Drug 3249 3256	капотен
+T92	Drug 3301 3309	моноприл
+T93	Drug 3341 3348	неотона
+T94	Drug 3353 3364	пентаглобин
+T95	Body_location 3473 3498	из-под края реберной дуги
+T96	Treatment 3644 3819	дигоксин 0.03мг 1р/день, моноприл по 1мг 2р/день, фуросемид по 7мг 1р/день, триампур по 1/4т 1р/день, верошпирон 6.25мг 1р/день, панангин 1/2т 2р/день, кордарон 30мг х 1р/день
+A55	Effect T96 no-effect
+T97	Drug 3644 3652	дигоксин
+T98	Drug 3669 3677	моноприл
+T99	Drug 3694 3703	фуросемид
+T100	Drug 3720 3728	триампур
+T101	Drug 3746 3756	верошпирон
+T102	Drug 3773 3781	панангин
+T103	Drug 3796 3804	кордарон
+T104	Symptom 3855 3872	нарастание одышки
+A56	SType T104 disorder
+T105	Symptom 3874 3906	снижение двигательной активности
+A57	SType T105 disorder
+T106	Symptom 3968 4021	выраженной перегрузкой по малому кругу кровообращения
+A58	SType T106 disorder
+T107	Severity 4109 4113	2 ст
+A59	Degree T107 medium
+T108	Symptom 4183 4237	увеличилось общее количество экстрасистол желудочковых
+A60	SType T108 disorder
+T109	Symptom 4251 4332	появились эпизоды полиморфной желудочковой тахикардии из 3-х QRS с ЧСС 170 уд/мин
+A61	SType T109 disorder
+T110	Treatment 4334 4417	Проведен курс интраглобина 6 г, в терапии увеличена доза моноприла до 1,25 мг 2 р/д
+T111	Treatment 4419 4454	снижена доза фуросемида до 5 мг/сут
+T112	Treatment 4456 4491	увеличена доза триампура да 1 т/сут
+T113	Drug 4348 4360	интраглобина
+T114	Drug 4391 4400	моноприла
+T115	Drug 4432 4442	фуросемида
+T116	Drug 4471 4480	триампура
+T117	Symptom 4595 4619	желудочковые парасистолы
+A62	SType T117 disorder
+T118	Symptom 4621 4641	парные экстрасистолы
+A63	SType T118 disorder
+T119	Symptom 4643 4661	эпизоды аллоритмии
+A64	SType T119 disorder
+T120	Symptom 4663 4726	1 эпизод желудочковой тахикардии (из 3-х QRS с ЧСС 180 уд/мин.)
+A65	SType T120 disorder
+T121	Symptom 4739 4785	нарастание симптомов сердечной недостаточности
+A66	SType T121 disorder
+T122	Treatment 4787 4853	для купирования которых дигоксин был временно заменен на коргликон
+T123	Treatment 4855 4902	затем увеличена доза дигоксина до 0,03 мг 2 р/д
+T124	Treatment 4904 4972	пероральные диуретики на в/в введение лазикса с 17.01.48.до 23.01.48
+T125	Treatment 4974 5016	затем доза фуросемида увеличена до 7мг/сут
+T126	Treatment 5018 5034	триампур отменен
+T127	Treatment 5036 5090	с 05.01.48 в терапию подключен преднизолон 6,25 мг/сут
+T128	Treatment 5092 5144	Проведен курс в/в кап неотона 6 г. интраглобина 5 г.
+T129	Drug 4811 4819	дигоксин
+A67	Effect T122 positive
+A68	Effect T123 positive
+A69	Effect T124 positive
+A70	Effect T125 positive
+A71	Effect T127 positive
+A72	Effect T128 positive
+T130	Treatment 5263 5322	Проведен курс в/в кап неотона 6 г, цитофлавина по 3,0мл №5.
+A73	Effect T130 positive
+T131	Drug 5285 5292	неотона
+T132	Drug 5298 5309	цитофлавина
+T133	Treatment 5456 5505	В терапии увеличена доза моноприла до 3,75 мг/сут
+T134	Treatment 5507 5531	добавлен конкор 1 мг/сут
+T135	Treatment 5533 5603	рекомендовано чередование верошпирона 12,5 мг/сут с триампуром ½ т/сут
+T136	Drug 5481 5490	моноприла
+T137	Drug 5516 5522	конкор
+T138	Drug 5559 5570	верошпирона
+T139	Drug 5585 5595	триампуром
+T140	Treatment 5689 5812	терапия: увеличена доза конкора до 1,25 мг/сут, рекомендовано чередование фуросемида 7 мг/сут по месяцу с урегитом 9 мг/сут
+T141	Drug 5713 5720	конкора
+T142	Drug 5763 5773	фуросемида
+T143	Drug 5795 5803	урегитом
+T144	Symptom 5935 5944	патологию
+A74	Negation T144
+A75	SType T144 disorder
+T145	Body_location 5945 5950	аорты
+T146	Body_location 5953 5967	крупных ветвей
+T147	Treatment 5981 6028	В терапии увеличена доза кордарона до 50 мг/сут
+T148	Treatment 6030 6095	проведен курс интраглобина 5 г, неотона 5 г, цитофлавина 3 мл №10
+T149	Drug 6006 6015	кордарона
+T150	Drug 6044 6056	интраглобина
+T151	Drug 6062 6069	неотона
+T152	Drug 6075 6086	цитофлавина
+T153	Treatment 6194 6269	Проведен курс цитофлавина №10, курс неотона 4 грамма, интраглобина 3 грамма
+A76	Effect T147 positive
+A77	Effect T148 positive
+A78	Effect T133 positive
+A79	Effect T134 positive
+A80	Effect T135 positive
+A81	Effect T153 positive
+T154	Treatment 6430 6481	постепенное снижение дозы преднизолона (до 5мг/сут)
+T155	Drug 6456 6468	преднизолона
+T156	Treatment 6610 6669	В терапии моноприл 5 мг/сут заменен на капотен 5 мг х 3 р/д
+A82	Effect T156 positive
+T157	Treatment 6671 6712	преднизолон заменен на метипред 6 мг/сут.
+A83	Effect T157 positive
+T158	Drug 6620 6628	моноприл
+T159	Drug 6649 6656	капотен
+T160	Drug 6671 6682	преднизолон
+T161	Treatment 6797 6843	В терапии доза дигоксина снижена до 0,03мг/сут
+A84	Effect T161 positive
+T162	Treatment 6845 6881	метипред альтернирующим курсом 4:2мг
+A85	Effect T162 positive
+T163	Treatment 6883 6912	проведен в/в курс цитофлавина
+A86	Effect T163 positive
+T164	Drug 6812 6821	дигоксина
+T165	Drug 6845 6853	метипред
+T166	Drug 6901 6912	цитофлавина
+T167	Treatment 7058 7084	В терапии отменен дигоксин
+A87	Effect T167 positive
+T168	Treatment 7086 7123	повышена доза капотена до 18,75мг/сут
+A88	Effect T168 positive
+T169	Treatment 7125 7152	метипред постепенно отменен
+A89	Effect T169 positive
+T170	Drug 7076 7084	дигоксин
+T171	Drug 7100 7108	капотена
+T172	Drug 7125 7133	метипред
+T173	Treatment 7233 7277	В терапии повышена дозы капотена до 27мг/сут
+A90	Effect T173 positive
+T174	Treatment 7279 7304	проведен курс цитофлавина
+A91	Effect T174 positive
+T175	Drug 7257 7265	капотена
+T176	Drug 7293 7304	цитофлавина
+T177	Treatment 7343 7379	проведена отмена петлевых диуретиков
+T178	Treatment 7620 7669	В терапии капотен заменен на энап 2,5мг х 2р/день
+A92	Effect T178 positive
+T179	Treatment 7671 7699	добавлен гипотиазид 25мг/сут
+A93	Effect T179 positive
+T180	Drug 7649 7653	энап
+T181	Drug 7680 7690	гипотиазид
+T182	Symptom 5406 5422	94 единичных ЖЭС
+A94	SType T182 disorder
+T183	Symptom 7429 7449	небольшое увеличение
+A95	SType T183 disorder
+T184	Body_location 7450 7460	полости ЛЖ
+R18	Symptom_bdyloc_rel Arg1:T184 Arg2:T183	
+T185	Body_location 7470 7487	остальные полости
+T186	Symptom 7491 7500	расширены
+A96	Negation T186
+A97	SType T186 disorder
+R19	Symptom_bdyloc_rel Arg1:T185 Arg2:T186	
+T187	Body_location 7502 7508	стенки
+T188	Symptom 7512 7520	утолщены
+A98	Negation T188
+A99	SType T188 disorder
+R20	Symptom_bdyloc_rel Arg1:T187 Arg2:T188	
+T189	Body_location 7544 7546	ЛЖ
+T190	Symptom 7584 7606	диастолическая функция
+A100	SType T190 normal
+T191	Body_location 7908 7916	миокарда
+T192	Body_location 7929 7953	Полость левого желудочка
+T193	Symptom 7957 7966	расширена
+A101	Negation T193
+A102	SType T193 disorder
+R21	Symptom_bdyloc_rel Arg1:T192 Arg2:T193	
+T194	Symptom 7968 7987	Фракция выброса 58%
+A103	SType T194 normal
+T195	Symptom 8499 8519	гипертрофия миокарда
+A104	SType T195 disorder
+T196	Body_location 8520 8522	ЛЖ
+T197	Symptom 8524 8579	незначительное нарушение внутрижелудочкового проведения
+A105	SType T197 disorder
+T198	Symptom 8581 8611	легкие нарушения реполяризации
+A106	SType T198 disorder
+T199	Body_location 8612 8633	в миокарде желудочков
+R22	Symptom_bdyloc_rel Arg1:T199 Arg2:T198	
+T200	Body_location 8654 8657	ОГК
+T201	Body_location 8372 8382	полости ЛЖ
+T202	Body_location 8385 8395	предсердий
+T203	Treatment 8885 8959	В терапии проведена замена верошпирона на гипотиазида на диувер 1,25мг/сут
+T204	Drug 8912 8923	верошпирона
+T205	Drug 8927 8938	гипотиазида
+T206	Drug 8942 8948	диувер
+T207	Disease 9106 9124	Недостаточность МК
+A107	Time T207 before
+T208	Severity 9125 9129	1 ст
+A108	Degree T208 light
+R23	Severity_rel Arg1:T208 Arg2:T207	
+T209	Symptom 9301 9308	активна
+A109	SType T209 normal
+T210	Symptom 9310 9346	толерантность к физическим нагрузкам
+A110	SType T210 normal
+T211	Treatment 9473 9650	Лечение до поступления: энап 2,5мг 2р/д, конкор 1,25 мг 1р/д, трентал 25 мг х 3р, панангин 1/2т х 3р, цитофлавин 1/2 т. 2р/д 1-20 число месяца, верошпирон 6,25 мг - 1р/дн в 9.00
+T212	Drug 9497 9501	энап
+T213	Drug 9514 9520	конкор
+T214	Drug 9535 9542	трентал
+T215	Drug 9555 9563	панангин
+T216	Drug 9575 9585	цитофлавин
+T217	Drug 9617 9627	верошпирон
+T218	Body_location 9872 9886	Кожные покровы
+T219	Body_location 9956 9974	Слизистые оболочки
+T220	Body_location 9983 9997	Зев, миндалины
+T221	Body_location 9941 9954	на левой щеке
+T222	Body_location 9911 9926	периорбитальный
+T223	Body_location 10036 10055	Подкожная клетчатка
+T224	Body_location 10101 10122	Лимфатическая система
+T225	Body_location 10150 10165	Костная система
+T226	Body_location 10242 10252	в суставах
+T227	Body_location 10286 10300	Органы дыхания
+T228	Body_location 10352 10360	в легких
+T229	Body_location 10426 10440	Область сердца
+T230	Body_location 10464 10503	Границы относительной сердечной тупости
+T231	Body_location 10752 10757	живот
+T232	Body_location 10862 10868	Печень
+T233	Body_location 10869 10887	украя ребеной дуги
+T234	Symptom 10889 10920	мягко-эластической консистенции
+A111	SType T234 normal
+T235	Body_location 11050 11075	область щитовидной железы
+T236	Symptom 11079 11087	изменена
+A112	Negation T236
+A113	SType T236 disorder
+R24	Symptom_bdyloc_rel Arg1:T235 Arg2:T236	
+R25	Symptom_bdyloc_rel Arg1:T232 Arg2:T234	
+T237	Symptom 10758 10764	мягкий
+A114	SType T237 normal
+T238	Symptom 10766 10778	безболезнный
+A115	SType T238 normal
+T239	Symptom 10780 10823	доступен глубокой пальпации во всех отделах
+A116	SType T239 normal
+R26	Symptom_bdyloc_rel Arg1:T231 Arg2:T237	
+R27	Symptom_bdyloc_rel Arg1:T231 Arg2:T238	
+R28	Symptom_bdyloc_rel Arg1:T231 Arg2:T239	
+T240	Symptom 10361 10373	везикулярное
+A117	SType T240 normal
+T241	Symptom 10375 10381	хрипов
+A118	SType T241 disorder
+R29	Symptom_bdyloc_rel Arg1:T228 Arg2:T240	
+R30	Symptom_bdyloc_rel Arg1:T228 Arg2:T241	
+T242	Symptom 10454 10462	изменена
+A119	Negation T242
+A120	SType T242 disorder
+R31	Symptom_bdyloc_rel Arg1:T229 Arg2:T242	
+T243	Body_location 11122 11145	Органов брюшной полости
+T244	Body_location 11159 11173	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T245	Body_location 11279 11285	ПЕЧЕНЬ
+T246	Body_location 11557 11560	ОЖП
+T247	Body_location 11575 11590	Печеночные вены
+T248	Body_location 11625 11645	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T249	Body_location 11807 11816	СЕЛЕЗЕНКА
+T250	Body_location 11748 11762	Стенки сосудов
+T251	Body_location 11878 11887	Паренхима
+T252	Body_location 11777 11793	Вирсунгов проток
+T253	Body_location 11403 11435	Внутрипеченочные желчные протоки
+T254	Body_location 11466 11479	Воротная вена
+T255	Body_location 12186 12197	ЛЕВАЯ ПОЧКА
+T256	Body_location 11958 11965	ЖЕЛУДОК
+T257	Body_location 12002 12018	Д\ПЕРСТНАЯ КИШКА
+T258	Body_location 15563 15569	Сердца
+T259	Body_location 15598 15603	АОРТА
+T260	Body_location 15786 15802	ЛЕГОЧНАЯ АРТЕРИЯ
+T261	Body_location 15967 15984	ПРАВОЕ ПРЕДСЕРДИЕ
+T262	Body_location 16119 16134	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T263	Body_location 16301 16328	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА
+T264	Body_location 16378 16408	ЗАДНЯЯ СТЕНКА ЛЕВОГО ЖЕЛУДОЧКА
+T265	Body_location 16543 16565	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T266	Treatment 17122 17223	проведена замена иАПФ с Энапа в дозе 2,5 мг - 2 раза в день на Моноприл - 5 мг утром, 2,5мг - вечером
+T267	Drug 17146 17151	Энапа
+T268	Drug 17185 17193	Моноприл
+T269	Treatment 17540 17588	Моноприл 5 мг - в 8.00, 2,5мг в 20.00, длительно
+T270	Drug 17540 17548	Моноприл
+T271	Treatment 17594 17647	Конкор ( бисопролол)1,25мг х 1 р/д в 14.00, длительно
+T272	Drug 17594 17600	Конкор
+T273	Treatment 17653 17702	Верошпирон ( спиронолактон) 6,25мг.х1р/день 09.00
+T274	Drug 17653 17663	Верошпирон
+T275	Drug 17603 17613	бисопролол
+T276	Drug 17666 17679	спиронолактон
+T277	Treatment 17708 17758	Трентал ( пентоксифиллин) 25 мг х 3 р/д, длительно
+T278	Drug 17708 17715	Трентал
+T279	Drug 17718 17732	пентоксифиллин
+T280	Drug 17764 17774	Цитофлавин
+T281	Treatment 17764 17828	Цитофлавин по 1/2т х 2 р/д с 1 по 20 число ежемесячно, длительно
+T282	Treatment 17835 17859	Панангин по 1/2т х 3 р/д
+T283	Drug 17835 17843	Панангин
+T284	Treatment 17945 18020	(аугментин, цедекс), виферон по 500тыс. МЕ 2 раза в день в течение 2 недель
+T285	Drug 17946 17955	аугментин
+T286	Drug 17957 17963	цедекс
+T287	Drug 17966 17973	виферон
+T288	Symptom 16849 16869	умеренное расширение
+A121	SType T288 disorder
+T289	Body_location 16870 16894	полости левого желудочка
+T290	Body_location 16897 16915	правого предсердия
+R32	Symptom_bdyloc_rel Arg1:T289 Arg2:T288	
+R33	Symptom_bdyloc_rel Arg1:T290 Arg2:T288	
+T291	Body_location 16917 16923	стенки
+T292	Symptom 16927 16935	утолщены
+A122	Negation T292
+A123	SType T292 disorder
+T293	Symptom 11357 11368	Эхогенность
+A124	SType T293 normal
+T294	Symptom 11381 11401	Паренхима однородная
+A125	SType T294 normal
+T295	Symptom 11437 11444	диаметр
+A126	SType T295 normal
+R34	Symptom_bdyloc_rel Arg1:T253 Arg2:T295	
+T296	Symptom 11452 11458	стенки
+A127	SType T296 normal
+R35	Symptom_bdyloc_rel Arg1:T253 Arg2:T296	
+T297	Symptom 11481 11492	размер 5 мм
+A128	SType T297 normal
+R36	Symptom_bdyloc_rel Arg1:T254 Arg2:T297	
+T298	Symptom 11501 11507	стенки
+A129	SType T298 normal
+R37	Symptom_bdyloc_rel Arg1:T254 Arg2:T298	
+T299	Symptom 11515 11535	ангиометоз.трансформ
+A130	Negation T299
+A131	SType T299 disorder
+R38	Symptom_bdyloc_rel Arg1:T254 Arg2:T299	
+T300	Symptom 11565 11573	расширен
+A132	Negation T300
+A133	SType T300 disorder
+R39	Symptom_bdyloc_rel Arg1:T246 Arg2:T300	
+T301	Symptom 11594 11602	изменены
+A134	SType T301 disorder
+R40	Symptom_bdyloc_rel Arg1:T247 Arg2:T301	
+T302	Symptom 11797 11805	расширен
+A135	Negation T302
+A136	SType T302 disorder
+R41	Symptom_bdyloc_rel Arg1:T252 Arg2:T302	
+T303	Symptom 11818 11835	Размер 60 х 30 мм
+A137	SType T303 normal
+R42	Symptom_bdyloc_rel Arg1:T249 Arg2:T303	
+T304	Symptom 11844 11857	Контур ровный
+A138	SType T304 normal
+R43	Symptom_bdyloc_rel Arg1:T249 Arg2:T304	
+T305	Symptom 11859 11870	Эхогенность
+A139	SType T305 normal
+R44	Symptom_bdyloc_rel Arg1:T249 Arg2:T305	
+T306	Symptom 11888 11898	однородная
+A140	SType T306 normal
+R45	Symptom_bdyloc_rel Arg1:T251 Arg2:T306	
+T307	Symptom 9887 9901	бледно-розовые
+A141	SType T307 normal
+T308	Symptom 9903 9909	чистые
+A142	SType T308 normal
+T309	Symptom 9927 9933	цианоз
+A143	SType T309 disorder
+T310	Symptom 9935 9940	невус
+A144	SType T310 disorder
+R46	Symptom_bdyloc_rel Arg1:T218 Arg2:T307	
+R47	Symptom_bdyloc_rel Arg1:T218 Arg2:T308	
+R48	Symptom_bdyloc_rel Arg1:T222 Arg2:T309	
+R49	Symptom_bdyloc_rel Arg1:T221 Arg2:T310	
+T311	Symptom 9975 9981	чистые
+A145	SType T311 normal
+R50	Symptom_bdyloc_rel Arg1:T219 Arg2:T311	
+T312	Symptom 10010 10034	воспалительных изменений
+A146	Negation T312
+A147	SType T312 disorder
+R51	Symptom_bdyloc_rel Arg1:T220 Arg2:T312	
+T313	Symptom 10056 10074	развита достаточно
+A148	SType T313 normal
+T314	Symptom 10076 10099	распределена равномерно
+A149	SType T314 normal
+R52	Symptom_bdyloc_rel Arg1:T223 Arg2:T313	
+R53	Symptom_bdyloc_rel Arg1:T223 Arg2:T314	
+T315	Symptom 10127 10148	системного увеличения
+A150	Negation T315
+A151	SType T315 disorder
+R54	Symptom_bdyloc_rel Arg1:T224 Arg2:T315	
+T316	Symptom 10205 10231	Тонус мышц физиологический
+A152	SType T316 normal
+T317	Symptom 10233 10268	движения в суставах в полном объеме
+A153	SType T317 normal
+T318	Symptom 10270 10284	безболезненные
+A154	SType T318 normal
+R55	Symptom_bdyloc_rel Arg1:T226 Arg2:T317	
+R56	Symptom_bdyloc_rel Arg1:T226 Arg2:T318	
+T319	Symptom 10302 10327	Носовое дыхание свободное
+A155	SType T319 normal
+T320	Symptom 10943 10950	дизурии
+A156	Negation T320
+A157	SType T320 disorder
+T321	Symptom 11224 11239	Стенки утолщены
+A158	SType T321 disorder
+T322	Symptom 11247 11252	Форма
+A159	SType T322 normal
+T323	Body_location 11931 11937	Сосуды
+T324	Symptom 11941 11949	изменены
+A160	Negation T324
+A161	SType T324 disorder
+R57	Symptom_bdyloc_rel Arg1:T323 Arg2:T324	
+T325	Symptom 11967 11973	Стенки
+A162	SType T325 normal
+R58	Symptom_bdyloc_rel Arg1:T256 Arg2:T325	
+T326	Symptom 12086 12104	СВОБОДНАЯ ЖИДКОСТЬ
+A163	Negation T326
+A164	SType T326 disorder
+T327	Body_location 12149 12154	Почек
+T328	Body_location 12157 12172	мочевого пузыря
+T329	Body_location 14211 14228	Щитовидной железы
+T330	Body_location 14505 14528	органов грудной полости
+T331	Symptom 12199 12208	увеличена
+A165	SType T331 disorder
+R59	Symptom_bdyloc_rel Arg1:T255 Arg2:T331	
+T332	Symptom 12366 12402	Паренхима: дифференцировка сохранена
+A166	SType T332 normal
+T333	Symptom 12404 12415	эхогенность
+A167	SType T333 normal
+T334	Body_location 12416 12430	коркового слоя
+R60	Symptom_bdyloc_rel Arg1:T334 Arg2:T333	
+R61	Symptom_bdyloc_rel Arg1:T255 Arg2:T333	
+T335	Symptom 12273 12286	Контур ровный
+A168	SType T335 normal
+R62	Symptom_bdyloc_rel Arg1:T255 Arg2:T335	
+T336	Symptom 12309 12320	Смещаемость
+A169	SType T336 normal
+R63	Symptom_bdyloc_rel Arg1:T255 Arg2:T336	
+T337	Symptom 12350 12358	Кровоток
+A170	SType T337 normal
+R64	Symptom_bdyloc_rel Arg1:T255 Arg2:T337	
+R65	Symptom_bdyloc_rel Arg1:T255 Arg2:T332	
+T338	Symptom 12229 12238	Положение
+A171	SType T338 normal
+R66	Symptom_bdyloc_rel Arg1:T255 Arg2:T338	
+T339	Symptom 12443 12454	эхогенность
+A172	SType T339 normal
+T340	Body_location 12455 12469	мозгового слоя
+R67	Symptom_bdyloc_rel Arg1:T340 Arg2:T339	
+T341	Symptom 12482 12489	толщина
+A173	SType T341 normal
+R68	Symptom_bdyloc_rel Arg1:T340 Arg2:T341	
+T342	Body_location 12497 12511	стенки сосудов
+T343	Symptom 12515 12523	изменены
+A174	Negation T343
+A175	SType T343 disorder
+R69	Symptom_bdyloc_rel Arg1:T342 Arg2:T343	
+T344	Body_location 12525 12528	ЧЛС
+T345	Symptom 12533 12542	расширена
+A176	Negation T345
+A177	SType T345 disorder
+R70	Symptom_bdyloc_rel Arg1:T344 Arg2:T345	
+T346	Body_location 12564 12571	лоханка
+T347	Body_location 12586 12593	чашечки
+T348	Body_location 12595 12609	верхняя группа
+T349	Body_location 12624 12638	средняя группа
+T350	Body_location 12653 12666	нижняя группа
+T351	Symptom 12681 12698	просвет свободный
+A178	SType T351 normal
+T352	Body_location 12728 12738	Мочеточник
+T353	Symptom 12743 12752	расширена
+A179	Negation T353
+A180	SType T353 disorder
+T354	Body_location 12754 12766	нижняя треть
+T355	Body_location 12781 12787	стенки
+T356	Symptom 12791 12799	изменены
+A181	Negation T356
+A182	SType T356 disorder
+R71	Symptom_bdyloc_rel Arg1:T355 Arg2:T356	
+T357	Body_location 12544 12550	стенки
+T358	Symptom 12554 12562	изменены
+A183	Negation T358
+A184	SType T358 disorder
+R72	Symptom_bdyloc_rel Arg1:T357 Arg2:T358	
+T359	Symptom 12575 12584	расширена
+A185	Negation T359
+A186	SType T359 disorder
+R73	Symptom_bdyloc_rel Arg1:T346 Arg2:T359	
+T360	Symptom 12613 12622	расширена
+A187	Negation T360
+A188	SType T360 disorder
+R74	Symptom_bdyloc_rel Arg1:T348 Arg2:T360	
+T361	Symptom 12642 12651	расширена
+A189	Negation T361
+A190	SType T361 disorder
+T362	Symptom 12670 12679	расширена
+A191	Negation T362
+A192	SType T362 disorder
+R75	Symptom_bdyloc_rel Arg1:T350 Arg2:T362	
+R76	Symptom_bdyloc_rel Arg1:T349 Arg2:T361	
+T363	Body_location 12700 12714	стенки сосудов
+T364	Symptom 12718 12726	изменены
+A193	Negation T364
+A194	SType T364 disorder
+R77	Symptom_bdyloc_rel Arg1:T363 Arg2:T364	
+T365	Body_location 12801 12813	ПРАВАЯ ПОЧКА
+T366	Symptom 12815 12824	увеличена
+A195	SType T366 disorder
+R78	Symptom_bdyloc_rel Arg1:T365 Arg2:T366	
+T367	Symptom 12845 12854	Положение
+A196	SType T367 normal
+R79	Symptom_bdyloc_rel Arg1:T365 Arg2:T367	
+T368	Symptom 12889 12902	Контур ровный
+A197	SType T368 normal
+T369	Body_location 12904 12911	Капсула
+T370	Symptom 12915 12923	изменена
+A198	Negation T370
+A199	SType T370 disorder
+R80	Symptom_bdyloc_rel Arg1:T369 Arg2:T370	
+R81	Symptom_bdyloc_rel Arg1:T365 Arg2:T368	
+T371	Symptom 12925 12936	Смещаемость
+A200	SType T371 normal
+R82	Symptom_bdyloc_rel Arg1:T365 Arg2:T371	
+T372	Symptom 12966 12974	Кровоток
+A201	SType T372 normal
+R83	Symptom_bdyloc_rel Arg1:T365 Arg2:T372	
+T373	Symptom 12993 13018	дифференцировка сохранена
+A202	SType T373 normal
+T374	Body_location 12982 12991	Паренхима
+R84	Symptom_bdyloc_rel Arg1:T374 Arg2:T373	
+T375	Symptom 13020 13031	эхогенность
+A203	SType T375 normal
+T376	Body_location 13032 13046	коркового слоя
+R85	Symptom_bdyloc_rel Arg1:T376 Arg2:T375	
+T377	Symptom 13059 13070	эхогенность
+A204	SType T377 normal
+T378	Body_location 13071 13085	мозгового слоя
+R86	Symptom_bdyloc_rel Arg1:T378 Arg2:T377	
+T379	Symptom 13098 13105	толщина
+A205	SType T379 normal
+T380	Body_location 13113 13127	стенки сосудов
+T381	Symptom 13131 13139	изменены
+A206	Negation T381
+A207	SType T381 disorder
+R87	Symptom_bdyloc_rel Arg1:T380 Arg2:T381	
+T382	Body_location 13141 13144	ЧЛС
+T383	Symptom 13149 13158	расширена
+A208	Negation T383
+A209	SType T383 disorder
+R88	Symptom_bdyloc_rel Arg1:T382 Arg2:T383	
+T384	Body_location 13180 13187	лоханка
+T385	Symptom 13191 13200	расширена
+A210	Negation T385
+A211	SType T385 disorder
+R89	Symptom_bdyloc_rel Arg1:T384 Arg2:T385	
+T386	Body_location 13202 13225	чашечки: верхняя группа
+T387	Symptom 13229 13238	расширена
+A212	Negation T387
+A213	SType T387 disorder
+R90	Symptom_bdyloc_rel Arg1:T386 Arg2:T387	
+T388	Body_location 13459 13473	МОЧЕВОЙ ПУЗЫРЬ
+T389	Symptom 13485 13498	Форма обычная
+A214	SType T389 normal
+T390	Body_location 13500 13506	Стенки
+T391	Symptom 13510 13518	изменены
+A215	Negation T391
+A216	SType T391 disorder
+R91	Symptom_bdyloc_rel Arg1:T390 Arg2:T391	
+R92	Symptom_bdyloc_rel Arg1:T388 Arg2:T389	
+T392	Symptom 13520 13544	Внутренний контур ровный
+A217	SType T392 normal
+R93	Symptom_bdyloc_rel Arg1:T388 Arg2:T392	
+T393	Symptom 13546 13564	Просвет свободный;
+A218	SType T393 normal
+R94	Symptom_bdyloc_rel Arg1:T388 Arg2:T393	
+T394	Body_location 13344 13354	Мочеточник
+T395	Body_location 13356 13369	верхняя треть
+T396	Body_location 13384 13397	средняя треть
+T397	Body_location 13412 13424	нижняя треть
+T398	Body_location 13439 13445	стенки
+T399	Body_location 13240 13254	средняя группа
+T400	Body_location 13269 13282	нижняя группа
+T401	Symptom 13297 13314	просвет свободный
+A219	SType T401 normal
+T402	Body_location 13316 13330	стенки сосудов
+T403	Symptom 13286 13295	расширена
+A220	Negation T403
+A221	SType T403 disorder
+R95	Symptom_bdyloc_rel Arg1:T400 Arg2:T403	
+T404	Symptom 13258 13267	расширена
+A222	SType T404 disorder
+R96	Symptom_bdyloc_rel Arg1:T399 Arg2:T404	
+T405	Symptom 13334 13342	изменены
+A223	Negation T405
+A224	SType T405 disorder
+R97	Symptom_bdyloc_rel Arg1:T402 Arg2:T405	
+T406	Symptom 13373 13382	расширена
+A225	Negation T406
+A226	SType T406 disorder
+R98	Symptom_bdyloc_rel Arg1:T395 Arg2:T406	
+T407	Symptom 13401 13410	расширена
+A227	Negation T407
+A228	SType T407 disorder
+R99	Symptom_bdyloc_rel Arg1:T396 Arg2:T407	
+T408	Symptom 13428 13437	расширена
+A229	SType T408 disorder
+R100	Symptom_bdyloc_rel Arg1:T397 Arg2:T408	
+T409	Symptom 13449 13457	изменены
+A230	Negation T409
+A231	SType T409 disorder
+R101	Symptom_bdyloc_rel Arg1:T398 Arg2:T409	
+T410	Body_location 13565 13578	средняя треть
+T411	Symptom 13582 13591	расширена
+A232	Negation T411
+A233	SType T411 disorder
+R102	Symptom_bdyloc_rel Arg1:T410 Arg2:T411	
+T412	Body_location 15924 15940	ЛЕВОЕ ПРЕДСЕРДИЕ
+T413	Body_location 16753 16761	ПЕРИКАРД
+T414	Body_location 16783 16800	НИЖНЯЯ ПОЛАЯ ВЕНА
+T415	Body_location 16437 16454	МИТРАЛЬНЫЙ КЛАПАН
+T416	Symptom 13786 13820	Повышение электрической активности
+A234	SType T416 disorder
+T417	Body_location 13821 13846	миокарда левого желудочка
+R103	Symptom_bdyloc_rel Arg1:T417 Arg2:T416	
+T418	Treatment 605 661	BCG и V1 гепатит В в родильном доме; V2 гепатит В в 1мес
+R104	Body_location_rel Arg1:T6 Arg2:T5	
+R105	Body_location_rel Arg1:T7 Arg2:T5	
+R106	Body_location_rel Arg1:T9 Arg2:T8	
+R107	Body_location_rel Arg1:T12 Arg2:T11	
+R108	Body_location_rel Arg1:T13 Arg2:T11	
+R109	Body_location_rel Arg1:T18 Arg2:T17	
+R110	Body_location_rel Arg1:T26 Arg2:T25	
+R111	Body_location_rel Arg1:T64 Arg2:T61	
+R112	Body_location_rel Arg1:T65 Arg2:T61	
+R113	Body_location_rel Arg1:T63 Arg2:T61	
+R114	Body_location_rel Arg1:T69 Arg2:T68	
+T419	Body_location 9122 9124	МК
+R115	Body_location_rel Arg1:T419 Arg2:T207	

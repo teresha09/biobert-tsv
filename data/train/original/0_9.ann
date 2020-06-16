@@ -1,0 +1,56 @@
+T1	Disease 9 28	Аллергический ринит
+T2	Severity 30 44	персистирующий
+A1	Degree T2 medium
+T3	Course 46 60	вне обострения
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 62 70	Аденоиды
+T5	Severity 71 81	II степени
+A3	Degree T5 medium
+R3	Severity_rel Arg1:T5 Arg2:T4	
+T6	Symptom 142 170	затруднение носового дыхания
+T7	Symptom 180 203	малопродуктивного кашля
+T8	Disease 534 556	респираторные инфекции
+T9	Symptom 573 601	бронхобструктивным синдромом
+T10	Treatment 633 670	ингаляции с пульмикортом и беродуалом
+A4	Effect T10 positive
+T11	Drug 645 657	пульмикортом
+T12	Drug 660 670	беродуалом
+T13	Symptom 721 744	малопродуктивный кашель
+T14	Symptom 815 820	кашля
+T15	Disease 947 965	бронхиальная астма
+A5	NotPatient T15
+T16	Body_location 1166 1180	Кожные покровы
+T17	Body_location 1212 1238	Видимые слизистые оболочки
+T18	Body_location 1256 1259	Зев
+T19	Symptom 1269 1305	Носовое дыхание несколько затруднено
+T20	Body_location 1307 1315	В лёгких
+T21	Symptom 1316 1338	дыхание с везикулярное
+A6	SType T21 normal
+T22	Symptom 1377 1383	хрипов
+A7	Negation T22
+T23	Symptom 1440 1471	Сердечные тоны ясные, ритмичные
+A8	SType T23 normal
+T24	Body_location 1402 1416	Область сердца
+T25	Symptom 1488 1492	Стул
+A9	SType T25 normal
+T26	Symptom 1518 1525	Дизурии
+A10	Negation T26
+T27	Symptom 1531 1551	Менингеальных знаков
+A11	Negation T27
+T28	Symptom 1239 1254	розовые, чистые
+A12	SType T28 normal
+T29	Symptom 1181 1210	бледно-розового цвета, чистые
+A13	SType T29 normal
+T30	Symptom 1260 1267	спокоен
+A14	SType T30 normal
+R4	Symptom_bdyloc_rel Arg1:T16 Arg2:T29	
+R5	Symptom_bdyloc_rel Arg1:T17 Arg2:T28	
+R6	Symptom_bdyloc_rel Arg1:T18 Arg2:T30	
+R7	Symptom_bdyloc_rel Arg1:T20 Arg2:T21	
+A15	SType T6 disorder
+A16	SType T7 disorder
+A17	SType T9 disorder
+A18	SType T13 disorder
+A19	SType T14 disorder

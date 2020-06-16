@@ -1,0 +1,114 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 79	легкое интермиттирующее течение
+A1	Degree T2 light
+T3	Course 81 98	неполная ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 100 134	Круглогодичный аллергический ринит
+T5	Course 136 144	ремиссия
+A3	CType T5 improved
+R3	Course_rel Arg1:T5 Arg2:T4	
+T6	Disease 146 170	Идиопатическая эпилепсия
+T7	Disease 172 208	Нарушение эмоционально-волевой сферы
+T8	Disease 210 249	Парциальный дефицит когнитивных функций
+T9	Disease 251 300	Ангиопатия сетчатки обоих глаз со спазмом артерий
+T10	Body_location 262 281	сетчатки обоих глаз
+T11	Disease 302 340	Хронический компенсированный тонзиллит
+T12	Disease 342 371	Остеохондропатия позвоночника
+T13	Body_location 359 371	позвоночника
+T14	Disease 373 398	Левосторонний кифосколиоз
+T15	Disease 443 480	Конституционально-экзогенное ожирение
+T16	Severity 481 490	2 степени
+A4	Degree T16 medium
+R4	Severity_rel Arg1:T16 Arg2:T15	
+T17	Disease 400 441	Реактивные изменения поджелудочной железы
+T18	Body_location 421 441	поджелудочной железы
+T19	Symptom 571 602	эпизоды малопродуктивного кашля
+A5	SType T19 disorder
+T20	Symptom 604 624	атонические приступы
+A6	SType T20 disorder
+T21	Symptom 626 639	головные боли
+A7	SType T21 disorder
+T22	Symptom 641 649	бруксизм
+A8	SType T22 disorder
+T23	Symptom 651 674	частые смены настроения
+A9	SType T23 disorder
+T24	Symptom 853 887	Психомоторное развитие с задержкой
+A10	SType T24 disorder
+T25	Disease 935 948	ветряная оспа
+T26	Disease 950 958	краснуха
+T27	Disease 960 966	ангины
+T28	Symptom 1009 1021	Сухой кашель
+A11	SType T28 disorder
+T29	Treatment 1219 1256	антибиотики, симптоматическая терапия
+A12	Effect T29 no-effect
+T30	Symptom 1335 1355	атонические приступы
+A13	SType T30 disorder
+T31	Symptom 1357 1373	ухудшение памяти
+A14	SType T31 disorder
+T32	Symptom 1375 1392	снижение внимания
+A15	SType T32 disorder
+T33	Symptom 1394 1417	резкие смены настроения
+A16	SType T33 disorder
+T34	Symptom 1419 1431	мнительность
+A17	SType T34 disorder
+T35	Symptom 1433 1449	аура с видениями
+A18	SType T35 disorder
+T36	Symptom 1451 1464	головные боли
+A19	SType T36 disorder
+T37	Symptom 1485 1493	бруксизм
+A20	SType T37 disorder
+T38	Symptom 1495 1510	беспокойный сон
+A21	SType T38 disorder
+T39	Disease 1528 1537	эпилепсия
+T40	Symptom 1628 1642	Часто болеющий
+A22	SType T40 disorder
+T41	Body_location 1883 1897	Кожные покровы
+T42	Symptom 1898 1912	бледно-розовые
+A23	SType T42 normal
+T43	Symptom 1914 1920	чистые
+A24	SType T43 normal
+T44	Symptom 1922 1953	Дыхание через нос не затруднено
+A25	SType T44 normal
+T45	Symptom 1955 1966	Зев спокоен
+A26	SType T45 normal
+T46	Body_location 1968 1976	В легких
+T47	Symptom 1977 2003	дыхание с жестким оттенком
+T48	Symptom 2005 2010	хрипы
+A27	Negation T48
+T49	Symptom 2073 2102	Тоны сердца ясные, ритмичные.
+A28	SType T49 normal
+T50	Body_location 2121 2126	Живот
+T51	Symptom 2127 2133	мягкий
+T52	Symptom 2135 2149	безболезненный
+A29	SType T52 normal
+T53	Symptom 2151 2179	Стул ежедневный, оформленный
+A30	SType T53 normal
+A31	SType T51 normal
+T54	Symptom 2181 2201	Менингеальных знаков
+A32	Negation T54
+T55	Disease 1683 1705	лекарственная аллергия
+A33	NotPatient T55
+T56	Symptom 1707 1718	анафилаксия
+A34	NotPatient T56
+A35	SType T56 disorder
+R5	Body_location_rel Arg1:T10 Arg2:T9	
+R6	Body_location_rel Arg1:T13 Arg2:T12	
+R7	Body_location_rel Arg1:T18 Arg2:T17	
+R8	Symptom_bdyloc_rel Arg1:T41 Arg2:T42	
+R9	Symptom_bdyloc_rel Arg1:T41 Arg2:T43	
+R10	Symptom_bdyloc_rel Arg1:T46 Arg2:T47	
+R11	Symptom_bdyloc_rel Arg1:T46 Arg2:T48	
+R12	Symptom_bdyloc_rel Arg1:T50 Arg2:T51	
+R13	Symptom_bdyloc_rel Arg1:T50 Arg2:T52	
+T57	Disease 626 639	головные боли
+T58	Disease 641 649	бруксизм
+T59	Disease 853 887	Психомоторное развитие с задержкой
+T60	Disease 1310 1321	бронхоспазм
+T61	Disease 1707 1718	анафилаксия
+A36	NotPatient T61
+T62	Disease 1451 1464	головные боли
+T63	Disease 1485 1493	бруксизм
+A37	SType T47 disorder
+A38	SType T48 disorder

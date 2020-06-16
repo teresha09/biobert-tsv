@@ -1,0 +1,174 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 56 70	Желчный пузырь
+T3	Body_location 151 171	Поджелудочная железа
+T4	Body_location 241 250	Селезенка
+T5	Body_location 327 333	Печень
+T6	Body_location 523 530	Желудок
+T7	Body_location 560 585	Двенадцатиперстная  кишка
+T8	Symptom 532 558	Секрет есть, стенки тонкие
+A1	SType T8 normal
+T9	Symptom 588 614	секрет есть, стенки тонкие
+A2	SType T9 normal
+T10	Symptom 72 149	размер – средний; стенки – тонкие; форма – правильная; просвет - эхонегативен
+A3	SType T10 normal
+T11	Symptom 173 239	размер – не увеличена 9х6х12мм; паренхима – эхогенность однородная
+A4	SType T11 normal
+T12	Symptom 252 294	размер средний 70х37; паренхима однородная
+A5	SType T12 normal
+T13	Symptom 296 325	селезеночная вена не изменена
+A6	SType T13 normal
+T14	Body_location 296 313	селезеночная вена
+T15	Symptom 335 462	размер – норма, ЛД – 50, 1й сегмент 14 мм, ПД – 105 мм; контур ровный, край острый, паренхима – однородная, средней эхогенности
+A7	SType T15 normal
+T16	Body_location 464 477	воротная вена
+T17	Body_location 494 509	печеночные вены
+T18	Symptom 513 521	изменены
+A8	Negation T18
+T19	Symptom 480 484	6 мм
+A9	SType T19 normal
+T20	Symptom 796 818	показатели ФВД в норме
+A10	SType T20 normal
+T21	Drug 828 838	вентолином
+T22	Symptom 820 852	проба с вентолином отрицательная
+A11	SType T22 normal
+T23	Symptom 1002 1024	показатели ФВД в норме
+A12	SType T23 normal
+T24	Drug 1034 1044	вентолином
+T25	Body_location 1088 1110	органов грудной клетки
+T26	Body_location 1268 1280	Корни легких
+T27	Body_location 1293 1304	Средостение
+T28	Body_location 1409 1415	Синусы
+T29	Body_location 1427 1442	Костная система
+T30	Body_location 1445 1457	мягкие ткани
+T31	Symptom 1458 1474	без особенностей
+A13	SType T31 normal
+T32	Symptom 1416 1425	свободные
+A14	SType T32 normal
+T33	Body_location 1376 1392	Купола диафрагмы
+T34	Symptom 1393 1399	ровные
+A15	SType T34 normal
+T35	Symptom 1401 1407	четкие
+A16	SType T35 normal
+T36	Symptom 1163 1203	Острых очагово-инфильтративных изменений
+A17	Negation T36
+T37	Body_location 1209 1225	Легочный рисунок
+T38	Symptom 1226 1232	сгущен
+A18	SType T38 disorder
+T39	Body_location 1233 1247	в нижних зонах
+T40	Symptom 1281 1291	структурны
+A19	SType T40 normal
+T41	Symptom 1347 1362	форма и размеры
+A20	SType T41 normal
+T42	Body_location 1320 1326	Сердце
+T43	Symptom 1327 1345	расположено обычно
+A21	SType T43 normal
+T44	Symptom 1309 1318	увеличено
+A22	Negation T44
+T45	Symptom 1125 1137	симметричный
+A23	SType T45 normal
+T46	Symptom 1139 1150	воздушность
+A24	SType T46 normal
+T47	Treatment 2828 2886	Соблюдение  гипоаллергенной диеты и элиминационного режима
+T48	Symptom 2895 2923	приступе затруднения дыхания
+A25	SType T48 disorder
+T49	Symptom 2925 2948	малопродуктивного кашля
+A26	SType T49 disorder
+T50	Disease 2959 2962	ОРИ
+T51	Treatment 2964 3002	вентолин по 1-2 инг. до 2-3 раз в день
+T52	Drug 2964 2972	вентолин
+T53	Treatment 3022 3078	через небулайзер - беродуал 10 кап. + пульмикорт 250 мкг
+T54	Drug 3041 3049	беродуал
+T55	Drug 3060 3070	пульмикорт
+T56	Symptom 3098 3103	кашля
+A27	SType T56 disorder
+T57	Treatment 3113 3157	лазолван по 1 мл 2-3 раза в день на 4-5 дней
+T58	Drug 3113 3121	лазолван
+T59	Treatment 3176 3234	Туалет носа с физиомер (маример, аква-марис) 3 раза в день
+T60	Treatment 3239 3288	Фликсоназе в нос (1+1) 1 р/д продолжить 1 неделю.
+T61	Treatment 3292 3325	Имудон 1 т. 4 раза в день 10 дней
+T62	Treatment 3388 3454	галотерапия №10, ТНЧ №5, КУФО №7, электрофорез эндоназально №7-10.
+T63	Drug 3239 3249	Фликсоназе
+T64	Drug 3190 3198	физиомер
+T65	Drug 3200 3207	маример
+T66	Drug 3209 3219	аква-марис
+T67	Treatment 2469 2535	физиомер, полидекса, тантум верде, вильпрафен солютаб, фликсоназе.
+T68	Treatment 2546 2602	промывание верхнечелюстных пазух методом перемещения № 3
+T69	Body_location 2557 2578	верхнечелюстных пазух
+T70	Drug 2469 2477	физиомер
+T71	Drug 2479 2488	полидекса
+T72	Drug 2490 2502	тантум верде
+T73	Drug 2504 2522	вильпрафен солютаб
+T74	Drug 2524 2534	фликсоназе
+T75	Symptom 2299 2359	повышение электрической активности миокарда левого желудочка
+A28	SType T75 disorder
+T76	Body_location 2334 2359	миокарда левого желудочка
+T77	Symptom 2361 2393	нарушение процесса реполяризации
+A29	SType T77 disorder
+T78	Symptom 2395 2443	Синдром ранней реполяризации миокарда желудочков
+A30	SType T78 disorder
+T79	Body_location 2424 2443	миокарда желудочков
+T80	Disease 2160 2209	Реконвалесцент острого двустороннего риносинусита
+T81	Body_location 2183 2209	двустороннего риносинусита
+T82	Disease 2211 2219	Аденоиды
+T83	Severity 2220 2224	2 ст
+A31	Degree T83 medium
+R1	Severity_rel Arg1:T83 Arg2:T82	
+T84	Disease 2226 2257	Искривление носовой перегородки
+T85	Body_location 2238 2257	носовой перегородки
+R2	Body_location_rel Arg1:T85 Arg2:T84	
+T86	Body_location 1836 1858	придаточных пазух носа
+T87	Symptom 1884 1925	отека слизистой оболочки гайморовых пазух
+A32	SType T87 disorder
+T88	Body_location 1890 1925	слизистой оболочки гайморовых пазух
+T89	Disease 1964 1995	острый двусторонний риносинусит
+T90	Body_location 1984 1995	риносинусит
+R3	Body_location_rel Arg1:T90 Arg2:T89	
+T91	Disease 2053 2102	реконвалесцент острого двустороннего риносинусита
+T92	Body_location 2076 2102	двустороннего риносинусита
+R4	Body_location_rel Arg1:T92 Arg2:T91	
+R5	Body_location_rel Arg1:T81 Arg2:T80	
+T93	Symptom 1487 1530	Морфометрические и функциональные параметры
+A33	SType T93 normal
+T94	Body_location 1531 1537	сердца
+T95	Body_location 1547 1576	Дополнительная трабекула в ЛЖ
+T96	Body_location 1586 1591	почек
+T97	Body_location 1644 1666	придаточных пазух носа
+T98	Symptom 1692 1715	двустороннего гайморита
+A34	SType T98 disorder
+T99	Body_location 1725 1748	придаточных пазух носа.
+T100	Symptom 1773 1826	выраженного отека слизистой оболочки гайморовых пазух
+A35	SType T100 disorder
+T101	Body_location 1810 1826	гайморовых пазух
+T102	Disease 1692 1715	двустороннего гайморита
+T103	Severity 1773 1784	выраженного
+A36	Degree T103 hard
+T104	Disease 1785 1809	отека слизистой оболочки
+R6	Severity_rel Arg1:T103 Arg2:T104	
+T105	Disease 1884 1889	отека
+R7	Body_location_rel Arg1:T88 Arg2:T105	
+T106	Disease 2395 2443	Синдром ранней реполяризации миокарда желудочков
+R8	Body_location_rel Arg1:T79 Arg2:T106	
+T107	Drug 3292 3298	Имудон
+R9	Symptom_bdyloc_rel Arg1:T2 Arg2:T10	
+R10	Symptom_bdyloc_rel Arg1:T3 Arg2:T11	
+R11	Symptom_bdyloc_rel Arg1:T4 Arg2:T12	
+R12	Symptom_bdyloc_rel Arg1:T14 Arg2:T13	
+R13	Symptom_bdyloc_rel Arg1:T5 Arg2:T15	
+R14	Symptom_bdyloc_rel Arg1:T16 Arg2:T19	
+R15	Symptom_bdyloc_rel Arg1:T17 Arg2:T18	
+R16	Symptom_bdyloc_rel Arg1:T7 Arg2:T9	
+A37	SType T18 disorder
+R17	Symptom_bdyloc_rel Arg1:T37 Arg2:T38	
+R18	Symptom_bdyloc_rel Arg1:T39 Arg2:T38	
+R19	Symptom_bdyloc_rel Arg1:T26 Arg2:T40	
+R20	Symptom_bdyloc_rel Arg1:T27 Arg2:T44	
+R21	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R22	Symptom_bdyloc_rel Arg1:T42 Arg2:T41	
+R23	Symptom_bdyloc_rel Arg1:T33 Arg2:T34	
+R24	Symptom_bdyloc_rel Arg1:T33 Arg2:T35	
+R25	Symptom_bdyloc_rel Arg1:T28 Arg2:T32	
+R26	Symptom_bdyloc_rel Arg1:T30 Arg2:T31	
+R27	Symptom_bdyloc_rel Arg1:T29 Arg2:T31	
+R28	Symptom_bdyloc_rel Arg1:T94 Arg2:T93	
+R29	Body_location_rel Arg1:T101 Arg2:T104	
+R30	Symptom_bdyloc_rel Arg1:T76 Arg2:T75	

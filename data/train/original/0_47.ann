@@ -1,0 +1,96 @@
+T1	Body_location 2065 2079	Кожные покровы
+T2	Symptom 2131 2167	Носовое дыхание несколько затруднено
+A1	SType T2 disorder
+T3	Body_location 2169 2177	В лёгких
+T4	Symptom 2080 2086	чистые
+A2	SType T4 normal
+T5	Symptom 2088 2095	бледные
+A3	SType T5 disorder
+T6	Symptom 2097 2117	периорбитальные тени
+A4	SType T6 disorder
+T7	Symptom 2119 2129	Зев рыхлый
+A5	SType T7 disorder
+T8	Symptom 2178 2198	дыхание везикулярное
+A6	SType T8 normal
+T9	Symptom 2200 2218	с жестким оттенком
+A7	SType T9 disorder
+T10	Symptom 2220 2226	хрипов
+A8	Negation T10
+T11	Symptom 2232 2265	Сердечные тоны звучные, ритмичные
+A9	SType T11 normal
+T12	Symptom 2318 2325	дизурии
+A10	Negation T12
+T13	Symptom 2331 2359	Стул регулярный, оформленный
+A11	SType T13 normal
+T14	Symptom 2361 2381	Менингеальных знаков
+A12	Negation T14
+T15	Disease 9 46	Бронхиальная астма, атопическая форма
+T16	Severity 48 77	легкое персистирующее течение
+A13	Degree T16 light
+T17	Course 79 89	обострение
+A14	CType T17 worsened
+R1	Severity_rel Arg1:T16 Arg2:T15	
+R2	Course_rel Arg1:T17 Arg2:T15	
+T18	Disease 91 112	Гипертрофия аденоидов
+T19	Severity 113 122	1 степени
+A15	Degree T19 light
+R3	Severity_rel Arg1:T19 Arg2:T18	
+T20	Disease 124 150	Цефалгии смешанного генеза
+T21	Disease 152 194	Парциальный дефицит познавательных функций
+T22	Disease 196 222	Личностная инфальтильность
+T23	Symptom 282 305	малопродуктивный кашель
+A16	SType T23 disorder
+T24	Disease 600 613	ветряная оспа
+T25	Disease 625 631	ангины
+T26	Disease 643 663	врожденным стридором
+T27	Disease 738 741	ОРИ
+T28	Disease 743 758	ларинготрахеиты
+T29	Drug 797 806	гексорала
+T30	Symptom 809 823	стеноз гортани
+A17	SType T30 disorder
+T31	Disease 873 892	серозного менингита
+T32	Disease 894 906	микоплазмоза
+T33	Disease 908 922	трахеобронхита
+T34	Symptom 959 965	кашель
+A18	SType T34 disorder
+T35	Disease 1013 1031	коклюшная инфекция
+T36	Symptom 1104 1127	бронхиальной обструкции
+A19	SType T36 disorder
+T38	Drug 1139 1146	аскорил
+T39	Drug 1160 1170	беродуалом
+T40	Symptom 1230 1253	малопродуктивный кашель
+A21	SType T40 disorder
+T41	Disease 1308 1311	ОРИ
+T42	Disease 1333 1354	обструктивный бронхит
+T43	Treatment 1356 1390	В терапии аскорил, эриус, макропен
+T44	Drug 1366 1373	аскорил
+T45	Drug 1375 1380	эриус
+T46	Drug 1382 1390	макропен
+T47	Symptom 1434 1457	малопродуктивный кашель
+A22	SType T47 disorder
+T48	Symptom 1687 1704	заложенность носа
+A23	SType T48 disorder
+T49	Treatment 1742 1763	использовании авамиса
+A24	Effect T49 positive
+T50	Drug 1756 1763	авамиса
+T51	Disease 1798 1801	ОРИ
+T52	Treatment 1803 1854	В терапии ингаляции с беродуалом, макропен, эреспал
+A25	Effect T52 positive
+T53	Drug 1825 1835	беродуалом
+T54	Drug 1837 1845	макропен
+T55	Drug 1847 1854	эреспал
+T56	Symptom 1898 1921	малопродуктивный кашель
+A26	SType T56 disorder
+T57	Disease 1049 1071	респираторные инфекции
+T58	Treatment 834 862	получал терапию в стационаре
+A27	Effect T58 unknown
+T59	Treatment 1129 1196	В терапии аскорил, ингаляции с беродуалом, симптоматическая терапия
+A28	Effect T59 positive
+R4	Symptom_bdyloc_rel Arg1:T1 Arg2:T4	
+R5	Symptom_bdyloc_rel Arg1:T1 Arg2:T5	
+R6	Symptom_bdyloc_rel Arg1:T1 Arg2:T6	
+R7	Symptom_bdyloc_rel Arg1:T3 Arg2:T8	
+R8	Symptom_bdyloc_rel Arg1:T3 Arg2:T9	
+R9	Symptom_bdyloc_rel Arg1:T3 Arg2:T10	
+T37	Drug 1561 1571	беродуалом
+A20	SType T10 disorder

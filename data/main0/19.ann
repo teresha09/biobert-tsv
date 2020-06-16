@@ -1,0 +1,124 @@
+T1	Disease 19 37	бронхиальная астма
+T2	Disease 39 67	риноконъюнктивальный синдром
+T3	Disease 9 17	Поллиноз
+T4	Course 69 77	ремиссия
+A1	CType T4 improved
+R1	Course_rel Arg1:T4 Arg2:T1	
+R2	Course_rel Arg1:T4 Arg2:T3	
+R3	Course_rel Arg1:T4 Arg2:T2	
+T5	Disease 79 98	Аллергический ринит
+T6	Course 122 130	ремиссия
+A2	CType T6 improved
+T7	Disease 132 163	Искривление носовой перегородки
+T8	Body_location 144 163	носовой перегородки
+T9	Disease 165 205	Вторичные изменения поджелудочной железы
+T10	Body_location 185 205	поджелудочной железы
+T11	Symptom 276 299	малопродуктивного кашля
+A3	SType T11 disorder
+T12	Symptom 301 329	приступы затруднения дыхания
+A4	SType T12 disorder
+T13	Disease 338 360	респираторной инфекции
+T14	Symptom 371 377	ринита
+A5	SType T14 disorder
+T15	Symptom 379 392	конъюнктивита
+A6	SType T15 disorder
+T16	Symptom 394 417	малопродуктивный кашель
+A7	SType T16 disorder
+T17	Symptom 420 432	отеки Квинке
+A8	SType T17 disorder
+T18	Symptom 738 744	атопии
+A9	SType T18 disorder
+T19	Treatment 746 834	купировавшиеся приемом антигистаминных препаратов, местными средствами, коррекцией диеты
+A10	Effect T19 positive
+T20	Disease 921 943	респираторных инфекций
+T21	Symptom 952 965	лающего кашля
+A11	SType T21 disorder
+T22	Disease 998 1027	обструктивные ларинготрахеиты
+T23	Symptom 1104 1127	бронхиальной обструкции
+A12	SType T23 disorder
+T24	Disease 1080 1083	ОРИ
+T25	Treatment 1129 1171	В терапии ингаляции беродуала, пульмикорта
+A13	Effect T25 positive
+T26	Drug 1149 1158	беродуала
+T27	Drug 1160 1171	пульмикорта
+T28	Disease 1268 1276	Поллиноз
+T29	Course 1328 1338	обострение
+A14	CType T29 worsened
+R4	Course_rel Arg1:T29 Arg2:T28	
+T30	Symptom 1340 1342	ДН
+A15	SType T30 disorder
+T31	Severity 1343 1347	2 ст
+A16	Degree T31 medium
+T32	Disease 1386 1404	бронхиальной астмы
+T33	Treatment 1406 1456	Получал терапию: ингаляции пульмикорта и беродуала
+A17	Effect T33 positive
+T34	Drug 1433 1444	пульмикорта
+T35	Drug 1447 1456	беродуала
+T36	Disease 1485 1507	респираторных инфекций
+T37	Treatment 1597 1638	получал ингаляции бероудала и пульмикорта
+A18	Effect T37 positive
+T38	Drug 1615 1624	бероудала
+T39	Drug 1627 1638	пульмикорта
+T40	Symptom 1722 1733	отек Квинке
+T41	Treatment 1757 1770	инъекцией ГКС
+A19	Effect T41 positive
+T42	Drug 1767 1770	ГКС
+T43	Disease 1812 1821	поллиноза
+T44	Symptom 1823 1851	затруднение носового дыхания
+T45	Symptom 1862 1875	конъюнктивита
+T46	Symptom 1877 1889	отеки Квинке
+T47	Disease 1951 1967	пищевая аллергия
+A20	NotPatient T47
+T48	Body_location 2040 2054	кожные покровы
+T49	Symptom 2068 2077	высыпаний
+A21	Negation T49
+T50	Body_location 2079 2087	В легких
+T51	Symptom 2088 2108	везикулярное дыхание
+A22	SType T51 normal
+T52	Symptom 2109 2115	хрипов
+A23	Negation T52
+T53	Body_location 2126 2132	сердца
+T54	Symptom 2133 2149	ясные, ритмичные
+A24	SType T54 normal
+T55	Body_location 2151 2156	Живот
+T56	Symptom 2157 2163	мягкий
+A25	SType T56 normal
+T57	Symptom 2165 2179	безболезненный
+A26	SType T57 normal
+T58	Symptom 2181 2185	Стул
+A27	Negation T58
+T59	Symptom 2187 2193	диурез
+A28	Negation T59
+T60	Symptom 2207 2227	Менингеальных знаков
+A29	Negation T60
+R5	Body_location_rel Arg1:T10 Arg2:T9	
+R6	Body_location_rel Arg1:T8 Arg2:T7	
+T61	Disease 1862 1875	конъюнктивита
+T62	Disease 1877 1889	отеки Квинке
+T63	Disease 371 377	ринита
+T64	Disease 379 392	конъюнктивита
+T65	Disease 420 432	отеки Квинке
+T66	Treatment 557 573	кесарева сечения
+A30	NotPatient T66
+T67	Disease 1278 1296	бронхиальная астма
+T68	Disease 1298 1326	риноконъюнктивальный синдром
+R7	Course_rel Arg1:T29 Arg2:T68	
+R8	Course_rel Arg1:T29 Arg2:T67	
+R9	Symptom_bdyloc_rel Arg1:T48 Arg2:T49	
+R10	Symptom_bdyloc_rel Arg1:T50 Arg2:T51	
+R11	Symptom_bdyloc_rel Arg1:T50 Arg2:T52	
+R12	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	
+R13	Symptom_bdyloc_rel Arg1:T55 Arg2:T56	
+R14	Symptom_bdyloc_rel Arg1:T55 Arg2:T57	
+R15	Course_rel Arg1:T6 Arg2:T5	
+T69	Severity 100 120	персистирующая форма
+R16	Severity_rel Arg1:T69 Arg2:T5	
+A31	Degree T69 medium
+T70	Disease 866 874	аллергии
+T71	Disease 1722 1733	отек Квинке
+A32	SType T40 disorder
+A33	SType T44 disorder
+A34	SType T45 disorder
+A35	SType T46 disorder
+A36	SType T49 disorder
+A37	SType T52 disorder

@@ -1,0 +1,87 @@
+T1	Disease 9 28	Аллергический ринит
+T2	Severity 30 52	интермиттирующая форма
+A1	Degree T2 light
+T3	Course 54 68	вне обострения
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 70 90	Атопический дерматит
+T5	Course 92 100	ремиссия
+A3	CType T5 improved
+R3	Course_rel Arg1:T5 Arg2:T4	
+T6	Disease 102 118	Пищевая аллергия
+T7	Course 120 128	ремиссия
+A4	CType T7 improved
+R4	Course_rel Arg1:T7 Arg2:T6	
+T8	Disease 130 138	Аденоиды
+T9	Severity 139 149	II степени
+A5	Degree T9 medium
+R5	Severity_rel Arg1:T9 Arg2:T8	
+T10	Disease 151 191	Вторичные изменения поджелудочной железы
+T11	Body_location 171 191	поджелудочной железы
+R6	Body_location_rel Arg1:T11 Arg2:T10	
+T12	Symptom 252 280	затруднение носового дыхания
+T13	Symptom 297 306	высыпания
+T14	Body_location 307 314	на коже
+T15	Disease 594 616	атопического дерматита
+T16	Treatment 618 682	В терапии антигистаминные препараты, топические стероиды курсами
+A6	Effect T16 positive
+T17	Drug 628 653	антигистаминные препараты
+T18	Drug 655 674	топические стероиды
+T19	Disease 713 729	пищевой аллергии
+T20	Symptom 793 821	обструктивный ларинготрахеит
+T21	Disease 878 881	ОРИ
+T22	Symptom 914 937	бронхиальной обструкции
+T23	Treatment 939 969	В терапии пульмикорт, беродуал
+A7	Effect T23 positive
+T24	Drug 949 959	пульмикорт
+T25	Drug 961 969	беродуал
+T26	Symptom 1017 1045	затруднение носового дыхания
+T27	Disease 1089 1108	аллергический ринит
+T28	Disease 1110 1118	аденоиды
+T29	Severity 1119 1130	2-3 степени
+A8	Degree T29 medium
+R7	Severity_rel Arg1:T29 Arg2:T28	
+T30	Disease 1132 1152	хронический ларингит
+T31	Disease 1319 1338	аллергический ринит
+A9	NotPatient T31
+T32	Disease 1358 1376	инсектная аллергия
+A10	NotPatient T32
+T33	Body_location 1587 1601	Кожные покровы
+T34	Symptom 1909 1929	Менингеальных знаков
+A11	Negation T34
+T35	Symptom 1896 1903	Дизурии
+A12	Negation T35
+T36	Symptom 1866 1870	Стул
+A13	SType T36 normal
+T37	Body_location 1780 1794	Область сердца
+T38	Symptom 1828 1849	тоны ясные, ритмичные
+A14	SType T38 normal
+T39	Body_location 1726 1732	лёгких
+T40	Symptom 1733 1753	дыхание везикулярное
+A15	SType T40 normal
+T41	Symptom 1755 1761	хрипов
+A16	Negation T41
+T42	Body_location 1629 1655	Видимые слизистые оболочки
+T43	Symptom 1602 1627	бледно-розовые, суховатые
+A17	SType T43 normal
+T44	Symptom 1656 1671	розовые, чистые
+A18	SType T44 normal
+T45	Body_location 1673 1676	Зев
+T46	Symptom 1677 1684	спокоен
+A19	SType T46 normal
+R8	Symptom_bdyloc_rel Arg1:T14 Arg2:T13	
+R9	Symptom_bdyloc_rel Arg1:T33 Arg2:T43	
+R10	Symptom_bdyloc_rel Arg1:T42 Arg2:T44	
+R11	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R12	Symptom_bdyloc_rel Arg1:T39 Arg2:T40	
+R13	Symptom_bdyloc_rel Arg1:T39 Arg2:T41	
+A20	SType T12 disorder
+A21	SType T13 disorder
+A22	SType T20 disorder
+A23	SType T22 disorder
+A24	SType T26 disorder
+T47	Symptom 1808 1816	изменена
+A25	Negation T47
+A26	SType T47 disorder
+R14	Symptom_bdyloc_rel Arg1:T37 Arg2:T47	

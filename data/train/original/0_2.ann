@@ -1,0 +1,128 @@
+T1	Disease 9 27	Бронхиальная астма
+T2	Severity 29 59	тяжелое персистирующее течение
+A1	Degree T2 hard
+T3	Course 80 108	период неустойчивой ремиссии
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T5	Severity 156 171	тяжелое течение
+A3	Degree T5 hard
+T6	Course 173 190	период обострения
+A4	CType T6 worsened
+T4	Disease 110 154	Атопический дерматит, распространенная форма
+R3	Severity_rel Arg1:T5 Arg2:T4	
+R4	Course_rel Arg1:T6 Arg2:T4	
+T7	Disease 200 234	Круглогодичный аллергический ринит
+T8	Course 236 253	период обострения
+A5	CType T8 worsened
+R5	Course_rel Arg1:T8 Arg2:T7	
+T9	Disease 265 283	бронхиальная астма
+T10	Disease 286 314	риноконъюнктивальный синдром
+T11	Disease 317 337	атопический дерматит
+T12	Course 340 357	подострое течение
+A6	CType T12 worsened
+R6	Course_rel Arg1:T12 Arg2:T11	
+R7	Course_rel Arg1:T12 Arg2:T10	
+R8	Course_rel Arg1:T12 Arg2:T9	
+T13	Disease 359 375	Пищевая аллергия
+T14	Disease 377 408	Дискинезия желчевыводящих путей
+T15	Body_location 388 408	желчевыводящих путей
+T16	Disease 410 460	Пролапс митрального клапана с регургитацией 3-4 мм
+T17	Disease 462 477	Грудной сколиоз
+T18	Severity 478 487	1 степени
+A7	Degree T18 light
+T19	Disease 489 540	Вегетососудистая дисфункция по гипотоническому типу
+T20	Disease 542 551	Цефалгии.
+T21	Symptom 617 636	затруднения дыхания
+A8	SType T21 disorder
+T22	Treatment 660 676	базисной терапии
+T23	Symptom 678 692	выраженный зуд
+A9	SType T23 disorder
+T24	Body_location 693 697	кожи
+T25	Symptom 699 722	повышенную утомляемость
+A10	SType T25 disorder
+T26	Symptom 724 738	головные боли.
+T27	Disease 913 935	атопического дерматита
+T28	Disease 987 991	ОРВИ
+T29	Disease 1061 1076	бронхопневмонию
+T30	Treatment 1020 1040	лечение в стационаре
+T31	Disease 1125 1154	дермо-респираторного синдрома
+T32	Severity 1156 1172	тяжелого течения
+A11	Degree T32 hard
+R9	Severity_rel Arg1:T32 Arg2:T31	
+T33	Disease 1263 1292	дермо-респираторного синдрома
+T34	Severity 1294 1311	тяжелого течения.
+A12	Degree T34 hard
+R10	Severity_rel Arg1:T34 Arg2:T33	
+T35	Treatment 1375 1435	курсы базисной терапии ингаляционными глюкокортикостероидами
+T36	Drug 1398 1435	ингаляционными глюкокортикостероидами
+T37	Treatment 1462 1490	фликсотид в дозе 250 мкг/сут
+T38	Drug 1462 1471	фликсотид
+T39	Treatment 1554 1589	снимаются вентолином или беродуалом
+T40	Drug 1564 1574	вентолином
+T41	Drug 1579 1589	беродуалом
+T42	Disease 1636 1640	ОРВИ
+T43	Disease 1699 1704	ринит
+T44	Disease 1706 1724	бронхиальная астма
+T45	Symptom 1727 1755	Выраженная заложенность носа
+T46	Symptom 1784 1796	сильный зуд.
+A13	SType T46 disorder
+T47	Disease 1838 1858	атопический дерматит
+A14	NotPatient T47
+T48	Body_location 1910 1924	Кожные покровы
+T49	Symptom 1925 1930	сухие
+A15	SType T49 disorder
+T50	Disease 1943 1949	хейлит
+T51	Severity 1932 1942	выраженный
+A16	Degree T51 hard
+R11	Severity_rel Arg1:T51 Arg2:T50	
+T52	Body_location 1989 1992	шее
+T53	Body_location 1994 1999	руках
+T54	Body_location 2001 2006	ногах
+T55	Body_location 2043 2047	кожи
+T56	Symptom 2039 2042	зуд
+T57	Symptom 2007 2037	с элементами мокнутия, трещины
+T58	Symptom 1951 1974	эритематозно-сквамозные
+T59	Body_location 2105 2113	В лёгких
+T60	Symptom 2289 2309	Менингеальных знаков
+A17	Negation T60
+T61	Body_location 2215 2220	Живот
+T62	Symptom 2221 2227	мягкий
+T63	Symptom 2243 2257	безболезненный
+A18	Negation T63
+T64	Symptom 2128 2149	единичные сухие хрипы
+T65	Disease 192 198	Хейлит
+T66	Symptom 994 1017	обструктивным синдромом
+T67	Symptom 2077 2103	Носовое дыхание затруднено
+T68	Body_location 2049 2052	Зев
+T69	Symptom 2053 2075	умеренно гиперемирован
+T70	Symptom 2166 2184	громкие, ритмичные
+A19	SType T70 normal
+T71	Symptom 2186 2213	небольшой систолический шум
+A20	SType T71 disorder
+T72	Symptom 2259 2263	Стул
+A21	SType T72 normal
+R12	Severity_rel Arg1:T18 Arg2:T17	
+R13	Body_location_rel Arg1:T15 Arg2:T14	
+T73	Body_location 418 437	митрального клапана
+R14	Body_location_rel Arg1:T73 Arg2:T16	
+T74	Disease 255 263	Поллиноз
+R15	Course_rel Arg1:T12 Arg2:T74	
+R16	Symptom_bdyloc_rel Arg1:T24 Arg2:T23	
+T75	Disease 1689 1697	поллиноз
+R17	Symptom_bdyloc_rel Arg1:T48 Arg2:T49	
+R18	Symptom_bdyloc_rel Arg1:T52 Arg2:T58	
+R19	Symptom_bdyloc_rel Arg1:T53 Arg2:T58	
+R20	Symptom_bdyloc_rel Arg1:T54 Arg2:T58	
+R21	Symptom_bdyloc_rel Arg1:T55 Arg2:T56	
+R22	Symptom_bdyloc_rel Arg1:T68 Arg2:T69	
+R23	Symptom_bdyloc_rel Arg1:T59 Arg2:T64	
+R24	Symptom_bdyloc_rel Arg1:T61 Arg2:T62	
+A22	SType T26 disorder
+A23	SType T66 disorder
+A24	SType T45 disorder
+A25	SType T57 disorder
+A26	SType T56 disorder
+A27	SType T67 disorder
+A28	SType T64 disorder
+A29	SType T62 normal

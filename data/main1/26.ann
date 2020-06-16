@@ -1,0 +1,129 @@
+T1	Treatment 2500 2557	Соблюдение гипоаллергенной диеты и элиминационного режима
+T2	Treatment 2562 2602	Серетид 250/25 по 1 инг х 2 раза в день.
+T3	Symptom 2686 2714	приступа затруднения дыхания
+A1	SType T3 disorder
+T4	Disease 2725 2728	ОРИ
+T5	Treatment 2730 2768	вентолин по 1-2 инг. до 2-3 раз в день
+T6	Drug 2730 2738	вентолин
+T7	Treatment 2788 2947	через небулайзер - беродуал 10 кап. + лазолван 0,5 мл + пульмикорт 500 мкг; при присоединении кашля - лазолван (амбробене) по 1/2т. 2-3 раза в день на 4-5 дней
+T8	Drug 2807 2815	беродуал
+T9	Drug 2826 2834	лазолван
+T10	Drug 2844 2854	пульмикорт
+T11	Symptom 2868 2887	присоединении кашля
+A2	SType T11 disorder
+T12	Drug 2890 2898	лазолван
+T13	Drug 2900 2909	амбробене
+T14	Treatment 2952 3001	Зиртек по 1т. х 1 раз в день продолжить 3 недели.
+T15	Drug 2952 2958	Зиртек
+T16	Treatment 3005 3072	Назонекс по 1 инст. в каждую ноздрю 1 раз в день продолжить 20 дней
+T17	Drug 3005 3013	Назонекс
+T18	Treatment 2185 2283	через небулайзер беродуал 10к. + пульмикорт 500 мкг + физ. р-р 1 мл №1, серетид 250/25 мкг х 2 р/д
+T19	Treatment 2285 2392	назонекс по 1 инст. х 1 раз в день, зиртек по 1т. х 1 раз в день, полоскания с OKI, виброцил по 1к. х 3 р/д
+T20	Drug 2285 2293	назонекс
+T21	Drug 2202 2210	беродуал
+T22	Drug 2218 2228	пульмикорт
+T23	Drug 2257 2264	серетид
+T24	Drug 2321 2327	зиртек
+T25	Drug 2364 2367	OKI
+T26	Drug 2369 2377	виброцил
+T27	Disease 2047 2084	бронхиальная астма, атопическая форма
+T28	Drug 2562 2569	Серетид
+T29	Severity 2086 2108	средне-тяжелое течение
+A3	Degree T29 medium
+R1	Severity_rel Arg1:T29 Arg2:T27	
+T30	Body_location 2138 2161	органов грудной полости
+T31	Disease 1959 1978	Аллергический ринит
+T32	Body_location 1368 1391	органов грудной полости
+T33	Symptom 1542 1594	картина бронхообструктивных изменений легочной ткани
+A4	SType T33 disorder
+T34	Symptom 1405 1450	очаговых и инфильтративных изменений в легких
+A5	Negation T34
+T35	Body_location 1442 1450	в легких
+T36	Symptom 1464 1505	Размеры внутригрудных лимфатических узлов
+A6	SType T36 normal
+T37	Symptom 117 186	значительно выраженные нарушения проходимости периферических бронхов.
+A7	SType T37 disorder
+T38	Body_location 194 217	органов брюшной полости
+T39	Body_location 219 233	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T40	Symptom 235 319	размер – 57х22 мм; стенки – не утолщены; форма – правильная, просвет - эхонегативный
+A8	SType T40 normal
+T41	Body_location 321 341	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T42	Symptom 343 381	размер – 12х8х14 мм; паренхима – норма
+A9	SType T42 normal
+T43	Body_location 383 392	СЕЛЕЗЕНКА
+T44	Symptom 394 441	размер средний 120х56 мм; паренхима не изменена
+A10	SType T44 normal
+T45	Body_location 443 449	ПЕЧЕНЬ
+T46	Symptom 452 523	азмер – ЛД – 65, 1й сегмент 16 мм, ПД –  124 мм; паренхима -  гомогенна
+A11	SType T46 normal
+T47	Body_location 525 538	воротная вена
+T48	Symptom 542 551	расширена
+A12	Negation T48
+T49	Body_location 553 578	ЖЕЛУДОК, 12ПЕРСТНАЯ КИШКА
+T50	Symptom 580 610	секрет есть, стенки нормальные
+A13	SType T50 normal
+T51	Body_location 661 664	ППН
+T52	Symptom 670 703	признаки отека слизистой оболочки
+A14	SType T52 disorder
+T53	Body_location 723 737	грудной клетки
+T54	Symptom 739 823	Асимметрия легочного фона за счет неравномерности пневматизации в медиальных отделах
+A15	SType T54 disorder
+T55	Symptom 825 866	Острых очаговых инфильтративных изменений
+A16	Negation T55
+T56	Symptom 880 934	Легочный рисунок выражено сгущен в прикорневых отделах
+A17	SType T56 normal
+T57	Symptom 936 1013	Стенки субсегментарных и периферических бронхов выражено уплотнены и утолщены
+A18	SType T57 disorder
+T58	Symptom 1015 1038	Корни легких структурны
+A19	SType T58 normal
+T59	Body_location 1099 1105	Сердце
+T60	Symptom 1040 1071	явления прикорневого лимфостаза
+A20	SType T60 disorder
+T61	Symptom 1073 1084	Средостение
+A21	SType T61 normal
+T62	Symptom 1126 1154	Выбухание дуги a. Pulmonalis
+A22	SType T62 disorder
+T63	Body_location 1187 1203	Куполы диафрагмы
+T64	Symptom 1204 1218	ровные, четкие
+A23	SType T64 normal
+T65	Body_location 1220 1226	Синусы
+T66	Symptom 1227 1243	дифференцируются
+A24	SType T66 normal
+T67	Body_location 1245 1275	Костная система и мягкие ткани
+T68	Symptom 1325 1358	признаки бронхитических изменений
+A25	SType T68 disorder
+T69	Symptom 1276 1292	без особенностей
+A26	SType T69 normal
+T70	Symptom 1106 1124	расположено обычно
+A27	SType T70 normal
+T71	Symptom 1605 1631	Вертикальное положение ЭОС
+A28	SType T71 normal
+T72	Symptom 1633 1714	Легкая брадиаритмия на фоне миграции водителя ритма в миокард правого предсердия.
+A29	SType T72 disorder
+T73	Body_location 1687 1713	миокард правого предсердия
+T74	Symptom 1715 1746	Феномен укорочения интервала PQ
+A30	SType T74 disorder
+T75	Symptom 1803 1851	Синдром ранней реполяризации миокарда желудочков
+A31	SType T75 disorder
+T76	Symptom 1853 1916	Некоторые нарушения процессов метаболизма в миокарде желудочков
+A32	SType T76 disorder
+T77	Body_location 1897 1916	миокарде желудочков
+T78	Body_location 1832 1851	миокарда желудочков
+T79	Disease 679 684	отека
+T80	Body_location 685 703	слизистой оболочки
+R2	Body_location_rel Arg1:T80 Arg2:T79	
+T81	Disease 1640 1652	брадиаритмия
+T82	Severity 1633 1639	Легкая
+A33	Degree T82 light
+R3	Severity_rel Arg1:T82 Arg2:T81	
+R4	Symptom_bdyloc_rel Arg1:T39 Arg2:T40	
+R5	Symptom_bdyloc_rel Arg1:T41 Arg2:T42	
+R6	Symptom_bdyloc_rel Arg1:T43 Arg2:T44	
+R7	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R8	Symptom_bdyloc_rel Arg1:T47 Arg2:T48	
+A34	SType T48 disorder
+R9	Symptom_bdyloc_rel Arg1:T49 Arg2:T50	
+R10	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	
+R11	Symptom_bdyloc_rel Arg1:T35 Arg2:T34	
+R12	Symptom_bdyloc_rel Arg1:T78 Arg2:T75	
+R13	Symptom_bdyloc_rel Arg1:T77 Arg2:T76	

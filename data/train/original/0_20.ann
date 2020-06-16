@@ -1,0 +1,62 @@
+T1	Disease 9 53	Атопический дерматит, распространенная форма
+T2	Course 55 65	обострение
+A1	CType T2 worsened
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 68 95	Гипертрофия небных миндалин
+T4	Severity 96 102	2-3 ст
+A2	Degree T4 hard
+R2	Severity_rel Arg1:T4 Arg2:T3	
+T5	Symptom 163 172	высыпания
+A3	SType T5 disorder
+T6	Body_location 173 180	на коже
+T7	Symptom 469 491	атопического дерматита
+A4	SType T7 disorder
+T8	Treatment 523 593	В терапии скин-кап, драполен, бепантен, сложные мази, акридерм, зиртек
+A5	Effect T8 no-effect
+T9	Drug 533 541	скин-кап
+T10	Drug 543 551	драполен
+T11	Drug 553 561	бепантен
+T12	Drug 563 575	сложные мази
+T13	Drug 577 585	акридерм
+T14	Drug 587 593	зиртек
+T15	Disease 642 662	атопический дерматит
+A6	NotPatient T15
+T16	Body_location 715 729	Кожные покровы
+T17	Symptom 731 745	бледно-розовые
+A7	SType T17 normal
+T18	Symptom 747 790	множественные эритематозно-сквамозные очаги
+A8	SType T18 disorder
+T19	Symptom 792 805	лихенификация
+A9	SType T19 disorder
+T20	Symptom 807 818	экскориации
+T21	Symptom 820 831	Зев спокоен
+A10	SType T21 normal
+T22	Symptom 833 869	Носовое дыхание несколько затруднено
+T23	Symptom 880 900	дыхание везикулярное
+A11	SType T23 normal
+T24	Symptom 902 908	хрипов
+A12	Negation T24
+T25	Body_location 871 879	В лёгких
+T26	Symptom 914 947	Сердечные тоны звучные, ритмичные
+A13	SType T26 normal
+T27	Symptom 1000 1007	дизурии
+A14	Negation T27
+T28	Symptom 1013 1028	Стул регулярный
+A15	SType T28 normal
+T29	Symptom 1043 1063	Менингеальных знаков
+A16	Negation T29
+R3	Symptom_bdyloc_rel Arg1:T6 Arg2:T5	
+T30	Disease 469 491	атопического дерматита
+R4	Symptom_bdyloc_rel Arg1:T16 Arg2:T17	
+R5	Symptom_bdyloc_rel Arg1:T16 Arg2:T18	
+R6	Symptom_bdyloc_rel Arg1:T16 Arg2:T19	
+R7	Symptom_bdyloc_rel Arg1:T16 Arg2:T20	
+T31	Body_location 820 823	Зев
+R8	Symptom_bdyloc_rel Arg1:T31 Arg2:T21	
+R9	Symptom_bdyloc_rel Arg1:T25 Arg2:T23	
+R10	Symptom_bdyloc_rel Arg1:T25 Arg2:T24	
+T32	Body_location 80 95	небных миндалин
+R11	Body_location_rel Arg1:T32 Arg2:T3	
+A17	SType T20 disorder
+A18	SType T22 disorder
+A19	SType T24 disorder

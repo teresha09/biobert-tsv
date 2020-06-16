@@ -1,0 +1,359 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 57 71	Желчный пузырь
+T3	Body_location 169 175	Печень
+T4	Body_location 347 367	Поджелудочная железа
+T5	Body_location 499 508	Селезенка
+T6	Body_location 627 634	Желудок
+T7	Symptom 637 654	стенки нормальные
+A1	SType T7 normal
+T8	Symptom 107 127	стенки - не изменены
+A2	SType T8 normal
+T9	Symptom 129 147	форма - правильная
+A3	SType T9 normal
+T10	Symptom 150 167	просвет- свободен
+A4	SType T10 normal
+T11	Symptom 73 83	нормальный
+T12	Symptom 177 234	размер средний, ЛД- 54 мм, 1-й сегмент- 18 мм, ПД- 116 мм
+A5	SType T12 normal
+T13	Symptom 236 250	контур- ровный
+A6	SType T13 normal
+T14	Symptom 252 273	паренхима- однородная
+A7	SType T14 normal
+T15	Body_location 317 332	печеночные вены
+T16	Symptom 337 345	изменены
+A8	Negation T16
+T17	Symptom 275 294	средней эхогенности
+A9	SType T17 normal
+T18	Body_location 296 309	воротная вена
+T19	Symptom 311 315	7 мм
+A10	SType T19 normal
+T20	Symptom 85 105	размер – не увеличен
+A11	SType T20 normal
+T21	Symptom 381 397	размер – средний
+A12	SType T21 normal
+T22	Symptom 399 442	головка – 10 мм, тело - 8 мм, хвост – 14 мм
+A13	SType T22 normal
+T23	Body_location 477 483	проток
+T24	Symptom 489 497	расширен
+A14	Negation T24
+T25	Symptom 444 475	паренхима – эхогенность средняя
+A15	SType T25 normal
+T26	Symptom 522 547	размер - средний 88х42 мм
+A16	SType T26 normal
+T27	Symptom 549 591	паренхима- однородная, средней эхогенности
+A17	SType T27 normal
+T28	Body_location 593 610	селезеночная вена
+T29	Symptom 615 624	расширена
+A18	Negation T29
+T30	Body_location 669 689	12-ти перстная кишка
+T31	Symptom 693 723	стенки нормальные, секрета нет
+A19	SType T31 normal
+T32	Symptom 656 667	секрет есть
+A20	SType T32 normal
+T33	Body_location 813 818	почек
+T34	Body_location 821 836	мочевого пузыря
+T35	Body_location 839 844	Почки
+T36	Body_location 846 852	правая
+T37	Symptom 855 890	нормальная, размер средний 90х35 мм
+A21	SType T37 normal
+T38	Symptom 892 918	положение в типичном месте
+A22	SType T38 normal
+T39	Symptom 920 948	паренхима – дифференцирована
+A23	SType T39 normal
+T40	Body_location 950 953	ЧЛС
+T41	Symptom 959 968	расширена
+A24	Negation T41
+T42	Body_location 970 976	Сосуды
+T43	Symptom 996 1003	изменен
+A25	Negation T43
+T44	Body_location 1005 1015	Мочеточник
+T45	Body_location 1029 1034	левая
+T46	Symptom 1019 1027	расширен
+A26	Negation T46
+T47	Symptom 1037 1072	нормальная, размер средний 87х33 мм
+A27	SType T47 normal
+T48	Symptom 1074 1100	положение в типичном месте
+A28	SType T48 normal
+T49	Symptom 1102 1130	паренхима – дифференцирована
+A29	SType T49 normal
+T50	Body_location 1132 1135	ЧЛС
+T51	Symptom 1141 1150	расширена
+A30	Negation T51
+T52	Body_location 1152 1158	Сосуды
+T53	Symptom 1178 1185	изменен
+A31	Negation T53
+T54	Body_location 1187 1197	Мочеточник
+T55	Symptom 1201 1209	расширен
+A32	Negation T55
+T56	Body_location 1211 1225	Мочевой пузырь
+T57	Symptom 1227 1247	нормальный, заполнен
+A33	SType T57 normal
+T58	Symptom 1261 1269	утолщены
+A34	Negation T58
+T59	Body_location 1249 1255	стенки
+T60	Body_location 1271 1278	просвет
+T61	Symptom 1294 1311	ортопроба – норма
+A35	SType T61 normal
+T62	Symptom 1281 1292	анэхогенный
+A36	SType T62 normal
+T63	Disease 6258 6298	нарушение осанки (сколиотическая осанка)
+T64	Disease 6300 6323	Плоско-вальгусная стопа
+T65	Symptom 6325 6335	Боли роста
+A37	SType T65 disorder
+T66	Treatment 6519 6558	Кальций Д3 никомед 1 таб.  1 раз в день
+T67	Drug 6519 6537	Кальций Д3 никомед
+T68	Symptom 6070 6116	истощаемость, снижение внимания при утомлении,
+A38	SType T68 disorder
+T69	Symptom 6117 6138	невротические реакции
+A39	SType T69 disorder
+T70	Symptom 6029 6068	особенности познавательной деятельности
+T71	Disease 5491 5519	сосудистый невус конъюнктивы
+T72	Body_location 5508 5519	конъюнктивы
+T73	Body_location 5524 5535	глазном дне
+T74	Symptom 5536 5556	асимметрия кровотока
+A40	SType T74 disorder
+T75	Symptom 5564 5575	расширенные
+A41	SType T75 disorder
+T76	Body_location 5576 5580	вены
+T77	Body_location 5590 5597	артерии
+T78	Symptom 5582 5589	извитые
+A42	SType T78 normal
+T79	Symptom 5684 5706	невротизация личности,
+A43	SType T79 disorder
+T80	Symptom 5707 5734	неустойчивость самопринятия
+A44	SType T80 disorder
+T81	Symptom 5736 5747	тревожность
+A45	SType T81 disorder
+T82	Symptom 5749 5779	защитные реакции по типу ухода
+A46	SType T82 disorder
+T83	Symptom 5781 5824	риск соматизации психологических переживани
+A47	SType T83 disorder
+T84	Treatment 6444 6472	Ванны с морской солью №10-15
+T85	Drug 6452 6465	морской солью
+T86	Treatment 6354 6376	Сон на жесткой постели
+T87	Treatment 6381 6418	Массаж спины № 12-15 (3-4 раза в год)
+T88	Treatment 6423 6426	ЛФК
+T89	Treatment 6431 6439	Плавание
+T90	Treatment 6477 6515	Индивидуальные ортопедические стельки.
+T91	Disease 4757 4779	невротические реакции.
+T92	Disease 4780 4818	Особенности эмоционально-волевой сферы
+T93	Disease 4820 4846	Цефалгии смешанного генеза
+T94	Body_location 4906 4935	сосудов головного мозга и шеи
+T95	Treatment 5179 5335	Фенибут 0.25 (Латвия) ½ таб. х 3 раза в день – 3 дня, далее 1 таб. х 2 раза (утро, вечер) в день п/еды до 21 ч. – 1.5 мес + 1 неделя – ¼ таб х 3 раза в день
+T96	Drug 5179 5186	Фенибут
+T97	Treatment 5357 5439	Неврохель 1таб. х 1 раз в день 1 месяц до еды рассасывать (утро, день, перед сном)
+T98	Drug 5357 5366	Неврохель
+T99	Disease 4445 4449	СДВГ
+T100	Disease 4451 4459	Цефалгии
+T101	Disease 4461 4482	Невротические реакции
+T102	Disease 4136 4156	атопический дерматит
+T103	Disease 4158 4192	Смешанная себорея, вульгарные угри
+T104	Severity 4194 4208	легкая степень
+A48	Degree T104 light
+R1	Severity_rel Arg1:T104 Arg2:T103	
+T105	Treatment 4225 4320	вечером на чистую кожу лица гель Скинорен тонким слоем – 1.5-2 месяца, затем 2-3 раза в неделю.
+T106	Body_location 4243 4252	кожу лица
+T107	Body_location 4329 4336	на тело
+T108	Treatment 4338 4378	Атодерм крем (или Липикар) 2 раза в день
+T109	Drug 4338 4350	Атодерм крем
+T110	Drug 4356 4363	Липикар
+T111	Disease 3847 3866	Аллергический ринит
+T112	Severity 3868 3888	персистирующая форма
+A49	Degree T112 medium
+R2	Severity_rel Arg1:T112 Arg2:T111	
+T113	Treatment 3939 4035	Физиомер (с 2-х нед. и старше) (или Аквалор софт, или Маример, или Аква-марис) х 3-4 раза в день
+T114	Body_location 3926 3938	полость носа
+T115	Drug 3939 3947	Физиомер
+T116	Drug 3975 3987	Аквалор софт
+T117	Drug 3993 4000	Маример
+T118	Drug 4006 4016	Аква-марис
+T119	Body_location 3733 3748	головного мозга
+T120	Symptom 3694 3723	объемное и очаговое поражение
+A50	Negation T120
+T121	Body_location 3640 3650	Вены мозга
+T122	Symptom 3651 3667	без особенностей
+A51	SType T122 normal
+T123	Body_location 3607 3626	позвоночных артерий
+T124	Symptom 3627 3638	симметричен
+A52	SType T124 normal
+T125	Symptom 3562 3586	патологических изменений
+A53	SType T125 disorder
+T126	Body_location 3430 3488	горизонтальных отделов и сифонов внутренних сонных артерий
+T127	Body_location 3490 3525	передних и средних мозговых артерий
+T128	Body_location 3527 3561	основной и задних мозговых артерий
+T129	Body_location 3294 3299	мозга
+T130	Body_location 3311 3327	виллизиева круга
+T131	Body_location 3330 3359	основных церебральных артерий
+T132	Body_location 3369 3389	магистральные сосуды
+T133	Body_location 3414 3417	шеи
+T134	Body_location 3162 3189	Внутренние слуховые проходы
+T135	Symptom 3193 3202	расширены
+A54	Negation T135
+T136	Body_location 3204 3219	слуховые улитки
+T137	Symptom 3223 3236	деформированы
+A55	Negation T137
+T138	Body_location 1874 1897	сосудов головного мозга
+T139	Symptom 1912 1987	увеличена линейная скорость кровотока в вене Розенталя – венозная дисгемия.
+A56	SType T139 disorder
+T140	Body_location 1950 1966	в вене Розенталя
+T141	Symptom 1988 2020	Гипертонус глазной артерии слева
+A57	SType T141 disorder
+T142	Body_location 1999 2020	глазной артерии слева
+T143	Body_location 2065 2080	головного мозга
+T144	Body_location 2100 2115	головного мозга
+T145	Body_location 2245 2280	головного мозга срединные структуры
+T146	Symptom 2284 2291	смещены
+A58	Negation T146
+T147	Body_location 2293 2346	В веществе мозга больших полушарий, ствола и мозжечка
+T148	Body_location 2356 2385	краниовертебрального перехода
+T149	Symptom 2388 2431	очагов патологически измененного МР сигнала
+A59	Negation T149
+T150	Symptom 2433 2450	зон кровоизлияний
+A60	Negation T150
+T151	Symptom 2460 2475	новообразований
+A61	Negation T151
+T152	Symptom 2500 2548	расширенные периваскулярные пространства Вирхова
+T153	Body_location 2512 2548	периваскулярные пространства Вирхова
+T154	Body_location 2550 2568	Борозды и извилины
+T155	Symptom 2581 2592	симметрично
+A62	SType T155 normal
+T156	Body_location 2594 2616	Серое и белое вещество
+T157	Symptom 2617 2639	четко дифференцировано
+A63	SType T157 normal
+T158	Body_location 2641 2659	Миндалины мозжечка
+T159	Body_location 2670 2686	линии Чемберлена
+T160	Body_location 2688 2703	Желудочки мозга
+T161	Symptom 2707 2716	расширены
+A64	Negation T161
+T162	Symptom 2721 2734	деформированы
+A65	Negation T162
+T163	Body_location 2736 2801	Субарахноидальное пространство больших полушарий мозга и мозжечка
+T164	Symptom 2802 2818	без особенностей
+A66	SType T164 normal
+T165	Body_location 2820 2834	Сильвиевы щели
+T166	Symptom 2838 2847	расширены
+A67	Negation T166
+T167	Body_location 2849 2863	Цистерны мозга
+T168	Symptom 2867 2876	расширены
+A68	Negation T168
+T169	Body_location 2878 2892	Турецкое седло
+T170	Symptom 2893 2917	обычной формы и размеров
+A69	SType T170 normal
+T171	Body_location 2919 2926	Гипофиз
+T172	Symptom 2927 2943	без особенностей
+A70	SType T172 normal
+T173	Symptom 2945 2974	Структура гипофиза однородная
+A71	SType T173 normal
+T174	Body_location 2955 2963	гипофиза
+T175	Body_location 2986 2991	орбит
+T176	Symptom 2992 3024	видимых патологических изменений
+A72	Negation T176
+T177	Body_location 3038 3092	Каналы зрительных нервов и перекрест зрительных нервов
+T178	Symptom 3096 3109	деформированы
+A73	Negation T178
+T179	Body_location 3113 3138	параорбитальной клетчатке
+T180	Symptom 3139 3148	изменений
+A74	Negation T180
+T181	Body_location 1572 1612	лобно-центрально-передневисочных отделах
+T182	Body_location 1708 1744	средних (мезодиэнцефальных) структур
+T183	Symptom 1628 1686	вспышки альфа-бета-активности с тенденцией к генерализации
+T184	Symptom 1697 1707	дисфункции
+T185	Symptom 1746 1814	Типичной эпилептической, пароксизмальной активности, грубых очаговых
+A75	Negation T185
+T186	Symptom 1527 1568	Сглаженность межзональной дифференцировки
+R3	Body_location_rel Arg1:T72 Arg2:T71	
+R4	Symptom_bdyloc_rel Arg1:T73 Arg2:T74	
+R5	Symptom_bdyloc_rel Arg1:T76 Arg2:T75	
+R6	Symptom_bdyloc_rel Arg1:T77 Arg2:T78	
+T187	Treatment 4872 4894	ЭЭГ через 6-12 месяцев
+T188	Treatment 4899 4954	Доплер сосудов головного мозга и шеи через 6-12 месяцев
+R7	Symptom_bdyloc_rel Arg1:T119 Arg2:T120	
+R8	Symptom_bdyloc_rel Arg1:T121 Arg2:T122	
+R9	Symptom_bdyloc_rel Arg1:T123 Arg2:T124	
+R10	Symptom_bdyloc_rel Arg1:T128 Arg2:T125	
+R11	Symptom_bdyloc_rel Arg1:T127 Arg2:T125	
+R12	Symptom_bdyloc_rel Arg1:T126 Arg2:T125	
+R13	Symptom_bdyloc_rel Arg1:T134 Arg2:T135	
+R14	Symptom_bdyloc_rel Arg1:T136 Arg2:T137	
+R15	Symptom_bdyloc_rel Arg1:T179 Arg2:T180	
+R16	Symptom_bdyloc_rel Arg1:T177 Arg2:T178	
+R17	Symptom_bdyloc_rel Arg1:T175 Arg2:T176	
+R18	Symptom_bdyloc_rel Arg1:T174 Arg2:T173	
+R19	Symptom_bdyloc_rel Arg1:T171 Arg2:T172	
+R20	Symptom_bdyloc_rel Arg1:T169 Arg2:T170	
+R21	Symptom_bdyloc_rel Arg1:T167 Arg2:T168	
+R22	Symptom_bdyloc_rel Arg1:T163 Arg2:T164	
+R23	Symptom_bdyloc_rel Arg1:T165 Arg2:T166	
+R24	Symptom_bdyloc_rel Arg1:T160 Arg2:T161	
+R25	Symptom_bdyloc_rel Arg1:T160 Arg2:T162	
+R26	Symptom_bdyloc_rel Arg1:T156 Arg2:T157	
+R27	Symptom_bdyloc_rel Arg1:T154 Arg2:T155	
+R28	Symptom_bdyloc_rel Arg1:T153 Arg2:T152	
+R29	Symptom_bdyloc_rel Arg1:T145 Arg2:T146	
+R30	Symptom_bdyloc_rel Arg1:T142 Arg2:T141	
+R31	Symptom_bdyloc_rel Arg1:T140 Arg2:T139	
+R32	Symptom_bdyloc_rel Arg1:T182 Arg2:T184	
+R33	Symptom_bdyloc_rel Arg1:T181 Arg2:T183	
+R34	Symptom_bdyloc_rel Arg1:T2 Arg2:T11	
+R35	Symptom_bdyloc_rel Arg1:T2 Arg2:T20	
+R36	Symptom_bdyloc_rel Arg1:T2 Arg2:T8	
+R37	Symptom_bdyloc_rel Arg1:T2 Arg2:T9	
+R38	Symptom_bdyloc_rel Arg1:T2 Arg2:T10	
+R39	Symptom_bdyloc_rel Arg1:T3 Arg2:T12	
+R40	Symptom_bdyloc_rel Arg1:T3 Arg2:T14	
+R41	Symptom_bdyloc_rel Arg1:T3 Arg2:T17	
+R42	Symptom_bdyloc_rel Arg1:T18 Arg2:T19	
+R43	Symptom_bdyloc_rel Arg1:T15 Arg2:T16	
+R44	Symptom_bdyloc_rel Arg1:T4 Arg2:T21	
+R45	Symptom_bdyloc_rel Arg1:T4 Arg2:T22	
+R46	Symptom_bdyloc_rel Arg1:T4 Arg2:T25	
+R47	Symptom_bdyloc_rel Arg1:T23 Arg2:T24	
+R48	Symptom_bdyloc_rel Arg1:T5 Arg2:T26	
+R49	Symptom_bdyloc_rel Arg1:T5 Arg2:T27	
+R50	Symptom_bdyloc_rel Arg1:T28 Arg2:T29	
+R51	Symptom_bdyloc_rel Arg1:T6 Arg2:T7	
+R52	Symptom_bdyloc_rel Arg1:T6 Arg2:T32	
+R53	Symptom_bdyloc_rel Arg1:T30 Arg2:T31	
+R54	Symptom_bdyloc_rel Arg1:T36 Arg2:T37	
+R55	Symptom_bdyloc_rel Arg1:T36 Arg2:T38	
+R56	Symptom_bdyloc_rel Arg1:T36 Arg2:T39	
+R57	Symptom_bdyloc_rel Arg1:T40 Arg2:T41	
+R58	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R59	Symptom_bdyloc_rel Arg1:T44 Arg2:T46	
+R60	Symptom_bdyloc_rel Arg1:T45 Arg2:T47	
+R61	Symptom_bdyloc_rel Arg1:T45 Arg2:T48	
+R62	Symptom_bdyloc_rel Arg1:T45 Arg2:T49	
+R63	Symptom_bdyloc_rel Arg1:T50 Arg2:T51	
+R64	Symptom_bdyloc_rel Arg1:T52 Arg2:T53	
+R65	Symptom_bdyloc_rel Arg1:T54 Arg2:T55	
+R66	Symptom_bdyloc_rel Arg1:T56 Arg2:T57	
+R67	Symptom_bdyloc_rel Arg1:T59 Arg2:T58	
+R68	Symptom_bdyloc_rel Arg1:T60 Arg2:T62	
+T189	Drug 4258 4266	Скинорен
+T190	Disease 2437 2450	кровоизлияний
+A76	SType T11 normal
+A77	SType T16 disorder
+A78	SType T24 disorder
+A79	SType T29 disorder
+A80	SType T41 disorder
+A81	SType T43 disorder
+A82	SType T46 disorder
+A83	SType T51 disorder
+A84	SType T53 disorder
+A85	SType T55 disorder
+A86	SType T58 disorder
+A87	SType T184 disorder
+A88	SType T146 disorder
+A89	SType T150 disorder
+A90	SType T151 disorder
+A91	SType T152 disorder
+A92	SType T161 disorder
+A93	SType T162 disorder
+A94	SType T166 disorder
+A95	SType T168 disorder
+A96	SType T176 disorder
+A97	SType T178 disorder
+A98	SType T180 disorder
+A99	SType T135 disorder
+A100	SType T137 disorder
+A101	Negation T125

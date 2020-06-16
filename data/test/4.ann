@@ -1,0 +1,132 @@
+T1	Disease 108 139	Бронхиальная астма, атопическая
+T2	Disease 190 209	Аллергический ринит
+T3	Disease 243 251	Поллиноз
+T4	Disease 293 333	Вторичные изменения поджелудочной железы
+T6	Body_location 313 333	поджелудочной железы
+T9	Symptom 402 430	затруднение носового дыхания
+T10	Body_location 414 430	носового дыхания
+T11	Symptom 469 492	малопродуктивного кашля
+T12	Symptom 494 514	быстрой утомляемости
+T13	Disease 816 829	ветряная оспа
+T14	Disease 831 837	ангина
+T15	Disease 839 842	ОРИ
+T16	Symptom 863 887	кожные проявления атопии
+T17	Disease 881 887	атопии
+T18	Symptom 957 985	затруднение носового дыхания
+T19	Symptom 987 1018	эпизоды малопродуктивного кашля
+T20	Disease 1037 1059	респираторных инфекций
+T23	Disease 1184 1190	ринита
+T24	Disease 1279 1310	бронхиальная астма, атопическая
+T25	Drug 1339 1350	тайлед минт
+T26	Drug 1366 1374	сингуляр
+T27	Drug 1376 1384	беродуал
+T29	Treatment 1439 1494	АСИТ с аллергенами клещей домашней пыли (Derm. pteronis
+T31	Disease 1580 1598	бронхиальной астмы
+T32	Disease 1645 1675	риноконъюнктивального синдрома
+T34	Disease 1771 1802	бронхиальной астмы, атопической
+T35	Disease 1836 1857	аллергического ринита
+T36	Disease 1859 1868	поллиноза
+T37	Treatment 1923 1973	терапию серетидом 50/25 мкг по 1 инг 2 раза в день
+T38	Drug 1931 1940	серетидом
+T39	Treatment 2065 2100	в терапии гомеопатические препараты
+T41	Treatment 2204 2277	терапии ксизалом, насобеком, а также тафеном, сосудосуживающих препаратов
+T42	Drug 2212 2220	ксизалом
+T43	Drug 2222 2231	насобеком
+T44	Drug 2241 2248	тафеном
+T45	Drug 2250 2277	сосудосуживающих препаратов
+T46	Disease 2315 2346	синдром вегетативной дисфункции
+T47	Disease 2348 2378	дисплазия соединительной ткани
+T48	Disease 2431 2459	хронического гастродуоденита
+T49	Disease 2461 2489	дисфункции билиарного тракта
+T50	Disease 2491 2531	вторичных изменений поджелудочной железы
+T51	Disease 2568 2605	нарушение осанки сколиотического типа
+T52	Disease 2607 2637	воронкообразная грудная клетка
+T53	Body_location 2623 2637	грудная клетка
+T54	Disease 2639 2662	продольное плоскостопие
+T55	Disease 2699 2707	поллиноз
+A1	NotPatient T55
+T57	Disease 2736 2755	аллергический ринит
+A2	NotPatient T57
+T58	Disease 2726 2734	поллиноз
+A3	NotPatient T58
+T56	Body_location 2801 2815	Кожные покровы
+T59	Symptom 2829 2838	высыпаний
+A4	Negation T59
+T61	Symptom 2856 2876	несколько затруднено
+T60	Body_location 2840 2855	Носовое дыхание
+T62	Body_location 2878 2886	В лёгких
+T63	Symptom 2887 2907	дыхание везикулярное
+T64	Symptom 2921 2952	Сердечные тоны ясные, ритмичные
+T66	Symptom 2960 2966	мягкий
+T67	Body_location 2954 2959	Живот
+T68	Treatment 1329 1358	В терапии тайлед минт курсами
+T69	Treatment 1366 1411	сингуляр, беродуал, антигистаминные препараты
+T21	Treatment 1082 1118	В терапии антигшистаминные препараты
+T74	Body_location 2472 2489	билиарного тракта
+T75	Body_location 2511 2531	поджелудочной железы
+T77	Severity 141 170	легкое персистирующее течение
+A5	Degree T77 light
+R1	Severity_rel Arg1:T77 Arg2:T1	
+T8	Course 227 241	вне обострения
+A6	CType T8 improved
+R2	Course_rel Arg1:T8 Arg2:T2	
+T7	Disease 253 281	риноконъюнктивальный синдром
+T78	Course 283 291	ремиссия
+A7	CType T78 resolved
+R3	Course_rel Arg1:T78 Arg2:T3	
+T5	Body_location 863 869	кожные
+R4	Body_location_rel Arg1:T5 Arg2:T17	
+T79	Treatment 893 908	коррекции диеты
+A8	Effect T79 positive
+A9	Effect T21 positive
+A10	Conditional T23
+T22	Severity 1312 1327	легкого течения
+A11	Degree T22 light
+A12	Effect T29 positive
+T28	Course 1569 1579	обострения
+A13	CType T28 worsened
+R5	Course_rel Arg1:T28 Arg2:T31	
+T30	Severity 1627 1644	легкие проявления
+A14	Degree T30 light
+R6	Severity_rel Arg1:T30 Arg2:T32	
+R7	Symptom_bdyloc_rel Arg1:T56 Arg2:T59	
+T33	Severity 1804 1834	легкого перситирующего течения
+A15	Degree T33 light
+R8	Severity_rel Arg1:T33 Arg2:T34	
+A16	Effect T39 positive
+T40	Body_location 2358 2378	соединительной ткани
+R9	Body_location_rel Arg1:T40 Arg2:T47	
+R10	Body_location_rel Arg1:T74 Arg2:T49	
+R11	Body_location_rel Arg1:T53 Arg2:T52	
+T70	Severity 2663 2669	2-3 ст
+A17	Degree T70 medium
+R12	Severity_rel Arg1:T70 Arg2:T54	
+A18	SType T59 disorder
+A19	SType T61 disorder
+R13	Symptom_bdyloc_rel Arg1:T60 Arg2:T61	
+T71	Symptom 2909 2915	хрипов
+A20	Negation T71
+A21	SType T71 disorder
+A22	SType T63 normal
+A23	SType T64 normal
+T65	Symptom 2998 3026	Стул регулярный, оформленный
+A24	SType T65 normal
+T73	Symptom 3028 3035	Дизурии
+A26	Negation T73
+A27	SType T73 disorder
+R14	Symptom_bdyloc_rel Arg1:T67 Arg2:T66	
+T72	Symptom 2982 2996	безболезненный
+A25	SType T72 normal
+A28	SType T66 normal
+R15	Symptom_bdyloc_rel Arg1:T67 Arg2:T72	
+R16	Severity_rel Arg1:T22 Arg2:T24	
+R17	Body_location_rel Arg1:T75 Arg2:T50	
+R18	Symptom_bdyloc_rel Arg1:T62 Arg2:T63	
+R19	Symptom_bdyloc_rel Arg1:T62 Arg2:T71	
+A29	SType T9 disorder
+A30	SType T11 disorder
+A31	SType T12 disorder
+A32	SType T16 disorder
+A33	SType T18 disorder
+A34	SType T19 disorder
+T76	Drug 1446 1464	аллергенами клещей

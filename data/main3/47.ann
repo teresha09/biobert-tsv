@@ -1,0 +1,365 @@
+T1	Disease 21 30	Миокардит
+A1	Time T1 now
+T2	Body_location 48 87	митрального и трикуспидального клапанов
+T3	Disease 32 87	Недостаточность митрального и трикуспидального клапанов
+A2	Time T3 now
+R1	Body_location_rel Arg1:T2 Arg2:T3	
+T4	Severity 89 102	Множественные
+A3	Degree T4 medium
+T5	Disease 103 137	дефекты межпредсердной перегородки
+A4	Time T5 now
+R2	Severity_rel Arg1:T4 Arg2:T5	
+T6	Body_location 111 137	межпредсердной перегородки
+R3	Body_location_rel Arg1:T6 Arg2:T5	
+T7	Disease 139 159	Легочная гипертензия
+A5	Time T7 now
+T8	Disease 161 185	Артериальная гипертензия
+A6	Time T8 now
+T9	Body_location 161 173	Артериальная
+R4	Body_location_rel Arg1:T9 Arg2:T8	
+T10	Body_location 139 147	Легочная
+R5	Body_location_rel Arg1:T10 Arg2:T7	
+T11	Disease 187 189	НК
+A7	Time T11 now
+T12	Severity 190 195	2А ст
+A8	Degree T12 medium
+R6	Severity_rel Arg1:T12 Arg2:T11	
+T13	Disease 197 199	ФК
+A9	Time T13 now
+T14	Disease 221 230	Миокардит
+A10	Time T14 now
+T15	Disease 232 247	Недостаточность
+A11	Time T15 now
+T16	Severity 289 302	Множественные
+T18	Disease 303 337	дефекты межпредсердной перегородки
+T17	Body_location 311 337	межпредсердной перегородки
+R7	Body_location_rel Arg1:T17 Arg2:T18	
+R8	Severity_rel Arg1:T16 Arg2:T18	
+T19	Disease 339 359	Легочная гипертензия
+A12	Time T19 now
+T20	Body_location 339 347	Легочная
+R9	Body_location_rel Arg1:T20 Arg2:T19	
+T21	Disease 361 385	Артериальная гипертензия
+A13	Time T21 now
+T22	Body_location 361 373	Артериальная
+R10	Body_location_rel Arg1:T22 Arg2:T21	
+T23	Disease 387 389	НК
+A14	Time T23 now
+T24	Severity 390 395	2А ст
+A15	Degree T24 medium
+R11	Severity_rel Arg1:T24 Arg2:T23	
+T25	Disease 397 399	ФК
+A16	Time T25 now
+T26	Severity 400 401	2
+A17	Degree T26 medium
+R12	Severity_rel Arg1:T26 Arg2:T25	
+T27	Symptom 506 524	угрозой прерывания
+A18	NotPatient T27
+T28	Symptom 546 562	без особенностей
+A19	NotPatient T28
+A20	SType T28 normal
+T29	Symptom 571 619	срочные, самопроизвольные в головном предлежании
+A21	NotPatient T29
+A22	SType T29 normal
+T30	Disease 728 732	ДКМП
+A23	NotPatient T30
+A24	Time T30 before
+T31	Disease 825 850	врожденного порока сердца
+A25	Time T31 before
+T32	Body_location 844 850	сердца
+R13	Body_location_rel Arg1:T32 Arg2:T31	
+T33	Symptom 876 893	систолический шум
+T34	Disease 922 926	ДМПП
+A26	Time T34 before
+T35	Disease 932 972	недостаточность трикуспидального клапана
+A27	Time T35 before
+T36	Body_location 948 972	трикуспидального клапана
+R14	Body_location_rel Arg1:T36 Arg2:T35	
+T37	Symptom 1119 1141	Тоны сердца приглушены
+A28	SType T37 disorder
+T38	Body_location 1124 1130	сердца
+T39	Symptom 1143 1160	систолический шум
+A29	SType T39 disorder
+A30	SType T33 disorder
+T40	Body_location 1179 1186	грудины
+T41	Body_location 1203 1209	Печень
+T42	Disease 1268 1308	неполная блокада правой ножки пучка Гиса
+A31	Time T42 before
+T43	Symptom 1319 1351	перегрузки правых отделов сердца
+A32	SType T43 disorder
+T44	Symptom 1387 1420	суправентрикулярные экстрасистолы
+A33	SType T44 disorder
+T45	Symptom 1431 1453	левые отделы увеличены
+A34	SType T45 disorder
+T46	Symptom 1483 1526	правые отделы сердца значительно увеличены,
+A35	SType T46 disorder
+T47	Body_location 1497 1503	сердца
+T48	Disease 1567 1571	ДМПП
+A36	Time T48 before
+R15	Symptom_bdyloc_rel Arg1:T47 Arg2:T46	
+R16	Symptom_bdyloc_rel Arg1:T38 Arg2:T37	
+T49	Body_location 1615 1631	левого желудочка
+T50	Symptom 1599 1631	трабекулярность левого желудочка
+A37	SType T50 disorder
+R17	Symptom_bdyloc_rel Arg1:T49 Arg2:T50	
+T51	Symptom 1663 1692	островоспалительных изменений
+A38	SType T51 normal
+T52	Treatment 1730 1865	терапия верошпирон 4мг/кг/сут, дигоксин 0,01мг/кг/сут, фуросемид 2мг/сут, панангин, кудесан, примадофилус, курсы кортексина, актовегина
+A39	Effect T52 no-effect
+T53	Drug 1738 1748	верошпирон
+T54	Drug 1761 1769	дигоксин
+T55	Drug 1785 1794	фуросемид
+T56	Drug 1804 1812	панангин
+T57	Drug 1814 1822	кудесан,
+T58	Drug 1823 1835	примадофилус
+T59	Drug 1843 1853	кортексина
+T60	Drug 1855 1865	актовегина
+T61	Drug 2055 2065	верошпирон
+T62	Drug 2080 2088	дигоксин
+T63	Drug 2107 2116	фуросемид
+T64	Drug 2126 2134	панангин
+T65	Treatment 2055 2143	верошпирон 7мг.х2р/день, дигоксин 0,018мг.х2р/день, фуросемид 2мг\сут, панангин 3/4т/сут
+A40	Effect T65 no-effect
+T66	Symptom 2207 2252	снижением сократительной способности миокарда
+A41	SType T66 disorder
+T67	Body_location 2244 2252	миокарда
+R18	Symptom_bdyloc_rel Arg1:T67 Arg2:T66	
+T68	Symptom 2460 2504	снижения сократительной способности миокарда
+A42	SType T68 disorder
+T69	Body_location 2496 2504	миокарда
+R19	Symptom_bdyloc_rel Arg1:T69 Arg2:T68	
+T70	Drug 3672 3680	Дигоксин
+T71	Symptom 2615 2634	ФВ 25% по Тейхольцу
+A43	SType T71 disorder
+T72	Symptom 2636 2651	22% по Симпсону
+A44	SType T72 disorder
+T73	Severity 2618 2621	25%
+A45	Degree T73 hard
+T74	Severity 2636 2639	22%
+A46	Degree T74 hard
+T75	Drug 2911 2920	капотена,
+T76	Drug 2939 2950	фуросемидом
+T77	Drug 2952 2964	верошпироном
+T78	Drug 2966 2976	дигоксином
+T79	Drug 2988 2995	трентал
+T80	Drug 2997 3006	дилатренд
+T81	Treatment 2897 3097	повышена доза капотена, оставлена терапия фуросемидом, верошпироном, дигоксином, подключен трентал, дилатренд с повышением дозы до 1мг\сут, проведен курс в\в поляризующей смеси, интратекта 2,5гр/курс.
+A47	Effect T81 positive
+T82	Body_location 3476 3480	зубы
+T83	Severity 3537 3540	46%
+A48	Degree T83 medium
+T84	Severity 3555 3558	38%
+T85	Symptom 3534 3554	ФВ 46% по Тейхольцу,
+A49	SType T85 disorder
+T86	Symptom 3559 3570	по Симпсону
+A50	SType T86 disorder
+T87	Drug 3693 3700	капотен
+T88	Drug 3710 3719	фуросемид
+T89	Drug 3729 3739	верошпирон
+T90	Drug 3752 3761	дилатренд
+T91	Drug 3773 3780	трентал
+T92	Drug 3790 3798	панангин
+T93	Drug 3809 3816	когитум
+T94	Treatment 3672 3817	Дигоксин 0,03мг/сут, капотен 6мг/сут, фуросемид 2мг/сут, верошпирон 12,5мг/сут, дилатренд 1,0мг/сут, трентал 9мг/сут, панангин 3/4т/сут, когитум.
+A51	Effect T94 positive
+T95	Symptom 3962 3988	питания удовлетворительное
+A52	SType T95 normal
+T96	Symptom 3990 4020	Кожные покровы чистые, розовые
+A53	SType T96 normal
+T97	Body_location 3990 3996	Кожные
+T98	Symptom 4022 4047	Слизистые оболочки чистые
+A54	SType T98 normal
+T99	Body_location 4022 4040	Слизистые оболочки
+R20	Symptom_bdyloc_rel Arg1:T97 Arg2:T96	
+R21	Symptom_bdyloc_rel Arg1:T99 Arg2:T98	
+T100	Symptom 4049 4073	Зев, миндалины: розовый.
+A55	SType T100 normal
+T101	Body_location 4049 4052	Зев
+T102	Body_location 4054 4063	миндалины
+R22	Symptom_bdyloc_rel Arg1:T102 Arg2:T100	
+R23	Symptom_bdyloc_rel Arg1:T101 Arg2:T100	
+T103	Symptom 4074 4136	Подкожная клетчатка развита достатоно, распределена равномерно
+A56	SType T103 normal
+T104	Body_location 4074 4093	Подкожная клетчатка
+R24	Symptom_bdyloc_rel Arg1:T104 Arg2:T103	
+T105	Symptom 4138 4185	Лимфатическая система без системного увеличения
+A57	SType T105 normal
+T106	Body_location 4138 4159	Лимфатическая система
+R25	Symptom_bdyloc_rel Arg1:T106 Arg2:T105	
+T107	Symptom 4187 4225	Костная система: без видимой патологии
+A58	SType T107 normal
+T108	Symptom 4227 4269	Мышцы, суставы: физиологический гипертонус
+A59	SType T108 normal
+T109	Symptom 4349 4355	хрипов
+A60	Negation T109
+T110	Symptom 4329 4348	дыхание пуэрильное,
+A61	SType T110 normal
+T111	Body_location 4301 4304	нос
+T112	Body_location 4322 4328	легких
+R26	Symptom_bdyloc_rel Arg1:T112 Arg2:T110	
+R27	Symptom_bdyloc_rel Arg1:T112 Arg2:T109	
+T113	Symptom 4308 4318	затруднено
+A62	Negation T113
+A63	SType T113 normal
+R28	Symptom_bdyloc_rel Arg1:T111 Arg2:T113	
+T114	Body_location 4392 4398	сердца
+T115	Symptom 4412 4420	изменена
+A64	Negation T115
+A65	SType T115 normal
+R29	Symptom_bdyloc_rel Arg1:T114 Arg2:T115	
+T117	Symptom 4561 4582	Тоны сердца ритмичные
+A67	SType T117 normal
+T116	Body_location 4566 4572	сердца
+R30	Symptom_bdyloc_rel Arg1:T116 Arg2:T117	
+T118	Symptom 4590 4606	слегка приглушен
+A66	SType T118 normal
+T119	Symptom 4608 4625	систолический шум
+A68	SType T119 disorder
+R31	Symptom_bdyloc_rel Arg1:T116 Arg2:T118	
+R32	Symptom_bdyloc_rel Arg1:T116 Arg2:T119	
+T120	Body_location 4680 4685	Живот
+T121	Symptom 4680 4699	Живот немного вздут
+A69	SType T121 disorder
+R33	Symptom_bdyloc_rel Arg1:T120 Arg2:T121	
+T122	Symptom 4820 4827	дизурии
+A70	Negation T122
+T123	Symptom 4850 4870	менингеальных знаков
+A71	Negation T123
+T124	Body_location 4781 4800	Мочеполовая система
+R34	Symptom_bdyloc_rel Arg1:T124 Arg2:T122	
+T125	Body_location 4833 4848	Нервная система
+R35	Symptom_bdyloc_rel Arg1:T125 Arg2:T123	
+T126	Body_location 4939 4956	Щитовидной железы
+T127	Symptom 5163 5177	КОНТУР: ровный
+A72	SType T127 normal
+T128	Symptom 5179 5197	ЭХОГЕННОСТЬ: норма
+A73	SType T128 normal
+T129	Symptom 5199 5220	ПАРЕНХИМА: однородная
+A74	SType T129 normal
+T130	Symptom 5222 5237	КРОВОТОК: норма
+A75	SType T130 normal
+R36	Symptom_bdyloc_rel Arg1:T126 Arg2:T128	
+R37	Symptom_bdyloc_rel Arg1:T126 Arg2:T127	
+R38	Symptom_bdyloc_rel Arg1:T126 Arg2:T129	
+R39	Symptom_bdyloc_rel Arg1:T126 Arg2:T130	
+T131	Body_location 5312 5334	органов грудной клетки
+T132	Body_location 5499 5513	легочной ткани
+T133	Symptom 5453 5513	острых очаговых и инфильтративных изменений в легочной ткани
+A76	Negation T133
+R40	Symptom_bdyloc_rel Arg1:T132 Arg2:T133	
+T135	Body_location 5655 5666	средостения
+T134	Symptom 5670 5679	расширена
+A77	Negation T134
+R41	Symptom_bdyloc_rel Arg1:T135 Arg2:T134	
+T136	Body_location 5681 5687	Сердце
+T137	Symptom 5829 5858	Контуры сердечной тени четкие
+A78	SType T137 normal
+T138	Symptom 5860 5891	Куполы диафрагмы ровные, четкие
+A79	SType T138 normal
+T139	Body_location 5867 5876	диафрагмы
+R42	Symptom_bdyloc_rel Arg1:T139 Arg2:T138	
+R43	Symptom_bdyloc_rel Arg1:T136 Arg2:T137	
+T140	Symptom 6008 6021	кардиомегалии
+A80	SType T140 disorder
+T141	Body_location 5918 5933	Костная система
+T142	Body_location 5936 5948	мягкие ткани
+T143	Symptom 5953 5965	особенностей
+A81	Negation T143
+R44	Symptom_bdyloc_rel Arg1:T142 Arg2:T143	
+R45	Symptom_bdyloc_rel Arg1:T141 Arg2:T143	
+T144	Symptom 6163 6191	перегрузки левого предсердия
+A82	SType T144 disorder
+T145	Body_location 6174 6191	левого предсердия
+R46	Symptom_bdyloc_rel Arg1:T145 Arg2:T144	
+T146	Disease 6204 6241	Гипертрофия миокарда левого желудочка
+A83	Time T146 now
+T147	Body_location 6216 6241	миокарда левого желудочка
+R47	Body_location_rel Arg1:T147 Arg2:T146	
+T148	Symptom 6098 6109	БРАДИКАРДИЯ
+A84	SType T148 disorder
+T149	Severity 6111 6120	умеренная
+A85	Degree T149 light
+T150	Symptom 6122 6129	АРИТМИЯ
+A86	SType T150 disorder
+T151	Severity 6131 6140	умеренная
+A87	Degree T151 light
+T152	Body_location 6369 6374	АОРТА
+T153	Body_location 6560 6576	ЛЕГОЧНАЯ АРТЕРИЯ
+T154	Body_location 6741 6758	ПРАВОЕ ПРЕДСЕРДИЕ
+T155	Body_location 6934 6949	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T156	Body_location 6698 6714	ЛЕВОЕ ПРЕДСЕРДИЕ
+T157	Body_location 6785 6811	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T158	Body_location 6867 6884	ПРАВЫЙ ЖЕЛУДОЧЕК:
+T159	Body_location 7408 7425	МИТРАЛЬНЫЙ КЛАПАН
+T160	Body_location 7207 7234	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА
+T161	Body_location 6600 6606	Клапан
+T162	Symptom 6610 6617	изменен
+A88	Negation T162
+R48	Symptom_bdyloc_rel Arg1:T161 Arg2:T162	
+T163	Body_location 6619 6626	Створки
+T164	Symptom 6630 6638	изменены
+A89	Negation T164
+R49	Symptom_bdyloc_rel Arg1:T163 Arg2:T164	
+T165	Symptom 7018 7036	ФВ по Тейхольцу 47
+A90	SType T165 disorder
+T166	Severity 7034 7036	47
+A91	Degree T166 medium
+T167	Symptom 7057 7075	ФВ по Симпсону 39%
+A92	SType T167 disorder
+T168	Severity 7072 7075	39%
+A93	Degree T168 medium
+T169	Body_location 7427 7434	Створки
+T170	Symptom 7438 7446	изменены
+A94	Negation T170
+R50	Symptom_bdyloc_rel Arg1:T169 Arg2:T170	
+T171	Symptom 7448 7460	Регургитация
+A95	SType T171 disorder
+T172	Severity 7461 7465	+1+2
+A96	Degree T172 light
+T173	Body_location 7481 7503	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+R51	Symptom_bdyloc_rel Arg1:T159 Arg2:T171	
+T174	Symptom 7516 7524	изменены
+A97	Negation T174
+R52	Symptom_bdyloc_rel Arg1:T173 Arg2:T174	
+T175	Symptom 7526 7538	Регургитация
+A98	SType T175 disorder
+T176	Severity 7539 7544	+1+2;
+A99	Degree T176 light
+T177	Symptom 7815 7835	расширена полость ЛЖ
+A100	SType T177 disorder
+T178	Severity 7801 7814	Незначительно
+A101	Degree T178 light
+T179	Body_location 8071 8082	ЛЕВАЯ ПОЧКА
+T180	Body_location 8614 8626	ПРАВАЯ ПОЧКА
+T181	Body_location 9200 9214	МОЧЕВОЙ ПУЗЫРЬ
+T182	Body_location 9302 9316	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T183	Symptom 9365 9373	увеличен
+A102	SType T183 disorder
+T184	Symptom 9395 9408	перегиб; тело
+A103	SType T184 disorder
+R53	Symptom_bdyloc_rel Arg1:T182 Arg2:T183	
+R54	Symptom_bdyloc_rel Arg1:T182 Arg2:T184	
+T185	Body_location 9429 9435	ПЕЧЕНЬ
+T186	Symptom 9660 9680	ангиометоз.трансформ
+A104	SType T186 disorder
+R55	Symptom_bdyloc_rel Arg1:T185 Arg2:T186	
+T187	Body_location 9749 9770	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА:
+T188	Body_location 9929 9939	СЕЛЕЗЕНКА:
+T189	Body_location 10078 10086	ЖЕЛУДОК:
+T190	Body_location 10122 10138	Д\ПЕРСТНАЯ КИШКА
+T191	Body_location 10175 10184	ЛИМФОУЗЛЫ
+T192	Drug 11050 11057	Капотен
+T193	Drug 11222 11231	Фуросемид
+T194	Drug 11599 11611	Пентоксифили
+T195	Drug 11455 11464	Дилатренд
+T196	Drug 10989 10997	Дигоксин
+T197	Drug 11539 11565	Калия и магния аспарагинат
+T198	Drug 11288 11295	Диакарб
+T199	Drug 11666 11672	Элькар
+T200	Drug 11387 11397	Верошпирон
+T201	Drug 11400 11413	спиронолактон
+T202	Drug 11736 11743	Кудесан
+T203	Drug 11970 11978	виферона
+T204	Treatment 11907 11932	антибактериальной терапии
+T205	Treatment 10989 11046;11047 11218;11219 11284;11285 11383;11384 11451;11452 11534;11535 11594;11595 11661;11662 11731;11732 11756	Дигоксин 0,03мг.х 1 р/день в 08.00 ежедневно, длительно.. 6. Капотен ( каптоприл) по 2,0мг.х3р/день в 07.00,15.00 и 22.00 длительно. Коррекция дозы по уровню артериального давления (не допускать повышения АД выше 80/50мм.рт.ст).. 7. Фуросемид 2мг.х 1р/день в 07.00 натощак ежедневно, длительно.. 8. Диакарб по 31,25мг.х1р/день в 07.00 1,2,3 числа ежемесячно на фоне приема других диуретиков. .. 8. Верошпирон ( спиронолактон) по 6,25мг.х2р/день в 14.00 и 18.00.. 9. Дилатренд ( карведилол) 0,78мг.х2р/день в 09.00 и 21.00 длительно, непрерывно.. 10. Калия и магния аспарагинат (Панангин) по 1/4т.х3р/день. 11. Пентоксифилин (Трентал) по 6мг.х3р/день после еды, длительно.. 12. Элькар 30% 2мл.х1р/день в течение 3 мес (январь, февраль, март).. 13. Кудесан 1мл.х1р/день
+A105	Effect T205 unknown

@@ -1,0 +1,63 @@
+T1	Disease 9 32	Катаральный риносинусит
+T2	Disease 34 53	Себорейный дерматит
+T3	Disease 55 95	Вторичные изменения поджелудочной железы
+T4	Body_location 75 95	поджелудочной железы
+T5	Symptom 166 172	ринита
+A1	SType T5 disorder
+T6	Symptom 246 252	кашель
+A2	SType T6 disorder
+T7	Symptom 204 244	желто-зеленые выделения из носовых ходов
+A3	SType T7 disorder
+T8	Disease 606 609	ОРИ
+T9	Symptom 631 647	кашлевой синдром
+A4	SType T9 disorder
+T10	Treatment 649 675	Получал эреспал, бронхикум
+A5	Effect T10 no-effect
+T11	Drug 657 664	эреспал
+T12	Drug 666 675	бронхикум
+T13	Symptom 718 724	кашель
+A6	SType T13 disorder
+T14	Disease 785 788	ОРИ
+T15	Symptom 811 817	кашель
+A7	SType T15 disorder
+T16	Treatment 837 874	принимал кленбутерол в сиропе на ночь
+A8	Effect T16 no-effect
+T17	Drug 846 857	кленбутерол
+T18	Body_location 972 986	Кожные покровы
+T19	Symptom 987 1001	бледно-розовые
+A9	SType T19 normal
+T20	Body_location 1003 1029	на волосистой части головы
+T21	Symptom 1030 1061	единичные корочки желтого цвета
+T22	Symptom 1063 1081	чешуйки, шелушение
+T23	Symptom 1083 1093	Зев рыхлый
+T24	Symptom 1095 1121	Носовое дыхание затруднено
+A10	SType T24 disorder
+T25	Body_location 1123 1131	В лёгких
+T26	Symptom 1132 1152	дыхание везикулярное
+A11	SType T26 normal
+T27	Symptom 1154 1160	хрипов
+A12	Negation T27
+T28	Symptom 1166 1199	Сердечные тоны звучные, ритмичные
+A13	SType T28 normal
+T29	Symptom 1201 1225	слабый систолический шум
+A14	SType T29 normal
+T30	Body_location 1227 1232	Живот
+T31	Symptom 1233 1239	мягкий
+A15	SType T31 normal
+T32	Symptom 1255 1269	безболезненный
+A16	SType T32 normal
+T33	Symptom 1335 1363	Стул регулярный, оформленный
+A17	SType T33 normal
+T34	Symptom 1365 1385	Менингеальных знаков
+A18	Negation T34
+R1	Body_location_rel Arg1:T4 Arg2:T3	
+R2	Symptom_bdyloc_rel Arg1:T30 Arg2:T31	
+R3	Symptom_bdyloc_rel Arg1:T30 Arg2:T32	
+R4	Symptom_bdyloc_rel Arg1:T25 Arg2:T26	
+R5	Symptom_bdyloc_rel Arg1:T25 Arg2:T27	
+R6	Symptom_bdyloc_rel Arg1:T18 Arg2:T19	
+R7	Symptom_bdyloc_rel Arg1:T20 Arg2:T21	
+R8	Symptom_bdyloc_rel Arg1:T20 Arg2:T22	
+A19	SType T22 disorder
+A20	SType T21 disorder
+T35	Disease 166 172	ринита

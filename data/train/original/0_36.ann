@@ -1,0 +1,82 @@
+T1	Disease 19 47	риноконъюнктивальный синдром
+T2	Course 49 57	ремиссия
+A1	CType T2 improved
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 59 94	Аллергический ринит, персистирующий
+T4	Disease 96 112	Пищевая аллергия
+T5	Disease 114 135	Гиперплазия аденоидов
+T6	Severity 136 145	1 степени
+A2	Degree T6 light
+R2	Severity_rel Arg1:T6 Arg2:T5	
+T7	Disease 147 168	Хронический тонзиллит
+T8	Course 170 192	компенсированная форма
+A3	CType T8 resolved
+R3	Course_rel Arg1:T8 Arg2:T7	
+T9	Symptom 261 274	конъюнктивита
+A4	SType T9 disorder
+T10	Symptom 276 293	заложенность носа
+A5	SType T10 disorder
+T11	Symptom 649 671	атопического дерматита
+A6	SType T11 disorder
+T12	Treatment 688 745	диетой, антигистаминными препаратами, местными средствами
+A7	Effect T12 positive
+T13	Symptom 777 793	пищевой аллергии
+A8	SType T13 disorder
+T14	Symptom 856 865	поллиноза
+A9	SType T14 disorder
+T15	Treatment 916 951	В терапии антигистаминные препараты
+A10	Effect T15 positive
+T16	Disease 1061 1089	риноконъюнктивальный синдром
+T17	Course 1091 1099	ремиссия
+A11	CType T17 improved
+R4	Course_rel Arg1:T17 Arg2:T16	
+T18	Disease 1101 1136	Аллергический ринит, персистирующий
+T19	Disease 1138 1154	Пищевая аллергия
+T20	Disease 1156 1182	Цефалгии смешанного генеза
+T21	Symptom 1298 1314	Пищевая аллергия
+A12	SType T21 disorder
+T22	Disease 1361 1369	поллиноз
+A13	NotPatient T22
+T23	Disease 1371 1387	пищевая аллергия
+A14	NotPatient T23
+T24	Body_location 1479 1493	Кожные покровы
+T25	Symptom 1494 1516	чистые, бледно-розовые
+A15	SType T25 normal
+T26	Symptom 1518 1529	Зев спокоен
+A16	SType T26 normal
+T27	Symptom 1531 1567	Носовое дыхание несколько затруднено
+A17	SType T27 disorder
+T28	Body_location 1569 1577	В лёгких
+T29	Symptom 1578 1598	дыхание везикулярное
+A18	SType T29 normal
+T30	Symptom 1600 1606	хрипов
+A19	Negation T30
+T31	Symptom 1612 1645	Сердечные тоны звучные, ритмичные
+A20	SType T31 normal
+T32	Body_location 1647 1652	Живот
+T33	Symptom 1653 1659	мягкий
+A21	SType T33 normal
+T34	Symptom 1675 1690	безболезненный.
+A22	SType T34 normal
+T35	Symptom 1742 1749	дизурии
+A23	Negation T35
+T36	Symptom 1755 1783	Стул регулярный, оформленный
+A24	SType T36 normal
+T37	Symptom 1785 1805	Менингеальных знаков
+A25	Negation T37
+T38	Disease 1298 1314	Пищевая аллергия
+T39	Disease 9 17	Поллиноз
+T40	Disease 261 274	конъюнктивита
+T41	Disease 649 671	атопического дерматита
+T42	Disease 777 793	пищевой аллергии
+A26	Conditional T42
+T43	Disease 856 865	поллиноза
+T44	Disease 1051 1059	Поллиноз
+R5	Symptom_bdyloc_rel Arg1:T24 Arg2:T25	
+T45	Body_location 1518 1521	Зев
+R6	Symptom_bdyloc_rel Arg1:T45 Arg2:T26	
+R7	Symptom_bdyloc_rel Arg1:T28 Arg2:T29	
+R8	Symptom_bdyloc_rel Arg1:T28 Arg2:T30	
+R9	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+R10	Symptom_bdyloc_rel Arg1:T32 Arg2:T34	
+A27	SType T30 disorder

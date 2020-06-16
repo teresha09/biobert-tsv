@@ -1,0 +1,103 @@
+T1	Symptom 2019 2039	Менингеальных знаков
+A1	Negation T1
+T2	Symptom 2006 2013	Дизурии
+A2	Negation T2
+T3	Symptom 1976 2004	Стул регулярный, оформленный
+A3	SType T3 normal
+T4	Symptom 1928 1959	Сердечные тоны ясные, ритмичные
+A4	SType T4 normal
+T5	Body_location 1890 1904	Область сердца
+T6	Body_location 1791 1799	В лёгких
+T7	Symptom 1800 1826	дыхание с жестким оттенком
+A5	SType T7 disorder
+T8	Symptom 1828 1863	равномерно проводится во все отделы
+A6	SType T8 normal
+T9	Symptom 1865 1871	хрипов
+A7	Negation T9
+T10	Symptom 1753 1789	Носовое дыхание несколько затруднено
+A8	SType T10 disorder
+T11	Disease 9 40	Бронхиальная астма, атопическая
+T12	Severity 42 73	легкого персистирующего течения
+A9	Degree T12 light
+R1	Severity_rel Arg1:T12 Arg2:T11	
+T13	Symptom 103 131	риноконъюнктивальный синдром
+A10	SType T13 disorder
+T14	Course 133 141	ремиссия
+A11	CType T14 improved
+T15	Disease 93 101	Поллиноз
+R2	Course_rel Arg1:T14 Arg2:T15	
+T16	Disease 143 162	Аллергический ринит
+T17	Course 180 194	вне обострения
+A12	CType T17 improved
+R3	Course_rel Arg1:T17 Arg2:T16	
+T18	Disease 196 236	Вторичные изменения поджелудочной железы
+T19	Body_location 216 236	поджелудочной железы
+T20	Symptom 306 329	бронхиальной обструкции
+A13	SType T20 disorder
+T21	Disease 338 360	респираторных инфекций
+T22	Symptom 362 390	затруднение носового дыхания
+A14	SType T22 disorder
+T23	Symptom 421 427	ринита
+A15	SType T23 disorder
+T24	Symptom 430 443	конъюнктивита
+A16	SType T24 disorder
+T25	Disease 711 733	атопического дерматита
+T26	Treatment 750 796	коррекцией диеты, симптоматическими средствами
+A17	Effect T26 positive
+T27	Symptom 917 938	обструктивный бронхит
+A18	SType T27 disorder
+T28	Treatment 940 1013	Получал терапию в стационаре (инъекции преднизолона, ингаляции беродуала)
+A19	Effect T28 positive
+T29	Drug 979 991	преднизолона
+T30	Drug 1003 1012	беродуала
+T31	Treatment 1015 1074	В терапии был назначен курсом тайлед минт, вентолин, зиртек
+A20	Effect T31 positive
+T32	Drug 1045 1056	тайлед минт
+T33	Drug 1058 1066	вентолин
+T34	Drug 1068 1074	зиртек
+T35	Symptom 1128 1140	покашливание
+A21	SType T35 disorder
+T36	Symptom 1142 1169	эпизоды затруднения дыхания
+A22	SType T36 disorder
+T37	Symptom 1220 1248	затруднение носового дыхания
+A23	SType T37 disorder
+T38	Disease 1276 1298	респираторных инфекций
+T39	Symptom 1319 1342	бронхиальной обструкции
+A24	SType T39 disorder
+T40	Symptom 1344 1367	малопродуктивный кашель
+A25	SType T40 disorder
+T41	Symptom 1369 1398	дистанционные свистящие хрипы
+A26	SType T41 disorder
+T42	Body_location 1657 1671	Кожные покровы
+T43	Symptom 1672 1694	бледно-розовые, чистые
+A27	SType T43 normal
+T44	Body_location 1696 1722	Видимые слизистые оболочки
+T45	Symptom 1723 1730	розовые
+A28	SType T45 normal
+T46	Symptom 1732 1738	чистые
+A29	SType T46 normal
+T47	Symptom 1740 1751	Зев спокоен
+A30	SType T47 normal
+R4	Body_location_rel Arg1:T19 Arg2:T18	
+T48	Disease 103 131	риноконъюнктивальный синдром
+T49	Disease 421 427	ринита
+T50	Disease 430 443	конъюнктивита
+T51	Disease 917 938	обструктивный бронхит
+R5	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R6	Symptom_bdyloc_rel Arg1:T44 Arg2:T45	
+R7	Symptom_bdyloc_rel Arg1:T44 Arg2:T46	
+R8	Symptom_bdyloc_rel Arg1:T6 Arg2:T7	
+R9	Symptom_bdyloc_rel Arg1:T6 Arg2:T8	
+R10	Symptom_bdyloc_rel Arg1:T6 Arg2:T9	
+T52	Symptom 1918 1926	изменена
+A31	SType T52 normal
+R11	Symptom_bdyloc_rel Arg1:T5 Arg2:T52	
+A32	Negation T52
+T53	Disease 828 836	аллергии
+T54	Body_location 810 816	кожные
+R12	Body_location_rel Arg1:T54 Arg2:T53	
+A33	Negation T53
+T55	Severity 164 178	персистирующий
+A34	Degree T55 medium
+R13	Severity_rel Arg1:T55 Arg2:T16	
+A35	SType T9 disorder

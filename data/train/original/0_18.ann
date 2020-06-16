@@ -1,0 +1,122 @@
+T1	Disease 48 76	риноконъюнктивальный синдром
+T2	Course 78 86	ремиссия
+A1	CType T2 improved
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 88 129	Аллергический ринит, персистирующая форма
+T4	Course 131 145	вне обострения
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 147 163	Пищевая аллергия
+T6	Course 165 173	ремиссия
+A3	CType T6 improved
+R3	Course_rel Arg1:T6 Arg2:T5	
+T7	Disease 176 207	Искривление носовой перегородки
+T8	Disease 234 258	Дискинезия желчных путей
+T9	Body_location 245 258	желчных путей
+T10	Body_location 278 293	желчного пузыря
+R4	Body_location_rel Arg1:T9 Arg2:T8	
+T11	Disease 295 335	Вторичные изменения поджелудочной железы
+T12	Body_location 315 335	поджелудочной железы
+T13	Disease 337 360	Продольное плоскостопие
+T14	Severity 361 365	2 ст
+A4	Degree T14 medium
+R6	Severity_rel Arg1:T14 Arg2:T13	
+T15	Symptom 427 430	зуд
+A5	SType T15 disorder
+T16	Body_location 431 437	в зеве
+T17	Symptom 439 443	отек
+T18	Symptom 501 524	малопродуктивный кашель
+T19	Disease 533 536	ОРИ
+T20	Symptom 910 916	атопии
+A6	SType T20 disorder
+T21	Disease 1005 1008	ОРИ
+T22	Disease 1020 1049	обструктивные ларинготрахеиты
+T23	Disease 1254 1259	отиты
+T24	Disease 1261 1267	ангины
+T25	Disease 1302 1323	гиперплазии аденоидов
+T26	Severity 1324 1335	2-3 степени
+A7	Degree T26 medium
+R7	Severity_rel Arg1:T26 Arg2:T25	
+T27	Disease 1605 1627	респираторной инфекции
+T28	Symptom 1645 1668	малопродуктивный кашель
+T29	Treatment 1714 1766	назначен флутиказон курсом  и вентолин при приступах
+A8	Effect T29 positive
+T30	Drug 1723 1733	флутиказон
+T31	Drug 1744 1752	вентолин
+T32	Symptom 1819 1825	кашель
+A9	Negation T32
+T33	Disease 1923 1949	апоплексию правого яичника
+T34	Disease 2025 2053	пищевая атопический дерматит
+A10	NotPatient T34
+T35	Disease 2055 2073	бронхиальная астма
+A11	NotPatient T35
+T36	Disease 2123 2151	риноконъюнктивальный синдром
+A12	NotPatient T36
+T37	Disease 2153 2165	отеки квинке
+A13	NotPatient T37
+T38	Disease 2394 2413	контактный дерматит
+A14	NotPatient T38
+T39	Disease 2440 2458	инсектная аллергия
+A15	NotPatient T39
+T40	Symptom 2556 2575	катаральных явлений
+A16	Negation T40
+T41	Body_location 2548 2551	Зев
+T42	Body_location 2577 2591	Кожные покровы
+T43	Symptom 2592 2606	бледно-розовые
+A17	SType T43 normal
+T44	Symptom 2608 2614	чистые
+A18	SType T44 normal
+T45	Symptom 2616 2633	немного суховатые
+T46	Symptom 2659 2679	везикулярное дыхание
+A19	SType T46 normal
+T47	Symptom 2681 2686	хрипы
+A20	Negation T47
+T48	Body_location 2635 2643	В легких
+T49	Body_location 2710 2716	сердца
+T50	Symptom 2717 2722	ясные
+A21	SType T50 normal
+T51	Symptom 2724 2733	ритмичные
+A22	SType T51 normal
+T52	Body_location 2735 2740	Живот
+T53	Symptom 2741 2755	безболезненный
+A23	SType T53 normal
+T55	Symptom 2787 2793	Диурез
+A25	Negation T55
+T56	Symptom 2806 2826	Менингеальных знаков
+A26	Negation T56
+T54	Symptom 2757 2785	Стул регулярный, оформленный
+A24	SType T54 normal
+T57	Disease 1101 1114	ложных крупов
+R8	Body_location_rel Arg1:T12 Arg2:T11	
+T58	Treatment 930 977	Купировались самостоятельно при коррекции диеты
+T59	Treatment 1963 1975	аппенэктомия
+T60	Disease 19 46	сезонная бронхиальная астма
+T61	Disease 9 17	Поллиноз
+R9	Course_rel Arg1:T2 Arg2:T60	
+R10	Course_rel Arg1:T2 Arg2:T61	
+T62	Body_location 188 207	носовой перегородки
+R11	Body_location_rel Arg1:T62 Arg2:T7	
+T63	Symptom 213 232	затруднения дыхания
+A27	Negation T63
+A28	SType T63 disorder
+T64	Symptom 267 293	деформации желчного пузыря
+A29	SType T64 disorder
+R5	Symptom_bdyloc_rel Arg1:T10 Arg2:T64	
+R12	Symptom_bdyloc_rel Arg1:T16 Arg2:T15	
+T65	Disease 439 443	отек
+A30	Conditional T65
+R13	Symptom_bdyloc_rel Arg1:T41 Arg2:T40	
+R14	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R15	Symptom_bdyloc_rel Arg1:T42 Arg2:T44	
+R16	Symptom_bdyloc_rel Arg1:T42 Arg2:T45	
+R17	Symptom_bdyloc_rel Arg1:T48 Arg2:T46	
+R18	Symptom_bdyloc_rel Arg1:T48 Arg2:T47	
+R19	Symptom_bdyloc_rel Arg1:T49 Arg2:T50	
+R20	Symptom_bdyloc_rel Arg1:T49 Arg2:T51	
+R21	Symptom_bdyloc_rel Arg1:T52 Arg2:T53	
+A31	SType T17 disorder
+A32	SType T18 disorder
+A33	SType T28 disorder
+A34	SType T32 disorder
+A35	SType T45 disorder
+A36	SType T47 disorder

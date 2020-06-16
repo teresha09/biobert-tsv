@@ -1,0 +1,50 @@
+T1	Disease 9 25	Пищевая аллергия
+T2	Course 27 35	ремиссия
+A1	CType T2 improved
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 37 56	Контактный дерматит
+T4	Disease 58 79	Гипертрофия аденоидов
+T5	Severity 80 94	II-III степени
+A2	Degree T5 hard
+T6	Symptom 156 184	затруднение носового дыхания
+T7	Symptom 216 246	риноконъюнктивального синдрома
+T8	Disease 570 586	пищевой аллергии
+T9	Treatment 603 621	коррекцией рациона
+A3	Effect T9 positive
+T10	Symptom 673 699	мелко-папулезных высыпаний
+T11	Disease 779 798	контактный дерматит
+T12	Symptom 854 860	ринита
+T13	Disease 1171 1190	аллергический ринит
+T14	Disease 1488 1504	пищевая аллергия
+A4	NotPatient T14
+T15	Disease 1542 1549	псориаз
+A5	NotPatient T15
+T16	Body_location 1569 1583	кожные покровы
+T17	Body_location 1611 1614	Зев
+T18	Body_location 1642 1648	легких
+T19	Body_location 1688 1694	сердца
+T20	Symptom 1713 1717	Стул
+A6	SType T20 normal
+T21	Symptom 1719 1725	диурез
+T22	Symptom 1739 1759	Менингеальных знаков
+A7	Negation T22
+T23	Symptom 1695 1711	ясные, ритмичные
+T24	Symptom 1649 1669	дыхание везикулярное
+A8	SType T24 normal
+A9	SType T23 normal
+T25	Symptom 1619 1638	катаральных явлений
+A10	Negation T25
+T26	Symptom 1584 1609	бледно-розовые, суховатые
+T27	Symptom 1671 1677	хрипов
+A11	Negation T27
+R2	Severity_rel Arg1:T5 Arg2:T4	
+T28	Body_location 70 79	аденоидов
+R3	Body_location_rel Arg1:T28 Arg2:T4	
+T29	Disease 854 860	ринита
+A12	Conditional T29
+R4	Symptom_bdyloc_rel Arg1:T16 Arg2:T26	
+R5	Symptom_bdyloc_rel Arg1:T17 Arg2:T25	
+R6	Symptom_bdyloc_rel Arg1:T18 Arg2:T24	
+R7	Symptom_bdyloc_rel Arg1:T18 Arg2:T27	
+R8	Symptom_bdyloc_rel Arg1:T19 Arg2:T23	
+A13	SType T27 disorder

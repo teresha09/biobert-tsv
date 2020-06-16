@@ -1,0 +1,103 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 79	легкое интермиттирующее течение
+A1	Degree T2 light
+T3	Course 81 96	период ремиссии
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 98 118	Атопический дерматит
+T5	Course 120 128	ремиссия
+A3	CType T5 improved
+R3	Course_rel Arg1:T5 Arg2:T4	
+T6	Disease 130 149	Аллергический ринит
+T7	Course 151 168	период обострения
+A4	CType T7 worsened
+R4	Course_rel Arg1:T7 Arg2:T6	
+T8	Disease 170 178	Аденоиды
+T9	Severity 179 189	II степени
+A5	Degree T9 medium
+R5	Severity_rel Arg1:T9 Arg2:T8	
+T10	Disease 191 232	Реактивные изменения поджелудочной железы
+T11	Body_location 212 232	поджелудочной железы
+T12	Symptom 293 310	заложенность носа
+A6	SType T12 disorder
+T13	Symptom 312 327	симптомы ринита
+A7	SType T13 disorder
+T14	Symptom 329 338	высыпания
+A8	SType T14 disorder
+T15	Body_location 339 346	на коже
+T16	Symptom 348 377	сухой малопродуктивный кашель
+A9	SType T16 disorder
+T17	Disease 711 725	ларинготрахеит
+T18	Treatment 757 811	В терапии супракс, беродуал, лазолван через небулайзер
+A10	Effect T18 positive
+T19	Drug 767 774	супракс
+T20	Drug 776 784	беродуал
+T21	Drug 786 794	лазолван
+T22	Symptom 916 925	высыпания
+A11	SType T22 disorder
+T23	Body_location 926 933	на коже
+T24	Symptom 936 965	сухой малопродуктивный кашель
+A12	SType T24 disorder
+T25	Disease 982 1002	атопический дерматит
+T26	Treatment 1004 1067	в терапии антигистаминные препараты, местные ГКС, бепантен крем
+A13	Effect T26 positive
+T27	Drug 1054 1067	бепантен крем
+T28	Symptom 1094 1100	Кашель
+A14	SType T28 disorder
+T29	Treatment 1101 1172	купировался ингаляциями беродуала, лазолвана через небулайзер, эуфиллин
+A15	Effect T29 positive
+T30	Drug 1125 1134	беродуала
+T31	Drug 1136 1145	лазолвана
+T32	Drug 1164 1172	эуфиллин
+T33	Disease 1245 1277	острого обструктивного ларингита
+T34	Disease 1279 1294	стеноза гортани
+T35	Severity 1295 1299	2 ст
+A16	Degree T35 medium
+R6	Severity_rel Arg1:T35 Arg2:T34	
+T36	Body_location 1287 1294	гортани
+T38	Disease 1333 1336	ОРИ
+T39	Symptom 1352 1366	конъюнктивитом
+A17	SType T39 disorder
+T40	Symptom 1435 1463	риноконъюнктивальный синдром
+A18	SType T40 disorder
+T41	Disease 1530 1548	бронхиальная астма
+A19	NotPatient T41
+A20	NotPatient T40
+T42	Body_location 1650 1664	Кожные покровы
+T43	Symptom 1665 1671	чистые
+A21	SType T43 normal
+T44	Symptom 1673 1687	бледно-розовые
+A22	SType T44 normal
+T45	Symptom 1689 1699	Зев рыхлый
+A23	SType T45 disorder
+T46	Symptom 1701 1737	Носовое дыхание несколько затруднено
+A24	SType T46 disorder
+T47	Body_location 1739 1747	В лёгких
+T48	Symptom 1748 1768	дыхание везикулярное
+A25	SType T48 normal
+T49	Symptom 1770 1776	хрипов
+A26	Negation T49
+T50	Symptom 1782 1815	Сердечные тоны звучные, ритмичные
+A27	SType T50 normal
+T51	Symptom 1868 1875	дизурии
+A28	Negation T51
+T52	Symptom 1881 1909	Стул регулярный, оформленный
+A29	SType T52 normal
+T53	Symptom 1911 1931	Менингеальных знаков
+A30	Negation T53
+R7	Body_location_rel Arg1:T11 Arg2:T10	
+T54	Disease 321 327	ринита
+T55	Disease 1435 1463	риноконъюнктивальный синдром
+T56	Disease 1352 1366	конъюнктивитом
+R8	Symptom_bdyloc_rel Arg1:T15 Arg2:T14	
+R9	Symptom_bdyloc_rel Arg1:T23 Arg2:T22	
+T57	Treatment 1206 1234	получал терапию в стационаре
+A31	NotPatient T55
+R10	Symptom_bdyloc_rel Arg1:T42 Arg2:T43	
+R11	Symptom_bdyloc_rel Arg1:T42 Arg2:T44	
+T37	Body_location 1689 1692	Зев
+R12	Symptom_bdyloc_rel Arg1:T37 Arg2:T45	
+R13	Symptom_bdyloc_rel Arg1:T47 Arg2:T48	
+R14	Symptom_bdyloc_rel Arg1:T47 Arg2:T49	
+A32	SType T49 disorder

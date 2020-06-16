@@ -1,0 +1,231 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 56 70	Желчный пузырь
+T3	Body_location 168 174	Печень
+T4	Body_location 294 307	воротная вена
+T5	Body_location 315 330	печеночные вены
+T6	Body_location 345 365	Поджелудочная железа
+T7	Body_location 494 503	Селезенка
+T8	Body_location 624 631	Желудок
+T9	Body_location 633 653	12-ти перстная кишка
+T10	Symptom 817 849	умеренное нарушение проходимости
+A1	SType T10 disorder
+T11	Body_location 850 869	центральных бронхов
+T12	Drug 879 889	вентолином
+T13	Drug 992 1002	вентолином
+T14	Symptom 1003 1016	положительная
+A2	SType T14 disorder
+T15	Symptom 1054 1075	нарушение сохраняется
+A3	SType T15 disorder
+T16	Symptom 1100 1147	Умеренное повышение бронхиального сопротивления
+A4	SType T16 disorder
+T17	Symptom 1149 1162	Структура ОЕЛ
+A5	SType T17 normal
+T18	Symptom 656 686	стенки нормальные, секрета нет
+A6	SType T18 normal
+T19	Symptom 72 166	нормальный, размер – не увеличен, стенки - не изменены, форма - правильная,  просвет- свободен
+A7	SType T19 normal
+T20	Symptom 176 293	размер средний, ЛД- 54 мм, 1-й сегмент- 18 мм, ПД-134 мм, контур- ровный, паренхима- однородная, средней эхогенности,
+A8	SType T20 normal
+T21	Symptom 335 343	изменены
+A9	Negation T21
+T22	Symptom 367 470	нормальная, размер - средний, головка- 15 мм, тело- 11мм, хвост- 15 мм, паренхима - эхогенность средняя
+A10	SType T22 normal
+T23	Symptom 484 492	расширен
+A11	Negation T23
+T24	Body_location 472 478	проток
+T25	Symptom 517 588	размер - средний 118х74 мм, паренхима - однородная, средней эхогенности
+A12	SType T25 normal
+T26	Body_location 590 607	селезеночная вена
+T27	Symptom 613 622	расширена
+A13	Negation T27
+T28	Symptom 1320 1372	умеренное нарушение проходимости центральных бронхов
+A14	SType T28 disorder
+T29	Body_location 1353 1372	центральных бронхов
+T30	Symptom 1448 1475	Постнагрузочный бронхоспазм
+A15	Negation T30
+T31	Body_location 1543 1550	мошонки
+T32	Body_location 1552 1577	Яички: правое – в мошонке
+T33	Symptom 1579 1642	размер 50х24х24 мм, контур четкий, ровный, паренхима однородная
+A16	SType T33 normal
+T34	Body_location 1644 1658	придаток яичка
+T35	Symptom 1662 1669	изменен
+A17	Negation T35
+T36	Body_location 1719 1736	левое – в мошонке
+T37	Symptom 1738 1801	размер 51х23х23 мм, контур ровный, четкий, паренхима однородная
+A18	SType T37 normal
+T38	Body_location 1802 1816	придаток яичка
+T39	Symptom 1820 1827	изменен
+A19	Negation T39
+T40	Body_location 1856 1879	Вены семенного канатика
+T41	Symptom 1830 1854	ри ЦДК ИР снижен до 0.52
+A20	SType T41 disorder
+T43	Symptom 1935 2003	увеличение диаметра вен до 4.5 мм, при ЦДК и ИД кровоток реверсивный
+A22	SType T43 disorder
+T44	Symptom 2046 2084	с нарушением гемодинамики левого яичка
+A23	SType T44 disorder
+T45	Body_location 2072 2084	левого яичка
+T46	Disease 2028 2038	варикоцеле
+T47	Treatment 4480 4523	Гипоаллергенная диета, элиминационный режим
+T48	Treatment 4590 4642	Серетид 100/50 мкг по 1 инг. 2 раза в день продолжит
+T49	Symptom 4662 4667	кашля
+A24	SType T49 disorder
+T50	Symptom 4669 4690	затрудненного дыхания
+A25	SType T50 disorder
+T51	Treatment 4704 4785	вентолин (сальбутамол или саламол) по 2 ингаляции через спейсер до 4-х раз в день
+T52	Drug 4704 4712	вентолин
+T53	Drug 4714 4725	сальбутамол
+T54	Drug 4730 4737	саламол
+T55	Disease 4813 4816	ОРИ
+T56	Treatment 4817 4900	через небулайзер: беродуал 18 капель + пульмикорт 250 мкг 3 раза в день на 5-7 дней
+T57	Drug 4835 4843	беродуал
+T58	Drug 4856 4866	пульмикорт
+T59	Symptom 4920 4943	малопродуктивного кашля
+A26	SType T59 disorder
+T60	Treatment 4953 5031	ингаляции лазолвана в растворе 2 мл 2 раза в день (не позднее 18.00) на 5 дней
+T61	Drug 4963 4972	лазолвана
+T62	Treatment 5073 5122	Туалет носа с физиомером 3 раза в день продолжить
+T63	Treatment 5127 5165	Октенисепт спрей 3 раза в день 14 дней
+T64	Drug 5087 5097	физиомером
+T65	Drug 5127 5143	Октенисепт спрей
+T66	Treatment 4234 4310	физиомер х 3 раза в день; серетид 100/50 мкг 2 раза в день; вентолин условно
+T67	Treatment 4322 4361	иммобилизация 3-го пальца правой кисти.
+T68	Body_location 4336 4360	3-го пальца правой кисти
+T69	Body_location 3086 3110	органов грудной  полости
+T70	Body_location 3144 3166	органов грудной полост
+T71	Symptom 3168 3204	очаговых и инфильтративных изменений
+A27	Negation T71
+T72	Body_location 3205 3213	в легких
+T73	Symptom 3227 3252	Легочный фон симметричный
+A28	SType T73 normal
+T74	Body_location 3254 3279	Бронхо-сосудистый рисунок
+T75	Symptom 3283 3289	усилен
+A29	Negation T75
+T76	Symptom 3294 3306	деформирован
+A30	Negation T76
+T77	Body_location 3308 3327	Бронхиальное дерево
+T78	Symptom 3328 3351	сформировано правильно.
+A31	SType T78 normal
+T79	Body_location 4065 4087	лимфоузлов средостения
+T80	Body_location 4090 4103	корней легких
+T81	Symptom 4106 4135	в пределах нормальных величин
+A32	SType T81 normal
+T82	Symptom 3998 4034	Очаговых и инфильтративных изменений
+A33	Negation T82
+T83	Body_location 4035 4043	в легких
+T84	Body_location 3459 3465	трахеи
+T85	Body_location 3468 3483	главных бронхов
+T86	Symptom 3487 3494	изменен
+A34	Negation T86
+T87	Body_location 3352 3358	Бронхи
+T88	Body_location 3384 3406	субсегментарных ветвей
+T89	Body_location 3408 3422	стенки бронхов
+T90	Symptom 3423 3431	свободны
+A35	SType T90 normal
+T91	Symptom 3436 3449	деформированы
+A36	Negation T91
+T92	Body_location 3496 3514	Органы средостения
+T93	Body_location 3551 3557	сердца
+T94	Body_location 3591 3607	листок перикарда
+T95	Body_location 3673 3700	внутригрудных лимфатических
+T96	Body_location 3720 3738	Плевральные листки
+T97	Body_location 3810 3861	в средней доле справа и нижних отделах обоих легких
+T98	Body_location 3874 3914	плевральных полостях и полости перикарда
+T99	Body_location 3930 3947	Костные структуры
+T100	Symptom 3515 3533	расположены обычно
+A37	SType T100 normal
+T101	Symptom 3535 3550	Форма и размеры
+A38	SType T101 normal
+T102	Symptom 3616 3672	Множественности, уплотнения, обызвествления, гиперплазии
+A39	Negation T102
+T103	Symptom 3747 3809	с наличием негрубых, слабовыраженных плевропульмональных спаек
+A40	SType T103 disorder
+T104	Symptom 3739 3745	четкие
+A41	SType T104 normal
+T105	Symptom 3863 3871	Жидкости
+A42	Negation T105
+A43	SType T105 disorder
+T106	Symptom 3968 3984	без особенностей
+A44	SType T106 normal
+T107	Disease 2295 2314	аллергический ринит
+T108	Disease 2316 2347	Искривление носовой перегородки
+T109	Body_location 2328 2347	носовой перегородки
+T110	Disease 2349 2370	Хронический тонзиллит
+R1	Body_location_rel Arg1:T109 Arg2:T108	
+T111	Course 2372 2394	компенсированная форма
+A45	CType T111 improved
+R2	Course_rel Arg1:T111 Arg2:T110	
+T112	Treatment 2410 2518	физиомер 3 раза в день (туалет носа). Октенисепт спрей 3 раза в день 2 недели. Промывание лакун миндалин №3.
+T113	Drug 2410 2418	физиомер
+T114	Drug 2448 2464	Октенисепт спрей
+T42	Symptom 1671 1698	при ЦДК кровоток не изменен
+A21	SType T42 normal
+T115	Symptom 1700 1717	ИР до 0.62 – 0.63
+T116	Disease 2572 2588	варикоцеле слева
+T117	Severity 2589 2599	2 степени,
+A46	Degree T117 medium
+R3	Severity_rel Arg1:T117 Arg2:T116	
+T118	Disease 2600 2619	сперматоцеле справа
+T119	Disease 2792 2796	ушиб
+T120	Body_location 2808 2836	среднего пальца правой кисти
+R4	Body_location_rel Arg1:T120 Arg2:T119	
+T121	Treatment 2918 2931	Иммобилизация
+T122	Body_location 2952 2973	3 пальца правой кисти
+T123	Disease 3022 3029	перелом
+T124	Body_location 3030 3055	основания средней фаланги
+T125	Symptom 2123 2151	Устойчивый эктопический ритм
+A47	SType T125 disorder
+T126	Symptom 2172 2212	Неполная блокада правой ножки пучка Гиса
+T127	Body_location 2189 2212	правой ножки пучка Гиса
+T128	Symptom 2095 2121	Положение ЭОС вертикальное
+A48	SType T128 normal
+T129	Body_location 2246 2252	сердце
+R5	Body_location_rel Arg1:T124 Arg2:T123	
+T130	Disease 2181 2212	блокада правой ножки пучка Гиса
+R6	Body_location_rel Arg1:T127 Arg2:T130	
+T131	Disease 2798 2805	перелом
+T132	Symptom 3060 3077	смещения отломков
+A49	Negation T132
+A50	SType T132 disorder
+R7	Symptom_bdyloc_rel Arg1:T2 Arg2:T19	
+R8	Symptom_bdyloc_rel Arg1:T3 Arg2:T20	
+R9	Symptom_bdyloc_rel Arg1:T5 Arg2:T21	
+R10	Symptom_bdyloc_rel Arg1:T6 Arg2:T22	
+R11	Symptom_bdyloc_rel Arg1:T24 Arg2:T23	
+R12	Symptom_bdyloc_rel Arg1:T7 Arg2:T25	
+R13	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+R14	Symptom_bdyloc_rel Arg1:T9 Arg2:T18	
+R15	Symptom_bdyloc_rel Arg1:T8 Arg2:T18	
+R16	Symptom_bdyloc_rel Arg1:T11 Arg2:T10	
+R17	Symptom_bdyloc_rel Arg1:T29 Arg2:T28	
+R18	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+R19	Symptom_bdyloc_rel Arg1:T34 Arg2:T35	
+R20	Symptom_bdyloc_rel Arg1:T34 Arg2:T42	
+R21	Symptom_bdyloc_rel Arg1:T34 Arg2:T115	
+R22	Symptom_bdyloc_rel Arg1:T36 Arg2:T37	
+R23	Symptom_bdyloc_rel Arg1:T38 Arg2:T39	
+R24	Symptom_bdyloc_rel Arg1:T38 Arg2:T41	
+R25	Symptom_bdyloc_rel Arg1:T72 Arg2:T71	
+R26	Symptom_bdyloc_rel Arg1:T74 Arg2:T75	
+R27	Symptom_bdyloc_rel Arg1:T74 Arg2:T76	
+R28	Symptom_bdyloc_rel Arg1:T77 Arg2:T78	
+R29	Symptom_bdyloc_rel Arg1:T89 Arg2:T90	
+R30	Symptom_bdyloc_rel Arg1:T89 Arg2:T91	
+R31	Symptom_bdyloc_rel Arg1:T92 Arg2:T100	
+R32	Symptom_bdyloc_rel Arg1:T79 Arg2:T81	
+R33	Symptom_bdyloc_rel Arg1:T80 Arg2:T81	
+R34	Symptom_bdyloc_rel Arg1:T99 Arg2:T106	
+R35	Symptom_bdyloc_rel Arg1:T98 Arg2:T105	
+R36	Symptom_bdyloc_rel Arg1:T96 Arg2:T104	
+R37	Symptom_bdyloc_rel Arg1:T97 Arg2:T103	
+R38	Symptom_bdyloc_rel Arg1:T95 Arg2:T102	
+R39	Symptom_bdyloc_rel Arg1:T93 Arg2:T101	
+T133	Symptom 3608 3614	тонкий
+R40	Symptom_bdyloc_rel Arg1:T94 Arg2:T133	
+T134	Disease 1464 1475	бронхоспазм
+T135	Disease 3661 3672	гиперплазии
+T136	Disease 3804 3809	спаек
+T137	Drug 4234 4242	физиомер
+T138	Drug 4260 4267	серетид
+T139	Drug 4590 4597	Серетид
+T140	Drug 4294 4302	вентолин
+T141	Drug 5211 5221	вентолином

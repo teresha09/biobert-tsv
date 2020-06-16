@@ -1,0 +1,103 @@
+T1	Disease 9 46	Бронхиальная астма, атопическая форма
+T2	Severity 48 77	легкое персистирующее течение
+A1	Degree T2 light
+T3	Course 79 87	ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 89 125	Круглогодичный   аллергический ринит
+T5	Course 127 135	ремиссия
+A3	CType T5 improved
+R3	Course_rel Arg1:T5 Arg2:T4	
+T6	Disease 137 168	Искривление носовой перегородки
+T7	Body_location 149 168	носовой перегородки
+T8	Symptom 280 299	затруднения дыхания
+A4	SType T8 disorder
+T9	Disease 308 311	ОРИ
+T10	Symptom 313 330	заложенность носа
+A5	SType T10 disorder
+T11	Symptom 652 674	атопического дерматита
+A6	SType T11 disorder
+T12	Treatment 676 730	купировавшиеся диетой, местными топическими средствами
+A7	Effect T12 positive
+T13	Drug 699 730	местными топическими средствами
+T14	Disease 757 760	ОРИ
+T15	Symptom 780 795	бронхобструкции
+A8	SType T15 disorder
+T16	Treatment 797 845	купировавшиеся после приема аскорила и эуфиллина
+A9	Effect T16 positive
+T17	Drug 825 833	аскорила
+T18	Drug 836 845	эуфиллина
+T19	Symptom 862 868	кашель
+A10	SType T19 disorder
+T20	Disease 967 970	ОРИ
+T21	Symptom 996 1011	бронхобструкции
+A11	SType T21 disorder
+T22	Treatment 1031 1069	ингаляцией беродуала, приемом аскорила
+A12	Effect T22 no-effect
+T23	Drug 1042 1051	беродуала
+T24	Drug 1061 1069	аскорила
+T25	Disease 1166 1203	бронхиальная астма, атопическая форма
+T26	Severity 1205 1226	среднетяжелое течение
+A13	Degree T26 medium
+T27	Course 1228 1245	приступный период
+A14	CType T27 worsened
+R4	Severity_rel Arg1:T26 Arg2:T25	
+R5	Course_rel Arg1:T27 Arg2:T25	
+T28	Disease 1247 1274	аденовирусная суперинфекция
+T29	Disease 1276 1288	ринофарингит
+T30	Disease 1290 1329	левосторонний катаральный средний отит.
+T31	Treatment 1330 1425	В терапии сумамед, беродуал 10 кап.+пульмикорт 250 мкг 3 раза в день через небулайзер, лазолван
+A15	Effect T31 positive
+T32	Drug 1340 1348	сумамед,
+T33	Drug 1349 1357	беродуал
+T34	Drug 1366 1376	пульмикорт
+T35	Drug 1417 1425	лазолван
+T36	Disease 1541 1544	ОРИ
+T37	Symptom 1582 1601	затруднения дыхания
+A16	SType T37 disorder
+T38	Treatment 1603 1657	купировавшимися ингаляциями беродуала через небулайзер
+A17	Effect T38 positive
+T39	Drug 1631 1640	беродуала
+T40	Body_location 1732 1746	Кожные покровы
+T41	Symptom 1747 1764	чистые, суховатые
+A18	SType T41 normal
+T42	Symptom 1766 1777	Зев спокоен
+A19	SType T42 normal
+T43	Body_location 1779 1787	В легких
+T44	Symptom 1788 1808	дыхание везикулярное
+A20	SType T44 normal
+T45	Symptom 1810 1816	хрипов
+A21	Negation T45
+T46	Symptom 1822 1852	Тоны сердца звучные, ритмичные
+A22	SType T46 normal
+T47	Body_location 1854 1859	Живот
+T48	Symptom 1860 1866	мягкий
+A23	SType T48 normal
+T49	Symptom 1868 1895	доступен глубокой пальпации
+A24	SType T49 normal
+T50	Symptom 1897 1911	безболезненный
+A25	SType T50 normal
+T51	Body_location 1913 1919	Печень
+T52	Body_location 1920 1940	у края реберной дуги
+T53	Body_location 1942 1951	Селезенка
+T54	Symptom 1955 1967	пальпируется
+A26	Negation T54
+T55	Symptom 1969 1997	Стул регулярный, оформленный
+A27	SType T55 normal
+T56	Symptom 1999 2006	Дизурии
+A28	Negation T56
+R6	Body_location_rel Arg1:T7 Arg2:T6	
+T57	Symptom 174 203	нарушения дыхательной функции
+A29	Negation T57
+T58	Disease 652 674	атопического дерматита
+R7	Symptom_bdyloc_rel Arg1:T40 Arg2:T41	
+R8	Symptom_bdyloc_rel Arg1:T43 Arg2:T44	
+R9	Symptom_bdyloc_rel Arg1:T43 Arg2:T45	
+R10	Symptom_bdyloc_rel Arg1:T47 Arg2:T48	
+R11	Symptom_bdyloc_rel Arg1:T47 Arg2:T49	
+R12	Symptom_bdyloc_rel Arg1:T47 Arg2:T50	
+R13	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	
+A30	SType T45 disorder
+A31	SType T57 disorder
+A32	SType T54 normal

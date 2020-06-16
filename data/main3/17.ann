@@ -1,0 +1,213 @@
+T1	Treatment 21386 21455	Энап (эналаприл) 7,5 мг в 08.00, 5 мг в 20.00 – длительно, непрерывно
+T2	Treatment 21461 21535	Конкор (бисопролол) 1,25 мг х 2 р/д (09.00, 21.00) – длительно, непрерывно
+T3	Treatment 21542 21593	Трентал (пентоксифиллин) 25мг х 3р/день – длительно
+T4	Treatment 21599 21642	Предуктал (триметазидин) 17,5 мг х 2 р/день
+T5	Treatment 21649 21815	Цитофлавин (инозин+никотинамид+рибофлавин+янтарная кислота) по 1 таблетке х 2 р/д (строго после еды, утро, обед) – май, июль, октябрь, дкабрь – 2059 г, апрель - 2060г
+T6	Treatment 21821 21882	Магне В6 1 табл х 2 р/д – май, июнь, декабрь, январь, февраль
+T7	Treatment 21889 21977	Ретарпен (бициллин 5) 600 тыс. МЕ в/м – 1 раз в 4 недели (15 числа месяца) - декабрь-май
+T8	Treatment 21984 22102	Рибомунил 1доза (3табл.) утром до еды: понедельник – четверг 1-3 недели в октябре; затем 1 - 4 число в ноябре – апреле
+T9	Disease 22113 22117	ОРВИ
+T10	Treatment 22130 22218	назначение антибиотиков (аугментин или флемоклав, зиннат, исключить макролиды), виферона
+T11	Drug 22155 22164	аугментин
+T12	Drug 22169 22178	флемоклав
+T13	Drug 22180 22186	зиннат
+T14	Drug 22198 22207	макролиды
+T15	Drug 22210 22218	виферона
+T16	Drug 21984 21993	Рибомунил
+T17	Drug 21889 21897	Ретарпен
+T18	Drug 21821 21829	Магне В6
+T19	Drug 21899 21909	бициллин 5
+T20	Drug 21649 21659	Цитофлавин
+T21	Drug 21661 21667	инозин
+T22	Drug 21668 21679	никотинамид
+T23	Drug 21680 21690	рибофлавин
+T24	Drug 21691 21707	янтарная кислота
+T25	Drug 21599 21608	Предуктал
+T26	Drug 21610 21622	триметазидин
+T27	Drug 21542 21549	Трентал
+T28	Drug 21551 21565	пентоксифиллин
+T29	Drug 21461 21467	Конкор
+T30	Drug 21469 21479	бисопролол
+T31	Drug 21386 21390	Энап
+T32	Drug 21392 21401	эналаприл
+T33	Disease 21235 21260	инфекционного эндокардита
+T34	Treatment 20066 20088	козаар заменен на энап
+T35	Drug 20066 20072	козаар
+T36	Drug 20084 20088	энап
+T37	Drug 20104 20111	конкора
+T38	Treatment 20183 20230	Козаар - 12,5 мг х 2 р/д (8.00, 20.00) до 04.05
+A1	Effect T38 positive
+T39	Treatment 20232 20308	Энап - 5мг х 2 р/д (8.00,20.00) с 04.05, 7,5 мг в 8.00, 5 мг в 20.00 с 06.05
+A2	Effect T39 positive
+T40	Treatment 20310 20399	Конкор - 1,25 мг в 9.00, 0,625 мг в 21.00 до 28.04, 1,25 мг х 2 р/д (9.00, 21.00) с 28.04
+A3	Effect T40 positive
+T41	Treatment 20402 20423	Трентал 25 мг х 3 р/д
+A4	Effect T41 positive
+T42	Disease 20600 20621	Хронический миокардит
+A5	Time T42 now
+T43	Disease 20623 20626	ХСН
+A6	Time T43 now
+T44	Severity 20627 20633	IIА ст
+A7	Degree T44 light
+T45	Severity 20635 20647	ФК I по NYHA
+A8	Degree T45 light
+R1	Severity_rel Arg1:T44 Arg2:T43	
+R2	Severity_rel Arg1:T45 Arg2:T43	
+T46	Drug 20183 20189	Козаар
+T47	Drug 20232 20236	Энап
+T48	Drug 20310 20316	Конкор
+T49	Treatment 19522 19603	Океанол (капс. 0,5 г) 1 капс х 2 раза/сут (утро, вечер, во время еды) - длительно
+T50	Drug 19522 19529	Океанол
+T51	Disease 21 42	Хронический миокардит
+A9	Time T51 now
+T52	Disease 44 84	Неполная блокада правой ножки пучка Гиса
+A10	Time T52 now
+T53	Disease 86 89	ХСН
+A11	Time T53 now
+T54	Severity 90 96	IIА ст
+A12	Degree T54 light
+T55	Severity 98 110	ФК I по NYHA
+A13	Degree T55 light
+R3	Severity_rel Arg1:T55 Arg2:T53	
+R4	Severity_rel Arg1:T54 Arg2:T53	
+T56	Body_location 61 84	правой ножки пучка Гиса
+R5	Body_location_rel Arg1:T56 Arg2:T52	
+T57	Disease 122 143	Хронический миокардит
+A14	Time T57 now
+T58	Disease 145 185	Неполная блокада правой ножки пучка Гиса
+A15	Time T58 now
+T59	Disease 228 258	Дисплазия соединительной ткани
+A16	Time T59 now
+T60	Disease 260 291	Дискинезия желчевыводящих путей
+A17	Time T60 now
+T61	Disease 293 315	Транзиторная гематурия
+A18	Time T61 now
+T62	Disease 187 190	ХСН
+A19	Time T62 now
+T63	Severity 191 197	IIА ст
+A20	Degree T63 light
+T64	Severity 199 211	ФК I по NYHA
+A21	Degree T64 light
+R6	Severity_rel Arg1:T63 Arg2:T62	
+R7	Severity_rel Arg1:T64 Arg2:T62	
+T65	Body_location 162 185	правой ножки пучка Гиса
+R8	Body_location_rel Arg1:T65 Arg2:T58	
+T66	Symptom 353 387	усталость при физическим нагрузках
+A22	SType T66 disorder
+T67	Disease 440 451	нефропатией
+A23	NotPatient T67
+A24	Time T67 before
+T68	Symptom 572 605	недостаточная прибавка массы тела
+A25	SType T68 disorder
+T69	Symptom 680 684	сыпь
+A26	SType T69 disorder
+T70	Drug 688 695	пиковит
+T71	Disease 730 734	ОРВИ
+A27	Time T71 before
+T72	Disease 744 750	ангины
+A28	Time T72 before
+T73	Disease 723 728	грипп
+A29	Time T73 before
+T74	Disease 869 875	ангину
+A30	Time T74 before
+T75	Treatment 904 932	получала сумамед, цефалексин
+T76	Drug 913 920	сумамед
+T77	Drug 922 932	цефалексин
+T78	Symptom 896 902	38-39С
+A31	SType T78 disorder
+T79	Symptom 981 986	отеки
+A32	SType T79 disorder
+T80	Symptom 1039 1049	тахикардия
+A33	SType T80 disorder
+T81	Disease 1109 1115	Анемия
+A34	Time T81 before
+T82	Symptom 1281 1306	сердечной недостаточности
+A35	SType T82 disorder
+T83	Disease 1433 1461	Дилатационная кардиомиопатия
+A36	Time T83 before
+T84	Disease 1463 1491	Высокая легочная гипертензия
+A37	Time T84 before
+T85	Disease 1493 1495	НК
+A38	Time T85 before
+T86	Severity 1496 1500	2Бст
+A39	Degree T86 medium
+T87	Disease 1502 1524	Портальная гипертензия
+A40	Time T87 before
+T88	Disease 1526 1577	Правосторонняя нижнедолевая внебольничная пневмония
+A41	Time T88 before
+T89	Treatment 1597 1737	дигоксин, капотен, курантил, верошпирон, гипотиазид, гепарин, аспаркам, роцефин, неотон в/в 15г на курс, в/в иммуноглобулин человеческий № 5
+A42	Effect T89 positive
+T90	Drug 1597 1605	дигоксин
+T91	Drug 1607 1614	капотен
+T92	Drug 1616 1624	курантил
+T93	Drug 1626 1636	верошпирон
+T94	Drug 1638 1648	гипотиазид
+T95	Drug 1650 1657	гепарин
+T96	Drug 1659 1667	аспаркам
+T97	Drug 1669 1676	роцефин
+T98	Drug 1678 1684	неотон
+T99	Symptom 1776 1794	уменьшились одышка
+A43	SType T99 normal
+T100	Symptom 1846 1851	отеки
+A44	Negation T100
+A45	SType T100 disorder
+T101	Symptom 2220 2266	Признаки гипертрофии миокарда левого желудочка
+A46	SType T101 disorder
+T102	Symptom 1811 1821	тахикардия
+A47	SType T102 disorder
+T103	Body_location 2280 2296	обоих предсердий
+T104	Body_location 2241 2266	миокарда левого желудочка
+R9	Symptom_bdyloc_rel Arg1:T104 Arg2:T101	
+T105	Symptom 2298 2330	Нарушение процесса реполяризации
+A48	SType T105 disorder
+T106	Body_location 2331 2352	в миокарде желудочков
+R10	Symptom_bdyloc_rel Arg1:T106 Arg2:T105	
+T107	Symptom 2473 2527	зарегистрировано 2 единичные предсердные экстрасистолы
+A49	SType T107 disorder
+T108	Symptom 2529 2579	40 единичных полиморфных желудочковых экстрасистол
+A50	SType T108 disorder
+T109	Severity 2581 2617	3 класс желудочковой аритмии по Lown
+A51	Degree T109 medium
+T110	Symptom 2657 2678	снижение Hb до 86 г/л
+A52	SType T110 disorder
+T111	Symptom 2680 2704	повышение СОЭ до 40 мм/ч
+A53	SType T111 disorder
+T112	Symptom 2706 2726	СРБ повышен до 20 ед
+A54	SType T112 disorder
+T113	Disease 2771 2789	Хронический кардит
+A55	Time T113 before
+T114	Disease 2791 2872	Недостаточность митрального, трикуспидального клапанов и клапана легочной артерии
+A56	Time T114 before
+T115	Disease 2874 2894	Легочная гипертензия
+A57	Time T115 before
+T116	Disease 2896 2898	НК
+A58	Time T116 before
+T117	Symptom 2735 2760	эритроцитурия до 20 в п/з
+A59	SType T117 disorder
+T118	Severity 2899 2907	IIА-Б ст
+A60	Degree T118 medium
+R11	Severity_rel Arg1:T118 Arg2:T116	
+T119	Body_location 2807 2818	митрального
+T120	Body_location 2820 2845	трикуспидального клапанов
+T121	Body_location 2848 2872	клапана легочной артерии
+T122	Treatment 2928 2987	дигоксин 0.06 мг/сут, моноприл 5 мг/сут, фуросемид 5 мг/сут
+A61	Effect T122 positive
+T123	Treatment 2989 3059	верошпирон 12,5 мг/сут (чередование через 1 месяц с триампуром 1т/сут)
+A62	Effect T123 positive
+T124	Drug 2928 2936	дигоксин
+T125	Drug 2950 2958	моноприл
+T126	Drug 2969 2978	фуросемид
+T127	Drug 2989 2999	верошпирон
+T128	Drug 3041 3051	триампуром
+T129	Treatment 3061 3106	курантил 37,5 мг/сут, интраглобин 7 г на курс
+A63	Effect T129 positive
+T130	Treatment 3108 3148	продолжен прием преднизолона 12,5 мг/сут
+A64	Effect T130 positive
+T131	Treatment 3150 3187	ретарпен в/м 600 тыс ЕД 1 раз в месяц
+A65	Effect T131 positive
+T132	Drug 3124 3136	преднизолона
+T133	Drug 3150 3158	ретарпен
+T134	Drug 3083 3094	интраглобин
+T135	Drug 3061 3069	курантил
+T136	Body_location 3500 3523	левых отделов сердца ЛЖ
+T137	Body_location 3622 3645	органов грудной полости

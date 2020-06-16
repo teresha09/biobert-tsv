@@ -1,0 +1,170 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 56 70	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T3	Symptom 72 99	размер – увеличен, 75х16 мм
+A1	SType T3 disorder
+T4	Symptom 101 115	стенки – норма
+A2	SType T4 normal
+T5	Body_location 101 107	стенки
+T6	Symptom 117 139	форма – перегиб в теле
+A3	SType T6 disorder
+T7	Symptom 141 160	просвет - свободный
+A4	SType T7 normal
+T8	Body_location 162 182	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T9	Symptom 183 214	увеличена: размер – 16х12х22 мм
+A5	SType T9 disorder
+T10	Symptom 216 254	паренхима – эхогенность резко повышена
+A6	SType T10 disorder
+T11	Body_location 256 265	СЕЛЕЗЕНКА
+T12	Symptom 267 308	размер 63х30х25 мм; паренхима не изменена
+A7	SType T12 normal
+T13	Body_location 310 316	ПЕЧЕНЬ
+T14	Symptom 318 373	размер – ЛД – 50 мм, ПД –80 мм; паренхима -  однородная
+A8	SType T14 normal
+T15	Body_location 375 382	ЖЕЛУДОК
+T16	Body_location 398 415	12-ПЕРСТНАЯ КИШКА
+T17	Symptom 416 427	секрет есть
+A9	SType T17 normal
+T18	Symptom 429 442	стенки тонкие
+A10	SType T18 normal
+T19	Symptom 385 396	секрет есть
+A11	SType T19 normal
+T20	Symptom 465 504	увеличения и деформации желчного пузыря
+A12	SType T20 disorder
+T21	Body_location 489 504	желчного пузыря
+T22	Body_location 513 516	ППН
+T23	Disease 584 603	Аллергический ринит
+T24	Severity 605 635	персистирующий, легкое течение
+A13	Degree T24 light
+R1	Severity_rel Arg1:T24 Arg2:T23	
+T25	Disease 637 645	Аденоиды
+T26	Disease 652 673	Катаральный аденоидит
+T27	Disease 675 702	Гипретрофия небных миндалин
+T28	Severity 703 712	2 степени
+A14	Degree T28 medium
+R2	Severity_rel Arg1:T28 Arg2:T27	
+T29	Severity 646 650	2 ст
+A15	Degree T29 medium
+R3	Severity_rel Arg1:T29 Arg2:T25	
+T30	Symptom 857 875	показатели в норме
+A16	SType T30 normal
+T31	Drug 987 997	вентолином
+T32	Symptom 1098 1152	умеренные нарушенияпроходимости периферических бронхов
+A17	SType T32 disorder
+T33	Body_location 1130 1152	периферических бронхов
+T34	Drug 1186 1196	вентолином
+T35	Symptom 1197 1210	отрицательная
+A18	SType T35 normal
+T36	Symptom 1348 1366	показатели в норме
+A19	SType T36 normal
+T37	Disease 1406 1425	Аллергический ринит
+T38	Severity 1427 1457	персистирующий, легкое течение
+A20	Degree T38 light
+R4	Severity_rel Arg1:T38 Arg2:T37	
+T39	Body_location 3173 3196	органов брюшной полости
+T40	Treatment 3107 3135	Туалет носа с маример 3 раза
+T41	Treatment 3059 3102	Назонекс в нос (1+1) 1 р/д в течение 21 дня
+T42	Treatment 2775 2828	Соблюдать гипоаллергенную диету, элиминационный режим
+T43	Symptom 2846 2865	затруднения дыхании
+A21	SType T43 disorder
+T44	Symptom 2867 2884	кашлевом синдроме
+A22	SType T44 disorder
+T45	Disease 2895 2898	ОРИ
+T46	Treatment 2900 2948	вентолин по 1 инг. через спейсер до 4 раз в день
+T47	Drug 2900 2908	вентолин
+T48	Treatment 2968 3054	через небулайзер: лазолван 0.5 мл + беродуал 8 капель + пульмикорт 250 мкг на 3-5 дней
+T49	Drug 2986 2994	лазолван
+T50	Drug 3004 3012	беродуал
+T51	Drug 3024 3034	пульмикорт
+T52	Drug 3059 3067	Назонекс
+T53	Drug 3121 3128	маример
+T54	Symptom 2275 2335	темп познавательного развития соответствует возрастной норме
+A23	SType T54 normal
+T55	Symptom 2337 2362	особенности развития речи
+T56	Treatment 2377 2550	средний режим педагогических нагрузок, занятия с педагогом по формированию возрастных социальных навыков, посещение развивающих занятий. Систематические занятия с логопедом.
+T57	Treatment 2573 2620	виброцил, хофитол, полидекса, маример, назонекс
+T58	Drug 2573 2581	виброцил
+T59	Drug 2583 2590	хофитол
+T60	Drug 2592 2601	полидекса
+T61	Drug 2603 2610	маример
+T62	Drug 2612 2620	назонекс
+T63	Symptom 2090 2118	Резкая синусовая брадикардия
+A24	SType T63 disorder
+T64	Symptom 2120 2134	легкая аритмия
+A25	SType T64 normal
+T65	Symptom 2136 2177	Неполная блокада правой ножки пучка Гиса.
+A26	SType T65 normal
+T66	Body_location 2212 2232	миокарде  желудочков
+T67	Symptom 2021 2055	умеренных бронхитических изменений
+A27	SType T67 disorder
+T68	Body_location 1923 1939	Куполы диафрагмы
+T69	Symptom 1940 1954	ровные, четкие
+A28	SType T69 normal
+T70	Body_location 1956 1962	синусы
+T71	Symptom 1963 1979	дифференцируются
+A29	SType T71 normal
+T72	Body_location 1879 1885	Сердце
+T73	Symptom 1886 1910	обычных размеров и формы
+A30	SType T73 normal
+T74	Body_location 1721 1735	грудной клетки
+T75	Symptom 1737 1770	Очагово-инфильтративных изменений
+A31	Negation T75
+A32	SType T75 disorder
+T76	Symptom 1776 1841	Легочный рисунок по смешанному типу, усилен в прикорневых отделах
+A33	SType T76 disorder
+T77	Body_location 1822 1842	прикорневых отделах.
+T78	Body_location 1844 1856	Корни легких
+T79	Symptom 1857 1877	структурны, тяжистые
+T80	Disease 1459 1467	Аденоиды
+T81	Severity 1468 1472	2 ст
+A34	Degree T81 medium
+R5	Severity_rel Arg1:T81 Arg2:T80	
+T82	Disease 1474 1496	Катаральный аденоидит.
+T83	Disease 1497 1524	Гипертрофия небных миндалин
+T84	Severity 1525 1529	2 ст
+A35	Degree T84 medium
+R6	Severity_rel Arg1:T84 Arg2:T83	
+T85	Body_location 1509 1524	небных миндалин
+R7	Body_location_rel Arg1:T85 Arg2:T83	
+T86	Disease 1592 1611	Аллергический ринит
+T87	Course 1613 1627	вне обострения
+A36	CType T87 improved
+R8	Course_rel Arg1:T87 Arg2:T86	
+T88	Disease 1644 1671	Гипертрофия небных миндалин
+T89	Severity 1672 1676	2 ст
+A37	Degree T89 medium
+R9	Severity_rel Arg1:T89 Arg2:T88	
+T90	Disease 1629 1637	Аденоиды
+T91	Severity 1638 1642	2 ст
+A38	Degree T91 medium
+R10	Severity_rel Arg1:T91 Arg2:T90	
+T92	Symptom 2067 2088	отклонение ЭОС вправо
+A39	SType T92 normal
+T93	Disease 2867 2884	кашлевом синдроме
+A40	Conditional T93
+T94	Disease 2097 2118	синусовая брадикардия
+T95	Severity 2090 2096	Резкая
+A41	Degree T95 hard
+R11	Severity_rel Arg1:T95 Arg2:T94	
+T96	Disease 2127 2134	аритмия
+T97	Severity 2120 2126	легкая
+A42	Degree T97 light
+R12	Severity_rel Arg1:T97 Arg2:T96	
+T98	Disease 2145 2176	блокада правой ножки пучка Гиса
+T99	Body_location 2153 2176	правой ножки пучка Гиса
+R13	Body_location_rel Arg1:T99 Arg2:T98	
+R14	Symptom_bdyloc_rel Arg1:T2 Arg2:T3	
+R15	Symptom_bdyloc_rel Arg1:T2 Arg2:T4	
+R16	Symptom_bdyloc_rel Arg1:T2 Arg2:T6	
+R17	Symptom_bdyloc_rel Arg1:T2 Arg2:T7	
+R18	Symptom_bdyloc_rel Arg1:T8 Arg2:T9	
+R19	Symptom_bdyloc_rel Arg1:T8 Arg2:T10	
+R20	Symptom_bdyloc_rel Arg1:T11 Arg2:T12	
+R21	Symptom_bdyloc_rel Arg1:T13 Arg2:T14	
+R22	Symptom_bdyloc_rel Arg1:T15 Arg2:T19	
+R23	Symptom_bdyloc_rel Arg1:T16 Arg2:T17	
+R24	Symptom_bdyloc_rel Arg1:T16 Arg2:T18	
+R25	Symptom_bdyloc_rel Arg1:T21 Arg2:T20	
+R26	Symptom_bdyloc_rel Arg1:T33 Arg2:T32	
+R27	Symptom_bdyloc_rel Arg1:T78 Arg2:T79	
+R28	Symptom_bdyloc_rel Arg1:T68 Arg2:T69	
+R29	Symptom_bdyloc_rel Arg1:T70 Arg2:T71	

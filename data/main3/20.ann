@@ -1,0 +1,372 @@
+T1	Disease 21 65	Дилатационная кардиомиопатия, наследственная
+A1	Time T1 now
+T2	Disease 67 110	Повышенная трабекулярность левого желудочка
+A2	Time T2 now
+T3	Body_location 94 110	левого желудочка
+R1	Body_location_rel Arg1:T3 Arg2:T2	
+T4	Disease 112 167	Недостаточность митрального и трикуспидального клапанов
+A3	Time T4 now
+T5	Body_location 128 167	митрального и трикуспидального клапанов
+T6	Disease 222 225	ХСН
+A4	Time T6 now
+T7	Severity 227 236	IА стадии
+A5	Degree T7 medium
+T8	Severity 238 251	ФК II по NYHA
+A6	Degree T8 medium
+T9	Symptom 520 543	повышенная утомляемость
+A7	SType T9 disorder
+T10	Disease 1065 1071	анемию
+A8	Time T10 before
+T11	Disease 1239 1243	ДКМП
+A9	NotPatient T11
+T12	Treatment 1868 1903	Получал терапию беродуал, фликсотид
+A10	Effect T12 unknown
+T13	Drug 1884 1892	беродуал
+T14	Drug 1894 1903	фликсотид
+T15	Treatment 4265 4353	капотен 37.5мг/сут с 17.10 заменен на моноприл с постепенным повышением дозы до 15мг/сут
+T16	Disease 169 191	Нарушение ритма сердца
+A11	Time T16 now
+T17	Disease 193 220	Желудочковая экстрасистолия
+A12	Time T17 now
+T18	Disease 263 307	Дилатационная кардиомиопатия, наследственная
+A13	Time T18 now
+T19	Disease 309 352	Повышенная трабекулярность левого желудочка
+A14	Time T19 now
+T20	Body_location 336 352	левого желудочка
+T21	Disease 354 409	Недостаточность митрального и трикуспидального клапанов
+A15	Time T21 now
+T22	Disease 411 433	Нарушение ритма сердца
+A16	Time T22 now
+T23	Disease 435 462	Желудочковая экстрасистолия
+A17	Time T23 now
+T24	Disease 464 467	ХСН
+A18	Time T24 now
+T25	Severity 468 478	IIА стадии
+A19	Degree T25 medium
+T26	Severity 480 493	ФК II по NYHA
+A20	Degree T26 medium
+T27	Disease 792 831	гипоксическое поражение головного мозга
+A21	Time T27 before
+T28	Disease 849 900	синдром повышенной нервно-рефлекторной возбудимости
+A22	Time T28 before
+T29	Disease 1073 1094	атопический дерматит.
+A23	Time T29 before
+T30	Disease 1122 1135	ветряная оспа
+A24	Time T30 before
+T31	Disease 1143 1164	Ротавирусная инфекция
+A25	Time T31 before
+T32	Disease 1353 1374	обструктивный бронхит
+A26	Time T32 before
+T33	Symptom 1408 1421	кардиомегалия
+T35	Disease 1568 1594	Функциональная кардиопатия
+A28	Time T35 before
+T36	Disease 1445 1455	миокардит?
+A29	Time T36 before
+T34	Disease 1596 1627	Реконвалесцент острого бронхита
+A27	Time T34 before
+T37	Disease 1677 1699	обструктивные бронхиты
+A30	Time T37 before
+T38	Disease 1712 1734	атопического дерматита
+A31	Time T38 before
+T39	Disease 1776 1794	Бронхиальная астма
+A32	Time T39 before
+T40	Severity 1795 1810	средней тяжести
+A33	Degree T40 medium
+T41	Course 1812 1834	персистирующее течение
+A34	CType T41 changed
+T42	Symptom 2094 2108	синусовый ритм
+A35	SType T42 normal
+T43	Drug 3205 3212	капотен
+T44	Drug 3247 3254	трентал
+T45	Drug 3266 3274	варфарин
+T46	Drug 3283 3292	дилатренд
+T47	Symptom 3386 3431	снижение толерантности к физическим нагрузкам
+A36	SType T47 disorder
+T48	Drug 3433 3440	Капотен
+T49	Drug 3519 3528	варфарина
+T50	Symptom 4074 4122	корни легких с явлениями прикорневого лимфостаза
+A37	SType T50 disorder
+T51	Treatment 4355 4407	дилатренд 1.56мг/сут с повышением дозы до 6.25мг/сут
+T52	Drug 4409 4417	варфарин
+T53	Drug 4427 4437	гипотиазид
+T54	Drug 4460 4466	диувер
+T55	Drug 4485 4493	панангин
+T56	Symptom 4831 4848	Умеренная аритмия
+A38	SType T56 disorder
+T57	Symptom 5245 5256	АВ блокадой
+A39	SType T57 disorder
+T58	Treatment 5599 5646	моноприл 7.5мг х 2р/д, дилатрнед 3.125мг х 2р/д
+A40	Effect T58 positive
+T59	Treatment 5703 5799	диувер 5мг/сут, варфарин 7.5мг со снижением дозы под контролем МНО до 5мг/сут, в/в цитофлавин №6
+T60	Drug 5786 5796	цитофлавин
+T61	Disease 5869 5879	частые ОРЗ
+A41	Time T61 before
+T62	Symptom 6060 6065	отеки
+A42	SType T62 disorder
+T63	Drug 6108 6115	диувера
+T64	Treatment 6117 6198	С 04.12.2054 получает диувер 7.5мг/су, остальную терапию получает в полном объеме
+T65	Symptom 6250 6284	частыми простудными заболеваниями.
+A43	SType T65 disorder
+T66	Symptom 6403 6440	нарастания дилатации левого желудочка
+A44	SType T66 disorder
+T67	Symptom 6451 6495	снижения сократительной способности миокарда
+A45	SType T67 disorder
+T68	Treatment 6527 6597	подключен диагоксин 0,06мг/сут, моноприл заменен на козаар 1мг/кг\сут.
+T69	Symptom 6834 6852	Температура 36,5С.
+A46	SType T69 normal
+T70	Body_location 7029 7043	Кожные покровы
+T71	Body_location 7104 7111	ладоней
+T72	Body_location 7149 7163	Зев, миндалины
+T73	Body_location 7174 7193	Подкожная клетчатка
+T74	Body_location 7307 7322	Костная система
+T75	Body_location 7362 7376	Мышцы, суставы
+T76	Body_location 7443 7475	локтевых, лучезапястных суставов
+T77	Body_location 7526 7532	легких
+T78	Body_location 7590 7604	Область сердца
+T79	Symptom 7815 7829	Тоны ритмичные
+T80	Body_location 7942 7947	Живот
+T81	Body_location 8008 8014	Печень
+T82	Body_location 8029 8038	Селезенка
+T83	Body_location 8057 8077	Мочеполовая система:
+T84	Body_location 8109 8125	Нервная система:
+T85	Body_location 8182 8201	Эндокринная система
+T86	Body_location 8295 8306	ЛЕВАЯ ПОЧКА
+T87	Body_location 9562 9576	МОЧЕВОЙ ПУЗЫРЬ
+T88	Body_location 10631 10637	Сердца
+T89	Body_location 11132 11159	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА:
+T90	Body_location 11170 11186	ПРАВЫЙ ЖЕЛУДОЧЕК
+T91	Body_location 11751 11768	МИТРАЛЬНЫЙ КЛАПАН
+T92	Body_location 13265 13271	Бронхи
+T93	Body_location 13825 13838	ЖЕЛЧНЫЙ ПУЗЫР
+T94	Body_location 14277 14297	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T95	Body_location 14457 14466	СЕЛЕЗЕНКА
+T96	Body_location 14636 14643	ЖЕЛУДОК
+T97	Body_location 14668 14684	Д\ПЕРСТНАЯ КИШКА
+T98	Body_location 14795 14801	сердца
+T99	Treatment 15725 15876	режим общий, стол №5, дигоксин 0,06мг/сут, козаар 50мг\сут, конкор 3,75мг/сут, диувер 5мг/сут, варфарин 6,25мг/сут, пульмикорт 100мкг через турбухалер.
+T100	Symptom 16053 16098	повышения сократительной способности миокарда
+A47	SType T100 normal
+T101	Symptom 16101 16138	уменьшения диаметра левого желудочка.
+A48	SType T101 normal
+T102	Body_location 16121 16137	левого желудочка
+T103	Drug 16774 16782	Дигоксин
+T104	Drug 16832 16838	Козаар
+T105	Drug 16893 16899	Конкор
+T106	Drug 16959 16965	Диувер
+T107	Drug 17015 17023	Варфарин
+T108	Drug 17169 17184	Элькар 300мг/мл
+T109	Drug 17242 17251	Предуктал
+T110	Drug 17311 17321	Цитофлавин
+T111	Drug 17431 17438	Кудесан
+R2	Body_location_rel Arg1:T5 Arg2:T4	
+T112	Body_location 185 191	сердца
+R3	Body_location_rel Arg1:T112 Arg2:T16	
+R4	Severity_rel Arg1:T7 Arg2:T6	
+R5	Severity_rel Arg1:T8 Arg2:T6	
+R6	Body_location_rel Arg1:T20 Arg2:T19	
+T113	Body_location 370 409	митрального и трикуспидального клапанов
+R7	Body_location_rel Arg1:T113 Arg2:T21	
+T114	Body_location 427 433	сердца
+R8	Body_location_rel Arg1:T114 Arg2:T22	
+R9	Severity_rel Arg1:T25 Arg2:T24	
+R10	Severity_rel Arg1:T26 Arg2:T24	
+T115	Body_location 816 831	головного мозга
+T116	Severity 832 847	средней тяжести
+A49	Degree T116 medium
+R11	Severity_rel Arg1:T116 Arg2:T27	
+R12	Body_location_rel Arg1:T115 Arg2:T27	
+T117	Course 1701 1711	обострения
+A50	CType T117 worsened
+R13	Course_rel Arg1:T41 Arg2:T39	
+R14	Severity_rel Arg1:T40 Arg2:T39	
+T118	Disease 1836 1856	Атопический дерматит
+A51	Time T118 before
+T119	Disease 1858 1867	Поллиноз.
+A52	Time T119 before
+T120	Symptom 2311 2330	дефекты перегородок
+A53	Negation T120
+A54	SType T120 disorder
+T121	Symptom 2588 2619	признаки некомпактного миокарда
+A55	SType T121 disorder
+T122	Symptom 2631 2654	склонность к тахикардии
+A56	SType T122 disorder
+T123	Symptom 2656 2714	10 монотопных ЖЭ из них 1 эпизод идиовентрикулярного ритма
+A57	SType T123 disorder
+T124	Symptom 2716 2754	однократно - парные сливные сокращения
+A58	SType T124 disorder
+T125	Symptom 2758 2787	4 изолированные экстрасистолы
+A59	SType T125 disorder
+T126	Symptom 2808 2834	повышенная трабекулярность
+A60	SType T126 disorder
+T127	Body_location 2835 2902	по всем стенкам, кроме перегородки, в среднем и верхушечном отделах
+R15	Symptom_bdyloc_rel Arg1:T127 Arg2:T126	
+T128	Symptom 2993 3029	Аномалий строения коронарных сосудов
+A61	Negation T128
+A62	SType T128 disorder
+T129	Body_location 3011 3029	коронарных сосудов
+R16	Symptom_bdyloc_rel Arg1:T129 Arg2:T128	
+T130	Treatment 3205 3303	капотен с титрованием дозы до 37,5мг/сут, трентал 150мг/сут, варфарин 3,75мг, дилатренд 1,56мг/сут
+A63	Effect T130 positive
+T131	Treatment 3433 3503	Капотен принимался нерегулярно (периодически пропускалась одна из доз)
+T132	Treatment 3505 3557	Повышена доза варфарина до 5мг/сут под контролем МНО
+T133	Drug 4265 4272	капотен
+T134	Drug 4303 4311	моноприл
+T135	Drug 4355 4364	дилатренд
+T136	Treatment 4409 4502	варфарин 5мг/сут, гипотиазид 25мг х 1р/д по 23.10, диувер 10мг/сут с 24.10, панангин 1.2т/сут
+A64	Effect T15 positive
+A65	Effect T51 positive
+A66	Effect T136 positive
+T137	Treatment 4522 4547	повышения дозы дилатренда
+T138	Drug 4537 4547	дилатренда
+A67	Effect T137 positive
+T139	Symptom 4808 4829	правопредсердный ритм
+A68	SType T139 disorder
+T140	Symptom 4850 4856	НБПНПГ
+A69	SType T140 disorder
+T141	Symptom 4962 5033	Периодически укорочение инт. PQ с неотчетливыми признаками дельта-волны
+A70	SType T141 disorder
+T142	Symptom 5035 5165	За сутки 2 пароксизма ширококомплексной тахикардии из 11 комплексов с ЧСС 168 (от 132 до 178)уд/мин, из 7 комплексов с ЧСС 156/мин
+A71	SType T142 disorder
+T143	Symptom 5167 5218	В пароксизме реципрокные з.Р (в конечной части QRS)
+A72	SType T143 disorder
+T144	Symptom 4941 4960	Преобладает ПП ритм
+A73	SType T144 disorder
+T145	Drug 5599 5607	моноприл
+T146	Drug 5622 5631	дилатрнед
+T147	Treatment 5648 5701	учитывая данные ХМ ЭКГ заменен на конкор 2.5мг+1.25мг
+A74	Effect T147 positive
+A75	Effect T59 positive
+T148	Drug 5703 5709	диувер
+T149	Drug 5719 5727	варфарин
+T150	Treatment 5881 5911	а/б + симптоматическая терапия
+A76	Effect T150 positive
+T151	Symptom 5943 5961	снижение ФВ до 37%
+A77	SType T151 disorder
+T152	Treatment 6076 6115	самостоятельно увеличивали дозы диувера
+T153	Drug 6139 6145	диувер
+T154	Drug 6537 6546	диагоксин
+T155	Drug 6559 6567	моноприл
+T156	Drug 6579 6585	козаар
+T157	Body_location 6424 6440	левого желудочка
+R17	Symptom_bdyloc_rel Arg1:T157 Arg2:T66	
+T158	Disease 6752 6756	ОРВИ
+A78	Time T158 before
+A79	SType T79 normal
+T159	Symptom 7831 7846	приглушен 1 тон
+A80	SType T159 disorder
+T160	Body_location 7847 7859	на основании
+T161	Symptom 7861 7892	неинтенсивный систолический шум
+A81	SType T161 disorder
+T162	Body_location 7893 7918	вдоль левого края грудины
+R18	Symptom_bdyloc_rel Arg1:T162 Arg2:T161	
+R19	Symptom_bdyloc_rel Arg1:T160 Arg2:T159	
+T163	Body_location 7631 7667	Границы относительной тупости сердца
+T164	Symptom 7605 7623	несколько выбухает
+A82	SType T164 disorder
+T165	Body_location 7624 7629	слева
+R20	Symptom_bdyloc_rel Arg1:T78 Arg2:T164	
+R21	Symptom_bdyloc_rel Arg1:T165 Arg2:T164	
+T166	Symptom 7948 7954	мягкий
+A83	SType T166 normal
+T167	Symptom 7956 7970	безболезненный
+A84	SType T167 normal
+T168	Symptom 7972 8006	доступен пальпации во всех отделах
+A85	SType T168 normal
+R22	Symptom_bdyloc_rel Arg1:T80 Arg2:T166	
+R23	Symptom_bdyloc_rel Arg1:T80 Arg2:T167	
+R24	Symptom_bdyloc_rel Arg1:T80 Arg2:T168	
+T169	Symptom 8018 8027	увеличена
+A86	Negation T169
+A87	SType T169 disorder
+R25	Symptom_bdyloc_rel Arg1:T81 Arg2:T169	
+T170	Symptom 8042 8054	пальпируется
+A88	Negation T170
+A89	SType T170 disorder
+R26	Symptom_bdyloc_rel Arg1:T82 Arg2:T170	
+T171	Symptom 8126 8146	менингеальных знаков
+A90	Negation T171
+A91	SType T171 disorder
+T172	Symptom 8096 8103	дизурии
+A92	Negation T172
+A93	SType T172 disorder
+T173	Drug 15747 15755	дигоксин
+T174	Drug 15768 15774	козаар
+T175	Drug 15785 15791	конкор
+T176	Drug 15804 15810	диувер
+T177	Drug 15820 15828	варфарин
+T178	Drug 15841 15851	пульмикорт
+R27	Symptom_bdyloc_rel Arg1:T102 Arg2:T101	
+T179	Treatment 16774 16826	Дигоксин (дигоксин) 0.06мг х 1р/д в 08.00, постоянно
+T180	Drug 16784 16792	дигоксин
+T181	Treatment 16832 16887	Козаар (лозартан) 25мг х 2р/д, в 8.00, 22.00, длительно
+T182	Drug 16840 16848	лозартан
+T183	Drug 16901 16911	бисопролол
+T184	Treatment 16893 16952	Конкор (бисопролол) 1.25мг в 9.00, 2.5мг в 21.00, длительно
+T185	Treatment 16959 17008	Диувер (торасемид) 5мг х 1р/д, в 08.00, длительно
+T186	Drug 16967 16976	торасемид
+T187	Drug 17025 17033	варфарин
+T188	Drug 17140 17148	варфарин
+T189	Treatment 17015 17162	Варфарин (варфарин) 6,25 мг х 1 р/д в 18.00 под контролем МНО (МНО должно быть 2.5 - 3.5), памятка для пациентов, получающих варфарин, дана на руки
+T190	Drug 17186 17196	L-карнитин
+T191	Treatment 17169 17235	Элькар 300мг/мл (L-карнитин) 3мл х 2 р/д с октября по февраль 2055
+T192	Drug 17253 17265	триметазидин
+T193	Treatment 17242 17304	Предуктал (триметазидин) 35мг х 2р/д, в апреле 2015, мае, июне
+T194	Drug 17323 17375	Инозин + Никотинамид + Рибофлавин + Янтарная кислота
+T195	Treatment 17311 17424	Цитофлавин (Инозин + Никотинамид + Рибофлавин + Янтарная кислота) 2т х 2р/д утро, обед с 1 по 20 числа ежемесячно
+T196	Drug 17440 17452	убидекаренон
+T197	Treatment 17431 17492	Кудесан (убидекаренон) 15 кап х 2 р/д, июль, август, сентябрь
+T198	Disease 17503 17507	ОРВИ
+T199	Treatment 17520 17571	назначение антибиотиков (аугментин, зиннат, цедекс)
+T200	Drug 17545 17554	аугментин
+T201	Drug 17556 17562	зиннат
+T202	Drug 17564 17570	цедекс
+T203	Symptom 7533 7553	дыхание везикулярное
+A94	SType T203 normal
+T204	Symptom 7555 7561	хрипов
+A95	Negation T204
+A96	SType T204 disorder
+R28	Symptom_bdyloc_rel Arg1:T77 Arg2:T203	
+R29	Symptom_bdyloc_rel Arg1:T77 Arg2:T204	
+T205	Symptom 7426 7442	Гипермобильность
+A97	SType T205 normal
+R30	Symptom_bdyloc_rel Arg1:T76 Arg2:T205	
+T206	Body_location 7493 7508	Носовое дыхание
+T207	Symptom 7512 7522	затруднено
+A98	Negation T207
+A99	SType T207 disorder
+R31	Symptom_bdyloc_rel Arg1:T206 Arg2:T207	
+T208	Symptom 7378 7397	развиты симметрично
+A100	SType T208 normal
+T209	Symptom 7399 7424	мышечная сила достаточная
+A101	SType T209 normal
+T210	Symptom 7324 7360	без грубой деформации костей скелета
+A102	SType T210 normal
+T211	Symptom 7239 7260	периферических отеков
+A103	Negation T211
+A104	SType T211 disorder
+T212	Symptom 7092 7103	Гипергидроз
+A105	SType T212 disorder
+T213	Symptom 7044 7050	чистые
+A106	SType T213 normal
+T214	Symptom 7052 7068	бледно - розовые
+A107	SType T214 normal
+T215	Symptom 7070 7090	периорбитальные тени
+A108	SType T215 disorder
+T216	Body_location 7070 7085	периорбитальные
+R32	Symptom_bdyloc_rel Arg1:T216 Arg2:T215	
+R33	Symptom_bdyloc_rel Arg1:T71 Arg2:T212	
+R34	Symptom_bdyloc_rel Arg1:T70 Arg2:T213	
+R35	Symptom_bdyloc_rel Arg1:T70 Arg2:T214	
+T217	Body_location 7113 7131	Слизистые оболочки
+T218	Symptom 7132 7138	чистые
+A109	SType T218 normal
+T219	Symptom 7140 7147	розовые
+A110	SType T219 normal
+R36	Symptom_bdyloc_rel Arg1:T217 Arg2:T218	
+R37	Symptom_bdyloc_rel Arg1:T217 Arg2:T219	
+T220	Symptom 7214 7237	распределена равномерно
+A111	SType T220 normal
+T221	Symptom 7194 7212	развита достаточно
+A112	SType T221 normal
+R38	Symptom_bdyloc_rel Arg1:T73 Arg2:T221	
+R39	Symptom_bdyloc_rel Arg1:T73 Arg2:T220	

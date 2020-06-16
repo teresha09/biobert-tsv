@@ -1,0 +1,111 @@
+T1	Disease 9 40	Бронхиальная астма, атопическая
+T2	Severity 42 71	легкое персистирующее течение
+A1	Degree T2 light
+T3	Course 73 83	обострение
+A2	CType T3 worsened
+T4	Disease 85 104	Аллергический ринит
+T5	Disease 122 153	Искривление носовой перегородки
+T6	Body_location 134 153	носовой перегородки
+T7	Disease 155 176	Хронический тонзиллит
+T8	Course 178 200	компенсированная форма
+A3	CType T8 improved
+R1	Course_rel Arg1:T8 Arg2:T7	
+T9	Disease 202 218	Варикоцеле слева
+T10	Disease 220 256	Перелом среднего пальца правой кисти
+T11	Body_location 228 256	среднего пальца правой кисти
+T12	Symptom 315 343	приступы затруднения дыхания
+A4	SType T12 disorder
+T13	Symptom 395 433	болезненность 3-го пальца правой кисти
+A5	SType T13 disorder
+T14	Symptom 497 515	угрозой прерывания
+A6	SType T14 disorder
+T15	Disease 713 719	коклюш
+T16	Disease 721 734	ветряная оспа
+T17	Disease 736 744	краснуха
+T18	Disease 785 807	атопического дерматита
+T19	Treatment 824 883	топическими стероидами и приемом антигистаминных препаратов
+A7	Effect T19 positive
+T20	Disease 929 932	ОРИ
+T21	Symptom 954 977	обструктивным синдромом
+A8	SType T21 disorder
+T22	Treatment 996 1073	В терапии симптоматические средства, антибактериальные препараты, кленбутерол
+A9	Effect T22 positive
+T23	Drug 1062 1073	кленбутерол
+T24	Treatment 1102 1127	Курсом принимал кетотифен
+A10	Effect T24 no-effect
+T26	Disease 1229 1251	респираторные инфекции
+T27	Disease 1300 1325	обструктивными бронхитами
+T28	Symptom 1343 1363	бронхиального спазма
+A12	SType T28 disorder
+T29	Treatment 1370 1395	использовался кленбутерол
+A13	Effect T29 positive
+T30	Disease 1519 1541	респираторных инфекций
+T31	Disease 1595 1631	левостороннюю нижнедолевую пневмонию
+T32	Treatment 1633 1685	В терапии антибактериальные, муколитические средства
+A14	Effect T32 positive
+T33	Disease 1752 1789	правосторонняя нижнедолевая пневмония
+T34	Treatment 1791 1852	В терапии антибактериальные препараты, ингаляции с беродуалом
+A15	Effect T34 positive
+T35	Drug 1842 1852	беродуалом
+T36	Symptom 1921 1938	заложенность носа
+A16	SType T36 disorder
+T37	Symptom 2009 2037	затруднения носового дыхания
+A17	SType T37 disorder
+T38	Symptom 2100 2117	острой крапивницы
+A18	SType T38 disorder
+T39	Symptom 2182 2212	риноконъюнктивального синдрома
+A19	SType T39 disorder
+T40	Disease 2265 2287	респираторной инфекции
+T41	Treatment 2312 2358	В терапии ингаляции с беродуалом, пульмикортом
+A20	Effect T41 positive
+T42	Drug 2334 2344	беродуалом
+T43	Drug 2346 2358	пульмикортом
+T44	Symptom 2429 2448	затруднения дыхания
+A21	SType T44 disorder
+T45	Treatment 2508 2528	ингаляцией вентолина
+A22	Effect T45 positive
+T46	Drug 2519 2528	вентолина
+T47	Disease 2565 2583	бронхиальная астма
+A23	NotPatient T47
+T48	Body_location 2700 2714	Кожные покровы
+T49	Symptom 2715 2729	бледно-розовые
+A24	SType T49 normal
+T50	Symptom 2731 2742	Зев спокоен
+A25	SType T50 normal
+T51	Symptom 2744 2773	Носовое дыхание не затруднено
+A26	SType T51 normal
+T52	Body_location 2775 2783	В лёгких
+T53	Symptom 2784 2804	дыхание везикулярное
+A27	SType T53 normal
+T54	Symptom 2826 2832	хрипов
+A28	Negation T54
+T55	Symptom 2806 2824	с жестким оттенком
+A29	SType T55 disorder
+T56	Symptom 2838 2871	Сердечные тоны звучные, ритмичные
+A30	SType T56 normal
+T57	Symptom 2924 2952	Стул регулярный, оформленный
+T58	Symptom 2954 2974	Менингеальных знаков
+A31	Negation T58
+R2	Body_location_rel Arg1:T11 Arg2:T10	
+R3	Body_location_rel Arg1:T6 Arg2:T5	
+R4	Severity_rel Arg1:T2 Arg2:T1	
+R5	Course_rel Arg1:T3 Arg2:T1	
+T59	Symptom 588 629	Раннее психомоторное развитие по возрасту
+A32	SType T59 normal
+T25	Treatment 1168 1193	антигистаминные препараты
+A11	Effect T25 no-effect
+T60	Drug 1384 1395	кленбутерол
+R6	Symptom_bdyloc_rel Arg1:T48 Arg2:T49	
+R7	Symptom_bdyloc_rel Arg1:T52 Arg2:T53	
+R8	Symptom_bdyloc_rel Arg1:T52 Arg2:T55	
+R9	Symptom_bdyloc_rel Arg1:T52 Arg2:T54	
+T61	Disease 2182 2212	риноконъюнктивального синдрома
+T62	Disease 954 977	обструктивным синдромом
+T63	Disease 2100 2117	острой крапивницы
+T64	Disease 1343 1363	бронхиального спазма
+T65	Severity 106 120	персистирующий
+A33	Degree T65 medium
+R10	Severity_rel Arg1:T65 Arg2:T4	
+T66	Drug 1118 1127	кетотифен
+A34	SType T54 disorder
+A35	SType T57 normal

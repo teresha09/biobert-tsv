@@ -1,0 +1,124 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Treatment 1576 1633	Соблюдение гипоаллергенной диеты и элиминационного режима
+T4	Body_location 1762 1775	носовых ходов
+T5	Treatment 1751 2014	промывание носовых ходов солевыми растворами (Аква-Марис,  Салин,  Физиомер)  3-4   раза  в  день,  сосудосуживающие  средства  (Називин,  Отривин, Ксимелин и др.) 5-7 дней, Фликсоназе (или Насобек, или Назонекс) по 1 инстилляции 1 раз в день курсом до 14-21 дня.
+T6	Drug 1797 1807	Аква-Марис
+T7	Drug 1810 1815	Салин
+T8	Drug 1818 1826	Физиомер
+T9	Drug 1880 1887	Називин
+T10	Drug 1890 1897	Отривин
+T11	Drug 1899 1907	Ксимелин
+T12	Drug 1925 1935	Фликсоназе
+T13	Drug 1941 1948	Насобек
+T14	Drug 1954 1962	Назонекс
+T15	Symptom 2022 2037	приступах кашля
+A2	SType T15 disorder
+T16	Symptom 2039 2060	затрудненного дыхания
+A3	SType T16 disorder
+T17	Treatment 2074 2157	вентолин (сальбутамол или саламол) по 1-2 ингаляции через спейсер до 3-х раз в день
+T18	Drug 2074 2082	вентолин
+T19	Drug 2084 2095	сальбутамол
+T20	Drug 2100 2107	саламол
+T21	Treatment 2177 2252	через небулайзер: лазолван 0.5 мл + беродуал 10 капель + пульмикорт 250 мкг
+T22	Drug 2195 2203	лазолван
+T23	Drug 2213 2221	беродуал
+T24	Drug 2234 2244	пульмикорт
+T25	Treatment 1489 1510	туалет носа с маример
+T26	Drug 1503 1510	маример
+T27	Symptom 1197 1223	Вертикальное положение ЭОС
+A4	SType T27 normal
+T28	Symptom 1225 1304	Выраженная аритмия на фоне миграции водителя ритма в миокард правого предсердия
+A5	SType T28 disorder
+T29	Symptom 1306 1348	Неспецифическая внутрижелудочковая блокада
+A6	SType T29 disorder
+T30	Symptom 1350 1401	Синдром ранней реполяризации в миокарде желудочков.
+T31	Symptom 1402 1465	Некоторые нарушения процессов метаболизма в миокарде желудочков
+A7	SType T31 disorder
+T32	Body_location 1446 1465	миокарде желудочков
+T33	Body_location 1381 1400	миокарде желудочков
+T34	Body_location 1278 1304	миокард правого предсердия
+T35	Disease 1055 1074	Аллергический ринит
+T36	Disease 1092 1123	Искривление носовой перегородки
+T37	Body_location 975 978	ППН
+T38	Symptom 983 1016	признаки отека слизистой оболочки
+A8	SType T38 disorder
+T39	Body_location 500 514	грудной клетки
+T40	Body_location 56 70	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T41	Body_location 151 171	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T42	Body_location 239 248	СЕЛЕЗЕНКА
+T43	Body_location 290 296	ПЕЧЕНЬ
+T44	Body_location 371 378	ЖЕЛУДОК
+T45	Body_location 394 411	12-ПЕРСТНАЯ КИШКА
+T46	Symptom 412 438	секрет есть, стенки тонкие
+A9	SType T46 normal
+T47	Symptom 298 369	размер – ЛД – 47, 1й сегмент 13мм, ПД – 104 мм; паренхима - не изменена
+A10	SType T47 normal
+T48	Symptom 381 392	секрет есть
+A11	SType T48 normal
+T49	Symptom 173 237	размер – 11х6х13 мм; паренхима – эхогенность средняя, однородная
+A12	SType T49 normal
+T50	Body_location 697 709	Корни легких
+T51	Body_location 736 747	Средостение
+T52	Body_location 762 768	Сердце
+T53	Body_location 883 913	Костная система и мягкие ткани
+T54	Symptom 914 930	без особенностей
+A13	SType T54 normal
+T55	Body_location 858 864	Синусы
+T56	Body_location 825 841	Куполы диафрагмы
+T57	Symptom 865 881	дифференцируются
+A14	SType T57 normal
+T58	Symptom 842 856	ровные, четкие
+A15	SType T58 normal
+T59	Symptom 769 787	расположено обычно
+A16	SType T59 normal
+T60	Symptom 574 604	острых очагово-инфильтративных
+A17	Negation T60
+T61	Symptom 516 541	легочный фон симметричный
+A18	SType T61 normal
+T62	Symptom 669 695	просветы бронхов расширены
+A19	SType T62 disorder
+T63	Symptom 543 571	воздушность умеренно повышен
+A20	SType T63 disorder
+T64	Symptom 710 734	структурны, не расширены
+A21	SType T64 normal
+T65	Symptom 620 667	Легочный рисунок несколько обеднен по периферии
+A22	SType T65 normal
+T66	Symptom 751 760	увеличено
+A23	Negation T66
+T67	Symptom 72 149	размер – средний; стенки – тонкие; форма – правильная; просвет - эхонегативен
+A24	SType T67 normal
+T68	Symptom 250 288	размер 81х34 мм; паренхима не изменена
+A25	SType T68 normal
+T69	Course 1076 1090	вне обострения
+A26	CType T69 improved
+R1	Course_rel Arg1:T69 Arg2:T35	
+T70	Symptom 1129 1158	нарушения дыхательной функции
+A27	Negation T70
+T71	Body_location 1104 1123	носовой перегородки
+R2	Body_location_rel Arg1:T71 Arg2:T36	
+T72	Disease 1236 1243	аритмия
+T73	Severity 1225 1235	Выраженная
+A28	Degree T73 medium
+R3	Severity_rel Arg1:T73 Arg2:T72	
+T74	Disease 1350 1378	Синдром ранней реполяризации
+R4	Body_location_rel Arg1:T33 Arg2:T74	
+T75	Disease 1728 1749	аллергического ринита
+T3	Course 1717 1727	обострении
+A1	CType T3 worsened
+R5	Course_rel Arg1:T3 Arg2:T75	
+T76	Disease 992 997	отека
+R6	Symptom_bdyloc_rel Arg1:T40 Arg2:T67	
+R7	Symptom_bdyloc_rel Arg1:T41 Arg2:T49	
+R8	Symptom_bdyloc_rel Arg1:T42 Arg2:T68	
+R9	Symptom_bdyloc_rel Arg1:T43 Arg2:T47	
+R10	Symptom_bdyloc_rel Arg1:T44 Arg2:T48	
+R11	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R12	Symptom_bdyloc_rel Arg1:T39 Arg2:T61	
+R13	Symptom_bdyloc_rel Arg1:T39 Arg2:T63	
+R14	Symptom_bdyloc_rel Arg1:T39 Arg2:T60	
+R15	Symptom_bdyloc_rel Arg1:T50 Arg2:T64	
+R16	Symptom_bdyloc_rel Arg1:T51 Arg2:T66	
+R17	Symptom_bdyloc_rel Arg1:T52 Arg2:T59	
+R18	Symptom_bdyloc_rel Arg1:T56 Arg2:T58	
+R19	Symptom_bdyloc_rel Arg1:T55 Arg2:T57	
+R20	Symptom_bdyloc_rel Arg1:T53 Arg2:T54	

@@ -1,0 +1,503 @@
+T1	Disease 21 77	Неклассифицируемая кардиомиопатия, дилатационный вариант
+T2	Disease 79 117	Некомпактный миокард левого желудочка.
+A1	Time T2 now
+A2	Time T1 now
+T3	Disease 118 161	Аневризма передней стенки левого желудочка.
+A3	Time T3 now
+T4	Disease 162 198	Недостаточность митрального клапана.
+A4	Time T4 now
+T5	Disease 199 221	Фиброэластоз эндокарда
+A5	Time T5 now
+T6	Body_location 100 116	левого желудочка
+T7	Disease 223 226	ХСН
+A6	Time T7 now
+T8	Severity 227 234	IIА ст.
+R1	Severity_rel Arg1:T8 Arg2:T7	
+R2	Body_location_rel Arg1:T6 Arg2:T2	
+T9	Severity 235 249	II ФК по NYHA.
+T10	Disease 260 316	Неклассифицируемая кардиомиопатия, дилатационный вариант
+A7	Time T10 now
+T11	Disease 318 356	Некомпактный миокард левого желудочка.
+A8	Time T11 now
+T12	Body_location 339 355	левого желудочка
+T13	Disease 357 400	Аневризма передней стенки левого желудочка.
+A9	Time T13 now
+T14	Body_location 383 400	левого желудочка.
+R4	Body_location_rel Arg1:T14 Arg2:T13	
+T15	Disease 401 436	Недостаточность митрального клапана
+A10	Time T15 now
+T16	Disease 438 460	Фиброэластоз эндокарда
+A11	Time T16 now
+T17	Disease 462 465	ХСН
+A12	Time T17 now
+T18	Severity 466 473	IIА ст.
+R3	Severity_rel Arg1:T18 Arg2:T17	
+T19	Severity 474 487	II ФК по NYHA
+T20	Symptom 606 615	токсикоза
+A13	NotPatient T20
+A14	Negation T20
+T21	Disease 658 692	хронической герпетической инфекции
+A15	NotPatient T21
+T22	Disease 881 884	ИБС
+A16	NotPatient T22
+T23	Disease 904 927	острый инфаркт миокарда
+A17	NotPatient T23
+T24	Disease 949 952	ВСД
+A18	NotPatient T24
+T25	Disease 954 993	неполная блокада левой ножки пучка Гиса
+A19	NotPatient T25
+T26	Disease 1008 1010	АГ
+A20	NotPatient T26
+T27	Disease 1029 1038	инсульт..
+A21	NotPatient T27
+T28	Disease 1105 1138	сердечно-легочной недостаточности
+A22	Time T28 before
+T29	Symptom 1249 1303	повышенная трабекулярность левого и правого желудочков
+T30	Symptom 1305 1316	снижение ФИ
+T31	Symptom 1407 1417	токсикозом
+T32	Disease 1419 1428	инфекцией
+A23	Time T32 before
+T33	Symptom 1430 1458	неврологическими нарушениями
+T34	Disease 1589 1615	сердечной недостаточностью
+T35	Disease 1675 1677	НК
+T36	Disease 1843 1913	дилатационная кардиомиопатия, МАРС (дополнительная хорда в полости ЛЖ)
+T37	Body_location 1879 1912	дополнительная хорда в полости ЛЖ
+R5	Body_location_rel Arg1:T37 Arg2:T36	
+T38	Disease 1915 1917	НК
+T39	Severity 1918 1924	2А ст.
+R6	Severity_rel Arg1:T39 Arg2:T38	
+T40	Disease 1925 1990	Гипоксически-ишемическое поражение ЦНС (восстановительный период)
+T41	Treatment 2017 2068	дигоксин 0.02 мг х 2р/сут, верошпирон 6 мг х 2р/сут
+T42	Symptom 2205 2230	дилатация полостей сердца
+T43	Body_location 2215 2230	полостей сердца
+R7	Symptom_bdyloc_rel Arg1:T43 Arg2:T42	
+T45	Body_location 2291 2323	передней стенки левого желудочка
+T44	Disease 2281 2366	аневризма передней стенки левого желудочка с переходом на межжелудочковую перегородку
+T46	Disease 2368 2388	легочная гипертензия
+R8	Body_location_rel Arg1:T45 Arg2:T44	
+T47	Body_location 2339 2366	межжелудочковую перегородку
+R9	Body_location_rel Arg1:T47 Arg2:T44	
+T48	Body_location 2424 2433	эндотелия
+T49	Body_location 2440 2454	кардиомиоцитов
+T50	Body_location 2462 2481	гладкой мускулатуре
+T51	Body_location 2488 2521	волокон проводящей системы сердца
+T52	Treatment 2560 2719	дигоксин 0,05 мг/сут, моноприл 5мг/сут, фуросемид 5мг/сут, трентал 75мг/сут, триампур 1т/сут, дилатренд 1.56мг/сут, инфузия цитофлавина, интраглобина 15 г/курс
+T53	Drug 2891 2901	дилатренда
+T54	Drug 2956 2969	цитофлавином,
+T55	Drug 2986 2999	интраглобином
+T56	Body_location 3086 3110	полости левого желудочка
+T57	Drug 3174 3184	дилатренда
+T58	Drug 3200 3209	моноприла
+T59	Disease 3286 3339	острую внебольничную правостороннюю очаговую пневмони
+T60	Disease 3485 3522	некомпактный миокард левого желудочка
+T61	Body_location 3498 3522	миокард левого желудочка
+R10	Body_location_rel Arg1:T61 Arg2:T60	
+T62	Drug 3542 3551	фуросемид
+T63	Drug 3581 3591	дилатренда
+T64	Drug 3618 3625	кордаро
+T65	Drug 3668 3693	цитофлавина, пентаглобина
+T66	Symptom 3787 3796	дилатация
+T67	Body_location 3797 3822	полости левого желудочка,
+A24	SType T66 disorder
+R11	Symptom_bdyloc_rel Arg1:T67 Arg2:T66	
+T68	Symptom 3823 3849	повышенная трабекулярность
+A25	SType T68 disorder
+T69	Body_location 3852 3927	области верхушечного, переднелатерального и заднедиафрагмального сегментов,
+T70	Symptom 3928 3959	снижение сократительной функции
+T71	Body_location 3960 3971	миокарда ЛЖ
+R12	Symptom_bdyloc_rel Arg1:T71 Arg2:T70	
+T72	Symptom 3982 3997	недостаточность
+T73	Body_location 3998 4017	митрального клапана
+T74	Symptom 4024 4044	атипичное отхождение
+A26	SType T74 disorder
+A27	SType T70 disorder
+A28	SType T72 disorder
+T75	Body_location 4045 4069	левой коронарной артерии
+R13	Symptom_bdyloc_rel Arg1:T75 Arg2:T74	
+T76	Body_location 4073 4078	аорты
+T77	Body_location 4083 4096	левым синусом
+T78	Drug 4178 4190	неоцитотекта
+T79	Body_location 4223 4232	ацикловир
+T80	Body_location 4276 4278	ЛЖ
+T81	Body_location 4330 4332	ЛЖ
+T82	Symptom 4335 4363	умеренным снижением перфузии
+A29	SType T82 disorder
+T83	Body_location 4398 4401	МЖП
+T84	Symptom 4403 4422	умеренный гипокинез
+A30	SType T84 disorder
+T85	Body_location 4423 4431	верхушки
+T86	Body_location 4436 4438	ЛЖ
+T87	Body_location 4453 4455	ПЖ
+T88	Body_location 4460 4462	ПЖ
+T89	Body_location 4541 4558	щитовидной железы
+T90	Treatment 4568 4586	кордарон, моноприл
+T91	Drug 4598 4605	капотен
+T92	Drug 4642 4651	тромбоАСС
+T93	Symptom 4761 4772	гипертрофия
+A31	SType T93 disorder
+T94	Body_location 4773 4802	миокарда левых отделов сердца
+T95	Body_location 4816 4834	правого предсердия
+T96	Symptom 4843 4866	нарушение реполяризации
+A32	SType T96 disorder
+T97	Body_location 4869 4888	миокарде желудочков
+R14	Symptom_bdyloc_rel Arg1:T97 Arg2:T96	
+T98	Symptom 4909 4927	расширение полости
+A33	SType T98 disorder
+T99	Body_location 4928 4930	ЛЖ
+T100	Symptom 4949 4971	нарушение расслабления
+A34	SType T100 disorder
+T101	Body_location 4972 4974	ЛЖ
+T102	Disease 5014 5044	аневризмо-подобное выпячивание
+T103	Symptom 5046 5084	трабекулярность незначительно повышена
+A35	SType T103 disorder
+T104	Symptom 5137 5169	нарушение процесса реполяризации
+A36	SType T104 disorder
+T105	Drug 5200 5208	капотена
+T106	Drug 5229 5239	цитофлавин
+T107	Symptom 5346 5355	дилатация
+A37	SType T107 disorder
+T108	Body_location 5356 5358	ЛЖ
+R15	Symptom_bdyloc_rel Arg1:T108 Arg2:T107	
+T109	Body_location 5373 5383	предсердия
+T110	Symptom 5393 5428	снижение сократительной способности
+A38	SType T110 disorder
+T111	Body_location 5429 5437	миокарда
+R16	Symptom_bdyloc_rel Arg1:T111 Arg2:T110	
+T112	Symptom 5485 5496	гипертрофии
+A39	SType T112 disorder
+T113	Body_location 5497 5519	миокарда левых отделов
+R17	Symptom_bdyloc_rel Arg1:T113 Arg2:T112	
+T114	Body_location 5522 5540	правого предсердия
+R18	Symptom_bdyloc_rel Arg1:T114 Arg2:T112	
+T115	Symptom 5593 5625	нарушение процесса реполяризации
+A40	SType T115 disorder
+T116	Symptom 5651 5661	тахикардии
+A41	SType T116 disorder
+T117	Symptom 5681 5694	кардиомегалия
+A42	SType T117 disorder
+T118	Drug 5731 5739	капотена
+T119	Drug 5774 5785	цитофлавина
+T120	Symptom 5901 5921	признаки гипертрофии
+A43	SType T120 disorder
+T121	Symptom 5926 5945	перегрузки миокарда
+A44	SType T121 disorder
+T122	Body_location 5946 5948	ЛЖ
+T123	Body_location 5922 5924	ЛП
+R19	Symptom_bdyloc_rel Arg1:T123 Arg2:T120	
+R20	Symptom_bdyloc_rel Arg1:T122 Arg2:T121	
+T124	Symptom 5950 5983	нарушение процесса реполяризации.
+A45	SType T124 disorder
+T125	Body_location 6001 6003	ЛП
+T126	Body_location 6024 6026	ПП
+T127	Body_location 6045 6047	ЛЖ
+T128	Disease 6123 6132	аневризма
+T129	Body_location 6135 6151	области верхушки
+R21	Body_location_rel Arg1:T129 Arg2:T128	
+T130	Drug 6296 6307	цитофлавина
+T131	Drug 6389 6397	кораксан
+T132	Symptom 6523 6537	ритм синусовый
+A46	SType T132 normal
+T133	Body_location 6560 6562	ЛП
+T134	Body_location 6564 6566	ПП
+T135	Body_location 6576 6578	ЛЖ
+T136	Treatment 6699 6953	дигоксин 0.05мг/сут, капотен 37.5мг/сут, дилатренд 3.56мг/сут, фуросемид 10мг/сут, верошпирон 25мг/сут, тромбо АСС 25мг/сут, трентал 150мг/сут, панангин 1.5таб/сут, диакарб 125мг х 1,2,3.06, коэнзим Q10, в/в цитофлавин, исследуемый препарат 5.5мл х 2р/д.
+T137	Drug 7016 7026	Кораксан..
+T138	Symptom 7094 7103	дилатация
+A47	SType T138 disorder
+T139	Body_location 7104 7124	левых отделов сердца
+R22	Symptom_bdyloc_rel Arg1:T139 Arg2:T138	
+T140	Body_location 7126 7128	ЛП
+T141	Body_location 7139 7141	ЛЖ
+T142	Symptom 7153 7176	снижена ФВ по Тейхольцу
+A48	SType T142 disorder
+T143	Body_location 7200 7202	ПП
+T144	Body_location 7213 7215	ПЖ
+T145	Body_location 7223 7226	МЖП
+T146	Body_location 7235 7239	ЗСЛЖ
+T147	Body_location 7302 7314	a.pulmonalis
+T148	Body_location 7349 7351	ЛЖ
+T149	Symptom 7383 7410	трабекулярность не выражена
+A49	SType T149 normal
+T150	Body_location 7758 7778	апикальных сегментов
+T151	Symptom 7792 7802	истончение
+A50	SType T151 disorder
+T152	Body_location 7803 7819	компактного слоя
+R23	Symptom_bdyloc_rel Arg1:T152 Arg2:T151	
+T153	Symptom 7823 7834	деформацией
+A51	SType T153 disorder
+T154	Body_location 7835 7843	верхушки
+R24	Symptom_bdyloc_rel Arg1:T154 Arg2:T153	
+T155	Disease 7859 7868	аневризма
+T156	Disease 7892 7917	повышение трабекулярности
+T157	Body_location 7918 7934	левого желудочка
+R25	Body_location_rel Arg1:T157 Arg2:T156	
+T158	Disease 7950 7959	аневризма
+T159	Body_location 7970 7990	апикальных сегментов
+T160	Symptom 8010 8019	синусовый
+A52	SType T160 normal
+T161	Symptom 8030 8041	гипертрофии
+A53	SType T161 disorder
+T162	Body_location 8042 8059	левого предсердия
+R26	Symptom_bdyloc_rel Arg1:T162 Arg2:T161	
+T163	Symptom 8061 8072	гипертрофия
+A54	SType T163 disorder
+T164	Body_location 8073 8098	миокарда левого желудочка
+R27	Symptom_bdyloc_rel Arg1:T164 Arg2:T163	
+T165	Symptom 8111 8143	нарушения процесса реполяризации
+A55	SType T165 disorder
+T166	Body_location 8146 8165	миокарде желудочков
+R28	Symptom_bdyloc_rel Arg1:T166 Arg2:T165	
+T167	Symptom 8337 8351	Ритм синусовый
+A56	SType T167 normal
+T168	Symptom 8364 8387	миграции водителя ритма
+A57	SType T168 disorder
+T169	Body_location 8390 8416	миокард правого предсердия
+T170	Symptom 8429 8440	брадикардия
+A58	SType T170 disorder
+T171	Symptom 8479 8490	брадикардии
+A59	SType T171 disorder
+T172	Symptom 8555 8581	желудочковая экстрасистола
+A60	SType T172 disorder
+T173	Symptom 8585 8610	предсердная экстрасистола
+A61	SType T173 disorder
+T174	Disease 8614 8646	синоатриальные блокады с паузами
+T175	Body_location 8690 8698	миокарда
+T176	Body_location 8700 8724	полость левого желудочка
+T177	Symptom 8725 8734	расширена
+A62	SType T177 disorder
+R29	Symptom_bdyloc_rel Arg1:T176 Arg2:T177	
+T178	Body_location 8736 8743	миокард
+T179	Symptom 8744 8754	не утолщен
+A63	SType T179 normal
+R30	Symptom_bdyloc_rel Arg1:T178 Arg2:T179	
+T180	Symptom 8808 8820	зона акинеза
+A64	SType T180 disorder
+T181	Symptom 8823 8832	дискинеза
+A65	SType T181 disorder
+T182	Body_location 8843 8847	МЖП.
+T183	Symptom 8848 8870	Перфузия неравномерная
+A66	SType T183 disorder
+T184	Symptom 8885 8903	очаги гипоперфузии
+A67	SType T184 disorder
+T185	Body_location 8906 8922	области верхушки
+T186	Body_location 8924 8958	апикальных отделов передней стенки
+T187	Body_location 8960 8984	средне-базальных отделов
+T188	Body_location 8985 9013	нижне-перегородочной области
+T189	Body_location 9047 9080	бассейн правой коронарной артерии
+T190	Body_location 9017 9045	нижне-перегородочной области
+T191	Symptom 9082 9098	снижена перфузия
+A68	SType T191 disorder
+T192	Symptom 9115 9148	признаки склеротических изменений
+A69	SType T192 disorder
+T193	Drug 9230 9237	капотен
+T194	Drug 9249 9255	козаар
+T195	Drug 9324 9333	фуросемид
+T196	Drug 9335 9345	верошпирон
+T197	Drug 9347 9354	диакарб
+T198	Drug 9376 9382	диувер
+T199	Drug 9442 9450	дигоксин
+T200	Drug 9466 9475	дилатренд
+T201	Drug 9491 9501	тромбо АСС
+T202	Drug 9515 9522	трентал
+T203	Drug 9536 9544	панангин
+T204	Drug 9558 9567	предуктал
+T205	Disease 9621 9634	ветряную оспу
+T206	Body_location 9909 9923	Кожные покровы
+T207	Symptom 9955 9966	гипергидроз
+A70	SType T207 disorder
+T208	Body_location 9995 10013	Слизистые оболочки
+T209	Symptom 10022 10029	влажные
+A71	SType T209 normal
+R31	Symptom_bdyloc_rel Arg1:T208 Arg2:T209	
+T210	Body_location 10031 10050	Подкожная клетчатка
+T211	Symptom 10071 10094	распределена равномерно
+A72	SType T211 normal
+R32	Symptom_bdyloc_rel Arg1:T210 Arg2:T211	
+T212	Symptom 10112 10141	носовое дыхание не затруднено
+A73	SType T212 normal
+T213	Symptom 10170 10182	везикулярное
+A74	SType T213 normal
+T214	Symptom 10221 10244	хрипы не выслушиваются.
+A75	SType T214 normal
+T215	Body_location 10279 10293	область сердца
+T216	Symptom 10294 10302	выбухает
+A76	SType T216 disorder
+R33	Symptom_bdyloc_rel Arg1:T215 Arg2:T216	
+T217	Symptom 10460 10477	систолический шум
+A77	SType T217 normal
+T218	Symptom 10532 10552	приглушен первый тон
+A78	SType T218 disorder
+T219	Body_location 10693 10699	Печень
+T220	Body_location 10722 10731	селезенка
+T221	Symptom 11230 11241	брадикардии
+A79	SType T221 disorder
+T222	Symptom 11259 11273	Ритм синусовый
+A80	SType T222 normal
+T223	Symptom 11274 11309	с эпизодами миграции водителя ритма
+A81	SType T223 disorder
+T224	Body_location 11312 11338	миокард правого предсердия
+T225	Symptom 11401 11419	сливное сокращение
+A82	SType T225 disorder
+T226	Symptom 11454 11479	предсердная экстрасистола
+A83	SType T226 disorder
+T227	Symptom 11508 11583	Нарушение процесса реполяризации с транзиторной депрессией сегмента ST в V5
+A84	SType T227 disorder
+T228	Symptom 11793 11836	острых очаговых и инфильтративных изменений
+A85	SType T228 disorder
+T229	Symptom 11894 11917	Легочный рисунок усилен
+A86	SType T229 disorder
+T230	Symptom 11950 11974	Корни легких структурные
+A87	SType T230 normal
+T231	Body_location 12021 12027	Сердце
+T232	Body_location 12046 12055	диафрагме
+T233	Body_location 12129 12151	ушка левого предсердия
+T234	Symptom 12099 12120	Талия сердца сглажена
+A88	SType T234 disorder
+T235	Body_location 12184 12200	Куполы диафрагмы
+T236	Body_location 12217 12223	Синусы
+T237	Symptom 12352 12367	РИТМ: синусовый
+A89	SType T237 normal
+T238	Symptom 12369 12387	АРИТМИЯ: умеренная
+A90	SType T238 normal
+T239	Symptom 12401 12420	Признаки перегрузки
+A91	SType T239 disorder
+T240	Body_location 12421 12429	миокарда
+R34	Symptom_bdyloc_rel Arg1:T240 Arg2:T239	
+T241	Body_location 12430 12449	правого предсердия;
+T242	Body_location 12470 12487	левого предсердия
+T243	Symptom 12459 12469	перегрузка
+A92	SType T243 disorder
+R35	Symptom_bdyloc_rel Arg1:T242 Arg2:T243	
+T244	Body_location 12490 12499	ЖЕЛУДОЧКИ
+T245	Symptom 12501 12512	Гипертрофия
+A93	SType T245 disorder
+T246	Body_location 12513 12538	миокарда левого желудочка
+R36	Symptom_bdyloc_rel Arg1:T246 Arg2:T245	
+T247	Symptom 12540 12572	Нарушение процесса реполяризации
+A94	SType T247 disorder
+T248	Body_location 12575 12583	миокарде
+R37	Symptom_bdyloc_rel Arg1:T248 Arg2:T247	
+T249	Body_location 12771 12777	ПЕЧЕНЬ
+T250	Symptom 12806 12832	Размер ПД 120 мм; увеличен
+A95	SType T250 disorder
+T251	Symptom 12849 12871	Эхогенность нормальная
+A96	SType T251 normal
+T252	Body_location 12895 12927	Внутрипеченочные желчные протоки
+T253	Body_location 12958 12971	Воротная вена
+T254	Body_location 13067 13082	Печеночные вены
+T255	Symptom 13096 13115	Кровоток 3-х фазный
+A97	SType T255 normal
+T256	Body_location 13117 13138	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА:
+T257	Symptom 13211 13231	Паренхима однородная
+A98	SType T257 normal
+T258	Body_location 13252 13266	Стенки сосудов
+T259	Symptom 13267 13276	уплотнены
+A99	SType T259 disorder
+R38	Symptom_bdyloc_rel Arg1:T258 Arg2:T259	
+T260	Body_location 13278 13294	Вирсунгов проток
+T261	Symptom 13295 13307	не расширен;
+A100	SType T261 normal
+R39	Symptom_bdyloc_rel Arg1:T260 Arg2:T261	
+T262	Body_location 13308 13317	СЕЛЕЗЕНКА
+T263	Symptom 13345 13359	Контур ровный;
+A101	SType T263 normal
+T264	Symptom 13379 13399	Паренхима однородная
+A102	SType T264 normal
+T265	Body_location 13503 13520	Д\ПЕРСТНАЯ КИШКА:
+T266	Body_location 13556 13565	ЛИМФОУЗЛЫ
+T267	Symptom 13567 13585	не визуализируются
+A103	SType T267 normal
+T268	Body_location 13587 13605	СВОБОДНАЯ ЖИДКОСТЬ
+T269	Symptom 13607 13625	не визуализируется
+A104	SType T269 normal
+R40	Symptom_bdyloc_rel Arg1:T268 Arg2:T269	
+T270	Body_location 13650 13673	Почек и мочевого пузыря
+T271	Body_location 13687 13699	ЛЕВАЯ ПОЧКА:
+T272	Body_location 14022 14025	ЧЛС
+T273	Body_location 14061 14068	лоханка
+T274	Symptom 14069 14082	не расширена;
+A105	SType T274 normal
+R41	Symptom_bdyloc_rel Arg1:T273 Arg2:T274	
+T275	Body_location 14083 14091	чашечки:
+T276	Body_location 14197 14211	стенки сосудов
+T277	Body_location 14225 14236	Мочеточник:
+T278	Body_location 14298 14310	ПРАВАЯ ПОЧКА
+T279	Body_location 14397 14404	Капсула
+T280	Symptom 14418 14458	Смещаемость в пределах возрастной нормы;
+A106	SType T280 normal
+T281	Body_location 14459 14467	Кровоток
+T282	Body_location 14475 14484	Паренхима
+T283	Body_location 14634 14637	ЧЛС
+T284	Symptom 14639 14652	не расширена;
+A107	SType T284 normal
+R42	Symptom_bdyloc_rel Arg1:T283 Arg2:T284	
+T285	Body_location 14673 14680	лоханка
+T286	Symptom 14681 14693	не расширена
+A108	SType T286 normal
+R43	Symptom_bdyloc_rel Arg1:T285 Arg2:T286	
+T287	Body_location 14695 14702	чашечки
+T288	Body_location 14809 14823	стенки сосудов
+T289	Symptom 14824 14836	не изменены;
+A109	SType T289 normal
+R44	Symptom_bdyloc_rel Arg1:T288 Arg2:T289	
+T290	Body_location 14837 14848	Мочеточник:
+T291	Body_location 14952 14966	МОЧЕВОЙ ПУЗЫРЬ
+T292	Symptom 15013 15038	Внутренний контур ровный;
+A110	SType T292 normal
+T293	Body_location 15094 15100	Сердца
+T294	Body_location 15129 15135	АОРТА:
+T295	Body_location 15218 15239	Клапан трехстворчатый
+T296	Body_location 15290 15314	Левая коронарная артерия
+T297	Body_location 15318 15343	Правая коронарная артерия
+T298	Body_location 15347 15363	ЛЕГОЧНАЯ АРТЕРИЯ
+T299	Body_location 15387 15393	Клапан
+T300	Symptom 15467 15479	Регургитация
+A111	SType T300 disorder
+T301	Body_location 15485 15501	ЛЕВОЕ ПРЕДСЕРДИЕ
+T302	Body_location 15531 15549	ПРАВОЕ ПРЕДСЕРДИЕ:
+T303	Body_location 15575 15601	МЕЖПРЕДСЕРДНАЯ ПЕРЕГОРОДКА
+T304	Body_location 15613 15630	ПРАВЫЙ ЖЕЛУДОЧЕК:
+T305	Body_location 15681 15696	ЛЕВЫЙ ЖЕЛУДОЧЕК
+T306	Body_location 15843 15852	эндокарда
+T307	Symptom 15863 15876	фиброэластоз?
+A112	SType T307 disorder
+T308	Body_location 15879 15894	Левый желудочек
+T309	Body_location 15901 15909	миокарда
+T310	Body_location 15918 15946	МЕЖЖЕЛУДОЧКОВАЯ ПЕРЕГОРОДКА:
+T311	Symptom 16009 16018	Гипокинез
+A113	SType T311 disorder
+T312	Body_location 16038 16068	ЗАДНЯЯ СТЕНКА ЛЕВОГО ЖЕЛУДОЧКА
+T313	Body_location 16204 16221	МИТРАЛЬНЫЙ КЛАПАН
+T314	Body_location 16318 16340	ТРИКУСПИДАЛЬНЫЙ КЛАПАН
+T316	Body_location 16474 16487	a.pulmonalis:
+T315	Body_location 16542 16555	a.pulmonalis:
+T317	Body_location 16563 16571	ПЕРИКАРД
+T318	Body_location 16593 16610	НИЖНЯЯ ПОЛАЯ ВЕНА
+T319	Body_location 16713 16729	левого желудочка
+T320	Body_location 16753 16761	миокарда
+T321	Symptom 16731 16752	повышение эхогенности
+A114	SType T321 disorder
+R45	Symptom_bdyloc_rel Arg1:T320 Arg2:T321	
+T322	Symptom 16763 16775	фиброэластоз
+A115	SType T322 disorder
+T323	Drug 16816 16824	дигоксин
+T324	Drug 16842 16848	козаар
+T325	Drug 16930 16939	дилатренд
+T326	Drug 16978 16984	диувер
+T327	Drug 16999 17008	тромбоАСС
+T328	Drug 17024 17033	предуктал
+T329	Disease 17162 17165	ХСН
+T330	Drug 17173 17177	иАПФ
+T331	Drug 17193 17205	б-блокаторов
+T332	Drug 18310 18329	Дигоксин (Дигоксин)
+T333	Drug 18368 18389	Моноприл (фозиноприл)
+T334	Drug 18448 18470	Дилатренд (Карведилол)
+T335	Drug 18530 18548	Диувер (Торасемид)
+T336	Drug 18598 18635	ТромбоАСС (Ацетилсалициловая кислота)
+T337	Drug 18697 18734	Панангин (Калия и магния аспарагинат)
+T338	Drug 18784 18845	Цитофлавин (Янтарная кислота+Рибоксин+Рибофлавин+Никотинамид)
+T339	Drug 18928 18955	Коэнзим Q10 (Гинкго билоба)
+T340	Drug 19002 19026	Предуктал (Триметазидин)
+T341	Drug 19191 19198	виферон
+T342	Drug 19260 19277	аугментин, цедекс
+T343	Body_location 19456 19462	сердца

@@ -1,0 +1,101 @@
+T1	Disease 9 40	Бронхиальная астма, атопическая
+T2	Severity 42 71	легкое персистирующее течение
+A1	Degree T2 light
+T3	Course 73 81	ремиссия
+A2	CType T3 improved
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 83 104	Невротические реакции
+T5	Disease 106 127	Гипертрофия аденоидов
+T6	Severity 128 137	1 степени
+A3	Degree T6 light
+T7	Symptom 198 204	кашель
+T8	Symptom 299 322	малопродуктивный кашель
+T9	Disease 331 334	ОРИ
+T10	Symptom 638 678	приступообразный сухой кашель (до рвоты)
+T12	Symptom 746 767	температура до 37,5 С
+T11	Symptom 705 744	свистящие хрипы, слышимые на расстоянии
+A4	SType T10 disorder
+A5	SType T11 disorder
+A6	SType T12 disorder
+T13	Disease 784 805	обструктивный бронхит
+T14	Treatment 815 905	терапию в стационоре: цефазолин, фенкарол, бромгексин, беродуал через небулайзер, лазолван
+A7	Effect T14 positive
+T15	Drug 837 846	цефазолин
+T16	Drug 848 856	фенкарол
+T17	Drug 858 868	бромгексин
+T18	Drug 870 878	беродуал
+T19	Drug 897 905	лазолван
+T20	Symptom 955 969	усиление кашля
+T21	Symptom 971 990	«свистящее» дыхание
+T22	Treatment 992 1029	в лечении флемоксин, лазолван, зиртек
+A8	Effect T22 positive
+T23	Drug 1002 1011	флемоксин
+T24	Drug 1013 1021	лазолван
+T25	Drug 1023 1029	зиртек
+T26	Treatment 1106 1163	терапии подключены беродуал и пульмикорт через небулайзер
+A9	Effect T26 positive
+T27	Drug 1125 1133	беродуал
+T28	Drug 1136 1146	пульмикорт
+T29	Drug 1294 1301	сумамед
+T30	Treatment 1285 1301	Назначен сумамед
+T31	Disease 1380 1416	Рецидивирующий обструктивный бронхит
+T32	Course 1418 1435	неполная ремиссия
+A10	CType T32 improved
+R3	Course_rel Arg1:T32 Arg2:T31	
+T33	Disease 1437 1469	Формирующаяся бронхиальная астма
+T34	Treatment 1473 1523	В терапии беродуал с пульмикортом через небулайзер
+T35	Disease 1532 1535	ОРИ
+T36	Drug 1494 1506	пульмикортом
+T37	Drug 1483 1491	беродуал
+T38	Treatment 1548 1604	базисной терапии получал Кромогексал (2 мл 2 раза в день
+T39	Drug 1573 1584	Кромогексал
+T40	Symptom 1635 1666	эпизоды малопродуктивного кашля
+T41	Disease 1685 1688	ОРИ
+T42	Disease 1885 1895	токсокароз
+T43	Treatment 1958 1984	лечения препаратом Вермокс
+T44	Drug 1977 1984	Вермокс
+T45	Body_location 2170 2184	Кожные покровы
+T46	Symptom 2185 2207	чистые, бледно-розовые
+A11	SType T46 normal
+T47	Body_location 2209 2226	Видимые слизистые
+T48	Symptom 2227 2265	влажные, бледно-розового цвета, чистые
+T49	Body_location 2267 2276	Миндалины
+T50	Body_location 2291 2295	Явык
+T51	Symptom 2296 2312	влажный, розовый
+T52	Symptom 2314 2320	налета
+A12	Negation T52
+A13	SType T51 normal
+A14	SType T48 normal
+T53	Symptom 2326 2362	Носовое дыхание несколько затруднено
+T54	Symptom 2379 2405	дыхание с жестким оттенком
+T55	Symptom 2407 2413	хрипов
+A15	Negation T55
+A16	SType T54 disorder
+T56	Symptom 2419 2447	Тоны сердца ясные, ритмичные
+A17	SType T56 normal
+T57	Symptom 2533 2553	Менингеальных знаков
+A18	Negation T57
+T58	Symptom 2498 2519	Очаговая симптоматика
+A19	Negation T58
+T59	Symptom 2479 2485	Диурез
+A20	Negation T59
+T60	Symptom 2449 2453	Стул
+A21	SType T60 normal
+T61	Symptom 2280 2289	увеличены
+A22	Negation T61
+R4	Severity_rel Arg1:T6 Arg2:T5	
+R5	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R6	Symptom_bdyloc_rel Arg1:T47 Arg2:T48	
+R7	Symptom_bdyloc_rel Arg1:T49 Arg2:T61	
+R8	Symptom_bdyloc_rel Arg1:T50 Arg2:T51	
+R9	Symptom_bdyloc_rel Arg1:T50 Arg2:T52	
+T62	Disease 1241 1256	бронхопневмония
+A23	SType T7 disorder
+A24	SType T8 disorder
+A25	SType T20 disorder
+A26	SType T21 disorder
+A27	SType T40 disorder
+A28	SType T52 disorder
+A29	SType T53 disorder
+A30	SType T55 disorder

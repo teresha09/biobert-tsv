@@ -1,0 +1,65 @@
+T1	Body_location 1025 1039	Кожные покровы
+T2	Symptom 1041 1061	выраженная гиперемия
+A1	SType T2 disorder
+T3	Body_location 1062 1065	щек
+T4	Body_location 1067 1095	верхних и нижних конечностей
+T5	Symptom 1097 1123	фолликулярный гиперкератоз
+A2	SType T5 disorder
+T6	Symptom 1125 1136	с-м «терки»
+A3	SType T6 disorder
+T7	Body_location 1138 1159	на нижних конечностях
+T8	Symptom 1169 1180	фолликулита
+A4	SType T8 disorder
+T9	Symptom 1186 1192	рыхлый
+A5	SType T9 disorder
+T10	Symptom 1194 1209	Носовое дыхание
+A6	Negation T10
+T11	Body_location 1182 1185	Зев
+T12	Symptom 1234 1254	дыхание везикулярное
+A7	SType T12 normal
+T13	Symptom 1256 1262	хрипов
+A8	Negation T13
+T14	Body_location 1225 1233	В лёгких
+T15	Symptom 1268 1301	Сердечные тоны звучные, ритмичные
+A9	SType T15 normal
+T16	Symptom 1354 1361	дизурии
+A10	Negation T16
+T17	Symptom 1367 1371	Стул
+A11	SType T17 normal
+T18	Symptom 1397 1417	Менингеальных знаков
+A12	Negation T18
+T19	Disease 883 891	поллиноз
+A13	NotPatient T19
+T20	Disease 926 933	псориаз
+A14	NotPatient T20
+T22	Treatment 738 753	адвантан местно
+A16	Effect T22 no-effect
+T23	Drug 738 746	адвантан
+T24	Symptom 624 633	высыпания
+A17	SType T24 disorder
+T25	Body_location 634 641	на коже
+T26	Disease 518 540	атопического дерматита
+T27	Symptom 170 179	высыпания
+A18	SType T27 disorder
+T28	Body_location 180 187	на коже
+T29	Symptom 189 204	беспокойный сон
+A19	SType T29 disorder
+T30	Symptom 206 229	повышенную возбудимость
+A20	SType T30 disorder
+T31	Disease 9 29	Атопический дерматит
+T32	Disease 31 54	Красный волосяной лишай
+T33	Disease 56 66	Невропатия
+T34	Disease 68 109	Реактивные изменения поджелудочной железы
+T35	Body_location 89 109	поджелудочной железы
+R1	Body_location_rel Arg1:T35 Arg2:T34	
+R2	Symptom_bdyloc_rel Arg1:T28 Arg2:T27	
+R3	Symptom_bdyloc_rel Arg1:T25 Arg2:T24	
+R4	Symptom_bdyloc_rel Arg1:T1 Arg2:T2	
+R5	Symptom_bdyloc_rel Arg1:T3 Arg2:T2	
+R6	Symptom_bdyloc_rel Arg1:T4 Arg2:T2	
+R7	Symptom_bdyloc_rel Arg1:T7 Arg2:T8	
+R8	Symptom_bdyloc_rel Arg1:T11 Arg2:T9	
+R9	Symptom_bdyloc_rel Arg1:T14 Arg2:T12	
+R10	Symptom_bdyloc_rel Arg1:T14 Arg2:T13	
+T21	Disease 1052 1061	гиперемия
+T36	Disease 1169 1180	фолликулита

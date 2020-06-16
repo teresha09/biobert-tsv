@@ -1,0 +1,145 @@
+T1	Disease 19 46	сезонная бронхиальная астма
+T2	Disease 48 76	риноконъюнктивальный синдром
+T3	Course 78 86	ремиссия
+A1	CType T3 improved
+R1	Course_rel Arg1:T3 Arg2:T2	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 89 108	Аллергический ринит
+T5	Course 126 140	вне обострения
+A2	CType T5 improved
+R3	Course_rel Arg1:T5 Arg2:T4	
+T6	Disease 142 158	Пищевая аллергия
+T7	Disease 160 178	Инсектная аллергия
+T8	Disease 180 206	Хронический гастродуоденит
+T9	Course 208 218	обострение
+A3	CType T9 worsened
+T10	Disease 220 248	Дисфункция билиарного тракта
+T11	Body_location 268 283	желчного пузыря
+T12	Body_location 231 248	билиарного тракта
+T13	Disease 285 325	Вторичные изменения поджелудочной железы
+T14	Body_location 305 325	поджелудочной железы
+T15	Symptom 387 404	высыпания на коже
+A4	SType T15 disorder
+T16	Body_location 397 404	на коже
+T17	Symptom 421 449	затруднение носового дыхания
+A5	SType T17 disorder
+T18	Symptom 452 484	симптомы бронхиальной обструкции
+A6	SType T18 disorder
+T19	Symptom 547 579	протекавшей с угрозой прерывания
+A7	SType T19 disorder
+T20	Body_location 810 816	кожные
+T21	Symptom 817 834	проявления атопии
+A8	SType T21 disorder
+T22	Treatment 836 897	В терапии элидел, антигистаминные препараты короткими курсами
+A9	Effect T22 positive
+T23	Drug 846 852	элидел
+T24	Symptom 967 992	лактазная недостаточность
+A10	SType T24 disorder
+T25	Treatment 998 1035	подборе адаптированной молочной смеси
+A11	Effect T25 positive
+T26	Symptom 1118 1129	отек Квинке
+A12	SType T26 disorder
+T27	Symptom 1218 1234	кожные высыпания
+A13	SType T27 disorder
+T28	Symptom 1237 1255	выраженная сухость
+A14	SType T28 disorder
+T29	Body_location 1218 1224	кожные
+T30	Symptom 1509 1515	ринита
+A15	SType T30 disorder
+T31	Symptom 1517 1530	конъюнктивита
+A16	SType T31 disorder
+T32	Disease 1547 1555	поллиноз
+T33	Treatment 1557 1635	В терапии антигистаминные препараты (ксизал), назонекс и кромогексал (в глаза)
+A17	Effect T33 positive
+T34	Drug 1594 1600	ксизал
+T35	Drug 1603 1611	назонекс
+T36	Drug 1614 1625	кромогексал
+T37	Symptom 1684 1714	риноконъюнктивального синдрома
+A18	SType T37 disorder
+T38	Symptom 1729 1750	обструктивный синдром
+A19	SType T38 disorder
+T39	Treatment 1752 1809	в терапии: ингаляции с беродуалом и пульмикортом, серетид
+A20	Effect T39 positive
+T40	Drug 1775 1785	беродуалом
+T41	Drug 1788 1800	пульмикортом
+T42	Drug 1802 1809	серетид
+T43	Disease 1882 1900	Инсектная аллергия
+T44	Disease 1929 1945	Пищевая аллергия
+T45	Symptom 1956 1967	отек Квинке
+A21	SType T45 disorder
+T46	Symptom 1987 1996	зуд языка
+A22	SType T46 disorder
+T47	Symptom 1998 2004	хейлит
+A23	SType T47 disorder
+T48	Disease 2056 2074	бронхиальная астма
+A24	NotPatient T48
+T49	Body_location 2260 2274	Кожные покровы
+T50	Symptom 2275 2289	бледно-розовые
+A25	SType T50 normal
+T51	Symptom 2291 2300	суховатые
+A26	SType T51 disorder
+T52	Symptom 2302 2332	единичные папулезные высыпания
+A27	SType T52 disorder
+T53	Body_location 2333 2351	в области запястий
+T54	Body_location 2353 2379	Видимые слизистые оболочки
+T55	Symptom 2380 2387	розовые
+A28	SType T55 normal
+T56	Symptom 2389 2395	чистые
+A29	SType T56 normal
+T57	Symptom 2397 2408	Зев спокоен
+A30	SType T57 normal
+T58	Symptom 2410 2439	Носовое дыхание не затруднено
+A31	SType T58 normal
+T59	Body_location 2441 2449	В лёгких
+T60	Symptom 2450 2470	дыхание везикулярное
+A32	SType T60 normal
+T61	Symptom 2472 2478	хрипов
+A33	Negation T61
+T62	Symptom 2535 2566	Сердечные тоны ясные, ритмичные
+A34	SType T62 normal
+T63	Symptom 2583 2605	Стул склонен к запорам
+A35	SType T63 disorder
+T64	Symptom 2607 2614	Дизурии
+A36	Negation T64
+T65	Symptom 2620 2640	Менингеальных знаков
+A37	Negation T65
+T66	Body_location 2497 2511	Область сердца
+T67	Symptom 2525 2533	изменена
+A38	Negation T67
+T68	Symptom 1062 1079	кожные проявления
+A39	Negation T68
+R4	Body_location_rel Arg1:T12 Arg2:T10	
+R5	Body_location_rel Arg1:T11 Arg2:T10	
+R6	Body_location_rel Arg1:T14 Arg2:T13	
+R7	Course_rel Arg1:T9 Arg2:T8	
+T69	Body_location 1256 1260	кожи
+R8	Symptom_bdyloc_rel Arg1:T16 Arg2:T15	
+A40	NotPatient T19
+R9	Symptom_bdyloc_rel Arg1:T20 Arg2:T21	
+R10	Symptom_bdyloc_rel Arg1:T29 Arg2:T27	
+R11	Symptom_bdyloc_rel Arg1:T69 Arg2:T28	
+A41	Conditional T43
+A42	Conditional T44
+R12	Symptom_bdyloc_rel Arg1:T49 Arg2:T50	
+R13	Symptom_bdyloc_rel Arg1:T49 Arg2:T51	
+R14	Symptom_bdyloc_rel Arg1:T53 Arg2:T52	
+R15	Symptom_bdyloc_rel Arg1:T54 Arg2:T55	
+R16	Symptom_bdyloc_rel Arg1:T54 Arg2:T56	
+R17	Symptom_bdyloc_rel Arg1:T59 Arg2:T60	
+R18	Symptom_bdyloc_rel Arg1:T66 Arg2:T67	
+T70	Disease 1118 1129	отек Квинке
+T71	Disease 1509 1515	ринита
+T72	Disease 1517 1530	конъюнктивита
+T73	Disease 1998 2004	хейлит
+T74	Body_location 1627 1634	в глаза
+T75	Disease 9 17	Поллиноз
+A43	Conditional T70
+T76	Disease 1684 1714	риноконъюнктивального синдрома
+T77	Disease 1956 1967	отек Квинке
+A44	Conditional T77
+T78	Disease 1729 1750	обструктивный синдром
+T79	Severity 110 124	персистирующий
+A45	Degree T79 medium
+R19	Severity_rel Arg1:T79 Arg2:T4	
+A46	SType T61 disorder
+A47	SType T67 disorder

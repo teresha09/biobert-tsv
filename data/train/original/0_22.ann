@@ -1,0 +1,95 @@
+T1	Disease 9 53	Атопический дерматит, распространенная форма
+T2	Severity 55 76	среднетяжелое течение
+A1	Degree T2 medium
+T3	Course 78 88	обострение
+A2	CType T3 worsened
+R1	Severity_rel Arg1:T2 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+T4	Disease 90 106	Пищевая аллергия
+T5	Disease 108 143	Аллергический ринит, персистирующий
+T6	Disease 145 183	Хронический компенсированный тонзиллит
+T7	Disease 185 216	Синдром вегетативной дисфункции
+T8	Disease 218 226	Цефалгии
+T9	Disease 228 245	Спазм аккомодации
+T10	Disease 247 266	Ангиопатия сетчатки
+T11	Disease 268 308	Вторичные изменения поджелудочной железы
+T12	Body_location 288 308	поджелудочной железы
+T13	Symptom 369 378	высыпания
+A3	SType T13 disorder
+T14	Body_location 379 386	на коже
+T15	Symptom 702 724	атопического дерматита
+T16	Treatment 726 798	купировавшиеся диетой, антигистаминными препаратами, местными средствами
+T17	Drug 749 777	антигистаминными препаратами
+A4	Effect T16 positive
+T18	Symptom 814 823	высыпания
+A5	SType T18 disorder
+T19	Body_location 824 831	на коже
+T20	Symptom 907 936	эритематозно-сквамозные очаги
+A6	SType T20 disorder
+T21	Body_location 937 954	в локтевых сгибах
+T22	Symptom 1103 1112	высыпания
+A7	SType T22 disorder
+T23	Body_location 1113 1120	на лице
+T24	Body_location 1122 1125	шее
+T25	Disease 1152 1160	поллиноз
+T26	Disease 1162 1178	пищевая аллергия
+A8	NotPatient T25
+A9	NotPatient T26
+T27	Disease 1206 1214	поллиноз
+A10	NotPatient T27
+T28	Body_location 1316 1330	Кожные покровы
+T29	Symptom 1331 1345	бледно-розовые
+A11	SType T29 normal
+T30	Symptom 1347 1352	сухие
+A12	SType T30 disorder
+T32	Body_location 1354 1408	в периоральной области, на лбу, шее, в локтевых сгибах
+T33	Symptom 1410 1439	эритематозно-сквамозные очаги
+A14	SType T33 disorder
+T34	Symptom 1441 1448	трещины
+A15	SType T34 disorder
+T35	Symptom 1450 1475	экскориации и десквамация
+A16	SType T35 disorder
+T36	Symptom 1477 1488	Зев спокоен
+A17	SType T36 normal
+T37	Body_location 1528 1536	В лёгких
+T38	Symptom 1537 1557	дыхание везикулярное
+A18	SType T38 normal
+T39	Symptom 1559 1565	хрипов
+A19	Negation T39
+T40	Symptom 1571 1604	Сердечные тоны звучные, ритмичные
+A20	SType T40 normal
+T41	Body_location 1606 1611	Живот
+T42	Symptom 1612 1618	мягкий
+A21	SType T42 normal
+T43	Symptom 1634 1648	безболезненный
+A22	SType T43 normal
+T44	Symptom 1701 1708	дизурии
+A23	Negation T44
+T45	Symptom 1744 1764	Менингеальных знаков
+A24	Negation T45
+T46	Symptom 1714 1742	Стул регулярный, оформленный
+A25	SType T46 normal
+T47	Symptom 1490 1526	Носовое дыхание несколько затруднено
+T48	Symptom 956 981	Усиление кожного процесса
+A26	SType T48 disorder
+R3	Body_location_rel Arg1:T12 Arg2:T11	
+T49	Disease 702 724	атопического дерматита
+T50	Body_location 258 266	сетчатки
+R4	Body_location_rel Arg1:T50 Arg2:T10	
+R5	Symptom_bdyloc_rel Arg1:T14 Arg2:T13	
+R6	Symptom_bdyloc_rel Arg1:T19 Arg2:T18	
+R7	Symptom_bdyloc_rel Arg1:T21 Arg2:T20	
+R8	Symptom_bdyloc_rel Arg1:T23 Arg2:T22	
+R9	Symptom_bdyloc_rel Arg1:T24 Arg2:T22	
+R10	Symptom_bdyloc_rel Arg1:T28 Arg2:T29	
+R11	Symptom_bdyloc_rel Arg1:T28 Arg2:T30	
+R12	Symptom_bdyloc_rel Arg1:T32 Arg2:T33	
+R13	Symptom_bdyloc_rel Arg1:T32 Arg2:T34	
+R14	Symptom_bdyloc_rel Arg1:T32 Arg2:T35	
+T31	Body_location 1477 1480	Зев
+R15	Symptom_bdyloc_rel Arg1:T31 Arg2:T36	
+R16	Symptom_bdyloc_rel Arg1:T37 Arg2:T38	
+R17	Symptom_bdyloc_rel Arg1:T37 Arg2:T39	
+R18	Symptom_bdyloc_rel Arg1:T41 Arg2:T42	
+R19	Symptom_bdyloc_rel Arg1:T41 Arg2:T43	
+A13	SType T47 disorder

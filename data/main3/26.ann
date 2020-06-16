@@ -1,0 +1,167 @@
+T1	Disease 21 75	Гипертрофическая кардиомиопатия, необструктивная форма
+A1	Time T1 now
+T2	Disease 77 112	Недостаточность митрального клапана
+A2	Time T2 now
+T3	Disease 114 138	Артериальная гипертензия
+A3	Time T3 now
+T4	Disease 140 143	ХСН
+A4	Time T4 now
+T5	Severity 144 153	I- IIА ст
+R1	Severity_rel Arg1:T5 Arg2:T4	
+T6	Severity 155 167	ФК 1 по NYHA
+T7	Disease 170 233	Основной Гипертрофическая кардиомиопатия, необструктивная форма
+A5	Time T7 now
+T8	Disease 235 270	Недостаточность митрального клапана
+T9	Disease 272 297	Артериальная гипертензия.
+A6	Time T9 now
+T10	Disease 298 301	ХСН
+A7	Time T10 now
+T11	Severity 302 312	I- IIА ст.
+R2	Severity_rel Arg1:T11 Arg2:T10	
+T12	Severity 313 327	ФК 1 по NYHA..
+R3	Severity_rel Arg1:T12 Arg2:T10	
+T13	Disease 479 503	артериальная гипертензия
+A8	NotPatient T13
+A9	Time T13 before
+T14	Severity 504 507	2ст
+R4	Severity_rel Arg1:T14 Arg2:T13	
+T15	Disease 509 528	миокардиодистрофия.
+A10	NotPatient T15
+A11	Time T15 before
+T16	Body_location 881 887	легких
+T17	Symptom 888 951	дыхание жесткое, при санации трахеи слизисто-гнойное отделяемое
+A12	SType T17 disorder
+R5	Symptom_bdyloc_rel Arg1:T16 Arg2:T17	
+T18	Treatment 1275 1373	цефотаксимом, амикацином, меронемом, ванкомицином, в/в пентаглобин, поддержка дофамином, дексазон.
+T19	Drug 1275 1287	цефотаксимом
+T20	Drug 1289 1299	амикацином
+T21	Drug 1301 1311	меронемом,
+T22	Drug 1312 1324	ванкомицином
+T23	Drug 1326 1341	в/в пентаглобин
+T24	Drug 1353 1362	дофамином
+T25	Drug 1364 1372	дексазон
+T26	Symptom 1448 1492	илатация боковых желудочков головного мозга.
+A13	SType T26 disorder
+T27	Body_location 1997 2005	миокарда
+T28	Symptom 1985 1996	гипертрофия
+A14	SType T28 disorder
+R6	Symptom_bdyloc_rel Arg1:T27 Arg2:T28	
+T29	Body_location 2104 2112	миокарда
+T30	Body_location 2893 2908	кожных покровов
+T31	Symptom 2910 2973	цианоз носогубного треугольника, усиливающиеся при беспокойстве
+R7	Symptom_bdyloc_rel Arg1:T30 Arg2:T31	
+T32	Symptom 3064 3104	нарушение внутрижелудочкового проведения
+A15	SType T31 disorder
+A16	SType T32 disorder
+T33	Body_location 3118 3141	правой ножке пучка Гиса
+R8	Symptom_bdyloc_rel Arg1:T33 Arg2:T32	
+T34	Symptom 3144 3172	признаки перегрузки миокарда
+A17	SType T34 disorder
+T35	Body_location 3173 3190	правого желудочка
+R9	Symptom_bdyloc_rel Arg1:T35 Arg2:T34	
+T36	Symptom 386 422	Утомляемость при физической нагрузке
+A18	SType T36 disorder
+T37	Disease 342 346	ОРВИ
+A19	Time T37 before
+T38	Symptom 3480 3540	Аортография грудного и брюшного отделов – данных за аномалию
+A20	SType T38 disorder
+T39	Body_location 3541 3546	аорты
+T40	Body_location 3549 3558	её ветвей
+R10	Symptom_bdyloc_rel Arg1:T39 Arg2:T38	
+T41	Treatment 3790 3959	анаприлин 3мг/сут, снижение верошпирона с 12,5мг/сут до 6,25мг/сут, трентал 18,75мг\сут, введён капотен 3мг/сут, цефтриабол 150мг/сут с 02.09 по 08.10, в\в цитофлавин №7
+T42	Drug 3790 3799	анаприлин
+T43	Drug 3818 3829	верошпирона
+T44	Drug 3858 3865	трентал
+T45	Drug 3886 3893	капотен
+T46	Drug 3903 3913	цефтриабол
+T47	Drug 3946 3956	цитофлавин
+T48	Body_location 4306 4323	Аортальный клапан
+T49	Symptom 4324 4334	не изменен
+A21	SType T49 disorder
+R11	Symptom_bdyloc_rel Arg1:T48 Arg2:T49	
+T50	Body_location 4345 4365	уга и перешеек аорты
+T51	Symptom 4366 4374	интактны
+A22	SType T51 disorder
+T52	Body_location 4376 4378	ПЖ
+T53	Body_location 4381 4383	ПП
+T54	Symptom 4469 4502	Трикуспидальный клапан не изменен
+A23	SType T54 normal
+T55	Body_location 4469 4491	Трикуспидальный клапан
+R12	Symptom_bdyloc_rel Arg1:T55 Arg2:T54	
+T56	Symptom 4538 4572	2 устья коронарных артерий отходят
+A24	SType T56 disorder
+T57	Body_location 4576 4581	аорты
+T58	Body_location 4584 4613	рудной и брюшной отделы аорты
+R13	Symptom_bdyloc_rel Arg1:T57 Arg2:T56	
+T59	Disease 4661 4701	умеренная гипертрофия миокарда ЛЖ, МПС..
+A25	Time T59 now
+T60	Disease 4903 4918	аминоацидопатии
+A26	Time T60 before
+T61	Disease 4920 4941	органические ацидурии
+A27	Time T61 before
+T62	Symptom 4943 4983	дефекты митохондриального бета-окисления
+A28	SType T62 disorder
+T63	Symptom 5402 5413	брадикардия
+A29	SType T63 disorder
+T64	Treatment 5577 5716	повышена доза анаприлина с 3 до 9 мг/сут, капотена с 3 до 9 мг/сут, верошпирон 6,25мг/сут, трентал 18,75мг/сут, вит Д3 водный 5кап.х1р/день
+T65	Drug 5591 5601	анаприлина
+T66	Drug 5619 5627	капотена
+T67	Drug 5645 5655	верошпирон
+T68	Drug 5668 5675	трентал
+T70	Drug 6234 6244	анаприлина
+T71	Drug 6278 6285	капотен
+T72	Drug 6321 6328	трентал
+T74	Drug 6844 6852	капотена
+T75	Treatment 6856 6864	15мг\сут
+T76	Drug 6916 6926	анаприлина
+T77	Treatment 6930 6938	15мг\сут
+T78	Drug 7048 7056	капотена
+T79	Symptom 6991 7007	бронхообструкции
+A30	SType T79 disorder
+T69	Treatment 6229 6276	доза анаприлина увеличена с 9мг/сут до 12мг/сут
+T80	Treatment 6278 6305	капотен увеличен с 9мг/сут.
+T81	Treatment 6306 6318	до 12 мг/сут
+T82	Treatment 6321 6344	трентал 6,25 мг х 3 р/д
+T83	Drug 6346 6356	верошпирон
+T73	Treatment 6346 6368	верошпирон6,25 мг/сут.
+T84	Severity 6755 6761	легкая
+T85	Symptom 6762 6789	брадикардия в течение суток
+A31	SType T85 disorder
+T86	Symptom 7010 7030	сохраняющегося кашля
+A32	SType T86 disorder
+T87	Treatment 7041 7057	отмена капотена.
+A33	Effect T87 negative
+T88	Treatment 7294 7330	снижена доза анаприлина до 10сг\сут.
+A34	Effect T88 negative
+T89	Drug 7307 7317	анаприлина
+T90	Symptom 7204 7260	брадикардия на фоне миграции предсердного водителя ритма
+A35	SType T90 disorder
+T91	Treatment 7870 7926	анаприлин в дозе 15 мг/сут заменен на конкор 1,25 мг/сут
+T92	Drug 7870 7879	анаприлин
+T93	Drug 7908 7914	конкор
+T94	Disease 7957 7972	ОРВИ 3-х кратно
+T95	Disease 7975 8024	однократно острый гастроэнтерит неясной этиологии
+T96	Treatment 8088 8117	отменен трентал и верошпирон.
+A36	Effect T96 positive
+T97	Drug 8096 8116	трентал и верошпирон
+T98	Symptom 9885 9925	Неполная блокада правой ножки пучка Гиса
+T99	Symptom 9927 9981	Нарушения процесса реполяризации в миокарде желудочков
+A37	SType T99 disorder
+T100	Course 9983 9999	Легкие нарушения
+T101	Symptom 10367 10378	Брадикардия
+T102	Treatment 17746 17804	Стол №5, Конкор 0,625мг х 2 раза в день, в 09.00 и в 21.00
+T103	Drug 17755 17761	Конкор
+T104	Treatment 18569 18609	Конкор 0,625мг.х2р/день в 09.00 и 21.00.
+T105	Drug 18569 18575	Конкор
+T106	Symptom 18614 18638	тенденции к повышению АД
+A38	SType T106 disorder
+T107	Treatment 18639 18680	повышение утренней дозы конкора до 1,25мг
+T108	Drug 18663 18670	конкора
+T109	Drug 18904 18930	аугментин, супракс, цедекс
+T110	Drug 18952 18960	виферона
+T111	Treatment 18940 19025	подключение виферона 500тыс МЕ 2 раза в день на 10 дней с последующим анализом крови.
+T112	Disease 18784 18806	При присоединении ОРВИ
+T113	Symptom 10450 10483	эпизодами миграции водителя ритма
+A39	SType T113 disorder
+T114	Body_location 10486 10512	миокард правого предсердия
+R14	Symptom_bdyloc_rel Arg1:T114 Arg2:T113	

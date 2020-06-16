@@ -1,0 +1,76 @@
+T2	Course 49 57	ремиссия
+A1	CType T2 improved
+T1	Disease 19 47	риноконъюнктивальный синдром
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 59 100	Аллергический ринит, персистирующая форма
+T4	Course 102 111	ремиссия.
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 112 128	Пищевая аллергия
+T6	Symptom 190 218	затруднение носового дыхания
+A3	SType T6 disorder
+T7	Symptom 244 256	отеки Квинке
+A4	SType T7 disorder
+T8	Disease 571 584	ветряная оспа
+T9	Disease 586 594	краснуха
+T10	Disease 596 602	ангины
+T11	Symptom 631 653	атопического дерматита
+A5	SType T11 disorder
+T12	Treatment 670 697	диетой, местными средствами
+A6	Effect T12 positive
+T13	Symptom 712 721	высыпания
+A7	SType T13 disorder
+A8	Negation T13
+T14	Symptom 796 806	крапивницы
+A9	SType T14 disorder
+T15	Symptom 856 869	отеков Квинке
+A10	SType T15 disorder
+T16	Symptom 929 935	ринита
+A11	SType T16 disorder
+T17	Symptom 938 951	конъюнктивита
+A12	SType T17 disorder
+T18	Treatment 981 1021	использовании антигистаминных препаратов
+A13	Effect T18 positive
+T19	Symptom 1080 1088	поллиноз
+T20	Disease 1205 1227	лекарственная аллергия
+A14	NotPatient T20
+T21	Body_location 1283 1297	Кожные покровы
+T22	Symptom 1298 1307	суховатые
+T23	Symptom 1309 1331	бледно-розовые, чистые
+A15	SType T23 normal
+T24	Symptom 1333 1344	Зев спокоен
+A16	SType T24 normal
+T25	Symptom 1355 1375	дыхание везикулярное
+A17	SType T25 normal
+T26	Body_location 1346 1354	В легких
+T27	Symptom 1377 1383	хрипов
+A18	Negation T27
+T28	Symptom 1389 1417	Тоны сердца ясные, ритмичные
+A19	SType T28 normal
+T29	Body_location 1419 1424	Живот
+T30	Symptom 1425 1447	мягкий, безболезненный
+A20	SType T30 normal
+T31	Symptom 1463 1467	Стул
+A21	SType T31 normal
+T32	Symptom 1469 1475	диурез
+A22	SType T32 normal
+T33	Symptom 1489 1509	Менингеальных знаков
+A23	Negation T33
+T34	Disease 9 17	Поллиноз
+T35	Disease 244 256	отеки Квинке
+T36	Disease 631 653	атопического дерматита
+T37	Disease 856 869	отеков Квинке
+T38	Disease 929 935	ринита
+T39	Disease 938 951	конъюнктивита
+T40	Disease 1080 1088	поллиноз
+R3	Symptom_bdyloc_rel Arg1:T21 Arg2:T22	
+R4	Symptom_bdyloc_rel Arg1:T21 Arg2:T23	
+T41	Body_location 1333 1336	Зев
+R5	Symptom_bdyloc_rel Arg1:T41 Arg2:T24	
+R6	Symptom_bdyloc_rel Arg1:T26 Arg2:T25	
+R7	Symptom_bdyloc_rel Arg1:T26 Arg2:T27	
+R8	Symptom_bdyloc_rel Arg1:T29 Arg2:T30	
+A24	SType T19 disorder
+A25	SType T22 disorder
+A26	SType T27 disorder
+T42	Disease 796 806	крапивницы

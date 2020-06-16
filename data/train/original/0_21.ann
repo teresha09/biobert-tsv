@@ -1,0 +1,91 @@
+T1	Disease 9 27	Вазомоторный ринит
+T2	Disease 29 92	Искривление носовой перегородки с затруднением носового дыхания
+T3	Body_location 41 60	носовой перегородки
+T4	Disease 94 123	ОРИ (катаральный ринофарингит
+T5	Symptom 205 233	затруднение носового дыхания
+T6	Symptom 235 258	малопродуктивный кашель
+T7	Disease 490 513	внутриутробная инфекция
+T8	Disease 515 548	врожденная двусторонняя катаракта
+T9	Disease 688 696	краснуха
+T10	Disease 698 708	скарлатина
+T11	Disease 710 723	ветряная оспа
+T12	Disease 725 731	ангины
+T13	Disease 785 818	врожденной двусторонней катаракты
+T14	Severity 820 845	амблиопии высокой степени
+A1	Degree T14 hard
+R1	Severity_rel Arg1:T14 Arg2:T13	
+T15	Disease 881 933	левостороннего грудопоясничного S-образного сколиоза
+T16	Severity 934 944	II степени
+A2	Degree T16 medium
+R2	Severity_rel Arg1:T16 Arg2:T15	
+T17	Disease 1021 1037	синдром Жильбера
+T18	Disease 1077 1109	синдрома вегетативной дисфункции
+T19	Treatment 1111 1133	получает курсы терапии
+T20	Symptom 1175 1200	кожных признаков аллергии
+A3	Negation T20
+T21	Symptom 1249 1277	затруднение носового дыхания
+A4	SType T21 disorder
+T22	Disease 1305 1327	респираторные инфекции
+T23	Symptom 1346 1354	ринитами
+T24	Disease 1356 1363	отитами
+T25	Disease 1422 1440	вазомоторный ринит
+T26	Disease 1442 1450	аденоиды
+T27	Severity 1451 1460	2 степени
+A5	Degree T27 medium
+R3	Severity_rel Arg1:T27 Arg2:T26	
+T28	Disease 1489 1511	респираторной инфекции
+T29	Disease 1521 1542	обструктивный бронхит
+T30	Symptom 1587 1598	сухие хрипы
+A6	SType T30 disorder
+T31	Treatment 1643 1690	Получала антибактериальную терапию (вильпрафен)
+T32	Drug 1679 1689	вильпрафен
+T33	Disease 1733 1752	аллергический ринит
+T34	Disease 1788 1808	атопический дерматит
+A7	NotPatient T34
+T35	Disease 1832 1841	пневмоний
+A8	NotPatient T35
+T36	Disease 1867 1892	буллезная эмфизема легких
+A9	NotPatient T36
+T37	Body_location 1978 1992	Кожные покровы
+T38	Symptom 2017 2027	Зев рыхлый
+T39	Symptom 2029 2065	Носовое дыхание несколько затруднено
+T40	Symptom 2076 2096	дыхание везикулярное
+A10	SType T40 normal
+T41	Symptom 2098 2104	хрипов
+A11	Negation T41
+T42	Body_location 2067 2075	В лёгких
+T43	Symptom 2125 2132	звучные
+A12	SType T43 normal
+T44	Symptom 2134 2143	ритмичные
+A13	SType T44 normal
+T45	Body_location 2145 2150	Живот
+T46	Symptom 2151 2157	мягкий
+A14	SType T46 normal
+T47	Symptom 2173 2187	безболезненный
+A15	SType T47 normal
+T48	Symptom 2253 2281	Стул регулярный, оформленный
+A16	SType T48 normal
+T49	Symptom 2283 2303	Менингеальных знаков
+A17	Negation T49
+T50	Symptom 2240 2247	дизурии
+A18	Negation T50
+T51	Symptom 1993 2015	чистые, бледно-розовые
+A19	SType T51 normal
+R4	Body_location_rel Arg1:T3 Arg2:T2	
+T52	Disease 1365 1368	ОРИ
+T53	Disease 1346 1354	ринитами
+T54	Treatment 946 985	регулярно получает стационарное лечение
+T55	Disease 1192 1200	аллергии
+A20	Negation T55
+R5	Symptom_bdyloc_rel Arg1:T37 Arg2:T51	
+T56	Body_location 2017 2020	Зев
+R6	Symptom_bdyloc_rel Arg1:T56 Arg2:T38	
+R7	Symptom_bdyloc_rel Arg1:T42 Arg2:T40	
+R8	Symptom_bdyloc_rel Arg1:T42 Arg2:T41	
+R9	Symptom_bdyloc_rel Arg1:T45 Arg2:T46	
+R10	Symptom_bdyloc_rel Arg1:T45 Arg2:T47	
+T57	Disease 677 685	инфекции
+A21	SType T5 disorder
+A22	SType T6 disorder
+A23	SType T39 disorder
+A24	SType T41 disorder

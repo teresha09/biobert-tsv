@@ -1,0 +1,84 @@
+T1	Disease 19 47	риноконъюнктивальный синдром
+T2	Course 49 57	ремиссия
+A1	CType T2 improved
+R1	Course_rel Arg1:T2 Arg2:T1	
+T3	Disease 59 81	Лекарственная аллергия
+T4	Course 83 91	ремиссия
+A2	CType T4 improved
+R2	Course_rel Arg1:T4 Arg2:T3	
+T5	Disease 93 114	Гипертрофия аденоидов
+T6	Severity 115 124	2 степени
+A3	Degree T6 medium
+T7	Disease 126 135	Аденоидит
+T8	Disease 137 177	Вторичные изменения поджелудочной железы
+T9	Body_location 157 177	поджелудочной железы
+T10	Symptom 239 262	малопродуктивный кашель
+T11	Disease 296 302	ринита
+T12	Symptom 321 337	покраснение кожи
+T13	Body_location 333 337	кожи
+T14	Disease 711 724	ветряная оспа
+T15	Disease 791 813	атопического дерматита
+T16	Treatment 819 866	коррекции диеты и использовании местных средств
+A4	Effect T16 positive
+T17	Disease 931 937	ринита
+T18	Disease 980 999	аллергический ринит
+T19	Treatment 1001 1019	В терапии назонекс
+T20	Drug 1011 1019	назонекс
+A5	Effect T19 positive
+T21	Disease 1130 1136	ринита
+T22	Symptom 1209 1228	эритематозных пятен
+T23	Body_location 1194 1201	на коже
+T24	Symptom 1514 1537	малопродуктивный кашель
+T25	Symptom 1600 1609	высыпания
+T26	Disease 1677 1699	Лекарственная аллергия
+T27	Drug 1703 1711	бисептол
+T28	Symptom 1714 1724	крапивница
+T29	Body_location 1899 1913	Кожные покровы
+T30	Body_location 1938 1941	Зев
+T31	Body_location 1982 1990	В лёгких
+T32	Symptom 1999 2011	везикулярное
+A6	SType T32 normal
+T33	Symptom 2013 2019	хрипов
+A7	Negation T33
+T34	Disease 1829 1845	пищевая аллергия
+A8	NotPatient T34
+T35	Symptom 1309 1318	Высыпания
+T36	Body_location 1330 1355	на открытых участках тела
+T37	Body_location 1358 1362	лице
+T38	Disease 1446 1464	фотосенсибилизация
+T39	Symptom 1914 1936	чистые, бледно-розовые
+A9	SType T39 normal
+T40	Symptom 1942 1949	спокоен
+A10	SType T40 normal
+T41	Symptom 1951 1980	Носовое дыхание не затруднено
+A11	SType T41 normal
+T42	Symptom 2040 2058	звучные, ритмичные
+A12	SType T42 normal
+T43	Symptom 2111 2118	дизурии
+A13	Negation T43
+T44	Symptom 2124 2128	Стул
+A14	SType T44 normal
+T45	Symptom 2154 2174	Менингеальных знаков
+A15	Negation T45
+T46	Body_location 1389 1412	по всем кожным покровам
+R3	Body_location_rel Arg1:T9 Arg2:T8	
+R4	Severity_rel Arg1:T6 Arg2:T5	
+T47	Symptom 1184 1193	высыпания
+R5	Symptom_bdyloc_rel Arg1:T23 Arg2:T47	
+R6	Symptom_bdyloc_rel Arg1:T36 Arg2:T35	
+R7	Symptom_bdyloc_rel Arg1:T37 Arg2:T35	
+R8	Symptom_bdyloc_rel Arg1:T29 Arg2:T39	
+R9	Symptom_bdyloc_rel Arg1:T30 Arg2:T40	
+R10	Symptom_bdyloc_rel Arg1:T31 Arg2:T32	
+R11	Symptom_bdyloc_rel Arg1:T31 Arg2:T33	
+A16	SType T12 disorder
+A17	SType T47 disorder
+A18	SType T22 disorder
+A19	SType T10 disorder
+A20	SType T35 disorder
+A21	SType T24 disorder
+A22	SType T25 disorder
+A23	SType T28 disorder
+T48	Disease 1289 1293	сыпь
+T49	Disease 1714 1724	крапивница
+R12	Symptom_bdyloc_rel Arg1:T13 Arg2:T12	

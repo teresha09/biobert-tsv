@@ -1,0 +1,133 @@
+T1	Disease 92 123	Бронхиальная астма, атопическая
+T3	Course 156 164	ремиссия
+T4	Disease 166 174	Поллиноз
+T5	Disease 176 204	риноконъюнктивальный синдром
+T6	Course 206 214	ремиссия
+T7	Disease 216 235	Аллергический ринит
+T8	Course 253 261	ремиссия
+T9	Disease 263 283	Атопический дерматит
+T10	Course 285 293	ремиссия
+T11	Disease 295 316	Хронический тонзиллит
+T12	Symptom 420 438	свистящего дыхания
+T13	Disease 480 502	респираторных инфекций
+T14	Disease 513 519	ринита
+T15	Disease 522 535	конъюнктивита
+T17	Body_location 584 591	на коже
+T18	Disease 630 648	бронхиальная астма
+T19	Treatment 901 908	Привита
+T20	Disease 957 960	ОРИ
+T21	Disease 975 998	бронхиальной обструкции
+T22	Treatment 1009 1029	лечение в стационаре
+T23	Drug 1031 1038	аскорил
+T24	Drug 1040 1049	кетотифен
+T25	Drug 1051 1056	интал
+T26	Disease 1090 1113	бронхиальной обструкции
+T27	Disease 1135 1138	ОРИ
+T28	Disease 1238 1247	высыпания
+T29	Body_location 1248 1255	на коже
+T30	Disease 1372 1403	бронхиальная астма, атопическая
+T31	Drug 1439 1446	задитен
+T32	Drug 1448 1458	пульмикорт
+T33	Treatment 1498 1510	физиотерапии
+T34	Disease 1563 1566	ОРИ
+T35	Treatment 1645 1665	ингаляцией беродуала
+T36	Drug 1656 1665	беродуала
+T37	Disease 1737 1768	Бронхиальная астма, атопическая
+T38	Disease 1826 1845	аллергический ринит
+T39	Disease 1857 1877	Атопический дерматит
+T40	Drug 1900 1909	фликсотид
+T41	Symptom 1983 2012	приступов затруднения дыхания
+T42	Disease 2060 2066	ринита
+T43	Disease 2069 2082	конъюнктивита
+T44	Disease 2123 2131	поллиноз
+T45	Drug 2143 2168	антигистаминные препараты
+T46	Drug 2170 2178	назонекс
+T50	Body_location 2542 2550	В лёгких
+T51	Symptom 2551 2571	дыхание везикулярное
+T54	Symptom 2755 2762	Дизурии
+A5	NotPatient T18
+T56	Severity 125 154	легкое персистирующее течение
+A6	Degree T56 light
+R1	Severity_rel Arg1:T56 Arg2:T1	
+R2	Course_rel Arg1:T3 Arg2:T1	
+R3	Course_rel Arg1:T6 Arg2:T5	
+R4	Course_rel Arg1:T6 Arg2:T4	
+T2	Severity 237 251	персистирующий
+R5	Modificator_rel Arg1:T2 Arg2:T7	
+R6	Course_rel Arg1:T8 Arg2:T7	
+R7	Course_rel Arg1:T10 Arg2:T9	
+T57	Severity 318 340	компенсированная форма
+A11	Degree T57 medium
+R8	Severity_rel Arg1:T57 Arg2:T11	
+A12	Conditional T15
+A13	Conditional T14
+T58	Treatment 1031 1073	аскорил, кетотифен, интал через небулайзер
+A14	Conditional T27
+A15	Conditional T26
+A16	Conditional T28
+R10	Body_location_rel Arg1:T29 Arg2:T28	
+T59	Severity 1405 1427	среднетяжелого течения
+R11	Severity_rel Arg1:T59 Arg2:T30	
+A17	Degree T59 hard
+T60	Treatment 1429 1482	В терапии задитен, пульмикорт через небулайзер курсом
+A18	Effect T33 positive
+T61	Severity 1770 1799	легкое персистирующее течение
+A19	Degree T61 light
+R12	Severity_rel Arg1:T61 Arg2:T37	
+T62	Course 1801 1809	ремиссия
+R13	Course_rel Arg1:T62 Arg2:T37	
+T63	Course 1847 1855	ремиссия
+R14	Course_rel Arg1:T63 Arg2:T38	
+T64	Course 1879 1887	ремиссия
+R15	Course_rel Arg1:T64 Arg2:T39	
+T65	Treatment 1890 1930	В терапии фликсотид 50 мкг 2 раза в день
+A1	Conditional T43
+A21	Conditional T42
+T66	Treatment 2133 2178	в терапии антигистаминные препараты, назонекс
+A22	Effect T66 positive
+A2	CType T3 improved
+A3	CType T6 improved
+A4	CType T8 improved
+A7	CType T10 improved
+T69	Treatment 743 759	кесарева сечения
+A8	NotPatient T69
+A9	CType T62 improved
+A10	CType T63 improved
+A20	CType T64 improved
+T71	Treatment 1940 1947	терапии
+A23	Effect T71 positive
+A24	Negation T41
+T47	Symptom 2294 2371	подкожно-жировая клетчатка развита удовлетворительно, распределена равномерно
+T72	Symptom 2263 2292	развитие среднее, гармоничное
+T48	Symptom 2373 2417	Кожные покровы бледно-розового цвета, чистые
+T49	Symptom 2419 2461	Видимые слизистые оболочки розовые, чистые
+T74	Body_location 2463 2481	Зев: задняя стенка
+T67	Body_location 2637 2651	Область сердца
+T76	Symptom 2637 2673	Область сердца визуально не изменена
+T77	Symptom 2463 2492	Зев: задняя стенка разрыхлена
+T78	Symptom 2494 2523	Носовое дыхание не затруднено
+T79	Symptom 2525 2540	отделяемого нет
+T80	Symptom 2675 2706	Сердечные тоны ясные, ритмичные
+T81	Symptom 2725 2753	Стул регулярный, оформленный
+A28	Negation T54
+T55	Symptom 2768 2788	Менингеальных знаков
+A29	Negation T55
+A30	SType T12 disorder
+T82	Symptom 574 591	высыпания на коже
+A31	Degree T2 medium
+R9	Symptom_bdyloc_rel Arg1:T17 Arg2:T82	
+A32	SType T41 disorder
+A33	SType T48 normal
+A34	SType T49 normal
+R16	Symptom_bdyloc_rel Arg1:T74 Arg2:T77	
+A25	SType T78 normal
+A35	SType T79 normal
+A36	SType T51 normal
+R17	Symptom_bdyloc_rel Arg1:T67 Arg2:T76	
+T16	Symptom 2610 2616	хрипов
+A26	Negation T16
+A27	SType T16 disorder
+R18	Symptom_bdyloc_rel Arg1:T50 Arg2:T51	
+R19	Symptom_bdyloc_rel Arg1:T50 Arg2:T16	
+A37	SType T80 normal
+A38	SType T81 normal

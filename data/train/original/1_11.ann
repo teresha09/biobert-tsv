@@ -1,0 +1,153 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 57 71	ЖЕЛЧНЫЙ ПУЗЫРЬ
+T3	Symptom 73 100	размер – несколько увеличен
+A1	SType T3 disorder
+T4	Symptom 102 116	стенки – норма
+A2	SType T4 normal
+T5	Symptom 118 150	форма – лабильный перегиб в теле
+A3	SType T5 disorder
+T6	Symptom 152 171	просвет - свободный
+A4	SType T6 normal
+T7	Body_location 173 193	ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА
+T8	Symptom 194 258	нормальная: размер – 12х8х10 мм; паренхима – эхогенность средняя
+A5	SType T8 normal
+T9	Body_location 260 269	СЕЛЕЗЕНКА
+T10	Symptom 271 330	размер 77х37 мм; паренхима: однородная, средней эхогенности
+A6	SType T10 normal
+T11	Body_location 333 350	селезеночная вена
+T12	Symptom 355 364	расширена
+A7	Negation T12
+T13	Body_location 366 372	ПЕЧЕНЬ
+T14	Symptom 374 467	размер – ЛД – 47 мм, 1й сегмент 15 мм; ПД –95 мм; паренхима – однородная, средней эхогенности
+A8	SType T14 normal
+T15	Body_location 469 482	воротная вена
+T16	Symptom 484 490	5,5 мм
+A9	SType T16 normal
+T17	Body_location 523 530	ЖЕЛУДОК
+T18	Symptom 533 563	секрета нет, стенки нормальные
+A10	SType T18 normal
+T19	Body_location 565 582	12-ПЕРСТНАЯ КИШКА
+T20	Symptom 583 613	секрета нет, стенки нормальные
+A11	SType T20 normal
+T21	Body_location 492 507	Печеночные вены
+T22	Symptom 512 520	изменены
+A12	SType T22 disorder
+T23	Body_location 686 692	сердца
+T24	Symptom 707 721	полости сердца
+A13	SType T24 normal
+T25	Body_location 736 742	стенки
+T26	Symptom 746 754	утолщены
+A14	Negation T26
+T27	Body_location 756 767	перегородки
+T28	Body_location 778 785	клапаны
+T29	Body_location 795 809	крупные сосуды
+T30	Symptom 768 776	интактны
+A15	SType T30 normal
+T31	Symptom 813 821	изменены
+A16	Negation T31
+T32	Symptom 823 862	функциональные параметры сердца в норме
+A17	SType T32 normal
+T33	Symptom 874 877	ВПС
+A18	Negation T33
+T34	Treatment 1084 1196	Физиомер 2-3 раза в день; 2) В левый слуховой проход теплое вазелиновое масло по 3-4 капли 2 раза в день. 5 дней
+T35	Drug 1084 1092	Физиомер
+T36	Body_location 1113 1136	В левый слуховой проход
+T37	Drug 1144 1161	вазелиновое масло
+T38	Body_location 1253 1263	носоглотки
+T39	Body_location 1318 1328	носоглотке
+T40	Body_location 1348 1368	аденоидных вегетаций
+T41	Body_location 1382 1387	хоаны
+T42	Body_location 1396 1425	глоточные устья слуховых труб
+T43	Body_location 1458 1466	аденоиды
+T44	Body_location 1445 1457	полость носа
+T45	Symptom 1497 1507	воспаления
+A19	Negation T45
+T46	Disease 1521 1542	гипертрофия аденоидов
+T47	Severity 1543 1552	I степени
+A20	Degree T47 light
+R1	Severity_rel Arg1:T47 Arg2:T46	
+T48	Disease 1600 1621	невротические реакции
+T49	Treatment 1641 1694	Капли Зеленина - по 4-6 капель 3 раза в день, 30 дней
+T50	Treatment 1699 1854	Нейромультивит – по ½  таблетки 2 раза в день, 30 дней; 3) Глицин – по 2 таблетки 2 раза в день под язык до еды, 30 дней; 4) исключить просмотр телевизора.
+T51	Drug 1641 1655	Капли Зеленина
+T52	Drug 1699 1713	Нейромультивит
+T53	Drug 1758 1764	Глицин
+T54	Disease 1933 1955	Дисбактериоз кишечника
+T55	Disease 1957 1968	Токсокароз?
+T56	Treatment 1986 2071	Диета №5, с исключением жирного, жареного, острого, копченого, маринованных продуктов
+T57	Symptom 2292 2374	Имеются начальные признаки нарушения проходимости периферических дыхательных путей
+A21	SType T57 disorder
+T58	Symptom 2376 2413	изменение эластических свойств легких
+A22	Negation T58
+T59	Symptom 2506 2590	исходно – начальные признаки нарушения проходимости периферических дыхательных путей
+A23	SType T59 disorder
+T60	Body_location 2558 2590	периферических дыхательных путей
+T61	Body_location 2342 2374	периферических дыхательных путей
+T62	Body_location 2407 2413	легких
+T63	Drug 2657 2667	вентолином
+T64	Symptom 2649 2683	Проба с вентолином – отрицательная
+A24	SType T64 normal
+T65	Body_location 2704 2726	органов грудной клетки
+T66	Symptom 3105 3121	Синусы воздушные
+A25	SType T66 normal
+T67	Symptom 3063 3103	Купола диафрагмы ровные, на VI-VII ребре
+A26	SType T67 normal
+T68	Symptom 3014 3032	расположено обычно
+A27	SType T68 normal
+T69	Symptom 3034 3049;3053 3061	форма и размеры изменены
+A28	SType T69 disorder
+T70	Body_location 2981 2992	Средостение
+R2	Symptom_bdyloc_rel Arg1:T2 Arg2:T3	
+R3	Symptom_bdyloc_rel Arg1:T2 Arg2:T4	
+R4	Symptom_bdyloc_rel Arg1:T2 Arg2:T5	
+R5	Symptom_bdyloc_rel Arg1:T2 Arg2:T6	
+R6	Symptom_bdyloc_rel Arg1:T7 Arg2:T8	
+R7	Symptom_bdyloc_rel Arg1:T9 Arg2:T10	
+R8	Symptom_bdyloc_rel Arg1:T11 Arg2:T12	
+R9	Symptom_bdyloc_rel Arg1:T13 Arg2:T14	
+R10	Symptom_bdyloc_rel Arg1:T15 Arg2:T16	
+R11	Symptom_bdyloc_rel Arg1:T21 Arg2:T22	
+R12	Symptom_bdyloc_rel Arg1:T17 Arg2:T18	
+R13	Symptom_bdyloc_rel Arg1:T19 Arg2:T20	
+R14	Symptom_bdyloc_rel Arg1:T25 Arg2:T26	
+R15	Symptom_bdyloc_rel Arg1:T27 Arg2:T30	
+R16	Symptom_bdyloc_rel Arg1:T28 Arg2:T31	
+R17	Symptom_bdyloc_rel Arg1:T29 Arg2:T31	
+T71	Treatment 3700 3932	проведение курсов: 1) галотерапии; 2) энтеральной оксигенации; 3) лазеротерапии околоносовых пазух, области миндалин, эндоназально; 4) ЭПС-массажа ладоней, стоп; 5) жемчужных ванн с хвойным экстрактом; 6) санаторно-курортное лечение
+T72	Disease 3990 4001	брадикардия
+T73	Disease 4014 4021	аритмия
+T74	Treatment 4084 4142	лечение: пульмикорт 125 мкг через небулайзер 2 раза в день
+T75	Drug 4093 4103	пульмикорт
+T76	Treatment 4295 4338	Гипоаллергенная диета, элиминационный режим
+T77	Treatment 4343 4413	Пульмикорт через небулайзер 125 мкг по 1 инг. 2 раза в день продолжить
+T78	Drug 4343 4353	Пульмикорт
+T79	Symptom 4422 4437	приступах кашля
+T80	Symptom 4439 4460	затрудненного дыхания
+A29	SType T80 disorder
+A30	SType T79 disorder
+T81	Drug 4474 4482	вентолин
+T82	Drug 4484 4495	сальбутамол
+T83	Drug 4500 4507	саламол
+T84	Treatment 4461 4555	использовать вентолин (сальбутамол или саламол) по 2 ингаляции через спейсер до 3-х раз в день
+T85	Disease 4583 4586	ОРИ
+T86	Treatment 4587 4670	через небулайзер: беродуал 12 капель + пульмикорт 250 мкг 2 раза в день на 5-7 дней
+T87	Drug 4605 4613	беродуал
+T88	Drug 4626 4636	пульмикорт
+T89	Symptom 4690 4713	малопродуктивного кашля
+A31	SType T89 disorder
+T90	Drug 4733 4742	лазолвана
+T91	Treatment 4714 4801	добавить ингаляции лазолвана в растворе 1 мл 2 раза в день (не позднее 18.00) на 5 дней
+T92	Disease 1497 1507	воспаления
+A32	Negation T92
+A33	SType T12 disorder
+A34	SType T26 disorder
+A35	SType T31 disorder
+A36	SType T45 disorder
+A37	SType T58 disorder
+R18	Symptom_bdyloc_rel Arg1:T62 Arg2:T58	
+R19	Symptom_bdyloc_rel Arg1:T61 Arg2:T57	
+R20	Symptom_bdyloc_rel Arg1:T60 Arg2:T59	
+T93	Body_location 3007 3013	Сердце
+R21	Symptom_bdyloc_rel Arg1:T93 Arg2:T68	
+A38	Negation T69
+R22	Symptom_bdyloc_rel Arg1:T93 Arg2:T69	

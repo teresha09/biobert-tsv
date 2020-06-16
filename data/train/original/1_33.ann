@@ -1,0 +1,179 @@
+T1	Body_location 31 54	органов брюшной полости
+T2	Body_location 56 70	желчный пузырь
+T3	Symptom 71 160	не измененный, размер не увеличен, стенки не изменены, форма правильная, просвет свободен
+A1	SType T3 normal
+T4	Body_location 162 168	Печень
+T5	Symptom 170 291	средних размеров (ЛД 40 мм, 1й сегмент 12 мм, ПД 84 мм), паренхима  однородная, средней эхогенности, контур печени ровный
+A2	SType T5 normal
+T6	Body_location 293 306	воротная вена
+T7	Symptom 307 311	6 мм
+A3	SType T7 normal
+T8	Body_location 313 328	печеночные вены
+T9	Symptom 332 340	изменены
+A4	Negation T9
+T10	Body_location 342 362	Поджелудочная железа
+T11	Body_location 494 503	Селезенка
+T12	Body_location 607 614	Желудок
+T13	Body_location 616 636	12-ти перстная кишка
+T14	Symptom 639 669	секрета нет, стенки нормальные
+A5	SType T14 normal
+T15	Body_location 575 592	селезеночная вена
+T16	Body_location 478 492	стенки сосудов
+T17	Symptom 468 493	уплотнены стенки сосудов.
+A6	SType T17 disorder
+T18	Symptom 405 434	паренхима средней эхогенности
+A7	SType T18 normal
+T19	Symptom 436 446	однородная
+A8	SType T19 normal
+T20	Body_location 448 454	проток
+T21	Symptom 458 466	расширен
+A9	Negation T21
+T22	Symptom 364 403	измененная, размер увеличен (12х8х14мм)
+A10	SType T22 disorder
+T23	Symptom 695 735	вторичных изменений поджелудочной железы
+A11	SType T23 disorder
+T24	Body_location 715 735	поджелудочной железы
+T25	Symptom 774 797	Миграция водителя ритма
+A12	SType T25 disorder
+T26	Body_location 801 815	синусового узл
+T27	Body_location 819 845	миокард правого предсердия
+T28	Symptom 847 865	Легкая брадикардия
+A13	SType T28 normal
+T29	Symptom 886 928	Неспецифическая внутрижелудочковая блокада
+A14	SType T29 normal
+T30	Symptom 867 885	Умеренная аритмия.
+A15	SType T30 normal
+T31	Symptom 746 772	Положение ЭОС вертикальное
+A16	SType T31 normal
+T32	Symptom 504 573	средних размеров (69х38мм), паренхима однородная, средней эхогенности
+A17	SType T32 normal
+T33	Symptom 596 605	расширена
+A18	Negation T33
+T34	Disease 971 990	аллергический ринит
+T35	Severity 992 1012	персистирующая форма
+A19	Degree T35 medium
+R1	Severity_rel Arg1:T35 Arg2:T34	
+T36	Disease 1014 1034	Серная пробка справа
+T37	Treatment 1053 1130	Физиомер – промывание полости носа 3-4 раза в день (тщательное отсмаркивание)
+T38	Drug 1053 1061	Физиомер
+T39	Treatment 1135 1206	теплое вазелиновое масло в правое ухо по 5 кап. 1 р/д на ночь на 5 дней
+T40	Drug 1142 1159	вазелиновое масло
+T41	Body_location 1162 1172	правое ухо
+T42	Body_location 1254 1269	грудной  клетки
+T43	Symptom 1302 1314	симметричный
+A20	SType T43 normal
+T44	Symptom 1316 1349	очагово-инфильтративных изменений
+A21	Negation T44
+T45	Symptom 1363 1393	воздушность несколько повышена
+A22	SType T45 disorder
+T46	Body_location 1402 1419	в верхних отделах
+T47	Symptom 1395 1401	больше
+A23	SType T47 disorder
+T48	Body_location 1481 1493	Корни легких
+T49	Symptom 1494 1505	структурные
+A24	SType T49 normal
+T50	Body_location 1507 1524	Вилочковая железа
+T51	Severity 1525 1534	1 степени
+A25	Degree T51 light
+T52	Body_location 1536 1542	Сердце
+T53	Symptom 1543 1561	расположено обычно
+A26	SType T53 normal
+T54	Symptom 1566 1575	увеличено
+A27	Negation T54
+T55	Symptom 1422 1479	Легочной рисунок обеднен по периферии, по смешанному типу
+A28	SType T55 disorder
+T56	Symptom 1619 1661	небольшое увеличение дуги легочного конуса
+A29	SType T56 normal
+T57	Body_location 1640 1661	дуги легочного конуса
+T58	Body_location 1706 1722	Куполы диафрагмы
+T59	Symptom 1723 1729	ровные
+A30	SType T59 normal
+T60	Symptom 1731 1737	четкие
+A31	SType T60 normal
+T61	Symptom 1663 1692	Контуры сердечной тени четкие
+A32	SType T61 normal
+T62	Body_location 1663 1685	Контуры сердечной тени
+T63	Symptom 1577 1595	немного ротировано
+A33	SType T63 normal
+T64	Body_location 1739 1745	Синусы
+T65	Symptom 1746 1755	свободные
+A34	SType T65 normal
+T66	Treatment 1780 1823	Гипоаллергенная диета, элиминационный режим
+T67	Treatment 1861 1911	Физиомер – промывание полости носа 3-4 раза в день
+T68	Treatment 1916 1977	Назонекс – по 1 инстилляции в каждый носовой ход 1 раз в день
+T69	Treatment 1982 2009	Ксизал 10 кап. 1 раз в день
+T70	Treatment 2014 2068	Фликсотид 50 мкг по 2 инг. 2 раза в день через спейсер
+T71	Drug 1861 1869	Физиомер
+T72	Drug 1916 1924	Назонекс
+T73	Drug 1982 1988	Ксизал
+T74	Drug 2014 2023	Фликсотид
+T75	Treatment 2216 2450	Гипоаллергенная диета (исключить рыбу и морепродукты, орехи, цитрусовые, сладости, продукты с консервантами и красителями) на основании стола №5 дробное питание с исключением жирных, жареных, копченых продуктов, газированных напитков.
+T76	Treatment 2454 2474	Элиминационный режим
+T77	Treatment 3519 3604	Активная иммунизация (вакцинация) в соответствии с индивидуальным календарем прививок
+T78	Treatment 3470 3514	Назонекс 1 раз в день продолжить 1,5 недели.
+T79	Treatment 3416 3466	Туалет носа с физиомером 3 раза в день продолжить.
+T80	Treatment 3364 3411	Зиртек (ксизал) 10 капель 1 раз в день 3 месяца
+T81	Symptom 3056 3079	малопродуктивного кашля
+A35	SType T81 disorder
+T82	Disease 3088 3110	респираторной инфекции
+T83	Treatment 3111 3208	ингаляции (ч/з небулайзер) лазолвана в растворе 1,5 мл 3 раза в день (не позднее 18.30) на 5 дней
+T84	Drug 3138 3147	лазолвана
+T85	Symptom 2578 2588	обструкции
+A36	SType T85 disorder
+T86	Symptom 2590 2596	одышка
+A37	SType T86 disorder
+T87	Symptom 2598 2615	свистящее дыхание
+A38	SType T87 disorder
+T88	Symptom 2617 2645	приступы затруднения дыхания
+A39	SType T88 disorder
+T89	Symptom 2648 2671	малопродуктивного кашля
+A40	SType T89 disorder
+T90	Treatment 2686 2770	вентолин (сальбутамол или саламол) по 1-2 ингаляции через спейсер до 3-х раз в день.
+T91	Disease 2797 2800	ОРИ
+T92	Treatment 2801 3007	через небулайзер: беродуал 10 капель + пульмикорт 250 мкг 3 раза в день на 7-10 дней; затем беродуал 6 капель + пульмикорт 125 мкг 2 раза в день на 10 дней; затем пульмикорт 125 мкг 1 раз в день на 10 дней.
+T93	Treatment 2479 2545	Фликсотид 50 мкг по 2 инг. 2 раза в день через спейсер, продолжить
+T94	Drug 2479 2488	Фликсотид
+T95	Drug 2686 2694	вентолин
+T96	Drug 2696 2707	сальбутамол
+T97	Drug 2712 2719	саламол
+T98	Drug 2819 2826	беродуа
+T99	Drug 2840 2850	пульмикорт
+T100	Drug 2893 2901	беродуал
+T101	Drug 2913 2923	пульмикорт
+T102	Drug 2964 2974	пульмикорт
+T103	Drug 3364 3370	Зиртек
+T104	Drug 3372 3378	ксизал
+T105	Drug 3430 3440	физиомером
+T106	Drug 3470 3478	Назонекс
+T107	Disease 854 865	брадикардия
+T108	Severity 847 853	Легкая
+A41	Degree T108 light
+R2	Severity_rel Arg1:T108 Arg2:T107	
+T109	Disease 877 884	аритмия
+T110	Severity 867 876	Умеренная
+A42	Degree T110 medium
+R3	Severity_rel Arg1:T110 Arg2:T109	
+T111	Drug 3635 3645	вентолином
+R4	Symptom_bdyloc_rel Arg1:T2 Arg2:T3	
+R5	Symptom_bdyloc_rel Arg1:T4 Arg2:T5	
+R6	Symptom_bdyloc_rel Arg1:T6 Arg2:T7	
+R7	Symptom_bdyloc_rel Arg1:T8 Arg2:T9	
+R8	Symptom_bdyloc_rel Arg1:T10 Arg2:T22	
+R9	Symptom_bdyloc_rel Arg1:T10 Arg2:T18	
+R10	Symptom_bdyloc_rel Arg1:T10 Arg2:T19	
+R11	Symptom_bdyloc_rel Arg1:T20 Arg2:T21	
+R12	Symptom_bdyloc_rel Arg1:T16 Arg2:T17	
+R13	Symptom_bdyloc_rel Arg1:T11 Arg2:T32	
+R14	Symptom_bdyloc_rel Arg1:T15 Arg2:T33	
+R15	Symptom_bdyloc_rel Arg1:T12 Arg2:T14	
+R16	Symptom_bdyloc_rel Arg1:T13 Arg2:T14	
+R17	Symptom_bdyloc_rel Arg1:T24 Arg2:T23	
+R18	Symptom_bdyloc_rel Arg1:T48 Arg2:T49	
+R19	Symptom_bdyloc_rel Arg1:T52 Arg2:T53	
+R20	Symptom_bdyloc_rel Arg1:T52 Arg2:T54	
+R21	Symptom_bdyloc_rel Arg1:T52 Arg2:T63	
+R22	Symptom_bdyloc_rel Arg1:T57 Arg2:T56	
+R23	Symptom_bdyloc_rel Arg1:T62 Arg2:T61	
+R24	Symptom_bdyloc_rel Arg1:T58 Arg2:T59	
+R25	Symptom_bdyloc_rel Arg1:T58 Arg2:T60	
+R26	Symptom_bdyloc_rel Arg1:T64 Arg2:T65	
